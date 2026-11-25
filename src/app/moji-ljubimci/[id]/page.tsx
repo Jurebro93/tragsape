@@ -3,7 +3,7 @@ import type { Route } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import { moderateEntryAction, unpublishAction } from "@/app/moji-ljubimci/actions";
+import { moderateEntryAction, moderateGestureAction, unpublishAction } from "@/app/moji-ljubimci/actions";
 import { DeleteMemorialForm, GuestbookModeForm, VisibilityForm } from "@/components/account/manage-forms";
 import { PageShell } from "@/components/site-chrome";
 import { Button, ButtonLink, buttonClass } from "@/components/ui/button";
@@ -12,6 +12,8 @@ import { formatDateTime } from "@/lib/format";
 import { FREE_PHOTO_LIMIT, PAID_PHOTO_LIMIT, isPaid } from "@/lib/memorial";
 import { fill } from "@/lib/text";
 import { account } from "@/messages/hr/account";
+import { gesture as gestureText } from "@/messages/hr/gesture";
+import { memorial as memorialText } from "@/messages/hr/memorial";
 import { requireMember } from "@/server/auth";
 import { env } from "@/server/env";
 import { getEditableMemorial } from "@/server/memorials/access";
@@ -28,6 +30,13 @@ async function Manage({ params }: Pick<PageProps<"/moji-ljubimci/[id]">, "params
   }
   const { memorial, photos, isOwner } = editable;
   const supabase = await createSessionClient();
+  const { data: gestures } = await supabase
+    .from("gestures")
+    .select("id, kind, display_name, message, expires_at, status")
+    .eq("memorial_id", id)
+    .neq("status", "refunded")
+    .order("created_at", { ascending: false })
+    .limit(100);
   const [{ data: entries }, { data: shareKey }] = await Promise.all([
     supabase
       .from("guestbook_entries")
@@ -152,6 +161,40 @@ async function Manage({ params }: Pick<PageProps<"/moji-ljubimci/[id]">, "params
         )}
         <GuestbookModeForm memorialId={id} mode={memorial.guestbookMode} />
       </Card>
+
+      {(gestures ?? []).length > 0 ? (
+        <Card className="flex flex-col gap-4">
+          <h2 className="text-2xl font-extrabold">{gestureText.owner.title}</h2>
+          <ul className="flex flex-col gap-3">
+            {(gestures ?? []).map((item) => (
+              <li key={item.id} className="flex flex-col gap-2 rounded-2xl border-2 border-line p-4">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span className="font-bold">
+                    {item.display_name} · {memorialText.gestureKinds[item.kind as keyof typeof memorialText.gestureKinds]}
+                  </span>
+                  {item.status === "hidden" ? (
+                    <Chip tone="butter" className="px-2.5 py-0.5 text-[13px]">
+                      {gestureText.owner.hidden}
+                    </Chip>
+                  ) : null}
+                </div>
+                {item.message ? <p className="[overflow-wrap:anywhere]">{item.message}</p> : null}
+                <p className="text-sm text-plum-soft">
+                  {fill(gestureText.owner.expires, { date: formatDateTime(item.expires_at) })}
+                </p>
+                <form
+                  action={moderateGestureAction.bind(null, id, item.id, item.status === "hidden" ? "active" : "hidden")}
+                >
+                  <Button type="submit" size="md" variant="secondary">
+                    {item.status === "hidden" ? gestureText.owner.show : gestureText.owner.hide}
+                  </Button>
+                </form>
+              </li>
+            ))}
+          </ul>
+          <p className="text-sm text-plum-soft">{gestureText.owner.note}</p>
+        </Card>
+      ) : null}
 
       {isOwner ? (
         <Card className="flex flex-col gap-4">

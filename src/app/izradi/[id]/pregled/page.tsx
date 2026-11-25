@@ -41,6 +41,20 @@ function hasPaidContent(view: MemorialView): boolean {
 async function Content({ params }: Pick<PageProps<"/izradi/[id]/pregled">, "params">) {
   const { id } = await params;
   const [view, viewer, prices] = await Promise.all([getPreviewView(id), getViewer(), loadPrices()]);
+  let available: { id: string; tier: "memorial" | "portrait" } | null = null;
+  if (viewer && !viewer.isAnonymous && view && view.memorial.tier === "free") {
+    const supabase = await createSessionClient();
+    const { data } = await supabase
+      .from("entitlements")
+      .select("id, tier")
+      .eq("owner_id", viewer.id)
+      .eq("status", "available")
+      .order("created_at", { ascending: true })
+      .limit(1);
+    if (data && data.length > 0) {
+      available = { id: data[0].id, tier: data[0].tier === "portrait" ? "portrait" : "memorial" };
+    }
+  }
   if (!view) {
     notFound();
   }
@@ -71,6 +85,7 @@ async function Content({ params }: Pick<PageProps<"/izradi/[id]/pregled">, "para
         prices={prices}
         checkoutReady={isCheckoutConfigured()}
         allowFree={!alreadyPublished}
+        available={available}
       />
     </WizardFrame>
   );

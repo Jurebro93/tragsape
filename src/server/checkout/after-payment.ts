@@ -160,3 +160,54 @@ export async function afterOrderFulfilled(result: OrderEffects, orderId: string)
     console.error(`[checkout] obavijesti nakon plaćanja nisu poslane (narudžba ${orderId})`, error);
   }
 }
+
+/**
+ * Šalje poklone kojima je došao zakazani datum, a još nisu poslani. Zove ga zakazani posao.
+ * Poklon se prvo označi kao poslan (uvjetno, dok je `sent_at` prazan), pa tek onda šalje:
+ * dva istodobna pokretanja tako ne mogu poslati isti e-mail dvaput.
+ */
+export async function sendDueGifts(limit = 100): Promise<number> {
+  const admin = createAdminClient();
+  const { data: due, error } = await admin
+    .from("gifts")
+    .select("id, code, buyer_name, recipient_name, recipient_email, message, entitlement_id")
+    .lte("send_at", new Date().toISOString())
+    .is("sent_at", null)
+    .order("send_at", { ascending: true })
+    .limit(limit);
+  if (error) {
+    throw new Error(`gifts: ${error.message}`);
+  }
+  let sent = 0;
+  for (const gift of due ?? []) {
+    const { data: entitlement } = await admin
+      .from("entitlements")
+      .select("tier, status")
+      .eq("id", gift.entitlement_id)
+      .maybeSingle();
+    if (!entitlement || entitlement.status === "revoked") {
+      continue;
+    }
+    const { data: claimed } = await admin
+      .from("gifts")
+      .update({ sent_at: new Date().toISOString() })
+      .eq("id", gift.id)
+      .is("sent_at", null)
+      .select("id");
+    if (!claimed || claimed.length === 0) {
+      continue;
+    }
+    await sendEmail(
+      giftEmail({
+        code: gift.code,
+        tier: entitlement.tier === "portrait" ? "portrait" : "memorial",
+        recipientEmail: gift.recipient_email,
+        recipientName: gift.recipient_name,
+        buyerName: gift.buyer_name,
+        message: gift.message,
+      }),
+    );
+    sent += 1;
+  }
+  return sent;
+}

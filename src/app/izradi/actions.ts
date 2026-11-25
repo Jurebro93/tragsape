@@ -252,3 +252,37 @@ export async function publishFreeAction(id: string, _previous: PublishState): Pr
   updateTag("livada");
   redirect(`/spomen/${slug}?objavljeno=1`);
 }
+
+/**
+ * Primjena već plaćenog ili poklonjenog paketa na ovaj spomen i objava. Baza provjerava da pravo
+ * pripada korisniku i da je spomen njegov i još besplatan.
+ */
+export async function applyEntitlementAndPublishAction(
+  id: string,
+  entitlementId: string,
+  _previous: PublishState,
+): Promise<PublishState> {
+  const viewer = await getViewer();
+  if (!viewer || viewer.isAnonymous) {
+    return { error: wizard.review.email.body };
+  }
+  const supabase = await createSessionClient();
+  const { error: applyError } = await supabase.rpc("apply_entitlement", {
+    p_entitlement_id: entitlementId,
+    p_memorial_id: id,
+  });
+  if (applyError) {
+    return { error: common.errors.generic };
+  }
+  const { data: slug, error } = await supabase.rpc("publish_memorial", { p_id: id });
+  updateTag(`memorial:${id}`);
+  if (error || !slug) {
+    // Paket je primijenjen; objava nije uspjela (npr. nema imena). Korisnik je može ponoviti.
+    const message = error?.message ?? "";
+    return { error: message.includes("name_required") ? wizard.review.missingName : common.errors.generic };
+  }
+  updateTag(`memorial-slug:${slug}`);
+  updateTag("sitemap");
+  updateTag("livada");
+  redirect(`/spomen/${slug}?objavljeno=1`);
+}

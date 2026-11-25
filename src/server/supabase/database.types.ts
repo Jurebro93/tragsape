@@ -749,6 +749,11 @@ isOneToOne: false
 "fulfill_order":
 { Args: { "p_email": string,"p_order_id": string,"p_payment_intent": string }; Returns: Json
                            },
+"gift_preview":
+{ Args: { "p_code": string }; Returns: {
+              "buyer_name": string,"entitlement_id": string,"entitlement_status": string,"message": string,"recipient_name": string,"redeemed": boolean,"redeemed_by_me": boolean,"tier": string
+            }[]
+                           },
 "invite_member":
 { Args: { "p_email": string,"p_memorial_id": string }; Returns: string
                            },

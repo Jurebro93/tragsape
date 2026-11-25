@@ -1,0 +1,81 @@
+/** Poklon: kupnja memorijala za nekog drugog i preuzimanje. */
+export const gift = {
+  title: "Pokloni memorijal",
+  metaDescription:
+    "Kad netko tko ti je drag ostane bez ljubimca, možeš mu pokloniti mjesto za sjećanje. Primatelj ga ispuni kad bude spreman.",
+  intro:
+    "Kad netko tko ti je drag ostane bez ljubimca, riječi često nisu dovoljne. Možeš mu pokloniti mjesto za sjećanje, a on će ga ispuniti kad bude spreman.",
+  how: {
+    title: "Kako to ide",
+    steps: [
+      "Odabereš paket i napišeš osobnu poruku.",
+      "Primatelj dobiva e-mail s tvojom porukom i poveznicom, odmah ili na datum koji odabereš.",
+      "Stranicu izrađuje sam, kad mu bude vrijeme. Poklon ne istječe.",
+    ],
+  },
+  signIn: {
+    title: "Prvo tvoj e-mail",
+    body: "Na njega stiže potvrda kupnje. Poslat ćemo ti kod za prijavu.",
+  },
+  form: {
+    package: "Paket",
+    memorial: "Memorijal",
+    memorialBody: "Do 50 fotografija, priča, karakter i omiljene stvari, privatnost po izboru.",
+    portrait: "Memorijal + Portret",
+    portraitBody: "Sve iz Memorijala, tri AI portreta iz fotografije i spomen-list za ispis.",
+    recipientEmail: "E-mail primatelja",
+    recipientName: "Ime primatelja",
+    buyerName: "Tvoje ime",
+    buyerNameHint: "Tako ćemo te predstaviti u e-mailu.",
+    message: "Osobna poruka",
+    messagePlaceholder: "npr. Mislim na tebe. Kad budeš htio, ovdje možeš sačuvati sjećanja.",
+    sendOn: "Kada poslati?",
+    sendNow: "Odmah nakon plaćanja",
+    sendLater: "Na odabrani datum",
+    sendDate: "Datum slanja",
+    promo: "Kod za popust",
+    waiver:
+      "Slažem se da isporuka digitalnog sadržaja počne odmah i znam da time gubim pravo na jednostrani raskid ugovora.",
+    waiverRequired: "Za nastavak je potrebna ova suglasnost.",
+    submit: "Nastavi na plaćanje",
+    submitting: "Otvaram plaćanje…",
+    oneOff: "Jednokratno, bez pretplate.",
+    notConfigured: "Plaćanje još nije uključeno, pa poklon trenutačno nije moguće kupiti.",
+    invalidEmail: "Provjeri e-mail primatelja.",
+    invalidDate: "Odaberi datum od danas nadalje.",
+  },
+  redeem: {
+    title: "Poklon za tebe",
+    fromBuyer: "{buyer} ti poklanja spomen-stranicu za ljubimca.",
+    fromSomeone: "Netko tko misli na tebe poklanja ti spomen-stranicu za ljubimca.",
+    tiers: {
+      memorial: "Poklon je Memorijal: do 50 fotografija, priča, karakter i omiljene stvari, privatnost po izboru.",
+      portrait:
+        "Poklon je Memorijal + Portret: sve iz Memorijala, tri AI portreta iz fotografije i spomen-list za ispis.",
+    },
+    messageLabel: "Poruka uz poklon",
+    noRush: "Nema roka. Poklon te čeka dok ne budeš spreman.",
+    signIn: {
+      title: "Preuzmi poklon",
+      body: "Upiši svoj e-mail da poklon vežemo uz tvoj račun. Poslat ćemo ti kod.",
+    },
+    accept: "Preuzmi poklon",
+    accepting: "Preuzimam…",
+    accepted: "Poklon je na tvom računu.",
+    chooseTitle: "Za koga je spomen?",
+    createNew: "Izradi novi spomen",
+    applyTo: "Primijeni na ovaj spomen",
+    applying: "Primjenjujem…",
+    applied: "Poklon je već iskorišten za jedan spomen.",
+    openMemorials: "Otvori moje ljubimce",
+    takenByOther: "Ovaj poklon je već preuzet s drugog računa.",
+    notFound: "Ovaj poklon ne postoji ili više ne vrijedi.",
+    error: "Preuzimanje nije uspjelo. Pokušaj ponovno za trenutak.",
+  },
+  available: {
+    title: "Imaš spreman paket",
+    body: "Na tvom računu čeka {tier}. Možeš ga primijeniti na ovaj spomen bez plaćanja.",
+    apply: "Primijeni i objavi",
+    applying: "Objavljujem…",
+  },
+} as const;

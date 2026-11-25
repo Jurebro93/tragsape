@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element -- slike poslužuje vlastita ruta koja provjerava pristup */
+import type { Route } from "next";
 import type { ReactNode } from "react";
 import { BallIcon, CandleIcon, FlowerIcon, PawIcon, PawTrail, PenIcon, TreatIcon } from "@/components/icons";
 import { CandleWidget } from "@/components/memorial/candle-widget";
@@ -14,6 +15,7 @@ import { photoUrl, presentForTier, type GestureKind, type MemorialView } from "@
 import { speciesLabel } from "@/lib/species";
 import { fill } from "@/lib/text";
 import { common } from "@/messages/hr/common";
+import { gesture as gestureMessages } from "@/messages/hr/gesture";
 import { memorial as messages } from "@/messages/hr/memorial";
 
 const gestureIcons: Record<GestureKind, ReactNode> = {
@@ -261,10 +263,10 @@ export function MemorialScreen({
           </section>
         ) : null}
 
-        {gestures.length > 0 ? (
+        {gestures.length > 0 || (interactive && memorial.visibility !== "private") ? (
           <section className="flex flex-col gap-4">
             <SectionHeading>{messages.sections.gestures}</SectionHeading>
-            <ul className="flex flex-col gap-2.5">
+            <ul className="flex flex-col gap-2.5 empty:hidden">
               {gestures.map((gesture, index) => (
                 <li key={gesture.id} className="flex items-start gap-3.5 rounded-3xl bg-white px-4 py-3.5">
                   <span
@@ -281,6 +283,17 @@ export function MemorialScreen({
                 </li>
               ))}
             </ul>
+            {interactive && memorial.visibility !== "private" ? (
+              <ButtonLink
+                href={
+                  `/gesta?m=${memorial.id}${shareKey ? `&k=${encodeURIComponent(shareKey)}` : ""}` as Route
+                }
+                variant="secondary"
+                size="md"
+              >
+                {gestureMessages.open}
+              </ButtonLink>
+            ) : null}
           </section>
         ) : null}
 

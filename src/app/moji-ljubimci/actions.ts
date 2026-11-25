@@ -29,6 +29,13 @@ export async function moderateEntryAction(memorialId: string, entryId: string, s
   await refresh(memorialId);
 }
 
+/** Skrivanje ili vraćanje geste na vlastitom spomenu. Novac se time ne vraća. */
+export async function moderateGestureAction(memorialId: string, gestureId: string, status: "active" | "hidden") {
+  const supabase = await createSessionClient();
+  await supabase.from("gestures").update({ status }).eq("id", gestureId).eq("memorial_id", memorialId);
+  await refresh(memorialId);
+}
+
 export async function setGuestbookModeAction(memorialId: string, _previous: ActionState, formData: FormData): Promise<ActionState> {
   const mode = String(formData.get("mode") ?? "");
   if (mode !== "premoderate" && mode !== "open" && mode !== "off") {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState, useState } from "react";
-import { publishFreeAction } from "@/app/izradi/actions";
+import { applyEntitlementAndPublishAction, publishFreeAction } from "@/app/izradi/actions";
 import { startMemorialCheckoutAction } from "@/app/izradi/checkout-actions";
 import { EmailCodeForm } from "@/components/auth/email-code-form";
 import { Button } from "@/components/ui/button";
@@ -9,6 +9,9 @@ import { Card } from "@/components/ui/card";
 import { Field, Input, Select } from "@/components/ui/field";
 import { cn } from "@/lib/cn";
 import { formatEuro } from "@/lib/format";
+import { fill } from "@/lib/text";
+import { account } from "@/messages/hr/account";
+import { gift } from "@/messages/hr/gift";
 import { wizard } from "@/messages/hr/wizard";
 
 const text = wizard.review;
@@ -25,6 +28,7 @@ export function PublishPanel({
   prices,
   checkoutReady,
   allowFree = true,
+  available = null,
 }: {
   memorialId: string;
   canPublish: boolean;
@@ -32,6 +36,8 @@ export function PublishPanel({
   checkoutReady: boolean;
   /** Nadogradnja već objavljenog besplatnog spomena ne nudi ponovnu besplatnu objavu. */
   allowFree?: boolean;
+  /** Već plaćen ili poklonjen paket koji čeka na računu. */
+  available?: { id: string; tier: "memorial" | "portrait" } | null;
 }) {
   const path = `/izradi/${memorialId}/pregled`;
   const [product, setProduct] = useState<"memorial" | "memorial_portrait">("memorial");
@@ -51,6 +57,10 @@ export function PublishPanel({
         <EmailCodeForm next={path} sendLabel={text.email.send} />
       </Card>
     );
+  }
+
+  if (available) {
+    return <AvailablePackage memorialId={memorialId} available={available} />;
   }
 
   const options = [
@@ -151,5 +161,37 @@ export function PublishPanel({
         </form>
       </Card>
     </div>
+  );
+}
+
+/** Paket koji već čeka na računu (poklon ili ranije plaćen): primjena bez novog plaćanja. */
+function AvailablePackage({
+  memorialId,
+  available,
+}: {
+  memorialId: string;
+  available: { id: string; tier: "memorial" | "portrait" };
+}) {
+  const [state, action, pending] = useActionState(
+    applyEntitlementAndPublishAction.bind(null, memorialId, available.id),
+    { error: null },
+  );
+  return (
+    <Card className="flex flex-col gap-4 bg-mint">
+      <div className="flex flex-col gap-1">
+        <h2 className="text-2xl font-extrabold">{gift.available.title}</h2>
+        <p>{fill(gift.available.body, { tier: account.tier[available.tier] })}</p>
+      </div>
+      <form action={action} className="flex flex-col gap-3">
+        {state.error ? (
+          <p className="text-sm font-medium text-danger" role="alert">
+            {state.error}
+          </p>
+        ) : null}
+        <Button type="submit" disabled={pending}>
+          {pending ? gift.available.applying : gift.available.apply}
+        </Button>
+      </form>
+    </Card>
   );
 }
