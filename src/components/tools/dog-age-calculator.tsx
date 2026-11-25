@@ -98,8 +98,14 @@ export function DogAgeCalculator() {
             legend={t.form.ageLegend}
             years={years}
             months={months}
-            onYears={setYears}
-            onMonths={setMonths}
+            onYears={(value) => {
+              setYears(value);
+              setAgeError(null);
+            }}
+            onMonths={(value) => {
+              setMonths(value);
+              setAgeError(null);
+            }}
             error={ageError}
           />
           <div className="flex flex-col gap-2">

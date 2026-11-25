@@ -61,11 +61,11 @@ Povjesničar umjetnosti Paul Koudounaris, koji je istražio podrijetlo teksta, o
 
 Autorica je Edna Clyne-Rekhy, škotska umjetnica. Tekst je napisala 1959. godine, kad joj je bilo devetnaest, dan nakon što joj je uginuo labrador Major [1][2].
 
-Živjela je tada u Invernessu. Major je, kako je ispričala, bio prvi pas koji je bio samo njezin [2]. Ispisala je list papira s obje strane i na vrh stavila naslov od dvije riječi [1][2]. Taj rukom pisani list čuva i danas [2].
+Živjela je tada u Invernessu. Major je, kako je ispričala, bio prvi pas koji je bio samo njezin [2]. Ispisala je list papira s obje strane i dala mu naslov od dvije riječi [1][2]. Taj rukom pisani list čuva i danas [2].
 
 Tekst nikad nije objavila. Suprug ju je na to nagovarao, ali odgovarala je da je to nešto između nje i Majora. Prijateljima je ipak na pisaćem stroju pretipkala nekoliko kopija, bez svog imena [2].
 
-Njezino autorstvo utvrdio je Koudounaris i opisao ga u članku objavljenom u veljači 2023. Nekoliko dana poslije o tome je izvijestio i National Geographic; autorica je tada imala 82 godine i nije znala koliko se njezin tekst proširio [1][2].
+Njezino autorstvo utvrdio je Koudounaris i opisao ga u članku objavljenom u veljači 2023. Dva tjedna poslije o tome je izvijestio i National Geographic; autorica je tada imala 82 godine i nije znala koliko se njezin tekst proširio [1][2].
 
 ## Kako se proširio bez autora
 
@@ -73,11 +73,11 @@ Kopije su prelazile iz ruke u ruku, a s njima se gubila veza s autoricom. Počet
 
 Prijelomni trenutak bila je veljača 1994. Čitatelj iz Michigana poslao je tekst savjetodavnoj kolumni *Dear Abby*, koju je čitalo oko sto milijuna ljudi. Kolumna ga je objavila i zamolila čitatelje da jave tko je autor. Nitko se nije javio [1][2].
 
-Zatim se javilo mnogo njih. U sljedećih pet godina američki ured za autorska prava zabilježio je petnaest zasebnih zahtjeva pod naslovom „Rainbow Bridge” [2]. Jedna knjiga iz 1994. tvrdila je da tekst potječe od indijanskog šamana [2][3].
+Zatim se javilo mnogo njih. U sljedećih pet godina američki ured za autorska prava zabilježio je petnaest zasebnih zahtjeva pod naslovom „Rainbow Bridge” [2]. Jedna knjiga iz 1994. tvrdila je da tekst potječe od šamana američkih starosjedilaca [2][3].
 
-Koudounaris je sastavio popis od dvadeset pet imena povezanih s tekstom i provjeravao jedno po jedno, dok nije ostalo samo jedno [1]. Na to da je tekst stariji nego što se mislilo uputile su ga i razlike među inačicama: tekst koji dugo putuje mijenja se [1].
+Koudounaris je sastavio popis od oko dvadeset pet imena povezanih s tekstom i provjeravao jedno po jedno, dok nije ostalo samo jedno [1]. Na to da je tekst stariji nego što se mislilo uputile su ga i razlike među inačicama: tekst koji dugo putuje mijenja se [1].
 
-Pod istim je imenom poznata i kasnija pjesma u rimovanim stihovima, drugih autora [3]. Kad netko kaže „Dugin most”, najčešće misli na sliku, a ne na određeni tekst.
+Pod istim je imenom poznata i kasnija pjesma u rimovanim stihovima, drugih autora [3]. Izraz „Dugin most” zato danas označava više sliku nego jedan određeni tekst.
 
 ## Zašto ga ljudi dijele
 
@@ -99,7 +99,7 @@ S djecom je potreban dodatni oprez. Izrazi poput „otišao je na bolje mjesto�
 
 ## Drugi načini da obilježiš gubitak
 
-Obred pomaže, kakav god bio [6]. Ne mora uključivati nikakvo vjerovanje.
+Kod gubitka je obred važan [6]. Ne mora uključivati nikakvo vjerovanje.
 
 - **Mali oproštaj.** Nekoliko riječi, svijeća, ljudi koji su ga poznavali [6][7].
 - **Nešto što raste.** Stablo, grm ili cvijeće posađeno njemu u spomen [6].

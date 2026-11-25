@@ -17,7 +17,7 @@ function LinkRow({ href, label, body, chip }: { href: string; label: string; bod
         <span className="flex flex-wrap items-center gap-2">
           <span className="font-bold">{label}</span>
           {chip ? (
-            <Chip tone="butter" className="px-2.5 py-0.5 text-[13px]">
+            <Chip tone="butter" className="px-2.5! py-0.5! text-[13px]!">
               {chip}
             </Chip>
           ) : null}

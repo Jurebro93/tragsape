@@ -6,6 +6,7 @@ export const owner = {
   back: "Natrag na upravljanje",
   cancel: "Odustani",
   saving: "Spremam…",
+  optional: "(neobavezno)",
   paidNote: {
     letters: "Pisma ljubimcu dolaze s Memorijalom.",
     timeline: "Vremenska crta dolazi s Memorijalom.",
@@ -140,7 +141,6 @@ export const owner = {
     accept: "Prihvati pozivnicu",
     accepting: "Prihvaćam…",
     once: "Pozivnica se prihvaća tek klikom na gumb i vrijedi jednom.",
-    toMemorial: "Otvori spomen",
     errors: {
       already_used: "Ova pozivnica je već iskorištena. Zamoli vlasnika spomena da ti pošalje novu.",
       not_found: "Pozivnica više ne vrijedi. Možda je poslana novija ili je povučena.",
@@ -262,7 +262,8 @@ export const owner = {
     delete: {
       title: "Brisanje računa",
       body: "Brisanjem nestaju svi tvoji spomeni, fotografije, pisma i poruke, kao i pristup spomenima na kojima surađuješ. Ovo se ne može poništiti.",
-      orders: "Narudžbe ostaju sačuvane i nakon brisanja, odvojene od računa, jer ih čuvamo zbog knjigovodstva.",
+      orders:
+        "Narudžbe, zajedno s e-mail adresom kupca, ostaju sačuvane i nakon brisanja jer ih čuvamo zbog knjigovodstva; s računom više nisu povezane.",
       confirmLabel: "Za potvrdu upiši svoju e-mail adresu",
       action: "Trajno obriši račun",
       deleting: "Brišem…",

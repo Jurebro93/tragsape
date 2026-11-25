@@ -14,6 +14,7 @@ import { parseArticleForm, parseCtaBlockForm } from "@/lib/content/validation";
 import {
   allowedIntents,
   editNeedsConfirmation,
+  intentPermitted,
   publishBlocker,
   reviewAfterEdit,
   type ReviewState,
@@ -671,10 +672,23 @@ describe("tijek objave", () => {
 
   it("objava traži odobrenje, a zdravstvenom članku i pregled", () => {
     expect(publishBlocker(state({ status: "approved", ownerApprovedAt: approvedAt }))).toBeNull();
+    // Označen kao odobren, a odobrenja nema: nudi se odobrenje, ne objava.
     expect(publishBlocker(state({ status: "approved" }))).toBe("not_approved");
+    expect(allowedIntents(state({ status: "approved" }))).toEqual(["approve"]);
     const unreviewed = state({ status: "approved", needsVetReview: true, ownerApprovedAt: approvedAt });
     expect(publishBlocker(unreviewed)).toBe("vet_missing");
     expect(allowedIntents(unreviewed)).toEqual([]);
+  });
+
+  it("poslužitelj dopušta korak samo iz pravog stanja, a o samoj objavi odlučuje baza", () => {
+    expect(intentPermitted(state(), "submit_review")).toBe(true);
+    expect(intentPermitted(state(), "publish")).toBe(false);
+    expect(intentPermitted(state({ status: "in_review" }), "publish")).toBe(false);
+    expect(intentPermitted(state({ status: "published", ownerApprovedAt: approvedAt }), "approve")).toBe(false);
+    // Objava se iz stanja „odobreno" uvijek smije pokušati; odbije li je baza, sučelje to javlja.
+    expect(intentPermitted(state({ status: "approved" }), "publish")).toBe(true);
+    expect(intentPermitted(state({ status: "approved" }), "approve")).toBe(true);
+    expect(intentPermitted(state({ status: "approved", ownerApprovedAt: approvedAt }), "approve")).toBe(false);
   });
 
   it("izmjena teksta objavljenog zdravstvenog članka briše pregled i odobrenje i vraća ga na pregled", () => {

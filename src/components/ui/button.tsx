@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ButtonHTMLAttributes, ComponentProps } from "react";
+import { AttributedLink } from "@/components/attributed-link";
 import { cn } from "@/lib/cn";
 
 type Variant = "primary" | "secondary" | "light" | "quiet";
@@ -30,8 +31,20 @@ export function Button({ variant, size, className, type = "button", ...props }: 
   return <button type={type} className={buttonClass(variant, size, className)} {...props} />;
 }
 
-type ButtonLinkProps = ComponentProps<typeof Link> & { variant?: Variant; size?: Size };
+type ButtonLinkProps = ComponentProps<typeof Link> & {
+  variant?: Variant;
+  size?: Size;
+  /** Poveznica sa sobom nosi izvor posjeta iz adrese (članak, alat, UTM). Za pozive na izradu i kupnju. */
+  carry?: boolean;
+};
 
-export function ButtonLink({ variant, size, className, ...props }: ButtonLinkProps) {
+export function ButtonLink({ variant, size, className, carry, ...props }: ButtonLinkProps) {
+  if (carry && typeof props.href === "string") {
+    return (
+      <AttributedLink href={props.href} className={buttonClass(variant, size, className)}>
+        {props.children}
+      </AttributedLink>
+    );
+  }
   return <Link className={buttonClass(variant, size, className)} {...props} />;
 }

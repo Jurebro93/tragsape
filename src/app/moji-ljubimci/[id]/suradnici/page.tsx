@@ -67,7 +67,7 @@ async function Members({ params }: Pick<PageProps<"/moji-ljubimci/[id]/suradnici
                 <li key={member.invited_email} className="flex flex-col gap-2 rounded-2xl border-2 border-line p-4">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <span className="font-bold [overflow-wrap:anywhere]">{member.invited_email}</span>
-                    <Chip tone={member.accepted_at ? "mint" : "butter"} className="px-2.5 py-0.5 text-[13px]">
+                    <Chip tone={member.accepted_at ? "mint" : "butter"} className="px-2.5! py-0.5! text-[13px]!">
                       {member.accepted_at ? t.status.accepted : t.status.pending}
                     </Chip>
                   </div>

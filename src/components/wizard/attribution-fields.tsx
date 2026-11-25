@@ -1,8 +1,7 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
-
-const KEYS = ["iz", "cta", "utm_source", "utm_medium", "utm_campaign"];
+import { ATTRIBUTION_KEYS } from "@/lib/attribution";
 
 function subscribe() {
   return () => undefined;
@@ -21,7 +20,7 @@ export function AttributionFields() {
   const params = new URLSearchParams(search);
   return (
     <>
-      {KEYS.map((key) => {
+      {ATTRIBUTION_KEYS.map((key) => {
         const value = params.get(key);
         return value ? <input key={key} type="hidden" name={key} value={value.slice(0, 120)} /> : null;
       })}

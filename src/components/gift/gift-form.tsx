@@ -3,6 +3,7 @@
 import { useActionState, useState } from "react";
 import { startGiftCheckoutAction } from "@/app/poklon/actions";
 import { Button } from "@/components/ui/button";
+import { AttributionFields } from "@/components/wizard/attribution-fields";
 import { Card } from "@/components/ui/card";
 import { Field, Input, Textarea } from "@/components/ui/field";
 import { cn } from "@/lib/cn";
@@ -31,6 +32,7 @@ export function GiftForm({
   }
   return (
     <form action={action} className="flex flex-col gap-5">
+      <AttributionFields />
       <Card className="flex flex-col gap-3">
         <fieldset className="flex flex-col gap-2.5">
           <legend className="mb-2 text-[15px] font-bold">{text.package}</legend>

@@ -2,6 +2,7 @@
 
 import { updateTag } from "next/cache";
 import { redirect } from "next/navigation";
+import { readAttribution } from "@/lib/attribution";
 import { emailSchema } from "@/lib/validation";
 import { zagrebDay } from "@/lib/time";
 import { gift as messages } from "@/messages/hr/gift";
@@ -46,6 +47,7 @@ export async function startGiftCheckoutAction(_previous: GiftState, formData: Fo
     promoCode: String(formData.get("promo") ?? "").trim() || null,
     waiverAccepted: true,
     cancelPath: "/poklon",
+    attribution: readAttribution(formData),
   });
   if (!result.ok) {
     return { error: result.message };

@@ -71,10 +71,10 @@ export default async function HomePage() {
               </h1>
               <p className="max-w-xl text-lg leading-relaxed sm:text-xl">{t.hero.promise}</p>
               <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-                <ButtonLink href="/izradi" className="w-full sm:w-auto">
+                <ButtonLink href="/izradi" carry className="w-full sm:w-auto">
                   {t.hero.primaryCta}
                 </ButtonLink>
-                <ButtonLink href="/primjer" variant="light" className="w-full sm:w-auto">
+                <ButtonLink href="/primjer" carry variant="light" className="w-full sm:w-auto">
                   {t.hero.secondaryCta}
                 </ButtonLink>
               </div>
@@ -143,7 +143,7 @@ export default async function HomePage() {
                 {memorialPrice ? (
                   <p className="text-lg font-semibold">{fill(t.memorial.price, { price: memorialPrice })}</p>
                 ) : null}
-                <ButtonLink href="/cjenik" variant="quiet">
+                <ButtonLink href="/cjenik" carry variant="quiet">
                   {t.memorial.cta}
                   <ArrowRightIcon size={18} />
                 </ButtonLink>
@@ -184,7 +184,7 @@ export default async function HomePage() {
                   {t.gift.title}
                 </h2>
                 <p className="text-lg leading-relaxed text-plum-soft">{t.gift.body}</p>
-                <ButtonLink href="/poklon" variant="quiet" className="mt-auto">
+                <ButtonLink href="/poklon" carry variant="quiet" className="mt-auto">
                   {t.gift.cta}
                   <ArrowRightIcon size={18} />
                 </ButtonLink>
@@ -225,7 +225,7 @@ export default async function HomePage() {
               {t.closing.title}
             </h2>
             <p className="max-w-md text-lg leading-relaxed">{t.closing.body}</p>
-            <ButtonLink href="/izradi" className="w-full sm:w-auto">
+            <ButtonLink href="/izradi" carry className="w-full sm:w-auto">
               {t.closing.cta}
             </ButtonLink>
           </section>

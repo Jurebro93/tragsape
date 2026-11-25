@@ -10,7 +10,7 @@ import { cn } from "@/lib/cn";
 import { LIMITS } from "@/lib/content/limits";
 import type { ArticleStatus } from "@/lib/content/types";
 import { allowedIntents, vetReviewMissing, type ReviewState, type WorkflowIntent } from "@/lib/content/workflow";
-import { fill } from "@/lib/text";
+import { fill, plural } from "@/lib/text";
 import { content } from "@/messages/hr/content";
 
 /**
@@ -36,6 +36,8 @@ export type WorkflowArticle = {
   vetReviewedAt: string | null;
   ownerApprovedAt: string | null;
   publishedAt: string | null;
+  /** Broj spremljenih izvora. */
+  sourceCount: number;
 };
 
 const statusTone: Record<ArticleStatus, "butter" | "mint" | "teal"> = {
@@ -65,7 +67,10 @@ function publishExplanation(state: ReviewState): string | null {
     case "in_review":
       return vetReviewMissing(state) ? t.why.publishNeedsVet : t.why.publishNeedsOwner;
     case "approved":
-      return vetReviewMissing(state) ? t.why.publishVetOnly : null;
+      if (vetReviewMissing(state)) {
+        return t.why.publishVetOnly;
+      }
+      return state.ownerApprovedAt === null ? t.why.publishNeedsOwner : null;
     case "archived":
       return t.why.publishArchived;
     case "published":
@@ -147,6 +152,15 @@ export function WorkflowPanel({
             }
           />
           <Check
+            label={t.checks.sources}
+            done={article.sourceCount === 0 ? false : null}
+            value={
+              article.sourceCount === 0
+                ? t.checks.sourcesNone
+                : plural(article.sourceCount, t.checks.sourcesCount)
+            }
+          />
+          <Check
             label={t.checks.published}
             done={null}
             value={
@@ -191,7 +205,7 @@ export function WorkflowPanel({
           <form action={action} className="flex flex-col gap-3">
             {intents.includes("submit_review") ? step("submit_review") : null}
 
-            {article.status === "in_review" ? (
+            {article.status === "in_review" || intents.includes("approve") ? (
               <>
                 <Button
                   type="submit"

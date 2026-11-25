@@ -61,8 +61,14 @@ export function CatAgeCalculator() {
             legend={t.form.ageLegend}
             years={years}
             months={months}
-            onYears={setYears}
-            onMonths={setMonths}
+            onYears={(value) => {
+              setYears(value);
+              setError(null);
+            }}
+            onMonths={(value) => {
+              setMonths(value);
+              setError(null);
+            }}
             error={error}
           />
           <Button type="submit" disabled={!hydrated} className="w-full sm:w-auto sm:self-start">

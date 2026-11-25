@@ -2,6 +2,7 @@
 
 import { updateTag } from "next/cache";
 import { redirect } from "next/navigation";
+import { readAttribution } from "@/lib/attribution";
 import { parseDateParts, petBasicsSchema, storyPatchSchema } from "@/lib/validation";
 import { common } from "@/messages/hr/common";
 import { wizard } from "@/messages/hr/wizard";
@@ -102,18 +103,6 @@ export async function startDraftAction(_previous: BasicsState, formData: FormDat
   }
   await supabase.rpc("track_funnel", { p_name: "draft_started", p_memorial_id: id });
   redirect(`/izradi/${id}/prica`);
-}
-
-/** Izvor posjeta (članak, alat, UTM) koji je stigao s poveznicom; sprema se uz nacrt. */
-function readAttribution(formData: FormData): Record<string, string> | null {
-  const result: Record<string, string> = {};
-  for (const key of ["iz", "cta", "utm_source", "utm_medium", "utm_campaign"]) {
-    const value = String(formData.get(key) ?? "").trim().slice(0, 120);
-    if (value !== "") {
-      result[key] = value;
-    }
-  }
-  return Object.keys(result).length > 0 ? result : null;
 }
 
 export async function updateBasicsAction(id: string, _previous: BasicsState, formData: FormData): Promise<BasicsState> {

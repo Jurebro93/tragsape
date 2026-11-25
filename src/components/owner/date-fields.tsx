@@ -1,5 +1,6 @@
 import { Input, Select } from "@/components/ui/field";
 import type { DateParts } from "@/lib/validation";
+import { owner } from "@/messages/hr/owner";
 import { wizard } from "@/messages/hr/wizard";
 
 /**
@@ -28,7 +29,7 @@ export function DateFields({
     <fieldset className="flex flex-col gap-1.5" aria-describedby={hint ? hintId : undefined}>
       <legend className="mb-1.5 text-[15px] font-bold">
         {legend}
-        {optional ? <span className="font-normal text-plum-soft"> (neobavezno)</span> : null}
+        {optional ? <span className="font-normal text-plum-soft"> {owner.optional}</span> : null}
       </legend>
       <div className="grid grid-cols-[4.5rem_1fr_5.5rem] gap-2">
         <Input
@@ -39,6 +40,7 @@ export function DateFields({
           maxLength={2}
           autoComplete="off"
           defaultValue={initial.day}
+          className="px-3!"
         />
         {/* Ključ: React nakon slanja obrasca vraća <select> na vrijednost s kojom je nastao, pa se
             pri promjeni zadane vrijednosti (greška, spremljen datum) polje mora stvoriti iznova. */}
@@ -63,6 +65,7 @@ export function DateFields({
           maxLength={4}
           autoComplete="off"
           defaultValue={initial.year}
+          className="px-3!"
         />
       </div>
       {hint ? (

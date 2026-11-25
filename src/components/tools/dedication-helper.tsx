@@ -72,7 +72,10 @@ export function DedicationHelper() {
               value={name}
               maxLength={DEDICATION_NAME_MAX}
               autoComplete="off"
-              onChange={(event) => setName(event.target.value)}
+              onChange={(event) => {
+                setName(event.target.value);
+                setEmpty(false);
+              }}
             />
           </Field>
           <ChoiceGroup legend={t.form.toneLegend} name="tone" options={toneOptions} value={tone} onChange={setTone} />
@@ -99,7 +102,10 @@ export function DedicationHelper() {
                 maxLength={DEDICATION_PART_MAX}
                 placeholder={t.form.topics[topic].placeholder}
                 autoComplete="off"
-                onChange={(event) => setParts((current) => ({ ...current, [topic]: event.target.value }))}
+                onChange={(event) => {
+                  setParts((current) => ({ ...current, [topic]: event.target.value }));
+                  setEmpty(false);
+                }}
               />
             </Field>
           ))}

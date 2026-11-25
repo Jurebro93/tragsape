@@ -357,7 +357,7 @@ export function MemorialScreen({
           <div className="mx-auto flex w-full max-w-xl flex-col items-center gap-4 px-6 py-10 text-center">
             <PawTrail className="text-butter" />
             <p className="font-display text-[26px] font-extrabold leading-tight">{messages.footer.line}</p>
-            <ButtonLink href="/izradi" variant="light">
+            <ButtonLink href="/izradi" carry variant="light">
               {messages.footer.cta}
             </ButtonLink>
             <p className="text-[13px]">{messages.footer.note}</p>

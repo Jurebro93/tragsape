@@ -62,7 +62,7 @@ function Tier({
       </div>
       <div className="mt-auto flex flex-col gap-3 pt-1">
         <p className="text-[15px] text-plum-soft">{note}</p>
-        <ButtonLink href="/izradi" variant={ctaVariant} className="w-full">
+        <ButtonLink href="/izradi" carry variant={ctaVariant} className="w-full">
           {cta}
         </ButtonLink>
       </div>
@@ -161,7 +161,7 @@ export default async function PricingPage() {
                   {t.gift.title}
                 </h2>
                 <p className="leading-relaxed text-plum-soft">{t.gift.body}</p>
-                <ButtonLink href="/poklon" variant="quiet" className="mt-auto">
+                <ButtonLink href="/poklon" carry variant="quiet" className="mt-auto">
                   {t.gift.cta}
                   <ArrowRightIcon size={18} />
                 </ButtonLink>

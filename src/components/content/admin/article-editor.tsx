@@ -600,7 +600,12 @@ function EditorForm({
       </form>
 
       <aside className="order-1 lg:sticky lg:top-6 lg:order-2">
-        <WorkflowPanel article={article} dates={dates} dirty={dirty} control={workflow} />
+        <WorkflowPanel
+          article={{ ...article, sourceCount: article.sources.length }}
+          dates={dates}
+          dirty={dirty}
+          control={workflow}
+        />
       </aside>
     </div>
   );

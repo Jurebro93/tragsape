@@ -627,6 +627,83 @@ describe("pohrana dokaza o isplati", () => {
   });
 });
 
+describe("pohrana dokaza o isplati: zamjena i brisanje", () => {
+  it("stari dokaz briše samo admin; nakon toga ga na adresi više nema", async () => {
+    const path = `${created.payoutId}/za-brisanje-${run}.pdf`;
+    created.proofPaths.push(path);
+    const bucket = adminUser.client.storage.from("donation-proofs");
+    expect((await bucket.upload(path, pdf(), { contentType: "application/pdf" })).error).toBeNull();
+    const publicUrl = bucket.getPublicUrl(path).data.publicUrl;
+    expect((await fetch(publicUrl)).status).toBe(200);
+
+    // Korisnik bez uloge admina datoteku ne vidi u popisu i ne može je obrisati.
+    expect((await user.client.storage.from("donation-proofs").list(created.payoutId)).data ?? []).toHaveLength(0);
+    expect((await user.client.storage.from("donation-proofs").remove([path])).data ?? []).toHaveLength(0);
+    expect((await fetch(`${publicUrl}?provjera=1`)).status).toBe(200);
+
+    const removed = await bucket.remove([path]);
+    expect(removed.error).toBeNull();
+    expect(removed.data).toHaveLength(1);
+    expect((await fetch(`${publicUrl}?provjera=2`)).status).toBeGreaterThanOrEqual(400);
+  });
+});
+
+describe("admin i nacrti", () => {
+  let draftId = "";
+
+  beforeAll(async () => {
+    draftId = await createDraft(user.client, "Nacrt koji admin ne smije vidjeti");
+    const photo = await service
+      .from("memorial_photos")
+      .insert({ memorial_id: draftId, storage_path: `${draftId}/x`, created_by: user.id })
+      .select("id");
+    expect(must(photo)).toHaveLength(1);
+  });
+
+  afterAll(async () => {
+    await service.from("memorials").delete().eq("id", draftId);
+  });
+
+  it("admin ne vidi tuđi nacrt ni njegove fotografije; vlasnik ih vidi", async () => {
+    expect((await adminUser.client.from("memorials").select("id").eq("id", draftId)).data).toEqual([]);
+    expect((await adminUser.client.from("memorial_photos").select("id").eq("memorial_id", draftId)).data).toEqual([]);
+    expect((await user.client.from("memorials").select("id").eq("id", draftId)).data).toHaveLength(1);
+    expect((await user.client.from("memorial_photos").select("id").eq("memorial_id", draftId)).data).toHaveLength(1);
+  });
+
+  it("admin ne može sakriti ni mijenjati nacrt", async () => {
+    // Skrivanje nacrta ne radi ništa: funkcija dira samo objavljene i skrivene spomene.
+    await adminUser.client.rpc("admin_set_memorial_hidden", { p_id: draftId, p_hidden: true });
+    const renamed = await adminUser.client.from("memorials").update({ name: "Izmijenio admin" }).eq("id", draftId).select("id");
+    expect(renamed.data ?? []).toHaveLength(0);
+    expect(must(await service.from("memorials").select("name, status").eq("id", draftId).single())).toEqual({
+      name: "Nacrt koji admin ne smije vidjeti",
+      status: "draft",
+    });
+  });
+
+  it("objavljeni spomen koji vlasnik vrati u nacrt admin više ne vidi", async () => {
+    const id = await createDraft(buyer.client, "Vraćen u nacrt");
+    try {
+      expect((await buyer.client.rpc("publish_memorial", { p_id: id })).error).toBeNull();
+      expect((await adminUser.client.from("memorials").select("id").eq("id", id)).data).toHaveLength(1);
+      expect((await buyer.client.rpc("unpublish_memorial", { p_id: id })).error).toBeNull();
+      expect((await adminUser.client.from("memorials").select("id").eq("id", id)).data).toEqual([]);
+    } finally {
+      await service.from("memorials").delete().eq("id", id);
+    }
+  });
+
+  it("brojeve spomena dobiva samo admin, i to bez sadržaja", async () => {
+    expect((await user.client.rpc("admin_memorial_counts")).error?.message).toContain("forbidden");
+    expect((await anonymous.rpc("admin_memorial_counts")).error).not.toBeNull();
+    const counts = must(await adminUser.client.rpc("admin_memorial_counts"))[0];
+    expect(Object.keys(counts).sort()).toEqual(["drafts", "hidden", "published_free", "published_paid"]);
+    expect(Number(counts.drafts)).toBeGreaterThanOrEqual(1);
+    expect(Number(counts.published_free)).toBeGreaterThanOrEqual(1);
+  });
+});
+
 describe("obrasci admina", () => {
   const form = (fields: Record<string, string | string[]>) => {
     const data = new FormData();

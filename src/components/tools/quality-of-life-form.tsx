@@ -108,10 +108,49 @@ export function QualityOfLifeForm() {
             />
           ))}
 
+          <section
+            aria-labelledby="qol-result-title"
+            className="flex flex-col gap-4 rounded-3xl bg-butter p-5 sm:p-6"
+          >
+            <h2 id="qol-result-title" className="font-display text-2xl font-extrabold leading-tight">
+              {t.result.title}
+            </h2>
+            <div aria-live="polite" className="flex flex-col gap-3">
+              {summary.complete ? (
+                <>
+                  <p className="font-display text-3xl font-extrabold leading-tight">
+                    {fill(t.result.total, { total: summary.total ?? 0, max: QOL_MAX_TOTAL })}
+                  </p>
+                  <p className="leading-relaxed">{summary.aboveReference ? t.result.above : t.result.notAbove}</p>
+                  {lowestList ? <p className="leading-relaxed">{fill(t.result.lowest, { list: lowestList })}</p> : null}
+                </>
+              ) : (
+                <p className="leading-relaxed">{fill(t.result.incomplete, { count: summary.answered })}</p>
+              )}
+            </div>
+            {summary.complete ? (
+              <>
+                <p className="leading-relaxed">{t.result.beyondTotal}</p>
+                <p className="rounded-3xl bg-white px-5 py-4 font-semibold leading-relaxed">{t.result.notDecision}</p>
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-display text-lg font-extrabold">{t.result.tipsTitle}</h3>
+                  <ul className="flex list-disc flex-col gap-1.5 pl-5 text-[15px] leading-relaxed">
+                    {t.result.tips.map((tip) => (
+                      <li key={tip}>{tip}</li>
+                    ))}
+                  </ul>
+                </div>
+              </>
+            ) : null}
+          </section>
+
           <Card className="flex flex-col gap-4 sm:p-6">
-            <h2 className="font-display text-xl font-extrabold leading-snug">{t.extras.title}</h2>
+            <div className="flex flex-col gap-1">
+              <h2 className="font-display text-xl font-extrabold leading-snug">{t.extras.title}</h2>
+              <p className="text-[15px] text-plum-soft">{t.extras.intro}</p>
+            </div>
             <div className="grid gap-4 sm:grid-cols-2">
-              <Field label={t.extras.petName} htmlFor="qol-pet-name">
+              <Field label={t.extras.petName} htmlFor="qol-pet-name" optional>
                 <Input
                   id="qol-pet-name"
                   value={petName}
@@ -120,11 +159,11 @@ export function QualityOfLifeForm() {
                   onChange={(event) => setPetName(event.target.value)}
                 />
               </Field>
-              <Field label={t.extras.date} htmlFor="qol-date">
+              <Field label={t.extras.date} htmlFor="qol-date" optional>
                 <Input id="qol-date" type="date" value={date} onChange={(event) => setDate(event.target.value)} />
               </Field>
             </div>
-            <Field label={t.extras.notes} htmlFor="qol-notes" hint={t.extras.notesHint}>
+            <Field label={t.extras.notes} htmlFor="qol-notes" hint={t.extras.notesHint} optional>
               <Textarea
                 id="qol-notes"
                 value={notes}
@@ -132,50 +171,20 @@ export function QualityOfLifeForm() {
                 onChange={(event) => setNotes(event.target.value)}
               />
             </Field>
-          </Card>
-        </form>
-
-        <section aria-labelledby="qol-result-title" className="flex flex-col gap-4 rounded-3xl bg-butter p-5 sm:p-6">
-          <h2 id="qol-result-title" className="font-display text-2xl font-extrabold leading-tight">
-            {t.result.title}
-          </h2>
-          <div aria-live="polite" className="flex flex-col gap-3">
-            {summary.complete ? (
-              <>
-                <p className="font-display text-3xl font-extrabold leading-tight">
-                  {fill(t.result.total, { total: summary.total ?? 0, max: QOL_MAX_TOTAL })}
-                </p>
-                <p className="leading-relaxed">{summary.aboveReference ? t.result.above : t.result.notAbove}</p>
-                {lowestList ? <p className="leading-relaxed">{fill(t.result.lowest, { list: lowestList })}</p> : null}
-              </>
-            ) : (
-              <p className="leading-relaxed">{fill(t.result.incomplete, { count: summary.answered })}</p>
-            )}
-          </div>
-          {summary.complete ? (
-            <>
-              <p className="leading-relaxed">{t.result.beyondTotal}</p>
-              <p className="rounded-3xl bg-white px-5 py-4 font-semibold leading-relaxed">{t.result.notDecision}</p>
-              <div className="flex flex-col gap-2">
-                <h3 className="font-display text-lg font-extrabold">{t.result.tipsTitle}</h3>
-                <ul className="flex list-disc flex-col gap-1.5 pl-5 text-[15px] leading-relaxed">
-                  {t.result.tips.map((tip) => (
-                    <li key={tip}>{tip}</li>
-                  ))}
-                </ul>
-              </div>
-            </>
-          ) : null}
-          <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center">
-            <Button onClick={() => window.print()} disabled={!hydrated || !summary.complete} className="w-full sm:w-auto">
+            <Button
+              onClick={() => window.print()}
+              disabled={!hydrated || !summary.complete}
+              className="w-full sm:w-auto sm:self-start"
+            >
               {t.print}
             </Button>
-            <Button variant="quiet" onClick={clear} disabled={!hydrated}>
-              {t.clear}
-            </Button>
-          </div>
-          <p className="text-sm text-plum-soft">{summary.complete ? t.printHint : t.printNeedsAll}</p>
-        </section>
+            <p className="text-sm text-plum-soft">{summary.complete ? t.printHint : t.printNeedsAll}</p>
+          </Card>
+
+          <Button variant="quiet" onClick={clear} disabled={!hydrated} className="self-start">
+            {t.clear}
+          </Button>
+        </form>
       </div>
 
       {/* Samo za ispis: sažetak koji se nosi veterinaru. */}

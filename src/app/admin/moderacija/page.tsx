@@ -230,10 +230,8 @@ async function ModerationData({ searchParams }: { searchParams: SearchParams }) 
                     confirm={t.search.confirmHide}
                     variant="primary"
                   />
-                ) : memorial.status === "hidden" ? (
-                  <ActionButton action={setMemorialHiddenAction.bind(null, memorial.id, false)} label={t.search.restore} />
                 ) : (
-                  <p className="text-[15px] text-plum-soft">{t.search.draftNote}</p>
+                  <ActionButton action={setMemorialHiddenAction.bind(null, memorial.id, false)} label={t.search.restore} />
                 )}
               </li>
             ))}

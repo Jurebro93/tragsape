@@ -63,7 +63,7 @@ async function Letters({ params }: Pick<PageProps<"/moji-ljubimci/[id]/pisma">, 
               <Card className="flex flex-col gap-2.5">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <span className="text-sm font-bold text-terracotta-deep">{formatPetDate(letter.written_on)}</span>
-                  <Chip tone={letter.visibility === "public" ? "mint" : "butter"} className="px-2.5 py-0.5 text-[13px]">
+                  <Chip tone={letter.visibility === "public" ? "mint" : "butter"} className="px-2.5! py-0.5! text-[13px]!">
                     {letter.visibility === "public" ? t.chip.public : t.chip.private}
                   </Chip>
                 </div>

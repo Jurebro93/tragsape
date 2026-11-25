@@ -3,6 +3,7 @@
 import { createHmac } from "node:crypto";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { readAttribution } from "@/lib/attribution";
 import { zagrebDay } from "@/lib/time";
 import { gesture as messages } from "@/messages/hr/gesture";
 import { getViewer } from "@/server/auth";
@@ -66,6 +67,7 @@ export async function startGestureCheckoutAction(
     items,
     waiverAccepted: true,
     cancelPath,
+    attribution: readAttribution(formData),
   });
   if (!result.ok) {
     return { error: result.message };

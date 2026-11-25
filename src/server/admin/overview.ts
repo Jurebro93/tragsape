@@ -22,7 +22,7 @@ export async function loadOverview(): Promise<Overview> {
   const now = Date.now();
   const nowIso = new Date(now).toISOString();
 
-  const [paidOrders, drafts, publishedFree, publishedPaid, activeGestures, totals, openReports, stripeErrors] =
+  const [paidOrders, memorialCounts, activeGestures, totals, openReports, stripeErrors] =
     await Promise.all([
       // Zbroj se računa ovdje jer PostgREST nema uključene agregate; čita se samo ono što treba.
       fetchAllRows(
@@ -36,17 +36,8 @@ export async function loadOverview(): Promise<Overview> {
             .range(from, to),
         "plaćene narudžbe",
       ),
-      supabase.from("memorials").select("id", { count: "exact", head: true }).eq("status", "draft"),
-      supabase
-        .from("memorials")
-        .select("id", { count: "exact", head: true })
-        .eq("status", "published")
-        .eq("tier", "free"),
-      supabase
-        .from("memorials")
-        .select("id", { count: "exact", head: true })
-        .eq("status", "published")
-        .neq("tier", "free"),
+      // Admin ne čita nacrte, pa brojeve vraća funkcija u bazi (samo zbrojevi, bez sadržaja).
+      supabase.rpc("admin_memorial_counts"),
       supabase
         .from("gestures")
         .select("id", { count: "exact", head: true })
@@ -78,13 +69,14 @@ export async function loadOverview(): Promise<Overview> {
   }
 
   const donationTotals = must(totals, "zbroj donacija")[0];
+  const counts = must(memorialCounts, "broj spomena")[0];
 
   return {
     sales,
     memorials: {
-      drafts: mustCount(drafts, "nacrti"),
-      publishedFree: mustCount(publishedFree, "objavljeni besplatni"),
-      publishedPaid: mustCount(publishedPaid, "objavljeni plaćeni"),
+      drafts: Number(counts?.drafts ?? 0),
+      publishedFree: Number(counts?.published_free ?? 0),
+      publishedPaid: Number(counts?.published_paid ?? 0),
     },
     activeGestures: mustCount(activeGestures, "aktivne geste"),
     donations: {

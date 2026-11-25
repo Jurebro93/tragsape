@@ -417,7 +417,8 @@ export const tools = {
     scoreLabel: "{label}: ocjena {score}",
     notRated: "nije ocijenjeno",
     extras: {
-      title: "Za ispis (neobavezno)",
+      title: "Ispis za veterinara",
+      intro: "Ime, datum i bilješke nisu obavezni i služe samo za ispis.",
       petName: "Ime ljubimca",
       date: "Datum",
       notes: "Bilješke za veterinara",
@@ -574,6 +575,7 @@ export const tools = {
         "Pravilnik NN 129/2022 (čl. 43. st. 3.) uređuje iznimku za kućne ljubimce: vlasnik ih smije zakopati uz uvjete navedene u popisu. Isti pravilnik groblje kućnih ljubimaca određuje kao mjesto za zakapanje uginulih ili usmrćenih kućnih ljubimaca, kojim upravlja registrirani subjekt.",
         "Ako je životinja uginula na javnoj površini, primjerice na cesti, sakupljanje i zbrinjavanje dužni su osigurati općina ili grad (Zakon o veterinarstvu, čl. 102.).",
         "Vlasnik označenog psa, mačke ili pitome vretice dužan je uginuće prijaviti u roku od sedam dana (Zakon o zdravlju životinja, čl. 66. st. 6.).",
+        "Ovaj sažetak govori o kućnim ljubimcima. Konje i druge kopitare pravilnik kod groblja kućnih ljubimaca izričito izuzima, pa za njih pitaj veterinara.",
       ],
       disclaimer:
         "Ovo je sažetak propisa kakvi su bili {date}, a ne pravni savjet. Propisi se mijenjaju; mjerodavan je tekst objavljen u Narodnim novinama.",

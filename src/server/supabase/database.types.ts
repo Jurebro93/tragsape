@@ -703,6 +703,11 @@ isOneToOne: false
               "drafts": number,"paid_orders": number,"published": number,"revenue_cents": number,"source": string
             }[]
                            },
+"admin_memorial_counts":
+{ Args: Record<PropertyKey, never>; Returns: {
+              "drafts": number,"hidden": number,"published_free": number,"published_paid": number
+            }[]
+                           },
 "admin_set_memorial_hidden":
 { Args: { "p_hidden": boolean,"p_id": string }; Returns: undefined
                            },

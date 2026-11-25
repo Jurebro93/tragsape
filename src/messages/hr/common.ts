@@ -14,6 +14,8 @@ export const common = {
     meadow: "Livada sjećanja",
     pricing: "Cjenik",
     example: "Primjer",
+    guide: "Vodič",
+    tools: "Alati",
     home: "Početna",
   },
   footer: {

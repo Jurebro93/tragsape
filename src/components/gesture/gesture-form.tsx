@@ -4,6 +4,7 @@ import { useActionState, useState, type ReactNode } from "react";
 import { startGestureCheckoutAction } from "@/app/gesta/actions";
 import { BallIcon, CandleIcon, FlowerIcon, PawIcon, TrashIcon, TreatIcon } from "@/components/icons";
 import { Button } from "@/components/ui/button";
+import { AttributionFields } from "@/components/wizard/attribution-fields";
 import { Card } from "@/components/ui/card";
 import { Field, Input } from "@/components/ui/field";
 import { cn } from "@/lib/cn";
@@ -51,6 +52,7 @@ export function GestureForm({
 
   return (
     <form action={action} className="flex flex-col gap-5">
+      <AttributionFields />
       {items.map((item, index) => (
         <Card key={item.id} className="flex flex-col gap-4">
           <div className="flex items-center justify-between gap-3">

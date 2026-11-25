@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { parseVideoUrl } from "@/components/owner/video-url";
 import { isSupportedVideoUrl } from "@/lib/validation";
 import { videoEmbed } from "@/messages/hr/owner";
@@ -20,6 +20,10 @@ function PlayIcon() {
  */
 export function VideoEmbed({ url, title }: { url: string; title?: string }) {
   const [loaded, setLoaded] = useState(false);
+  // Gumb nestaje kad se okvir učita; fokus prelazi na okvir da korisnik tipkovnice ne ostane bez njega.
+  const focusFrame = useCallback((frame: HTMLIFrameElement | null) => {
+    frame?.focus();
+  }, []);
   const video = isSupportedVideoUrl(url) ? parseVideoUrl(url) : null;
   if (!video) {
     return null;
@@ -30,10 +34,13 @@ export function VideoEmbed({ url, title }: { url: string; title?: string }) {
       <div className="relative aspect-video w-full overflow-hidden rounded-3xl bg-plum">
         {loaded ? (
           <iframe
+            ref={focusFrame}
             src={video.embedUrl}
             title={label}
             loading="lazy"
-            allow="encrypted-media; picture-in-picture; fullscreen"
+            // Samo ono što reprodukcija treba; cijeli zaslon ide kroz `allowFullScreen`, kao u
+            // kodu za ugradnju koji daju sami pružatelji.
+            allow="encrypted-media; picture-in-picture"
             allowFullScreen
             referrerPolicy="strict-origin-when-cross-origin"
             className="absolute inset-0 size-full border-0"

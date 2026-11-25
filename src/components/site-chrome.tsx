@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AttributedLink } from "@/components/attributed-link";
 import { PawIcon } from "@/components/icons";
 import { common } from "@/messages/hr/common";
 import { cn } from "@/lib/cn";
@@ -27,10 +28,10 @@ export function SiteHeader({ tone = "vanilla" }: { tone?: "vanilla" | "butter" }
           <Link href="/moji-ljubimci" className="rounded-full px-2.5 py-3 text-plum no-underline hover:bg-white/70">
             {common.nav.myPets}
           </Link>
-          <Link href="/izradi" className="rounded-full bg-plum px-4 py-3 text-white no-underline hover:bg-black">
+          <AttributedLink href="/izradi" className="rounded-full bg-plum px-4 py-3 text-white no-underline hover:bg-black">
             <span className="sm:hidden">{common.nav.createShort}</span>
             <span className="hidden sm:inline">{common.nav.create}</span>
-          </Link>
+          </AttributedLink>
         </nav>
       </div>
     </header>
@@ -41,6 +42,8 @@ export function SiteFooter() {
   const links = [
     { href: "/livada", label: common.nav.meadow },
     { href: "/primjer", label: common.nav.example },
+    { href: "/vodic", label: common.nav.guide },
+    { href: "/alati", label: common.nav.tools },
     { href: "/cjenik", label: common.nav.pricing },
     { href: "/donacije", label: common.footer.donations },
     { href: "/uvjeti", label: common.footer.terms },

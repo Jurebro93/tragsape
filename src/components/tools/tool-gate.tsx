@@ -23,7 +23,6 @@ async function AdminOnly({ children }: { children: ReactNode }) {
   return (
     <>
       <p
-        role="status"
         data-print="hide"
         className="w-full bg-plum px-5 py-2.5 text-center text-[15px] font-bold text-white"
       >

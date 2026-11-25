@@ -58,9 +58,17 @@ function toMemorial(row: MemorialRow): ModerationMemorial {
   };
 }
 
+/** Stanja u kojima spomen ima što skriti ili vratiti. Nacrti nisu adminova stvar i ne traže se. */
+const SEARCHABLE_STATUSES = ["published", "hidden"];
+
 async function searchMemorials(supabase: SessionClient, slug: string): Promise<ModerationMemorial[]> {
   const exact = must(
-    await supabase.from("memorials").select(MEMORIAL_COLUMNS).eq("slug", slug).limit(1),
+    await supabase
+      .from("memorials")
+      .select(MEMORIAL_COLUMNS)
+      .eq("slug", slug)
+      .in("status", SEARCHABLE_STATUSES)
+      .limit(1),
     "pretraga spomena",
   );
   if (exact.length > 0) {
@@ -72,6 +80,7 @@ async function searchMemorials(supabase: SessionClient, slug: string): Promise<M
       .from("memorials")
       .select(MEMORIAL_COLUMNS)
       .like("slug", `${slug}%`)
+      .in("status", SEARCHABLE_STATUSES)
       .order("slug")
       .limit(SEARCH_LIMIT),
     "pretraga spomena",
