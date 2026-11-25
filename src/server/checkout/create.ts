@@ -490,6 +490,12 @@ export async function createCheckout(input: {
       throw new Error(`create_order: ${orderError?.message ?? "bez rezultata"}`);
     }
 
+    // Lijevak: početak naplate. Greška ovdje ne smije zaustaviti kupnju.
+    await admin.rpc("track_checkout_started", { p_order_id: orderId }).then(
+      () => undefined,
+      () => undefined,
+    );
+
     const successUrl = `${env.siteUrl}${SUCCESS_PATH}?n=${orderId}`;
 
     if (quote.totalCents === 0) {

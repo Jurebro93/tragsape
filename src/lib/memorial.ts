@@ -144,12 +144,30 @@ export type Gesture = {
   expiresAt: string;
 };
 
+export type TimelineEvent = {
+  id: string;
+  date: string | null;
+  precision: DatePrecision;
+  title: string;
+  body: string | null;
+};
+
+/** Javno pismo ljubimcu. Privatna pisma nikad ne ulaze u prikaz stranice. */
+export type Letter = {
+  id: string;
+  writtenOn: string;
+  title: string | null;
+  body: string;
+};
+
 /** Sve što stranica memorijala treba za prikaz jednom posjetitelju. */
 export type MemorialView = {
   memorial: Memorial;
   photos: Photo[];
   guestbook: GuestbookEntry[];
   gestures: Gesture[];
+  timeline: TimelineEvent[];
+  letters: Letter[];
   /** Ključ za „samo s linkom"; dodaje se adresama slika i javnim unosima. */
   shareKey: string | null;
 };
@@ -179,6 +197,8 @@ export function presentForTier(view: MemorialView): MemorialView {
   return {
     ...view,
     photos: cover ? [cover] : [],
+    timeline: [],
+    letters: [],
     memorial: {
       ...memorial,
       storyMd: null,

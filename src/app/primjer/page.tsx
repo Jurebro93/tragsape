@@ -46,6 +46,12 @@ const example: MemorialView = {
     updatedAt: "2026-10-04T10:00:00Z",
   },
   photos: [],
+  timeline: [
+    { id: "t1", date: "2012-05-12", precision: "month", title: "Došao u obitelj", body: "Stao je u kutiju za cipele." },
+    { id: "t2", date: "2015-07-01", precision: "year", title: "Prvo ljeto na moru", body: null },
+    { id: "t3", date: "2026-09-28", precision: "day", title: "Posljednja šetnja livadom", body: null },
+  ],
+  letters: [],
   gestures: [
     { id: "g1", kind: "svijeca", displayName: "Ana i Luka", message: "Najbolji susjed u ulici.", expiresAt: "2027-01-01T00:00:00Z" },
     { id: "g2", kind: "cvijet", displayName: "baka Marija", message: "Falit ćeš mi na klupi ispred kuće.", expiresAt: "2027-01-01T00:00:00Z" },

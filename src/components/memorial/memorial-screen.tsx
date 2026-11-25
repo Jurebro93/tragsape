@@ -9,7 +9,7 @@ import { ShareButton } from "@/components/memorial/share-button";
 import { Logo } from "@/components/site-chrome";
 import { ButtonLink, buttonClass } from "@/components/ui/button";
 import { Chip, Eyebrow } from "@/components/ui/card";
-import { formatDateTime, formatLifespan, formatYears, yearsBetween } from "@/lib/format";
+import { formatDateTime, formatLifespan, formatPetDate, formatYears, yearsBetween } from "@/lib/format";
 import { photoUrl, presentForTier, type GestureKind, type MemorialView } from "@/lib/memorial";
 import { speciesLabel } from "@/lib/species";
 import { fill } from "@/lib/text";
@@ -53,7 +53,7 @@ export function MemorialScreen({
   illustration?: ReactNode;
 }) {
   const view = presentForTier(rawView);
-  const { memorial, photos, guestbook, gestures, shareKey } = view;
+  const { memorial, photos, guestbook, gestures, timeline, letters, shareKey } = view;
   const interactive = mode === "public";
   const cover = photos.find((photo) => photo.id === memorial.coverPhotoId) ?? photos[0] ?? null;
   const gallery = photos.filter((photo) => photo.id !== cover?.id);
@@ -211,6 +211,50 @@ export function MemorialScreen({
                       {messages.aiLabel}
                     </span>
                   ) : null}
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
+        {timeline.length > 0 ? (
+          <section className="flex flex-col gap-4">
+            <SectionHeading>{messages.sections.timeline}</SectionHeading>
+            <ol className="flex flex-col">
+              {timeline.map((event, index) => (
+                <li key={event.id} className="flex gap-4">
+                  <span className="flex flex-col items-center" aria-hidden="true">
+                    <span className="mt-1.5 size-3.5 shrink-0 rounded-full bg-sun" />
+                    {index < timeline.length - 1 ? <span className="w-0.5 flex-1 bg-line" /> : null}
+                  </span>
+                  <span className="flex flex-col gap-0.5 pb-5">
+                    {event.date ? (
+                      <span className="text-sm font-bold text-terracotta-deep">
+                        {formatPetDate(event.date, event.precision)}
+                      </span>
+                    ) : null}
+                    <span className="font-bold [overflow-wrap:anywhere]">{event.title}</span>
+                    {event.body ? (
+                      <span className="whitespace-pre-line text-[15px] text-plum/90">{event.body}</span>
+                    ) : null}
+                  </span>
+                </li>
+              ))}
+            </ol>
+          </section>
+        ) : null}
+
+        {letters.length > 0 ? (
+          <section className="flex flex-col gap-4">
+            <SectionHeading>{messages.sections.letters}</SectionHeading>
+            <ul className="flex flex-col gap-2.5">
+              {letters.map((letter) => (
+                <li key={letter.id} className="flex flex-col gap-2 rounded-3xl bg-white p-5">
+                  <span className="text-sm font-bold text-terracotta-deep">{formatPetDate(letter.writtenOn)}</span>
+                  {letter.title ? (
+                    <h3 className="text-xl font-extrabold [overflow-wrap:anywhere]">{letter.title}</h3>
+                  ) : null}
+                  <p className="whitespace-pre-line leading-relaxed [overflow-wrap:anywhere]">{letter.body}</p>
                 </li>
               ))}
             </ul>

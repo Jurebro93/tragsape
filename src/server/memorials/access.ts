@@ -8,10 +8,12 @@ import {
   type Gesture,
   type GestureKind,
   type GuestbookEntry,
+  type Letter,
   type Memorial,
   type MemorialRow,
   type MemorialView,
   type Photo,
+  type TimelineEvent,
 } from "@/lib/memorial";
 import { getViewer } from "@/server/auth";
 import { createAnonClient } from "@/server/supabase/anon";
@@ -59,27 +61,42 @@ export async function loadPhotos(client: Client, memorialId: string): Promise<Ph
   return (data ?? []).map(toPhoto);
 }
 
-async function loadView(client: Client, row: MemorialRow, shareKey: string | null): Promise<MemorialView> {
-  const [photos, guestbook, gestures] = await Promise.all([
-    loadPhotos(client, row.id),
+async function loadView(client: Client, memorial: Memorial, shareKey: string | null): Promise<MemorialView> {
+  const [photos, timeline, letters, guestbook, gestures] = await Promise.all([
+    loadPhotos(client, memorial.id),
+    client
+      .from("timeline_events")
+      .select("id, event_date, date_precision, title, body, sort_order")
+      .eq("memorial_id", memorial.id)
+      .order("event_date", { ascending: true, nullsFirst: false })
+      .order("sort_order", { ascending: true })
+      .limit(100),
+    // Samo javna pisma: privatna vidi isključivo autor, na stranici za upravljanje.
+    client
+      .from("letters")
+      .select("id, written_on, title, body")
+      .eq("memorial_id", memorial.id)
+      .eq("visibility", "public")
+      .order("written_on", { ascending: false })
+      .limit(50),
     client
       .from("guestbook_entries")
       .select("id, author_name, body, status, created_at")
-      .eq("memorial_id", row.id)
+      .eq("memorial_id", memorial.id)
       .eq("status", "approved")
       .order("created_at", { ascending: false })
       .limit(100),
     client
       .from("gestures")
       .select("id, kind, display_name, message, expires_at")
-      .eq("memorial_id", row.id)
+      .eq("memorial_id", memorial.id)
       .eq("status", "active")
       .gt("expires_at", new Date().toISOString())
       .order("created_at", { ascending: false })
       .limit(60),
   ]);
   return {
-    memorial: toMemorial(row),
+    memorial,
     photos,
     guestbook: (guestbook.data ?? []).map(
       (entry): GuestbookEntry => ({
@@ -98,6 +115,18 @@ async function loadView(client: Client, row: MemorialRow, shareKey: string | nul
         message: gesture.message,
         expiresAt: gesture.expires_at,
       }),
+    ),
+    timeline: (timeline.data ?? []).map(
+      (event): TimelineEvent => ({
+        id: event.id,
+        date: event.event_date,
+        precision: event.date_precision as TimelineEvent["precision"],
+        title: event.title,
+        body: event.body,
+      }),
+    ),
+    letters: (letters.data ?? []).map(
+      (letter): Letter => ({ id: letter.id, writtenOn: letter.written_on, title: letter.title, body: letter.body }),
     ),
     shareKey,
   };
@@ -120,7 +149,7 @@ export async function getPublicMemorialBySlug(slug: string): Promise<MemorialVie
     return null;
   }
   cacheTag(`memorial:${data.id}`);
-  return loadView(client, data as MemorialRow, null);
+  return loadView(client, toMemorial(data as MemorialRow), null);
 }
 
 /** Memorijal „samo s linkom": RLS ga vraća jedino uz ispravan ključ u zaglavlju. */
@@ -140,7 +169,7 @@ export async function getUnlistedMemorialByKey(shareKey: string): Promise<Memori
   if (!data) {
     return null;
   }
-  return loadView(client, data as MemorialRow, shareKey);
+  return loadView(client, toMemorial(data as MemorialRow), shareKey);
 }
 
 /**
@@ -157,7 +186,7 @@ export async function getMemberMemorialBySlug(slug: string): Promise<MemorialVie
   if (!data) {
     return null;
   }
-  return loadView(client, data as MemorialRow, null);
+  return loadView(client, toMemorial(data as MemorialRow), null);
 }
 
 export type EditableMemorial = { memorial: Memorial; photos: Photo[]; isOwner: boolean };
@@ -193,7 +222,10 @@ export async function getPreviewView(id: string): Promise<MemorialView | null> {
   if (!editable) {
     return null;
   }
-  return { memorial: editable.memorial, photos: editable.photos, guestbook: [], gestures: [], shareKey: null };
+  const client = await createSessionClient();
+  const view = await loadView(client, editable.memorial, null);
+  // Pregled ne prikazuje poruke ni geste: one nastaju tek nakon objave.
+  return { ...view, guestbook: [], gestures: [] };
 }
 
 /** Svi memorijali trenutnog korisnika, najnoviji prvi. */

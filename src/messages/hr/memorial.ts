@@ -19,6 +19,8 @@ export const memorial = {
     favorites: "Omiljeno",
     story: "Priča",
     photos: "Fotografije",
+    timeline: "Vremenska crta",
+    letters: "Pisma",
     gestures: "Geste",
     guestbook: "Knjiga sjećanja",
   },

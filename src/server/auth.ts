@@ -1,6 +1,6 @@
 import "server-only";
 import { cache } from "react";
-import { redirect } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { createSessionClient } from "@/server/supabase/session";
 
 export type Viewer = {
@@ -30,6 +30,20 @@ export async function requireMember(nextPath: string): Promise<Viewer> {
   const viewer = await getViewer();
   if (!viewer || viewer.isAnonymous) {
     redirect(`/prijava?dalje=${encodeURIComponent(nextPath)}`);
+  }
+  return viewer;
+}
+
+/**
+ * Traži admina. Ostalima stranica ne postoji (404), da se ne otkriva ni da admin postoji.
+ * Svaka admin stranica i svaka admin akcija zove ovo sama; RLS provjerava isto u bazi.
+ */
+export async function requireAdmin(nextPath = "/admin"): Promise<Viewer> {
+  const viewer = await requireMember(nextPath);
+  const supabase = await createSessionClient();
+  const { data } = await supabase.rpc("is_admin");
+  if (data !== true) {
+    notFound();
   }
   return viewer;
 }

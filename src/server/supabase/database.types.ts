@@ -23,7 +23,67 @@ export type Database = {
           }
         },"public": {
           Tables: {
-            "candles": {
+            "article_cta": {
+                  Row: {
+                    "article_id": string,"cta_key": string,"slot": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "article_id": string,"cta_key": string,"slot": string
+                  }
+                  Update: {
+                    "article_id"?: string,"cta_key"?: string,"slot"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "article_cta_article_id_fkey"
+      columns: ["article_id"]
+isOneToOne: false
+      referencedRelation: "articles"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "article_cta_cta_key_fkey"
+      columns: ["cta_key"]
+isOneToOne: false
+      referencedRelation: "cta_blocks"
+      referencedColumns: ["key"]
+    }
+                  ]
+                },"article_sources": {
+                  Row: {
+                    "accessed_on": string,"article_id": string,"claim": string | null,"id": string,"position": number,"publisher": string | null,"title": string,"url": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "accessed_on": string,"article_id": string,"claim"?: string | null,"id"?: string,"position"?: number,"publisher"?: string | null,"title": string,"url": string
+                  }
+                  Update: {
+                    "accessed_on"?: string,"article_id"?: string,"claim"?: string | null,"id"?: string,"position"?: number,"publisher"?: string | null,"title"?: string,"url"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "article_sources_article_id_fkey"
+      columns: ["article_id"]
+isOneToOne: false
+      referencedRelation: "articles"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"articles": {
+                  Row: {
+                    "body_md": string,"cluster": string,"created_at": string,"excerpt": string | null,"id": string,"locale": string,"needs_vet_review": boolean,"owner_approved_at": string | null,"published_at": string | null,"seo_description": string | null,"seo_title": string | null,"slug": string,"status": string,"title": string,"updated_at": string,"vet_reviewed_at": string | null,"vet_reviewed_by": string | null
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "body_md"?: string,"cluster": string,"created_at"?: string,"excerpt"?: string | null,"id"?: string,"locale"?: string,"needs_vet_review"?: boolean,"owner_approved_at"?: string | null,"published_at"?: string | null,"seo_description"?: string | null,"seo_title"?: string | null,"slug": string,"status"?: string,"title": string,"updated_at"?: string,"vet_reviewed_at"?: string | null,"vet_reviewed_by"?: string | null
+                  }
+                  Update: {
+                    "body_md"?: string,"cluster"?: string,"created_at"?: string,"excerpt"?: string | null,"id"?: string,"locale"?: string,"needs_vet_review"?: boolean,"owner_approved_at"?: string | null,"published_at"?: string | null,"seo_description"?: string | null,"seo_title"?: string | null,"slug"?: string,"status"?: string,"title"?: string,"updated_at"?: string,"vet_reviewed_at"?: string | null,"vet_reviewed_by"?: string | null
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"candles": {
                   Row: {
                     "created_at": string,"day": string,"memorial_id": string,"visitor_hash": string
                   }
@@ -42,6 +102,20 @@ isOneToOne: false
       referencedRelation: "memorials"
       referencedColumns: ["id"]
     }
+                  ]
+                },"cta_blocks": {
+                  Row: {
+                    "active": boolean,"body": string | null,"button_label": string,"heading": string,"key": string,"target": string,"updated_at": string,"variant": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "active"?: boolean,"body"?: string | null,"button_label": string,"heading": string,"key": string,"target"?: string,"updated_at"?: string,"variant"?: string
+                  }
+                  Update: {
+                    "active"?: boolean,"body"?: string | null,"button_label"?: string,"heading"?: string,"key"?: string,"target"?: string,"updated_at"?: string,"variant"?: string
+                  }
+                  Relationships: [
+                    
                   ]
                 },"donation_entries": {
                   Row: {
@@ -142,6 +216,32 @@ isOneToOne: false
                   }
                   Relationships: [
                     
+                  ]
+                },"funnel_events": {
+                  Row: {
+                    "attribution": Json | null,"id": number,"memorial_id": string | null,"name": string,"occurred_at": string,"order_id": string | null
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "attribution"?: Json | null,"id"?: never,"memorial_id"?: string | null,"name": string,"occurred_at"?: string,"order_id"?: string | null
+                  }
+                  Update: {
+                    "attribution"?: Json | null,"id"?: never,"memorial_id"?: string | null,"name"?: string,"occurred_at"?: string,"order_id"?: string | null
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "funnel_events_memorial_id_fkey"
+      columns: ["memorial_id"]
+isOneToOne: false
+      referencedRelation: "memorials"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "funnel_events_order_id_fkey"
+      columns: ["order_id"]
+isOneToOne: false
+      referencedRelation: "orders"
+      referencedColumns: ["id"]
+    }
                   ]
                 },"gestures": {
                   Row: {
@@ -455,6 +555,46 @@ isOneToOne: false
                   Relationships: [
                     
                   ]
+                },"reminder_log": {
+                  Row: {
+                    "kind": string,"memorial_id": string,"sent_at": string,"user_id": string,"year": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "kind": string,"memorial_id": string,"sent_at"?: string,"user_id": string,"year": number
+                  }
+                  Update: {
+                    "kind"?: string,"memorial_id"?: string,"sent_at"?: string,"user_id"?: string,"year"?: number
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "reminder_log_memorial_id_fkey"
+      columns: ["memorial_id"]
+isOneToOne: false
+      referencedRelation: "memorials"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"reminder_prefs": {
+                  Row: {
+                    "adoption": boolean,"anniversary": boolean,"birthday": boolean,"memorial_id": string,"updated_at": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "adoption"?: boolean,"anniversary"?: boolean,"birthday"?: boolean,"memorial_id": string,"updated_at"?: string,"user_id": string
+                  }
+                  Update: {
+                    "adoption"?: boolean,"anniversary"?: boolean,"birthday"?: boolean,"memorial_id"?: string,"updated_at"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "reminder_prefs_memorial_id_fkey"
+      columns: ["memorial_id"]
+isOneToOne: false
+      referencedRelation: "memorials"
+      referencedColumns: ["id"]
+    }
+                  ]
                 },"reports": {
                   Row: {
                     "created_at": string,"details": string | null,"handled_by": string | null,"id": string,"ip_hash": string | null,"memorial_id": string | null,"reason": string,"reporter_email": string | null,"status": string,"target_id": string,"target_type": string
@@ -555,7 +695,10 @@ isOneToOne: false
             [_ in never]: never
           }
           Functions: {
-            "admin_set_memorial_hidden":
+            "accept_member_invite":
+{ Args: { "p_token": string }; Returns: string
+                           },
+"admin_set_memorial_hidden":
 { Args: { "p_hidden": boolean,"p_id": string }; Returns: undefined
                            },
 "apply_entitlement":
@@ -601,6 +744,9 @@ isOneToOne: false
 "fulfill_order":
 { Args: { "p_email": string,"p_order_id": string,"p_payment_intent": string }; Returns: Json
                            },
+"invite_member":
+{ Args: { "p_email": string,"p_memorial_id": string }; Returns: string
+                           },
 "is_admin":
 { Args: Record<PropertyKey, never>; Returns: boolean
                            },
@@ -638,6 +784,12 @@ isOneToOne: false
                            },
 "slugify":
 { Args: { "p": string }; Returns: string
+                           },
+"track_checkout_started":
+{ Args: { "p_order_id": string }; Returns: undefined
+                           },
+"track_funnel":
+{ Args: { "p_memorial_id": string,"p_name": string }; Returns: undefined
                            },
 "try_uuid":
 { Args: { "p": string }; Returns: string

@@ -100,6 +100,7 @@ export async function startDraftAction(_previous: BasicsState, formData: FormDat
   if (updateError) {
     return { errors: { form: common.errors.generic } };
   }
+  await supabase.rpc("track_funnel", { p_name: "draft_started", p_memorial_id: id });
   redirect(`/izradi/${id}/prica`);
 }
 
@@ -159,6 +160,7 @@ export async function saveStoryAction(id: string, patch: unknown): Promise<SaveR
 export async function goToReviewAction(id: string): Promise<void> {
   const supabase = await createSessionClient();
   await supabase.from("memorials").update({ draft_step: 3 }).eq("id", id);
+  await supabase.rpc("track_funnel", { p_name: "step_review", p_memorial_id: id });
   redirect(`/izradi/${id}/pregled`);
 }
 
@@ -243,6 +245,7 @@ export async function publishFreeAction(id: string, _previous: PublishState): Pr
     }
     return { error: common.errors.generic };
   }
+  await supabase.rpc("track_funnel", { p_name: "published_free", p_memorial_id: id });
   updateTag(`memorial:${id}`);
   updateTag(`memorial-slug:${slug}`);
   updateTag("sitemap");
