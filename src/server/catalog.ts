@@ -29,6 +29,16 @@ export type Product = {
   key: ProductKey;
   name: string;
   unitAmountCents: number;
+  /** Bazna cijena: cijena na dan kad je usluga stavljena u ponudu. Ističe se uz cijenu. */
+  baseAmountCents: number;
+};
+
+/** Jedna objavljena inačica cjenika za strojno čitanje. */
+export type PriceListVersion = {
+  id: number;
+  csv: string;
+  publishedAt: string;
+  replacedAt: string | null;
 };
 
 /** Aktivni proizvodi po ključu. Proizvod koji je isključen u adminu ovdje ne postoji. */
@@ -97,7 +107,7 @@ export async function getProducts(): Promise<ProductMap> {
 
   const { data, error } = await createAnonClient()
     .from("products")
-    .select("key, name, unit_amount_cents")
+    .select("key, name, unit_amount_cents, base_amount_cents")
     .eq("active", true);
   if (error) {
     throw new Error(`Cjenik se ne može pročitati: ${error.message}`);
@@ -106,7 +116,12 @@ export async function getProducts(): Promise<ProductMap> {
   const products: ProductMap = {};
   for (const row of data) {
     if (isProductKey(row.key)) {
-      products[row.key] = { key: row.key, name: row.name, unitAmountCents: row.unit_amount_cents };
+      products[row.key] = {
+        key: row.key,
+        name: row.name,
+        unitAmountCents: row.unit_amount_cents,
+        baseAmountCents: row.base_amount_cents,
+      };
     }
   }
   return products;
@@ -177,5 +192,34 @@ export async function getDonationSummary(): Promise<DonationSummary> {
       proofUrl: proofUrlFromPath(row.proof_path),
       shelterName: row.shelter?.name ?? null,
     })),
+  };
+}
+
+/**
+ * Važeći cjenik za strojno čitanje i inačice zamijenjene u zadnjih 15 dana (dulje ih RLS ne
+ * pokazuje). Inačice stvara baza pri svakoj izmjeni proizvoda, pa se ovdje samo čitaju.
+ */
+export async function getPriceLists(): Promise<{ current: PriceListVersion | null; archived: PriceListVersion[] }> {
+  "use cache";
+  cacheLife("hours");
+  cacheTag("products");
+
+  const { data, error } = await createAnonClient()
+    .from("price_list_versions")
+    .select("id, csv, published_at, replaced_at")
+    .order("id", { ascending: false })
+    .limit(200);
+  if (error) {
+    throw new Error(`Cjenik za strojno čitanje se ne može pročitati: ${error.message}`);
+  }
+  const versions = data.map((row) => ({
+    id: row.id,
+    csv: row.csv,
+    publishedAt: row.published_at,
+    replacedAt: row.replaced_at,
+  }));
+  return {
+    current: versions.find((version) => version.replacedAt === null) ?? null,
+    archived: versions.filter((version) => version.replacedAt !== null),
   };
 }

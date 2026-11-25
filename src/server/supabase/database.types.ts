@@ -493,16 +493,30 @@ isOneToOne: false
                   Relationships: [
                     
                   ]
-                },"products": {
+                },"price_list_versions": {
                   Row: {
-                    "active": boolean,"key": string,"name": string,"unit_amount_cents": number,"updated_at": string
+                    "csv": string,"id": number,"published_at": string,"replaced_at": string | null
                   }
                   ComputedFields: never
                   Insert: {
-                    "active"?: boolean,"key": string,"name": string,"unit_amount_cents": number,"updated_at"?: string
+                    "csv": string,"id"?: never,"published_at"?: string,"replaced_at"?: string | null
                   }
                   Update: {
-                    "active"?: boolean,"key"?: string,"name"?: string,"unit_amount_cents"?: number,"updated_at"?: string
+                    "csv"?: string,"id"?: never,"published_at"?: string,"replaced_at"?: string | null
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"products": {
+                  Row: {
+                    "active": boolean,"base_amount_cents": number,"key": string,"name": string,"offered_on": string | null,"unit_amount_cents": number,"updated_at": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "active"?: boolean,"base_amount_cents": number,"key": string,"name": string,"offered_on"?: string | null,"unit_amount_cents": number,"updated_at"?: string
+                  }
+                  Update: {
+                    "active"?: boolean,"base_amount_cents"?: number,"key"?: string,"name"?: string,"offered_on"?: string | null,"unit_amount_cents"?: number,"updated_at"?: string
                   }
                   Relationships: [
                     
@@ -738,6 +752,12 @@ isOneToOne: false
 "create_order":
 { Args: { "p_lines": Json,"p_order": Json }; Returns: string
                            },
+"csv_amount":
+{ Args: { "p_cents": number }; Returns: string
+                           },
+"csv_field":
+{ Args: { "p_value": string }; Returns: string
+                           },
 "donation_totals":
 { Args: Record<PropertyKey, never>; Returns: {
               "accrued_cents": number,"paid_out_cents": number
@@ -781,6 +801,9 @@ isOneToOne: false
                            },
 "order_memorials":
 { Args: { "p_order_id": string }; Returns: Json
+                           },
+"price_list_csv":
+{ Args: Record<PropertyKey, never>; Returns: string
                            },
 "publish_memorial":
 { Args: { "p_id": string }; Returns: string

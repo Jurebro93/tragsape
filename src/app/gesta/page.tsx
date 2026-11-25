@@ -36,10 +36,11 @@ async function Purchase({ searchParams }: Pick<PageProps<"/gesta">, "searchParam
       .maybeSingle(),
     supabase
       .from("products")
-      .select("key, unit_amount_cents")
+      .select("key, unit_amount_cents, base_amount_cents")
       .in("key", ["gesture_7d", "gesture_30d", "gesture_365d"]),
   ]);
   const byKey = new Map((products ?? []).map((row) => [row.key, row.unit_amount_cents]));
+  const baseByKey = new Map((products ?? []).map((row) => [row.key, row.base_amount_cents]));
   const prices = {
     gesture_7d: byKey.get("gesture_7d"),
     gesture_30d: byKey.get("gesture_30d"),
@@ -66,6 +67,11 @@ async function Purchase({ searchParams }: Pick<PageProps<"/gesta">, "searchParam
             gesture_7d: prices.gesture_7d,
             gesture_30d: prices.gesture_30d,
             gesture_365d: prices.gesture_365d,
+          }}
+          basePrices={{
+            gesture_7d: baseByKey.get("gesture_7d") ?? prices.gesture_7d,
+            gesture_30d: baseByKey.get("gesture_30d") ?? prices.gesture_30d,
+            gesture_365d: baseByKey.get("gesture_365d") ?? prices.gesture_365d,
           }}
         />
       ) : (

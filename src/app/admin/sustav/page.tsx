@@ -23,7 +23,7 @@ async function Status() {
   await requireAdmin("/admin/sustav");
   const supabase = await createSessionClient();
   const [{ data: products, error: productsError }, { data: settings }, { data: events }] = await Promise.all([
-    supabase.from("products").select("key, active").order("key"),
+    supabase.from("products").select("key, active, offered_on").order("key"),
     supabase.from("settings").select("donation_per_memorial_cents, active_shelter_id").maybeSingle(),
     supabase.from("stripe_events").select("event_id, error").not("error", "is", null).limit(1),
   ]);
@@ -53,6 +53,18 @@ async function Status() {
             .filter((product) => product.active)
             .map((product) => product.key)
             .join(", ")}`,
+    },
+    {
+      name: "Cjenik i bazna cijena",
+      ok: has("SELLER_TAX_ID") && (products ?? []).filter((product) => product.active).every((product) => product.offered_on),
+      detail: [
+        has("SELLER_TAX_ID")
+          ? "Broj trgovca je upisan i ulazi u naziv datoteke na /cjenik.csv."
+          : "Nema SELLER_TAX_ID (OIB ili matični broj): naziv datoteke cjenika na /cjenik.csv počinje s BEZ_BROJA.",
+        (products ?? []).filter((product) => product.active).every((product) => product.offered_on)
+          ? "Svi proizvodi u prodaji imaju datum ponude."
+          : "Nekim proizvodima u prodaji nije upisan datum ponude: upiši ga na dan lansiranja u Cijene i postavke, da bazna cijena prestane pratiti cijenu.",
+      ].join(" "),
     },
     {
       name: "Stripe",

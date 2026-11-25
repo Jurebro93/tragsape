@@ -8,7 +8,7 @@ import { env } from "@/server/env";
 import { createAnonClient } from "@/server/supabase/anon";
 
 /** Javne stranice bez parametara. Nova javna stranica dodaje se ovdje. */
-const STATIC_PATHS = ["/", "/livada", "/primjer", "/cjenik", "/donacije", "/vodic", "/alati"] as const;
+const STATIC_PATHS = ["/", "/livada", "/primjer", "/cjenik", "/donacije", "/alati"] as const;
 /** Pravni tekstovi ulaze u sitemap tek kad prestanu biti nacrt. */
 const LEGAL_PATHS = ["/uvjeti", "/privatnost", "/kolacici"] as const;
 
@@ -75,6 +75,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     ...paths.map((path) => ({ url: path === "/" ? base : `${base}${path}` })),
+    // Vodič bez ijednog objavljenog članka nosi noindex, pa ga tada nema ni ovdje.
+    ...(articles.length > 0 ? [{ url: `${base}/vodic` }] : []),
     // Samo objavljeni alati i članci: nacrti (zdravlje, propisi) ne postoje za tražilice.
     ...publicTools().map((tool) => ({ url: `${base}${toolPath(tool.slug)}` })),
     ...articles.map((article) => ({

@@ -103,8 +103,15 @@ export const marketing = {
     intro: "Osnovni spomen je besplatan. Tko želi više prostora za priču, plaća jednom. Pretplate nema.",
     tiersTitle: "Paketi",
     oneOff: "jednokratno",
+    machine: {
+      title: "Cjenik i bazne cijene",
+      baseNote: "Bazna cijena je cijena na dan kad je usluga stavljena u ponudu. Ističemo je uz svaku cijenu, kako traži Zakon o zaštiti potrošača.",
+      current: "Važeći cjenik u CSV obliku",
+      archiveTitle: "Prethodni cjenici ({count})",
+      archiveNote: "Dostupni su 15 dana nakon zamjene.",
+      archiveItem: "Vrijedio do {date}",
+    },
     payAfterPreview: "Paket biraš i plaćaš tek nakon pregleda.",
-    rollout: "Neke od ovih mogućnosti još dovršavamo; uključujemo ih postupno prije lansiranja.",
     tiers: {
       free: {
         name: "Besplatni spomen",

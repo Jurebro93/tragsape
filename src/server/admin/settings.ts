@@ -7,7 +7,15 @@ import { PRODUCT_KEYS } from "./schemas";
 
 export const STRIPE_ERROR_LIMIT = 50;
 
-export type AdminProduct = { key: string; name: string; unitAmountCents: number; active: boolean };
+export type AdminProduct = {
+  key: string;
+  name: string;
+  unitAmountCents: number;
+  baseAmountCents: number;
+  /** Dan kad je usluga stavljena u ponudu (YYYY-MM-DD) ili null dok još nije. */
+  offeredOn: string | null;
+  active: boolean;
+};
 
 export type StripeErrorEvent = { eventId: string; type: string; receivedAt: string; error: string };
 
@@ -28,7 +36,7 @@ export async function loadSettings(): Promise<SettingsData> {
   const [products, settings, stripeErrors] = await Promise.all([
     supabase
       .from("products")
-      .select("key, name, unit_amount_cents, active")
+      .select("key, name, unit_amount_cents, base_amount_cents, offered_on, active")
       .then((result) => must(result, "proizvodi")),
     supabase
       .from("settings")
@@ -47,7 +55,14 @@ export async function loadSettings(): Promise<SettingsData> {
 
   return {
     products: products
-      .map((row) => ({ key: row.key, name: row.name, unitAmountCents: row.unit_amount_cents, active: row.active }))
+      .map((row) => ({
+        key: row.key,
+        name: row.name,
+        unitAmountCents: row.unit_amount_cents,
+        baseAmountCents: row.base_amount_cents,
+        offeredOn: row.offered_on,
+        active: row.active,
+      }))
       .sort((a, b) => productOrder(a.key) - productOrder(b.key) || a.key.localeCompare(b.key)),
     repeatDiscountPct: settings.repeat_discount_pct,
     stripeErrors: stripeErrors.map((row) => ({

@@ -67,6 +67,10 @@ services:
       - key: TURNSTILE_SECRET_KEY
         sync: false
 
+      # OIB ili matični broj trgovca; ulazi u naziv datoteke cjenika na /cjenik.csv.
+      - key: SELLER_TAX_ID
+        sync: false
+
       # Zaglavlje s pravom adresom posjetitelja (npr. cf-connecting-ip); neobavezno.
       # Što stiže do poslužitelja vidi se u adminu pod „Stanje sustava".
       - key: CLIENT_IP_HEADER

@@ -233,6 +233,32 @@ describe("suradnici", () => {
   });
 });
 
+describe("suradnik i nacrt", () => {
+  it("dok je spomen povučen u nacrt, suradnik ga ne vidi i ne uređuje; nakon ponovne objave opet da", async () => {
+    const id = await createPaidMemorial(owner);
+    await addCollaborator(id, collaborator);
+    const visible = async () => ((await collaborator.client.from("memorials").select("id").eq("id", id)).data ?? []).length;
+    expect(await visible()).toBe(1);
+
+    expect((await owner.client.rpc("unpublish_memorial", { p_id: id })).error).toBeNull();
+    expect(await visible()).toBe(0);
+    const edited = await collaborator.client.from("memorials").update({ dedication: "Dok je u nacrtu." }).eq("id", id).select("id");
+    expect(edited.data ?? []).toHaveLength(0);
+    const letter = await collaborator.client
+      .from("letters")
+      .insert({ memorial_id: id, author_id: collaborator.id, body: "Dok je u nacrtu." });
+    expect(letter.error).not.toBeNull();
+    // Vlasnik nacrt i dalje vidi i uređuje.
+    expect((await owner.client.from("memorials").update({ dedication: "Vlasnik dorađuje." }).eq("id", id).select("id")).data).toHaveLength(1);
+
+    expect((await owner.client.rpc("publish_memorial", { p_id: id })).error).toBeNull();
+    expect(await visible()).toBe(1);
+    expect(
+      (await collaborator.client.from("memorials").update({ dedication: "Opet zajedno." }).eq("id", id).select("id")).data,
+    ).toHaveLength(1);
+  });
+});
+
 describe("pisma", () => {
   it("privatno pismo suradnika ne vidi vlasnik, ni obrnuto; javna vide svi", async () => {
     const id = await createPaidMemorial(owner);

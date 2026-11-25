@@ -19,13 +19,19 @@ async function loadPrices() {
   const supabase = await createSessionClient();
   const { data } = await supabase
     .from("products")
-    .select("key, unit_amount_cents")
+    .select("key, unit_amount_cents, base_amount_cents")
     .in("key", ["memorial", "memorial_portrait"]);
-  const byKey = new Map((data ?? []).map((row) => [row.key, row.unit_amount_cents]));
+  const byKey = new Map((data ?? []).map((row) => [row.key, row]));
   const memorial = byKey.get("memorial");
   const memorialPortrait = byKey.get("memorial_portrait");
   // Portret se nudi samo dok je uključen u cjeniku.
-  return memorial !== undefined ? { memorial, memorialPortrait: memorialPortrait ?? null } : null;
+  return memorial !== undefined
+    ? {
+        memorial: memorial.unit_amount_cents,
+        memorialPortrait: memorialPortrait?.unit_amount_cents ?? null,
+        base: { memorial: memorial.base_amount_cents, memorialPortrait: memorialPortrait?.base_amount_cents ?? null },
+      }
+    : null;
 }
 
 /** Ima li nacrt sadržaj koji se vidi tek uz Memorijal. */

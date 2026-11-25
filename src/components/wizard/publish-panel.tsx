@@ -11,6 +11,7 @@ import { Field, Input, Select } from "@/components/ui/field";
 import { cn } from "@/lib/cn";
 import { formatEuro } from "@/lib/format";
 import { fill } from "@/lib/text";
+import { common } from "@/messages/hr/common";
 import { account } from "@/messages/hr/account";
 import { gift } from "@/messages/hr/gift";
 import { wizard } from "@/messages/hr/wizard";
@@ -18,7 +19,12 @@ import { wizard } from "@/messages/hr/wizard";
 const text = wizard.review;
 
 /** Cijene paketa u centima. `memorialPortrait` je null dok se taj paket ne prodaje. */
-export type PackagePrices = { memorial: number; memorialPortrait: number | null };
+export type PackagePrices = {
+  memorial: number;
+  memorialPortrait: number | null;
+  /** Bazne cijene istih paketa; ističu se uz cijenu. */
+  base?: { memorial: number; memorialPortrait: number | null };
+};
 
 /**
  * Zadnji korak: potvrda e-maila ako je potrebna, zatim izbor između besplatne objave i
@@ -65,15 +71,22 @@ export function PublishPanel({
     return <AvailablePackage memorialId={memorialId} available={available} />;
   }
 
-  const options: Array<{ key: "memorial" | "memorial_portrait"; name: string; body: string; price: number }> = [];
+  const options: Array<{ key: "memorial" | "memorial_portrait"; name: string; body: string; price: number; base?: number }> = [];
   if (prices) {
-    options.push({ key: "memorial", name: text.paid.memorial, body: text.paid.memorialBody, price: prices.memorial });
+    options.push({
+      key: "memorial",
+      name: text.paid.memorial,
+      body: text.paid.memorialBody,
+      price: prices.memorial,
+      base: prices.base?.memorial,
+    });
     if (prices.memorialPortrait !== null) {
       options.push({
         key: "memorial_portrait",
         name: text.paid.portrait,
         body: text.paid.portraitBody,
         price: prices.memorialPortrait,
+        base: prices.base?.memorialPortrait ?? undefined,
       });
     }
   }
@@ -126,6 +139,11 @@ export function PublishPanel({
                     <span className="font-display text-xl font-extrabold">{option.name}</span>
                     <span className="shrink-0 font-bold">{formatEuro(option.price)}</span>
                   </span>
+                  {option.base !== undefined ? (
+                    <span className="self-end text-[13px] text-plum-soft">
+                      {fill(common.price.base, { amount: formatEuro(option.base) })}
+                    </span>
+                  ) : null}
                   <span className="text-[15px] text-plum-soft">{option.body}</span>
                 </span>
               </label>

@@ -1,6 +1,6 @@
 # Trag šape — arhitektura, model podataka i redoslijed izrade
 
-**Status:** v0.2 od 25. 11. 2026. Vlasnik je odabrao smjer B („Sunčano jutro”). Izgrađene su cjeline 1 i veći dio cjeline 2; stanje po cjelinama je u `docs/stanje.md`.
+**Status:** v0.3 od 25. 11. 2026. Vlasnik je odabrao smjer B („Sunčano jutro”). Izgrađene su cjeline 1–5 i 7 te veći dio cjeline 8; cjelina 6 (Portret) nije. Stanje po cjelinama, što nije provjereno i gdje se izgrađeno razlikuje od ovog plana je u [`docs/stanje.md`](stanje.md).
 Vizualni smjerovi su na platnu: https://claude.ai/artifact/ST62Bbt8Uk5U9Ea7y13Zsk
 
 ## 1. Stog
@@ -80,7 +80,7 @@ RLS je uključen na svakoj tablici. Kratice: V = vlasnik, S = suradnik, A = admi
 
 - **products** — `key` (memorial, memorial_portrait, upgrade_portrait, gesture_7d, gesture_30d, gesture_365d), `unit_amount_cents`, `active`. Cijene žive ovdje i mijenjaju se u adminu.
 - **settings** — `repeat_discount_pct` (30), `donation_per_memorial_cents` (100), `active_shelter_id`.
-- **orders** — `user_id` (može biti prazno za kupca geste), `email`, `status` (pending | paid | failed | refunded | partially_refunded), `subtotal_cents`, `discount_cents`, `total_cents`, `promo_code_id`, `stripe_checkout_session_id` (jedinstven), `stripe_payment_intent_id`, `withdrawal_waiver_at`, `attribution`, `paid_at`.
+- **orders** — `user_id` (može biti prazno za kupca geste), `email`, `status` (pending | paid | failed | expired | refunded), `subtotal_cents`, `discount_cents`, `total_cents`, `promo_code_id`, `stripe_checkout_session_id` (jedinstven), `stripe_payment_intent_id`, `withdrawal_waiver_at`, `attribution`, `paid_at`.
 - **order_lines** — `order_id`, `kind` (memorial | upgrade | gift | gesture), `product_key`, `memorial_id`, `unit_amount_cents`, `discount_cents`, `total_cents`, `discount_reason`.
 - **entitlements** — `order_line_id`, `tier`, `owner_id`, `memorial_id`, `status` (available | applied | revoked). Plaćeni paket je pravo koje se primjenjuje na memorijal; tako isto radi i kupnja, i nadogradnja, i poklon.
 - **gifts** — `order_line_id`, `entitlement_id`, `buyer_name`, `recipient_email`, `message`, `code_hash`, `send_at`, `sent_at`, `redeemed_by`, `redeemed_at`.

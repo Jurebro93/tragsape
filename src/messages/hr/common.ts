@@ -7,6 +7,10 @@ export const common = {
     subtitle: "Spomen-stranica za tvog ljubimca",
     alt: "Trag šape: spomen-stranica za tvog ljubimca",
   },
+  /** Bazna cijena: cijena na dan kad je usluga stavljena u ponudu (ZZP čl. 7.). Ističe se uz svaku cijenu. */
+  price: {
+    base: "Bazna cijena: {amount}",
+  },
   nav: {
     create: "Izradi spomen",
     createShort: "Izradi",

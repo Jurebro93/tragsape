@@ -34,11 +34,13 @@ async function SettingsData() {
           <EmptyState>{t.products.empty}</EmptyState>
         ) : (
           <ActionForm action={saveProductsAction} submitLabel={t.products.save}>
-            <DataTable className="min-w-[480px]">
+            <DataTable className="min-w-[760px]">
               <thead>
                 <tr>
                   <Th>{t.products.columns.product}</Th>
                   <Th>{t.products.columns.price}</Th>
+                  <Th>{t.products.columns.base}</Th>
+                  <Th>{t.products.columns.offeredOn}</Th>
                   <Th>{t.products.columns.active}</Th>
                 </tr>
               </thead>
@@ -59,6 +61,26 @@ async function SettingsData() {
                         aria-label={fill(t.products.priceLabel, { name: product.name })}
                         defaultValue={centsToEuroInput(product.unitAmountCents)}
                         className="min-h-11 w-28 rounded-2xl border-2 border-line bg-white px-3 text-right text-[16px] tabular-nums text-plum focus:border-teal focus:outline-none"
+                      />
+                    </Td>
+                    <Td className="align-middle!">
+                      <input
+                        name={`base:${product.key}`}
+                        required
+                        inputMode="decimal"
+                        autoComplete="off"
+                        aria-label={fill(t.products.baseLabel, { name: product.name })}
+                        defaultValue={centsToEuroInput(product.baseAmountCents)}
+                        className="min-h-11 w-28 rounded-2xl border-2 border-line bg-white px-3 text-right text-[16px] tabular-nums text-plum focus:border-teal focus:outline-none"
+                      />
+                    </Td>
+                    <Td className="align-middle!">
+                      <input
+                        type="date"
+                        name={`offered:${product.key}`}
+                        aria-label={fill(t.products.offeredOnLabel, { name: product.name })}
+                        defaultValue={product.offeredOn ?? ""}
+                        className="min-h-11 rounded-2xl border-2 border-line bg-white px-3 text-[16px] text-plum focus:border-teal focus:outline-none"
                       />
                     </Td>
                     <Td className="align-middle!">

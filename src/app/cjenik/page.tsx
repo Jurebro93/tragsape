@@ -6,8 +6,9 @@ import { ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { formatEuro } from "@/lib/format";
 import { fill } from "@/lib/text";
+import { common } from "@/messages/hr/common";
 import { marketing } from "@/messages/hr/marketing";
-import { getProducts, getSettings, type ProductKey } from "@/server/catalog";
+import { getPriceLists, getProducts, getSettings, type ProductKey } from "@/server/catalog";
 
 const t = marketing.pricing;
 
@@ -21,9 +22,24 @@ const gestureKeys = ["gesture_7d", "gesture_30d", "gesture_365d"] as const satis
 
 const sectionTitle = "font-display text-2xl font-extrabold leading-tight sm:text-3xl";
 
+const replacedAtFormat = new Intl.DateTimeFormat("hr-HR", {
+  timeZone: "Europe/Zagreb",
+  day: "numeric",
+  month: "numeric",
+  year: "numeric",
+  hour: "2-digit",
+  minute: "2-digit",
+});
+
+/** Dan i sat zamjene cjenika po zagrebačkom vremenu; istog dana može biti više inačica. */
+function replacedAtLabel(value: string): string {
+  return replacedAtFormat.format(new Date(value));
+}
+
 function Tier({
   name,
   price,
+  basePrice,
   priceNote,
   lead,
   features,
@@ -33,6 +49,8 @@ function Tier({
 }: {
   name: string;
   price: string;
+  /** Bazna cijena; besplatni spomen je nema. */
+  basePrice?: string;
   priceNote: string;
   lead: string;
   features: readonly string[];
@@ -48,6 +66,7 @@ function Tier({
           <span className="font-display text-4xl font-extrabold">{price}</span>
           <span className="text-[15px] text-plum-soft">{priceNote}</span>
         </p>
+        {basePrice ? <p className="text-sm text-plum-soft">{fill(common.price.base, { amount: basePrice })}</p> : null}
       </div>
       <div className="flex flex-col gap-3">
         <p className="font-semibold">{lead}</p>
@@ -72,11 +91,20 @@ function Tier({
 
 export default async function PricingPage() {
   // Cijene, popust i iznos donacije žive u bazi; ovdje se samo prikazuju.
-  const [products, settings] = await Promise.all([getProducts(), getSettings()]);
+  const [products, settings, priceLists] = await Promise.all([getProducts(), getSettings(), getPriceLists()]);
 
   const gestures = gestureKeys.flatMap((key) => {
     const product = products[key];
-    return product ? [{ key, label: t.gestures.durations[key], price: formatEuro(product.unitAmountCents) }] : [];
+    return product
+      ? [
+          {
+            key,
+            label: t.gestures.durations[key],
+            price: formatEuro(product.unitAmountCents),
+            basePrice: formatEuro(product.baseAmountCents),
+          },
+        ]
+      : [];
   });
   const donationAmount =
     settings.donationPerMemorialCents > 0 ? formatEuro(settings.donationPerMemorialCents) : null;
@@ -112,6 +140,7 @@ export default async function PricingPage() {
                 <Tier
                   name={t.tiers.memorial.name}
                   price={formatEuro(products.memorial.unitAmountCents)}
+                  basePrice={formatEuro(products.memorial.baseAmountCents)}
                   priceNote={t.oneOff}
                   lead={t.tiers.memorial.lead}
                   features={t.tiers.memorial.features}
@@ -124,6 +153,7 @@ export default async function PricingPage() {
                 <Tier
                   name={t.tiers.portrait.name}
                   price={formatEuro(products.memorial_portrait.unitAmountCents)}
+                  basePrice={formatEuro(products.memorial_portrait.baseAmountCents)}
                   priceNote={t.oneOff}
                   lead={t.tiers.portrait.lead}
                   features={t.tiers.portrait.features}
@@ -133,7 +163,6 @@ export default async function PricingPage() {
                 />
               ) : null}
             </div>
-            <p className="text-[15px] text-plum-soft">{t.rollout}</p>
           </section>
 
           <section aria-labelledby="geste-title" className="flex flex-col gap-4">
@@ -147,6 +176,9 @@ export default async function PricingPage() {
                   <div key={gesture.key} className="flex flex-col gap-1 rounded-3xl bg-white p-4">
                     <dt className="text-[15px] leading-snug text-plum-soft">{gesture.label}</dt>
                     <dd className="font-display text-xl font-extrabold sm:text-2xl">{gesture.price}</dd>
+                    <dd className="text-[13px] leading-snug text-plum-soft">
+                      {fill(common.price.base, { amount: gesture.basePrice })}
+                    </dd>
                   </div>
                 ))}
               </dl>
@@ -181,6 +213,35 @@ export default async function PricingPage() {
               </section>
             ) : null}
           </div>
+
+          <section aria-labelledby="cjenik-csv-title" className="flex flex-col items-start gap-2">
+            <h2 id="cjenik-csv-title" className="font-display text-xl font-extrabold">
+              {t.machine.title}
+            </h2>
+            <p className="max-w-2xl text-[15px] leading-relaxed text-plum-soft">{t.machine.baseNote}</p>
+            {priceLists.current ? (
+              <a href="/cjenik.csv" className="flex min-h-11 items-center font-bold">
+                {t.machine.current}
+              </a>
+            ) : null}
+            {priceLists.archived.length > 0 ? (
+              <details className="w-full max-w-2xl">
+                <summary className="flex min-h-11 cursor-pointer items-center text-[15px] font-bold">
+                  {fill(t.machine.archiveTitle, { count: priceLists.archived.length })}
+                </summary>
+                <p className="text-sm text-plum-soft">{t.machine.archiveNote}</p>
+                <ul className="flex flex-col">
+                  {priceLists.archived.map((version) => (
+                    <li key={version.id}>
+                      <a href={`/cjenik/arhiva/${version.id}`} className="flex min-h-11 items-center text-[15px]">
+                        {fill(t.machine.archiveItem, { date: replacedAtLabel(version.replacedAt ?? version.publishedAt) })}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            ) : null}
+          </section>
 
           {donationAmount ? (
             <section

@@ -180,7 +180,20 @@ select cron.schedule(
 
 Je li posao prošao, vidi se u `cron.job_run_details`, a odgovor poslužitelja u `net._http_response`. Isti poziv može slati i bilo koji drugi planer (npr. Render Cron Job), ako ga radije koristiš.
 
-### h) Provjera nakon postavljanja
+### h) Bazna cijena i cjenik za strojno čitanje
+
+Od 17. 11. 2026. Zakon o zaštiti potrošača (čl. 7., izmjene [NN 59/2026](https://narodne-novine.nn.hr/clanci/sluzbeni/2026_06_59_728.html)) traži da trgovac uz svaku cijenu istakne baznu cijenu i da na svojim mrežnim stranicama objavi važeći cjenik. Pojedinosti su u [Pravilniku o isticanju bazne cijene proizvoda](https://narodne-novine.nn.hr/clanci/sluzbeni/2026_11_132_1583.html) i [Pravilniku o načinu objave cjenika proizvoda](https://narodne-novine.nn.hr/clanci/sluzbeni/2026_11_132_1584.html) (oba NN 132/2026; pročitano 25. 11. 2026.). Za uslugu ponuđenu nakon 10. 9. 2026. bazna cijena je cijena na dan kad je usluga stavljena u ponudu.
+
+Aplikacija je za to pripremljena ovako; **tumačenje prije lansiranja potvrdi s knjigovođom ili pravnikom**:
+
+1. Bazna cijena stoji uz cijenu na `/cjenik` i u obrascima kupnje (paket, poklon, gesta).
+2. Cjenik je uvijek na istoj adresi, `https://DOMENA/cjenik.csv`: UTF-8, stupci odvojeni točkom sa zarezom, redom naziv usluge, maloprodajna cijena, je li primijenjena u posebnom obliku prodaje, bazna cijena. Svaka izmjena cijene u adminu odmah objavljuje novu inačicu, a zamijenjena ostaje dostupna 15 dana (poveznice su na dnu stranice `/cjenik`).
+3. U `SELLER_TAX_ID` upiši OIB ili matični broj; ulazi u naziv datoteke.
+4. **Na dan lansiranja** u adminu (Cijene i postavke) svakom proizvodu upiši „U ponudi od”. Do tada bazna cijena prati cijenu, a nakon toga ostaje kakva je bila tog dana.
+
+Što pravilnici ne rješavaju jasno, pa treba pitati: je li poklon zasebna stavka cjenika, kako se ističe bazna cijena uz kod za popust, točan oblik naziva datoteke za trgovca koji prodaje samo putem interneta te treba li baznu cijenu isticati i uz cijenu spomenutu u tekstu naslovnice.
+
+### i) Provjera nakon postavljanja
 
 Provjeri ono što je u tom trenutku izgrađeno:
 
@@ -188,7 +201,8 @@ Provjeri ono što je u tom trenutku izgrađeno:
 - [ ] `/admin/sustav`: sve stavke koje si podesio su „u redu”, a probni e-mail stiže s tvoje domene
 - [ ] `/admin/sustav`, stavka „Adresa posjetitelja”: prikazana adresa je tvoja; ako među zaglavljima stoji `cf-connecting-ip`, upiši ga u `CLIENT_IP_HEADER`
 - [ ] poveznica na naslovnicu zalijepljena u WhatsApp ili Facebook prikazuje sliku sa šapama i nazivom
-- [ ] naslovnica i `/cjenik` prikazuju cijene iz baze
+- [ ] naslovnica i `/cjenik` prikazuju cijene iz baze; uz svaku cijenu na `/cjenik` stoji bazna cijena
+- [ ] `/cjenik.csv` se otvara, a naziv datoteke počinje tvojim OIB-om ili matičnim brojem
 - [ ] `/donacije` prikazuje zbroj i poruku da azil još nije odabran
 - [ ] `/robots.txt` i `/sitemap.xml` sadrže adrese s `https://DOMENA`
 - [ ] nepostojeća adresa prikazuje stranicu „Ove stranice nema”
@@ -199,6 +213,12 @@ Provjeri ono što je u tom trenutku izgrađeno:
 - [ ] povrat novca u Stripeu vraća spomen na besplatni paket i u nacrt
 - [ ] spomen „samo s poveznicom” i privatni nisu u `/sitemap.xml`
 - [ ] `/uvjeti`, `/privatnost` i `/kolacici` više nisu nacrt: pravnik ih je pregledao, uglate zagrade su popunjene, a `LEGAL_DRAFT` u `src/messages/hr/legal.ts` je `false`
+
+## Članci i alati
+
+- Nacrti članaka su u `content/clanci/*.md`. `node scripts/seed-articles.mjs --check` provjerava datoteke, a `node scripts/seed-articles.mjs` ih upisuje u bazu čije su adresa i tajni ključ u `.env.local` (za produkciju privremeno upiši produkcijske vrijednosti `NEXT_PUBLIC_SUPABASE_URL` i `SUPABASE_SECRET_KEY`). Članak uvijek ulazi kao „na pregledu”; skripta nikad ne odobrava ni ne objavljuje, a odobrene i objavljene članke ne dira.
+- Članak se objavljuje u adminu (Članci): pregled, po potrebi upis pregleda veterinara, tvoje odobrenje, objava. Bilješke `[PROVJERITI: …]` u tekstu treba riješiti prije odobrenja; popis je u [`docs/stanje.md`](docs/stanje.md).
+- Alati su u `src/lib/tools/registry.ts`. Upitnik o kvaliteti života i popis za prva 24 sata imaju status `draft` i vidi ih samo admin; objava je promjena te jedne riječi i novi deploy.
 
 ## Dobro je znati
 
@@ -221,6 +241,7 @@ Provjeri ono što je u tom trenutku izgrađeno:
 | `EMAIL_FROM` | Pošiljatelj obavijesti, npr. `Trag šape <pozdrav@DOMENA>`. | za e-mail |
 | `NEXT_PUBLIC_TURNSTILE_SITE_KEY` | Javni ključ Cloudflare Turnstilea za zaštitu javnih obrazaca. Ugrađuje se pri buildu. | ne |
 | `TURNSTILE_SECRET_KEY` | Tajni ključ Turnstilea. Bez ključeva rade zamka i ograničenja učestalosti. | ne |
+| `SELLER_TAX_ID` | OIB (pravna osoba) ili matični broj (fizička osoba) trgovca. Ulazi u naziv datoteke cjenika na `/cjenik.csv`. | za cjenik |
 | `CLIENT_IP_HEADER` | Zaglavlje u koje posrednik hostinga upisuje pravu adresu posjetitelja (npr. `cf-connecting-ip`). Bez njega se uzima prva adresa iz `x-forwarded-for`, koju posjetitelj možda može podmetnuti i tako zaobići ograničenja učestalosti. Što stiže do poslužitelja pokazuje admin, „Stanje sustava". | ne |
 | `CRON_SECRET` | Tajna kojom se zakazani posao predstavlja adresi `/api/cron/podsjetnici`. Dug nasumičan niz. Bez nje se podsjetnici i odgođeni pokloni ne šalju. | za podsjetnike |
 | `ANTHROPIC_API_KEY` | Ključ za AI pomoćnika za priču. Bez njega je pomoćnik isključen, a sve ostalo radi. | ne |

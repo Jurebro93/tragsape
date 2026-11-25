@@ -9,6 +9,8 @@ import { Card } from "@/components/ui/card";
 import { Field, Input, Textarea } from "@/components/ui/field";
 import { cn } from "@/lib/cn";
 import { formatEuro } from "@/lib/format";
+import { fill } from "@/lib/text";
+import { common } from "@/messages/hr/common";
 import { gift } from "@/messages/hr/gift";
 
 const text = gift.form;
@@ -18,18 +20,28 @@ export function GiftForm({
   prices,
   today,
 }: {
-  prices: { memorial: number; memorialPortrait: number | null } | null;
+  prices: {
+    memorial: number;
+    memorialPortrait: number | null;
+    base?: { memorial: number; memorialPortrait: number | null };
+  } | null;
   today: string;
 }) {
   const [state, action, pending] = useActionState(startGiftCheckoutAction, { error: null });
   const [product, setProduct] = useState<"memorial" | "memorial_portrait">("memorial");
   const [later, setLater] = useState(false);
-  const options: Array<{ key: "memorial" | "memorial_portrait"; name: string; body: string; price?: number }> = [
-    { key: "memorial", name: text.memorial, body: text.memorialBody, price: prices?.memorial },
+  const options: Array<{ key: "memorial" | "memorial_portrait"; name: string; body: string; price?: number; base?: number }> = [
+    { key: "memorial", name: text.memorial, body: text.memorialBody, price: prices?.memorial, base: prices?.base?.memorial },
   ];
   // Portret se nudi samo dok je uključen u cjeniku.
   if (prices && prices.memorialPortrait !== null) {
-    options.push({ key: "memorial_portrait", name: text.portrait, body: text.portraitBody, price: prices.memorialPortrait });
+    options.push({
+      key: "memorial_portrait",
+      name: text.portrait,
+      body: text.portraitBody,
+      price: prices.memorialPortrait,
+      base: prices.base?.memorialPortrait ?? undefined,
+    });
   }
   return (
     <form action={action} onSubmit={keepValues(action)} className="flex flex-col gap-5">
@@ -60,6 +72,11 @@ export function GiftForm({
                     <span className="shrink-0 font-bold">{formatEuro(option.price)}</span>
                   ) : null}
                 </span>
+                {option.base !== undefined ? (
+                  <span className="self-end text-[13px] text-plum-soft">
+                    {fill(common.price.base, { amount: formatEuro(option.base) })}
+                  </span>
+                ) : null}
                 <span className="text-[15px] text-plum-soft">{option.body}</span>
               </span>
             </label>

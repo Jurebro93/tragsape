@@ -12,6 +12,7 @@ import { cn } from "@/lib/cn";
 import { formatEuro } from "@/lib/format";
 import type { GestureKind } from "@/lib/memorial";
 import { fill } from "@/lib/text";
+import { common } from "@/messages/hr/common";
 import { gesture } from "@/messages/hr/gesture";
 
 type Duration = "gesture_7d" | "gesture_30d" | "gesture_365d";
@@ -35,10 +36,13 @@ export function GestureForm({
   memorialId,
   cancelPath,
   prices,
+  basePrices,
 }: {
   memorialId: string;
   cancelPath: string;
   prices: Record<Duration, number>;
+  /** Bazne cijene istih trajanja; ističu se uz cijenu. */
+  basePrices?: Record<Duration, number>;
 }) {
   const [state, action, pending] = useActionState(startGestureCheckoutAction.bind(null, memorialId, cancelPath), {
     error: null,
@@ -116,7 +120,14 @@ export function GestureForm({
                   />
                   {gesture.durations[duration]}
                 </span>
-                <span className="font-bold">{formatEuro(prices[duration])}</span>
+                <span className="flex flex-col items-end">
+                  <span className="font-bold">{formatEuro(prices[duration])}</span>
+                  {basePrices ? (
+                    <span className="text-[13px] font-normal text-plum-soft">
+                      {fill(common.price.base, { amount: formatEuro(basePrices[duration]) })}
+                    </span>
+                  ) : null}
+                </span>
               </label>
             ))}
             <input type="hidden" name="duration" value={item.duration} />

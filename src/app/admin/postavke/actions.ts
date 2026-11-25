@@ -18,7 +18,9 @@ const text = adminPanel.settings;
 export async function saveProductsAction(_previous: AdminActionState, formData: FormData): Promise<AdminActionState> {
   await requireAdmin("/admin/postavke");
   const supabase = await createSessionClient();
-  const { data: products, error } = await supabase.from("products").select("key, name, unit_amount_cents, active");
+  const { data: products, error } = await supabase
+    .from("products")
+    .select("key, name, unit_amount_cents, base_amount_cents, offered_on, active");
   if (error || !products) {
     return { error: t.failed };
   }
@@ -26,7 +28,14 @@ export async function saveProductsAction(_previous: AdminActionState, formData: 
   // Obrazac navodi koje je proizvode prikazao; neoznačena kućica inače se ne razlikuje od
   // proizvoda kojeg u obrascu nije ni bilo.
   const shown = new Set(formData.getAll("product").filter((value): value is string => typeof value === "string"));
-  const changes: Array<{ key: string; name: string; unit_amount_cents: number; active: boolean }> = [];
+  const changes: Array<{
+    key: string;
+    name: string;
+    unit_amount_cents: number;
+    base_amount_cents: number;
+    offered_on: string | null;
+    active: boolean;
+  }> = [];
   for (const product of products) {
     if (!shown.has(product.key)) {
       continue;
@@ -35,9 +44,30 @@ export async function saveProductsAction(_previous: AdminActionState, formData: 
     if (cents === null) {
       return { error: fill(text.products.errors.price, { name: product.name }) };
     }
+    const base = parseEuroToCents(formText(formData, `base:${product.key}`));
+    if (base === null) {
+      return { error: fill(text.products.errors.base, { name: product.name }) };
+    }
+    const offeredText = formText(formData, `offered:${product.key}`);
+    if (offeredText !== "" && (!/^\d{4}-\d{2}-\d{2}$/.test(offeredText) || Number.isNaN(Date.parse(offeredText)))) {
+      return { error: fill(text.products.errors.offeredOn, { name: product.name }) };
+    }
+    const offeredOn = offeredText === "" ? null : offeredText;
     const active = formData.get(`active:${product.key}`) === "on";
-    if (cents !== product.unit_amount_cents || active !== product.active) {
-      changes.push({ key: product.key, name: product.name, unit_amount_cents: cents, active });
+    if (
+      cents !== product.unit_amount_cents ||
+      base !== product.base_amount_cents ||
+      offeredOn !== product.offered_on ||
+      active !== product.active
+    ) {
+      changes.push({
+        key: product.key,
+        name: product.name,
+        unit_amount_cents: cents,
+        base_amount_cents: base,
+        offered_on: offeredOn,
+        active,
+      });
     }
   }
 
@@ -47,6 +77,9 @@ export async function saveProductsAction(_previous: AdminActionState, formData: 
       .from("products")
       .update({
         unit_amount_cents: change.unit_amount_cents,
+        // Dok datum ponude nije upisan, baza baznu cijenu sama izjednačava s cijenom.
+        base_amount_cents: change.base_amount_cents,
+        offered_on: change.offered_on,
         active: change.active,
         updated_at: new Date().toISOString(),
       })

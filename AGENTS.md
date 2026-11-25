@@ -20,6 +20,9 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 - Preglednik nikad ne dobiva servisni ključ. Servisni ključ koriste samo Stripe webhook, stvaranje narudžbe, zakazani poslovi, poslužiteljski endpointi za javne unose, čitanje slike nakon RLS provjere i brisanje vlastitog računa nakon provjere sesije, u modulima označenima `server-only`.
 - Javni unosi (poruke, svijeće, geste, prijave) idu kroz poslužiteljske endpointove. Prava i primatelji obavijesti izvode se iz pohranjenog vlasništva, nikad iz zahtjeva.
 - Memorijal se dohvaća kroz jedan poslužiteljski modul za pristup. Nema zaobilaznih upita.
+- Nacrt je samo vlasnikov: ne vidi ga ni admin ni suradnik. Admin moderira objavljene i skrivene spomene.
+- Što je dio plaćenog paketa (pisma, vremenska crta, podsjetnici, privatnost, broj fotografija) čuva i baza, ne samo aplikacija.
+- Adresa objavljenog spomena se ne mijenja, ni nakon povlačenja i ponovne objave.
 - Memorijali „samo s linkom" i privatni nikad nisu u sitemapu, na Livadi, na obiteljskoj stranici ni u slikama za dijeljenje sa sadržajem.
 - IP adrese se ne spremaju; samo sažetak s dnevno rotiranom soli. Adresa se čita kroz `clientIp()` (`src/server/public/visitor.ts`), koji uz `CLIENT_IP_HEADER` vjeruje samo zaglavlju posrednika.
 - U Supabaseu mora biti uključena potvrda e-maila („Confirm email"). Bez nje se e-mail dodjeljuje nacrtu bez provjere koda i spomen bi se mogao objaviti pod tuđom adresom.
@@ -31,6 +34,7 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 - Narudžbu ispunjava isključivo Stripe webhook nakon provjere potpisa, idempotentno.
 - Bez pretplata. Bez odbrojavanja, lažne oskudice i pritiska na naplati. Bez e-mailova koji požuruju kupnju ili obnovu.
 - Azil i partneri se ne izmišljaju; prikazuje se samo ono što je vlasnik unio.
+- Gdje god se prikazuje cijena proizvoda, uz nju stoji bazna cijena (`products.base_amount_cents`; ZZP čl. 7.). Cjenik za strojno čitanje na `/cjenik.csv` stvara baza pri svakoj izmjeni proizvoda; ne slaže se ručno. Izvori su u README-u, korak h).
 
 ## AI
 
@@ -41,7 +45,9 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 
 - Svaka cijena i pravna tvrdnja ima izvor i datum pristupa. Ništa se ne izmišlja.
 - Članci o zdravlju i eutanaziji nose oznaku „čeka pregled veterinara" i ne objavljuju se bez vlasnikova odobrenja. To provjerava i baza.
-- Članci i prodajne sekcije uređuju se u adminu, bez deploya.
+- Članci i prodajne sekcije uređuju se u adminu, bez deploya. Nacrti članaka žive u `content/clanci/` i u bazu ulaze kroz `node scripts/seed-articles.mjs`, uvijek kao „na pregledu".
+- Alati su u `src/lib/tools/registry.ts`; alat o zdravlju ili propisima kreće kao `draft` (vidi ga samo admin) i objavljuje se tek nakon pregleda i vlasnikova odobrenja.
+- Izvor posjeta (članak, alat, UTM) putuje u adresi i skrivenim poljima obrasca (`src/lib/attribution.ts`), bez kolačića i bez pohrane u pregledniku.
 
 ## Tekst i ton
 
@@ -72,6 +78,7 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 - **Stil:** Tailwind s tokenima iz `src/app/globals.css` (`vanilla`, `butter`, `sun`, `terracotta`, `terracotta-deep`, `plum`, `plum-soft`, `teal`, `teal-deep`, `mint`, `line`, `danger`; `font-display`, `font-sans`). Bez proizvoljnih boja u komponentama. Dodirne površine najmanje 44 px. Ikone iz `src/components/icons.tsx`, bez emojija.
 - **Teme memorijala** mijenjaju vrijednosti istih tokena unutar `[data-theme]` (vidi kraj `globals.css` i `src/lib/themes.ts`). Nova tema mora zadržati čitljiv bijeli tekst na `terracotta`, `teal` i `plum` te tamni na `butter`, `sun` i `mint`.
 - **Izmjena `globals.css` ne učitava se uživo** u razvojnom poslužitelju: nakon nje ga treba ponovno pokrenuti. Nove Tailwind klase u komponentama učitavaju se normalno.
+- **Obrasci s `useActionState`** uz `action` dobivaju i `onSubmit={keepValues(action)}` (`src/lib/keep-values.ts`). Bez toga React nakon greške u provjeri vrati polja na početne vrijednosti i posjetitelj izgubi upisano.
 - **Identifikatori u kodu su na engleskom**, tekstovi sučelja i putanje ruta na hrvatskom (`/spomen`, `/izradi`, `/moji-ljubimci`).
 - **Lokalni rad:** `npx supabase start`, `npm run dev`; provjere: `npx tsc --noEmit`, `npm run lint`, `npm test`. E-mailovi lokalno stižu u Mailpit na `http://127.0.0.1:54324`.
 
