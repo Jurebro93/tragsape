@@ -129,6 +129,20 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
+                },"families": {
+                  Row: {
+                    "created_at": string,"intro": string | null,"is_public": boolean,"owner_id": string,"slug": string,"title": string,"updated_at": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "created_at"?: string,"intro"?: string | null,"is_public"?: boolean,"owner_id": string,"slug": string,"title": string,"updated_at"?: string
+                  }
+                  Update: {
+                    "created_at"?: string,"intro"?: string | null,"is_public"?: boolean,"owner_id"?: string,"slug"?: string,"title"?: string,"updated_at"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
                 },"gestures": {
                   Row: {
                     "created_at": string,"display_name": string,"expires_at": string,"id": string,"kind": string,"memorial_id": string,"message": string | null,"order_line_id": string | null,"starts_at": string,"status": string
@@ -576,6 +590,11 @@ isOneToOne: false
               "accrued_cents": number,"paid_out_cents": number
             }[]
                            },
+"evening_candles":
+{ Args: { "p_limit"?: number,"p_since": string }; Returns: {
+              "breed": string,"candles": number,"cover_photo_id": string,"memorial_id": string,"name": string,"slug": string,"species": string
+            }[]
+                           },
 "finalize_publish":
 { Args: { "p_id": string }; Returns: string
                            },
@@ -588,8 +607,16 @@ isOneToOne: false
 "is_member":
 { Args: { "p_memorial_id": string }; Returns: boolean
                            },
+"livada_breeds":
+{ Args: { "p_species"?: string }; Returns: {
+              "breed": string,"total": number
+            }[]
+                           },
 "memorial_share_key":
 { Args: { "p_id": string }; Returns: string
+                           },
+"order_memorials":
+{ Args: { "p_order_id": string }; Returns: Json
                            },
 "publish_memorial":
 { Args: { "p_id": string }; Returns: string
@@ -602,6 +629,9 @@ isOneToOne: false
                            },
 "request_share_key":
 { Args: Record<PropertyKey, never>; Returns: string
+                           },
+"save_family":
+{ Args: { "p_intro": string,"p_is_public": boolean,"p_title": string }; Returns: string
                            },
 "set_memorial_visibility":
 { Args: { "p_id": string,"p_visibility": string }; Returns: undefined

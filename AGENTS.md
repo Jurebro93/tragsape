@@ -22,6 +22,8 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 - Memorijal se dohvaća kroz jedan poslužiteljski modul za pristup. Nema zaobilaznih upita.
 - Memorijali „samo s linkom" i privatni nikad nisu u sitemapu, na Livadi, na obiteljskoj stranici ni u slikama za dijeljenje sa sadržajem.
 - IP adrese se ne spremaju; samo sažetak s dnevno rotiranom soli.
+- U Supabaseu mora biti uključena potvrda e-maila („Confirm email"). Bez nje se e-mail dodjeljuje nacrtu bez provjere koda i spomen bi se mogao objaviti pod tuđom adresom.
+- Prijava je bez lozinke: kod iz e-maila ili poveznica koja traži klik na gumb (skeneri pošte je ne mogu potrošiti). Nacrt prije prijave pripada anonimnom korisniku Supabasea.
 
 ## Novac
 
@@ -60,6 +62,7 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 ## Kod: struktura i konvencije
 
 - **Next.js 16 s Cache Components** (`cacheComponents: true`). Stranica se prerenderira; sve što čita kolačiće, zaglavlja, `params`, `searchParams` ili nepredmemorirane podatke mora biti u komponenti unutar `<Suspense>`. Javni podaci čitaju se kroz funkcije s `"use cache"`, `cacheLife` i `cacheTag`; nakon izmjene se zove `updateTag` (poslužiteljska akcija) ili `revalidateTag(tag, "max")` (route handler). Prije pisanja nove vrste rute pročitaj odgovarajući vodič u `node_modules/next/dist/docs/`.
+- **Sesija je uvijek stvarni zahtjev.** `createSessionClient()` zove `connection()`, jer Supabase pri čitanju sesije uspoređuje istek tokena s trenutnim vremenom. Isto vrijedi za svaki kod koji čita `Date.now()` izvan `"use cache"`.
 - **Oznake predmemorije:** `memorial:{id}` i `memorial-slug:{slug}` za memorijal, `products` za cjenik, `donations` za donacije.
 - **Mape:** `src/server/` je samo poslužitelj (svaka datoteka počinje s `import "server-only"`); `src/lib/` je čista logika bez I/O, dijeljena s klijentom; `src/components/ui/` su osnovne komponente; `src/messages/hr/*.ts` su svi tekstovi sučelja, po područjima.
 - **Supabase klijenti** (`src/server/supabase/`): `createSessionClient()` za sve što radi prijavljeni ili anonimni korisnik (RLS kao on); `createAnonClient()` za javno, predmemorirano čitanje; `createAdminClient()` zaobilazi RLS i smije se koristiti samo u Stripe webhooku, stvaranju narudžbe, zakazanim poslovima, endpointima za javne unose i čitanju slike nakon RLS provjere.

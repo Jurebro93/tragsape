@@ -9,9 +9,12 @@
     "lint": "eslint",
     "test": "vitest run",
     "typecheck": "next typegen && tsc --noEmit",
-    "db:types": "supabase gen types typescript > src/server/supabase/database.types.ts"
+    "db:types": "supabase gen types typescript > src/server/supabase/database.types.ts",
+    "smoke": "node scripts/smoke.cjs"
   },
   "dependencies": {
+    "@fontsource/bricolage-grotesque": "^5.3.0",
+    "@fontsource/dm-sans": "^5.3.0",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.119.2",
     "next": "16.4.6",

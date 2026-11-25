@@ -4,6 +4,7 @@ export const common = {
   tagline: "Trag koji ostaje.",
   nav: {
     create: "Izradi spomen",
+    createShort: "Izradi",
     myPets: "Moji ljubimci",
     meadow: "Livada sjećanja",
     pricing: "Cjenik",

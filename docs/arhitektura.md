@@ -1,6 +1,6 @@
 # Trag šape — arhitektura, model podataka i redoslijed izrade
 
-**Status:** prijedlog v0.1 od 25. 11. 2026. — čeka odobrenje vlasnika. Ništa od ovoga još nije izgrađeno.
+**Status:** v0.2 od 25. 11. 2026. Vlasnik je odabrao smjer B („Sunčano jutro”). Izgrađene su cjeline 1 i veći dio cjeline 2; stanje po cjelinama je u `docs/stanje.md`.
 Vizualni smjerovi su na platnu: https://claude.ai/artifact/ST62Bbt8Uk5U9Ea7y13Zsk
 
 ## 1. Stog
@@ -16,13 +16,13 @@ Preporučeni stog (Next.js + Supabase + Stripe Checkout) je dobar izbor i ne vid
 | E-mail | transakcijski servis (prijedlog: Resend) | prijava, nastavak nacrta, moderacija, poklon, podsjetnici |
 | AI tekst | Claude preko poslužiteljske rute | pomoćnik za priču, posvetu i poruku sućuti |
 | AI slike | pružatelj se bira u cjelini 6 | portret iz fotografije |
-| Tekstovi | `next-intl`, sve u `messages/hr.json` | drugi jezici kasnije bez prepravljanja komponenti |
+| Tekstovi | tipizirani rječnici u `src/messages/hr/` | svi tekstovi na jednom mjestu; drugi jezik je novi skup datoteka |
 | Testovi | Vitest, testovi RLS-a nad lokalnim Supabaseom, Playwright | plaćanje, dozvole, privatnost |
 
 Načela:
 
 - Preglednik nikad ne dobiva servisni ključ. Podaci se čitaju na poslužitelju s korisnikovom sesijom, pa RLS vrijedi za svaki upit.
-- Servisni ključ koriste samo tri mjesta: Stripe webhook, zakazani poslovi i poslužiteljski endpointi za javne unose. Svi žive u `src/server/` i označeni su `server-only`.
+- Servisni ključ koriste samo: Stripe webhook, stvaranje narudžbe, zakazani poslovi, poslužiteljski endpointi za javne unose i čitanje slike nakon što je pristup provjeren kroz RLS. Svi žive u `src/server/` i označeni su `server-only`.
 - Sva vremenska logika (godišnjice, „jednom dnevno", sat svijeća) računa se u zoni `Europe/Zagreb`.
 - Tekstovi sučelja ne sklanjaju ime ljubimca. Hrvatski padeži bi tražili ručni unos oblika, pa rečenice pišemo tako da ime stoji u nominativu ili ga nema („Ostavi gestu", ne „Ostavi gestu za Medu").
 
@@ -57,7 +57,7 @@ RLS je uključen na svakoj tablici. Kratice: V = vlasnik, S = suradnik, A = admi
 
 ### Memorijal
 
-- **memorials** — `owner_id`, `slug`, `share_key`, `status` (draft | published | hidden | deleted), `tier` (free | memorial | portrait), `visibility` (public | unlisted | private), `name`, `species`, `breed`, `sex`, `birth_date`, `death_date`, `adoption_date` (svaki s preciznošću dan/mjesec/godina), `dedication` (≤ 300), `story_md`, `nicknames[]`, `traits[]`, `favorite_toy`, `favorite_treat`, `favorite_place`, `funny_habits`, `video_url`, `theme`, `cover_photo_id`, `guestbook_mode` (premoderate | open | off), `candle_count`, `content_score`, `is_indexable`, `attribution` (članak, CTA, UTM), `published_at`.
+- **memorials** — `owner_id`, `slug`, `share_key`, `status` (draft | published | hidden), `tier` (free | memorial | portrait), `visibility` (public | unlisted | private), `name`, `species`, `breed`, `sex`, `birth_date`, `death_date`, `adoption_date` (svaki s preciznošću dan/mjesec/godina), `dedication` (≤ 300), `story_md`, `nicknames[]`, `traits[]`, `favorite_toy`, `favorite_treat`, `favorite_place`, `funny_habits`, `video_url`, `theme`, `cover_photo_id`, `guestbook_mode` (premoderate | open | off), `candle_count`, `content_score`, `is_indexable`, `attribution` (članak, CTA, UTM), `published_at`.
   - Ograničenje u bazi: `tier = 'free'` ⇒ `visibility = 'public'`.
   - Ograničenja po paketu (broj fotografija, pisma, vremenska crta…) provjerava baza, ne samo sučelje.
 - **memorial_members** — `memorial_id`, `user_id`, `role` (owner | editor), `invited_email`, `invite_token_hash`, `accepted_at`. Suradnik uređuje sadržaj i piše pisma; privatnost, brisanje, suradnike i kupnje mijenja samo vlasnik.

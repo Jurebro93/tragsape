@@ -1,0 +1,69 @@
+# Render Blueprint za Trag šape: jedan Node web servis u Frankfurtu.
+# Specifikacija: https://render.com/docs/blueprint-spec
+#
+# VAŽNO — pročitaj prije prvog deploya:
+#
+# 1. Vrijednosti NEXT_PUBLIC_* ugrađuju se u aplikaciju tijekom builda. Moraju biti upisane
+#    PRIJE prvog builda, a nakon svake promjene treba novi deploy (ponovni build).
+#
+# 2. Build čita cjenik i postavke iz baze (naslovnica i cjenik se prerenderiraju). Supabase
+#    projekt zato mora postojati i imati primijenjene migracije prije prvog builda.
+#
+# 3. Varijable sa `sync: false` Render traži samo pri prvom stvaranju Blueprinta. Varijablu
+#    dodanu kasnije treba upisati ručno u Environment servisa.
+#
+# 4. Tajne nikad ne idu u ovu datoteku. Ovdje su samo nazivi varijabli.
+
+services:
+  - type: web
+    name: tragsape
+    runtime: node
+    region: frankfurt
+    # Renderov zadani plan za novi web servis (naplaćuje se). Postoji i `free`, ali takav servis
+    # zaspi nakon 15 minuta bez prometa, pa prvo otvaranje i Stripe webhook kasne oko minute.
+    # Cijene: https://render.com/pricing — odluči prije nego što potvrdiš Blueprint.
+    plan: 0.5c-512mb
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    healthCheckPath: /api/zdravlje
+    envVars:
+      # Node 22. Točna inačica, jer bi raspon bez gornje granice (">=22" iz package.json)
+      # Render protumačio kao najnoviji Node. Može se podići na noviji 22.x.
+      - key: NODE_VERSION
+        value: 22.22.0
+
+      # Javna adresa stranice, bez kose crte na kraju (npr. https://DOMENA). Ugrađuje se pri buildu.
+      - key: NEXT_PUBLIC_SITE_URL
+        sync: false
+
+      # Supabase. URL i publishable ključ ugrađuju se pri buildu.
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        sync: false
+      - key: NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
+        sync: false
+      - key: SUPABASE_SECRET_KEY
+        sync: false
+
+      # Tajna za sažetke posjetitelja: dug nasumičan niz (npr. iz `openssl rand -base64 48`).
+      - key: HASH_SECRET
+        sync: false
+
+      # Stripe. Bez ključeva je kupnja isključena.
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+
+      # E-mail obavijesti (Resend). Bez ključa se poruke samo zapisuju u dnevnik poslužitelja.
+      - key: RESEND_API_KEY
+        sync: false
+      - key: EMAIL_FROM
+        sync: false
+
+      # Zaštita javnih obrazaca (Cloudflare Turnstile); neobavezno. Site key se ugrađuje pri buildu.
+      - key: NEXT_PUBLIC_TURNSTILE_SITE_KEY
+        sync: false
+      - key: TURNSTILE_SECRET_KEY
+        sync: false
+
+      # MAILPIT_URL iz .env.example namjerno nije ovdje: služi samo lokalnom razvoju.

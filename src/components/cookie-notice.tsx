@@ -36,9 +36,9 @@ export function CookieNotice() {
     <div
       role="region"
       aria-label={common.footer.cookies}
-      className="fixed inset-x-3 bottom-3 z-50 mx-auto flex max-w-xl flex-col gap-3 rounded-3xl bg-plum p-4 text-white shadow-lg sm:flex-row sm:items-center"
+      className="fixed inset-x-3 bottom-3 z-50 mx-auto flex max-w-xl items-center gap-3 rounded-3xl bg-plum py-2.5 pl-4 pr-2.5 text-white shadow-lg"
     >
-      <p className="text-sm leading-snug">
+      <p className="text-[13px] leading-snug">
         {common.cookieNotice.body}{" "}
         <Link href="/kolacici" className="text-butter underline underline-offset-4">
           {common.cookieNotice.more}
@@ -46,7 +46,7 @@ export function CookieNotice() {
       </p>
       <button
         type="button"
-        className="min-h-11 shrink-0 rounded-full bg-white px-5 text-sm font-bold text-plum"
+        className="min-h-11 shrink-0 rounded-full bg-white px-4 text-sm font-bold text-plum"
         onClick={() => {
           try {
             window.localStorage.setItem(KEY, "1");

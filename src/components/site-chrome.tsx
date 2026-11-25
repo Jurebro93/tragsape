@@ -5,7 +5,7 @@ import { cn } from "@/lib/cn";
 
 export function Logo({ className }: { className?: string }) {
   return (
-    <Link href="/" className={cn("inline-flex items-center gap-2 text-plum no-underline", className)}>
+    <Link href="/" className={cn("inline-flex shrink-0 items-center gap-2 whitespace-nowrap text-plum no-underline", className)}>
       <PawIcon size={26} className="text-terracotta" />
       <span className="font-display text-xl font-extrabold tracking-tight">{common.brand}</span>
     </Link>
@@ -15,17 +15,15 @@ export function Logo({ className }: { className?: string }) {
 export function SiteHeader({ tone = "vanilla" }: { tone?: "vanilla" | "butter" }) {
   return (
     <header className={cn("w-full", tone === "butter" ? "bg-butter" : "bg-vanilla")}>
-      <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-3 px-5 py-3">
+      <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-2 px-5 py-3">
         <Logo />
-        <nav aria-label="Glavna navigacija" className="flex items-center gap-1 text-[15px] font-semibold">
-          <Link href="/moji-ljubimci" className="rounded-full px-3 py-2.5 text-plum no-underline hover:bg-white/70">
+        <nav aria-label="Glavna navigacija" className="flex items-center gap-1 whitespace-nowrap text-sm font-bold">
+          <Link href="/moji-ljubimci" className="rounded-full px-2.5 py-3 text-plum no-underline hover:bg-white/70">
             {common.nav.myPets}
           </Link>
-          <Link
-            href="/izradi"
-            className="rounded-full bg-plum px-4 py-2.5 text-white no-underline hover:bg-black"
-          >
-            {common.nav.create}
+          <Link href="/izradi" className="rounded-full bg-plum px-4 py-3 text-white no-underline hover:bg-black">
+            <span className="sm:hidden">{common.nav.createShort}</span>
+            <span className="hidden sm:inline">{common.nav.create}</span>
           </Link>
         </nav>
       </div>
@@ -35,6 +33,7 @@ export function SiteHeader({ tone = "vanilla" }: { tone?: "vanilla" | "butter" }
 
 export function SiteFooter() {
   const links = [
+    { href: "/livada", label: common.nav.meadow },
     { href: "/primjer", label: common.nav.example },
     { href: "/cjenik", label: common.nav.pricing },
     { href: "/donacije", label: common.footer.donations },
