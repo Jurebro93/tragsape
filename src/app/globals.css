@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Smjer B — „Sunčano jutro". Boje i fontovi žive ovdje; komponente koriste samo tokene. */
+@theme {
+  --color-vanilla: #fffaf0;
+  --color-butter: #ffe7a8;
+  --color-sun: #f8b93b;
+  --color-terracotta: #c2451f;
+  --color-terracotta-deep: #a83a18;
+  --color-plum: #33242b;
+  --color-plum-soft: #6b5560;
+  --color-teal: #1f6f6b;
+  --color-teal-deep: #134b48;
+  --color-mint: #d5ece8;
+  --color-line: #f3e7d2;
+  --color-danger: #b3261e;
+
+  --font-display: var(--font-bricolage), "Arial Narrow", sans-serif;
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-vanilla);
+  color: var(--color-plum);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--color-teal);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-teal);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

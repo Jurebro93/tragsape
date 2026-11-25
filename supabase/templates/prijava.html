@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="hr">
+  <body style="margin:0;padding:24px;background:#FFFAF0;font-family:Arial,Helvetica,sans-serif;color:#33242B">
+    <div style="max-width:480px;margin:0 auto;background:#FFFFFF;border-radius:24px;padding:32px">
+      <p style="margin:0 0 8px;font-size:14px;font-weight:bold;color:#A83A18">Trag šape</p>
+      <h1 style="margin:0 0 16px;font-size:24px;line-height:1.2">Tvoj kod za prijavu</h1>
+      <p style="margin:0 0 16px;font-size:16px;line-height:1.5">Upiši ovaj kod na stranici na kojoj si zatražio prijavu:</p>
+      <p style="margin:0 0 24px;font-size:34px;font-weight:bold;letter-spacing:6px">{{ .Token }}</p>
+      <p style="margin:0 0 16px;font-size:16px;line-height:1.5">Ili otvori poveznicu na ovom uređaju:</p>
+      <p style="margin:0 0 24px">
+        <a href="{{ .SiteURL }}/auth/potvrda?token_hash={{ .TokenHash }}&type=email&redirect_to={{ .RedirectTo }}" style="display:inline-block;padding:14px 24px;border-radius:28px;background:#C2451F;color:#FFFFFF;font-size:16px;font-weight:bold;text-decoration:none">Nastavi na Trag šape</a>
+      </p>
+      <p style="margin:0;font-size:14px;line-height:1.5;color:#6B5560">Kod vrijedi jedan sat. Ako nisi tražio prijavu, ovu poruku možeš zanemariti.</p>
+    </div>
+  </body>
+</html>

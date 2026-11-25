@@ -17,7 +17,7 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 ## Sigurnost i podaci
 
 - RLS je uključen na svakoj tablici. Nova tablica bez politika ne prolazi pregled.
-- Preglednik nikad ne dobiva servisni ključ. Servisni ključ koriste samo Stripe webhook, zakazani poslovi i poslužiteljski endpointi za javne unose, u modulima označenima `server-only`.
+- Preglednik nikad ne dobiva servisni ključ. Servisni ključ koriste samo Stripe webhook, stvaranje narudžbe, zakazani poslovi, poslužiteljski endpointi za javne unose i čitanje slike nakon RLS provjere, u modulima označenima `server-only`.
 - Javni unosi (poruke, svijeće, geste, prijave) idu kroz poslužiteljske endpointove. Prava i primatelji obavijesti izvode se iz pohranjenog vlasništva, nikad iz zahtjeva.
 - Memorijal se dohvaća kroz jedan poslužiteljski modul za pristup. Nema zaobilaznih upita.
 - Memorijali „samo s linkom" i privatni nikad nisu u sitemapu, na Livadi, na obiteljskoj stranici ni u slikama za dijeljenje sa sadržajem.
@@ -44,7 +44,7 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 ## Tekst i ton
 
 - Jezik je hrvatski, obraćanje s „ti". Mirno i iskreno, bez patetike i lažne utjehe.
-- Svi tekstovi sučelja su u središnjim porukama (`messages/hr.json`), ne u komponentama.
+- Svi tekstovi sučelja su u središnjim porukama (`src/messages/hr/`), ne u komponentama.
 - Tekstovi sučelja ne sklanjaju ime ljubimca; rečenica se piše tako da ime stoji u nominativu ili ga nema.
 - Fontovi moraju imati č, ć, ž, š i đ.
 
@@ -56,3 +56,26 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 ## Testovi
 
 - Plaćanje, dozvole i privatnost memorijala imaju testove. Promjena u tim područjima bez testa nije gotova.
+
+## Kod: struktura i konvencije
+
+- **Next.js 16 s Cache Components** (`cacheComponents: true`). Stranica se prerenderira; sve što čita kolačiće, zaglavlja, `params`, `searchParams` ili nepredmemorirane podatke mora biti u komponenti unutar `<Suspense>`. Javni podaci čitaju se kroz funkcije s `"use cache"`, `cacheLife` i `cacheTag`; nakon izmjene se zove `updateTag` (poslužiteljska akcija) ili `revalidateTag(tag, "max")` (route handler). Prije pisanja nove vrste rute pročitaj odgovarajući vodič u `node_modules/next/dist/docs/`.
+- **Oznake predmemorije:** `memorial:{id}` i `memorial-slug:{slug}` za memorijal, `products` za cjenik, `donations` za donacije.
+- **Mape:** `src/server/` je samo poslužitelj (svaka datoteka počinje s `import "server-only"`); `src/lib/` je čista logika bez I/O, dijeljena s klijentom; `src/components/ui/` su osnovne komponente; `src/messages/hr/*.ts` su svi tekstovi sučelja, po područjima.
+- **Supabase klijenti** (`src/server/supabase/`): `createSessionClient()` za sve što radi prijavljeni ili anonimni korisnik (RLS kao on); `createAnonClient()` za javno, predmemorirano čitanje; `createAdminClient()` zaobilazi RLS i smije se koristiti samo u Stripe webhooku, stvaranju narudžbe, zakazanim poslovima, endpointima za javne unose i čitanju slike nakon RLS provjere.
+- **Stupci se navode izričito.** Javne uloge nemaju pravo na sve stupce (`share_key`, `author_email`, `ip_hash`), pa `select("*")` ne radi.
+- **Stanja koja nose novac ili vidljivost** (`tier`, `status`, `visibility`) mijenjaju se samo kroz funkcije u bazi (`publish_memorial`, `set_memorial_visibility`, `fulfill_order`…), nikad izravnim `update`.
+- **Shema baze** je u `supabase/migrations/`. Promjena sheme je nova migracija; postojeće se ne mijenjaju. Nakon migracije: `npx supabase gen types typescript > src/server/supabase/database.types.ts`.
+- **Stil:** Tailwind s tokenima iz `src/app/globals.css` (`vanilla`, `butter`, `sun`, `terracotta`, `terracotta-deep`, `plum`, `plum-soft`, `teal`, `teal-deep`, `mint`, `line`, `danger`; `font-display`, `font-sans`). Bez proizvoljnih boja u komponentama. Dodirne površine najmanje 44 px. Ikone iz `src/components/icons.tsx`, bez emojija.
+- **Identifikatori u kodu su na engleskom**, tekstovi sučelja i putanje ruta na hrvatskom (`/spomen`, `/izradi`, `/moji-ljubimci`).
+- **Lokalni rad:** `npx supabase start`, `npm run dev`; provjere: `npx tsc --noEmit`, `npm run lint`, `npm test`. E-mailovi lokalno stižu u Mailpit na `http://127.0.0.1:54324`.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+## This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
