@@ -146,6 +146,8 @@ Prvo se na stranici prijavi svojom e-mail adresom, da račun nastane. Zatim u Su
 update public.profiles set role = 'admin' where id = (select id from auth.users where email = '...');
 ```
 
+Nakon toga je admin na adresi `/admin`. Stranica **Stanje sustava** (`/admin/sustav`) pokazuje što je od postavki stiglo do aplikacije (adresa stranice, Stripe, e-mail, zakazani posao, zaštita obrazaca, AI pomoćnik, azil) i šalje probni e-mail na tvoju adresu. Tajne ne prikazuje, samo postoje li.
+
 ### g) Zakazani posao: podsjetnici i odgođeni pokloni
 
 Jednom dnevno treba pozvati `https://DOMENA/api/cron/podsjetnici` s tajnom iz `CRON_SECRET`. Taj poziv šalje podsjetnike (rođendan, dan dolaska u obitelj, godišnjica) i poklone kojima je došao zakazani datum. Ponovljeni poziv istog dana ne šalje ništa dvaput.
@@ -183,6 +185,9 @@ Je li posao prošao, vidi se u `cron.job_run_details`, a odgovor poslužitelja u
 Provjeri ono što je u tom trenutku izgrađeno:
 
 - [ ] `https://DOMENA/api/zdravlje` vraća `{"ok":true}`
+- [ ] `/admin/sustav`: sve stavke koje si podesio su „u redu”, a probni e-mail stiže s tvoje domene
+- [ ] `/admin/sustav`, stavka „Adresa posjetitelja”: prikazana adresa je tvoja; ako među zaglavljima stoji `cf-connecting-ip`, upiši ga u `CLIENT_IP_HEADER`
+- [ ] poveznica na naslovnicu zalijepljena u WhatsApp ili Facebook prikazuje sliku sa šapama i nazivom
 - [ ] naslovnica i `/cjenik` prikazuju cijene iz baze
 - [ ] `/donacije` prikazuje zbroj i poruku da azil još nije odabran
 - [ ] `/robots.txt` i `/sitemap.xml` sadrže adrese s `https://DOMENA`
