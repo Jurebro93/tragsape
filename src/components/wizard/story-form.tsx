@@ -1,5 +1,7 @@
 "use client";
 
+import type { Route } from "next";
+import Link from "next/link";
 import { useRef, useState, useTransition } from "react";
 import { goToReviewAction, saveStoryAction } from "@/app/izradi/actions";
 import { PhotoUploader } from "@/components/wizard/photo-uploader";
@@ -8,6 +10,7 @@ import { Card } from "@/components/ui/card";
 import { Field, Input, Textarea } from "@/components/ui/field";
 import { DEDICATION_MAX, type Photo } from "@/lib/memorial";
 import { fill } from "@/lib/text";
+import { storyHelper } from "@/messages/hr/story-helper";
 import { wizard } from "@/messages/hr/wizard";
 
 export type StoryInitial = {
@@ -186,6 +189,16 @@ export function StoryForm({
             onChange={(event) => set("story", event.target.value)}
           />
         </Field>
+        {isPaid ? (
+          <Link
+            href={`/izradi/${memorialId}/pomocnik` as Route}
+            className="-mt-2 min-h-11 content-center text-[15px] font-semibold"
+          >
+            {storyHelper.link}
+          </Link>
+        ) : (
+          <p className="-mt-2 text-sm text-plum-soft">{storyHelper.paidNote}</p>
+        )}
         <Field label={text.more.video} htmlFor="video" optional hint={text.more.videoHint}>
           <Input
             id="video"

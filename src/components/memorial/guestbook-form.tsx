@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Field, Input, Textarea } from "@/components/ui/field";
+import { Turnstile, turnstileEnabled } from "@/components/ui/turnstile";
 import { useHydrated } from "@/lib/use-hydrated";
 import { common } from "@/messages/hr/common";
 import { memorial as messages } from "@/messages/hr/memorial";
@@ -15,6 +16,7 @@ export function GuestbookForm({ memorialId, shareKey }: { memorialId: string; sh
   const [busy, setBusy] = useState(false);
   const startedAt = useRef<number>(0);
   const hydrated = useHydrated();
+  const [token, setToken] = useState<string | null>(null);
 
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -32,6 +34,7 @@ export function GuestbookForm({ memorialId, shareKey }: { memorialId: string; sh
           email: form.get("email") ?? "",
           website: form.get("website") ?? "",
           startedAt: startedAt.current || Date.now(),
+          turnstileToken: token,
         }),
       });
       const data = (await response.json().catch(() => ({}))) as { status?: string; error?: string; message?: string };
@@ -94,7 +97,8 @@ export function GuestbookForm({ memorialId, shareKey }: { memorialId: string; sh
           {result.message}
         </p>
       ) : null}
-      <Button type="submit" disabled={busy || !hydrated}>
+      <Turnstile onToken={setToken} />
+      <Button type="submit" disabled={busy || !hydrated || (turnstileEnabled && !token)}>
         {busy ? messages.guestbook.sending : messages.guestbook.submit}
       </Button>
     </form>
