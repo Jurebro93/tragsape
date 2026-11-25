@@ -1,8 +1,7 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import { parseVideoUrl } from "@/components/owner/video-url";
-import { isSupportedVideoUrl } from "@/lib/validation";
+import { parseVideoUrl } from "@/lib/video";
 import { videoEmbed } from "@/messages/hr/owner";
 
 function PlayIcon() {
@@ -24,7 +23,7 @@ export function VideoEmbed({ url, title }: { url: string; title?: string }) {
   const focusFrame = useCallback((frame: HTMLIFrameElement | null) => {
     frame?.focus();
   }, []);
-  const video = isSupportedVideoUrl(url) ? parseVideoUrl(url) : null;
+  const video = parseVideoUrl(url);
   if (!video) {
     return null;
   }

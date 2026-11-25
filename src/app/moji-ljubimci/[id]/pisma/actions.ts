@@ -145,3 +145,34 @@ export async function deleteLetterAction(
   refresh();
   return { error: null, done: true };
 }
+
+/**
+ * Vlasnik uklanja javno pismo suradnika sa svog spomena. Tuđe privatno pismo ne vidi, pa ga ne
+ * može ni ukloniti; o tome odlučuje politika u bazi, ne ova akcija.
+ */
+export async function removeSharedLetterAction(
+  memorialId: string,
+  letterId: string,
+  _previous: ActionState,
+  _formData: FormData,
+): Promise<ActionState> {
+  const context = await getOwnerContext(memorialId);
+  if (!context || !context.isOwner || !isUuid(letterId)) {
+    return { error: common.errors.generic };
+  }
+  const supabase = await createSessionClient();
+  const { data, error } = await supabase
+    .from("letters")
+    .delete()
+    .eq("id", letterId)
+    .eq("memorial_id", memorialId)
+    .eq("visibility", "public")
+    .neq("author_id", context.viewer.id)
+    .select("id");
+  if (error || !data || data.length === 0) {
+    return { error: common.errors.generic };
+  }
+  refreshPublicPage(context.memorial);
+  refresh();
+  return { error: null, done: true };
+}

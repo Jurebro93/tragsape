@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState, useState, type ReactNode } from "react";
+import { keepValues } from "@/lib/keep-values";
 import { startGestureCheckoutAction } from "@/app/gesta/actions";
 import { BallIcon, CandleIcon, FlowerIcon, PawIcon, TrashIcon, TreatIcon } from "@/components/icons";
 import { Button } from "@/components/ui/button";
@@ -51,7 +52,7 @@ export function GestureForm({
   }
 
   return (
-    <form action={action} className="flex flex-col gap-5">
+    <form action={action} onSubmit={keepValues(action)} className="flex flex-col gap-5">
       <AttributionFields />
       {items.map((item, index) => (
         <Card key={item.id} className="flex flex-col gap-4">

@@ -211,9 +211,28 @@ describe("knjiga sjećanja i javni unosi", () => {
     }
   });
 
+  it("adresa spomena ostaje ista nakon povlačenja i ponovne objave, i kad se ime promijeni", async () => {
+    const id = await createDraft(owner.client, "Žućo");
+    expect((await owner.client.rpc("publish_memorial", { p_id: id })).error).toBeNull();
+    const first = (await admin.from("memorials").select("slug, published_at").eq("id", id).single()).data!;
+    expect(first.slug).toMatch(/^zuco-[0-9a-f]{6}$/);
+
+    expect((await owner.client.rpc("unpublish_memorial", { p_id: id })).error).toBeNull();
+    // Dok je u nacrtu, na staroj adresi ga izvana nema.
+    expect((await anonClient().from("memorials").select("id").eq("slug", first.slug)).data).toEqual([]);
+    await owner.client.from("memorials").update({ name: "Žućko" }).eq("id", id);
+    expect((await owner.client.rpc("publish_memorial", { p_id: id })).error).toBeNull();
+
+    const second = (await admin.from("memorials").select("slug, published_at, status").eq("id", id).single()).data!;
+    expect(second).toEqual({ slug: first.slug, published_at: first.published_at, status: "published" });
+    expect((await anonClient().from("memorials").select("name").eq("slug", first.slug)).data).toEqual([{ name: "Žućko" }]);
+  });
+
   it("privatno pismo vidi samo autor", async () => {
     const id = await createDraft(owner.client);
     await owner.client.rpc("publish_memorial", { p_id: id });
+    // Pisma su dio plaćenog paketa.
+    await setState(id, { tier: "memorial" });
     await owner.client.from("letters").insert({ memorial_id: id, author_id: owner.id, body: "Nedostaješ mi.", visibility: "private" });
     await owner.client.from("letters").insert({ memorial_id: id, author_id: owner.id, body: "Hvala ti.", visibility: "public" });
     expect((await anonClient().from("letters").select("body").eq("memorial_id", id)).data).toEqual([{ body: "Hvala ti." }]);

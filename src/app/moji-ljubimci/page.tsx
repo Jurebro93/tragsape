@@ -15,7 +15,7 @@ import { account } from "@/messages/hr/account";
 import { auth } from "@/messages/hr/auth";
 import { livada } from "@/messages/hr/livada";
 import { requireMember } from "@/server/auth";
-import { listMyMemorials } from "@/server/memorials/access";
+import { listMyMemorials, listSharedMemorials } from "@/server/memorials/access";
 import { createSessionClient } from "@/server/supabase/session";
 
 export const metadata: Metadata = { title: account.title, robots: { index: false } };
@@ -24,7 +24,7 @@ const stepPaths = ["ljubimac", "prica", "pregled"];
 
 async function MyMemorials() {
   const viewer = await requireMember("/moji-ljubimci");
-  const memorials = await listMyMemorials();
+  const [memorials, sharedMemorials] = await Promise.all([listMyMemorials(), listSharedMemorials()]);
   const supabase = await createSessionClient();
   const { data: family } = await supabase
     .from("families")
@@ -84,6 +84,41 @@ async function MyMemorials() {
         <ButtonLink href="/izradi" variant="secondary">
           {account.newMemorial}
         </ButtonLink>
+      ) : null}
+      {sharedMemorials.length > 0 ? (
+        <section className="flex flex-col gap-3">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-2xl font-extrabold">{account.shared.title}</h2>
+            <p className="text-[15px] text-plum-soft">{account.shared.intro}</p>
+          </div>
+          <ul className="flex flex-col gap-3">
+            {sharedMemorials.map((memorial) => (
+              <li key={memorial.id}>
+                <Card className="flex items-center gap-4">
+                  <span className="flex size-16 shrink-0 items-center justify-center overflow-hidden rounded-full bg-mint text-teal">
+                    {memorial.coverPhotoId ? (
+                      // eslint-disable-next-line @next/next/no-img-element -- vlastita ruta s provjerom pristupa
+                      <img src={photoUrl(memorial.coverPhotoId, "thumb")} alt="" className="size-full object-cover" />
+                    ) : (
+                      <PawIcon size={30} />
+                    )}
+                  </span>
+                  <span className="flex min-w-0 flex-1 flex-col gap-1.5">
+                    <span className="truncate font-display text-xl font-extrabold">{memorial.name || account.untitled}</span>
+                    <span className="flex flex-wrap gap-1.5">
+                      <Chip tone="mint" className="px-2.5 py-0.5 text-[13px]">
+                        {account.shared.chip}
+                      </Chip>
+                    </span>
+                  </span>
+                  <Link href={`/moji-ljubimci/${memorial.id}` as Route} className="flex min-h-11 shrink-0 items-center font-bold">
+                    {account.shared.open}
+                  </Link>
+                </Card>
+              </li>
+            ))}
+          </ul>
+        </section>
       ) : null}
       {hasPublished || family ? (
         <Card className="flex flex-col gap-3">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState, useState } from "react";
+import { keepValues } from "@/lib/keep-values";
 import { startGiftCheckoutAction } from "@/app/poklon/actions";
 import { Button } from "@/components/ui/button";
 import { AttributionFields } from "@/components/wizard/attribution-fields";
@@ -31,7 +32,7 @@ export function GiftForm({
     options.push({ key: "memorial_portrait", name: text.portrait, body: text.portraitBody, price: prices.memorialPortrait });
   }
   return (
-    <form action={action} className="flex flex-col gap-5">
+    <form action={action} onSubmit={keepValues(action)} className="flex flex-col gap-5">
       <AttributionFields />
       <Card className="flex flex-col gap-3">
         <fieldset className="flex flex-col gap-2.5">

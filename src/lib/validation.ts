@@ -2,6 +2,7 @@ import { z } from "zod";
 import type { DatePrecision } from "@/lib/format";
 import { SPECIES_KEYS } from "@/lib/species";
 import { DEDICATION_MAX } from "@/lib/memorial";
+import { parseVideoUrl } from "@/lib/video";
 
 const optionalText = (max: number) =>
   z
@@ -111,18 +112,12 @@ export const storyPatchSchema = z
 
 export type StoryPatch = z.infer<typeof storyPatchSchema>;
 
-/** Video je samo poveznica; ugrađujemo jedino YouTube i Vimeo. */
+/**
+ * Video je samo poveznica; ugrađujemo jedino YouTube i Vimeo. Prolazi samo poveznica koju stranica
+ * spomena zna prikazati, pa vlasnik ne može spremiti video koji se posjetiteljima ne bi vidio.
+ */
 export function isSupportedVideoUrl(value: string): boolean {
-  try {
-    const url = new URL(value);
-    if (url.protocol !== "https:") {
-      return false;
-    }
-    const host = url.hostname.replace(/^www\./, "");
-    return ["youtube.com", "youtu.be", "m.youtube.com", "vimeo.com"].includes(host);
-  } catch {
-    return false;
-  }
+  return parseVideoUrl(value) !== null;
 }
 
 export const emailSchema = z.email("Provjeri e-mail adresu.").max(254);

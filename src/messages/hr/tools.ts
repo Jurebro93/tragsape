@@ -156,12 +156,6 @@ export const tools = {
       "Granice veličine u izvorima nisu posve iste: AKC divovskima smatra pse teže od 100 funti (oko 45 kg), a AVMA teže od 90 funti (oko 41 kg). Ako je tvoj pas blizu granice, pogledaj obje veličine.",
       "Druga brojka dolazi iz formule ljudska dob = 16 × ln(pseća dob) + 31 (Wang i sur., Cell Systems, 2020.). Prikazujemo je od navršene prve do šesnaeste godine.",
     ],
-    table: {
-      summary: "Cijela tablica AKC-a",
-      caption: "Ljudske godine prema dobi i veličini psa. Podaci: American Kennel Club.",
-      ageHeader: "Dob psa",
-      ageUnit: "{count}.",
-    },
     faq: [
       {
         question: "Vrijedi li pravilo da je jedna pseća godina sedam ljudskih?",

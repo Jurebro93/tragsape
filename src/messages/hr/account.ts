@@ -24,6 +24,12 @@ export const account = {
   untitled: "Spomen bez imena",
   continueDraft: "Nastavi izradu",
   manage: "Upravljaj",
+  shared: {
+    title: "Spomeni na kojima surađuješ",
+    intro: "Na ove spomene pozvao te vlasnik. Možeš uređivati sadržaj i pisati pisma.",
+    chip: "Suradnik",
+    open: "Otvori",
+  },
   view: "Pogledaj spomen",
   newMemorial: "Izradi novi spomen",
   signedInAs: "Prijavljen si kao {email}.",

@@ -242,3 +242,32 @@ export async function listMyMemorials(): Promise<Memorial[]> {
     .order("updated_at", { ascending: false });
   return (data ?? []).map((row) => toMemorial(row as MemorialRow));
 }
+
+/**
+ * Objavljeni spomeni na kojima je prijavljeni korisnik suradnik (prihvatio je pozivnicu).
+ * Tuđi nacrt se suradniku ne nudi na popisu; vlasnik ga prvo objavi.
+ */
+export async function listSharedMemorials(): Promise<Memorial[]> {
+  const viewer = await getViewer();
+  if (!viewer || viewer.isAnonymous) {
+    return [];
+  }
+  const client = await createSessionClient();
+  const { data: memberships } = await client
+    .from("memorial_members")
+    .select("memorial_id")
+    .eq("user_id", viewer.id)
+    .not("accepted_at", "is", null);
+  const ids = (memberships ?? []).map((row) => row.memorial_id);
+  if (ids.length === 0) {
+    return [];
+  }
+  const { data } = await client
+    .from("memorials")
+    .select(MEMORIAL_COLUMNS)
+    .in("id", ids)
+    .neq("owner_id", viewer.id)
+    .neq("status", "draft")
+    .order("updated_at", { ascending: false });
+  return (data ?? []).map((row) => toMemorial(row as MemorialRow));
+}

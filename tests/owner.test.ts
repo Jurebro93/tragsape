@@ -10,7 +10,7 @@ vi.mock("@/server/email/send", async (importOriginal) => ({
 vi.mock("@/server/checkout/after-payment", () => ({ sendDueGifts: vi.fn(async () => 0) }));
 
 import { GET, POST } from "@/app/api/cron/podsjetnici/route";
-import { parseVideoUrl } from "@/components/owner/video-url";
+import { parseVideoUrl } from "@/lib/video";
 import { zagrebDay } from "@/lib/time";
 import { isSupportedVideoUrl } from "@/lib/validation";
 import { sendDueGifts } from "@/server/checkout/after-payment";
@@ -266,11 +266,14 @@ describe("pisma", () => {
     expect(await bodies(stranger.client)).toEqual(["Suradnikovo javno pismo."]);
     expect(await bodies(anonClient())).toEqual(["Suradnikovo javno pismo."]);
 
-    // Tuđe pismo se ne može ni mijenjati ni obrisati, pa ni pismo na vlastitom spomenu.
+    // Tuđe pismo se ne može mijenjati, pa ni pismo na vlastitom spomenu; tuđe privatno ni obrisati.
     const ownerEdits = await owner.client.from("letters").update({ body: "Prepravljeno." }).eq("id", theirs.data!.id).select("id");
     expect(ownerEdits.data ?? []).toHaveLength(0);
-    const ownerDeletes = await owner.client.from("letters").delete().eq("id", shared.data!.id).select("id");
-    expect(ownerDeletes.data ?? []).toHaveLength(0);
+    const ownerEditsPublic = await owner.client.from("letters").update({ body: "Prepravljeno." }).eq("id", shared.data!.id).select("id");
+    expect(ownerEditsPublic.data ?? []).toHaveLength(0);
+    const ownerDeletesPrivate = await owner.client.from("letters").delete().eq("id", theirs.data!.id).select("id");
+    expect(ownerDeletesPrivate.data ?? []).toHaveLength(0);
+    // Suradnik i stranac ne brišu ni tuđe javno pismo.
     const collaboratorDeletes = await collaborator.client.from("letters").delete().eq("id", mine.data!.id).select("id");
     expect(collaboratorDeletes.data ?? []).toHaveLength(0);
 
@@ -289,6 +292,47 @@ describe("pisma", () => {
     expect(published.data).toHaveLength(1);
     expect(await bodies(anonClient())).toEqual(["Suradnikovo javno pismo.", "Vlasnikovo privatno pismo."]);
     expect((await collaborator.client.from("letters").delete().eq("id", theirs.data!.id).select("id")).data).toHaveLength(1);
+
+    // Javno pismo suradnika s vlastitog spomena uklanja vlasnik, ali ne i netko treći.
+    expect((await stranger.client.from("letters").delete().eq("id", shared.data!.id).select("id")).data ?? []).toHaveLength(0);
+    expect((await owner.client.from("letters").delete().eq("id", shared.data!.id).select("id")).data).toHaveLength(1);
+    expect(await bodies(anonClient())).toEqual(["Vlasnikovo privatno pismo."]);
+  });
+
+  it("pisma, vremenska crta i podsjetnici traže plaćeni paket i kad se piše izravno u bazu", async () => {
+    const id = await createDraft(owner.client, "Besplatni");
+    expect((await owner.client.rpc("publish_memorial", { p_id: id })).error).toBeNull();
+
+    const letter = await owner.client.from("letters").insert({ memorial_id: id, author_id: owner.id, body: "Bez paketa." });
+    expect(letter.error).not.toBeNull();
+    const event = await owner.client.from("timeline_events").insert({ memorial_id: id, title: "Bez paketa" });
+    expect(event.error).not.toBeNull();
+    const prefs = await owner.client.from("reminder_prefs").insert({ memorial_id: id, user_id: owner.id });
+    expect(prefs.error).not.toBeNull();
+
+    // Uz paket prolazi; nakon povratka na besplatni postojeće se više ne može mijenjati, ali se može obrisati.
+    await admin.from("memorials").update({ tier: "memorial" }).eq("id", id);
+    const paidLetter = await owner.client
+      .from("letters")
+      .insert({ memorial_id: id, author_id: owner.id, body: "S paketom." })
+      .select("id")
+      .single();
+    expect(paidLetter.error).toBeNull();
+    const paidEvent = await owner.client.from("timeline_events").insert({ memorial_id: id, title: "S paketom" }).select("id").single();
+    expect(paidEvent.error).toBeNull();
+
+    await admin.from("memorials").update({ tier: "free" }).eq("id", id);
+    const edited = await owner.client.from("letters").update({ body: "Izmjena bez paketa." }).eq("id", paidLetter.data!.id).select("id");
+    expect(edited.error ?? (edited.data ?? []).length === 0).toBeTruthy();
+    const editedEvent = await owner.client
+      .from("timeline_events")
+      .update({ title: "Izmjena bez paketa" })
+      .eq("id", paidEvent.data!.id)
+      .select("id");
+    expect(editedEvent.error ?? (editedEvent.data ?? []).length === 0).toBeTruthy();
+    expect((await admin.from("letters").select("body").eq("id", paidLetter.data!.id).single()).data?.body).toBe("S paketom.");
+    expect((await owner.client.from("letters").delete().eq("id", paidLetter.data!.id).select("id")).data).toHaveLength(1);
+    expect((await owner.client.from("timeline_events").delete().eq("id", paidEvent.data!.id).select("id")).data).toHaveLength(1);
   });
 });
 
@@ -474,11 +518,12 @@ describe("poveznice na video", () => {
       "https://music.youtube.com/watch?v=dQw4w9WgXcQ",
       "https://example.com/watch?v=dQw4w9WgXcQ",
     ]) {
-      if (parseVideoUrl(url) !== null) {
-        expect(isSupportedVideoUrl(url), url).toBe(true);
-      }
+      // Spremiti se može točno ono što stranica spomena zna prikazati.
+      expect(isSupportedVideoUrl(url), url).toBe(parseVideoUrl(url) !== null);
     }
     expect(parseVideoUrl("https://music.youtube.com/watch?v=dQw4w9WgXcQ")).toBeNull();
+    // Poveznica na kanal nije video: prije bi se spremila, a posjetitelji ne bi vidjeli ništa.
+    expect(isSupportedVideoUrl("https://www.youtube.com/@nekikanal")).toBe(false);
   });
 });
 

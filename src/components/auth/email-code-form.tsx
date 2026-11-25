@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
+import { keepValues } from "@/lib/keep-values";
 import { requestCodeAction, verifyCodeAction, type EmailCodeState } from "@/app/prijava/actions";
 import { Button } from "@/components/ui/button";
 import { Field, Input } from "@/components/ui/field";
@@ -21,7 +22,7 @@ export function EmailCodeForm({ next, sendLabel }: { next: string; sendLabel?: s
 
   if (state.step === "email") {
     return (
-      <form action={requestAction} className="flex flex-col gap-4">
+      <form action={requestAction} onSubmit={keepValues(requestAction)} className="flex flex-col gap-4">
         <input type="hidden" name="next" value={next} />
         <Field label={auth.signIn.emailLabel} htmlFor="email" error={state.error}>
           <Input

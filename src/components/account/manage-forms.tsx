@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
+import { keepValues } from "@/lib/keep-values";
 import {
   deleteMemorialAction,
   saveFamilyAction,
@@ -36,7 +37,7 @@ function Feedback({ state, done }: { state: ActionState; done: string }) {
 export function GuestbookModeForm({ memorialId, mode }: { memorialId: string; mode: GuestbookMode }) {
   const [state, action, pending] = useActionState(setGuestbookModeAction.bind(null, memorialId), idle);
   return (
-    <form action={action} className="flex flex-col gap-3">
+    <form action={action} onSubmit={keepValues(action)} className="flex flex-col gap-3">
       <Field label={account.messages.mode} htmlFor="guestbook-mode">
         <Select id="guestbook-mode" name="mode" defaultValue={mode}>
           <option value="premoderate">{account.messages.modes.premoderate}</option>
@@ -60,7 +61,7 @@ export function VisibilityForm({ memorialId, visibility }: { memorialId: string;
     { value: "private", label: account.visibility.private, body: account.privacy.private },
   ];
   return (
-    <form action={action} className="flex flex-col gap-3">
+    <form action={action} onSubmit={keepValues(action)} className="flex flex-col gap-3">
       <fieldset className="flex flex-col gap-2">
         <legend className="mb-2 text-[15px] font-bold">{account.privacy.label}</legend>
         {options.map((option) => (
@@ -93,7 +94,7 @@ export function VisibilityForm({ memorialId, visibility }: { memorialId: string;
 export function DeleteMemorialForm({ memorialId }: { memorialId: string }) {
   const [state, action, pending] = useActionState(deleteMemorialAction.bind(null, memorialId), idle);
   return (
-    <form action={action} className="flex flex-col gap-3">
+    <form action={action} onSubmit={keepValues(action)} className="flex flex-col gap-3">
       <Field label={account.danger.confirmLabel} htmlFor="confirm-delete" error={state.error}>
         <Input id="confirm-delete" name="confirm" autoComplete="off" required />
       </Field>
@@ -118,7 +119,7 @@ export function FamilyForm({
   const [state, action, pending] = useActionState(saveFamilyAction, idle);
   const text = livada.family.manage;
   return (
-    <form action={action} className="flex flex-col gap-3">
+    <form action={action} onSubmit={keepValues(action)} className="flex flex-col gap-3">
       <Field label={text.name} htmlFor="family-title" error={state.error}>
         <Input
           id="family-title"
@@ -156,7 +157,7 @@ export function FamilyForm({
 export function ThemeForm({ memorialId, theme }: { memorialId: string; theme: ThemeKey }) {
   const [state, action, pending] = useActionState(setThemeAction.bind(null, memorialId), idle);
   return (
-    <form action={action} className="flex flex-col gap-3">
+    <form action={action} onSubmit={keepValues(action)} className="flex flex-col gap-3">
       <fieldset className="flex flex-col gap-2">
         <legend className="sr-only">{account.theme.title}</legend>
         {THEMES.map((item) => (

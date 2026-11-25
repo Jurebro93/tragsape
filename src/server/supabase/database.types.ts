@@ -768,6 +768,9 @@ isOneToOne: false
 "is_member":
 { Args: { "p_memorial_id": string }; Returns: boolean
                            },
+"is_paid_memorial":
+{ Args: { "p_memorial_id": string }; Returns: boolean
+                           },
 "livada_breeds":
 { Args: { "p_species"?: string }; Returns: {
               "breed": string,"total": number

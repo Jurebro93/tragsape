@@ -62,6 +62,12 @@ export const owner = {
     },
     save: "Spremi pismo",
     deleteConfirm: "Obrisati ovo pismo? To se ne može poništiti.",
+    shared: {
+      title: "Javna pisma suradnika",
+      intro: "Ova pisma napisali su suradnici i vidljiva su na stranici spomena. Kao vlasnik možeš ih ukloniti; privatna pisma suradnika ne vidiš.",
+      remove: "Ukloni sa spomena",
+      confirm: "Ukloniti ovo pismo sa spomena? Pismo se briše i to se ne može poništiti.",
+    },
     errors: {
       date: "Provjeri datum.",
       dateFuture: "Datum ne može biti u budućnosti.",

@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
+import { keepValues } from "@/lib/keep-values";
 import { draftStoryAction, saveDraftAsStoryAction, type HelperState } from "@/app/izradi/[id]/pomocnik/actions";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -32,7 +33,7 @@ export function StoryHelperForm({ memorialId, hasStory }: { memorialId: string; 
         </Card>
       ) : null}
 
-      <form action={action} className="flex flex-col gap-5">
+      <form action={action} onSubmit={keepValues(action)} className="flex flex-col gap-5">
         <Card className="flex flex-col gap-5">
           {storyHelper.questions.map((question) => (
             <Field

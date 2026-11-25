@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState, useState } from "react";
+import { keepValues } from "@/lib/keep-values";
 import { applyEntitlementAndPublishAction, publishFreeAction } from "@/app/izradi/actions";
 import { startMemorialCheckoutAction } from "@/app/izradi/checkout-actions";
 import { EmailCodeForm } from "@/components/auth/email-code-form";
@@ -101,7 +102,7 @@ export function PublishPanel({
       ) : null}
 
       <Card className="flex flex-col gap-4">
-        <form action={paidAction} className="flex flex-col gap-4">
+        <form action={paidAction} onSubmit={keepValues(paidAction)} className="flex flex-col gap-4">
           <fieldset className="flex flex-col gap-2.5">
             <legend className="sr-only">{text.choose}</legend>
             {options.map((option) => (

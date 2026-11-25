@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
+import { keepValues } from "@/lib/keep-values";
 import type { BasicsState } from "@/app/izradi/actions";
 import { AttributionFields } from "@/components/wizard/attribution-fields";
 import { Button } from "@/components/ui/button";
@@ -93,7 +94,7 @@ export function PetBasicsForm({
 }) {
   const [state, formAction, pending] = useActionState(action, { errors: {} });
   return (
-    <form action={formAction} className="flex flex-col gap-5">
+    <form action={formAction} onSubmit={keepValues(formAction)} className="flex flex-col gap-5">
       {withAttribution ? <AttributionFields /> : null}
       <Card className="flex flex-col gap-5">
         <Field label={wizard.pet.name} htmlFor="name" error={state.errors.name}>
