@@ -67,6 +67,8 @@ export const wizard = {
       makeCover: "Postavi kao naslovnu",
       remove: "Ukloni",
       alt: "Fotografija {n}",
+      caption: "Opis fotografije {n}",
+      captionPlaceholder: "Opis (neobavezno)",
       errorLimit: "Dosegnut je najveći broj fotografija za ovaj spomen.",
       errorType: "Ta datoteka nije slika koju možemo pročitati. Pokušaj s JPG ili PNG fotografijom.",
       errorSize: "Fotografija je prevelika. Pokušaj s manjom.",

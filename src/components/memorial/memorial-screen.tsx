@@ -204,19 +204,29 @@ export function MemorialScreen({
             <SectionHeading>{messages.sections.photos}</SectionHeading>
             <ul className="grid grid-cols-2 gap-2.5">
               {gallery.map((photo) => (
-                <li key={photo.id} className="relative overflow-hidden rounded-3xl bg-mint">
-                  <img
-                    src={photoUrl(photo.id, "thumb", shareKey)}
-                    srcSet={`${photoUrl(photo.id, "thumb", shareKey)} 480w, ${photoUrl(photo.id, "medium", shareKey)} 1200w`}
-                    sizes="(min-width: 640px) 270px, 45vw"
-                    alt={photo.caption ?? fill(messages.photoAlt, { name })}
-                    loading="lazy"
-                    className="aspect-square size-full object-cover"
-                  />
-                  {photo.kind === "ai_portrait" ? (
-                    <span className="absolute left-2 top-2 rounded-full bg-plum px-2.5 py-1 text-xs font-bold text-white">
-                      {messages.aiLabel}
-                    </span>
+                <li key={photo.id} className="flex flex-col gap-1.5">
+                  <a
+                    href={photoUrl(photo.id, "full", shareKey)}
+                    target="_blank"
+                    rel="noopener"
+                    className="relative block overflow-hidden rounded-3xl bg-mint"
+                  >
+                    <img
+                      src={photoUrl(photo.id, "thumb", shareKey)}
+                      srcSet={`${photoUrl(photo.id, "thumb", shareKey)} 480w, ${photoUrl(photo.id, "medium", shareKey)} 1200w`}
+                      sizes="(min-width: 640px) 270px, 45vw"
+                      alt={photo.caption ?? fill(messages.photoAlt, { name })}
+                      loading="lazy"
+                      className="aspect-square size-full object-cover"
+                    />
+                    {photo.kind === "ai_portrait" ? (
+                      <span className="absolute left-2 top-2 rounded-full bg-plum px-2.5 py-1 text-xs font-bold text-white">
+                        {messages.aiLabel}
+                      </span>
+                    ) : null}
+                  </a>
+                  {photo.caption ? (
+                    <span className="px-1 text-sm text-plum-soft [overflow-wrap:anywhere]">{photo.caption}</span>
                   ) : null}
                 </li>
               ))}

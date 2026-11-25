@@ -2,7 +2,7 @@
 
 /* eslint-disable @next/next/no-img-element -- slike poslužuje vlastita ruta koja provjerava pristup */
 import { useRef, useState } from "react";
-import { deletePhotoAction, setCoverAction } from "@/app/izradi/actions";
+import { deletePhotoAction, setCoverAction, setPhotoCaptionAction } from "@/app/izradi/actions";
 import { CameraIcon, TrashIcon } from "@/components/icons";
 import { buttonClass } from "@/components/ui/button";
 import { photoUrl, type Photo } from "@/lib/memorial";
@@ -146,6 +146,29 @@ export function PhotoUploader({
                     </span>
                   ) : null}
                 </div>
+                {isPaid ? (
+                  <input
+                    defaultValue={photo.caption ?? ""}
+                    maxLength={200}
+                    aria-label={fill(text.caption, { n: index + 1 })}
+                    placeholder={text.captionPlaceholder}
+                    className="min-h-11 w-full rounded-xl border-2 border-line bg-white px-3 text-sm focus:border-teal focus:outline-none"
+                    onBlur={(event) => {
+                      const value = event.target.value;
+                      if (value !== (photo.caption ?? "")) {
+                        void setPhotoCaptionAction(memorialId, photo.id, value).then((result) => {
+                          if (!result.ok) {
+                            setError(result.error);
+                          } else {
+                            setPhotos((current) =>
+                              current.map((item) => (item.id === photo.id ? { ...item, caption: value.trim() || null } : item)),
+                            );
+                          }
+                        });
+                      }
+                    }}
+                  />
+                ) : null}
                 <div className="flex items-center justify-between gap-1">
                   {isCover ? (
                     <span />

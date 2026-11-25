@@ -18,6 +18,12 @@ export function SiteHeader({ tone = "vanilla" }: { tone?: "vanilla" | "butter" }
       <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-2 px-5 py-3">
         <Logo />
         <nav aria-label="Glavna navigacija" className="flex items-center gap-1 whitespace-nowrap text-sm font-bold">
+          <Link
+            href="/livada"
+            className="hidden rounded-full px-2.5 py-3 text-plum no-underline hover:bg-white/70 sm:inline-block"
+          >
+            {common.nav.meadow}
+          </Link>
           <Link href="/moji-ljubimci" className="rounded-full px-2.5 py-3 text-plum no-underline hover:bg-white/70">
             {common.nav.myPets}
           </Link>

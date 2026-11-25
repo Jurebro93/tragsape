@@ -187,6 +187,23 @@ export async function setCoverAction(memorialId: string, photoId: string): Promi
   return { ok: true };
 }
 
+/** Opis ispod fotografije (do 200 znakova). Prazan opis se briše. */
+export async function setPhotoCaptionAction(memorialId: string, photoId: string, caption: string): Promise<SaveResult> {
+  const value = caption.replace(/\s+/g, " ").trim().slice(0, 200);
+  const supabase = await createSessionClient();
+  const { data, error } = await supabase
+    .from("memorial_photos")
+    .update({ caption: value === "" ? null : value })
+    .eq("id", photoId)
+    .eq("memorial_id", memorialId)
+    .select("id");
+  if (error || !data || data.length === 0) {
+    return { ok: false, error: common.errors.generic };
+  }
+  await refreshIfPublished(memorialId);
+  return { ok: true };
+}
+
 export async function deletePhotoAction(memorialId: string, photoId: string): Promise<SaveResult> {
   const supabase = await createSessionClient();
   const { data, error } = await supabase
