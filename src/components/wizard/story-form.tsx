@@ -57,6 +57,7 @@ export function StoryForm({
   coverPhotoId,
   photoLimit,
   isPaid,
+  canSaveLater = false,
 }: {
   memorialId: string;
   initial: StoryInitial;
@@ -64,6 +65,8 @@ export function StoryForm({
   coverPhotoId: string | null;
   photoLimit: number;
   isPaid: boolean;
+  /** Anonimnom vlasniku nudi se da nacrt veže uz e-mail prije nego što nastavi. */
+  canSaveLater?: boolean;
 }) {
   const [values, setValues] = useState(initial);
   const [status, setStatus] = useState<"idle" | "saving" | "saved" | "error">("idle");
@@ -218,6 +221,14 @@ export function StoryForm({
       <Button onClick={next} disabled={leaving}>
         {leaving ? text.saving : text.next}
       </Button>
+      {canSaveLater ? (
+        <Link
+          href={`/izradi/${memorialId}/spremi` as Route}
+          className="min-h-11 content-center self-center text-[15px] font-semibold"
+        >
+          {wizard.saveLater}
+        </Link>
+      ) : null}
     </div>
   );
 }

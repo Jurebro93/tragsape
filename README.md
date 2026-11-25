@@ -50,6 +50,7 @@ Treba ti Node 22 ili noviji i Docker (za lokalni Supabase).
 npx tsc --noEmit   # tipovi
 npm run lint       # ESLint
 npm test           # Vitest
+npm run smoke      # dimni test cijelog besplatnog toka u pregledniku (treba pokrenuta aplikacija i Playwright)
 ```
 
 Testovi dozvola i plaćanja rade nad lokalnim Supabaseom, pa on mora biti pokrenut, a `.env.local` popunjen.
@@ -145,7 +146,39 @@ Prvo se na stranici prijavi svojom e-mail adresom, da račun nastane. Zatim u Su
 update public.profiles set role = 'admin' where id = (select id from auth.users where email = '...');
 ```
 
-### g) Provjera nakon postavljanja
+### g) Zakazani posao: podsjetnici i odgođeni pokloni
+
+Jednom dnevno treba pozvati `https://DOMENA/api/cron/podsjetnici` s tajnom iz `CRON_SECRET`. Taj poziv šalje podsjetnike (rođendan, dan dolaska u obitelj, godišnjica) i poklone kojima je došao zakazani datum. Ponovljeni poziv istog dana ne šalje ništa dvaput.
+
+Najjednostavnije je to zakazati u samom Supabaseu (Integrations → Cron), bez dodatnog servisa. U SQL uređivaču, sa svojom domenom i istom tajnom koju si upisao u `CRON_SECRET` na Renderu:
+
+```sql
+create extension if not exists pg_net;
+create extension if not exists pg_cron;
+
+-- Tajna i adresa čuvaju se u Supabase Vaultu, ne u tekstu posla.
+select vault.create_secret('https://DOMENA', 'site_url');
+select vault.create_secret('ISTA_TAJNA_KAO_CRON_SECRET', 'cron_secret');
+
+select cron.schedule(
+  'trag-sape-podsjetnici',
+  '15 6 * * *', -- svaki dan u 6:15 UTC (7:15 zimi, 8:15 ljeti po hrvatskom vremenu)
+  $$
+  select net.http_post(
+    url := (select decrypted_secret from vault.decrypted_secrets where name = 'site_url') || '/api/cron/podsjetnici',
+    headers := jsonb_build_object(
+      'Content-Type', 'application/json',
+      'Authorization', 'Bearer ' || (select decrypted_secret from vault.decrypted_secrets where name = 'cron_secret')
+    ),
+    timeout_milliseconds := 30000
+  );
+  $$
+);
+```
+
+Je li posao prošao, vidi se u `cron.job_run_details`, a odgovor poslužitelja u `net._http_response`. Isti poziv može slati i bilo koji drugi planer (npr. Render Cron Job), ako ga radije koristiš.
+
+### h) Provjera nakon postavljanja
 
 Provjeri ono što je u tom trenutku izgrađeno:
 
@@ -183,6 +216,8 @@ Provjeri ono što je u tom trenutku izgrađeno:
 | `EMAIL_FROM` | Pošiljatelj obavijesti, npr. `Trag šape <pozdrav@DOMENA>`. | za e-mail |
 | `NEXT_PUBLIC_TURNSTILE_SITE_KEY` | Javni ključ Cloudflare Turnstilea za zaštitu javnih obrazaca. Ugrađuje se pri buildu. | ne |
 | `TURNSTILE_SECRET_KEY` | Tajni ključ Turnstilea. Bez ključeva rade zamka i ograničenja učestalosti. | ne |
+| `CRON_SECRET` | Tajna kojom se zakazani posao predstavlja adresi `/api/cron/podsjetnici`. Dug nasumičan niz. Bez nje se podsjetnici i odgođeni pokloni ne šalju. | za podsjetnike |
+| `ANTHROPIC_API_KEY` | Ključ za AI pomoćnika za priču. Bez njega je pomoćnik isključen, a sve ostalo radi. | ne |
 | `MAILPIT_URL` | Samo lokalno: adresa testnog poštanskog sandučića. Na Renderu se ne postavlja. | ne |
 | `NODE_VERSION` | Samo na Renderu: inačica Nodea. Postavljena je u `render.yaml`. | — |
 

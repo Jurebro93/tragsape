@@ -66,4 +66,11 @@ services:
       - key: TURNSTILE_SECRET_KEY
         sync: false
 
+      # Zakazani posao (podsjetnici, odgođeni pokloni) predstavlja se ovom tajnom.
+      - key: CRON_SECRET
+        sync: false
+      # AI pomoćnik za priču; bez ključa je isključen.
+      - key: ANTHROPIC_API_KEY
+        sync: false
+
       # MAILPIT_URL iz .env.example namjerno nije ovdje: služi samo lokalnom razvoju.

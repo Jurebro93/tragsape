@@ -5,13 +5,14 @@ import { WizardFrame } from "@/components/wizard/frame";
 import { StoryForm } from "@/components/wizard/story-form";
 import { FREE_PHOTO_LIMIT, PAID_PHOTO_LIMIT, isPaid } from "@/lib/memorial";
 import { wizard } from "@/messages/hr/wizard";
+import { getViewer } from "@/server/auth";
 import { getEditableMemorial } from "@/server/memorials/access";
 
 export const metadata: Metadata = { title: wizard.steps[1], robots: { index: false } };
 
 async function Content({ params }: Pick<PageProps<"/izradi/[id]/prica">, "params">) {
   const { id } = await params;
-  const editable = await getEditableMemorial(id);
+  const [editable, viewer] = await Promise.all([getEditableMemorial(id), getViewer()]);
   if (!editable) {
     notFound();
   }
@@ -22,6 +23,7 @@ async function Content({ params }: Pick<PageProps<"/izradi/[id]/prica">, "params
       <StoryForm
         memorialId={id}
         isPaid={paid}
+        canSaveLater={Boolean(viewer?.isAnonymous)}
         photoLimit={paid ? PAID_PHOTO_LIMIT : FREE_PHOTO_LIMIT}
         photos={photos}
         coverPhotoId={memorial.coverPhotoId}

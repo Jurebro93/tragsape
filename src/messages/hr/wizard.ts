@@ -5,6 +5,12 @@ export const wizard = {
   steps: ["Ljubimac", "Priča i fotografije", "Pregled"],
   stepOf: "Korak {n} od 3",
   saveLater: "Spremi i nastavi kasnije",
+  save: {
+    body: "Upiši e-mail i poslat ćemo ti kod. Nacrt se veže uz tvoju adresu, pa mu se možeš vratiti kad god želiš, s bilo kojeg uređaja. Ništa se ne objavljuje.",
+    send: "Pošalji mi kod",
+    back: "Natrag na nacrt",
+    saved: "Nacrt je spremljen uz tvoj e-mail.",
+  },
   drafts: {
     title: "Nastavi započeto",
     untitled: "Spomen bez imena",
