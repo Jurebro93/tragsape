@@ -284,6 +284,14 @@ const memorialItem = (memorialId: string, overrides: Partial<Extract<CheckoutIte
 
 beforeAll(async () => {
   expect(isCheckoutConfigured()).toBe(true);
+  // Portret je u bazi isključen dok se ne izgradi; ovdje se ispituje i njegova naplata.
+  must(
+    await admin
+      .from("products")
+      .update({ active: true })
+      .in("key", ["memorial_portrait", "upgrade_portrait"])
+      .select("key"),
+  );
   const products = must(await admin.from("products").select("key, unit_amount_cents"));
   prices = Object.fromEntries(products.map((product) => [product.key, product.unit_amount_cents]));
   const settings = must(
@@ -307,6 +315,7 @@ beforeEach(() => {
 });
 
 afterAll(async () => {
+  await admin.from("products").update({ active: false }).in("key", ["memorial_portrait", "upgrade_portrait"]);
   // Narudžbe preživljavaju brisanje korisnika (user_id postaje prazan), pa se čiste izričito,
   // redom koji poštuje strane ključeve. Inače bi testne donacije ostale u javnom zbroju.
   if (userIds.length > 0) {

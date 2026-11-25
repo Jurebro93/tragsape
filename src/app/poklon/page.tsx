@@ -44,7 +44,7 @@ async function Purchase() {
   return (
     <GiftForm
       today={zagrebDay()}
-      prices={memorial !== undefined && memorialPortrait !== undefined ? { memorial, memorialPortrait } : null}
+      prices={memorial !== undefined ? { memorial, memorialPortrait: memorialPortrait ?? null } : null}
     />
   );
 }

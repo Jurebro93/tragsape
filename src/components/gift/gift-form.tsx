@@ -16,16 +16,19 @@ export function GiftForm({
   prices,
   today,
 }: {
-  prices: { memorial: number; memorialPortrait: number } | null;
+  prices: { memorial: number; memorialPortrait: number | null } | null;
   today: string;
 }) {
   const [state, action, pending] = useActionState(startGiftCheckoutAction, { error: null });
   const [product, setProduct] = useState<"memorial" | "memorial_portrait">("memorial");
   const [later, setLater] = useState(false);
-  const options = [
-    { key: "memorial" as const, name: text.memorial, body: text.memorialBody, price: prices?.memorial },
-    { key: "memorial_portrait" as const, name: text.portrait, body: text.portraitBody, price: prices?.memorialPortrait },
+  const options: Array<{ key: "memorial" | "memorial_portrait"; name: string; body: string; price?: number }> = [
+    { key: "memorial", name: text.memorial, body: text.memorialBody, price: prices?.memorial },
   ];
+  // Portret se nudi samo dok je uključen u cjeniku.
+  if (prices && prices.memorialPortrait !== null) {
+    options.push({ key: "memorial_portrait", name: text.portrait, body: text.portraitBody, price: prices.memorialPortrait });
+  }
   return (
     <form action={action} className="flex flex-col gap-5">
       <Card className="flex flex-col gap-3">

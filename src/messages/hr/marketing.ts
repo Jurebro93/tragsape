@@ -98,7 +98,7 @@ export const marketing = {
   pricing: {
     metaTitle: "Cjenik",
     metaDescription:
-      "Besplatni spomen, Memorijal i Memorijal + Portret. Sva plaćanja su jednokratna, bez pretplate.",
+      "Besplatni spomen i plaćeni paketi za više fotografija, priču i privatnost. Sva plaćanja su jednokratna, bez pretplate.",
     title: "Cjenik",
     intro: "Osnovni spomen je besplatan. Tko želi više prostora za priču, plaća jednom. Pretplate nema.",
     tiersTitle: "Paketi",

@@ -24,7 +24,8 @@ async function loadPrices() {
   const byKey = new Map((data ?? []).map((row) => [row.key, row.unit_amount_cents]));
   const memorial = byKey.get("memorial");
   const memorialPortrait = byKey.get("memorial_portrait");
-  return memorial !== undefined && memorialPortrait !== undefined ? { memorial, memorialPortrait } : null;
+  // Portret se nudi samo dok je uključen u cjeniku.
+  return memorial !== undefined ? { memorial, memorialPortrait: memorialPortrait ?? null } : null;
 }
 
 /** Ima li nacrt sadržaj koji se vidi tek uz Memorijal. */

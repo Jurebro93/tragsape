@@ -16,7 +16,8 @@ import { wizard } from "@/messages/hr/wizard";
 
 const text = wizard.review;
 
-export type PackagePrices = { memorial: number; memorialPortrait: number };
+/** Cijene paketa u centima. `memorialPortrait` je null dok se taj paket ne prodaje. */
+export type PackagePrices = { memorial: number; memorialPortrait: number | null };
 
 /**
  * Zadnji korak: potvrda e-maila ako je potrebna, zatim izbor između besplatne objave i
@@ -63,15 +64,18 @@ export function PublishPanel({
     return <AvailablePackage memorialId={memorialId} available={available} />;
   }
 
-  const options = [
-    { key: "memorial" as const, name: text.paid.memorial, body: text.paid.memorialBody, price: prices?.memorial },
-    {
-      key: "memorial_portrait" as const,
-      name: text.paid.portrait,
-      body: text.paid.portraitBody,
-      price: prices?.memorialPortrait,
-    },
-  ];
+  const options: Array<{ key: "memorial" | "memorial_portrait"; name: string; body: string; price: number }> = [];
+  if (prices) {
+    options.push({ key: "memorial", name: text.paid.memorial, body: text.paid.memorialBody, price: prices.memorial });
+    if (prices.memorialPortrait !== null) {
+      options.push({
+        key: "memorial_portrait",
+        name: text.paid.portrait,
+        body: text.paid.portraitBody,
+        price: prices.memorialPortrait,
+      });
+    }
+  }
 
   return (
     <div className="flex flex-col gap-5">
@@ -119,9 +123,7 @@ export function PublishPanel({
                 <span className="flex flex-1 flex-col gap-0.5">
                   <span className="flex items-baseline justify-between gap-3">
                     <span className="font-display text-xl font-extrabold">{option.name}</span>
-                    {option.price !== undefined ? (
-                      <span className="shrink-0 font-bold">{formatEuro(option.price)}</span>
-                    ) : null}
+                    <span className="shrink-0 font-bold">{formatEuro(option.price)}</span>
                   </span>
                   <span className="text-[15px] text-plum-soft">{option.body}</span>
                 </span>
@@ -130,7 +132,7 @@ export function PublishPanel({
           </fieldset>
           <p className="text-sm text-plum-soft">{text.paid.oneOff}</p>
 
-          {checkoutReady ? (
+          {checkoutReady && options.length > 0 ? (
             <>
               <Field label={text.paid.visibility} htmlFor="visibility">
                 <Select id="visibility" name="visibility" defaultValue="public">
