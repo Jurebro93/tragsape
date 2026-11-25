@@ -55,4 +55,11 @@ export const env = {
   get anthropicApiKey() {
     return optional("ANTHROPIC_API_KEY");
   },
+  /**
+   * Zaglavlje u koje posrednik domaćina upisuje pravu adresu posjetitelja (npr. `cf-connecting-ip`).
+   * Bez njega se uzima prva adresa iz `x-forwarded-for`, koju posjetitelj ponekad može sam podmetnuti.
+   */
+  get clientIpHeader() {
+    return optional("CLIENT_IP_HEADER")?.toLowerCase() ?? null;
+  },
 };

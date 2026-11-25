@@ -66,6 +66,11 @@ services:
       - key: TURNSTILE_SECRET_KEY
         sync: false
 
+      # Zaglavlje s pravom adresom posjetitelja (npr. cf-connecting-ip); neobavezno.
+      # Što stiže do poslužitelja vidi se u adminu pod „Stanje sustava".
+      - key: CLIENT_IP_HEADER
+        sync: false
+
       # Zakazani posao (podsjetnici, odgođeni pokloni) predstavlja se ovom tajnom.
       - key: CRON_SECRET
         sync: false

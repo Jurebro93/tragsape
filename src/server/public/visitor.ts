@@ -5,8 +5,21 @@ import { env } from "@/server/env";
 import { createAdminClient } from "@/server/supabase/admin";
 import { createSessionClient } from "@/server/supabase/session";
 
-/** Adresa posjetitelja iza posrednika domaćina. Koristi se samo za sažetak, nikad se ne sprema. */
+/**
+ * Adresa posjetitelja iza posrednika domaćina. Koristi se samo za sažetak, nikad se ne sprema.
+ *
+ * Ako je postavljen `CLIENT_IP_HEADER`, vjeruje se samo tom zaglavlju (posrednik ga prepisuje, pa ga
+ * posjetitelj ne može podmetnuti). Inače se uzima prva adresa iz `x-forwarded-for`, što je točno
+ * samo ako posrednik briše ono što je poslao posjetitelj.
+ */
 export function clientIp(request: Request): string {
+  const trusted = env.clientIpHeader;
+  if (trusted) {
+    const value = request.headers.get(trusted)?.split(",")[0]?.trim();
+    if (value) {
+      return value;
+    }
+  }
   const forwarded = request.headers.get("x-forwarded-for");
   return forwarded?.split(",")[0]?.trim() || request.headers.get("x-real-ip") || "nepoznato";
 }

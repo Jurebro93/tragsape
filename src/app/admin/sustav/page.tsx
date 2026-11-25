@@ -1,8 +1,10 @@
+import { headers } from "next/headers";
 import { Suspense } from "react";
 import { TestEmailForm } from "@/app/admin/sustav/test-email-form";
 import { Card, Chip } from "@/components/ui/card";
 import { requireAdmin } from "@/server/auth";
 import { env } from "@/server/env";
+import { clientIp } from "@/server/public/visitor";
 import { createSessionClient } from "@/server/supabase/session";
 
 /**
@@ -26,6 +28,12 @@ async function Status() {
     supabase.from("stripe_events").select("event_id, error").not("error", "is", null).limit(1),
   ]);
   const siteUrl = env.siteUrl;
+  const requestHeaders = await headers();
+  const ipHeader = env.clientIpHeader;
+  const forwardedCount = (requestHeaders.get("x-forwarded-for") ?? "").split(",").filter((part) => part.trim() !== "").length;
+  const proxyHeaders = ["cf-connecting-ip", "true-client-ip", "x-real-ip"].filter((name) => requestHeaders.has(name));
+  const seenIp = clientIp(new Request(siteUrl, { headers: requestHeaders }));
+  const ipHeaderWorks = Boolean(ipHeader && requestHeaders.get(ipHeader));
   const stripeKey = process.env.STRIPE_SECRET_KEY ?? "";
 
   const checks: Check[] = [
@@ -80,6 +88,24 @@ async function Status() {
           : has("TURNSTILE_SECRET_KEY") || has("NEXT_PUBLIC_TURNSTILE_SITE_KEY")
             ? "Postavljen je samo jedan od dva ključa: poruke u knjizi sjećanja neće prolaziti dok ne postaviš oba."
             : "Nije uključena; rade zamka i ograničenja učestalosti.",
+    },
+    {
+      name: "Adresa posjetitelja",
+      ok: ipHeaderWorks,
+      detail: [
+        `Poslužitelj te sada vidi kao ${seenIp}.`,
+        ipHeaderWorks
+          ? `Čita se iz zaglavlja ${ipHeader}.`
+          : ipHeader
+            ? `Zaglavlje ${ipHeader} iz CLIENT_IP_HEADER nije stiglo, pa se uzima prva adresa iz x-forwarded-for.`
+            : "CLIENT_IP_HEADER nije postavljen, pa se uzima prva adresa iz x-forwarded-for.",
+        `U x-forwarded-for stiže adresa: ${forwardedCount}. Druga zaglavlja posrednika: ${proxyHeaders.length > 0 ? proxyHeaders.join(", ") : "nema"}.`,
+        ipHeaderWorks
+          ? ""
+          : "Ako je gore tvoja prava adresa i među zaglavljima je cf-connecting-ip, upiši ga u CLIENT_IP_HEADER: tada se ograničenja učestalosti ne mogu zaobići podmetnutom adresom.",
+      ]
+        .filter((part) => part !== "")
+        .join(" "),
     },
     {
       name: "AI pomoćnik za priču",

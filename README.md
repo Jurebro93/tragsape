@@ -216,6 +216,7 @@ Provjeri ono što je u tom trenutku izgrađeno:
 | `EMAIL_FROM` | Pošiljatelj obavijesti, npr. `Trag šape <pozdrav@DOMENA>`. | za e-mail |
 | `NEXT_PUBLIC_TURNSTILE_SITE_KEY` | Javni ključ Cloudflare Turnstilea za zaštitu javnih obrazaca. Ugrađuje se pri buildu. | ne |
 | `TURNSTILE_SECRET_KEY` | Tajni ključ Turnstilea. Bez ključeva rade zamka i ograničenja učestalosti. | ne |
+| `CLIENT_IP_HEADER` | Zaglavlje u koje posrednik hostinga upisuje pravu adresu posjetitelja (npr. `cf-connecting-ip`). Bez njega se uzima prva adresa iz `x-forwarded-for`, koju posjetitelj možda može podmetnuti i tako zaobići ograničenja učestalosti. Što stiže do poslužitelja pokazuje admin, „Stanje sustava". | ne |
 | `CRON_SECRET` | Tajna kojom se zakazani posao predstavlja adresi `/api/cron/podsjetnici`. Dug nasumičan niz. Bez nje se podsjetnici i odgođeni pokloni ne šalju. | za podsjetnike |
 | `ANTHROPIC_API_KEY` | Ključ za AI pomoćnika za priču. Bez njega je pomoćnik isključen, a sve ostalo radi. | ne |
 | `MAILPIT_URL` | Samo lokalno: adresa testnog poštanskog sandučića. Na Renderu se ne postavlja. | ne |
