@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import { signOutAction } from "@/app/prijava/actions";
 import { PawIcon } from "@/components/icons";
 import { FamilyForm } from "@/components/account/manage-forms";
+import { AccountLink } from "@/components/owner/manage-links";
 import { PageShell } from "@/components/site-chrome";
 import { Button, ButtonLink } from "@/components/ui/button";
 import { Card, Chip } from "@/components/ui/card";
@@ -104,6 +105,7 @@ async function MyMemorials() {
           ) : null}
         </Card>
       ) : null}
+      <AccountLink />
       <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-plum-soft">
         <span>{fill(account.signedInAs, { email: viewer.email ?? "" })}</span>
         <form action={signOutAction}>

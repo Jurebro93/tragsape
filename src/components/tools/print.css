@@ -1,0 +1,26 @@
+/*
+ * Ispis stranica alata (npr. upitnik koji se nosi veterinaru): bez zaglavlja, podnožja,
+ * obavijesti o kolačićima i svega označenog s data-print="hide"; crno na bijelom.
+ */
+@media print {
+  body > header,
+  body > footer,
+  body > [role="region"],
+  [data-print="hide"] {
+    display: none !important;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  a {
+    color: inherit !important;
+  }
+
+  @page {
+    margin: 18mm 16mm;
+  }
+}

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { moderateEntryAction, moderateGestureAction, unpublishAction } from "@/app/moji-ljubimci/actions";
 import { DeleteMemorialForm, GuestbookModeForm, ThemeForm, VisibilityForm } from "@/components/account/manage-forms";
+import { ManageLinks } from "@/components/owner/manage-links";
 import { PageShell } from "@/components/site-chrome";
 import { Button, ButtonLink, buttonClass } from "@/components/ui/button";
 import { Card, Chip } from "@/components/ui/card";
@@ -89,6 +90,8 @@ async function Manage({ params }: Pick<PageProps<"/moji-ljubimci/[id]">, "params
           {fill(account.package.photos, { used: photoCount, limit: paid ? PAID_PHOTO_LIMIT : FREE_PHOTO_LIMIT })}
         </p>
       </Card>
+
+      <ManageLinks memorialId={memorial.id} tier={memorial.tier} isOwner={isOwner} />
 
       <Card className="flex flex-col gap-3">
         <div className="flex flex-col gap-1">

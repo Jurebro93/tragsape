@@ -31,7 +31,6 @@ export const memorial = {
     place: "Omiljeno mjesto",
     habits: "Smiješne navike",
   },
-  video: "Pogledaj video",
   gestureKinds: {
     svijeca: "svijeća",
     sapica: "šapica",

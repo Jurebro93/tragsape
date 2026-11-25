@@ -1,12 +1,14 @@
 import type { MetadataRoute } from "next";
 import { cacheLife, cacheTag } from "next/cache";
 import { isIndexable } from "@/lib/indexing";
+import { publicTools, toolPath } from "@/lib/tools/registry";
 import { LEGAL_DRAFT } from "@/messages/hr/legal";
+import { listPublishedArticleSlugs } from "@/server/content/articles";
 import { env } from "@/server/env";
 import { createAnonClient } from "@/server/supabase/anon";
 
 /** Javne stranice bez parametara. Nova javna stranica dodaje se ovdje. */
-const STATIC_PATHS = ["/", "/livada", "/primjer", "/cjenik", "/donacije"] as const;
+const STATIC_PATHS = ["/", "/livada", "/primjer", "/cjenik", "/donacije", "/vodic", "/alati"] as const;
 /** Pravni tekstovi ulaze u sitemap tek kad prestanu biti nacrt. */
 const LEGAL_PATHS = ["/uvjeti", "/privatnost", "/kolacici"] as const;
 
@@ -69,10 +71,16 @@ async function getIndexableMemorials(): Promise<SitemapMemorial[]> {
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = env.siteUrl;
   const paths = LEGAL_DRAFT ? STATIC_PATHS : [...STATIC_PATHS, ...LEGAL_PATHS];
-  const memorials = await getIndexableMemorials();
+  const [memorials, articles] = await Promise.all([getIndexableMemorials(), listPublishedArticleSlugs()]);
 
   return [
     ...paths.map((path) => ({ url: path === "/" ? base : `${base}${path}` })),
+    // Samo objavljeni alati i članci: nacrti (zdravlje, propisi) ne postoje za tražilice.
+    ...publicTools().map((tool) => ({ url: `${base}${toolPath(tool.slug)}` })),
+    ...articles.map((article) => ({
+      url: `${base}/vodic/${article.slug}`,
+      lastModified: article.updatedAt,
+    })),
     ...memorials.map((memorial) => ({
       url: `${base}/spomen/${memorial.slug}`,
       lastModified: memorial.updatedAt,

@@ -17,11 +17,11 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 ## Sigurnost i podaci
 
 - RLS je uključen na svakoj tablici. Nova tablica bez politika ne prolazi pregled.
-- Preglednik nikad ne dobiva servisni ključ. Servisni ključ koriste samo Stripe webhook, stvaranje narudžbe, zakazani poslovi, poslužiteljski endpointi za javne unose i čitanje slike nakon RLS provjere, u modulima označenima `server-only`.
+- Preglednik nikad ne dobiva servisni ključ. Servisni ključ koriste samo Stripe webhook, stvaranje narudžbe, zakazani poslovi, poslužiteljski endpointi za javne unose, čitanje slike nakon RLS provjere i brisanje vlastitog računa nakon provjere sesije, u modulima označenima `server-only`.
 - Javni unosi (poruke, svijeće, geste, prijave) idu kroz poslužiteljske endpointove. Prava i primatelji obavijesti izvode se iz pohranjenog vlasništva, nikad iz zahtjeva.
 - Memorijal se dohvaća kroz jedan poslužiteljski modul za pristup. Nema zaobilaznih upita.
 - Memorijali „samo s linkom" i privatni nikad nisu u sitemapu, na Livadi, na obiteljskoj stranici ni u slikama za dijeljenje sa sadržajem.
-- IP adrese se ne spremaju; samo sažetak s dnevno rotiranom soli.
+- IP adrese se ne spremaju; samo sažetak s dnevno rotiranom soli. Adresa se čita kroz `clientIp()` (`src/server/public/visitor.ts`), koji uz `CLIENT_IP_HEADER` vjeruje samo zaglavlju posrednika.
 - U Supabaseu mora biti uključena potvrda e-maila („Confirm email"). Bez nje se e-mail dodjeljuje nacrtu bez provjere koda i spomen bi se mogao objaviti pod tuđom adresom.
 - Prijava je bez lozinke: kod iz e-maila ili poveznica koja traži klik na gumb (skeneri pošte je ne mogu potrošiti). Nacrt prije prijave pripada anonimnom korisniku Supabasea.
 
@@ -63,9 +63,9 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 
 - **Next.js 16 s Cache Components** (`cacheComponents: true`). Stranica se prerenderira; sve što čita kolačiće, zaglavlja, `params`, `searchParams` ili nepredmemorirane podatke mora biti u komponenti unutar `<Suspense>`. Javni podaci čitaju se kroz funkcije s `"use cache"`, `cacheLife` i `cacheTag`; nakon izmjene se zove `updateTag` (poslužiteljska akcija) ili `revalidateTag(tag, "max")` (route handler). Prije pisanja nove vrste rute pročitaj odgovarajući vodič u `node_modules/next/dist/docs/`.
 - **Sesija je uvijek stvarni zahtjev.** `createSessionClient()` zove `connection()`, jer Supabase pri čitanju sesije uspoređuje istek tokena s trenutnim vremenom. Isto vrijedi za svaki kod koji čita `Date.now()` izvan `"use cache"`.
-- **Oznake predmemorije:** `memorial:{id}` i `memorial-slug:{slug}` za memorijal, `products` za cjenik, `donations` za donacije.
+- **Oznake predmemorije:** `memorial:{id}` i `memorial-slug:{slug}` za memorijal, `livada` za popise javnih spomena, `family:{slug}` za obiteljsku stranicu, `sitemap`, `products` za cjenik, `donations` za donacije, `articles` i `article:{slug}` za Vodič. Sve što mijenja objavu ili vidljivost spomena osvježava i `livada` i `sitemap`.
 - **Mape:** `src/server/` je samo poslužitelj (svaka datoteka počinje s `import "server-only"`); `src/lib/` je čista logika bez I/O, dijeljena s klijentom; `src/components/ui/` su osnovne komponente; `src/messages/hr/*.ts` su svi tekstovi sučelja, po područjima.
-- **Supabase klijenti** (`src/server/supabase/`): `createSessionClient()` za sve što radi prijavljeni ili anonimni korisnik (RLS kao on); `createAnonClient()` za javno, predmemorirano čitanje; `createAdminClient()` zaobilazi RLS i smije se koristiti samo u Stripe webhooku, stvaranju narudžbe, zakazanim poslovima, endpointima za javne unose i čitanju slike nakon RLS provjere.
+- **Supabase klijenti** (`src/server/supabase/`): `createSessionClient()` za sve što radi prijavljeni ili anonimni korisnik (RLS kao on); `createAnonClient()` za javno, predmemorirano čitanje; `createAdminClient()` zaobilazi RLS i smije se koristiti samo u Stripe webhooku, stvaranju narudžbe, zakazanim poslovima, endpointima za javne unose, čitanju slike nakon RLS provjere i brisanju vlastitog računa. Admin sučelje ga ne koristi: admin radi kroz RLS politike za ulogu `admin`.
 - **Stupci se navode izričito.** Javne uloge nemaju pravo na sve stupce (`share_key`, `author_email`, `ip_hash`), pa `select("*")` ne radi.
 - **Stanja koja nose novac ili vidljivost** (`tier`, `status`, `visibility`) mijenjaju se samo kroz funkcije u bazi (`publish_memorial`, `set_memorial_visibility`, `fulfill_order`…), nikad izravnim `update`.
 - **Shema baze** je u `supabase/migrations/`. Promjena sheme je nova migracija; postojeće se ne mijenjaju. Nakon migracije: `npx supabase gen types typescript > src/server/supabase/database.types.ts`.

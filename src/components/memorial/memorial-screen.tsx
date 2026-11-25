@@ -7,6 +7,7 @@ import { GuestbookForm } from "@/components/memorial/guestbook-form";
 import { PetPortrait } from "@/components/memorial/pet-portrait";
 import { ReportButton } from "@/components/memorial/report-button";
 import { ShareButton } from "@/components/memorial/share-button";
+import { VideoEmbed } from "@/components/memorial/video-embed";
 import { Logo } from "@/components/site-chrome";
 import { ButtonLink, buttonClass } from "@/components/ui/button";
 import { Chip, Eyebrow } from "@/components/ui/card";
@@ -191,13 +192,10 @@ export function MemorialScreen({
                 {paragraph}
               </p>
             ))}
-            {memorial.videoUrl ? (
-              <a href={memorial.videoUrl} target="_blank" rel="noopener noreferrer" className="font-bold">
-                {messages.video}
-              </a>
-            ) : null}
           </section>
         ) : null}
+
+        {memorial.videoUrl ? <VideoEmbed url={memorial.videoUrl} /> : null}
 
         {gallery.length > 0 ? (
           <section className="flex flex-col gap-4">
