@@ -12,6 +12,7 @@ export const admin = {
     { href: "/admin/sekcije", label: "Prodajne sekcije" },
     { href: "/admin/moderacija", label: "Moderacija" },
     { href: "/admin/postavke", label: "Cijene i postavke" },
+    { href: "/admin/sustav", label: "Stanje sustava" },
   ],
   backToSite: "Na stranicu",
 } as const;
