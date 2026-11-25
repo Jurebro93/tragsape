@@ -698,6 +698,11 @@ isOneToOne: false
             "accept_member_invite":
 { Args: { "p_token": string }; Returns: string
                            },
+"admin_attribution_report":
+{ Args: { "p_since"?: string }; Returns: {
+              "drafts": number,"paid_orders": number,"published": number,"revenue_cents": number,"source": string
+            }[]
+                           },
 "admin_set_memorial_hidden":
 { Args: { "p_hidden": boolean,"p_id": string }; Returns: undefined
                            },

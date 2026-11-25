@@ -48,4 +48,11 @@ export const env = {
   get turnstileSecretKey() {
     return optional("TURNSTILE_SECRET_KEY");
   },
+  /** Tajna kojom se zakazani poslovi predstavljaju endpointu /api/cron/*. */
+  get cronSecret() {
+    return optional("CRON_SECRET");
+  },
+  get anthropicApiKey() {
+    return optional("ANTHROPIC_API_KEY");
+  },
 };
