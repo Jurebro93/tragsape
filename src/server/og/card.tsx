@@ -283,3 +283,115 @@ export function renderCard(view: MemorialView, photo: string | null, format: Car
     </div>
   );
 }
+
+const TRAIL: ReadonlyArray<{ left: number; top: number; turn: number; size: number }> = [
+  { left: 700, top: 505, turn: 58, size: 58 },
+  { left: 800, top: 455, turn: 44, size: 62 },
+  { left: 880, top: 372, turn: 60, size: 66 },
+  { left: 985, top: 322, turn: 42, size: 70 },
+  { left: 1058, top: 232, turn: 56, size: 74 },
+];
+
+/**
+ * Slika za dijeljenje stranica koje nemaju vlastitu: naslovnica, cjenik, Livada, članci, alati.
+ * Dug naslov (npr. naslov članka) se smanjuje da stane u tri reda.
+ */
+export function renderSiteCard({ title, subtitle, label }: { title: string; subtitle?: string; label?: string }) {
+  const { width, height } = CARD_SIZES.og;
+  const titleSize = title.length > 70 ? 56 : title.length > 44 ? 68 : title.length > 24 ? 84 : 112;
+  let host = "";
+  try {
+    host = new URL(env.siteUrl).host;
+  } catch {
+    host = "";
+  }
+  return (
+    <div
+      style={{
+        display: "flex",
+        position: "relative",
+        width,
+        height,
+        background: colors.butter,
+        fontFamily: SANS,
+        overflow: "hidden",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          position: "absolute",
+          right: -150,
+          top: -170,
+          width: 560,
+          height: 560,
+          borderRadius: 560,
+          background: colors.sun,
+        }}
+      />
+      {TRAIL.map((step) => (
+        <div
+          key={step.left}
+          style={{
+            display: "flex",
+            position: "absolute",
+            left: step.left,
+            top: step.top,
+            transform: `rotate(${step.turn}deg)`,
+          }}
+        >
+          <Paw size={step.size} color="#FFFFFF" />
+        </div>
+      ))}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          width: "100%",
+          height: "100%",
+          padding: 72,
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+          <Paw size={48} color={colors.terracotta} />
+          <span style={{ fontFamily: DISPLAY, fontSize: 40, fontWeight: 800, color: colors.plum }}>Trag šape</span>
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 22, maxWidth: 780 }}>
+          {label ? (
+            <div
+              style={{
+                display: "flex",
+                padding: "8px 22px",
+                borderRadius: 999,
+                background: colors.teal,
+                color: "#FFFFFF",
+                fontSize: 26,
+                fontWeight: 700,
+              }}
+            >
+              {label}
+            </div>
+          ) : null}
+          <div
+            style={{
+              display: "flex",
+              fontFamily: DISPLAY,
+              fontSize: titleSize,
+              fontWeight: 800,
+              lineHeight: 1.02,
+              letterSpacing: -2,
+              color: colors.plum,
+            }}
+          >
+            {title}
+          </div>
+          {subtitle ? (
+            <div style={{ display: "flex", fontSize: 34, fontWeight: 500, color: colors.plum }}>{subtitle}</div>
+          ) : null}
+        </div>
+        <div style={{ display: "flex", fontSize: 26, color: colors.plumSoft }}>{host}</div>
+      </div>
+    </div>
+  );
+}

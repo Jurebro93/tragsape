@@ -2,6 +2,11 @@
 export const common = {
   brand: "Trag šape",
   tagline: "Trag koji ostaje.",
+  /** Slika koja se prikazuje kad netko podijeli poveznicu na stranicu bez vlastite slike. */
+  social: {
+    subtitle: "Spomen-stranica za tvog ljubimca",
+    alt: "Trag šape: spomen-stranica za tvog ljubimca",
+  },
   nav: {
     create: "Izradi spomen",
     createShort: "Izradi",

@@ -23,7 +23,8 @@ services:
     # zaspi nakon 15 minuta bez prometa, pa prvo otvaranje i Stripe webhook kasne oko minute.
     # Cijene: https://render.com/pricing — odluči prije nego što potvrdiš Blueprint.
     plan: 0.5c-512mb
-    buildCommand: npm ci && npm run build
+    # --include=dev: TypeScript i Tailwind su razvojne ovisnosti, a build ih treba.
+    buildCommand: npm ci --include=dev && npm run build
     startCommand: npm run start
     healthCheckPath: /api/zdravlje
     envVars:

@@ -45,6 +45,7 @@ export const metadata: Metadata = {
     "Izradi trajnu spomen-stranicu za ljubimca: fotografija, posveta i knjiga sjećanja za obitelj i prijatelje. Osnovni spomen je besplatan.",
   applicationName: common.brand,
   openGraph: { siteName: common.brand, locale: "hr_HR", type: "website" },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {
