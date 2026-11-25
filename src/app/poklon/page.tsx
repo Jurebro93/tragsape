@@ -37,6 +37,8 @@ async function Purchase() {
   const { data } = await supabase
     .from("products")
     .select("key, unit_amount_cents, base_amount_cents")
+    // Admin kroz RLS vidi i isključene proizvode; ponuditi se smije samo ono što je u prodaji.
+    .eq("active", true)
     .in("key", ["memorial", "memorial_portrait"]);
   const byKey = new Map((data ?? []).map((row) => [row.key, row]));
   const memorial = byKey.get("memorial");

@@ -37,6 +37,7 @@ async function Purchase({ searchParams }: Pick<PageProps<"/gesta">, "searchParam
     supabase
       .from("products")
       .select("key, unit_amount_cents, base_amount_cents")
+      .eq("active", true)
       .in("key", ["gesture_7d", "gesture_30d", "gesture_365d"]),
   ]);
   const byKey = new Map((products ?? []).map((row) => [row.key, row.unit_amount_cents]));
