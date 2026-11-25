@@ -62,7 +62,13 @@ export async function buildAccountExport(viewer: Viewer, client?: Client) {
       .eq("owner_id", userId)
       .maybeSingle(),
     readAll((from, to) =>
-      supabase.from("memorials").select(MEMORIAL_EXPORT_COLUMNS).eq("owner_id", userId).order("created_at").range(from, to),
+      supabase
+        .from("memorials")
+        .select(MEMORIAL_EXPORT_COLUMNS)
+        .eq("owner_id", userId)
+        .order("created_at")
+        .order("id")
+        .range(from, to),
     ),
     // Vlastita pisma, i ona napisana na spomenima na kojima korisnik samo surađuje.
     readAll((from, to) =>
@@ -88,6 +94,7 @@ export async function buildAccountExport(viewer: Viewer, client?: Client) {
         .select("memorial_id, invited_email, accepted_at, created_at")
         .eq("user_id", userId)
         .order("created_at")
+        .order("memorial_id")
         .range(from, to),
     ),
     readAll((from, to) =>
@@ -98,6 +105,7 @@ export async function buildAccountExport(viewer: Viewer, client?: Client) {
         )
         .eq("user_id", userId)
         .order("created_at")
+        .order("id")
         .range(from, to),
     ),
     readAll((from, to) =>
@@ -106,6 +114,7 @@ export async function buildAccountExport(viewer: Viewer, client?: Client) {
         .select("id, order_line_id, tier, memorial_id, status, applied_at, created_at")
         .eq("owner_id", userId)
         .order("created_at")
+        .order("id")
         .range(from, to),
     ),
   ]);

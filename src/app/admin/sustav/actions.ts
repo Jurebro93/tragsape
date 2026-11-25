@@ -23,6 +23,8 @@ export async function sendTestEmailAction(_previous: TestEmailState): Promise<Te
   return {
     message: env.resendApiKey
       ? `Poruka je predana servisu za slanje na ${viewer.email}. Ako ne stigne, pogledaj dnevnik poslužitelja.`
-      : "Servis za e-mail nije podešen, pa je poruka samo zapisana u dnevnik poslužitelja.",
+      : env.mailpitUrl
+        ? "Servis za e-mail nije podešen. Poruka je otišla u lokalni testni sandučić (Mailpit)."
+        : "Servis za e-mail nije podešen, pa je poruka samo zapisana u dnevnik poslužitelja.",
   };
 }
