@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Bricolage_Grotesque, DM_Sans } from "next/font/google";
+import { Bricolage_Grotesque, DM_Sans, Fraunces, Newsreader } from "next/font/google";
 import { CookieNotice } from "@/components/cookie-notice";
 import { common } from "@/messages/hr/common";
 import "./globals.css";
@@ -15,6 +15,22 @@ const sans = DM_Sans({
   subsets: ["latin", "latin-ext"],
   variable: "--font-dm-sans",
   display: "swap",
+});
+
+// Naslovni fontovi tema memorijala. Ne učitavaju se unaprijed: preglednik ih dohvaća tek na
+// stranici koja koristi tu temu.
+const fraunces = Fraunces({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-fraunces",
+  display: "swap",
+  preload: false,
+});
+
+const newsreader = Newsreader({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-newsreader",
+  display: "swap",
+  preload: false,
 });
 
 const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, "");
@@ -39,7 +55,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="hr" className={`${display.variable} ${sans.variable} h-full antialiased`}>
+    <html lang="hr" className={`${display.variable} ${sans.variable} ${fraunces.variable} ${newsreader.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         {children}
         <CookieNotice />

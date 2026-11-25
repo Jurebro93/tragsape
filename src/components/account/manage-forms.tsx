@@ -5,12 +5,14 @@ import {
   deleteMemorialAction,
   saveFamilyAction,
   setGuestbookModeAction,
+  setThemeAction,
   setVisibilityAction,
   type ActionState,
 } from "@/app/moji-ljubimci/actions";
 import { Button } from "@/components/ui/button";
 import { Field, Input, Select, Textarea } from "@/components/ui/field";
 import type { GuestbookMode, Visibility } from "@/lib/memorial";
+import { THEMES, type ThemeKey } from "@/lib/themes";
 import { account } from "@/messages/hr/account";
 import { livada } from "@/messages/hr/livada";
 
@@ -146,6 +148,44 @@ export function FamilyForm({
       ) : null}
       <Button type="submit" variant="secondary" size="md" disabled={pending}>
         {text.save}
+      </Button>
+    </form>
+  );
+}
+
+export function ThemeForm({ memorialId, theme }: { memorialId: string; theme: ThemeKey }) {
+  const [state, action, pending] = useActionState(setThemeAction.bind(null, memorialId), idle);
+  return (
+    <form action={action} className="flex flex-col gap-3">
+      <fieldset className="flex flex-col gap-2">
+        <legend className="sr-only">{account.theme.title}</legend>
+        {THEMES.map((item) => (
+          <label
+            key={item.key}
+            className="flex cursor-pointer items-center gap-3 rounded-2xl border-2 border-line p-3.5 has-checked:border-teal has-checked:bg-mint"
+          >
+            <input
+              type="radio"
+              name="theme"
+              value={item.key}
+              defaultChecked={theme === item.key}
+              className="size-5 accent-teal"
+            />
+            <span className="flex flex-1 flex-col">
+              <span className="font-bold">{item.label}</span>
+              <span className="text-sm text-plum-soft">{item.note}</span>
+            </span>
+            <span className="flex shrink-0 gap-1" aria-hidden="true">
+              {item.swatches.map((color) => (
+                <span key={color} className="size-6 rounded-full border border-line" style={{ background: color }} />
+              ))}
+            </span>
+          </label>
+        ))}
+      </fieldset>
+      <Feedback state={state} done={account.theme.saved} />
+      <Button type="submit" variant="secondary" size="md" disabled={pending}>
+        {account.theme.save}
       </Button>
     </form>
   );

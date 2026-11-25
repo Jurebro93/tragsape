@@ -36,6 +36,13 @@ export const account = {
     package: "Paket",
     danger: "Brisanje",
   },
+  theme: {
+    title: "Tema stranice",
+    body: "Boje i pismo stranice spomena.",
+    save: "Spremi temu",
+    saved: "Tema je spremljena.",
+    freeNote: "Izbor teme dolazi uz Memorijal.",
+  },
   shareCards: {
     title: "Kartice za dijeljenje",
     body: "Slike s imenom i fotografijom, spremne za objavu na društvenim mrežama.",

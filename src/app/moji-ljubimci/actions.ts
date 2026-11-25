@@ -2,6 +2,7 @@
 
 import { updateTag } from "next/cache";
 import { redirect } from "next/navigation";
+import { THEMES } from "@/lib/themes";
 import { account } from "@/messages/hr/account";
 import { common } from "@/messages/hr/common";
 import { livada } from "@/messages/hr/livada";
@@ -125,5 +126,25 @@ export async function saveFamilyAction(_previous: ActionState, formData: FormDat
     return { error: common.errors.generic };
   }
   updateTag(`family:${slug}`);
+  return { error: null, done: true };
+}
+
+/** Tema stranice spomena. Dostupna uz plaćeni paket; prikaz to provjerava i sam. */
+export async function setThemeAction(memorialId: string, _previous: ActionState, formData: FormData): Promise<ActionState> {
+  const theme = THEMES.find((item) => item.key === formData.get("theme"))?.key;
+  if (!theme) {
+    return { error: common.errors.generic };
+  }
+  const supabase = await createSessionClient();
+  const { data, error } = await supabase
+    .from("memorials")
+    .update({ theme })
+    .eq("id", memorialId)
+    .neq("tier", "free")
+    .select("id");
+  if (error || !data || data.length === 0) {
+    return { error: common.errors.generic };
+  }
+  await refresh(memorialId);
   return { error: null, done: true };
 }

@@ -60,3 +60,45 @@
     }
   }
 }
+
+/*
+ * Teme memorijala. Tema mijenja vrijednosti istih tokena unutar stranice memorijala, pa sve
+ * komponente ostaju iste. Uvjet za svaku temu: bijeli tekst mora ostati čitljiv na
+ * `terracotta`, `teal` i `plum`, a tamni tekst na `butter`, `sun` i `mint`.
+ */
+[data-theme="livada"] {
+  --color-vanilla: #f5f3ea;
+  --color-butter: #e4ecdd;
+  --color-sun: #f2c566;
+  --color-terracotta: #3f6b4e;
+  --color-terracotta-deep: #2f5a3e;
+  --color-plum: #26332b;
+  --color-plum-soft: #55625a;
+  --color-teal: #2f5a3e;
+  --color-teal-deep: #1f4029;
+  --color-mint: #f6e3b8;
+  --color-line: #e3e9dc;
+  --font-display: var(--font-fraunces), Georgia, serif;
+}
+
+[data-theme="album"] {
+  --color-vanilla: #f6f4ef;
+  --color-butter: #e3eaf2;
+  --color-sun: #f2d98b;
+  --color-terracotta: #1d2a44;
+  --color-terracotta-deep: #b0452f;
+  --color-plum: #1d2a44;
+  --color-plum-soft: #56617a;
+  --color-teal: #1d2a44;
+  --color-teal-deep: #b0452f;
+  --color-mint: #f2d98b;
+  --color-line: #d4d9e2;
+  --font-display: var(--font-newsreader), Georgia, serif;
+}
+
+/* Naslovi unutar teme koriste njezin font (osnovni stil ga čita s :root). */
+[data-theme] :is(h1, h2, h3),
+[data-theme] .font-display {
+  font-family: var(--font-display);
+}
+

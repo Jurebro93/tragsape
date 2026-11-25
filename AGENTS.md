@@ -70,6 +70,8 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 - **Stanja koja nose novac ili vidljivost** (`tier`, `status`, `visibility`) mijenjaju se samo kroz funkcije u bazi (`publish_memorial`, `set_memorial_visibility`, `fulfill_order`…), nikad izravnim `update`.
 - **Shema baze** je u `supabase/migrations/`. Promjena sheme je nova migracija; postojeće se ne mijenjaju. Nakon migracije: `npx supabase gen types typescript > src/server/supabase/database.types.ts`.
 - **Stil:** Tailwind s tokenima iz `src/app/globals.css` (`vanilla`, `butter`, `sun`, `terracotta`, `terracotta-deep`, `plum`, `plum-soft`, `teal`, `teal-deep`, `mint`, `line`, `danger`; `font-display`, `font-sans`). Bez proizvoljnih boja u komponentama. Dodirne površine najmanje 44 px. Ikone iz `src/components/icons.tsx`, bez emojija.
+- **Teme memorijala** mijenjaju vrijednosti istih tokena unutar `[data-theme]` (vidi kraj `globals.css` i `src/lib/themes.ts`). Nova tema mora zadržati čitljiv bijeli tekst na `terracotta`, `teal` i `plum` te tamni na `butter`, `sun` i `mint`.
+- **Izmjena `globals.css` ne učitava se uživo** u razvojnom poslužitelju: nakon nje ga treba ponovno pokrenuti. Nove Tailwind klase u komponentama učitavaju se normalno.
 - **Identifikatori u kodu su na engleskom**, tekstovi sučelja i putanje ruta na hrvatskom (`/spomen`, `/izradi`, `/moji-ljubimci`).
 - **Lokalni rad:** `npx supabase start`, `npm run dev`; provjere: `npx tsc --noEmit`, `npm run lint`, `npm test`. E-mailovi lokalno stižu u Mailpit na `http://127.0.0.1:54324`.
 

@@ -11,8 +11,9 @@ import { Logo } from "@/components/site-chrome";
 import { ButtonLink, buttonClass } from "@/components/ui/button";
 import { Chip, Eyebrow } from "@/components/ui/card";
 import { formatDateTime, formatLifespan, formatPetDate, formatYears, yearsBetween } from "@/lib/format";
-import { photoUrl, presentForTier, type GestureKind, type MemorialView } from "@/lib/memorial";
+import { isPaid, photoUrl, presentForTier, type GestureKind, type MemorialView } from "@/lib/memorial";
 import { speciesLabel } from "@/lib/species";
+import { DEFAULT_THEME, toThemeKey } from "@/lib/themes";
 import { fill } from "@/lib/text";
 import { common } from "@/messages/hr/common";
 import { gesture as gestureMessages } from "@/messages/hr/gesture";
@@ -77,7 +78,11 @@ export function MemorialScreen({
   const name = memorial.name || "Spomen";
 
   return (
-    <div className="flex min-h-full flex-1 flex-col bg-vanilla">
+    <div
+      className="flex min-h-full flex-1 flex-col bg-vanilla text-plum"
+      // Tema je dio plaćenog paketa; besplatni spomen uvijek koristi zadanu.
+      data-theme={isPaid(memorial.tier) ? toThemeKey(memorial.theme) : DEFAULT_THEME}
+    >
       <div className="rounded-b-[40px] bg-butter">
         <div className="mx-auto flex w-full max-w-xl flex-col">
           {mode === "preview" ? null : (

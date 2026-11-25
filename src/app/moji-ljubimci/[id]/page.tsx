@@ -4,13 +4,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { moderateEntryAction, moderateGestureAction, unpublishAction } from "@/app/moji-ljubimci/actions";
-import { DeleteMemorialForm, GuestbookModeForm, VisibilityForm } from "@/components/account/manage-forms";
+import { DeleteMemorialForm, GuestbookModeForm, ThemeForm, VisibilityForm } from "@/components/account/manage-forms";
 import { PageShell } from "@/components/site-chrome";
 import { Button, ButtonLink, buttonClass } from "@/components/ui/button";
 import { Card, Chip } from "@/components/ui/card";
 import { formatDateTime } from "@/lib/format";
 import { FREE_PHOTO_LIMIT, PAID_PHOTO_LIMIT, isPaid } from "@/lib/memorial";
 import { fill } from "@/lib/text";
+import { toThemeKey } from "@/lib/themes";
 import { account } from "@/messages/hr/account";
 import { gesture as gestureText } from "@/messages/hr/gesture";
 import { memorial as memorialText } from "@/messages/hr/memorial";
@@ -87,6 +88,14 @@ async function Manage({ params }: Pick<PageProps<"/moji-ljubimci/[id]">, "params
         <p className="text-sm text-plum-soft">
           {fill(account.package.photos, { used: photoCount, limit: paid ? PAID_PHOTO_LIMIT : FREE_PHOTO_LIMIT })}
         </p>
+      </Card>
+
+      <Card className="flex flex-col gap-3">
+        <div className="flex flex-col gap-1">
+          <h2 className="text-2xl font-extrabold">{account.theme.title}</h2>
+          <p className="text-plum-soft">{paid ? account.theme.body : account.theme.freeNote}</p>
+        </div>
+        {paid ? <ThemeForm memorialId={id} theme={toThemeKey(memorial.theme)} /> : null}
       </Card>
 
       {memorial.status === "published" ? (
