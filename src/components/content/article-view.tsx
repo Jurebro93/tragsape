@@ -2,10 +2,10 @@ import type { Route } from "next";
 import Link from "next/link";
 import { ArticleBody } from "@/components/content/article-body";
 import { CtaBlock } from "@/components/content/cta-block";
-import { ArrowRightIcon, BallIcon, CandleIcon, CheckIcon, FlowerIcon, PawTrail, PenIcon } from "@/components/icons";
+import { ArrowRightIcon, CheckIcon } from "@/components/icons";
 import { Eyebrow } from "@/components/ui/card";
 import { extractHeadings, type ArticleHeading } from "@/lib/content/headings";
-import type { ArticleSummary, ArticleView as ArticleViewData, Cluster } from "@/lib/content/types";
+import type { ArticleSummary, ArticleView as ArticleViewData } from "@/lib/content/types";
 import { formatDateTime, formatPetDate } from "@/lib/format";
 import { fill } from "@/lib/text";
 import { content } from "@/messages/hr/content";
@@ -98,27 +98,20 @@ function Related({ articles }: { articles: readonly ArticleSummary[] }) {
   );
 }
 
-const COVER: Record<Cluster, { Icon: typeof CandleIcon; tile: string }> = {
-  "kraj-zivota": { Icon: PenIcon, tile: "bg-sun text-plum" },
-  "nakon-smrti": { Icon: CandleIcon, tile: "bg-terracotta text-white" },
-  tugovanje: { Icon: FlowerIcon, tile: "bg-teal text-white" },
-  "prigodni-datumi": { Icon: BallIcon, tile: "bg-plum text-white" },
-};
-
-/** Naslovna slika po predlošku: ista za sve članke, razlikuje se samo znak i boja teme. */
-function Cover({ cluster }: { cluster: Cluster }) {
-  const { Icon, tile } = COVER[cluster];
+/**
+ * Naslovna slika po predlošku: ista slika koja se prikazuje kad se poveznica podijeli (naslov na
+ * kartici brenda), pa svi članci izgledaju jednako.
+ */
+function Cover({ slug, title }: { slug: string; title: string }) {
   return (
-    <div aria-hidden="true" className="relative flex h-40 items-center overflow-hidden rounded-[32px] bg-butter px-6 sm:h-52 sm:px-10">
-      <div className="absolute -right-10 -top-16 size-56 rounded-full bg-sun sm:size-72" />
-      <PawTrail className="absolute bottom-4 right-6 h-auto w-40 text-white sm:w-56" />
-      <span className={`relative flex size-20 items-center justify-center rounded-full shadow-[0_0_0_6px_var(--color-vanilla)] sm:size-24 ${tile}`}>
-        <Icon size={40} />
-      </span>
-      <span className="relative ml-4 font-display text-2xl font-extrabold leading-tight sm:text-3xl">
-        {content.guide.clusters[cluster].name}
-      </span>
-    </div>
+    // eslint-disable-next-line @next/next/no-img-element -- sliku crta vlastita ruta, poznatih je dimenzija
+    <img
+      src={`/vodic/${slug}/opengraph-image`}
+      alt={title}
+      width={1200}
+      height={630}
+      className="h-auto w-full rounded-[28px]"
+    />
   );
 }
 
@@ -178,7 +171,7 @@ export function ArticleView({
         <Link href="/vodic" className="flex min-h-11 items-center self-start text-[15px] font-semibold">
           ← {t.back}
         </Link>
-        <Cover cluster={article.cluster} />
+        <Cover slug={article.slug} title={article.title} />
         <Eyebrow>{content.guide.clusters[article.cluster].name}</Eyebrow>
         <h1 className="text-4xl font-extrabold leading-[1.1] [overflow-wrap:anywhere] sm:text-5xl">{article.title}</h1>
         {article.excerpt ? <p className="text-xl leading-relaxed text-plum-soft">{article.excerpt}</p> : null}

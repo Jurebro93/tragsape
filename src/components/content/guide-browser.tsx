@@ -67,6 +67,15 @@ export function GuideBrowser({ articles, clusters }: { articles: GuideArticle[];
                 href={`/vodic/${article.slug}` as Route}
                 className="group flex h-full flex-col gap-3 rounded-3xl bg-white p-5 text-plum no-underline hover:bg-butter"
               >
+                {/* eslint-disable-next-line @next/next/no-img-element -- sliku crta vlastita ruta */}
+                <img
+                  src={`/vodic/${article.slug}/opengraph-image`}
+                  alt=""
+                  width={1200}
+                  height={630}
+                  loading="lazy"
+                  className="h-auto w-full rounded-2xl"
+                />
                 <span className="flex items-center gap-2 text-[13px] font-bold uppercase tracking-wide text-terracotta-deep">
                   <span className={cn("flex size-7 items-center justify-center rounded-full", tile)}>
                     <Icon size={15} />

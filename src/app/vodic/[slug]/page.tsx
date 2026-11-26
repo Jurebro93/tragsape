@@ -8,12 +8,23 @@ import { isValidSlug } from "@/lib/content/slug";
 import type { ArticleView as ArticleViewData } from "@/lib/content/types";
 import { common } from "@/messages/hr/common";
 import { content } from "@/messages/hr/content";
-import { getPublishedArticle, listPublishedArticles } from "@/server/content/articles";
+import { getPublishedArticle, listPublishedArticleSlugs, listPublishedArticles } from "@/server/content/articles";
 import { env } from "@/server/env";
 
 /** Objavljeni članak po adresi. Adresa koja ne može biti valjana ne ide ni do baze ni u predmemoriju. */
 async function findArticle(slug: string): Promise<ArticleViewData | null> {
   return isValidSlug(slug) ? getPublishedArticle(slug) : null;
+}
+
+/**
+ * Objavljeni članci se pri buildu iscrtavaju u gotov HTML, pa tražilica cijeli tekst dobiva u prvom
+ * odgovoru, bez JavaScripta. Članak objavljen nakon builda radi odmah, a statičan postaje pri
+ * sljedećoj objavi stranice.
+ */
+export async function generateStaticParams(): Promise<Array<{ slug: string }>> {
+  const articles = await listPublishedArticleSlugs();
+  // Prazan popis nije dopušten; adresa koja ne postoji daje stranicu „nema je".
+  return articles.length > 0 ? articles.map((article) => ({ slug: article.slug })) : [{ slug: "jos-nema-clanaka" }];
 }
 
 export async function generateMetadata({ params }: PageProps<"/vodic/[slug]">): Promise<Metadata> {
