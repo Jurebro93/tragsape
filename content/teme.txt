@@ -1,0 +1,272 @@
+# Popis tema za Vodič. Jedan redak: tema|zdravstvena (1/0)|naslov. Adresu članka izvodi scripts/teme.mjs.
+# Redoslijed je redoslijed pisanja. Što već postoji u content/clanci, preskače se.
+nakon-smrti|0|Urna za ljubimca: vrste, veličine i cijene
+nakon-smrti|0|Pojedinačno ili skupno kremiranje ljubimca: razlika
+nakon-smrti|0|Smije li se ljubimac zakopati u vrtu
+nakon-smrti|0|Odjava psa nakon uginuća: rok i postupak
+nakon-smrti|0|Što s čipom i putovnicom nakon smrti ljubimca
+nakon-smrti|0|Uginuo kunić, hrčak ili papiga: što učiniti
+nakon-smrti|0|Koliko košta sve nakon smrti ljubimca: pregled troškova
+nakon-smrti|0|Što učiniti sa stvarima ljubimca nakon smrti
+tugovanje|0|Kako napraviti spomen za mačku: ideje koje traju
+tugovanje|0|Posveta za mačku: 40 primjera
+tugovanje|0|Što napisati uz fotografiju ljubimca kojeg više nema
+tugovanje|0|QR kod na spomen-pločici za ljubimca: kako radi
+tugovanje|0|Pismo ljubimcu kojeg više nema: kako početi
+prigodni-datumi|0|Godišnjica smrti ljubimca: kako je obilježiti
+tugovanje|0|Fotoknjiga, portret ili online spomen: usporedba
+tugovanje|0|Kako sačuvati fotografije i videa ljubimca
+tugovanje|0|Spomen za više ljubimaca jedne obitelji
+tugovanje|0|Poruka sućuti za mačku: 30 primjera
+tugovanje|0|Što napisati kolegi kojem je uginuo ljubimac
+tugovanje|0|Kako pomoći prijatelju koji tuguje za ljubimcem
+tugovanje|0|Što poslati umjesto cvijeća kad ugine ljubimac
+tugovanje|0|Koliko traje tuga za ljubimcem
+tugovanje|1|Krivnja nakon uspavljivanja ljubimca
+tugovanje|0|Kada uzeti novog ljubimca nakon gubitka
+tugovanje|1|Kako drugi ljubimac u kući tuguje
+tugovanje|0|Smrt ljubimca i starije osobe: kako pomoći roditelju
+tugovanje|0|Dijete i smrt ljubimca po dobi
+tugovanje|0|Tuga za ljubimcem i posao: slobodan dan i razgovor s poslodavcem
+tugovanje|0|Rituali oproštaja od ljubimca
+kraj-zivota|1|Uspavljivanje mačke: cijena i postupak
+kraj-zivota|1|Uspavljivanje ljubimca kod kuće u Hrvatskoj
+kraj-zivota|1|Stari pas: znakovi da pati
+kraj-zivota|1|Stara mačka: znakovi da pati
+kraj-zivota|0|Posljednji dan s ljubimcem: kako ga provesti
+kraj-zivota|1|Biti uz ljubimca tijekom uspavljivanja: što očekivati
+zdravlje|0|Koliko žive psi po pasminama
+zdravlje|0|Koliko žive mačke
+zdravlje|0|Koliko žive kunići, hrčci, zamorci i papige
+zdravlje|0|Pasje godine u ljudskima: tablica po veličini
+prigodni-datumi|0|Kalendar spomen-dana za ljubimce
+zdravlje|0|Cjenik veterinarskih usluga u Hrvatskoj: pregled po zahvatima
+zdravlje|1|Koliko košta sterilizacija kuje i kastracija psa
+zdravlje|1|Koliko košta sterilizacija mačke i kastracija mačka
+zdravlje|1|Cijepljenje psa: cijena i što je obvezno
+zdravlje|1|Cijepljenje mačke: cijena i raspored
+zdravlje|0|Čipiranje psa i mačke: cijena i postupak
+zdravlje|1|Čišćenje zubnog kamenca kod psa: cijena
+zdravlje|0|Veterinarski pregled, rendgen i ultrazvuk: cijene
+zdravlje|0|Putovnica za ljubimca: cijena i što treba
+zdravlje|0|Hitna veterinarska pomoć noću i vikendom: doplate
+zdravlje|1|Kalendar cijepljenja psa po dobi
+zdravlje|1|Kalendar cijepljenja mačke po dobi
+zdravlje|1|Krpelj na psu: što učiniti i kada veterinaru
+zdravlje|1|Krpelj na mački: što učiniti
+zdravlje|1|Upala uha kod psa: znakovi i liječenje
+zdravlje|1|Svrbež i kronične upale kože kod psa
+zdravlje|1|Suplementi za zglobove kod starijih pasa: što kažu istraživanja
+zdravlje|1|Suplementi za mačke: što ima smisla
+zdravlje|1|Bolesti zubi i desni kod pasa i mačaka
+zdravlje|1|Otrovne namirnice za pse i mačke
+zdravlje|1|Otrovne biljke za pse i mačke
+zdravlje|1|Pas povraća: uzroci i kada veterinaru
+zdravlje|1|Proljev kod psa: što učiniti
+zdravlje|1|Mačka povraća: uzroci i kada veterinaru
+zdravlje|1|Proljev kod mačke: što učiniti
+zdravlje|1|Zatvor kod psa i mačke
+zdravlje|1|Pas ne jede: mogući uzroci
+zdravlje|1|Mačka ne jede: zašto je to hitno
+zdravlje|1|Nadutost i torzija želuca kod psa
+zdravlje|1|Pankreatitis kod psa
+zdravlje|1|Gastritis kod psa i mačke
+zdravlje|1|Crijevni paraziti kod psa: gliste i giardija
+zdravlje|1|Crijevni paraziti kod mačke
+zdravlje|1|Koliko često čistiti psa od glista
+zdravlje|1|Buhe kod psa: kako ih se riješiti
+zdravlje|1|Buhe kod mačke: kako ih se riješiti
+zdravlje|1|Zaštita od krpelja i buha: ampule, ogrlice, tablete
+zdravlje|1|Lišmanioza kod pasa u Hrvatskoj
+zdravlje|1|Babezioza (piroplazmoza) kod psa
+zdravlje|1|Srčani crv (dirofilarioza) kod psa
+zdravlje|1|Lajmska bolest kod psa
+zdravlje|1|Šuga kod psa: vrste i liječenje
+zdravlje|1|Ušni grinje kod mačke i psa
+zdravlje|1|Linjanje psa: što je normalno
+zdravlje|1|Otpadanje dlake kod psa: uzroci
+zdravlje|1|Otpadanje dlake kod mačke: uzroci
+zdravlje|1|Zdrava dlaka psa: prehrana i njega
+zdravlje|1|Perut kod psa i mačke
+zdravlje|1|Alergije kod psa: hrana, okoliš, buhe
+zdravlje|1|Alergije kod mačke
+zdravlje|1|Hot spot (vlažni dermatitis) kod psa
+zdravlje|1|Gljivice na koži psa i mačke (mikrosporija)
+zdravlje|1|Pas liže šape: mogući uzroci
+zdravlje|1|Analne žlijezde kod psa: znakovi i pražnjenje
+zdravlje|1|Upala uha kod mačke
+zdravlje|1|Kako čistiti uši psu
+zdravlje|1|Hematom uške kod psa
+zdravlje|1|Upala oka kod psa: konjunktivitis
+zdravlje|1|Suzenje i upala oka kod mačke
+zdravlje|1|Katarakta i sljepoća kod starijih pasa
+zdravlje|1|Trešnjevo oko (cherry eye) kod psa
+zdravlje|1|Loš zadah kod psa: uzroci
+zdravlje|1|Pranje zubi psu: kako početi
+zdravlje|1|Gingivitis i stomatitis kod mačke
+zdravlje|1|Vađenje zuba kod psa i mačke: što očekivati
+zdravlje|1|Kašalj kod psa: zarazni kašalj i drugi uzroci
+zdravlje|1|Kihanje i curenje nosa kod mačke
+zdravlje|1|Mačja prehlada (herpes i kalicivirus)
+zdravlje|1|Parvoviroza kod psa
+zdravlje|1|Štenećak kod psa
+zdravlje|1|Bjesnoća: propisi i cijepljenje u Hrvatskoj
+zdravlje|1|Leptospiroza kod psa
+zdravlje|1|Mačja kuga (panleukopenija)
+zdravlje|1|FIV i FeLV kod mačaka
+zdravlje|1|FIP kod mačaka
+zdravlje|1|Toksoplazmoza: mačka i trudnoća
+zdravlje|1|Bolesti koje se s ljubimca prenose na ljude
+zdravlje|1|Artroza kod psa: znakovi i olakšanje
+zdravlje|1|Displazija kukova kod psa
+zdravlje|1|Puknuće križnog ligamenta kod psa: operacija i oporavak
+zdravlje|1|Iščašenje patele kod malih pasa
+zdravlje|1|Hernija diska kod psa (jazavčar i druge pasmine)
+zdravlje|1|Pas šepa: što učiniti
+zdravlje|1|Artritis kod mačke
+zdravlje|1|Kronična bolest bubrega kod mačke
+zdravlje|1|Zatajenje bubrega kod psa
+zdravlje|1|Upala mokraćnog mjehura kod mačke (FLUTD)
+zdravlje|1|Mačak ne može mokriti: hitno stanje
+zdravlje|1|Mokraćni kamenci kod psa i mačke
+zdravlje|1|Inkontinencija kod starijeg psa
+zdravlje|1|Dijabetes kod psa
+zdravlje|1|Dijabetes kod mačke
+zdravlje|1|Hipertireoza kod mačke
+zdravlje|1|Hipotireoza kod psa
+zdravlje|1|Cushingova bolest kod psa
+zdravlje|1|Bolesti srca kod psa: šum na srcu
+zdravlje|1|Kardiomiopatija kod mačke
+zdravlje|1|Epilepsija kod psa: što učiniti tijekom napadaja
+zdravlje|1|Demencija kod starog psa
+zdravlje|1|Vestibularni sindrom kod starog psa
+zdravlje|1|Tumori kod pasa: kvržice koje treba pregledati
+zdravlje|1|Tumor mliječne žlijezde kod kuje i mačke
+zdravlje|1|Limfom kod psa i mačke
+zdravlje|1|Lipom kod psa: bezopasna kvržica
+zdravlje|1|Piometra kod kuje
+zdravlje|1|Lažna trudnoća kod kuje
+zdravlje|1|Tjeranje kuje: koliko traje i što očekivati
+zdravlje|1|Tjeranje mačke: znakovi i trajanje
+zdravlje|1|Trudnoća kuje: tjedan po tjedan
+zdravlje|1|Trudnoća mačke: što očekivati
+zdravlje|1|Sterilizacija kuje: kada i zašto
+zdravlje|1|Kastracija psa: prednosti i rizici
+zdravlje|1|Sterilizacija mačke: kada i oporavak
+zdravlje|1|Kastracija mačka: kada i oporavak
+zdravlje|1|Oporavak psa nakon operacije: prvih 14 dana
+zdravlje|1|Anestezija kod psa i mačke: rizici i priprema
+zdravlje|1|Elizabetanski ovratnik: kako pomoći psu i mački
+zdravlje|1|Rana kod psa: prva pomoć
+zdravlje|1|Ugriz drugog psa: što učiniti
+zdravlje|1|Ubod pčele ili ose kod psa
+zdravlje|1|Ugriz zmije kod psa u Hrvatskoj
+zdravlje|1|Toplinski udar kod psa
+zdravlje|1|Pas je pojeo čokoladu: što učiniti
+zdravlje|1|Pas je progutao strano tijelo
+zdravlje|1|Trovanje kod psa i mačke: znakovi i prva pomoć
+zdravlje|1|Prva pomoć za psa: što imati kod kuće
+zdravlje|1|Kako izmjeriti temperaturu psu i mački
+zdravlje|1|Normalne vrijednosti: puls, disanje i temperatura psa i mačke
+zdravlje|1|Pretilost kod psa: kako smršavjeti
+zdravlje|1|Pretilost kod mačke
+zdravlje|1|Koliko hrane treba psu po težini
+zdravlje|1|Koliko hrane treba mački
+zdravlje|1|Suha ili mokra hrana za mačke
+zdravlje|1|Sirova prehrana (BARF) za pse: što kažu veterinarske udruge
+zdravlje|1|Hrana bez žitarica i bolest srca kod pasa
+zdravlje|1|Smije li pas jesti kosti
+zdravlje|1|Što pas smije jesti od ljudske hrane
+zdravlje|1|Što mačka smije jesti od ljudske hrane
+zdravlje|1|Smije li mačka piti mlijeko
+zdravlje|1|Prehrana šteneta po mjesecima
+zdravlje|1|Prehrana mačića po tjednima
+zdravlje|1|Prehrana starijeg psa
+zdravlje|1|Prehrana starije mačke
+zdravlje|1|Hipoalergena hrana za pse: kada ima smisla
+zdravlje|1|Probiotici za pse i mačke
+zdravlje|1|Omega-3 masne kiseline za pse i mačke
+zdravlje|1|Koliko vode treba psu i mački
+zdravlje|1|Pas pije puno vode: mogući uzroci
+zdravlje|1|Mačka pije puno vode: mogući uzroci
+zdravlje|1|Prvi pregled šteneta kod veterinara
+zdravlje|1|Prvi pregled mačića kod veterinara
+zdravlje|1|Godišnji pregled psa: što uključuje
+zdravlje|1|Preventivni pregled starijeg ljubimca i krvne pretrage
+zdravlje|0|Zdravstveno osiguranje za ljubimce u Hrvatskoj
+zdravlje|0|Koliko košta pas godišnje
+zdravlje|0|Koliko košta mačka godišnje
+zdravlje|0|Putovanje s psom u inozemstvo: dokumenti
+zdravlje|0|Putovanje s mačkom: dokumenti i priprema
+zdravlje|0|Pas u avionu, vlaku i autobusu: pravila
+zdravlje|1|Mučnina u vožnji kod psa
+zdravlje|0|Obveze vlasnika psa po zakonu u Hrvatskoj
+zdravlje|0|Čipiranje mačaka u Hrvatskoj: je li obvezno
+zdravlje|0|Što učiniti kad pronađeš psa lutalicu
+zdravlje|0|Izgubljen pas: što učiniti prvih 24 sata
+zdravlje|0|Izgubljena mačka: kako je pronaći
+zdravlje|0|Udomljavanje psa iz azila: postupak
+zdravlje|0|Udomljavanje mačke: što pripremiti
+zdravlje|1|Briga o starom psu: prilagodbe doma
+zdravlje|1|Briga o staroj mački
+zdravlje|1|Bol kod psa: kako je prepoznati
+zdravlje|1|Bol kod mačke: kako je prepoznati
+zdravlje|1|Palijativna skrb za ljubimca
+zdravlje|1|Pas teško diše: kada je hitno
+zdravlje|1|Mačka diše otvorenih usta: zašto je hitno
+zdravlje|1|Kolaps dušnika kod malih pasa
+zdravlje|1|Brahicefalični sindrom: mops, buldog i disanje
+zdravlje|1|Česte bolesti labradora i zlatnog retrivera
+zdravlje|1|Česte bolesti njemačkog ovčara
+zdravlje|1|Česte bolesti francuskog buldoga
+zdravlje|1|Česte bolesti maltezera i malih pasmina
+zdravlje|1|Česte bolesti jazavčara
+zdravlje|1|Česte bolesti perzijske i britanske mačke
+zdravlje|1|Česte bolesti maine coon mačke
+zdravlje|1|Strah od petardi i grmljavine kod psa
+zdravlje|1|Separacijska anksioznost kod psa
+zdravlje|1|Agresija kod psa: kada potražiti pomoć
+zdravlje|1|Mačka mokri izvan pijeska: zdravstveni i drugi uzroci
+zdravlje|1|Mačka grebe namještaj: što pomaže
+zdravlje|1|Pas jede izmet (koprofagija)
+zdravlje|1|Pas jede travu: je li to problem
+zdravlje|1|Pretjerano lajanje: uzroci i rješenja
+zdravlje|1|Stres kod mačke: znakovi
+zdravlje|1|Upoznavanje nove mačke sa starom
+zdravlje|1|Upoznavanje psa i mačke
+zdravlje|0|Kupanje psa: koliko često
+zdravlje|0|Rezanje noktiju psu i mački
+zdravlje|0|Češljanje dugodlake mačke i čvorovi
+zdravlje|0|Šišanje psa ljeti: da ili ne
+zdravlje|1|Zaštita šapa zimi i ljeti
+zdravlje|1|Pas ljeti: vrućina, asfalt i automobil
+zdravlje|1|Zima i pas: hladnoća i sol na cesti
+zdravlje|1|Zdravlje kunića: prehrana i česti problemi
+zdravlje|1|Zubi kod kunića: prerastanje
+zdravlje|1|Zastoj probave kod kunića: hitno stanje
+zdravlje|1|Cijepljenje kunića
+zdravlje|1|Sterilizacija kunića
+zdravlje|1|Zdravlje zamorca: vitamin C i česti problemi
+zdravlje|1|Zdravlje hrčka: česti problemi
+zdravlje|1|Zdravlje papige tigrice: znakovi bolesti
+zdravlje|1|Prehrana papiga: što smiju jesti
+zdravlje|1|Zdravlje kornjače: oklop, svjetlo i prehrana
+zdravlje|1|Zdravlje afričkog tvora (fretke)
+zdravlje|1|Čupanje perja kod papiga
+zdravlje|0|Koliko košta operacija križnog ligamenta kod psa
+zdravlje|0|Koliko košta vađenje zuba kod psa i mačke
+zdravlje|0|Koliko košta carski rez kod kuje
+zdravlje|0|Koliko košta krvna pretraga kod psa i mačke
+zdravlje|0|Koliko košta liječenje parvoviroze
+zdravlje|0|Koliko košta čišćenje ušiju i analnih žlijezda
+zdravlje|0|Koliko košta šišanje psa
+zdravlje|0|Koliko košta hotel za pse
+zdravlje|0|Koliko košta dresura psa
+zdravlje|1|Štene: prvih 30 dana kod kuće
+zdravlje|1|Mačić: prvih 30 dana kod kuće
+zdravlje|1|Socijalizacija šteneta: što je i kada
+zdravlje|1|Mijenjanje zubi kod šteneta
+zdravlje|1|Kako znati koliko je star pas ili mačka
+zdravlje|1|Znakovi da je pas bolestan: 12 upozorenja
+zdravlje|1|Znakovi da je mačka bolesna: 12 upozorenja
+zdravlje|1|Kada je hitno: stanja zbog kojih se ide veterinaru odmah
