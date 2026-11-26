@@ -179,7 +179,7 @@ export const owner = {
       unlistedChange: "Ako promijeniš privatnost, poveznica se mijenja i ispisani kod prestaje raditi.",
       private:
         "Spomen je privatan. Kod će raditi samo tebi i obitelji koju pozoveš, i to nakon prijave. Ostalima se stranica neće otvoriti.",
-      republish: "Ako spomen povučeš s objave pa ga ponovno objaviš, dobiva novu adresu i ispisani kod više ne vodi do njega.",
+      republish: "Dok je spomen povučen s objave, kod ne vodi do njega. Kad ga ponovno objaviš, adresa ostaje ista i ispisani kod opet radi.",
     },
     downloadSvg: "Preuzmi SVG",
     downloadPng: "Preuzmi PNG",

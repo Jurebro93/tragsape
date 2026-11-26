@@ -58,13 +58,11 @@ Iznosi nisu izravno usporedivi. Paket Pet Mema uključuje hladnjaču i osnovnu u
 
 Ukop na vlastitom zemljištu dopušta Pravilnik objavljen u Narodnim novinama 129/2022, ali uz uvjete: ne smije biti sumnje na bolest koja se obvezno prijavljuje, potrebna je suglasnost vlasnika zemljišta, a iznad tijela mora biti najmanje 50 centimetara zemlje. Vrijede i lokalni propisi te propisi o zaštiti voda i okoliša, pa je prije ukopa razumno nazvati grad ili općinu.
 
-## Odjava psa: zakonski rok je sedam dana
+## Odjava psa u roku od sedam dana i što slijedi
 
 Prema [Zakonu o zdravlju životinja](https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_152_2373.html) (članak 66.), vlasnik mora prijaviti uginuće psa najkasnije u roku od sedam dana, kako bi se izmijenili podaci u putovnici i Upisniku kućnih ljubimaca. Budući da svi psi moraju biti označeni najkasnije 90 dana od štenjenja, obveza se odnosi gotovo na svakog psa.
 
 Za propust je isti zakon (članak 108.) predvidio kaznu od 260 do 660 eura, odnosno 60 eura na mjestu počinjenja. Odjavu obavljaju veterinarske ambulante; u tri cjenika pregledana u studenome 2026. ta usluga stoji 5,60 €. Sa sobom treba ponijeti putovnicu psa.
-
-## Kad praktični dio završi
 
 Redoslijed poteza, s izvorima uz svaku tvrdnju, donosi i opširniji [vodič korak po korak za dan kad pas ugine](https://tragsape.com/vodic/uginuo-mi-je-pas-sto-sada).
 

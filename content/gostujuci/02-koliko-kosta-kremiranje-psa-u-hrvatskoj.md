@@ -69,8 +69,6 @@ Prije pristanka korisno je zatražiti ukupan iznos s prijevozom s vlastite adres
 
 Potpune tablice, sa svih jedanaest Spomengajevih razreda i osam razreda Pet Mema, donosi pregled [cijena kremiranja psa po svim težinskim razredima](https://tragsape.com/vodic/kremiranje-psa-cijena).
 
-## Nakon kremiranja
-
 Urna se može ponijeti kući ili položiti na groblju za ljubimce. Dio vlasnika uz to želi i mjesto na kojem ostaju fotografije i zapisi o psu; jedna je od mogućnosti internetska spomen-stranica, kakvu nudi [Trag šape](https://tragsape.com).
 
 ## Česta pitanja

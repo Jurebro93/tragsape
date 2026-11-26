@@ -11,7 +11,7 @@ Poveznice:
 
 # Dugin most: značenje izraza i podrijetlo teksta o ljubimcima koji čekaju
 
-Rijetko se koji tekst proširio svijetom, a da više od šezdeset godina nitko nije znao tko ga je napisao. „Dugin most", u izvorniku *Rainbow Bridge*, upravo je takav: nekoliko odlomaka o životinjama koje čekaju svoje ljude prepisivalo se, slalo i tiskalo bez potpisa, sve dok autorica nije pronađena 2023. godine.
+Rijetko se koji tekst proširio svijetom, a da desetljećima javnost nije znala tko ga je napisao. „Dugin most", u izvorniku *Rainbow Bridge*, upravo je takav: nekoliko odlomaka o životinjama koje čekaju svoje ljude prepisivalo se, slalo i tiskalo bez potpisa, sve dok autorica nije pronađena 2023. godine.
 
 ## Dugin most: značenje i sadržaj teksta
 
@@ -39,7 +39,7 @@ Ispisala je list papira s obje strane i čuva ga do danas. Tekst nikada nije obj
 | početak 1990-ih | tekst kruži među američkim ljubiteljima životinja |
 | siječanj 1993. | najranije poznato spominjanje na internetu, u raspravnoj grupi o psima |
 | veljača 1994. | objava u savjetodavnoj kolumni *Dear Abby*, uz molbu čitateljima da jave autora |
-| 1994. – 1999. | američki ured za autorska prava bilježi petnaest zasebnih zahtjeva pod istim naslovom |
+| sljedećih pet godina | američki ured za autorska prava bilježi petnaest zasebnih zahtjeva pod istim naslovom |
 | veljača 2023. | Koudounaris objavljuje tko je autorica; ubrzo izvještava i National Geographic |
 
 Kolumnu *Dear Abby* čitalo je oko sto milijuna ljudi, no na molbu se nije javio nitko tko bi znao autora. Poslije su se pojavile brojne tvrdnje o autorstvu, a jedna je knjiga iz 1994. tekst pripisala šamanima američkih starosjedilaca.
@@ -56,7 +56,7 @@ Drugi dio objašnjenja nudi Harvard Health Publishing: za tugovanje za ljubimcem
 
 Dugin most je slika, a ne činjenica, i ne djeluje na sve jednako. Savjetnici veterinarskog fakulteta Sveučilišta Louisiana State preporučuju da se izbjegavaju rečenice poput „na boljem je mjestu", jer osoba koja tuguje može drukčije gledati na ono što slijedi nakon smrti. Veterinarski centar Sveučilišta Ohio State upozorava i na razgovor s djecom, u kojem takve eufemizme treba izbjegavati.
 
-Isti izvor ističe da je obred kod gubitka važan i nabraja načine sjećanja koji ne traže nikakvo vjerovanje:
+Isti izvor ističe da je obred kod gubitka važan. Veterinarske ustanove i udruge pritom navode načine sjećanja koji ne traže nikakvo vjerovanje:
 
 - mali oproštaj uz svijeću
 - biljka posađena u spomen
