@@ -67,7 +67,7 @@ Isto predlažu i savjetovališta veterinarskih fakulteta. Virginia-Maryland međ
 
 Dokazi su skromniji nego što se često tvrdi. Evo što stoji u izvorima.
 
-Ekspresivno pisanje istražuje se od 1980-ih. U ranom pokusu psihologa Jamesa Pennebakera 46 studenata pisalo je 15 minuta dnevno, četiri dana zaredom [2]. Pregled kasnijih istraživanja povezuje takvo pisanje s boljim tjelesnim i psihičkim ishodima, uz napomenu da su nalazi za psihičko zdravlje slabiji i manje dosljedni [1].
+Polazište je takozvano ekspresivno pisanje. U ranom pokusu psihologa Jamesa Pennebakera 46 studenata pisalo je 15 minuta dnevno, četiri dana zaredom [2]. Pregled kasnijih istraživanja povezuje takvo pisanje s boljim tjelesnim i psihičkim ishodima, uz napomenu da su nalazi za psihičko zdravlje slabiji i manje dosljedni [1].
 
 Kod tugovanja je slika drukčija. Isti pregled navodi da ožalošćenima pisanje o gubitku nije pomoglo više nego pisanje o neutralnim temama [1]. Autori jednog kasnijeg pokusa pišu isto: ranija ispitivanja uglavnom nisu našla učinak [3].
 
@@ -149,7 +149,7 @@ Pisma možeš čuvati i na Tragu šape. Uz paket Memorijal svako pismo dobiva da
 
 ## Kada pismo nije dovoljno?
 
-Pismo nije zamjena za stručnu pomoć. Prema pregledima istraživanja, pisanje se čini manje učinkovitim kod ljudi s teškom depresijom ili posttraumatskim stresnim poremećajem [2].
+Pismo nije zamjena za stručnu pomoć. Harvard Health navodi da se pisanje čini manje učinkovitim kod ljudi s teškom depresijom ili posttraumatskim stresnim poremećajem [2].
 
 Savjetnici Sveučilišta Ohio State preporučuju da se obratiš stručnjaku za mentalno zdravlje ako se tuga ili krivnja ne smanje ni nakon nekoliko tjedana, ili ako ti ometaju obiteljski život, druženje i posao [5]. U Hrvatskoj je prvi korak psiholog ili tvoj liječnik obiteljske medicine.
 
