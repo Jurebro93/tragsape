@@ -97,7 +97,7 @@ Ako je tvoj pas upravo uginuo, danas trebaš napraviti tri stvari: provjeriti da
 - Tijelo se počinje hladiti i kočiti unutar jednog do dva sata, pa ga namjesti što prije [1].
 - Na hladnom može čekati do 24 sata; kad je toplo, kraće [1][2].
 - Nazovi svog veterinara ili krematorij. Krematoriji čije smo stranice čitali dolaze po tijelo [7][10].
-- U cjenicima koje smo otvorili zbrinjavanje preko ambulante stoji od 25 do 62,50 € [12][13], a pojedinačno kremiranje psa od 8 kg ili težeg od 112,81 do 331,81 € [6][8].
+- U cjenicima koje smo otvorili zbrinjavanje preko ambulante stoji od 25 do 62,50 € [12][13], a pojedinačno kremiranje psa od 8 kg 112,81 ili 165 €, ovisno o krematoriju [6][8].
 - Uginuće psa prijavljuje se u roku od sedam dana [5].
 
 ## Prvi sat: što učiniti redom
@@ -163,6 +163,8 @@ Cijene su iz cjenika koje smo otvorili 26. studenoga 2026. Uzeli smo tri primjer
 | Grupno kremiranje, Pet Memo [8] | 140 € | nije u cjeniku | nije u cjeniku |
 | Pojedinačno kremiranje, Spomengaj [6] | 112,81 € | 171,21 € | 225,63 € |
 | Individualno kremiranje, Pet Memo [8] | 165 € | 250 € | 325 € |
+
+Više o tome u članku [Kremiranje psa: cijena](/vodic/kremiranje-psa-cijena).
 
 Cijene nisu izravno usporedive. Paket Pet Mema uključuje hladnjaču i osnovnu urnu, a u Zagrebu i okolnim gradovima i prijevoz [8]. Spomengaj prijevoz u krugu 20 km naplaćuje 10,62 €, a čuvanje u hladnjači 3,05 € po danu [6].
 
