@@ -4,7 +4,7 @@ cluster: nakon-smrti
 title: "Koliko košta sve nakon smrti ljubimca: pregled troškova"
 excerpt: "Sve stavke na jednom mjestu: uspavljivanje, preuzimanje tijela, skupno i pojedinačno kremiranje, urna, mjesto na groblju za ljubimce i spomen. Iznosi su iz cjenika koje veterinarske ambulante, krematoriji i groblja sami objavljuju, uz naziv izvora i datum."
 seo_title: "Troškovi nakon smrti ljubimca: pregled cijena (2026.)"
-seo_description: "Koliko stoje uspavljivanje, preuzimanje tijela, kremiranje, urna, grob i spomen za ljubimca: iznosi iz objavljenih cjenika u Hrvatskoj, s izvorom i datumom."
+seo_description: "Koliko stoje uspavljivanje, preuzimanje tijela, kremiranje, urna, grob i spomen ljubimca: iznosi iz objavljenih cjenika u Hrvatskoj, s izvorom i datumom."
 needs_vet_review: false
 cta:
   end: pogledaj-primjer
@@ -121,7 +121,7 @@ Kremiranje se naplaćuje prema težini, a preuzimanje tijela negdje je u cijeni,
 | Urna | zasebno, od 25,88 € [2] | osnovna uključena [6] |
 | Dostava urne | 15,00 € | uključena u navedenim gradovima |
 
-Kod skupnog kremiranja pepeo ne dobivaš natrag; Spomengaj ga odlaže na groblju [4]. Pet Memo ne objavljuje cijenu prijevoza izvan navedenih gradova [5]. Spomengaj preuzima prema dogovoru u cijeloj Hrvatskoj [4].
+Kod skupnog kremiranja pepeo ne dobivaš natrag; Spomengaj ga odlaže na groblju [4]. Razliku objašnjava članak [Pojedinačno ili skupno kremiranje ljubimca](/vodic/pojedinacno-ili-skupno-kremiranje-ljubimca-razlika). Pet Memo ne objavljuje cijenu prijevoza izvan navedenih gradova [5]. Spomengaj preuzima prema dogovoru u cijeloj Hrvatskoj [4].
 
 Za Rijeku je objavljen samo cjenik gradskog komunalnog društva iz 2021.: preuzimanje u gradu 5,31 €, organizacija kremacije 6,64 € i prijevoz Rijeka–Zagreb–Rijeka 66,36 €, a kremacija se naplaćuje prema stvarnom trošku [7]. Nismo mogli potvrditi vrijede li ti iznosi i danas.
 
@@ -129,7 +129,7 @@ Cijene po težinskim razredima nalaze se u člancima [Kremiranje psa: cijena po 
 
 ## Koliko stoje urna, mjesto na groblju i spomen?
 
-Urna stoji od 25,88 € do 162,50 €, a mjesto za urnu od 66,36 € za godinu dana [1][2]. Ništa od ovoga nije obvezno: urnu možeš držati i kod kuće.
+Urna stoji od 25,88 € do 162,50 €, a mjesto za urnu od 66,36 € za godinu dana [1][2]. Ništa od ovoga nije obvezno. O veličinama i vrstama urni piše članak [Urna za ljubimca](/vodic/urna-za-ljubimca-vrste-velicine-i-cijene).
 
 | Stavka | Iznos | Izvor |
 | --- | --- | --- |
@@ -169,7 +169,7 @@ Spomengajevu zbroju dodaj urnu ako je posebno biraš i 3,05 € za svaki dan hla
 
 Ukop na vlastitom zemljištu nema cjenik, ali ima uvjete. Pravilnik ga dopušta ako je u skladu s lokalnim propisima i zaštitom voda, ako je iznad tijela najmanje 50 cm zemlje i ako nema sumnje na bolest koja se obvezno prijavljuje [13].
 
-Provjeri i odluku svoje općine ili grada, jer se pravilnik na nju poziva [13]. Redoslijed prvih koraka je u članku [Što učiniti kad ljubimac ugine](/vodic/sto-uciniti-kad-ljubimac-ugine).
+Provjeri i odluku svoje općine ili grada, jer se pravilnik na nju poziva [13]. Uvjete potanko prolazi članak [Smije li se ljubimac zakopati u vrtu](/vodic/smije-li-se-ljubimac-zakopati-u-vrtu). Redoslijed prvih koraka je u članku [Što učiniti kad ljubimac ugine](/vodic/sto-uciniti-kad-ljubimac-ugine).
 
 ## Što pitati prije nego što pristaneš?
 

@@ -99,7 +99,7 @@ Online spomen je najbolji izbor kad želiš da u sjećanju sudjeluju i drugi. Pr
 
 Izrada traje nekoliko minuta, a osnovni spomen na Tragu šape je besplatan. Što sadrži besplatni, a što plaćeni spomen, piše u članku [Online spomen-stranica za ljubimca](/vodic/online-spomen-stranica-za-ljubimca). Cijene su u [Cjeniku](/cjenik).
 
-Ima i jasna ograničenja. Ne možeš ga uzeti u ruku, a postoji samo dok postoji servis na kojem je. Nije ni sigurnosna kopija: fotografije se pri učitavanju obrađuju, a video se dodaje kao poveznica.
+Ima i jasna ograničenja. Ne možeš ga uzeti u ruku, a postoji samo dok postoji servis na kojem je. Nije ni sigurnosna kopija: s fotografija se pri učitavanju uklanjaju metapodaci, a video se dodaje kao poveznica.
 
 Nekima je javno dijeljenje strano i draže im je sjećanje zadržati kod kuće. Tada je knjiga ili portret bolji izbor od bilo koje stranice.
 
@@ -146,7 +146,7 @@ Može, osobito na suncu. Arhivisti savjetuju da se izloži kopija, a izvornik č
 
 ### Kakva mi fotografija treba za ispis na platnu?
 
-Izvorna datoteka u punoj veličini, onakva kakva je snimljena. Slike preuzete iz poruka i s društvenih mreža često su smanjene, pa prije narudžbe potraži izvornik.
+Izvorna datoteka u punoj veličini, onakva kakva je snimljena. Ako nisi siguran je li neka slika izvornik, potraži je na uređaju kojim je snimljena.
 
 ## Sljedeći korak
 
