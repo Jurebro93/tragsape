@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
 import { ArticleView } from "@/components/content/article-view";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { pickRelated } from "@/lib/content/related";
@@ -77,7 +76,11 @@ function ArticleJsonLd({ article }: { article: ArticleViewData }) {
   );
 }
 
-async function Content({ params }: Pick<PageProps<"/vodic/[slug]">, "params">) {
+/**
+ * `params` se čita izvan `<Suspense>`: cijeli članak je tada u prvom HTML odgovoru (tražilici ne
+ * treba JavaScript), a adresa bez objavljenog članka vraća pravi status 404.
+ */
+export default async function ArticlePage({ params }: PageProps<"/vodic/[slug]">) {
   const { slug } = await params;
   const article = await findArticle(slug);
   if (!article) {
@@ -86,20 +89,10 @@ async function Content({ params }: Pick<PageProps<"/vodic/[slug]">, "params">) {
   const related = pickRelated(await listPublishedArticles(), article);
   return (
     <>
-      <ArticleJsonLd article={article} />
-      <ArticleView article={article} related={related} />
-    </>
-  );
-}
-
-export default function ArticlePage(props: PageProps<"/vodic/[slug]">) {
-  return (
-    <>
       <SiteHeader />
       <main className="mx-auto w-full max-w-2xl flex-1 px-5 pb-16 pt-6">
-        <Suspense fallback={<div className="min-h-[60vh]" />}>
-          <Content params={props.params} />
-        </Suspense>
+        <ArticleJsonLd article={article} />
+        <ArticleView article={article} related={related} />
       </main>
       <SiteFooter />
     </>
