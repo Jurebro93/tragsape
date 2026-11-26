@@ -97,7 +97,7 @@ Ako je tvoj pas upravo uginuo, danas trebaš napraviti tri stvari: provjeriti da
 - Tijelo se počinje hladiti i kočiti unutar jednog do dva sata, pa ga namjesti što prije [1].
 - Na hladnom može čekati do 24 sata; kad je toplo, kraće [1][2].
 - Nazovi svog veterinara ili krematorij. Krematoriji čije smo stranice čitali dolaze po tijelo [7][10].
-- Prema objavljenim cjenicima zbrinjavanje preko ambulante stoji od 25 do 62,50 €, a pojedinačno kremiranje psa od 112,81 do 331,81 € [6][12][13].
+- U cjenicima koje smo otvorili zbrinjavanje preko ambulante stoji od 25 do 62,50 € [12][13], a pojedinačno kremiranje psa od 8 kg ili težeg od 112,81 do 331,81 € [6][8].
 - Uginuće psa prijavljuje se u roku od sedam dana [5].
 
 ## Prvi sat: što učiniti redom
@@ -105,7 +105,7 @@ Ako je tvoj pas upravo uginuo, danas trebaš napraviti tri stvari: provjeriti da
 1. **Provjeri znakove.** Nema disanja ni pomicanja prsnog koša, nema otkucaja srca, zjenice su nepomične i ne reagiraju [1]. Ako nisi siguran, nazovi veterinara.
 2. **Ostani malo uz njega.** Veterinari hospicijske skrbi oproštaj navode kao prvi korak, prije svega praktičnog [1].
 3. **Podmetni deku ili ručnik.** Tijelo se nakon smrti opusti pa se mjehur i crijeva mogu isprazniti [1].
-4. **Namjesti ga u prirodan ležeći položaj.** Ako želiš, zatvori mu oči [1]. Kad nastupi ukočenost, tijelo postaje kruto, što otežava nošenje i prijevoz velikog psa [1].
+4. **Namjesti ga u prirodan ležeći položaj.** Ako želiš, zatvori mu oči [1]. Kad nastupi ukočenost, tijelo postaje kruto, pa je to lakše učiniti ranije [1].
 5. **Ohladi prostor ili premjesti tijelo.** Vidi sljedeće poglavlje.
 6. **Nazovi veterinara ili krematorij.**
 
@@ -148,7 +148,7 @@ Uvjeti za ukop jesu [4]:
 - [ ] ukop je u skladu s propisima tvog grada ili općine te propisima o zaštiti voda i okoliša
 - [ ] iznad tijela je najmanje 50 cm zemlje, dovoljno da ga druge životinje ne otkopaju
 
-Lokalna pravila razlikuju se, pa prije kopanja nazovi komunalni odjel. Same odredbe i ono što u njima nije jasno prenijeli smo u općem vodiču [Što učiniti kad ljubimac ugine](/vodic/sto-uciniti-kad-ljubimac-ugine).
+Grad ili općina mogu imati vlastita pravila, pa prije kopanja nazovi komunalni odjel. Same odredbe i ono što u njima nije jasno prenijeli smo u općem vodiču [Što učiniti kad ljubimac ugine](/vodic/sto-uciniti-kad-ljubimac-ugine).
 
 ## Koliko to stoji
 
@@ -178,7 +178,7 @@ Za propust je predviđena kazna od 260 do 660 eura, odnosno 60 eura na mjestu po
 
 Djeci reci istinu, jednostavnim riječima. Djeca od tri do pet godina smrt doživljavaju kao privremenu, pa im treba reći da se pas više ne miče, ne vidi i ne čuje i da se neće probuditi [15]. Nejasna objašnjenja stvaraju tjeskobu, zbunjenost i nepovjerenje [15]. Kako razgovarati po dobi, piše u članku [Kako djetetu objasniti smrt ljubimca](/vodic/kako-djetetu-objasniti-smrt-ljubimca).
 
-Drugi pas ili mačka u kući mogu se danima držati uz tebe, djelovati tjeskobno ili potišteno i izgubiti zanimanje za igru, san ili hranu [16]. Ne kažnjavaj ih zbog toga. Ako te promjene brinu, javi se veterinaru [16].
+Drugi pas ili mačka u kući mogu se više držati uz tebe, djelovati tjeskobno ili potišteno i izgubiti zanimanje za igru, san ili hranu [16]. Ako imaš više životinja, pusti ih da same urede odnose i ne kažnjavaj ih [16]. Ako te promjene brinu, javi se veterinaru [16].
 
 ## Česta pitanja
 

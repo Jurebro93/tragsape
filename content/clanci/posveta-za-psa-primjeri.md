@@ -55,7 +55,7 @@ Ime je pola posvete. Britanska udruga RSPCA savjetuje da se u razgovoru s onim t
 
 ## Kako koristiti primjere
 
-Gotovo svi primjeri pisani su bez glagola u prošlom vremenu, pa vrijede i za psa i za kuju. Gdje se spominje broj godina ili predmet, upiši svoje.
+Primjeri su pisani bez oblika koji ovise o spolu, pa vrijede i za psa i za kuju; tko želi, riječ „pas” zamijeni svojom. Gdje se spominje broj godina ili predmet, upiši svoje.
 
 ## 40 primjera posveta
 
@@ -130,7 +130,7 @@ Gotov primjer je početak. Posveta postaje tvoja kad u njoj stoji nešto što vr
 
 Odgovori na svako pitanje jednom rečenicom. Ispred stavi ime, na kraj ono što osjećaš sada, i posveta je gotova.
 
-Ako ti je lakše uz pomoć, [alat za posvetu](/alati/posveta) pita ista pitanja i od tvojih riječi slaže tri do četiri polazne rečenice. Nije umjetna inteligencija i ništa ne sprema.
+Ako ti je lakše uz pomoć, [alat za posvetu](/alati/posveta) pita slična pitanja i od tvojih riječi slaže tri do četiri polazne rečenice. Nije umjetna inteligencija i ništa ne sprema.
 
 ## Što izbjegavati
 
