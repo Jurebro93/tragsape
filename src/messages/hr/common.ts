@@ -21,6 +21,7 @@ export const common = {
     guide: "Vodič",
     tools: "Alati",
     home: "Početna",
+    menu: "Izbornik",
   },
   footer: {
     line: "Besplatan spomen za svakog ljubimca.",

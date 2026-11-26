@@ -24,6 +24,18 @@ function Stroke({ size = 20, children, ...props }: IconProps) {
 export const PAW_PATH =
   "M32 30c-9 0-17 9-15 17 2 7 10 5 15 5s13 2 15-5c2-8-6-17-15-17zM7.5 26a5.5 7 0 1 0 11 0a5.5 7 0 1 0-11 0zM19 15a6 7.5 0 1 0 12 0a6 7.5 0 1 0-12 0zM33 15a6 7.5 0 1 0 12 0a6 7.5 0 1 0-12 0zM45.5 26a5.5 7 0 1 0 11 0a5.5 7 0 1 0-11 0z";
 
+/** Znak brenda: srce s tri otiska. Namjerno nije šapa jedne vrste; spomeni su za sve ljubimce. */
+export const LOGO_PATH =
+  "M32 56C21 48.5 12 41 12 31.500C12 25.500 16.800 21.500 22 21.500C26.200 21.500 29.800 23.800 32 27.200C34.200 23.800 37.800 21.500 42 21.500C47.200 21.500 52 25.500 52 31.500C52 41 43 48.500 32 56ZM9.500 15.500a6 6.500 0 1 0 12 0a6 6.500 0 1 0-12 0zM26 9.500a6 6.500 0 1 0 12 0a6 6.500 0 1 0-12 0zM42.500 15.500a6 6.500 0 1 0 12 0a6 6.500 0 1 0-12 0z";
+
+export function LogoMark({ size = 26, ...props }: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 64 64" aria-hidden="true" {...props}>
+      <path d={LOGO_PATH} fill="currentColor" />
+    </svg>
+  );
+}
+
 export function PawIcon({ size = 20, ...props }: IconProps) {
   return (
     <svg width={size} height={size} viewBox="0 0 64 64" aria-hidden="true" {...props}>

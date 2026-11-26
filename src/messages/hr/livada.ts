@@ -11,9 +11,22 @@ export const livada = {
     apply: "Prikaži",
     clear: "Poništi filtre",
   },
+  about: {
+    title: "Kako Livada radi",
+    items: [
+      { title: "Tko je ovdje", body: "Svaki javni spomen, besplatni i plaćeni. Privatni i oni samo s poveznicom nikad." },
+      { title: "Svijeća", body: "Besplatna, jedna dnevno po posjetitelju za svakog ljubimca. Broj se vidi na kartici." },
+      { title: "Sat svijeća", body: "Od 21:00 do 22:00 Livada pokazuje sve svijeće upaljene te večeri od 18:00." },
+      { title: "Pretraga", body: "Po vrsti i pasmini, pa lako nađeš ljubimce slične svome." },
+    ],
+  },
+  examples: {
+    title: "Kako izgleda mjesto na Livadi",
+    note: "Ovi ljubimci su izmišljeni primjeri. Klik otvara primjer cijelog spomena.",
+  },
   empty: {
-    title: "Ovdje još nema nikoga",
-    body: "Livada se puni kako vlasnici objavljuju spomene.",
+    title: "Prvi spomeni upravo nastaju",
+    body: "Livada se puni kako vlasnici objavljuju spomene. Tvoj može biti među prvima.",
     filtered: "Za ovaj izbor još nema spomena.",
     action: "Izradi spomen",
   },

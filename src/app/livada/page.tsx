@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import type { Route } from "next";
 import { Suspense } from "react";
+import { ExampleGrid } from "@/components/examples/example-card";
 import { CandleHour } from "@/components/livada/candle-hour";
 import { MemorialGrid } from "@/components/livada/memorial-card";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { Button, ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Select } from "@/components/ui/field";
+import { EXAMPLE_PETS } from "@/lib/examples";
 import { SPECIES } from "@/lib/species";
 import { livada } from "@/messages/hr/livada";
 import { listLivada, listLivadaBreeds } from "@/server/memorials/livada";
@@ -129,6 +131,26 @@ export default function LivadaPage(props: PageProps<"/livada">) {
         <Suspense fallback={<div className="min-h-96 rounded-3xl bg-white" />}>
           <Meadow searchParams={props.searchParams} />
         </Suspense>
+        <section aria-labelledby="primjeri-title" className="flex flex-col gap-4 pt-4">
+          <h2 id="primjeri-title" className="font-display text-3xl font-extrabold">
+            {livada.examples.title}
+          </h2>
+          <ExampleGrid pets={EXAMPLE_PETS} />
+          <p className="text-sm text-plum-soft">{livada.examples.note}</p>
+        </section>
+        <section aria-labelledby="kako-title" className="flex flex-col gap-4 pt-4">
+          <h2 id="kako-title" className="font-display text-3xl font-extrabold">
+            {livada.about.title}
+          </h2>
+          <ul className="grid gap-3 sm:grid-cols-2">
+            {livada.about.items.map((item) => (
+              <li key={item.title} className="flex flex-col gap-1 rounded-3xl bg-white p-5">
+                <span className="font-display text-xl font-extrabold">{item.title}</span>
+                <span className="leading-snug text-plum-soft">{item.body}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
       </main>
       <SiteFooter />
     </>

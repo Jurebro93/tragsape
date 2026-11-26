@@ -7,63 +7,56 @@ export const marketing = {
   home: {
     hero: {
       eyebrow: "Spomen-stranica za ljubimca",
-      title: "Spomen koji čuva priču tvog ljubimca",
-      promise:
-        "Stranica s fotografijom, posvetom i knjigom sjećanja za ljubimca kojeg više nema; osnovni spomen je besplatan i takav ostaje.",
+      title: "Mjesto gdje ostaje njihova priča",
+      promise: "Fotografija, posveta i sjećanja obitelji i prijatelja na jednoj stranici. Osnovni spomen je besplatan.",
       primaryCta: "Izradi besplatni spomen",
       secondaryCta: "Pogledaj primjer",
-      note: "Počinješ bez računa i bez kartice.",
+      note: "Bez računa i bez kartice. Gotovo za nekoliko minuta.",
+      previewLabel: "Primjer spomena",
+      previewCandle: "Zapali svijeću",
+      previewQuote: "Ulica je tiša bez njega.",
+      previewQuoteAuthor: "Ivana, susjeda",
+    },
+    species: {
+      title: "Za psa, mačku, kunića, papigu i svakog drugog ljubimca",
+      note: "Ljubimci na slikama su izmišljeni primjeri.",
+      badge: "Primjer",
     },
     steps: {
-      title: "Kako to ide",
-      intro: "Tri koraka, svojim tempom.",
+      title: "Tri koraka",
       items: [
-        {
-          title: "Ljubimac",
-          body: "Upiši ime, vrstu i datume koje znaš. Ako se točnog dana ne možeš sjetiti, dovoljni su mjesec ili godina.",
-        },
-        {
-          title: "Priča i fotografije",
-          body: "Dodaj fotografiju i posvetu: nekoliko rečenica o onome što pamtiš.",
-        },
-        {
-          title: "Pregled i objava",
-          body: "Prvo vidiš kako stranica izgleda. Objavljuješ je tek kad ti odgovara.",
-        },
+        { title: "Ime i datumi", body: "Dovoljni su i samo mjesec ili godina." },
+        { title: "Fotografija i posveta", body: "Nekoliko rečenica o onome što pamtiš." },
+        { title: "Pregled i objava", body: "Objavljuješ tek kad ti izgleda kako treba." },
       ],
       paymentNote: "Plaćanje dolazi tek nakon pregleda, i samo ako želiš više od besplatnog spomena.",
     },
-    free: {
-      eyebrow: "Besplatno",
-      title: "Što sadrži besplatni spomen",
-      items: [
-        "Ime, vrsta, pasmina i datumi",
-        "Jedna fotografija",
-        "Posveta do 300 znakova",
-        "Knjiga sjećanja: poruke obitelji i prijatelja, koje ti odobravaš",
-        "Mjesto na Livadi sjećanja, zajedničkoj livadi javnih spomena",
-        "Kartica za dijeljenje",
-      ],
-      note: "Besplatni spomen je uvijek javan i ostaje besplatan.",
+    plans: {
+      title: "Besplatno ili s više prostora",
+      free: {
+        name: "Besplatni spomen",
+        price: "0 €",
+        note: "Uvijek javan i zauvijek besplatan.",
+        tiles: ["Fotografija", "Posveta", "Knjiga sjećanja", "Svijeće", "Mjesto na Livadi", "Kartica za dijeljenje"],
+      },
+      memorial: {
+        name: "Memorijal",
+        priceNote: "jednokratno, bez pretplate",
+        note: "Za cijelu priču i odluku tko je smije vidjeti.",
+        tiles: ["Do 50 fotografija", "Životna priča", "Video", "Vremenska crta", "Pisma", "Privatnost", "Obitelj kao suradnici", "QR kod"],
+      },
+      cta: "Usporedi u cjeniku",
     },
-    memorial: {
-      eyebrow: "Memorijal",
-      title: "Kad želiš ispričati više",
-      body: "Memorijal daje prostor za cijelu priču i za odluku tko je smije vidjeti.",
-      items: [
-        "Do 50 fotografija i poveznica na video",
-        "Životna priča, uz pomoćnika koji ti pomaže naći riječi",
-        "Vremenska crta i pisma ljubimcu",
-        "Privatnost: javno, samo s poveznicom ili privatno",
-      ],
-      price: "{price} jednokratno, bez pretplate.",
-      cta: "Pogledaj cjenik",
+    meadow: {
+      eyebrow: "Livada sjećanja",
+      title: "Nisu sami na livadi",
+      body: "Svaki javni spomen dobiva mjesto na zajedničkoj Livadi. Svake večeri u 21:00 je sat svijeća.",
+      cta: "Otvori Livadu",
     },
     gestures: {
       eyebrow: "Geste",
-      title: "Svijeća, šapica, cvijet",
-      candle: "Svaki posjetitelj može jednom dnevno upaliti besplatnu svijeću. Ona se samo broji.",
-      paid: "Tko želi ostaviti nešto s imenom i porukom, može odabrati gestu. Ona ostaje na spomenu 7 dana, 30 dana ili godinu dana.",
+      title: "Znak pažnje s imenom i porukom",
+      body: "Svijeću može upaliti svatko, besplatno, jednom dnevno. Gesta ostaje na spomenu 7 dana, 30 dana ili godinu dana.",
       price: "Geste su od {price}.",
       kinds: {
         candle: "Svijeća",
@@ -76,7 +69,7 @@ export const marketing = {
     gift: {
       eyebrow: "Poklon",
       title: "Za prijatelja koji se oprašta",
-      body: "Možeš platiti memorijal za nekoga tko tuguje. Na e-mail dobiva tvoju osobnu poruku i poveznicu.",
+      body: "Pokloni memorijal uz osobnu poruku.",
       cta: "Pokloni memorijal",
     },
     donation: {
@@ -84,13 +77,19 @@ export const marketing = {
       title: "Dio svakog memorijala ide azilu",
       body: "Od svakog plaćenog memorijala {amount} ide azilu za životinje.",
       shelterSet: "Trenutačno je to {shelter}.",
-      shelterPending:
-        "Azil još nije odabran; objavit ćemo ga čim bude. Do tada se svaki iznos bilježi, a zbroj je javan.",
+      shelterPending: "Azil još nije odabran; do tada se svaki iznos bilježi, a zbroj je javan.",
       cta: "Pogledaj donacije",
+    },
+    guide: {
+      eyebrow: "Vodič i alati",
+      title: "Kad ne znaš što dalje",
+      body: "Članci s izvorima i mali alati: godine psa i mačke, pomoć oko posvete i riječi sućuti.",
+      guideCta: "Vodič",
+      toolsCta: "Alati",
     },
     closing: {
       title: "Počni s imenom",
-      body: "Ostalo može pričekati. Nacrt se sprema, pa možeš stati i vratiti se.",
+      body: "Nacrt se sprema, pa možeš stati i vratiti se.",
       cta: "Izradi besplatni spomen",
     },
   },

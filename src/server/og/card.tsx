@@ -2,7 +2,7 @@ import "server-only";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import sharp from "sharp";
-import { PAW_PATH } from "@/components/icons";
+import { LOGO_PATH, PAW_PATH } from "@/components/icons";
 import { formatLifespan } from "@/lib/format";
 import type { MemorialView } from "@/lib/memorial";
 import { speciesLabel } from "@/lib/species";
@@ -99,6 +99,14 @@ function Paw({ size, color }: { size: number; color: string }) {
   );
 }
 
+function Mark({ size, color }: { size: number; color: string }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 64 64">
+      <path d={LOGO_PATH} fill={color} />
+    </svg>
+  );
+}
+
 function Portrait({ photo, size }: { photo: string | null; size: number }) {
   return (
     <div
@@ -146,7 +154,7 @@ export function renderCard(view: MemorialView, photo: string | null, format: Car
 
   const brand = (
     <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-      <Paw size={landscape ? 40 : 52} color={colors.terracotta} />
+      <Mark size={landscape ? 40 : 52} color={colors.terracotta} />
       <span style={{ fontFamily: DISPLAY, fontSize: landscape ? 34 : 44, fontWeight: 800, color: colors.plum }}>
         Trag šape
       </span>
@@ -354,7 +362,7 @@ export function renderSiteCard({ title, subtitle, label }: { title: string; subt
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <Paw size={48} color={colors.terracotta} />
+          <Mark size={48} color={colors.terracotta} />
           <span style={{ fontFamily: DISPLAY, fontSize: 40, fontWeight: 800, color: colors.plum }}>Trag šape</span>
         </div>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 22, maxWidth: 780 }}>
