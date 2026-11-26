@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import type { Metadata, Route } from "next";
+import Link from "next/link";
 import { ExampleGrid } from "@/components/examples/example-card";
 import { PetArt } from "@/components/examples/pet-art";
 import {
@@ -46,7 +47,11 @@ const sectionTitle = "font-display text-3xl font-extrabold leading-tight sm:text
 function MemorialPreview() {
   const pet = examplePet("medo");
   return (
-    <div aria-hidden="true" className="relative mx-auto w-full max-w-[21rem] pb-6 pt-2">
+    <Link
+      href={"/primjer" as Route}
+      aria-label={t.hero.secondaryCta}
+      className="relative mx-auto block w-full max-w-[21rem] pb-6 pt-2 text-plum no-underline"
+    >
       <div className="absolute -right-2 top-0 size-28 rounded-full bg-sun sm:-right-6 sm:size-36" />
       <div className="relative flex flex-col items-center gap-2.5 rounded-[2rem] bg-white px-5 pb-6 pt-6 text-center shadow-[0_18px_40px_-18px_rgba(51,36,43,0.45)]">
         <span className="absolute left-4 top-4 rounded-full bg-plum px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide text-white">
@@ -71,7 +76,7 @@ function MemorialPreview() {
         <p className="text-[15px] leading-snug">{t.hero.previewQuote}</p>
         <p className="mt-1 text-[13px] font-bold text-teal-deep">{t.hero.previewQuoteAuthor}</p>
       </div>
-    </div>
+    </Link>
   );
 }
 

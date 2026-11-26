@@ -17,11 +17,14 @@ export function CandleWidget({
   shareKey,
   initialTotal,
   disabled = false,
+  demo = false,
 }: {
   memorialId: string;
   shareKey: string | null;
   initialTotal: number;
   disabled?: boolean;
+  /** Stranica primjera: svijeća se pali samo na zaslonu, ništa se ne šalje i ne sprema. */
+  demo?: boolean;
 }) {
   const [state, setState] = useState<CandleState>({ total: initialTotal, today: 0, lit: false });
   const [busy, setBusy] = useState(false);
@@ -29,7 +32,7 @@ export function CandleWidget({
   const hydrated = useHydrated();
 
   useEffect(() => {
-    if (disabled) {
+    if (disabled || demo) {
       return;
     }
     const controller = new AbortController();
@@ -46,9 +49,13 @@ export function CandleWidget({
       })
       .catch(() => undefined);
     return () => controller.abort();
-  }, [memorialId, shareKey, disabled]);
+  }, [memorialId, shareKey, disabled, demo]);
 
   async function light() {
+    if (demo) {
+      setState((current) => ({ total: current.total + 1, today: current.today + 1, lit: true }));
+      return;
+    }
     setBusy(true);
     setError(false);
     try {

@@ -132,7 +132,8 @@ export function MemorialScreen({
             memorialId={memorial.id}
             shareKey={shareKey}
             initialTotal={memorial.candleCount}
-            disabled={!interactive}
+            disabled={mode === "preview"}
+            demo={mode === "example"}
           />
           {memorial.guestbookMode === "off" ? null : (
             <div className="flex-1">
