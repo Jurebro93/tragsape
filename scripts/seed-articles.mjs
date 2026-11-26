@@ -24,7 +24,21 @@ const ENV_FILE = join(ROOT, ".env.local");
 const CLUSTERS = ["kraj-zivota", "nakon-smrti", "tugovanje", "prigodni-datumi"];
 const CTA_SLOTS = ["after_intro", "middle", "end"];
 const KNOWN_CTA_KEYS = ["besplatni-spomen", "pogledaj-primjer", "poklon"];
-const TOOL_PATHS = ["/alati/psece-godine", "/alati/macje-godine", "/alati/posveta", "/alati/sucut", "/alati/oprostaj"];
+const TOOL_PATHS = [
+  "/alati/psece-godine",
+  "/alati/macje-godine",
+  "/alati/posveta",
+  "/alati/sucut",
+  "/alati/oprostaj",
+  // Stranice proizvoda na koje članak smije voditi.
+  "/izradi",
+  "/primjer",
+  "/livada",
+  "/cjenik",
+  "/poklon",
+  "/alati",
+  "/vodic",
+];
 const SLUG_PATTERN = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const LIMITS = {
   slug: 120,

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleView } from "@/components/content/article-view";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { extractFaq } from "@/lib/content/faq";
 import { pickRelated } from "@/lib/content/related";
 import { isValidSlug } from "@/lib/content/slug";
 import type { ArticleView as ArticleViewData } from "@/lib/content/types";
@@ -68,11 +69,40 @@ function ArticleJsonLd({ article }: { article: ArticleViewData }) {
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     publisher: { "@type": "Organization", name: common.brand, url: env.siteUrl },
   };
+  const faq = extractFaq(article.bodyMd);
+  const graph: object[] = [
+    jsonLd,
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: common.brand, item: env.siteUrl },
+        { "@type": "ListItem", position: 2, name: content.guide.title, item: `${env.siteUrl}/vodic` },
+        { "@type": "ListItem", position: 3, name: article.title, item: url },
+      ],
+    },
+  ];
+  if (faq.length > 0) {
+    graph.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faq.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: { "@type": "Answer", text: item.answer },
+      })),
+    });
+  }
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
-    />
+    <>
+      {graph.map((item, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(item).replace(/</g, "\\u003c") }}
+        />
+      ))}
+    </>
   );
 }
 
