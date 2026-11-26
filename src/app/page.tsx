@@ -207,7 +207,7 @@ export default async function HomePage() {
           </section>
 
           <section aria-labelledby="livada-title" className="grid items-center gap-6 rounded-[40px] bg-mint p-6 sm:p-10 md:grid-cols-2">
-            <div className="flex flex-col items-start gap-3">
+            <div className="flex min-w-0 flex-col items-start gap-3">
               <Eyebrow>{t.meadow.eyebrow}</Eyebrow>
               <h2 id="livada-title" className={sectionTitle}>
                 {t.meadow.title}
@@ -217,13 +217,11 @@ export default async function HomePage() {
                 {t.meadow.cta}
               </ButtonLink>
             </div>
-            <div aria-hidden="true" className="flex items-end justify-center gap-3">
+            <div aria-hidden="true" className="grid min-w-0 grid-cols-4 items-end gap-2 sm:gap-3">
               {EXAMPLE_PETS.map((pet, index) => (
-                <span key={pet.key} className="flex flex-col items-center gap-2">
+                <span key={pet.key} className={`flex flex-col items-center gap-2 ${index % 2 === 0 ? "" : "px-1.5 sm:px-2"}`}>
                   <CandleIcon size={22} className="text-terracotta" />
-                  <span
-                    className={`overflow-hidden rounded-full shadow-[0_0_0_4px_var(--color-sun)] ${index % 2 === 0 ? "size-20" : "size-16"}`}
-                  >
+                  <span className="aspect-square w-full overflow-hidden rounded-full shadow-[0_0_0_4px_var(--color-sun)]">
                     <PetArt pet={pet.key} decorative />
                   </span>
                 </span>
