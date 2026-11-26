@@ -80,6 +80,7 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 - **Izmjena `globals.css` ne učitava se uživo** u razvojnom poslužitelju: nakon nje ga treba ponovno pokrenuti. Nove Tailwind klase u komponentama učitavaju se normalno.
 - **Obrasci s `useActionState`** uz `action` dobivaju i `onSubmit={keepValues(action)}` (`src/lib/keep-values.ts`). Bez toga React nakon greške u provjeri vrati polja na početne vrijednosti i posjetitelj izgubi upisano.
 - **Identifikatori u kodu su na engleskom**, tekstovi sučelja i putanje ruta na hrvatskom (`/spomen`, `/izradi`, `/moji-ljubimci`).
+- **Objava članaka unesenih izravno u bazu** (skripta + SQL, mimo admina) ne osvježava predmemoriju: popis u Vodiču i sitemap ostaju stari i nakon običnog deploya, jer Render čuva predmemoriju izgradnje. Nakon takve objave deploy se pokreće s čišćenjem predmemorije (`clearCache`), pa se provjeri broj članaka na `/vodic` i u `/sitemap.xml`.
 - **Lokalni rad:** `npx supabase start`, `npm run dev`; provjere: `npx tsc --noEmit`, `npm run lint`, `npm test`. E-mailovi lokalno stižu u Mailpit na `http://127.0.0.1:54324`.
 
 <!-- BEGIN:nextjs-agent-rules -->
