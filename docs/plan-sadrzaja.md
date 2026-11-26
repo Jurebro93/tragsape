@@ -113,3 +113,48 @@ Dovode puno posjetitelja koji još ne tuguju. Vrijednost je u prepoznatljivosti 
 - najmanje tri poveznice na druge članke i jedan alat;
 - jedan glavni poziv na akciju prema stupcu „Put do kupnje”;
 - oznaku izvora posjeta, da se u adminu vidi koji članak dovodi kupnje.
+
+## Dodatak od 26. 11. 2026.: raspored kroz deset dana i nove skupine
+
+Vlasnik je tražio da se sve objavljuje redom kroz deset dana, što više dnevno. Dani 1 do 5 pokrivaju 50 stranica gore; dani 6 do 10 pokrivaju skupine ispod. Stranice se pišu po `content/UPUTE.md`.
+
+### 7. Koliko košta kod veterinara (cijene iz objavljenih cjenika)
+
+Izvor su samo cjenici koje ambulante i stanice same objavljuju, s datumom cjenika. Forumi služe za popis pitanja, ne za iznose.
+
+| # | Radni naslov | Vrsta |
+|---|---|---|
+| 51 | Cjenik veterinarskih usluga u Hrvatskoj: pregled po zahvatima | članak s tablicom |
+| 52 | Koliko košta sterilizacija kuje i kastracija psa | članak s tablicom |
+| 53 | Koliko košta sterilizacija mačke i kastracija mačka | članak s tablicom |
+| 54 | Cijepljenje psa: cijena i što je obvezno | članak s tablicom |
+| 55 | Cijepljenje mačke: cijena i raspored | članak s tablicom |
+| 56 | Čipiranje psa i mačke: cijena i postupak | članak (propis) |
+| 57 | Čišćenje zubnog kamenca kod psa: cijena | članak s tablicom |
+| 58 | Pregled, rendgen i ultrazvuk: cijene | članak s tablicom |
+| 59 | Putovnica za ljubimca: cijena i što treba | članak (propis) |
+| 60 | Hitna veterinarska pomoć noću i vikendom: doplate | članak s tablicom |
+
+### 8. Zdravlje pasa i mačaka (traže odluku vlasnika o pregledu veterinara)
+
+| # | Radni naslov |
+|---|---|
+| 61 | Kalendar cijepljenja psa po dobi |
+| 62 | Kalendar cijepljenja mačke po dobi |
+| 63 | Krpelj na psu: što učiniti i kada veterinaru |
+| 64 | Krpelj na mački |
+| 65 | Upala uha kod psa: znakovi i liječenje |
+| 66 | Kronične upale kože i svrbež kod psa |
+| 67 | Suplementi za zglobove kod starijih pasa: što kažu istraživanja |
+| 68 | Suplementi za mačke: što ima smisla |
+| 69 | Bolesti zubi i desni kod pasa i mačaka |
+| 70 | Otrovne namirnice i biljke za pse i mačke |
+
+### 9. Teme iz pitanja vlasnika (Reddit kao izvor pitanja, ne činjenica)
+
+Popis se dopunjava nakon obrade prikupljenih objava; svaka tema dobiva vlastito istraživanje s izvorima.
+
+### 10. Imenik ustanova
+
+Stranice po županiji i vrsti ustanove iz službenih upisnika i javnih podataka. Objavljuje se tek kad vlasnik odobri klastere.
+
