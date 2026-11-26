@@ -78,7 +78,7 @@ Poruka vrijedi više ako dodaš jedno svoje sjećanje, jer većina ljudi želi g
 15. „[ime] je i nama poznato lice, s tvojih videopoziva. Nedostajat će i nama. Žao nam je.”
 16. „Žao mi je. Ako ti danas treba mira, sastanak mogu odraditi bez tebe.”
 
-Kolegi je dovoljno poslati poruku i pitati što mu treba, primjerice malo fleksibilnosti taj dan [1]. Pitanja o tome što se dogodilo ostavi za sebe.
+Kolegi je dovoljno poslati poruku i pitati što mu treba, primjerice malo fleksibilnosti taj dan [1]. Više u članku [Što napisati kolegi kojem je uginuo ljubimac](/vodic/sto-napisati-kolegi-kojem-je-uginuo-ljubimac).
 
 ## Kratka poruka za SMS ili WhatsApp
 
@@ -115,7 +115,7 @@ Razlikuje se u slikama, ne u pravilima. Pseća poruka poseže za šetnjom i park
 
 Druga razlika je u tome koliko okolina gubitak vidi. Gubitak ljubimca društvo ne doživljava uvijek kao značajan gubitak [3], pa izostane podrška koju bi čovjek inače dobio [4]. Rečenica „bila je to samo mačka” to čini još gorim, i RSPCA je navodi prvu među onima koje ne treba reći [1].
 
-Treća je nestanak. Mačka koja izlazi ponekad se jednostavno ne vrati, i vlasnik ostaje bez odgovora. Zato su gore tri poruke samo za to.
+Treća je nestanak: mačka koja izlazi ponekad se ne vrati i vlasnik ostaje bez odgovora. Zato su gore tri poruke samo za to.
 
 Ako pišeš nekome kome je uginuo pas, primjeri su u članku [Poruka sućuti za psa](/vodic/poruka-sucuti-za-psa).
 
@@ -139,9 +139,7 @@ Bolje zamjene za rečenice koje se najčešće izgovore u dobroj namjeri nalaze 
 
 ## Što ako je u kući ostala druga mačka?
 
-Ne spominji je kao utjehu i ne tumači njezino ponašanje. Neke mačke nakon gubitka druge mačke jedu i spavaju drukčije, traže je i glasaju se, a druge ne pokazuju ništa [5].
-
-Ako vlasnik sam počne pričati o tome kako se druga mačka ponaša, slušaj. Rečenica „vidiš, njoj je svejedno” ne pomaže nikome.
+Ne spominji je kao utjehu i ne tumači njezino ponašanje. Neke mačke nakon gubitka druge mačke jedu i spavaju drukčije, traže je i glasaju se, a druge ne pokazuju ništa [5]. Ako vlasnik sam počne o tome pričati, slušaj.
 
 ## Poruka ili kartica?
 

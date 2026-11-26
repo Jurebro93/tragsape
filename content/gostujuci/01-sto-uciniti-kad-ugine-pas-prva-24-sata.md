@@ -17,7 +17,7 @@ Propisi i cijene u ovom pregledu odnose se na stanje iz studenoga 2026. godine.
 
 Najprije se provjeravaju znakovi smrti. Prema veterinarima hospicijske skrbi, to su izostanak disanja i otkucaja srca te nepomične zjenice koje ne reagiraju. Sitni trzaji mišića i izlazak zraka iz tijela mogući su i nakon smrti i ne znače da je pas živ. Tko nije siguran, treba nazvati veterinara.
 
-Isti izvor kao prvi korak navodi oproštaj, a tek potom praktične poslove. Pod tijelo je dobro podmetnuti deku ili ručnik jer se nakon smrti mišići opuštaju, pa se mjehur i crijeva mogu isprazniti.
+Pod tijelo je dobro podmetnuti deku ili ručnik jer se nakon smrti mišići opuštaju, pa se mjehur i crijeva mogu isprazniti.
 
 Tijelo se počinje hladiti i kočiti unutar jednog do dva sata. Zato ga je lakše odmah namjestiti u prirodan ležeći položaj.
 
@@ -39,11 +39,9 @@ Prvi je poziv vlastitom veterinaru: on zna što je dostupno u mjestu i može pre
 
 Zakon o veterinarstvu (članak 101.) obvezuje posjednika da tijelo uginule životinje preda ovlaštenim osobama. U praksi su to veterinarska ambulanta ili krematorij.
 
-Ako pas ugine noću ili vikendom, tijelo se polaže na hladno, a poziv se obavlja ujutro. Do preuzimanja ga, kako navodi Pet Memo, može čuvati i vlastiti ili dežurni veterinar.
-
 ## Mogućnosti i cijene prema objavljenim cjenicima
 
-Vlasnik bira između zbrinjavanja preko ambulante, skupnog i pojedinačnog kremiranja, groblja za ljubimce i ukopa na vlastitom zemljištu. Cijene u tablici preuzete su iz cjenika koje su pružatelji sami objavili, a pročitane su u studenome 2026.
+Vlasnik bira između zbrinjavanja preko ambulante, skupnog i pojedinačnog kremiranja, groblja za ljubimce i ukopa na vlastitom zemljištu. Cijene su iz cjenika koje su pružatelji sami objavili, pročitanih u studenome 2026.
 
 | Mogućnost | Čiji je cjenik | Pas od 8 kg | Pas od 25 kg | Pas od 45 kg |
 | --- | --- | --- | --- | --- |
@@ -70,7 +68,7 @@ Za propust je isti zakon (članak 108.) predvidio kaznu od 260 do 660 eura, odno
 
 Redoslijed poteza, s izvorima uz svaku tvrdnju, donosi i opširniji [vodič korak po korak za dan kad pas ugine](https://tragsape.com/vodic/uginuo-mi-je-pas-sto-sada).
 
-Što dolazi nakon toga, svatko odlučuje sam i u svoje vrijeme. Neki vlasnici izrade album, neki zadrže ogrlicu, a nekima odgovara [besplatna spomen-stranica za ljubimca](https://tragsape.com) s fotografijama i nekoliko rečenica.
+Što dolazi nakon toga, svatko odlučuje sam i u svoje vrijeme. Jedna je od mogućnosti [besplatna spomen-stranica za ljubimca](https://tragsape.com) s fotografijama i nekoliko rečenica.
 
 ## Česta pitanja
 
@@ -82,6 +80,6 @@ Na hladnom do 24 sata, a kad je toplo kraće. Prijevoz ili ukop preporučuje se 
 
 Pravilnik to dopušta ako nema sumnje na bolest koja se obvezno prijavljuje, uz najmanje 50 centimetara zemlje iznad tijela i poštivanje lokalnih propisa. Pravila grada ili općine treba provjeriti unaprijed.
 
-### Mora li se uginuće psa prijaviti?
+### Što ako pas ugine noću ili vikendom?
 
-Da, u roku od sedam dana. Odjava se obavlja u veterinarskoj ambulanti.
+Tijelo se polaže na hladno, a veterinar ili krematorij zove se ujutro. Do preuzimanja ga može čuvati i dežurni veterinar.

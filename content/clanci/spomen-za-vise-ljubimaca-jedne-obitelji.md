@@ -157,4 +157,4 @@ Ne mogu; uređuje je vlasnik računa. Suradnici se pozivaju na pojedini spomen, 
 
 ## Sljedeći korak
 
-Ako još nemaš nijedan spomen, pogledaj [primjer](/primjer) pa [izradi](/izradi) prvi; obiteljska stranica pojavit će se u računu kad ga objaviš. Ideje za tekst imaš u članku [Spomen za psa: ideje](/vodic/spomen-za-psa-ideje).
+Ako još nemaš nijedan spomen, pogledaj [primjer](/primjer) pa [izradi](/izradi) prvi; obiteljska stranica pojavit će se u računu kad ga objaviš. Ideje za tekst imaš u člancima [Spomen za psa: ideje](/vodic/spomen-za-psa-ideje) i [Posveta za mačku: 40 primjera](/vodic/posveta-za-macku-40-primjera).
