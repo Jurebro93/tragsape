@@ -188,6 +188,12 @@ export function ArticleView({
         </div>
       </header>
 
+      {article.needsVetReview && !article.vetReviewedBy ? (
+        <p role="note" className="rounded-3xl border-2 border-sun bg-butter p-4 text-[15px] font-medium leading-snug">
+          {t.notReviewed}
+        </p>
+      ) : null}
+
       {hasBody ? <Toc headings={extractHeadings(article.bodyMd)} /> : null}
 
       {hasBody ? <ArticleBody markdown={article.bodyMd} slug={article.slug} cta={article.cta} /> : null}

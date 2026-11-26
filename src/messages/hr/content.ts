@@ -16,6 +16,10 @@ export const content = {
     toolsTitle: "Alati koji pomažu odmah",
     toolsLead: "Bez prijave i bez spremanja podataka.",
     clusters: {
+      zdravlje: {
+        name: "Zdravlje i cijene",
+        lead: "Cijepljenje, česti zdravstveni problemi i koliko što košta kod veterinara.",
+      },
       "kraj-zivota": {
         name: "Kraj života",
         lead: "Kako prepoznati da se kraj bliži i kako donijeti odluku.",
@@ -47,6 +51,8 @@ export const content = {
     sourceClaim: "Odnosi se na: {claim}",
     related: "Iz iste teme",
     toc: "U ovom članku",
+    notReviewed:
+      "Ovaj tekst nije pregledao veterinar. Sastavljen je iz navedenih veterinarskih izvora i ne zamjenjuje pregled. Za savjet o svom ljubimcu obrati se najbližoj veterinarskoj ambulanti.",
     sourcesCount: "Izvori ({count})",
     more: {
       title: "Korisno uz ovaj članak",

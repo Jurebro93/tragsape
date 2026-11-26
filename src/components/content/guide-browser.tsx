@@ -3,7 +3,7 @@
 import type { Route } from "next";
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowRightIcon, BallIcon, CandleIcon, FlowerIcon, PenIcon } from "@/components/icons";
+import { ArrowRightIcon, BallIcon, CandleIcon, FlowerIcon, PawIcon, PenIcon } from "@/components/icons";
 import { cn } from "@/lib/cn";
 import type { Cluster } from "@/lib/content/types";
 import { content } from "@/messages/hr/content";
@@ -13,6 +13,7 @@ const t = content.guide;
 export type GuideArticle = { id: string; slug: string; title: string; excerpt: string | null; cluster: Cluster };
 
 const CLUSTER_ART: Record<Cluster, { Icon: typeof CandleIcon; tile: string }> = {
+  zdravlje: { Icon: PawIcon, tile: "bg-mint text-teal-deep" },
   "kraj-zivota": { Icon: PenIcon, tile: "bg-sun text-plum" },
   "nakon-smrti": { Icon: CandleIcon, tile: "bg-terracotta text-white" },
   tugovanje: { Icon: FlowerIcon, tile: "bg-teal text-white" },
@@ -25,7 +26,7 @@ export function GuideBrowser({ articles, clusters }: { articles: GuideArticle[];
   const shown = active ? articles.filter((article) => article.cluster === active) : articles;
   return (
     <div className="flex flex-col gap-6">
-      <div role="group" aria-label={t.filter.label} className="grid grid-cols-2 gap-3 md:grid-cols-4">
+      <div role="group" aria-label={t.filter.label} className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
         {clusters.map((cluster) => {
           const { Icon, tile } = CLUSTER_ART[cluster];
           const selected = active === cluster;

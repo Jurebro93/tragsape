@@ -315,7 +315,7 @@ describe("pravilo objave u bazi (articles_publish_gate)", () => {
     expect((await anonClient().from("articles").select("id").eq("id", id)).data).toEqual([]);
   });
 
-  it("odbija objavu zdravstvenog članka bez pregleda veterinara, i uz vlasnikovo odobrenje", async () => {
+  it("zdravstveni članak bez pregleda veterinara objavljuje se uz vlasnikovo odobrenje (odluka od 26. 11. 2026.)", async () => {
     const id = await insertArticle({
       slug: `bez-veterinara-${run}`,
       status: "approved",
@@ -326,9 +326,11 @@ describe("pravilo objave u bazi (articles_publish_gate)", () => {
       .from("articles")
       .update({ status: "published", published_at: now() })
       .eq("id", id);
-    expect(attempt.error?.code).toBe(CHECK_VIOLATION);
-    expect(attempt.error?.message).toContain("articles_publish_gate");
-    expect((await admin.from("articles").select("status").eq("id", id).single()).data).toEqual({ status: "approved" });
+    expect(attempt.error).toBeNull();
+    // Oznaka ostaje, pa stranica prikazuje napomenu da tekst nije pregledao veterinar.
+    expect(
+      (await admin.from("articles").select("status, needs_vet_review, vet_reviewed_at").eq("id", id).single()).data,
+    ).toEqual({ status: "published", needs_vet_review: true, vet_reviewed_at: null });
   });
 
   it("odbija i pregled veterinara bez vlasnikova odobrenja", async () => {
@@ -380,8 +382,6 @@ describe("pravilo objave u bazi (articles_publish_gate)", () => {
     });
     const noApproval = await editor.client.from("articles").update({ owner_approved_at: null }).eq("id", id);
     expect(noApproval.error?.code).toBe(CHECK_VIOLATION);
-    const noReview = await editor.client.from("articles").update({ vet_reviewed_at: null }).eq("id", id);
-    expect(noReview.error?.code).toBe(CHECK_VIOLATION);
     // Zajedno s povratkom na pregled to prolazi: tako uređivač vraća izmijenjen tekst na pregled.
     const reset = await editor.client
       .from("articles")

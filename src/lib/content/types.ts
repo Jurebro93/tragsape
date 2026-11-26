@@ -1,6 +1,6 @@
 /** Tipovi sadržaja (članci, izvori, prodajne sekcije) dijeljeni između poslužitelja i sučelja. */
 
-export const CLUSTERS = ["kraj-zivota", "nakon-smrti", "tugovanje", "prigodni-datumi"] as const;
+export const CLUSTERS = ["zdravlje", "kraj-zivota", "nakon-smrti", "tugovanje", "prigodni-datumi"] as const;
 export type Cluster = (typeof CLUSTERS)[number];
 
 export function isCluster(value: string): value is Cluster {
@@ -75,6 +75,8 @@ export type ArticleView = {
   seoDescription: string | null;
   publishedAt: string | null;
   updatedAt: string;
+  /** Zdravstvena tema: dok nema pregleda veterinara, stranica prikazuje napomenu. */
+  needsVetReview: boolean;
   vetReviewedBy: string | null;
   vetReviewedAt: string | null;
   sources: ArticleSource[];

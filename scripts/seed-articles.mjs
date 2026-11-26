@@ -21,7 +21,7 @@ const CONTENT_DIR = join(ROOT, "content", "clanci");
 const ENV_FILE = join(ROOT, ".env.local");
 
 // Granice iz migracije 20261126000000_admin_sadrzaj_podsjetnici.sql (ograničenja CHECK).
-const CLUSTERS = ["kraj-zivota", "nakon-smrti", "tugovanje", "prigodni-datumi"];
+const CLUSTERS = ["zdravlje", "kraj-zivota", "nakon-smrti", "tugovanje", "prigodni-datumi"];
 const CTA_SLOTS = ["after_intro", "middle", "end"];
 const KNOWN_CTA_KEYS = ["besplatni-spomen", "pogledaj-primjer", "poklon"];
 const TOOL_PATHS = [

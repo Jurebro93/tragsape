@@ -11,7 +11,10 @@ Vrijede za svaki novi članak u `content/clanci/`. Plan tema je u `docs/plan-sad
 - Cijene samo iz objavljenih cjenika pružatelja, uz naziv pružatelja i datum cjenika. Ne izmišljaju se pružatelji, partneri ni „prosječne cijene”.
 - Izvor se u tekstu označava brojem u uglatim zagradama, npr. `[2]`, a popis izvora je u zaglavlju datoteke. Svaki izvor mora biti spomenut barem jednom i svaka oznaka mora imati izvor.
 - Vanjske poveznice u tekstu su dobrodošle kad čitatelju koriste (službeni cjenik, tekst propisa, stranica ustanove). Samo `https://`.
-- Tema zdravlja ili eutanazije: `needs_vet_review: true` i rečenica pri vrhu da tekst ne zamjenjuje veterinara. Takav članak se ne objavljuje bez upisanog pregleda.
+- Tema zdravlja ili eutanazije: `needs_vet_review: true` i rečenica pri vrhu da tekst ne zamjenjuje veterinara. Stranica sama dodaje napomenu da tekst nije pregledao veterinar.
+- Zdravstvene tvrdnje i preporuke liječenja samo iz izvora koje potpisuju veterinari ili veterinarske ustanove (fakulteti, strukovne udruge, klinike, MSD/Merck Veterinary Manual, WSAVA, AAHA, AVMA, ESCCAP i slično). Uz svaku preporuku stoji tko je daje. Ne navode se doze lijekova; za lijekove i doze upućuje se na veterinara.
+- Svaki zdravstveni članak ima odjeljak „Kada odmah veterinaru" s konkretnim znakovima i završava uputom da se čitatelj obrati najbližoj veterinarskoj ambulanti.
+- Tema živog ljubimca (cijepljenje, krpelji, cijene zahvata) ide u temu `zdravlje`, a `cta.end` ostaje prazan ili `pogledaj-primjer`; takvom čitatelju se ne nudi spomen.
 
 ## Oblik (i za čitatelja i za tražilice i AI odgovore)
 Redoslijed odjeljaka:

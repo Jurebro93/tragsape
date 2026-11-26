@@ -152,13 +152,9 @@ Javi se stručnjaku za mentalno zdravlje ako:
 
 Ako ti se javljaju misli da si naudiš, ne čekaj: odmah se obrati liječniku ili hitnoj službi.
 
-[PROVJERITI: dodati provjerene brojeve hitne psihološke pomoći u Hrvatskoj; nismo ih otvorili na službenim stranicama pa ih ne navodimo]
-
 ## Gdje potražiti podršku
 
 Liniju ili savjetovalište namijenjeno upravo gubitku ljubimca u Hrvatskoj nismo pronašli.
-
-[PROVJERITI: postoji li u Hrvatskoj psiholog, udruga ili grupa podrške specijalizirana za gubitak kućnog ljubimca]
 
 Ono što postoji i što smo provjerili:
 
@@ -172,8 +168,6 @@ Na engleskom jeziku postoje službe posvećene baš gubitku ljubimca:
 - **Association for Pet Loss and Bereavement (APLB)**: sobe za razgovor na internetu uz besplatno članstvo [8].
 - **Cornell Pet Loss Support Hotline**: telefonska linija na kojoj se javljaju educirani studenti veterine, +1 607-218-7457. Radno vrijeme se mijenja, a poziv je međunarodni [9].
 - **Paws to Listen** britanske udruge Cats Protection: linija 0800 024 94 94 radi od ponedjeljka do petka od 9 do 17 sati po britanskom vremenu; postoji i obrazac na stranici [10].
-
-[PROVJERITI: jesu li britanski i američki brojevi dostupni iz Hrvatske i po kojoj cijeni; radno vrijeme Linije pomoći Plavog telefona]
 
 ## Sljedeći korak
 

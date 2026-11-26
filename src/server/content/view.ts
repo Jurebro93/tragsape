@@ -21,7 +21,7 @@ import type { Database } from "@/server/supabase/database.types";
 type Client = SupabaseClient<Database>;
 
 const ARTICLE_COLUMNS =
-  "id, slug, locale, cluster, title, excerpt, body_md, status, seo_title, seo_description, published_at, updated_at, vet_reviewed_by, vet_reviewed_at" as const;
+  "id, slug, locale, cluster, title, excerpt, body_md, status, seo_title, seo_description, published_at, updated_at, needs_vet_review, vet_reviewed_by, vet_reviewed_at" as const;
 
 export const SOURCE_COLUMNS = "id, position, claim, title, url, publisher, accessed_on" as const;
 
@@ -89,6 +89,7 @@ export async function loadArticleView(client: Client, lookup: ArticleLookup): Pr
     seoDescription: row.seo_description,
     publishedAt: row.published_at,
     updatedAt: row.updated_at,
+    needsVetReview: row.needs_vet_review,
     vetReviewedBy: row.vet_reviewed_by,
     vetReviewedAt: row.vet_reviewed_at,
     sources: sources.data.map(

@@ -44,7 +44,7 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 ## Sadržaj
 
 - Svaka cijena i pravna tvrdnja ima izvor i datum pristupa. Ništa se ne izmišlja.
-- Članci o zdravlju i eutanaziji nose oznaku „čeka pregled veterinara" i ne objavljuju se bez vlasnikova odobrenja. To provjerava i baza.
+- Članci o zdravlju i eutanaziji nose oznaku zdravstvene teme (`needs_vet_review`) i ne objavljuju se bez vlasnikova odobrenja; to provjerava i baza. Odlukom vlasnika od 26. 11. 2026. pišu se iz veterinarskih izvora navedenih uz tekst i objavljuju i prije pregleda veterinara; dok pregleda nema, stranica sama prikazuje napomenu da tekst nije pregledao veterinar i upućuje na najbližu veterinarsku ambulantu.
 - Članci i prodajne sekcije uređuju se u adminu, bez deploya. Nacrti članaka žive u `content/clanci/` i u bazu ulaze kroz `node scripts/seed-articles.mjs`, uvijek kao „na pregledu".
 - Alati su u `src/lib/tools/registry.ts`; alat o zdravlju ili propisima kreće kao `draft` (vidi ga samo admin) i objavljuje se tek nakon pregleda i vlasnikova odobrenja.
 - Izvor posjeta (članak, alat, UTM) putuje u adresi i skrivenim poljima obrasca (`src/lib/attribution.ts`), bez kolačića i bez pohrane u pregledniku.

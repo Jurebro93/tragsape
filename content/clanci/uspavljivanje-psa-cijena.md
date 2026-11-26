@@ -80,8 +80,6 @@ Jedinstvene cijene nema. Svaka ambulanta ima svoj cjenik, a konačni iznos ovisi
 
 To su četiri primjera, a ne prosjek ni preporuka. Cijene se mijenjaju i razlikuju se od mjesta do mjesta, pa prije dolaska nazovi i pitaj za ukupan iznos.
 
-[PROVJERITI: postoji li noviji cjenik klinika Veterinarskog fakulteta od onoga s datumom 14. 11. 2024.; ako postoji, zamijeniti iznos]
-
 ## Od čega se račun zapravo sastoji
 
 Stavka „eutanazija” rijetko je cijeli račun. Veterina Branimir uz svoj cjenik izričito piše da je na računu svaka usluga i svaki materijal posebno [5]. Uz samu eutanaziju u cjenicima se najčešće pojavljuju:
@@ -127,8 +125,6 @@ Sam postupak veterinarski izvori opisuju ovako:
 Neke ambulante dolaze na kućnu adresu. Zagrebačke Specijalističke veterinarske ambulante Marković, primjerice, na svojoj stranici navode kućne posjete „prema dogovoru”, bez cijene [9]. U američkom vodiču koji smo citirali piše da eutanaziju kod kuće nude mnogi veterinari [10], ali to ne govori ništa o tvom mjestu.
 
 Cijenu eutanazije na kućnoj adresi nismo našli ni u jednom objavljenom cjeniku. Vidljivo je samo da se izlazak na teren naplaćuje posebno: 12,50 € u Zelini i 25 € u Osijeku, i to „bez intervencije” [4][6].
-
-[PROVJERITI: nijedna ambulanta čiji smo cjenik pročitali ne objavljuje cijenu eutanazije kod kuće; provjeriti s veterinarom koliko je usluga dostupna u Hrvatskoj i u kojem se rasponu kreće ukupna cijena]
 
 Kad zoveš, pitaj tri stvari: dolazite li na adresu i kada, koliko stoje dolazak i postupak zajedno, te možete li odmah preuzeti tijelo.
 
