@@ -2,9 +2,10 @@ import type { Route } from "next";
 import Link from "next/link";
 import { ArticleBody } from "@/components/content/article-body";
 import { CtaBlock } from "@/components/content/cta-block";
-import { ArrowRightIcon, CheckIcon } from "@/components/icons";
+import { ArrowRightIcon, BallIcon, CandleIcon, CheckIcon, FlowerIcon, PawTrail, PenIcon } from "@/components/icons";
 import { Eyebrow } from "@/components/ui/card";
-import type { ArticleSummary, ArticleView as ArticleViewData } from "@/lib/content/types";
+import { extractHeadings, type ArticleHeading } from "@/lib/content/headings";
+import type { ArticleSummary, ArticleView as ArticleViewData, Cluster } from "@/lib/content/types";
 import { formatDateTime, formatPetDate } from "@/lib/format";
 import { fill } from "@/lib/text";
 import { content } from "@/messages/hr/content";
@@ -31,23 +32,23 @@ function Sources({ sources }: { sources: ArticleViewData["sources"] }) {
     return null;
   }
   return (
-    <section aria-labelledby="izvori" className="flex flex-col gap-4 border-t-2 border-line pt-8">
-      <h2 id="izvori" className="font-display text-2xl font-extrabold">
-        {t.sources}
-      </h2>
-      <ol className="flex list-decimal flex-col gap-4 pl-6 text-[15px] leading-relaxed marker:text-plum-soft">
+    <details className="rounded-3xl bg-white p-4 text-sm leading-snug sm:p-5">
+      <summary className="flex min-h-11 cursor-pointer items-center font-bold">
+        {fill(t.sourcesCount, { count: sources.length })}
+      </summary>
+      <ol className="mt-2 flex list-decimal flex-col gap-2 pl-5 marker:text-plum-soft">
         {sources.map((source) => {
           const url = safeSourceUrl(source.url);
           const accessed = formatPetDate(source.accessedOn, "day");
           return (
-            <li key={source.id} className="pl-1 [overflow-wrap:anywhere]">
+            <li key={source.id} className="[overflow-wrap:anywhere]">
               {source.publisher ? <span className="font-bold">{source.publisher}: </span> : null}
               {url ? (
                 <a
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-teal underline underline-offset-4 hover:text-teal-deep"
+                  className="text-teal underline underline-offset-2 hover:text-teal-deep"
                 >
                   {source.title}
                   <span className="sr-only"> ({t.newTab})</span>
@@ -56,14 +57,11 @@ function Sources({ sources }: { sources: ArticleViewData["sources"] }) {
                 <span>{source.title}</span>
               )}
               {accessed ? <span className="text-plum-soft">, {fill(t.accessed, { date: accessed })}</span> : null}
-              {source.claim ? (
-                <span className="mt-0.5 block text-sm text-plum-soft">{fill(t.sourceClaim, { claim: source.claim })}</span>
-              ) : null}
             </li>
           );
         })}
       </ol>
-    </section>
+    </details>
   );
 }
 
@@ -100,6 +98,72 @@ function Related({ articles }: { articles: readonly ArticleSummary[] }) {
   );
 }
 
+const COVER: Record<Cluster, { Icon: typeof CandleIcon; tile: string }> = {
+  "kraj-zivota": { Icon: PenIcon, tile: "bg-sun text-plum" },
+  "nakon-smrti": { Icon: CandleIcon, tile: "bg-terracotta text-white" },
+  tugovanje: { Icon: FlowerIcon, tile: "bg-teal text-white" },
+  "prigodni-datumi": { Icon: BallIcon, tile: "bg-plum text-white" },
+};
+
+/** Naslovna slika po predlošku: ista za sve članke, razlikuje se samo znak i boja teme. */
+function Cover({ cluster }: { cluster: Cluster }) {
+  const { Icon, tile } = COVER[cluster];
+  return (
+    <div aria-hidden="true" className="relative flex h-40 items-center overflow-hidden rounded-[32px] bg-butter px-6 sm:h-52 sm:px-10">
+      <div className="absolute -right-10 -top-16 size-56 rounded-full bg-sun sm:size-72" />
+      <PawTrail className="absolute bottom-4 right-6 h-auto w-40 text-white sm:w-56" />
+      <span className={`relative flex size-20 items-center justify-center rounded-full shadow-[0_0_0_6px_var(--color-vanilla)] sm:size-24 ${tile}`}>
+        <Icon size={40} />
+      </span>
+      <span className="relative ml-4 font-display text-2xl font-extrabold leading-tight sm:text-3xl">
+        {content.guide.clusters[cluster].name}
+      </span>
+    </div>
+  );
+}
+
+function Toc({ headings }: { headings: ArticleHeading[] }) {
+  if (headings.length < 3) {
+    return null;
+  }
+  return (
+    <nav aria-labelledby="sadrzaj" className="rounded-3xl bg-mint p-5">
+      <h2 id="sadrzaj" className="font-display text-xl font-extrabold">
+        {t.toc}
+      </h2>
+      <ol className="mt-2 flex list-decimal flex-col pl-5 marker:font-bold">
+        {headings.map((heading) => (
+          <li key={heading.id}>
+            <a href={`#${heading.id}`} className="flex min-h-11 items-center text-[15px] font-semibold text-plum underline-offset-4 hover:underline">
+              {heading.text}
+            </a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  );
+}
+
+function More() {
+  return (
+    <nav aria-labelledby="korisno" className="flex flex-col gap-3">
+      <h2 id="korisno" className="font-display text-2xl font-extrabold">
+        {t.more.title}
+      </h2>
+      <ul className="grid gap-3 sm:grid-cols-2">
+        {t.more.links.map((item) => (
+          <li key={item.href}>
+            <Link href={item.href as Route} className="flex h-full flex-col gap-1 rounded-3xl bg-white p-4 text-plum no-underline hover:bg-butter">
+              <span className="font-bold">{item.label}</span>
+              <span className="text-sm text-plum-soft">{item.body}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+}
+
 export function ArticleView({
   article,
   related,
@@ -114,6 +178,7 @@ export function ArticleView({
         <Link href="/vodic" className="flex min-h-11 items-center self-start text-[15px] font-semibold">
           ← {t.back}
         </Link>
+        <Cover cluster={article.cluster} />
         <Eyebrow>{content.guide.clusters[article.cluster].name}</Eyebrow>
         <h1 className="text-4xl font-extrabold leading-[1.1] [overflow-wrap:anywhere] sm:text-5xl">{article.title}</h1>
         {article.excerpt ? <p className="text-xl leading-relaxed text-plum-soft">{article.excerpt}</p> : null}
@@ -130,14 +195,17 @@ export function ArticleView({
         </div>
       </header>
 
+      {hasBody ? <Toc headings={extractHeadings(article.bodyMd)} /> : null}
+
       {hasBody ? <ArticleBody markdown={article.bodyMd} slug={article.slug} cta={article.cta} /> : null}
 
       {hasBody && article.cta.end ? (
         <CtaBlock block={article.cta.end} articleSlug={article.slug} id="sekcija-end" />
       ) : null}
 
-      <Sources sources={article.sources} />
       <Related articles={related} />
+      <More />
+      <Sources sources={article.sources} />
     </article>
   );
 }

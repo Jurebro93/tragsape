@@ -46,6 +46,17 @@ export const content = {
     accessed: "pristupljeno {date}",
     sourceClaim: "Odnosi se na: {claim}",
     related: "Iz iste teme",
+    toc: "U ovom članku",
+    sourcesCount: "Izvori ({count})",
+    more: {
+      title: "Korisno uz ovaj članak",
+      links: [
+        { href: "/alati/posveta", label: "Pomoćnik za posvetu", body: "Složi nekoliko rečenica za spomen." },
+        { href: "/alati/sucut", label: "Riječi sućuti", body: "Što napisati nekome tko je izgubio ljubimca." },
+        { href: "/livada", label: "Livada sjećanja", body: "Javni spomeni i večernji sat svijeća." },
+        { href: "/izradi", label: "Besplatni spomen", body: "Fotografija, posveta i knjiga sjećanja." },
+      ],
+    },
     footnotes: "Bilješke",
     footnoteBack: "Natrag na tekst",
     newTab: "otvara se u novoj kartici",

@@ -1,10 +1,12 @@
 import type { Route } from "next";
 import Link from "next/link";
+import { isValidElement, type ReactNode } from "react";
 import Markdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { CtaBlock } from "@/components/content/cta-block";
 import { cn } from "@/lib/cn";
 import { isInternalPath } from "@/lib/content/attribution";
+import { headingId } from "@/lib/content/headings";
 import { CTA_SLOT_ATTRIBUTE, remarkCtaSlots } from "@/lib/content/remark-cta-slots";
 import { CTA_SLOTS, isCtaSlot, type CtaBlockData, type CtaSlot } from "@/lib/content/types";
 import { content } from "@/messages/hr/content";
@@ -19,6 +21,20 @@ const text = "text-[17px] leading-[1.65]";
 const link = "font-medium text-teal underline underline-offset-4 [overflow-wrap:anywhere] hover:text-teal-deep";
 const heading2 = "mt-10 font-display text-[26px] font-extrabold leading-tight first:mt-0";
 const heading3 = "mt-8 font-display text-xl font-bold leading-snug first:mt-0";
+
+/** Tekst podnaslova bez oznaka, za sidro na koje vodi sadržaj na vrhu članka. */
+function nodeText(node: ReactNode): string {
+  if (typeof node === "string" || typeof node === "number") {
+    return String(node);
+  }
+  if (Array.isArray(node)) {
+    return node.map(nodeText).join("");
+  }
+  if (isValidElement<{ children?: ReactNode }>(node)) {
+    return nodeText(node.props.children);
+  }
+  return "";
+}
 
 const baseComponents: Components = {
   // Naslov stranice je jedini h1; naslov u tekstu postaje podnaslov.
@@ -133,8 +149,27 @@ export function ArticleBody({
   cta: Partial<Record<CtaSlot, CtaBlockData>>;
 }) {
   const slots = CTA_SLOTS.filter((slot) => cta[slot] !== undefined);
+  // Ista pravila za sidra kao u `extractHeadings`, pa poveznice iz sadržaja pogađaju podnaslove.
+  const usedIds = new Map<string, number>();
   const components: Components = {
     ...baseComponents,
+    h2: ({ node: _node, className: _className, children, ...props }) => {
+      if (props.id?.endsWith("footnote-label")) {
+        return (
+          <h2 className="font-display text-lg font-bold" {...props}>
+            {children}
+          </h2>
+        );
+      }
+      const base = headingId(nodeText(children));
+      const seen = usedIds.get(base) ?? 0;
+      usedIds.set(base, seen + 1);
+      return (
+        <h2 {...props} id={seen === 0 ? base : `${base}-${seen + 1}`} className={`${heading2} scroll-mt-6`}>
+          {children}
+        </h2>
+      );
+    },
     aside: ({ node: _node, ...props }) => {
       const slot = (props as Record<string, unknown>)[CTA_SLOT_ATTRIBUTE];
       const block = typeof slot === "string" && isCtaSlot(slot) ? cta[slot] : undefined;

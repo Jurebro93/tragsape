@@ -38,8 +38,8 @@ const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").re
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${common.brand} — spomen-stranica za tvog ljubimca`,
-    template: `%s · ${common.brand}`,
+    default: `${common.brand} - spomen-stranica za tvog ljubimca`,
+    template: `%s - ${common.brand}`,
   },
   description:
     "Izradi trajnu spomen-stranicu za ljubimca: fotografija, posveta i knjiga sjećanja za obitelj i prijatelje. Osnovni spomen je besplatan.",
