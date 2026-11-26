@@ -9,7 +9,7 @@ needs_vet_review: false
 cta:
   end: besplatni-spomen
 sources:
-  - claim: "Tuga za ljubimcem je nepriznata tuga; obred je važan kod gubitka; načini sjećanja: paljenje svijeće, biljke, cvijeće i stabla, donacija vremena, novca ili vještine udruzi za životinje, kutija ili okvir s pločicom, igračkama, ogrlicom i ležajem, otisci šape, pramen dlake i fotografije, zapis o životu ljubimca; važniji je postupak nego izgled; preživjele životinje mogu se držati uz ukućane, biti tjeskobne i izgubiti zanimanje za igru, san ili hranu; ako mačka prestane jesti, treba se što prije javiti veterinaru"
+  - claim: "Nepriznata tuga; obred je važan, a postupak važniji od izgleda; načini sjećanja: biljke i stabla, donacija vremena, novca ili vještine, kutija s pločicom, igračkama, ogrlicom i ležajem, otisak šape, pramen dlake, zapis o životu ljubimca; preživjele životinje mogu se držati uz ukućane, biti tjeskobne i izgubiti zanimanje za igru, san ili hranu; ako mačka prestane jesti, što prije veterinaru"
     title: "Coping with the Loss of a Pet: A Guide for Adults, Children and Surviving Animals (2024.)"
     url: "https://vmc.vet.osu.edu/sites/default/files/documents/coping_with_loss_brochure_2024_web.pdf"
     publisher: "The Ohio State University Veterinary Medical Center, Honoring the Bond Program"

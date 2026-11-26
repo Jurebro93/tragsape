@@ -1,0 +1,678 @@
+vrsta,naziv,vrsta_prakse,adresa,postanski_broj,grad,zupanija,telefon,web
+ambulanta,"VETERINARSKA STANICA VRBOVEC d.o.o., Ambulanta u sjedištu stanice VRBOVEC",,Kolodvorska 68,10340,Vrbovec,Zagrebačka,01/2791-141,https://vsvrbovec.hr/lokacije/
+ambulanta,VETERINARSKA STANICA NOVSKA Područna veterinarska ambulanta Lipovljani,,ULICA KRALJA ZVONIMIRA 9,44330,Novska,Sisačko-Moslavačka,044/600-130; 091/5554-063,veterinarska-stanica-novska.hr
+ambulanta,VETERINARSKA STANICA NOVSKA društvo s ograničenom odgovornošću,,ULICA KRALJA ZVONIMIRA 9,44330,Novska,Sisačko-Moslavačka,044/600-130; 091/5554-063,veterinarska-stanica-novska.hr
+ambulanta,"VETERINARSKA STANICA VRBOVEC d.o.o., amb. LONJICA",,Lonjica 110,10341,Vrbovec,Zagrebačka,,
+ambulanta,"VETERINARSKA STANICA KUTINA d.o.o., Područna veterinarska ambulanta VELIKA LUDINA",,5. svibnja 21,44316,Velika Ludina,Sisačko-Moslavačka,044/658-077,http://www.vskutina.hr/index.php/ambulante/ambulanta-velika-ludina
+ambulanta,VETERINARSKA AMBULANTA BANIJA d.o.o.,,Dr. Vatroslava Jagića 6,47000,Karlovac,Karlovačka,047/648-830; 091/7663-111,https://www.facebook.com/vetambbanija/?locale=hr_HR
+ambulanta,"VETERINARSKA STANICA BELI MANASTIR d.o.o., Ambulanta u sjedištu stanice Beli Manastir",,Osječka 128,31300,Beli Manastir,Osječko-Baranjska,031/700-133; 099/3231-781,http://www.vsbm.hr/
+ambulanta,"VETERINARSKA STANICA MIHAEL d.o.o., Ambulanta u sjedištu stanice DONJI MIHOLJAC",,Stjepana Radića 6,31540,Donji Miholjac,Osječko-Baranjska,031/631-801; 091/5709-795,
+ambulanta,"VETERINARSKA STANICA IVANEC d.o.o., Područna veterinarska ambulanta DONJA VOĆA",,Donja Voća bb,42245,Donja Voća,Varaždinska,042/766-110,http://vsi.hr/index.php/ambulante
+ambulanta,Veterinarska ambulanta Uvodić društvo s ograničenom odgovornošću za veterinarske djelatnosti,,MAVRINCI 2,51218,Čavle,Primorsko-Goranska,051/564-772,https://veterinarska-ambulanta-uvodic.com/
+ambulanta,"VETERINARSKA STANICA ĐAKOVO d.o.o., Ambulanta u sjedištu stanice Đakovo",,Kralja Tomislava 33,31400,Đakovo,Osječko-Baranjska,031/813-291; 099/4434-022,https://vs-djakovo.hr/
+ambulanta,NOVI AGRAR d.o.o.(Ankin dvor),,Đakovština 3,31000,Osijek,Osječko-Baranjska,031/250-300,
+ambulanta,VETERINARSKA AMBULANTA UDBINA j.d.o.o. za pružanje veterinarskih usluga,,Trg hrvatskih vitezova 1,53234,Udbina,Ličko-Senjska,053/778-172; 092/3566-644,
+ambulanta,"VETERINARSKA STANICA KRIŽEVCI d.o.o., Područna veterinarska ambulanta Sveti Ivan Žabno",,Sveti Ivan bb,48214,Sveti Ivan Žabno,Koprivničko-Križevačka,048/851-406; 095/4800-034,https://www.vskrizevci.com/
+ambulanta,"VETERINARSKA STANICA SLATINA d.o.o., Područna veterinarska ambulanta ČAĐAVICA",,Vukovarska 46,33523,Čađavica,Virovitičko-Podravska,,https://www.facebook.com/p/Veterinarska-stanica-Slatina-100071559440076/
+ambulanta,VETERINARSKA AMBULANTA GOSPIĆ d.o.o.,,Bana Josipa Jelačića 9,53000,Gospić,Ličko-Senjska,053/572-857; 099/3572-857,https://www.va-gospic.hr/
+ambulanta,"VETERINARSKA STANICA ČAZMA d.o.o., amb. IVANSKA",,Ivana Mažuranića b.b.,43231,Ivanska,Bjelovarsko-Bilogorska,,
+ambulanta,"VETERINARSKA STANICA BJELOVAR d.o.o., amb. KAPELA",,Kapela b.b.,43203,Kapela,Bjelovarsko-Bilogorska,043/884-060,https://veterinarska-stanica-bjelovar.hr/
+ambulanta,FRANCO d.o.o.,,Fažanska cesta 2,52215,Vodnjan - Dignano,Istarska,052/511-352; 097/6391-379,
+ambulanta,"VETERINARSKA AMBULANTA BEBRINA, d. o. o. za veterinarske usluge i trgovinu",,Bebrina 99,35254,Bebrina,Brodsko-Posavska,035/433-100; 091/5705-859,https://www.facebook.com/people/Veterinarska-ambulanta-Bebrina-doo/61556142681613/
+ambulanta,VETERINARSKA AMBULANTA BOKANJAC d.o.o. za usluge,,Put Vrela 2a,23000,Zadar,Zadarska,023/220-629,https://veterinarskaambulantabokanjac.hr/o-nama
+ambulanta,"ZOO-VET, veterinarska ambulanta d.o.o.",,Biogradska Cesta 65,23000,Zadar,Zadarska,023/214-295;  023/224-310,https://www.facebook.com/zoovetzadar.veterinarskaambulanta/?locale=hr_HR
+ambulanta,"MERKUR-VETERINARSKA AMBULANTA d. o. o. za veterinarstvo, proizvodnju i usluge",,Dudinjak 9,35000,Slavonski Brod,Brodsko-Posavska,035/440-460; 035/486-960,www.vam.hr
+ambulanta,VETERINARSKA AMBULANTA MORE d.o.o.,,Kralja Zvonimira 83,22000,Šibenik,Šibensko-Kninska,022/338-822 ;  022/333-322,https://www.facebook.com/veterinarska.ambulanta.more/?locale=hr_HR
+ambulanta,"VETERINARSKA STANICA BJELOVAR d.o.o., amb. SEVERIN",,Severin 162,43274,Severin,Bjelovarsko-Bilogorska,043/889-210,https://veterinarska-stanica-bjelovar.hr/
+ambulanta,Anubis klub j.d.o.o.,,Ulica vijeća Europe 236,32000,Vukovar,Vukovarsko-Srijemska,032/428-538,https://www.facebook.com/Anubis.Klub/?locale=hr_HR
+ambulanta,VETERINARSKA AMBULANTA PANTERA j.d.o.o.,,TRPINJSKA CESTA 157,32000,Vukovar,Vukovarsko-Srijemska,032/564-455,https://www.facebook.com/p/Veterinarska-ambulanta-Pantera-100086456703877/
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta CERNA",,Strossmayerova 2,32272,Cerna,Vukovarsko-Srijemska,032/843-799; 098/217-108,http://vs-zupanja.hr/index.php/2014-05-06-13-13-47/ambulanta-cerna
+ambulanta,VETERINARSKA AMBULANTA NELA d.o.o.,,Bošnjaci 64,32281,Ivankovo,Vukovarsko-Srijemska,032/381-286,
+ambulanta,"VETERINARSKA STANICA VETERINA d.o.o., amb. STARO PETROVO SELO",,Frankopanska 18,35420,Staro Petrovo Selo,Brodsko-Posavska,035/387-032; 091/9466-921,https://vs-veterina.hr/
+ambulanta,"MOUNT TRADE društvo s ograničenom odgovornošću, trgovina i usluge u veterinarstvu i veterinarska ambulanta",,Industrijska 13,43280,Garešnica,Bjelovarsko-Bilogorska,043/485-914,https://mount-trade.hr/
+ambulanta,"VETERINARSKA STANICA DARUVAR d.o.o., amb. DEŽANOVAC",,Dežanovac 288,43506,Dežanovac,Bjelovarsko-Bilogorska,043/381-325; 091/5409-791,https://vsdaruvar.hr/
+ambulanta,"VETERINARSKA STANICA SLATINA d.o.o., Područna veterinarska ambulanta NOVA BUKOVICA",,Kolodvorska 6,33518,Nova Bukovica,Virovitičko-Podravska,033/564-031; 098/359-809,www.vsslatina.hr
+ambulanta,"VETERINARSKA STANICA SAMOBOR d.o.o., Područna veterinarska ambulanta BUDINJAK",,Budinjak 2b,10456,Žumberak,Zagrebačka,,http://www.veterina-samobor.hr/kontakt.asp
+ambulanta,VETERINARSKA AMBULANTA LABIN d.o.o.,,Pulska 17,52220,Labin,Istarska,052/856-003; 091/1810-448,https://veterinarska-labin.hr/
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta BABINA GREDA",,Kralja Tomislava 17,32276,Babina Greda,Vukovarsko-Srijemska,032/854-134; 099/3172-136,http://vs-zupanja.hr/index.php/2014-05-06-13-13-47/ambulanta-babina-greda
+ambulanta,"VETERINARSKA STANICA d.o.o., Ambulanta u sjedištu stanice ŽUPANJA",,Veliki kraj 18,32270,Županja,Vukovarsko-Srijemska,032/837-657; 099/3172-136,http://vs-zupanja.hr/
+ambulanta,"VETERINARSKA STANICA POŽEGA d.o.o., amb. ČAGLIN",,Kralja Tomislava 74,34000,Požega,Požeško-Slavonska,034/221-015; 099/2211-601,www.veterinarska-pozega.hr
+ambulanta,VETERINARSKA STANICA NOVA d.o.o.,,Mihovila Pavleka Miškine 46,48000,Koprivnica,Koprivničko-Križevačka,048/220-670,
+ambulanta,"ZAG-VET d.o.o., područna veterinarska ambulanta BUDINŠČINA",,Budinščina 5,49284,Budinščina,Krapinsko-Zagorska,049/459-132; 091/3300-575,http://zagvet.com/
+ambulanta,VETERINARSKA STANICA OZALJ d.o.o.,,Odvojak Karlovačke ceste 110,47280,Ozalj,Karlovačka,047/731-142,https://www.facebook.com/VSOzalj/?locale=hr_HR
+ambulanta,POKUPSKO CERJE d. o. o.,,CERJE POKUPSKO 29A,10414,Pokupsko,Zagrebačka,01/6266-176;  098/386-378,
+ambulanta,"VETERINARSKA STANICA VELIKA GORICA d.o.o., amb. POKUPSKO",,Pokupsko 40,10414,Pokupsko,Zagrebačka,,
+ambulanta,"VETERINARSKA STANICA KRIŽ, d.o.o., Područna veterinarska ambulanta KLOŠTAR IVANIĆ",,Školska 31,10312,Kloštar Ivanić,Zagrebačka,01/2892-523;  091/2892-523,
+ambulanta,VETERINARSKA AMBULANTA LUNA društvo s ograničenom odgovornošću za zdravstvenu zaštitu životinja,,Trg Matije Gupca 48,42000,Varaždin,Varaždinska,042/203-977,https://www.facebook.com/vetambluna/?locale=hr_HR
+ambulanta,VETERINARSKA AMBULANTA PAG d.o.o.,,Splitska 20,23250,Pag,Zadarska,023/600-438,https://www.vet-pag.com/
+ambulanta,VIGENS d.o.o.,,Kožino Pri BB,23231,Zadar,Zadarska,023/368-704,
+ambulanta,"VETERINARSKA STANICA IVANEC d.o.o., Područna veterinarska ambulanta LEPOGLAVA",,I. Mažuranića 5,42250,Lepoglava,Varaždinska,042/791-250,http://vsi.hr/index.php/ambulante
+ambulanta,"VETERINARSKA STANICA VALPOVO d.o.o., Ambulanta u sjedištu stanice VALPOVO",,Matije Gupca 36,31550,Valpovo,Osječko-Baranjska,031/651-530; 091/3651-535,https://www.facebook.com/people/Veterinarska-stanica-Valpovo/100051989216372/?_rdr
+ambulanta,"VETERINARSKA STANICA BELI MANASTIR d.o.o., Područna veterinarska ambulanta KNEŽEVI VINOGRADI",,Svetozara Miletića 80,31309,Kneževi Vinogradi,Osječko-Baranjska,031/730-125; 097/7786-677,http://www.vsbm.hr/
+ambulanta,"VETERINARSKA STANICA RIJEKA d.o.o., Područna veterinarska ambulanta FUŽINE",,"Banovina 1, Lič 5",51322,Fužine,Primorsko-Goranska,051/227-807,http://www.vetstri.hr/
+ambulanta,VETERINARSKA AMBULANTA ROMAN d.o.o.,,Matije Gupca 2,31400,Đakovo,Osječko-Baranjska,031/812-240; 098/437-989,https://www.facebook.com/veterinarskaroman/?locale=hr_HR
+ambulanta,"DR. DOOLITLE, vl. Vesna Vincenc Spasovski (u sastavu REMEDIA VETERINARIA d.o.o.)",,Sv. Josipa Radnika 25,31000,Osijek,Osječko-Baranjska,031/272-230,https://www.dr-doolitle.com.hr/
+ambulanta,"VETERINARSKA STANICA KRIŽEVCI d.o.o., Područna veterinarska ambulanta Kenđelovec",,Kenđelovec bb,48214,Sveti Ivan Žabno,Koprivničko-Križevačka,048/858-087,http://www.vskrizevci.com/
+ambulanta,VETERINARSKA AMBULANTA INES-VET društvo s ograničenom odgovornošću za veterinarske usluge,,Trg A.G.Matoša 3,43000,Bjelovar,Bjelovarsko-Bilogorska,099/6888-733,https://www.facebook.com/InesVeterinarska/?locale=hr_HR
+ambulanta,VETERINARSKA AMBULANTA NOVET d.o.o.,,Vukovarska 40,33523,Čađavica,Virovitičko-Podravska,033/544-366; 098/9831-224,
+ambulanta,"VETERINARSKA STANICA SLATINA d.o.o., Ambulanta u sjedištu stanice SLATINA",,Industrijska 15,33520,Slatina,Virovitičko-Podravska,033/551-399; 098/359-802,www.vsslatina.hr
+ambulanta,VETERINARSKA AMBULANTA RAB (VET-ARBA d.o.o.),,Supetarska Draga 10,51280,Rab,Primorsko-Goranska,051/776-223 098/919-7796,
+ambulanta,VETERINARSKA AMBULANTA OTOČAC društvo s ograničenom odgovornošću,,Fortička 9,53220,Otočac,Ličko-Senjska,053/771-149; 099/431-432,
+ambulanta,Veterinarska ambulanta PAPONJA d.o.o. za obavljanje veterinarske djelatnosti,,Kneza Domagoja 2/2,20350,Metković,Dubrovačko-Neretvanska,020/680-223,https://www.facebook.com/vet.amb.paponja/?locale=hr_HR
+ambulanta,Veterinarska ambulanta Metković j.d.o.o.,,,20350,Metković,Dubrovačko-Neretvanska,0998041880,
+ambulanta,"VETERINARSKA STANICA VOJNIĆ d.o.o., Ambulanta u sjedištu stanice Vojnić",,Starčevićev trg 3,47220,Vojnić,Karlovačka,047/883-161; 098/330-662,
+ambulanta,"VETERINARSKA STANICA ČAZMA d.o.o., Ambulanta Čazma u sjedištu stanice",,Milana Novačića 44,43240,Čazma,Bjelovarsko-Bilogorska,043/771-081,https://vscazma446053059.wordpress.com/
+ambulanta,VETERINARSKA AMBULANTA ŽMINJ,,Matka Laginje 3r,52341,Žminj,Istarska,052/846-002; 098/334-092,http://www.vet-rovinj.com/
+ambulanta,VETERINARSKA AMBULANTA VRGORAC d.o.o.,,Lipanjskih žrtava 1,21276,Vrgorac,Splitsko-Dalmatinska,021/674-181,
+ambulanta,"VETERINARSKA STANICA ZADAR d.o.o., Ambulanta u sjedištu stanice ZADAR",,Skročini 2b,23000,Zadar,Zadarska,023/322-877; 098/339-400,https://veterinarskastanicazadar.hr/
+ambulanta,ANIMA d.o.o.,,Istarska 39,35000,Slavonski Brod,Brodsko-Posavska,035/411-831; 091/5259-804,
+ambulanta,"VETERINARSKA STANICA d.o.o., Ambulanta u sjedištu stanice VINKOVCI",,Josipa Kozarca 26,32100,Vinkovci,Vukovarsko-Srijemska,032/331-544; 098/250-492,https://veterinarskastanicavk.hr/
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta DRENOVCI",,Veliki šor 29,32257,Drenovci,Vukovarsko-Srijemska,032/861-312; 099/3172-137,http://vs-zupanja.hr/index.php/2014-05-06-13-13-47/ambulanta-drenovci
+ambulanta,"VETERINARSKA STANICA ŽUPANJA d.o.o., Područna veterinarska ambulanta GRADIŠTE",,Braće Radić 40a,32273,Gradište,Vukovarsko-Srijemska,032/841-062; 099/3172-134,http://vs-zupanja.hr/index.php/2014-05-06-13-13-47/ambulanta-gradiste
+ambulanta,"VETERINARSKA AMBULANTA VRPOLJE d.o.o., Bana Jelačića 140",,Bana Jelačića 140,35210,Vrpolje,Brodsko-Posavska,035/439-147; 091/5690-711,
+ambulanta,VETERINARSKA STANICA GAREŠNICA d.o.o.,,Bana Jelačića 30,43280,Garešnica,Bjelovarsko-Bilogorska,043/531-127; 098/9693-447,
+ambulanta,VETERINARSKA AMBULANTA DORIĆ d.o.o.,,Svilaj 34,35213,Oprisavci,Brodsko-Posavska,035/475-920; 035/475-045,
+ambulanta,"Veterinarska ambulanta privatne prakse za kućne ljubimce, Mr. Kvakan, d.o.o.",,Vatroslava Lisinskog 2B,40000,Čakovec,Međimurska,040/365-277,https://www.centar-animamundi.org/
+ambulanta,VETERINARSKA AMBULANTA ROVINJ d.o.o.,,Laste 9,52210,Rovinj - Rovigno,Istarska,052/813-214; 098/334 -092,https://www.vet-rovinj.com/
+ambulanta,VETERINARSKA AMBULANTA ISTRA VET d.o.o.,,Gripole 68,52210,Rovinj - Rovigno,Istarska,052/553-907; 091/1770-191,https://www.vaistravet.hr/
+ambulanta,"BIOINSTITUT d.o.o., Područna veterinarska ambulanta GORNJI MIHALJEVEC",,Gornji Mihaljevec 40,40306,Nedelišće,Međimurska,040/899-101; 098/465-486,http://www.bioinstitut.hr/
+ambulanta,"DELONGA, vl. Stipe Delonga",,Kroz Smrdečac 45,21000,Split,Splitsko-Dalmatinska,021/772-056 098/957-9403,
+ambulanta,"VETERINARSKA STANICA VALPOVO d.o.o., Područna veterinarska ambulanta BIZOVAC",,Sunčana b.b.,31222,Bizovac,Osječko-Baranjska,031/675-368; 091/3651-534,https://www.facebook.com/people/Veterinarska-stanica-Valpovo/100051989216372/?_rdr
+ambulanta,"VETERINARSKA STANICA IVANEC d.o.o., Područna veterinarska ambulanta MARUŠEVEC",,Kapelec 19,42243,Maruševec,Varaždinska,042/729-225,http://vsi.hr/index.php/ambulante
+ambulanta,"VETERINARSKA STANICA VIROVITICA d.o.o., Ambulanta u sjedištu stanice VIROVITICA",,Strossmayerova 38,33000,Virovitica,Virovitičko-Podravska,033/728-334; 099/2283-351,
+ambulanta,"VETERINARSKA STANICA GRADA ZAGREBA d.o.o., Ambulanta u sjedištu stanice",,Heinzelova 68,10000,Zagreb,Grad Zagreb,01/6040-149; 098/339-671,https://www.vs-grada-zagreba.hr/
+ambulanta,INTERVET INTERNATIONAL B.V. PODRUŽNICA U RH,,SARAJEVSKA CESTA 27,10000,Zagreb,Grad Zagreb,,
+ambulanta,"VETERINARSKA STANICA GRADA ZAGREBA d.o.o., Područna veterinarska ambulanta Dankovečka",,Dankovečka 9,10000,Zagreb,Grad Zagreb,01/6040-149; 098/339-671,http://vs-grada-zagreba.hr/
+ambulanta,"VETERINARSKA STANICA KUTINA d.o.o., amb. MEĐURIĆ",,Međurić 56,44321,Kutina,Sisačko-Moslavačka,,
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta Pregrada",,Stjepana Radića 1,49216,Desinić,Krapinsko-Zagorska,049/376-005,
+ambulanta,"VETERINARSKA STANICA SVETI IVAN ZELINA d.o.o., Područna veterinarska ambulanta BEDENICA",,Bedenica 105/Gbb,10381,Bedenica,Zagrebačka,01/2064-014; 099/2000-864,https://www.vs-zelina.hr/
+ambulanta,"VETERINARSKA STANICA IVANEC d.o.o., Ambulanta u sjedištu stanice IVANEC",,Varaždinska 15,42240,Ivanec,Varaždinska,042/781-323;  042/782-011,http://vsi.hr/index.php/ambulante
+ambulanta,"VETERINARSKA STANICA VARAŽDIN d.o.o., Ambulanta u sjedištu stanice VARAŽDIN",,Trg Ivana Perkovca 24,42000,Varaždin,Varaždinska,042/240-122; 099/6240-140,https://www.vsv.hr/ambulante/veterinarske-ambulante/veterinarska-klinika-varazdin-za-kucne-ljubimce/a15
+ambulanta,NOVA VET d.o.o.,,Trg Nikole Šubića Zrinskog 17,47250,Duga Resa,Karlovačka,097/6485-157; 047/611-099,https://www.facebook.com/vetambNovaVet/
+ambulanta,VET. AMBULANTA DAN-VET,,,47000,Karlovac,Karlovačka,,
+ambulanta,BLATA d.o.o.,,B.Radića 55,31542,Magadenovac,Osječko-Baranjska,031/648-073,
+ambulanta,VETERINARSKA AMBULANTA  OBROVAC d.d. - Veterinarska ambulanta u Gračacu,,Zagrebačka 9,23440,Gračac,Zadarska,098/245-498,
+ambulanta,"VETERINARSKA STANICA VETAM d.o.o., amb. BILJE",,Biljske satnije ZNG RH 11,31327,Bilje,Osječko-Baranjska,,
+ambulanta,"VETERINARSKA STANICA OSIJEK d.o.o., Područna veterinarska ambulanta ČEPIN",,Čepin bb,31431,Čepin,Osječko-Baranjska,031/381-377; 092/1065-236,www.vetos.hr
+ambulanta,BAREŠ d.o.o.,,Kralja Tomislava 9,31418,Drenje,Osječko-Baranjska,031/850-080,
+ambulanta,"VETERINARSKA STANICA NAŠICE d.o.o., Područna veterinarska ambulanta ĐURĐENOVAC",,I. Gundulića 61,31511,Đurđenovac,Osječko-Baranjska,,https://www.facebook.com/VeterinarskaStanicaNasiceDoo/?locale=hr_HR
+ambulanta,"VETERINARSKA STANICA NAŠICE d.o.o., Područna veterinarska ambulanta KOŠKA",,Kralja Zvonimira 1,31224,Koška,Osječko-Baranjska,,https://www.facebook.com/VeterinarskaStanicaNasiceDoo/?locale=hr_HR
+ambulanta,REMEDIA VETERINARIA d.o.o.,,Sv. Josipa Radnika 25,31000,Osijek,Osječko-Baranjska,031/272-230; 091/5085-889,
+ambulanta,"VETERINARSKA STANICA VETAM d.o.o., Ambulanta u sjedištu stanice, Osijek",,Biljska cesta 7,31000,Osijek,Osječko-Baranjska,031/286-087; 098/946-5507,http://www.vetam.hr/
+ambulanta,"VETERINARSKA STANICA d.o.o., amb. BARILOVIĆ",,Barilović 75,47252,Barilović,Karlovačka,,
+ambulanta,"VETERINARSKA STANICA d.o.o., amb. GENERALSKI STOL",,Generalski Stol 32a,47262,Generalski Stol,Karlovačka,,
+ambulanta,ZEMAN d.o.o.,,Kralja Tomislava 1,33520,Slatina,Virovitičko-Podravska,033/619-123; 091/9476-426,https://www.facebook.com/dr.vet.med.MarioZeman/?locale=hr_HR
+ambulanta,VETERINARSKA AMBULANTA DEBELIĆ jednostavno društvo s ograničenom odgovornošću za veterinarske djelatnosti,,Palit 403,51280,Rab,Primorsko-Goranska,051/847-840; 098/1948-699,https://m.facebook.com/people/Veterinarska-Ambulanta-Debeli%C4%87/100054598683720/
+ambulanta,VETERINARSKA AMBULANTA DONJI LAPAC d.d.,,Udbinska cesta 6,53250,Donji Lapac,Ličko-Senjska,053/765-509; 098/1942-860,https://www.va-donjilapac.hr/
+ambulanta,"VETERINARSKA STANICA GVOZD d.o.o., Područna veterinarska ambulanta LASINJA",,Trg hrvatskih branitelja 5,47206,Lasinja,Karlovačka,047/884-052; 098/1832-000,
+ambulanta,KARAULA VETERINARSKA AMBULANTA d.o.o.,,Pere Štefanovića 6,43500,Daruvar,Bjelovarsko-Bilogorska,043/331-081; 091/3331-081,https://www.facebook.com/KARAULAvet/?locale=hr_HR
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta KUTJEVO",,Bana Josipa Jelačića 2,34340,Kutjevo,Požeško-Slavonska,034/255-179; 099/2211-608,https://veterinarska-pozega.hr/ambulante/
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta VELIKA",,Josipa Jurja Strossmayera 22,34330,Velika,Požeško-Slavonska,034/233-035; 099/2211-617,https://veterinarska-pozega.hr/ambulante/
+ambulanta,VETERINARSKA AMBULANTA VETERINAR d.o.o.,,Eugena Kumičića 8,35000,Slavonski Brod,Brodsko-Posavska,035/444-959,
+ambulanta,"VETERINARSKA STANICA OZALJ d.o.o., Područna veterinarska ambulanta Ribnik",,Ribnik bb,47272,Ribnik,Karlovačka,,https://www.facebook.com/VSOzalj/?locale=hr_HR
+ambulanta,Veterinarska ambulanta Pantera j.d.o.o,,Trpinjska cesta 157,32000,Vukovar,Vukovarsko-Srijemska,,
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta ŠTITAR",,Školska 4,32274,Štitar,Vukovarsko-Srijemska,032/847-087; 098/217-109,http://vs-zupanja.hr/index.php/2014-05-06-13-13-47/ambulanta-stitar
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta GABOŠ",,Z. Jovina 43,32212,Markušica,Vukovarsko-Srijemska,032/393-049; 098/1932-013,https://veterinarskastanicavk.hr/
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta OROLIK",,Vladimira Nazora 13,32243,Stari Jankovci,Vukovarsko-Srijemska,032/548-144; 098/502-178,https://veterinarskastanicavk.hr/
+ambulanta,"VETERINARSKA STANICA KRIŽEVCI d.o.o., amb. FODROVEC RIJEČKI",,Fodrovac bb,48268,Gornja Rijeka,Koprivničko-Križevačka,048/850-615; 095/4800-017,https://www.vskrizevci.com/
+ambulanta,"VETERINARSKA AMBULANTA JEĐUT d.o.o., Ulica Stjepana Radića 32",,Ulica Stjepana Radića 32,35222,Gundinci,Brodsko-Posavska,035/354-575,
+ambulanta,VETERINARSKA AMBULANTA GORNJA BEBRINA d.o.o.,,Gornja Bebrina 32,35208,Klakar,Brodsko-Posavska,035/226-227,
+ambulanta,"VETERINARSKA STANICA VETERINA d.o.o., amb. NOVA KAPELA",,Kralja Tomislava 10,35410,Nova Kapela,Brodsko-Posavska,035/384-009; 098/244-146,https://vs-veterina.hr/
+ambulanta,"VETERINARSKA STANICA VETERINA d.o.o., amb. OKUČANI",,Ante Starčevića 31,35430,Okučani,Brodsko-Posavska,035/371-022; 091/5901-361,https://vs-veterina.hr/
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta DONJA DUBRAVA",,Krbulja 17,40328,Donja Dubrava,Međimurska,098/814-114,http://www.veterinarskaprelog.hr/
+ambulanta,"VETERINARSKA STANICA PRELOG d.o.o., amb. DOMAŠINEC",,M. Pušteka 13,40318,Dekanovec,Međimurska,,
+ambulanta,VET. K & K društvo s ograničenom odgovornošću za trgovinu i usluge,,Joakima Rakovca 10D,52470,Umag - Umago,Istarska,052/741-725; 098/398-003,https://vetkk.hr/
+ambulanta,"VETERINARSKA AMBULANTA HRVACE, d.o.o. za zdravstvenu zaštitu životinja",,Hrvace 311,21233,Hrvace,Splitsko-Dalmatinska,021/829-556; 091/5013-781,
+ambulanta,"VETERINARSKA STANICA BELI MANASTIR d.o.o., Područna veterinarska ambulanta Darda",,B. Jelačića 58,31326,Darda,Osječko-Baranjska,031/740-275; 099/3231-779,http://www.vsbm.hr/
+ambulanta,VETERINARSKA AMBULANTA CESTICA d.o.o.,,Varaždinska 111,42208,Cestica,Varaždinska,042/208-699,https://www.facebook.com/vacestica/?locale=hr_HR
+ambulanta,VETERINARSKA AMBULANTA VET-CENTAR d.o.o.,,Stancija Portun 2,52440,Poreč - Parenzo,Istarska,052/433-221; 091/5536-748,http://www.vet-centar.hr/
+ambulanta,"VETERINARSKA STANICA VARAŽDIN d.o.o., Područna veterinarska ambulanta PETRIJANEC",,V. Nazora 257,42206,Petrijanec,Varaždinska,042/714-222,http://www.vsv.hr/? task=group&gid=3&aid=18
+ambulanta,SANITACIJA d.o.o.,,A. Nemčića 1,48000,Koprivnica,Koprivničko-Križevačka,,
+ambulanta,"VETERINARSKA STANICA d.o.o., ambulanta u sjedištu stanice Desinić",,Stjepana Radića 35,49218,Pregrada,Krapinsko-Zagorska,049/343-194;  049/376-005,
+ambulanta,"VETERINARSKA STANICA VELIKA GORICA d.o.o., Područna veterinarska ambulanta KRAVARSKO",,Kravarsko bbbb,10413,Kravarsko,Zagrebačka,01/6237-339; 091/4649-731,http://www.vgvet.hr/
+ambulanta,VETERINARSKA AMBULANTA MARIJA BISTRICA,,Kolodvorska 9,49246,Marija Bistrica,Krapinsko-Zagorska,049/469-110; 098/1733-728,
+ambulanta,MARIO-VETERINA  d.o.o.,,I Lijevi pododvojak 12,44000,Sisak,Sisačko-Moslavačka,044/720-285,https://www.facebook.com/marioveterina/
+ambulanta,VETERINARSKA AMBULANTA TIN - društvo s ograničenom odgovornošću za veterinarske usluge i trgovinu,,ULICA ILIJE KATIČIĆA 15,44430,Donji Kukuruzari,Sisačko-Moslavačka,044/857-036,https://www.facebook.com/p/Veterinarska-ambulanta-Tin-doo-100042391722843/
+ambulanta,"VETERINARSKA STANICA SISAK d.o.o., Područna veterinarska ambulanta ŽAŽINA",,Žažina 40,44273,Lekenik,Sisačko-Moslavačka,044/527-711; 098/1749-404,https://www.facebook.com/sklonistezazivotinjesisak/
+ambulanta,KOKA d.d.,,Jalkovac b.b.,42000,Varaždin,Varaždinska,042/399-603,
+ambulanta,Vet. ambulanta Luna d.o.o.,,Trg M. Gupca 20,42000,Varaždin,Varaždinska,042/203-977,
+ambulanta,"VETERINARSKA STANICA SISAK d.o.o., Područna veterinarska ambulanta SUNJA",,Petra Krešimira 2,44210,Sunja,Sisačko-Moslavačka,044/833-026; 5441-995,https://www.facebook.com/sklonistezazivotinjesisak/
+ambulanta,"VETERINARSKA STANICA d.o.o., Ambulanta u sjedištu stanice Duga Resa",,Šetalište Tušmer 17,47250,Duga Resa,Karlovačka,047/849-360,
+ambulanta,"VETERINARSKA STANICA d.o.o., Ambulanta u sjedištu stanice Karlovac",,Braće Gojak 52,47000,Karlovac,Karlovačka,047/615-401,https://www.vsklc.hr/
+ambulanta,"VETERINARSKA STANICA KARLOVAC d.o.o., amb. DUBOVAC",,BRAĆE GOJAK 52,47000,Karlovac,Karlovačka,,
+ambulanta,VETERINARSKA AMBULANTA BOKANJAC d.o.o. - Veterinarska ambulanta  Otok Pag,,Zagrebačka 10a,23250,Pag,Zadarska,023/600-068,https://veterinarskaambulantabokanjac.hr/
+ambulanta,"VETERINARSKA STANICA BELI MANASTIR d.o.o., Područna veterinarska ambulanta Draž",,I. L. Ribara 12,31305,Draž,Osječko-Baranjska,031/736-099; 099/3231-778,http://www.vsbm.hr/
+ambulanta,"VETERINARSKA STANICA VARAŽDIN d.o.o., Područna veterinarska ambulanta JALŽABET",,Varaždinska 36,42203,Jalžabet,Varaždinska,042/647-086; 099/6240-122,http://www.vsv.hr/? task=group&gid=3&aid=17
+ambulanta,"VETERINARSKA STANICA NAŠICE d.o.o., Ambulanta u sjedištu stanice Našice",,Braće Radića 78,31500,Našice,Osječko-Baranjska,031/613-165,https://www.facebook.com/VeterinarskaStanicaNasiceDoo/?locale=hr_HR
+ambulanta,"VETERINARSKA STANICA OSIJEK d.o.o., Ambulanta u sjedištu stanice Osijek",,Vinkovačka cesta 59,31000,Osijek,Osječko-Baranjska,031/275-060; 098/339-452,www.vetos.hr
+ambulanta,"MAJCAN VETERINARSKA AMBULANTA društvo s ograničenom odgovornošću za proizvodnju,  usluge i trgovinu",,Krste Frankopana 38,43000,Bjelovar,Bjelovarsko-Bilogorska,043/217-183,https://www.majcan.hr/
+ambulanta,"VETERINARSKA STANICA VIROVITICA d.o.o., Područna veterinarska ambulanta GRADINA",,Trg hrvatskih branitelja 2,33411,Gradina,Virovitičko-Podravska,033/784-056; 098/382-339,
+ambulanta,VETERINARSKA AMBULANTA KRAVARŠĆAN društvo s ograničenom odgovornošću za veterinarske djelatnosti,,BREZIK b.b.BB,33406,Lukač,Virovitičko-Podravska,033/739-002,
+ambulanta,VETERINARSKA STANICA SLATINA d.o.o.,,K. Zvonimira 16,33520,Slatina,Virovitičko-Podravska,033/551-399; 098/359-802,www.vsslatina.hr
+ambulanta,VETERINARSKA AMBULANTA DR. MILAN KRALJ d.o.o.,,Kralja Zvonimira 4,20350,Metković,Dubrovačko-Neretvanska,020/681-277,
+ambulanta,MAJO-LIFE d.o.o. IMOTSKI,,Ulica Bruna Bušića 49,21260,Imotski,Splitsko-Dalmatinska,021/236-226,
+ambulanta,"VETERINARSKA AMBULANTA OBROVAC d.d., Kralja Petra Krešimira IV.",,Kralja Petra Krešimira IV. 11,23450,Obrovac,Zadarska,023/689-041,
+ambulanta,KOOPERACIJA d.d.,,Franje Tuđmana 9,34330,Velika,Požeško-Slavonska,034/233-029,
+ambulanta,"Vet Pet Šapice, obrt za veterinarske djelatnosti, vl. Martin Knežević",,Kralja Dmitra Zvonimira 184,35400,Nova Gradiška,Brodsko-Posavska,035/628-442;  099/6788-200,https://www.facebook.com/p/Vet-Pet-%C5%A0apice-100095217308670/?_rdr
+ambulanta,VETERINARSKA AMBULANTA BILOFARM,,Orovac 68,43274,Severin,Bjelovarsko-Bilogorska,043/237065,
+ambulanta,"VETERINARSKA STANICA SAMOBOR d.o.o., Ambulanta u sjedištu stanice SAMOBOR",,Katarine Zrinske 7,10430,Samobor,Zagrebačka,01/3360-171;  01/3363-314,http://www.veterina-samobor.hr/kontakt.asp
+ambulanta,"VETERINARSKA STANICA VUKOVAR do.o., Ambulanta u sjedištu stanice VUKOVAR",,Bana Josipa Jelačića 97,32000,Vukovar,Vukovarsko-Srijemska,032/410-061; 099/4410-061,https://vsvu.hr/ambulante/
+ambulanta,SILVA d.o.o.,,Vladimira Nazora 20,32257,Drenovci,Vukovarsko-Srijemska,032/862-818 099/319-3445,
+ambulanta,"VETERINARSKA STANICA KRIŽEVCI d.o.o., amb. SVETI PETAR OREHOVEC",,Sveti Petar Orehovec 80,48267,Sveti Petar Orehovec,Koprivničko-Križevačka,048/856-263; 095/4800-024,https://www.vskrizevci.com/
+ambulanta,MOUNT TRADE d.o.o.,,Industrijska 5,43280,Garešnica,Bjelovarsko-Bilogorska,043 485 914,
+ambulanta,"VETERINARSKA STANICA d.o.o., Ambulanta u sjedištu stanice Garešnica",,Bana Jelačića bb,43280,Garešnica,Bjelovarsko-Bilogorska,043/531-127; 098/9693-447,
+ambulanta,"VETO D.O.O., AMB. DONJI ANDRIJEVCI",,MATIJE GUPCA 64,35214,Donji Andrijevci,Brodsko-Posavska,385/3526-9444; 091/2398-809,
+ambulanta,"BIOINSTITUT d.o.o., Ambulanta u sjedištu stanice Čakovec",,Rudolfa Steinera 7,40000,Čakovec,Međimurska,040/390-896; 040/463-464,https://www.bioinstitut.hr/
+ambulanta,"BIOINSTITUT d.o.o., Područna veterinarska ambulanta MURSKO SREDIŠČE",,Poljska 1,40315,Mursko Središće,Međimurska,040/543-151; 098/465/483,https://www.bioinstitut.hr/
+ambulanta,"VETERINARSKA STANICA d.o.o., Ambulanta u sjedištu stanice, Prelog",,Kralja Zvonimira 51,40323,Prelog,Međimurska,"040/645-505, 040/645-422",https://veterinarskaprelog.hr/
+ambulanta,"VETERINARSKA STANICA VELIKA GORICA d.o.o., Područna veterinarska ambulanta VRBOVO POSAVSKO",,Vrbovo 13,10411,Orle,Zagrebačka,01/6239-587; 091/3662-331,http://www.vgvet.hr/
+ambulanta,VETERINARSKA AMBULANTA BRINJE d.o.o.,,Frankopanska 38,53260,Brinje,Ličko-Senjska,053/700-725; 098/414-355,
+ambulanta,"VETERINARSKA STANICA VELIKA GORICA d.o.o., Ambulanta u sjedištu stanice VELIKA GORICA",,Sisačka 39,10410,Velika Gorica,Zagrebačka,01/6221-263; 098/1386-059,http://www.vgvet.hr/
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta BOŠNJACI",,Strossmayerova 101,32275,Bošnjaci,Vukovarsko-Srijemska,032/845-683; 098/217-111,http://vs-zupanja.hr/index.php/2014-05-06-13-13-47/ambulanta-bosnjaci
+ambulanta,"VETERINARSKA AMBULANTA HRVACE d.o.o., Hrvace 234C",,Hrvace 234Cc,21233,Hrvace,Splitsko-Dalmatinska,021/829-556; 091/1829-556,
+ambulanta,VETERINARSKA AMBULANTA CVITAN d.o.o.,,Ljudevita Gaja 20,35224,Sikirevci,Brodsko-Posavska,035/481-092; 098/776-467,
+ambulanta,BELJE AGRO-VET d.o.o.,,Kokingrad 4,31326,Darda,Osječko-Baranjska,031/790-175; 01/4802-050,https://www.belje.hr/poljoprivreda/belje-agro-vet/
+ambulanta,"MERKUR-VETERINARSKA AMBULANTA d. o. o. za veterinarstvo, proizvodnju i usluge",,DUDINJAK 9,35000,Slavonski Brod,Brodsko-Posavska,035/440-460; 035/486-960,www.vam.hr
+ambulanta,"VETERINARSKA STANICA RIJEKA d.o.o., Područna veterinarska ambulanta OPATIJA",,Stubište Ivana Zavidića 3,51410,Opatija,Primorsko-Goranska,051/320-263,https://veterinarska.hr/opatija/
+ambulanta,"VETERINARSKA AMBULANTA ZA KUĆNE LJUBIMCE, VL. TIHOMIR DRAGOJLOV",,Zvonimirova 122,10000,Zagreb,Grad Zagreb,01/2322-419 091/766-7373,
+ambulanta,Specijalistička veterinarska praksa za male životinje HOLYPET,,Dragutina Albrechta 22,10000,Zagreb,Grad Zagreb,091/5902725,
+ambulanta,"VETERINARSKA STANICA KUTINA d.o.o., Ambulanta u sjedištu stanice KUTINA",,Vladimira Nazora 61,44320,Kutina,Sisačko-Moslavačka,044/680-423;  044/680-422,http://www.vskutina.hr/http://www.vskutina.hr/index.php/ambulante/ambulanta-kutina
+ambulanta,VETERINARSKA AMBULANTA KLANJEC d.o.o.,,Sutlanska 5,49290,Klanjec,Krapinsko-Zagorska,049/550-414,
+ambulanta,VETERINARSKA STANICA ZAPREŠIĆ d.o.o.,,Bana Josipa Jelačića 77,10290,Zaprešić,Zagrebačka,01/3310-733,https://www.facebook.com/veterinarskastanicazapresic/?locale=hr_HR
+ambulanta,"VETERINARSKA STANICA SISAK d.o.o., Područna veterinarska ambulanta TOPOLOVAC",,Sajmište 1,44202,Sisak,Sisačko-Moslavačka,044/776-059; 098/466-015,https://www.facebook.com/sklonistezazivotinjesisak/
+ambulanta,"VETERINARSKA STANICA NOVI MAROF d.o.o., Ambulanta u sjedištu stanice NOVI MAROF",,Franjevačka 2,42220,Novi Marof,Varaždinska,042/611-237; 099/4131-183,
+ambulanta,"VETERINARSKA STANICA KRIŽ, d.o.o., Područna veterinarska ambulanta POSAVSKI BREGI",,Savska bb,10311,Ivanić-Grad,Zagrebačka,01/2896-088;  091/5402-396,
+ambulanta,"VETERINARSKA STANICA ĐURĐEVAC d.o.o., amb. KLOŠTAR PODRAVSKI",,1. svibnja 19,48362,Kloštar Podravski,Koprivničko-Križevačka,,
+ambulanta,VETERINARSKA AMBULANTA UNTERAJNER d.o.o.,,Grobljanska ulica 45,31401,Viškovci,Osječko-Baranjska,031/857-385; 031/811-892,
+ambulanta,"VETERINARSKA STANICA RIJEKA d.o.o., Područna veterinarska ambulanta KRK",,Zagrebačka 53,51500,Krk,Primorsko-Goranska,051/604-484,https://veterinarska.hr/krk/
+ambulanta,"VETERINARSKA STANICA OSIJEK d.o.o., Područna veterinarska ambulanta DALJ",,Ž. Svaline 3,31226,Erdut,Osječko-Baranjska,031/590-200; 095/9107-958,www.vetos.hr
+ambulanta,"VETERINARSKA STANICA VETAM d.o.o., Područna veterinarska ambulanta JAGODNJAK",,I. L. Ribara 11,31324,Jagodnjak,Osječko-Baranjska,031/745-522; 099/2175-336,http://www.vetam.hr/
+ambulanta,"VETERINARSKA STANICA PAKRAC d.o.o., Područna veterinarska ambulanta GAJ",,B. Opić b.b.bb,34543,Lipik,Požeško-Slavonska,,http://vs-pakrac.hr/
+ambulanta,"VETERINARSKA STANICA PAKRAC d.o.o., Ambulanta u sjedištu stanice PAKRAC",,Križnog puta 8,34550,Pakrac,Požeško-Slavonska,034/411-019; 099/6943-678,http://vs-pakrac.hr/
+ambulanta,"VETERINARSKA STANICA ZAG-VET d.o.o., amb. ZLATAR BISTRICA",,Varaždinska 2,49247,Zlatar-Bistrica,Krapinsko-Zagorska,049/466-111; 099/2593-368,www.zagvet.com
+ambulanta,"VETERINARSKA STANICA DARUVAR d.o.o., Ambulanta u sjedištu stanice Daruvar",,Petra Preradovića 102,43500,Daruvar,Bjelovarsko-Bilogorska,043/332-276; 098/436-388,https://vsdaruvar.hr/
+ambulanta,"""BOBANOVIĆ"" specijalizirana veterinarska ambulanta za male životinje, vl. Goran Bobanović-Ćolić",,Kneza Domagoja 4,20000,Dubrovnik,Dubrovačko-Neretvanska,020/357-345,https://bobanovicvet.hr/
+ambulanta,"VETERINARSKA STANICA VUKOVAR d.o.o., Područna veterinarska ambulanta TOVARNIK",,Vrljevac 26,32249,Tovarnik,Vukovarsko-Srijemska,032/524-355; 099/4410-068,https://vsvu.hr/ambulante/
+ambulanta,"VETERINARSKA AMBULANTA IMOTA d.o.o., ambulanta Imotski",,Blajburška b.b.,21260,Imotski,Splitsko-Dalmatinska,021/842-385,https://www.facebook.com/vaimota/?locale=hr_HR
+ambulanta,IMOTSKI d.d.,,Kralja Zvonimira 27,21260,Imotski,Splitsko-Dalmatinska,021/841-405,
+ambulanta,"CANIS MINOR j.d.o.o., Ulica Stjepana Radića 6",,Ulica Stjepana Radića 6,21210,Solin,Splitsko-Dalmatinska,021/600-040,
+ambulanta,P.M.V. ANIMALIS d.o.o.,,Matije Ivanića 22,21460,Stari Grad,Splitsko-Dalmatinska,021/244-337,https://www.facebook.com/p/Veterinarska-ambulanta-Lota-Stari-Grad-100057257177387/?locale=hr_HR
+ambulanta,VETERINARSKA AMBULANTA ZOO-VET d.o.o.,,Biogradska cesta 65,23000,Zadar,Zadarska,023/214-295,https://www.facebook.com/zoovetzadar.veterinarskaambulanta/?locale=hr_HR
+ambulanta,VETERINARSKA AMBULANTA ŽILIĆ d.o.o.,,69860813177 19b,23000,Zadar,Zadarska,,
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta PODGAJCI POSAVSKI",,Matije Gupca 121,31552,Donji Miholjac,Osječko-Baranjska,,http://vs-zupanja.hr/
+ambulanta,ISTRAVET (u sastavu VA VET.K&K d.o.o.),,Draga 8,34343,Kutjevo,Požeško-Slavonska,052/452-976,
+ambulanta,VETERINARSKA AMBULANTA - SIMENTALAC d.o.o.,,Kamenjača 5,34340,Kutjevo,Požeško-Slavonska,034/255-559; 098/594-170,
+ambulanta,"VETO D.O.O., Ambulanta u sjedištu stanice Slavonski Brod",,Antuna Barca 38,35000,Slavonski Brod,Brodsko-Posavska,385/3526-9444; 091/2398-809,https://www.facebook.com/veterinarskaslavonskibrod/?locale=hr_HR
+ambulanta,VETERINARSKA AMBULANTA GARDIJAN d.o.o.,,Kralja Zvonimira 143,22000,Šibenik,Šibensko-Kninska,022/333-711,
+ambulanta,"VETERINARSKA STANICA VUKOVAR d.o.o., Područna veterinarska ambulanta ILOK",,Trg J. Vuletića 1,32236,Ilok,Vukovarsko-Srijemska,032/590-023; 099/4410-066,https://vsvu.hr/ambulante/
+ambulanta,VETERINARSKA STANICA VINKOVCI d.o.o.,,Josipa Kozarca 26,32100,Vinkovci,Vukovarsko-Srijemska,032/331-544; 098/250-492,
+ambulanta,VETERINARSKA AMBULANTA INTERNA VETERINA d.o.o.,,Ljudevita Gaja 7,32252,Otok,Vukovarsko-Srijemska,032/394-650,https://www.facebook.com/internaveterina/?locale=hr_HR
+ambulanta,VETERINARSKA AMBULANTA BENKOVAC d.o.o.,,Rivine 1,23420,Benkovac,Zadarska,023/681-171,
+ambulanta,VETERINARSKA AMBULANTA PAZIN društvo s ograničenom odgovornošću,,Dubravica 5,52000,Pazin,Istarska,052/624-410; 091/2539-457,https://www.veterina-pazin.hr/
+ambulanta,"VETERINARSKA STANICA KRAPINA D.O.O., Ambulanta u sjedištu stanice Krapina",,Ivana Rendića 3,49000,Krapina,Krapinsko-Zagorska,049/371-373,https://www.vs-krapina.hr/
+ambulanta,AGRO-VET d.o.o.,,Gajeva 3,48260,Križevci,Koprivničko-Križevačka,048/850-048,
+ambulanta,"VETERINARSKA STANICA KRIŽEVCI d.o.o., Ambulanta u sjedištu stanice Križevci",,Potočka 35,48260,Križevci,Koprivničko-Križevačka,048/617-879; 095/4800-042,http://www.vskrizevci.com/
+ambulanta,VETERINARSKA AMBULANTA GUNDINCI d.o.o.,,Matije Gupca 35,35222,Gundinci,Brodsko-Posavska,035/487-027,
+ambulanta,VETERINARSKA AMBULANTA KNIN d.o.o.,,Begovićeva 2,22300,Knin,Šibensko-Kninska,022/660-235; 091/4668-901,
+ambulanta,VETERINARSKA AMBULANTA GLINA d.o.o.,,Franje Žužeka 23,44400,Glina,Sisačko-Moslavačka,044/882-060; 098/628-299,https://vet-amb-glina.hr/
+ambulanta,SIVERIC d.o.o.,,Siverić,22321,Drniš,Šibensko-Kninska,022/885-272 091/534-6256,
+ambulanta,Veterinarska ambulanta i ljekarna Vuga d.o.o.,,Domovinskog rata 20,21240,Trilj,Splitsko-Dalmatinska,021/831-148; 098/1644-116,
+ambulanta,VETERINARSKA AMBULANTA LANDIA d.o.o.,,Vukovarska 27,32214,Tordinci,Vukovarsko-Srijemska,032/580-170; 091/6644-321,https://hrana-hrvatskih-farmi.hpa.hr/korisnikznaka/landia-d-o-o
+ambulanta,VETERINARSKA AMBULANTA MARTES d.o.o.,,Kralja Tomislava 91,31402,Semeljci,Osječko-Baranjska,031/861-312,https://www.osatina.hr/veterinarska-ambulanta/
+ambulanta,"FERARICA d. o. o., Ambulanta",,Kozala 51,51000,Rijeka,Primorsko-Goranska,,
+ambulanta,DIA-VET d.o.o.,,Ilica 474,10000,Zagreb,Grad Zagreb,01/3483-600 091/3483-600,
+ambulanta,"KATALINIĆ, vl. Božena Katalinić",,KrižNEg puta 66,10000,Zagreb,Grad Zagreb,01/285-3368,
+ambulanta,VETERINARSKA AMBULANTA ŠEGOTA d.o.o. za veterinarsku djelatnost,,Ulica Janka Grahora 15,10000,Zagreb,Grad Zagreb,01/7771-078,https://segota.vet/
+ambulanta,SPECIJALISTIČKE VETERINARSKE AMBULANTE MARKOVIĆ d.o.o. za veterinarske djelatnosti,,Pile III. 33,10000,Zagreb,Grad Zagreb,01/6145-440;  098/209-844,https://www.markovic.hr/
+ambulanta,BOSGEN d.o.o. za trgovinu i usluge,,Branimirova 65,10000,Zagreb,Grad Zagreb,031/859-056; 091/563-1771,
+ambulanta,VETERINARSKA AMBULANTA FALTUS društvo s ograničenom odgovornošću za veterinarske djelatnosti,,Bjelovarska 16,43270,Veliki Grđevac,Bjelovarsko-Bilogorska,043/443-018,
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta Veliki Grđevac",,Bjelovarska 16,43270,Veliki Grđevac,Bjelovarsko-Bilogorska,043-461-036; 091/5409-160,http://veterinarska-stanica.hr/
+ambulanta,"VETERINARSKA STANICA KRAPINA d.o.o., Područna veterinarska ambulanta ĐURMANEC",,Đurmanec 44,49225,Đurmanec,Krapinsko-Zagorska,,https://www.vs-krapina.hr/
+ambulanta,VETERINARSKA AMBULANTA KONJŠČINA d.o.o.,,Donja Konjščina 26/AA,49282,Konjščina,Krapinsko-Zagorska,049/464-777; 099/4654-654,https://www.facebook.com/people/Veterinarska-Ambulanta-Konj%C5%A1%C4%8Dina/100054579093588/
+ambulanta,VETMED d.o.o. za veterinarske djelatnosti i trgovinu,,Gornje selo 59,44317,Popovača,Sisačko-Moslavačka,044/643-700; 091/2004-782,
+ambulanta,VETERINARSKA AMBULANTA ZDENČINA D.O.O.,,Matije Gupca 42,10452,Klinča Sela,Zagrebačka,01/6289 274,https://m.facebook.com/people/Veterinarska-ambulanta-Zden%C4%8Dina-doo/100078489560537/
+ambulanta,"ANIMA-VET d.o.o. za veterinarsku djelatnost, proizvodnju, trgovinu i usluge",,SISAČKA 198,44273,Sisak,Sisačko-Moslavačka,044/713-107; 091/5393-328,http://www.anima-vet.hr/
+ambulanta,"VETERINARSKA STANICA SVETI IVAN ZELINA d.o.o., Ambulanta u sjedištu stanice SVETI IVAN ZELINA",,Sajmišna 4,10380,Sveti Ivan Zelina,Zagrebačka,01/2049-459; 099/2000-868,http://www.vs-zelina.hr/
+ambulanta,VETERINARSKA AMBULANTA VET PLUS d.o.o.,,Radićeva 81B,47250,Duga Resa,Karlovačka,047/849-020; 091/5061-886,http://www.va-vet-plus.hr/hr/
+ambulanta,AMBULANTA ANIMA d.o.o. za veterinarsku djelatnost i za liječenje malih životinja,,Dr. Ante Starčevića 26,47000,Karlovac,Karlovačka,047/522-228,https://www.facebook.com/ambulantaanima/?locale=hr_HR
+ambulanta,"VETERINARSKA STANICA ZADAR d.o.o., Područna veterinarska ambulanta BIOGRAD N/M",,Bračka 2,23210,Biograd Na Moru,Zadarska,023/385-005; 098/467-633,https://veterinarskastanicazadar.hr/
+ambulanta,VETERINARSKA AMBULANTA DELNICE d.o.o.,,Grabanj 8,51300,Delnice,Primorsko-Goranska,051/812-016,https://vad.hr/
+ambulanta,"VETERINARSKA STANICA ĐAKOVO d.o.o., Područna veterinarska ambulanta LEVANJSKA VAROŠ",,Levanjska Varoš 72a,31416,Levanjska Varoš,Osječko-Baranjska,031/864-007; 099/4434-027,http://vs-djakovo.hr/ambulante2/levanjska-varos/
+ambulanta,"VETERINARSKA STANICA MIHAEL d.o.o., Područna veterinarska ambulanta ŠLJIVOŠEVCI",,Vladimira Nazora 102,31542,Magadenovac,Osječko-Baranjska,031/631-814; 099/1635-313,
+ambulanta,VETERINARSKA AMBULANTA MARTES d.o.o. veterinarske usluge,,Strossmayerova bb,31424,Punitovci,Osječko-Baranjska,031/861-312; 091/1856-713,https://www.osatina.hr/veterinarska-ambulanta/
+ambulanta,"VETERINARSKA STANICA OSIJEK d.o.o., amb. DALJ",,Ž. Svaline 3,31226,Erdut,Osječko-Baranjska,,
+ambulanta,"VETERINARSKA STANICA ĐURĐEVAC d.o.o., Ambulanta u sjedištu stanice Đurđevac",,Kolodvorska 2,48350,Đurđevac,Koprivničko-Križevačka,048/813-173; 048/811-448,https://www.vet.hr/
+ambulanta,Miagro VETERINA društvo s ograničenom odgovornošću za veterinarske usluge,,Ul. Ljudevita Gaja 7,31500,Našice,Osječko-Baranjska,031/7818-038; 031/631-206,
+ambulanta,"VETERINARSKA STANICA VOJNIĆ d.o.o., područna veterinarska ambulanta SLUNJ",,Ivana Trnskog 18,47240,Slunj,Karlovačka,047/883-167; 099/330-6627,
+ambulanta,"VETERINARSKA STANICA ĐURĐEVAC d.o.o., Područna veterinarska ambulanta Virje",,Trg Prodavić 31,48326,Virje,Koprivničko-Križevačka,048/897-120,http://www.vet.hr/
+ambulanta,"VETERINARSKA STANICA BJELOVAR d.o.o., amb. PRGOMELJE",,Prgomelje 28,43252,Bjelovar,Bjelovarsko-Bilogorska,043/888-204,https://veterinarska-stanica-bjelovar.hr/
+ambulanta,VETERINARSKA AMBULANTA TURKOVIĆ društvo o ograničenom odgovornošću za veterinarsku djelatnost,,Viškovo 122C,51216,Viškovo,Primorsko-Goranska,051/257-571,https://www.facebook.com/vet.amb.turkovic/
+ambulanta,"VETERINARSKA STANICA RIJEKA d.o.o., Područna veterinarska ambulanta MALI LOŠINJ",,Del Conte Giovanni 9,51550,Mali Lošinj,Primorsko-Goranska,051/231-973,https://veterinarska.hr/mali-losinj/
+ambulanta,"VETERINARSKA STANICA d.o.o., amb. HERCEGOVAC",,Omladinska 4,43284,Hercegovac,Bjelovarsko-Bilogorska,,
+ambulanta,"VETERINARSKA STANICA BJELOVAR d.o.o., amb. NOVA RAČA",,Dr. Mateja Piškorića 14,43272,Nova Rača,Bjelovarsko-Bilogorska,043/886-036,https://veterinarska-stanica-bjelovar.hr/
+ambulanta,MODRUŠAN društvo s ograničenom odgovornošću Veterinarska ambulanta,,Vinkovačka 68,32284,Stari Mikanovci,Vukovarsko-Srijemska,032/210-208,
+ambulanta,VETERINARSKA AMBULANTA IMOTA d.o.o. za zdravstvenu zaštitu životinja i veterinarsko javno zdravstvo,,Ul. A. G. Matoša 7,21260,Imotski,Splitsko-Dalmatinska,021/842-385; 021/842-372,https://www.facebook.com/vaimota/?locale=hr_HR
+ambulanta,VETERINARSKA AMBULANTA SOLIN d.o.o.,,Kralja Zvonimira 33,21210,Solin,Splitsko-Dalmatinska,021/212-352; 098/1711-298,https://vetsolin.hr/
+ambulanta,"VETERINARSKA AMBULANTA OBROVAC d.d., Rudarska b.b.",,Rudarska b.b.,23450,Obrovac,Zadarska,023/689-041,
+ambulanta,"VETERINARSKA STANICA VETERINA d.o.o., Ambulanta u sjedištu stanice Nova Gradiška",,Ante Starčevića 29,35400,Nova Gradiška,Brodsko-Posavska,035/361-761; 091/5203-328,https://vs-veterina.hr/
+ambulanta,"VETERINARSKA AMBULANTA VODICE d.o.o., Ante Poljička 35",,Ante Poljička 35,22211,Vodice,Šibensko-Kninska,022/443-355,https://www.facebook.com/VeterinarskaAmbulantaVodice/
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta NIJEMCI",,Strossmayerova 19,32245,Nijemci,Vukovarsko-Srijemska,032/280-438; 098/349-851,https://veterinarskastanicavk.hr/
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta OTOK",,Strossmayerova 127,32252,Otok,Vukovarsko-Srijemska,032/394-198,https://veterinarskastanicavk.hr/
+ambulanta,ŠIRJAN d.o.o.,,Kusijevec 29,48268,Gornja Rijeka,Koprivničko-Križevačka,,
+ambulanta,"VETERINARSKA STANICA BJELOVAR d.o.o., amb. ZRINSKI TOPOLOVAC",,Zrinski Topolovac 268,43202,Zrinski Topolovac,Bjelovarsko-Bilogorska,043/877-003,https://veterinarska-stanica-bjelovar.hr/
+ambulanta,VETERINARSKA AMBULANTA BUZET d.o.o.,,Sv. Ivan Dubasjanski 5,52420,Buzet,Istarska,052/662-801,
+ambulanta,VETERINARSKA AMBULANTA DRNIŠ d.o.o.,,Brune Bušića 12,22320,Drniš,Šibensko-Kninska,022/886-180; 098/337-903,
+ambulanta,"VETERINARSKA STANICA SESVETE d.o.o., Ambulanta u sjedištu stanice Sesvete",,Jelkovečka 2,10360,Zagreb,Grad Zagreb,01/2000-191,http://www.vs-sesvete.hr/
+ambulanta,"VETERINARSKA AMBULANTA JEĐUT d.o.o., - Veterinarska ambulanta u Babinoj Gredi",,Kralja Tomislava 11,32276,Babina Greda,Vukovarsko-Srijemska,032/619-692,
+ambulanta,"VETERINARSKA STANICA RIJEKA d.o.o., Područna veterinarska ambulanta BUJE",,Digitronska 8,52460,Buje - Buie,Istarska,052/772-110,https://veterinarska.hr/buje/
+ambulanta,"VETERINARSKA STANICA SISAK d.o.o., Područna veterinarska ambulanta MARTINSKA VES",,Martinska Ves bb,44201,Martinska Ves,Sisačko-Moslavačka,044/711-285; 092/1965-581,https://www.facebook.com/sklonistezazivotinjesisak/
+ambulanta,VET-VISION j.d.o.o,,Hrvatske bratske zajednice 2,21000,Split,Splitsko-Dalmatinska,021/384-766;   021/384-600,https://www.facebook.com/veterinasplit/
+ambulanta,VETERINARSKA AMBULANTA FILIPOVIĆ d.o.o.,,Kukuljevićeva 1,21000,Split,Splitsko-Dalmatinska,021/567-403,http://www.inet.hr/~veterine/
+ambulanta,"VETO d.o.o., amb. VELIKA KOPANICA",,Trg Svetog Trojstva 5,35221,Velika Kopanica,Brodsko-Posavska,385/3526-9444; 091/2398-809,https://www.facebook.com/veterinarskaslavonskibrod/?locale=hr_HR
+ambulanta,VETERINARSKA AMBULANTA OPATIJA d.o.o.,,Stubište Ivana Zavidića 3,51410,Opatija,Primorsko-Goranska,051/701-280,
+ambulanta,ANIMA VITA d.o.o.,,Uz jadransku cestu 1/b,20236,Dubrovnik,Dubrovačko-Neretvanska,020/454-333,http://www.vetdubrovnik.com/
+ambulanta,"VETERINARSKA STANICA ČAZMA d.o.o., amb. ŠTEFANJE",,Štefanje 86,43246,Štefanje,Bjelovarsko-Bilogorska,,
+ambulanta,DODO-VET d.o.o.,,Kustošijanska 97,10000,Zagreb,Grad Zagreb,01/3702-867,https://www.dodo-vet.hr/
+ambulanta,"VETERINARSKA STANICA KRIŽ, d.o.o., Ambulanta u sjedištu stanice KRIŽ",,Milke Trnine 22,10314,Križ,Zagrebačka,01/2824-625;  091/5633-984,
+ambulanta,"VETERINARSKA STANICA SISAK d.o.o., Ambulanta u sjedištu stanice SISAK",,Zagrebačka 45,44000,Sisak,Sisačko-Moslavačka,044/527-711; 091/5634-870,https://www.facebook.com/sklonistezazivotinjesisak/
+ambulanta,PP IVANEC d.o.o.,,Trg hrvatskih Ivanovaca 10,42240,Ivanec,Varaždinska,,
+ambulanta,"VETERINARSKA STANICA VARAŽDIN d.o.o., amb. BIŠKUPEC",,Trg Ivana Perkovca 21,42000,Varaždin,Varaždinska,042/240-100; 099/6240-128,
+ambulanta,KOKA peradarsko prehrambena industrija društvo s ograničenom odgovornošću,,Biškupečka ulica 56,42000,Varaždin,Varaždinska,042/399-545,
+ambulanta,"VETERINARSKA STANICA ĐURĐEVAC d.o.o., Područna veterinarska ambulanta Kloštar Podravski",,1. svibnja 19,48362,Kloštar Podravski,Koprivničko-Križevačka,048/816-036,http://www.vet.hr/
+ambulanta,"VETERINARSKA STANICA ĐURĐEVAC d.o.o., područna veterinarska ambulanta Molve",,Kralja Tomislava 8,48327,Molve,Koprivničko-Križevačka,048/892-039,http://www.vet.hr/
+ambulanta,"VETERINARSKA STANICA ĐAKOVO d.o.o., Područna veterinarska ambulanta STRIZIVOJNA",,Braće Radića 202,31410,Strizivojna,Osječko-Baranjska,031/831-004; 099/4434-024,http://vs-djakovo.hr/ambulante2/strizivojna/
+ambulanta,"VETERINARSKA STANICA IVANEC d.o.o., Područna veterinarska ambulanta BEDNJA",,Izidora Poljaka 27,42253,Bednja,Varaždinska,042/796-203,http://vsi.hr/index.php/ambulante
+ambulanta,"VETERINARSKA STANICA NOVI MAROF d.o.o., Područna veterinarska ambulanta BREZNICA",,Breznica 68,42225,Breznički Hum,Varaždinska,042/626-244; 099/4131-183,
+ambulanta,"VETERINARSKA STANICA OSIJEK, društvo s ograničenom odgovornošću",,VINKOVAČKA CESTA 59,31000,Osijek,Osječko-Baranjska,031/275-060; 098/339-452,www.vetos.hr
+ambulanta,"VETERINARSKA STANICA VARAŽDIN d.o.o., Područna veterinarska ambulanta VIDOVEC",,Palih boraca 2,42205,Vidovec,Varaždinska,042/240-122; 099/6240-140,https://www.vsv.hr/ambulante/veterinarske-ambulante/veterinarska-ambulanta-vidovec/a19
+ambulanta,VETERINARSKA AMBULANTA ORAHOVICA d.o.o.,,Kralja Zvonimira 107,33515,Orahovica,Virovitičko-Podravska,033/675-307; 091/3731-133,
+ambulanta,"VETERINARSKA STANICA BJELOVAR d.o.o., amb. PATKOVAC",,Patkovac b.b.,43000,Bjelovar,Bjelovarsko-Bilogorska,043/882-144,https://veterinarska-stanica-bjelovar.hr/
+ambulanta,VETERINARSKA AMBULANTA GORZAVET d.o.o.,,Jakova Gotovca 29,43000,Bjelovar,Bjelovarsko-Bilogorska,043/222-212; 043/222-213,
+ambulanta,"VETERINARSKA STANICA ĐURĐEVAC d.o.o., Područna veterinarska ambulanta Pitomača",,Braće Radić 4,33405,Pitomača,Virovitičko-Podravska,033/782-151,http://www.vet.hr/
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta PLETERNICA",,Matije Reljkovića 1,34310,Pleternica,Požeško-Slavonska,034/251-035; 099/2211-615,https://veterinarska-pozega.hr/ambulante/
+ambulanta,"VETERINARSKA STANICA VIROVITICA d.o.o., Područna veterinarska ambulanta SUHOPOLJE",,S. Radića 24,33410,Suhopolje,Virovitičko-Podravska,033/771-120; 099/2283-355,
+ambulanta,"VETERINARSKA STANICA VIROVITICA d.o.o., Područna veterinarska ambulanta ŠPIŠIĆ BUKOVICA",,Bukovička cesta 6,33404,Špišić Bukovica,Virovitičko-Podravska,033/716-777; 098/382-396,
+ambulanta,VETERINARSKA STANICA GRUBIŠNO POLJE d.o.o.,,I.N. Jemrešića 50,43290,Grubišno Polje,Bjelovarsko-Bilogorska,043/485-049; 091/5256-286,
+ambulanta,"VETERINARSKA STANICA d.o.o., Ambulanta u sjedištu stanice Grubišno Polje",,Ivana Nepomuka Jemeršića 48,43290,Grubišno Polje,Bjelovarsko-Bilogorska,043/485-049; 091/8974-485,http://veterinarska-stanica.hr/
+ambulanta,"VETERINARSKA STANICA DARUVAR d.o.o., amb. KONČANICA",,Končanica 329,43505,Končanica,Bjelovarsko-Bilogorska,043/325-007; 098/9828-409,https://vsdaruvar.hr/
+ambulanta,FAUNA d.o.o.,,Rožat 32,20000,Dubrovnik,Dubrovačko-Neretvanska,020/451-466,
+ambulanta,"VETERINARSKA STANICA d.o.o., amb. STARI MIKANOVCI",,Matije Gupca 20,32284,Stari Mikanovci,Vukovarsko-Srijemska,,
+ambulanta,"VETERINARSKA STANICA VUKOVAR d.o.o., Područna veterinarska ambulanta BOBOTA",,Vukajlova 13,32225,Trpinja,Vukovarsko-Srijemska,032/560-444; 099/4410-072,https://vsvu.hr/ambulante/
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta SOLJANI",,Braće Radić 37,32255,Vrbanja,Vukovarsko-Srijemska,032/865-233; 098/217-116,http://vs-zupanja.hr/index.php/2014-05-06-13-13-47/ambulanta-smoljani
+ambulanta,"VETERINARSKA AMBULANTA KAŠTELA d.o.o. za zdravstvenu zaštitu životinja, trgovinu i turistička agencija",,Put blata 14A,21216,Kaštela,Splitsko-Dalmatinska,021/232-254; 021/235-110,https://m.facebook.com/100063543312374/
+ambulanta,"P.M.V. ANIMALIS d.o.o. - Veterinarska ambulanta ""LOTA""",,Put Rudine 3,21460,Stari Grad,Splitsko-Dalmatinska,021/244-337,https://www.facebook.com/p/Veterinarska-ambulanta-Lota-Stari-Grad-100057257177387/?locale=hr_HR
+ambulanta,VET VISION j.d.o.o. - Veterinarska ambulanta  Supetar,,Dolčić 4a,21400,Supetar,Splitsko-Dalmatinska,021/384-766; 099/3974-664,https://www.facebook.com/veterinasplit/    http://vetvision.hr/
+ambulanta,PUNTAMIKA d.o.o.,,Augusta Šenoe 38,23000,Zadar,Zadarska,023/333-300,https://vet-puntamika.hr/puntamika/o_nama.html
+ambulanta,"VETERINARSKA STANICA BJELOVAR d.o.o., amb. ROVIŠĆE",,Rovišće 49,43212,Rovišće,Bjelovarsko-Bilogorska,043/878-012,https://veterinarska-stanica-bjelovar.hr/
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta PRIVLAKA",,Bana Josipa Šokčevića 17,32251,Privlaka,Vukovarsko-Srijemska,032/398-893; 091/9877-648,https://veterinarskastanicavk.hr/
+ambulanta,"VETERINARSKA AMBULANTA VRPOLJE, d. o. o. za veterinarske usluge i trgovinu",,Bana Jelačića 144,35210,Vrpolje,Brodsko-Posavska,035/439-147; 091/5690-711,
+ambulanta,VETERINARSKA AMBULANTA JOSIPDOLVET d.o.o.,,Karlovačka 44,47303,Josipdol,Karlovačka,047/581-874; 091/5008-474,
+ambulanta,"VETERINARSKA STANICA NOVI MAROF d.o.o., Područna veterinarska ambulanta VARAŽDINSKE TOPLICE",,Duga ulica 60,42223,Varaždinske Toplice,Varaždinska,042/611-237; 098/379-483,
+ambulanta,"KARAULA VETERINARSKA AMBULANTA d.o.o., VETERINARSKA AMBULANTA GAREŠNICA",,Industrijska cesta 9,43280,Garešnica,Bjelovarsko-Bilogorska,043/445-036; 091/3331-093,
+ambulanta,"VETERINARSKA STANICA BJELOVAR d.o.o., amb. VELIKO TROJSTVO",,Mišulinovac 79,43226,Veliko Trojstvo,Bjelovarsko-Bilogorska,043/885-112,https://veterinarska-stanica-bjelovar.hr/
+ambulanta,VETERINARSKA AMBULANTA TRNJANI društvo s ograničenom odgovornošću za veterinarske usluge i trgovinu,,Svetoga Marka 26,35211,Garčin,Brodsko-Posavska,035/422-026; 098/263-402,
+ambulanta,VETERINARSKA AMBULANTA JEĐUT d.o.o. za veterinarske usluge,,Ulica Stjepana Radića 99,35222,Gundinci,Brodsko-Posavska,035/354-575,
+ambulanta,PERUTNINA PTUJ-PIPO d.o.o.,,Rudolfa Steinera 7,40000,Čakovec,Međimurska,040/372-888,
+ambulanta,"VETERINARSKA STANICA SESVETE d.o.o., amb. BELOVAR",,Varaždinska 55,10363,Zagreb,Grad Zagreb,01/2042-024,http://www.vs-sesvete.hr/
+ambulanta,VETERINARSKA AMBULANTA DUGO SELO d.o.o.,,Veterinarska 3,10370,Dugo Selo,Zagrebačka,01/2753-103; 091/5078-635,https://www.vads.hr/
+ambulanta,VETERINARSKA AMBULANTA OMIŠ društvo s ograničenom odgovornošću,,Dr. Franje Tuđmana 78,21250,Šestanovac,Splitsko-Dalmatinska,021/721-499; 098/9215-596,
+ambulanta,"VETERINARSKA STANICA d.o.o., područna veterinarska ambulanta NETRETIĆ",,Netretić 30a,47271,Netretić,Karlovačka,,
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta Rečica",,Rečica bb,47000,Karlovac,Karlovačka,047/713-001; 099/2182-371,http://www.vsklc.hr/
+ambulanta,NOVO BRESTJE d.o.o.,,Orhideja 89,10360,Zagreb,Grad Zagreb,"091/533-3376, 091/510-6075",https://www.facebook.com/veterinabrestje/?locale=hr_HR
+ambulanta,"GEJZIR d.o.o., veterinarska ambulanta Dubrava, Dubrava Vrbovečka",,Kalnička 42a,10360,Zagreb,Grad Zagreb,01/2725-133,
+ambulanta,GEJZIR d.o.o. za trgovinu i usluge,,Sesvetska Cesta 66,10360,Zagreb,Grad Zagreb,01/2725-133,
+ambulanta,"VETERINARSKA STANICA ĐAKOVO d.o.o., Područna veterinarska ambulanta GORJANI",,Kula 24,31422,Gorjani,Osječko-Baranjska,031/853-001; 099/4434-004,http://vs-djakovo.hr/ambulante-2/gorjani/
+ambulanta,LIKOMED VETERINA d.o.o.,,Brnaze 172,21230,Sinj,Splitsko-Dalmatinska,021/701-400; 021/423-011,https://likomed.hr/
+ambulanta,"VETERINARSKA STANICA ĐAKOVO d.o.o., Područna veterinarska ambulanta KEŠINCI",,KRALJA TOMISLAVA 33,31400,Đakovo,Osječko-Baranjska,031/856-083; 099/443-4003,https://vs-djakovo.hr/kesinci/
+ambulanta,"VETERINARSKA STANICA BJELOVAR d.o.o., amb. VELIKA PISANICA",,Velika Pisanica 256,43271,Velika Pisanica,Bjelovarsko-Bilogorska,043/883-060,https://veterinarska-stanica-bjelovar.hr/
+ambulanta,"ZAG-VET d.o.o., ambulanta u sjedištu stanice Zlatar",,Sajmišna 27,49250,Zlatar,Krapinsko-Zagorska,049/461-821; 091/5605-574,http://zagvet.com/
+ambulanta,"ZAG-VET d.o.o., područna veterinarska ambulanta OROSLAVJE",,Andrije Gredičaka 7,49243,Oroslavje,Krapinsko-Zagorska,049/553-009; 091/3300-586,http://zagvet.com/
+ambulanta,"VETERINARSKA STANICA KUTINA d.o.o., Područna veterinarska ambulanta POPOVAČA",,Trg grofova Erdodya 3,44317,Popovača,Sisačko-Moslavačka,044/679-041,http://www.vskutina.hr/index.php/ambulante/ambulanta-popovaca
+ambulanta,"VETERINARSKA STANICA OZALJ d.o.o., ambulanta u sjedištu stanice Ozalj",,Odvojak Karlovačke Ceste 110,47280,Ozalj,Karlovačka,047/731-142,https://www.facebook.com/VSOzalj/?locale=hr_HR
+ambulanta,"VETERINARSKA STANICA VRBOVEC d.o.o., Područna veterinarska ambulanta FARKAŠEVAC",,Farkaševac 148,10344,Farkaševac,Zagrebačka,01/2727-004,https://vsvrbovec.hr/lokacije/
+ambulanta,"VETERINARSKA STANICA GVOZD d.o.o., Ambulanta u sjedištu stanice GVOZD",,Karlovačka 55,44410,Gvozd,Sisačko-Moslavačka,044/881-009; 098/1832-000,
+ambulanta,Ekosanitacija d.o.o.,,"III Laz 8, objekt u Lukavcu, Lužec 8",10412,Velika Gorica,Zagrebačka,,
+ambulanta,VETERINARSKA AMBULANTA OGULIN društvo s ograničenom odgovornošću,,Pešćenica 8,47300,Ogulin,Karlovačka,047/531-973; 098/205-762,https://www.veterinarska-ambulanta-ogulin.hr/
+ambulanta,VETERINARSKA AMBULANTA OBROVAC dioničko društvo za pružanje veterinarskih usluga,,Njivice 1,23450,Obrovac,Zadarska,023/689-041; 091/7231-891,
+ambulanta,VETERINARSKA AMBULANTA ČETIRI ŠAPE d.o.o. za veterinarsku djelatnost,,Ivana Šveara 19,10310,Ivanić-Grad,Zagrebačka,098/372-993;  01/2888-133,https://m.facebook.com/people/Veterinarska-Ambulanta-%C4%8Cetiri-%C5%A0ape/100063750033831/?locale=fo_FO
+ambulanta,"VETERINARSKA STANICA ĐURĐEVAC d.o.o., područna veterinarska ambulanta Ferdinandovac",,Dravska 62,48356,Ferdinandovac,Koprivničko-Križevačka,048/817-031,http://www.vet.hr/
+ambulanta,"VETERINARSKA STANICA MIHAEL d.o.o., Područna veterinarska ambulanta VILJEVO",,Vladimira Nazora 50,31531,Viljevo,Osječko-Baranjska,031/644-003; 091/5709-795,
+ambulanta,"VETERINARSKA STANICA ĐAKOVO d.o.o., Područna veterinarska ambulanta DRENJE",,Gajeva 30,31418,Drenje,Osječko-Baranjska,031/862-000; 099/443-4007,http://vs-djakovo.hr/ambulante-2/drenje/
+ambulanta,"Bosgen d.o.o., Ivana Pavla II 4",,Ivana Pavla II 4,31400,Đakovo,Osječko-Baranjska,031/859-056; 091/563-1771,
+ambulanta,VETERINARSKA AMBULANTA KORENICA d.o.o.,,Alojzija Stepinca 14,53230,Plitvička Jezera,Ličko-Senjska,053/776-011; 099/7667-972,https://vet-ambulanta-korenica.hr/
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta DRAGANIĆ",,Draganići 10,47201,Draganić,Karlovačka,047/715-157; 099/2182-369,http://www.vsklc.hr/
+ambulanta,"VETERINARSKA STANICA BJELOVAR d.o.o., Ambulanta u sjedištu stanice Bjelovar",,Slavonska Cesta 4,43000,Bjelovar,Bjelovarsko-Bilogorska,043/241-392,https://veterinarska-stanica-bjelovar.hr/
+ambulanta,VETERINARSKA AMBULANTA MALI ZDENCI d.o.o.,,A. Mihanovića 78,43290,Grubišno Polje,Bjelovarsko-Bilogorska,043/427-230,
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta STARI JANKOVCI",,Veliki kraj 9,32241,Stari Jankovci,Vukovarsko-Srijemska,032/541-808,https://veterinarskastanicavk.hr/
+ambulanta,"VETERINARSKA STANICA d.o.o., Područna veterinarska ambulanta VRBANJA",,J. Kozarca 1,32254,Vrbanja,Vukovarsko-Srijemska,032/861-312,http://vs-zupanja.hr/
+ambulanta,VETERINARSKA AMBULANTA TROGIR d.o.o.,,Kardinala Alojzija Stepinca 6,21220,Trogir,Splitsko-Dalmatinska,021/881-429; 098/225-180,https://vet-trogir.com/
+ambulanta,VET VISION j.d.o.o. - Veterinarska ambulanta na Visu,,Bana Josipa Jelačića 5,21480,Vis,Splitsko-Dalmatinska,021/384-600,https://www.facebook.com/veterinasplit/
+ambulanta,VETERINARSKA AMBULANTA JAZINE društvo s ograničenom odgovornošću za veterinarske i poslovne usluge,,Zrinsko-Frankopanska Ulica 2,23000,Zadar,Zadarska,023/316-904,https://www.facebook.com/AmbulantaJazine/?locale=hr_HR
+ambulanta,VINDON d.o.o.,,Bjeliš b.b.,35000,Slavonski Brod,Brodsko-Posavska,035/217-600,
+ambulanta,VETERINARSKA AMBULANTA VODICE društvo s ograničenom odgovornošću za usluge i trgovinu,,Ante Poljička 66,22211,Vodice,Šibensko-Kninska,022/443-355,https://www.facebook.com/VeterinarskaAmbulantaVodice/
+ambulanta,VETERINARSKA AMBULANTA ZABOK,,Matije Gupca 3,49210,Zabok,Krapinsko-Zagorska,049/503-082; 049/221-604,https://www.facebook.com/veterinazabok/?locale=hr_HR
+ambulanta,VETERINARSKA AMBULANTA ORIO-VET d. o. o. za zdravstvenu zaštitu životinja i veterinarsko javno zdravstvo,,Savska 13,35255,Oriovac,Brodsko-Posavska,035/432-409; 035/431-820,
+ambulanta,JUG  d.o.o.,,Nikole Pavića 1,40000,Čakovec,Međimurska,040/363-801; 091/3638-010,
+ambulanta,VETERINARSKA AMBULANTA GRUDA - KONAVLE d.o.o.,,Gruda 416,20215,Konavle,Dubrovačko-Neretvanska,020/791-450; 099/474-695,
+ambulanta,VETERINARSKA AMBULANTA SENJ d.o.o.,,M. C. Nehajeva 27,53270,Senj,Ličko-Senjska,053/881-404,
+ambulanta,VETERINARSKA AMBULANTA CRIKVENICA d.o.o.,,Kotorska 28,51260,Crikvenica,Primorsko-Goranska,051/241-932; 051/242-721,https://www.facebook.com/vetcentarcrikvenica/?locale=hr_HR
+ambulanta,"VETERINARSKA AMBULANTA ORIO-VET d.o.o., Ante Starčevića b.b.",,Ante Starčevića b.b.,35257,Oriovac,Brodsko-Posavska,035/432-409,
+ambulanta,"PRAXIS - VET društvo s ograničenom odgovornošću za zdravstvenu zaštitu životinja, usluge i trgovinu",,108. Brigade ZNG 50,35252,Sibinj,Brodsko-Posavska,035/400-330; 035/440-468,
+ambulanta,"VETERINARSKA STANICA RIJEKA d.o.o., Ambulanta u sjedištu stanice RIJEKA",,Stube Marka Remsa 1,51000,Rijeka,Primorsko-Goranska,051/320-263,http://www.vetstri.hr/
+ambulanta,VETERINARSKA AMBULANTA PULA d.o.o.,,Trinajstićeva ulica - Via Dinko Trinajstić 1,52100,Pula - Pola,Istarska,052/556-636; 098/9812-578,https://www.facebook.com/vet.amb.pula/?locale=hr_HR
+ambulanta,VETERINAR Društvo s ograničenom odgovornošću za pružanje poljoprivrednih usluga u stočarstvu,,KRŠEVANOVA STANCIJA - STANZIA CHERSEVANI 2,52100,Pula - Pola,Istarska,052/540-391,https://www.facebook.com/p/Veterinarska-ambulanta-Veterinar-Pula-100082370995701/
+ambulanta,SAN EKO d.o.o.,,Kranjčevićeva 22,10000,Zagreb,Grad Zagreb,,
+ambulanta,VETERINARSKA AMBULANTA LJUBIMAC d.o.o.,,Ivanićeva 19,10000,Zagreb,Grad Zagreb,01/3750-339,ljubimac.net
+ambulanta,Veterinarska ambulanta u sastavu VETERINARSKA STANICA OZALJ d.o.o.,,Odvojak Karlovačke Ceste 110,47280,Ozalj,Karlovačka,"047/731-142, 098/460-694",https://www.facebook.com/VSOzalj/?locale=hr_HR
+ambulanta,Veterinarska ambulanta TOP VET j.d.o.o.,,ULICA ANTUNA MIHANOVIĆA 22aA,49217,Krapinske Toplice,Krapinsko-Zagorska,049/234-930; 091/5038-376,
+stanica,ZAG-VET društvo s ograničenom odgovornošću za veterinarsko zdravstvenu djelatnost,,Sajmišna ulica 27,49250,Zlatar,Krapinsko-Zagorska,049/461-821,https://zagvet.com/
+stanica,VETERINARSKA STANICA SVETI IVAN ZELINA društvo s ograničenom odgovornošću,,Sajmišna 4,10380,Sveti Ivan Zelina,Zagrebačka,01/2060-730; 01/2049-459,http://www.vs-zelina.hr/
+stanica,"VETERINARSKA STANICA NOVI MAROF, društvo s ograničenom odgovornošću",,Franjevačka Ulica 2,42220,Novi Marof,Varaždinska,042/611-237,
+stanica,VETERINARSKA STANICA VARAŽDIN d.o.o.,,Trg Ivana Perkovca 24,42000,Varaždin,Varaždinska,042/240-122; 099/6240-140,http://www.vsv.hr/
+stanica,VETERINARSKA STANICA d.o.o.,,Braće Gojak 52,47000,Karlovac,Karlovačka,047/615-401; 099/2182-364,https://www.vsklc.hr/
+stanica,VETERINARSKA STANICA JASTREBARSKO društvo s ograničenom odgovornošću za veterinarsku djelatnost i prodaju,,Trešnjevka 61,10450,Jastrebarsko,Zagrebačka,01/6281-085;  01/6281-396,http://www.vsj.hr/
+stanica,VETERINARSKA STANICA MIHAEL d.o.o. za veterinarske usluge,,Stjepana Radića 6,31540,Donji Miholjac,Osječko-Baranjska,031/631-814; 099/1635-313,www.petropolis.hr
+stanica,VETERINARSKA STANICA ĐAKOVO d.o.o.,,Kralja Tomislava 33,31400,Đakovo,Osječko-Baranjska,031/813-291; 099/4434-022,http://vs-djakovo.hr/
+stanica,VETERINARSKA STANICA SLATINA društvo s ograničenom odgovornošću za veterinarske usluge i trgovinu,,Kralja Zvonimira 16,33520,Slatina,Virovitičko-Podravska,033/551-399;  033/552-971,https://www.facebook.com/p/Veterinarska-stanica-Slatina-100071559440076/
+stanica,"Veterinarska stanica Veterina d.o.o., za djelatnost zdravstvene zaštite životinja, veterinarskih usluga, proizvodnje i prodaje",,Ante Starčevića 29,35400,Nova Gradiška,Brodsko-Posavska,035/362-599; 091/5203-321,https://vs-veterina.hr/
+stanica,"VETERINARSKA STANICA ZABOK, društvo s ograničenom odgovornošću",,Matije Gupca 3,49210,Zabok,Krapinsko-Zagorska,049/221-604; 098/228-074,https://www.facebook.com/veterinazabok/?locale=hr_HR
+stanica,VETERINARSKA STANICA VELIKA GORICA društvo s ograničenom odgovornošću,,Sisačka 39,10410,Velika Gorica,Zagrebačka,01/6221-263,http://www.vgvet.hr/
+stanica,VETERINARSKA STANICA DONJA STUBICA d.o.o.,,Kolodvorska 20,49240,Donja Stubica,Krapinsko-Zagorska,049/286-095,
+stanica,VETERINARSKA STANICA VRBOVEC društvo s ograničenom odgovornošću,,Kolodvorska 68,10340,Vrbovec,Zagrebačka,01/2791-432; 098/239-289,https://vsvrbovec.hr/
+stanica,VETERINARSKA STANICA ĐURĐEVAC društvo s ograničenom odgovornošću,,Kolodvorska 2,48350,Đurđevac,Koprivničko-Križevačka,048/897-252;  048/813-173,https://www.vet.hr/
+stanica,VETERINARSKA STANICA PAKRAC društvo s ograničenom odgovornošću za veterinarske usluge,,Križnog puta 8,34550,Pakrac,Požeško-Slavonska,034/411-019; 098/411-019,http://vs-pakrac.hr/
+stanica,"VETO d.o.o. za veterinarstvo, proizvodnju, trgovinu i usluge",,Antuna Barca 38,35000,Slavonski Brod,Brodsko-Posavska,385/3526-9444; 091/2398-809,https://www.facebook.com/veterinarskaslavonskibrod/?locale=hr_HR
+stanica,VETERINARSKA STANICA VUKOVAR društvo s ograničenom odgovornošću za proizvodnju i veterinarske usluge,,Bana Josipa Jelačića 97,32000,Vukovar,Vukovarsko-Srijemska,032/410-060; 099/733-1543,https://vsvu.hr/
+stanica,VETERINARSKA STANICA društvo s ograničenom odgovornošću Županja,,Veliki Kraj 18,32270,Županja,Vukovarsko-Srijemska,032/837-659;  032/837-536,http://vs-zupanja.hr/
+stanica,Veterinarska stanica VETAM d.o.o.,,Biljska cesta 7,31000,Osijek,Osječko-Baranjska,031/286-044; 098/9831-224,http://www.vetam.hr/
+stanica,VETERINARSKA STANICA VOJNIĆ društvo s ograničenom odgovornošću,,Starčevićev trg 3,47220,Vojnić,Karlovačka,047/883-161; 098/330-662,https://vsvojnic.hr
+stanica,VETERINARSKA STANICA KRIŽEVCI d.o.o.,,Potočka ulica 35,48260,Križevci,Koprivničko-Križevačka,048/718-692,http://www.vskrizevci.com/
+stanica,VETERINARSKA STANICA PETRINJA društvo s ograničenom odgovornošću,,Ljudevita Gaja 40A,44250,Petrinja,Sisačko-Moslavačka,044/527-777; 098/500-210,https://veterinarskastanicapetrinja.hr/
+stanica,VETERINARSKA STANICA KOPRIVNICA d.o.o. (Otto),,Mihovila Pavleka Miškine 66,48000,Koprivnica,Koprivničko-Križevačka,048/621-114; 099/6821-613,https://veterinarska-koprivnica.hr/
+stanica,VETERINARSKA STANICA NOVSKA društvo s ograničenom odgovornošću,,Kralja Zvonimira 9,44330,Novska,Sisačko-Moslavačka,044/600-130; 091/5554-063,veterinarska-stanica-novska.hr
+stanica,VETERINARSKA STANICA GVOZD društvo s ograničenom odgovornošću,,Karlovačka 55,44410,Gvozd,Sisačko-Moslavačka,044/881-009; 098/1832-000,
+stanica,"VETERINARSKA STANICA VALPOVO, društvo s ograničenom odgovornošću",,Matije Gupca 36,31550,Valpovo,Osječko-Baranjska,031/651-530; 091/3651-535,https://www.facebook.com/people/Veterinarska-stanica-Valpovo/100051989216372/?_rdr
+stanica,"VETERINARSKA STANICA NAŠICE, društvo s ograničenom odgovornošću za veterinarske usluge, proizvodnju i trgovinu",,Braće Radića 78,31500,Našice,Osječko-Baranjska,031/613-165,https://www.facebook.com/VeterinarskaStanicaNasiceDoo/?locale=hr_HR
+stanica,VETERINARSKA STANICA SLATINA društvo s ograničenom odgovornošću za veterinarske usluge i trgovinu,,Industrijska 15,33520,Slatina,Virovitičko-Podravska,033/551-399; 098/359-802,www.vsslatina.hr
+stanica,VETERINARSKA STANICA ZADAR društvo s ograničenom odgovornošću,,Skročini 2b,23000,Zadar,Zadarska,023/322-877; 098/339-400,https://veterinarskastanicazadar.hr/
+stanica,VETERINARSKA STANICA d.o.o. za proizvodnju i veterinarske usluge,,Josipa Kozarca 26,32100,Vinkovci,Vukovarsko-Srijemska,032/331-544,https://veterinarskastanicavk.hr/
+stanica,"VETERINARSKA STANICA RIJEKA, društvo s ograničenom odgovornošću",,Stube Marka Remsa 1,51000,Rijeka,Primorsko-Goranska,"051/345-033, 051/320-263",http://www.vetstri.hr/
+stanica,"VETERINARSKA STANICA KRIŽ, d.o.o.",,Milke Trnine 22,10314,Križ,Zagrebačka,01/2824-625;  01/2892-523,
+stanica,VETERINARSKA STANICA IVANEC društvo s ograničenom odgovornošću za proizvodnju i veterinarske usluge,,Varaždinska ulica 15,42240,Ivanec,Varaždinska,042/782-323,http://vsi.hr/
+stanica,"VETERINARSKA STANICA d.o.o. za djelatnost zdravstvene zaštite životinja, veterinarskih usluga, prodaje i proizvodnje",,Šetalište Tušmer 17,47250,Duga Resa,Karlovačka,047/844-654;  047/849-360,
+stanica,VETERINARSKA STANICA DARUVAR d.o.o.,,Petra Preradovića 102,43500,Daruvar,Bjelovarsko-Bilogorska,043/332-276; 098/436-388,https://vsdaruvar.hr/
+stanica,VETERINARSKA STANICA društvo s ograničenom odgovornošću za veterinarske usluge,,Bana Jelačića bb,43280,Garešnica,Bjelovarsko-Bilogorska,043/531-127,
+stanica,BIOINSTITUT d.o.o. za usluge u zdravstvu i veterinarstvu,,Rudolfa Steinera 7,40000,Čakovec,Međimurska,040/391-480; 098/463-464,http://www.bioinstitut.hr/
+stanica,"Veterinarska stanica Remetinec, društvo s ograničenom odgovornošću",,Brezovička cesta 105,10257,Zagreb,Grad Zagreb,01/6538-381; 098/325-684,http://www.vsr.hr/
+stanica,"VETERINARSKA STANICA KUTINA, društvo s ograničenom odgovornošću",,Vladimira Nazora 61,44320,Kutina,Sisačko-Moslavačka,044/680-423; 044/680-421,http://www.vskutina.hr/
+stanica,VETERINARSKA STANICA ČAZMA d.o.o.,,Milana Novačića 44,43240,Čazma,Bjelovarsko-Bilogorska,043/771-081,https://vscazma446053059.wordpress.com/
+stanica,VETERINARSKA STANICA SAMOBOR d.o.o.,,Katarine Zrinske 7,10430,Samobor,Zagrebačka,01/3363-315; 01/3363-314,http://www.veterina-samobor.hr/kontakt.asp
+stanica,VETERINARSKA STANICA KRAPINA društvo s ograničenom odgovornošću,,Ivana Rendića 3,49000,Krapina,Krapinsko-Zagorska,049/371-373,https://www.vs-krapina.hr/
+stanica,VETERINARSKA STANICA društvo s ograničenom odgovornošću  za proizvodnju  i veterinarske usluge,,Kralja Zvonimira 51,40323,Prelog,Međimurska,040/645-422,http://www.veterinarskaprelog.hr/
+stanica,"VETERINARSKA STANICA SESVETE, društvo s ograničenom odgovornošću",,Jelkovečka cesta 2,10360,Zagreb,Grad Zagreb,01/2000-191,http://www.vs-sesvete.hr/
+stanica,"VETERINARSKA STANICA GRADA ZAGREBA d.o.o. za veterinarstvo, trgovinu i usluge u zaštiti okoliša",,Vjekoslava Heinzela 68,10000,Zagreb,Grad Zagreb,01/6040-186;  01/6040-149,http://vs-grada-zagreba.hr/
+stanica,"VETERINARSKA STANICA SISAK društvo s ograničenom odgovornošću za djelatnost zdravstvene zaštite životinja,",,Zagrebačka 45,44000,Sisak,Sisačko-Moslavačka,044/527-711; 098/1749-404,https://www.facebook.com/sklonistezazivotinjesisak/
+stanica,"VETERINARSKA STANICA OSIJEK, društvo s ograničenom odgovornošću",,Vinkovačka cesta 59,31000,Osijek,Osječko-Baranjska,031/275-060;  098/339-452,http://www.vetos.hr/
+stanica,"VETERINARSKA STANICA BJELOVAR d.o.o. za djelatnost zdravstvene zaštite životinja, veterinarskih usluga proizvodnje i prodaje",,Slavonska cesta 4,43000,Bjelovar,Bjelovarsko-Bilogorska,043/241-392;  043/242-332,https://veterinarska-stanica-bjelovar.hr/
+stanica,"VETERINARSKA STANICA, d.o.o. za veterinarsko-poljoprivredne usluge, stočarstvo i trgovinu",,Eugena Podubskog 4,34000,Požega,Požeško-Slavonska,034/211-602;  034/211-612,https://veterinarska-pozega.hr/
+stanica,VETERINARSKA STANICA VIROVITICA društvo s ograničenom odgovornošću,,Josipa Jurja Strossmayera 38,33000,Virovitica,Virovitičko-Podravska,033/728-335; 098/382-396,
+stanica,VETERINARSKA STANICA društvo s ograničenom odgovornošću za veterinarske usluge,,Stjepana Radića 1,49216,Desinić,Krapinsko-Zagorska,049/376-005,
+stanica,VETERINARSKA STANICA BELI MANASTIR d.o.o. Beli Manastir,,Osječka 128,31300,Beli Manastir,Osječko-Baranjska,031/700-133; 099/3231-775,http://www.vsbm.hr/
+stanica,VETERINARSKA STANICA društvo s ograničenom odgovornošću za veterinarske usluge,,Ivana Nepomuka Jemeršića 48,43290,Grubišno Polje,Bjelovarsko-Bilogorska,043/485-049; 091/5256-286,http://veterinarska-stanica.hr/
+stanica,Veterinarska stanica Ludbreg Nova d.o.o.,,Ljudevita Gaja 47,42230,Ludbreg,Varaždinska,042810566,
+stanica,BIOMEDICA društvo s ograničenom odgovornošću za usluge u zdravstvu i veterinarstvu,,ULICA RUDOLFA STEINERA 7,40000,Čakovec,Međimurska,040/391-480,https://www.biomedica.hr/
+klinika,VETERINARSKA KLINIKA u sastavu VETERINARSKA STANICA VARAŽDIN d.o.o.,,TRG IVANA PERKOVCA 24,42000,Varaždin,Varaždinska,042/240-122; 099/6240-140,https://www.vsv.hr/ambulante/veterinarske-ambulante/veterinarska-klinika-varazdin-za-kucne-ljubimce/a15
+klinika,Veterinarska klinika Buba,,Riječka 10,10000,Zagreb,Grad Zagreb,01/2310-537,https://vetti-buba.hr
+klinika,KLINIKA VETERINARSKOG FAKULTETA SVEUČILIŠTA U ZAGREBU,,HEINZELOVA 55,10000,Zagreb,Grad Zagreb,01/2390-111,www.vef.unizg.hr
+klinika,Veterinarska klinika za male životinje Kreszinger VETTI GROUP d.o.o.,,Rimski put 37,10360,Zagreb,Grad Zagreb,01/2301-021,https://klinika-kreszinger.com/
+bolnica,VETERINARSKA BOLNICA POREČ društvo s ograničenom odgovornošću za veterinarsku djelatnost,,Mate Vlašića 45,52440,Poreč - Parenzo,Istarska,052/432-128,https://veterinarska-bolnica-porec.com/
+bolnica,VETERINARSKA BOLNICA HOSPIVET D.O.O.,,LAZINSKA 28,10000,Zagreb,Grad Zagreb,01/3024-765,http://veterinarska-bolnica.hr/
+bolnica,Veterinarska bolnica Vetti Split,,Dračevac 4D,21000,Split,Splitsko-Dalmatinska,021/781-914,https://vetti-split.hr/
+praksa,"VETERINARSKA AMBULANTA LUNA d.o.o., Opća veterinarska praksa za male životinje",Opća veterinarska praksa za male životinje,Trg Matije Gupca 20D,42000,Varaždin,Varaždinska,042/203-977,https://www.facebook.com/vetambluna/?locale=hr_HR
+praksa,"AMBULANTA ANIMA d.o.o., Opća veterinarska praksa za male životinje AMBULANTA ANIMA",Opća veterinarska praksa za male životinje,Ante Starčevića 26,47000,Karlovac,Karlovačka,047/522-228,https://www.facebook.com/ambulantaanima/?locale=hr_HR
+praksa,"VETERINARSKA AMBULANTA PAG d.o.o., Specijalistička veterinarska praksa NOVALJA",Specijalistička veterinarska praksa za male životinje,Obilaznica 86,53291,Novalja,Ličko-Senjska,"023/600-438, 098/862-366",http://www.vet-pag.com/
+praksa,"Veterinarska ambulanta Turković d.o.o., Specijalistička veterinarska praksa za male životinje",Specijalistička veterinarska praksa za male životinje,Viškovo 123/C,51216,Viškovo,Primorsko-Goranska,051/257-571;  091/514-2534,https://www.facebook.com/vet.amb.turkovic/
+praksa,"VETERINARSKA AMBULANTA SEDLIĆ društvo s ograničenom odgovornošću, Opća veterinarska praksa",Opća veterinarska praksa za male životinje,BEREK 54,43232,Berek,Bjelovarsko-Bilogorska,043/548-300;  099/3551-852,https://vas.hr/  https://www.facebook.com/veterinarskasedlic/
+praksa,"FELIS CANIS d.o.o., Opća veterinarska praksa za male životinje",Opća veterinarska praksa za male životinje,Pantan 1,21220,Trogir,Splitsko-Dalmatinska,091/1916-231;  021/397-480,
+praksa,"Veterinarska ambulanta Jazine d.o.o., Veterinarska ambulanta JAZINE",Specijalistička veterinarska praksa za male životinje,Zrinsko-Frankopanska 2,23000,Zadar,Zadarska,023/316-904,https://www.facebook.com/AmbulantaJazine/?locale=hr_HR
+praksa,"AV-AV, veterinarska praksa za male životinje, vl. Ana Mitrović",Opća veterinarska praksa za male životinje,Ive Senjanina 12 C,23000,Zadar,Zadarska,023/305-181;  091/5680-572,https://www.av-av.hr/
+praksa,"VETERINARSKA STANICA KOPRIVNICA d.o.o., Opća veterinarska praksa za male životinje",Opća veterinarska praksa za male životinje,Franje Markovića 37,48260,Križevci,Koprivničko-Križevačka,098/354-535;  048/220-670,https://veterinarska-koprivnica.hr/
+praksa,"VETERINARSKA STANICA VRBOVEC d.o.o., Specijalistička veterinarska ambulanta za male životinje DUGI DOG",Specijalistička veterinarska praksa za male životinje,Miroslava Krleže 9,10370,Dugo Selo,Zagrebačka,01/638-433,https://vsvrbovec.hr/
+praksa,"Veterinarska ambulanta privatne prakse za male životinje i trgovina RAUNIG, vl. Vando Raunig",Opća veterinarska praksa za male životinje,Roosweltova 1,21000,Split,Splitsko-Dalmatinska,021/488-700;  091/5015-141,https://www.facebook.com/veterinarskaambulantaraunig/?locale=hr_HR
+praksa,"VETERINA SPLIT d.o.o., Opća veterinarska praksa za male životinje",Opća veterinarska praksa za male životinje,Grabova 17,21000,Split,Splitsko-Dalmatinska,091/2705-555,https://www.facebook.com/veterinast/
+praksa,"MARKOVIĆ d.o.o., Specijalističke veterinarske ambulante MARKOVIĆ",Opća veterinarska praksa za male životinje,I Pile 33,10000,Zagreb,Grad Zagreb,01/6145-440 098/209-844,https://www.markovic.hr/
+praksa,"PLANET ŽIVOTINJA d.o.o., Veterinarska praksa za male životinje PLANET ŽIVOTINJA",Opća veterinarska praksa za male životinje,Lanište 1F,10000,Zagreb,Grad Zagreb,01/6141-501,https://www.facebook.com/planetzivotinja/?locale=hr_HR
+praksa,VETERINARSKA AMBULANTA ŠEGOTA d.o.o.,Opća veterinarska praksa za male životinje,Janka Grahora 15,10000,Zagreb,Grad Zagreb,091/251-5510,http://www.segota.vet/
+praksa,Specijalistička veterinarska praksa za male životinje VETERINA BRANIMIR Jaruščica,Specijalistička veterinarska praksa za male životinje,Jaruščica 9E,10000,Zagreb,Grad Zagreb,099/3887-542;  01/3887-543,https://www.veterinabranimir.hr/
+praksa,"Ambulanta za male životinje, vl. Davorin Tkalec",Opća veterinarska praksa za male životinje,Pavla Lončara 1C,10290,Zaprešić,Zagrebačka,01/3312-111;  091/7897-777,http://pet-it.com.hr/
+praksa,RVIJ TRADE d.o.o.,Specijalistička veterinarska praksa za male životinje,"Rapska ulica 9, 23000 Zadar 21 A",23000,Zadar,Zadarska,095/393-442,
+praksa,"TIP TIP INES, obrt specijalizirana veterinarska ambulanta i veterinarski-higijeničarski servis, vl. Ines Božičević",Opća veterinarska praksa za male životinje,Josipa Lovretića 10,32100,Vinkovci,Vukovarsko-Srijemska,032/306-901,https://www.facebook.com/tiptipines/
+praksa,"VETERINARSKA AMBULANTA LESI - OBRT ZA VETERINARSKU DJELATNOST, vl. MARINO SARDELIĆ",Opća veterinarska praksa za male životinje,41. ULICA 61,20271,Blato,Dubrovačko-Neretvanska,020/851-587;  098/701-134,
+praksa,VETERINARSKA PRAKSA ZA MALE ŽIVOTINJE ULTRA VET društvo s ograničenom odgovornošću za veterinarsku djelatnost,Opća veterinarska praksa za male životinje,Trg labinskih rudara 7,52220,Labin,Istarska,091/1495-607,https://m.facebook.com/100065323430145/
+praksa,"Veterinarska ambulanta privatne prakse ""KOSTRENA"", vl. Dalibor Boljat",Opća veterinarska praksa za male životinje,Glavani 10,51221,Kostrena,Primorsko-Goranska,051/288-157;  091/5376397,https://www.facebook.com/veterinarskakostrena/?locale=hr_HR
+praksa,"ORMONDO j.d.o.o., Specijalistička veterinarska praksa za male životinje HVAR",Specijalistička veterinarska praksa za male životinje,Šime Buzolić Tome 15a,21450,Hvar,Splitsko-Dalmatinska,021/741-198,https://www.facebook.com/ormodno/?locale=hr_HR
+praksa,"RiVet d.o.o, Specijalistička veterinarska praksa",Specijalistička veterinarska praksa za male životinje,Istarska 15,51000,Rijeka,Primorsko-Goranska,051/561-452,
+praksa,"Veterinarska praksa za male životinje ""HAJSTER"", vl. Henri Hajster",Opća veterinarska praksa za male životinje,Marianijeva 3,52100,Pula - Pola,Istarska,052/500-501,https://www.facebook.com/VetAmbHajster/?locale=hr_HR
+praksa,"Mala životinja d.o.o., Veterinarska praksa Gajniceu sastavu trgovačkog društva MALA ŽIVOTINJA d.o.o.",Opća veterinarska praksa za male životinje,Strožička 1,10000,Zagreb,Grad Zagreb,"01/3435-445, 098/317-307",
+praksa,"ZEN-VET d.o.o., Specijalistička veterinarska praksa za male životinje Zen-vet",Specijalistička veterinarska praksa za male životinje,Crnojezerska 18,10000,Zagreb,Grad Zagreb,01/5516-465,https://www.zen-vet.hr/
+praksa,TRNJANSKA ZVIJEZDA d.o.o.,Specijalistička veterinarska praksa za male životinje,Trnjanska 126a,10000,Zagreb,Grad Zagreb,01/6116-311,
+praksa,Opća veterinarska praksa za male životinje BUBA,Opća veterinarska praksa za male životinje,Dore Pfanove 11,10000,Zagreb,Grad Zagreb,+38513771761;  +385992140026,https://www.buba-vet.hr/
+praksa,"Veterinarska praksa za male životinje ""VET POINT""",Opća veterinarska praksa za male životinje,Ratarska 35,10000,Zagreb,Grad Zagreb,01/3883-403,http://www.vetpoint.hr/
+praksa,"Vet5 društvo d.o.o., Opća veterinarska praksa za male životinje",Opća veterinarska praksa za male životinje,Lastovska 7,10000,Zagreb,Grad Zagreb,01/5605-570;  091/1839-690,
+praksa,"Veterinarska praksa DADO d.o.o., Veterinarska praksa DADO",Opća veterinarska praksa za male životinje,Kralja Petra Svačića 22,23210,Biograd Na Moru,Zadarska,023/383-985,https://www.facebook.com/p/Veterinarska-praksa-Dado-100046601726093/?locale=hr_HR
+praksa,"VET4PETS d.o.o., Opća veterinarska praksa za male životinje",Opća veterinarska praksa za male životinje,Ljudevita Jonkea 4,33520,Slatina,Virovitičko-Podravska,098/9513-509,https://www.facebook.com/Vet4PetsSL/
+praksa,"ŠAPICA, vl Iva Slavić",Opća veterinarska praksa za male životinje,Put Živica 12,51211,Matulji,Primorsko-Goranska,051/275-217;  092/1092-001,https://www.facebook.com/veterinarska.sapica/?locale=hr_HR
+praksa,VETERINARSKE AMBULANTE MUSTAĆ j.d.o.o. za djelatnost veterinarskih usluga,Specijalistička veterinarska praksa za male životinje,ULICA ROBERTA FRANGEŠA-MIHANOVIĆA 71,23000,Zadar,Zadarska,023/334-355;  091/540-9363,http://www.mustac-vet.hr/index.html#
+praksa,"OssaVet d.o.o., Specijalistička veterinarska praksa za male životinje",Specijalistička veterinarska praksa za male životinje,Grada Wirgesa 3,10430,Samobor,Zagrebačka,01/6701-661,https://www.dogtor.hr/
+praksa,"Privatna veterinarska praksa PET-VET, vl. Tomislav Čanić",Opća veterinarska praksa za male životinje,Sjeverna 5,52420,Buzet,Istarska,052/694-054,https://www.facebook.com/p/Veterinarska-Praksa-Pet-vet-100054642061564/
+praksa,"AVA, Specijalizirana veterinarska ambulanta za male životinje, vl. Mr. sc. Krunoslav Hrvačić",Specijalistička veterinarska praksa za male životinje,Školska 47,10410,Velika Gorica,Zagrebačka,01/6226-101 098/209-389,https://www.ava-vet.hr/
+praksa,"Veterinarska ambulanta privatne prakse za male životinje BOŠNJAK-MIOČ, vl. Ivica Bošnjak i Igor Mioč",Opća veterinarska praksa za male životinje,Dinka Šimunovića 2A,21000,Split,Splitsko-Dalmatinska,021/455-594,http://www.ambulantabosnjak.hr/
+praksa,"Veterinarska ambulanta privatne prakse ""TRSAT"", vl. Sanjin Polić",Opća veterinarska praksa za male životinje,Josipa Kulfaneka 4,51000,Rijeka,Primorsko-Goranska,051/216-042;  091/567-1918,https://veterinar-polic.com/
+praksa,"VET-svijet d.o.o., Veterinarska praksa za male životinje",Opća veterinarska praksa za male životinje,Rudeška 81A,10000,Zagreb,Grad Zagreb,01/3816-842;  098/9240-567,https://vet-svijet.hr/
+praksa,"VET MAKAR d.o.o., Specijalistička veterinarska praksa za male životinje VET MAKAR",Specijalistička veterinarska praksa za male životinje,Šestinski dol 8d,10000,Zagreb,Grad Zagreb,01/3771-509;  098/411-042,https://www.vet-makar.com/
+praksa,"VETERINARSKA STANICA GRADA ZAGREBA d.o.o., Specijalistička veterinarska praksa za male životinje",Specijalistička veterinarska praksa za male životinje,Jurja Šižgorića 21,10000,Zagreb,Grad Zagreb,01/6040-149; 098/339-671,http://vs-grada-zagreba.hr/
+praksa,"SPECIJALISTIČKA VETERINARSKA PRAKSA ZA MALE ŽIVOTINJE DR. PEZO, OBRT ZA USLUGE U VETERINARSTVU I TRGOVINI, VLADIMIR PEZO",Specijalistička veterinarska praksa za male životinje,Ede Murtića 2,10000,Zagreb,Grad Zagreb,01/6551-331,http://www.dr-pezo.hr/
+praksa,"Veterinarsko-trgovački obrt ""PAVEŠIĆ"", vl. Rajko Pavešić",Opća veterinarska praksa za male životinje,Krasica 164 A,51224,Bakar,Primorsko-Goranska,051/766-622,http://www.veterinarska-pavesic.net/
+praksa,"ZAPREŠIČANKA-TRGOVINA d.o.o., Opća veterinarska praksa za male životinje ProVet",Opća veterinarska praksa za male životinje,Pavla Lončara 53A,10290,Zaprešić,Zagrebačka,01/3866-303,
+praksa,MEDICOR D.O.O.,Specijalistička veterinarska praksa za male životinje,BARTULA KAŠIĆA 56,31000,Osijek,Osječko-Baranjska,031/209 074,
+praksa,VETERINARSKA AMBULANTA FURY d.o.o.,Opća veterinarska praksa za male životinje,Sunčana 22,31000,Osijek,Osječko-Baranjska,031/204-747,
+praksa,"""SPECIJALIZIRANA VETERINARSKA AMBULANTA ZA MALE ŽIVOTINJE, vlasnik SERGIJE VILOVIĆ""",Opća veterinarska praksa za male životinje,36. ulica 108,20260,Korčula,Dubrovačko-Neretvanska,020/711-751,
+praksa,"APIS VET j.d.o.o., Opća veterinarska praksa za male životinje APIS VET",Opća veterinarska praksa za male životinje,Silvije Strahimira Kranjčevića 49,43500,Daruvar,Bjelovarsko-Bilogorska,098/1772-397,https://www.facebook.com/p/Apis-Vet-100057669450430/
+praksa,"Privatna veterinarska ambulanta za male životinje, vl. Igor Benčić",Opća veterinarska praksa za male životinje,ISTARSKIH NARODNJAKA 24,52000,Pazin,Istarska,052/621-921,http://www.vetbencic.eu/hr/
+praksa,"MR. KVAKAN d.o.o., Veterinarska ambulanta privatne prakse Mr. Kvakan",Opća veterinarska praksa za male životinje,Vatroslava Lisinskog b.b.,40000,Čakovec,Međimurska,040/365-277;  091/510-1078,https://www.centar-animamundi.org/
+praksa,"GANČEVIĆ VETERINA d.o.o., Opća veterinarska praksa za male životinje",Opća veterinarska praksa za male životinje,Ulica Frana Supila 50,21000,Split,Splitsko-Dalmatinska,021/404-844;  091/2000-098,https://splitvet.com/
+praksa,"VET VISION j.d.o.o., Specijalistička veterinarska praksa za male životinje VET VISION",Specijalistička veterinarska praksa za male životinje,Hrvatske bratske zajednice 2,21000,Split,Splitsko-Dalmatinska,021/384-600,https://www.facebook.com/veterinasplit/
+praksa,"Opća veterinarska praksa za male životinje, u sastavu tvrtke Pula usluge i upravljanje d.o.o.",Opća veterinarska praksa za male životinje,Partizanski put 138,52100,Pula - Pola,Istarska,091/5385-294,https://www.pula-usluge.hr/
+praksa,"Veterinarska praksa Bojanić , Specijalistička veterinarska praksa za male životinje",Opća veterinarska praksa za male životinje,STARA KNEŽIJA 18,10000,Zagreb,Grad Zagreb,013836989,https://vet-praksa-bojanic.com/
+praksa,"BELA SPECIJALIZIRANA VETERINARSKA AMBULANTA ZA KUĆNE LJUBIMCE , VL. BERISLAV KOŠUTIĆ",Opća veterinarska praksa za male životinje,Mlinovi 126,10000,Zagreb,Grad Zagreb,01/468-3142 091/511-7256,http://www.bela.hr/
+praksa,"Galavet d.o.o., Specijalistička veterinarska praksa za male životinje",Specijalistička veterinarska praksa za male životinje,Bachova 5,10000,Zagreb,Grad Zagreb,01/6145-444,http://www.galavet.hr/
+praksa,"VET-IVA PET d.o.o., Specijalistička veterinarska praksa VET-IVA PET",Specijalistička veterinarska praksa za male životinje,Kozarčeva 38,10000,Zagreb,Grad Zagreb,01/4823-730;  091/4823-730,https://vetiva.hr/
+praksa,"PEROKOVIĆ j.d.o.o., Opća veterinarska praksa za male životinje PEROKOVIĆ",Opća veterinarska praksa za male životinje,Ulica Antuna Branka Šimića 19,10000,Zagreb,Grad Zagreb,01/7898-850,https://www.facebook.com/vet.perokovic/?locale=hr_HR
+praksa,"AGRO-MART d.o.o., Veterinarska praksa MORNA",Opća veterinarska praksa za male životinje,Donje Svetice 31,10000,Zagreb,Grad Zagreb,01/2316-052,http://www.morna.hr/
+praksa,"VETERINARSKA STANICA VRBOVEC d.o.o., Opća veterinarska praksa za male životinje",Opća veterinarska praksa za male životinje,Lonjica 110,10340,Vrbovec,Zagrebačka,01/2724-006,https://vsvrbovec.hr/
+praksa,"Specijalistička veterinarska praksa PERVANA-VET, vl. Ana Pervan Varga",Specijalistička veterinarska praksa za male životinje,Punikve 18 A,42240,Ivanec,Varaždinska,042/782-025;  091/5174-494,https://www.facebook.com/p/Specijalisti%C4%8Dka-veterinarska-praksa-Pervana-vet-100057307847344/?_rdr
+praksa,"Veterinarska ambulanta privatne prakse za male životinje ""SIMBA"", vl. Berislav Sivončik",Opća veterinarska praksa za male životinje,Kukuljevićeva 48,42000,Varaždin,Varaždinska,042/300-700;  098/161-8521,https://simba.hr/
+praksa,SPECIJALISTIČKA VETERINARSKA PRAKSA SABOLIĆ d.o.o.,Opća veterinarska praksa za male životinje,Jalkovečka 5,42000,Varaždin,Varaždinska,,
+praksa,"PREVENTIA d.o.o., Veterinarska praksa za male životinje VETOSAN",Opća veterinarska praksa za male životinje,Bartula Kašića 18,31000,Osijek,Osječko-Baranjska,031/208-500;  098/411-888,
+praksa,"MAJCAN VETERINARSKA AMBULANTA d.o.o., Opća veterinarska praksa za male životinje Majcan",Opća veterinarska praksa za male životinje,Ruđera Boškovićeva 314,43000,Bjelovar,Bjelovarsko-Bilogorska,"043/228 100,  043/217 183",https://www.majcan.hr/
+praksa,"Opća veterinarska praksa za male životinje u sastavu obrta Vet Pet Šapice, vl. Martin Knežević",Opća veterinarska praksa za male životinje,Kralja Dmitra Zvonimira 184,35400,Nova Gradiška,Brodsko-Posavska,099/6788-200;  035/628-442,https://www.facebook.com/p/Vet-Pet-%C5%A0apice-100095217308670/?_rdr
+praksa,"VETERINARSKA PRAKSA ZA MALE ŽIVOTINJE ULTRA VET D.O.O., Veterinarska praksa za male životinje ULTRA VET",Opća veterinarska praksa za male životinje,Trg labinskih rudara 7,52220,Labin,Istarska,091/1495-607,https://m.facebook.com/100065323430145/
+praksa,"VETERINA OMIŠ j.d.o.o., Opća veterinarska praksa za male životinje VETERINA OMIŠ",Opća veterinarska praksa za male životinje,Glagoljaška 7,21310,Omiš,Splitsko-Dalmatinska,021/861-129,https://www.facebook.com/veterinaomis1/?locale=hr_HR
+praksa,"GRACIN & PERČIĆ d.o.o., Veterinarska praksa GRACIN & PERČIĆ",Opća veterinarska praksa za male životinje,Velebitska 51,21000,Split,Splitsko-Dalmatinska,021/278-311,
+praksa,"FERARICA d.o.o., Veterinarska praksa za male životinje FERARICA",Opća veterinarska praksa za male životinje,Kozala 51,51000,Rijeka,Primorsko-Goranska,051/514-399,http://www.ferarica.com/
+praksa,"A.N.D.A.R. d.o.o., Specijalistička veterinarska praksa A.N.D.A.R.",Specijalistička veterinarska praksa za male životinje,PREMANTURSKA CESTA 205,52100,Pula - Pola,Istarska,052/573-128,https://www.facebook.com/p/Veterinarska-Ambulanta-Andar-100063473801975/?locale=hr_HR
+praksa,"VETERINARSKA AMBULANTA ŠAPA, OBRT ZA USLUGE I TRGOVINU, VL. BORIS LJUBIĆ",Opća veterinarska praksa za male životinje,Taborska 5a,10000,Zagreb,Grad Zagreb,01/3098-038;  091/2337-868,https://www.facebook.com/veterinarskaambulanta.sapa/?locale=hr_HR
+praksa,"AGRO-MART d.o.o., Veterinarska praksa za male životinje Morna Doggenius",Opća veterinarska praksa za male životinje,Rudečka cesta 246,10000,Zagreb,Grad Zagreb,01/5804-443,http://www.morna.hr/
+praksa,"EQUI-VET d.o.o., Opća veterinarska praksa za male životinje BEST FRIENDS",Opća veterinarska praksa za male životinje,XIV Podbrežje 2,10000,Zagreb,Grad Zagreb,01/6701-171;  098/722-381,https://bestfriendsvetzagreb.com/
+praksa,Specijalistička veterinarska praksa VETERINA BRANIMIR Dekanići,Specijalistička veterinarska praksa za male životinje,Dekanići 15,10000,Zagreb,Grad Zagreb,01/3887-542,https://www.veterinabranimir.hr/
+praksa,"LunimirVet j.d.o.o., Specijalistička veterinarska praksa za male životinje Lunimirvet j.d.o.o.",Specijalistička veterinarska praksa za male životinje,Kraljevićeva 20,10000,Zagreb,Grad Zagreb,091 5925821,
+praksa,"STELAR d.o.o., Specijalistička veterinarska praksa za male životinje - naziva Specijalistička veterinarska praksa Stelar",Specijalistička veterinarska praksa za male životinje,Ulica Frana Krste Frankopana 5,10000,Zagreb,Grad Zagreb,095/3501-475,https://www.stelar.hr/index.html
+praksa,"Specijalizirana veterinarska ambulanta za mesojede i druge male životinje ""DON""",Specijalistička veterinarska praksa za male životinje,LAŠĆINSKA CESTA 82,10000,Zagreb,Grad Zagreb,01/2346-622;  091/5395-132,https://www.donvetzagreb.com/
+praksa,"VETERINARSKA PRAKSA ZA MALE ŽIVOTINJE PET PLUS d.o.o., Veterinarska praksa za male životinje PET PLUS",Opća veterinarska praksa za male životinje,Senjska 38,47000,Karlovac,Karlovačka,047/421-136; 091/5868-882,https://veterina-petplus.hr/
+praksa,VETERINARSKA PRAKSA ZA MALE ŽIVOTINJE PET PLUS društvo s ograničenom odgovornošću za veterinarske  usluge i trgovinu,Opća veterinarska praksa za male životinje,Senjska ulica 38,47000,Karlovac,Karlovačka,047/421-136;  091/586-8882,https://veterina-petplus.hr/
+praksa,"Specijalistička veterinarska praksa za male životinje PETVET, obrt za veterinarsku djelatnost",Specijalistička veterinarska praksa za male životinje,Ljudevita Gaja 3,47300,Ogulin,Karlovačka,047/525-658,
+praksa,"Specijalistička veterinarska praksa ValVet d.o.o., Specijalistička veterinarska praksa za male životinje",Specijalistička veterinarska praksa za male životinje,Reisnerova 14,31000,Osijek,Osječko-Baranjska,031/354-798;  091/7698-571,https://svp-valvet.hr/
+praksa,"RVIJ TRADE d.o.o., Specijalistička veterinarska praksa za male životinje-Specijalistička veterinarska praksa ""LEO""",Specijalistička veterinarska praksa za male životinje,Ante Starčevića 21A,23000,Zadar,Zadarska,095/393-442,
+praksa,"PRAXIS-VET d.o.o., Veterinarska ambulanta privatne prakse SLAVONSKI BROD",Specijalistička veterinarska praksa za male životinje,Jagićeva 50,35000,Slavonski Brod,Brodsko-Posavska,035/426-004; 098/523-961,www.praxis-vet.hr
+praksa,"AS-EKO d.o.o., Opća veterinarska praksa za male životinje",Opća veterinarska praksa za male životinje,"Industrijska zona Podi, Dolačka 2",22000,Šibenik,Šibensko-Kninska,022/339-431,https://as-eko.hr/
+praksa,"DEAN VETERINA d.o.o., Specijalistička veterinarska praksa PET VET",Specijalistička veterinarska praksa za male životinje,Velebitska 70,21000,Split,Splitsko-Dalmatinska,021/333-777;  021/781-914,https://www.pet-vet.com.hr/
+praksa,"VETERINA IVANA PILIĆ j.d.o.o., Opća veterinarska praksa za male životinje VETERINA IVANA PILIĆ",Specijalistička veterinarska praksa za male životinje,Barakovićeva 19,21000,Split,Splitsko-Dalmatinska,021/502-555;  099/4679-999,https://veterina-ivana-pilic.hr/
+praksa,"Veterinarska ambulanta privatne prakse za male životinje ""Pets2Vets"", vl. Alan Genter",Opća veterinarska praksa za male životinje,Ivice Hiršla 11,48000,Koprivnica,Koprivničko-Križevačka,048/625-088;  098/1800-245,http://www.pets2vets.hr
+praksa,"VETERINARSKA AMBULANTA ZA MALE ŽIVOTINJE ""FABELA"", USLUŽNO TRGOVAČKI OBRT, VL. ALAN JURCA",Opća veterinarska praksa za male životinje,Tratinska 53/I,10000,Zagreb,Grad Zagreb,01/3095-340;  091/5195-118,http://www.fabela.hr/
+praksa,"VETERINARSKA AMBULANTA LJUBIMAC d.o.o., Specijalistička veterinarska praksa za male životinje",Specijalistička veterinarska praksa za male životinje,Matije Ivanića 19,10000,Zagreb,Grad Zagreb,01/3750-339,http://www.ljubimac.net/
+praksa,"VET LIFE d.o.o., Specijalistička veterinarska praksa Vet life d.o.o.",Specijalistička veterinarska praksa za male životinje,Josipa Pupačića 6,10000,Zagreb,Grad Zagreb,01/5810-444,https://www.veterinarke.com/
+praksa,"MIKI-VET j.d.o.o., Opća veterinarska praksa za male životinje Miki-vet",Opća veterinarska praksa za male životinje,Zagrebačka cesta 14,10000,Zagreb,Grad Zagreb,01/3750-100,https://www.mikivet.hr/
+praksa,"BUNAREVIĆ-MIRČETIĆ d.o.o., Specijalistička veterinarska praksa za male životinje",Specijalistička veterinarska praksa za male životinje,Hribarov prilaz 10,10000,Zagreb,Grad Zagreb,01/6601-654;  098/9466-598,http://www.veterinarskaambulanta.com.hr/
+praksa,"VETERINARSKA AMBULANTA NERA, OBRT ZA USLUGE I TRGOVINU, VL. DRAGAN PETROVIĆ",Opća veterinarska praksa za male životinje,Avenija Dubrava 149,10000,Zagreb,Grad Zagreb,01/2915-988,https://nera-vet.hr/
+praksa,"VETERINARSKA AMBULANTA ZA KUĆNE LJUBIMCE, VL. TIHOMIR DRAGOJLOV",Opća veterinarska praksa za male životinje,KRALJA ZVONIMIRA 122,10000,Zagreb,Grad Zagreb,01/2322-419,
+praksa,"Specijalistička veterinarska praksa za male životinje PETVET, vl. Petra Mihelčić",Specijalistička veterinarska praksa za male životinje,Stara cesta 30,47300,Ogulin,Karlovačka,047/525-658,
+praksa,"VET-PET, obrt za veterinarske usluge, vl. Tomislav Vrgoč",Opća veterinarska praksa za male životinje,Vukovarska cesta 28,31000,Osijek,Osječko-Baranjska,095/8211-731,
+praksa,"""BOBANOVIĆ"" specijalizirana veterinarska ambulanta za male životinje",Opća veterinarska praksa za male životinje,A. Starčevića 33,20000,Dubrovnik,Dubrovačko-Neretvanska,020/357-345,https://bobanovicvet.hr/
+praksa,Opća veterinarska praksa za male životinje - Vet Pet Šapice,Opća veterinarska praksa za male životinje,Kralja Dmitra Zvonimira 184,35400,Nova Gradiška,Brodsko-Posavska,099/6788-200;  035/628-442,https://www.facebook.com/p/Vet-Pet-%C5%A0apice-100095217308670/?_rdr
+praksa,"""MAZA"", Zajednička veterinarska ambulanta privatne prakse za male životinje, vl. Zoran Šimec i Hrvoje Majnarić",Opća veterinarska praksa za male životinje,Hrastina 23,10430,Samobor,Zagrebačka,01/3324-179;  091/5126-112,http://maza.hr/index.asp
+praksa,"Veterinarska praksa za male životinje, vl. Anja Žužić i Iva Slavić",Opća veterinarska praksa za male životinje,Špinel 16 A,52470,Umag - Umago,Istarska,052/721-366;  091/529-8291,
+praksa,"KOZA j.d.o.o., Veterinarska praksa za male životinje SNOOPY",Opća veterinarska praksa za male životinje,Frankopanska 57/1,21300,Makarska,Splitsko-Dalmatinska,021/208-189,
+praksa,"Veterinarska ambulanta privatne prakse za male životinje i trgovina DELONGA, vl. Stipe Delonga",Opća veterinarska praksa za male životinje,Kroz Smrdečac 45,21000,Split,Splitsko-Dalmatinska,021/772-056,https://www.ambulanta-delonga.com/index.html
+praksa,"NJUŠKA d.o.o., Opća veterinarska praksa za male životinje ""NJUŠKA""",Opća veterinarska praksa za male životinje,Antuna Barca 3b,51000,Rijeka,Primorsko-Goranska,051/411-013,https://www.facebook.com/OvoJeNjuska/?locale=hr_HR
+praksa,"VETERINARSKA PRAKSA AVA FIZIO VET d.o.o., Veterinarska praksa AVA FIZIO VET",Opća veterinarska praksa za male životinje,Tina Ujevića 30,52450,Vrsar - Orsera,Istarska,052/649-422;  091/4355-855,https://www.facebook.com/ava.fizio.vet/
+praksa,Opća veterinarska praksa za male životinje Feliks,Opća veterinarska praksa za male životinje,Matije Gupca 13,33000,Virovitica,Virovitičko-Podravska,033/620-290,
+praksa,"KASTOR I DAR d.o.o., Veterinarska ambulanta privatne prakse KASTOR I DAR",Opća veterinarska praksa za male životinje,Oboj 48,10000,Zagreb,Grad Zagreb,01/2341-222,http://www.veterinar.com.hr/
+praksa,OPĆA VETERINARSKA PRAKSA FIZIOVET 2,Opća veterinarska praksa za male životinje,ULICA KRALJA ZVONIMIRA 72,10000,Zagreb,Grad Zagreb,01/2301-776,
+praksa,"VetCode d.o.o., Opća veterinarska praksa za male životinje BlueDot",Opća veterinarska praksa za male životinje,Miramarska cesta 107,10000,Zagreb,Grad Zagreb,099/2100-919,https://www.bluedot.vet/#kontakti
+praksa,"AL SHAMIL d.o.o., Opća veterinarska praksa za male životinje Vipet j.d.o.o.",Opća veterinarska praksa za male životinje,TRNJANSKA CESTA 126A,10000,Zagreb,Grad Zagreb,01/6116-311,http://www.vipet.hr/
+praksa,"NINA VET d.o.o., Opća veterinarska praksa za male životinje-Veterinarska praksa NINA VET",Opća veterinarska praksa za male životinje,Ljerka Šram 4,10000,Zagreb,Grad Zagreb,01/7812-580,https://www.facebook.com/p/Veterinarska-praksa-NINA-VET-100088077557530/
+praksa,"SPECIJALISTIČKA VETERINARSKA PRAKSA HOLISTIC VET, OBRT ZA VETERINARSKE I DRUGE USLUGE VL. ALMA MARUKIĆ-ČALIĆ",Specijalistička veterinarska praksa za male životinje,ULICA PRVE GARDIJSKE BRIGADE TIGROVI 27C,10000,Zagreb,Grad Zagreb,01/7788-787;  091/5618-704,https://www.holistic-vet.hr/hr/
+praksa,"AMBULANTA ZA MALE ŽIVOTINJE GRAČANI , USLUŽNO TRGOVAČKI OBRT, VL. TINA VUKOVIĆ DR.VET.MED.",Opća veterinarska praksa za male životinje,BUNJAKI 6,10000,Zagreb,Grad Zagreb,01/4645-631,
+praksa,AMBULANTA ZA MALE ŽIVOTINJE KATALINIĆ VL. BOŽENA KATALINIĆ,Opća veterinarska praksa za male životinje,KRIŽNOG PUTA 66,10000,Zagreb,Grad Zagreb,01/2853-368,
+praksa,"Domi-vet d.o.o., Opća veterinarska praksa za male životinje",Opća veterinarska praksa za male životinje,,49250,Zlatar,Krapinsko-Zagorska,098/9352-717,
+praksa,"Veterinarska ambulanta privatne prakse u sastavu obrta ""VETERINARSKA AMBULANTA PRIVATNE PRAKSE"" OBRT, vl. SNJEŽANA HOLUBEK",Opća veterinarska praksa za male životinje,Radićev trg 12D,43000,Bjelovar,Bjelovarsko-Bilogorska,043/246-561 098/166-3550,https://www.veterinarska-ambulanta-holubek.hr/
+praksa,"Veterinarska ambulanta PAPONJA d.o.o., Veterinarska praksa za male životinje",Opća veterinarska praksa za male životinje,Kneza Domagoja 2/2,20350,Metković,Dubrovačko-Neretvanska,020/680-223,https://www.facebook.com/vet.amb.paponja/?locale=hr_HR
+praksa,"ZOO-VET, veterinarska ambulanta d.o.o., Veterinarska praksa za male životinje",Opća veterinarska praksa za male životinje,Put Vukića 19,23000,Zadar,Zadarska,023/224-310,https://www.facebook.com/zoovetzadar.veterinarskaambulanta/?locale=hr_HR
+praksa,"Veterinarska Ambulanta Benčić, za male životinje vl. Igor Benčić, Pazin",Opća veterinarska praksa za male životinje,Istarskih narodnjaka 24,52000,Pazin,Istarska,052/621-921,
+praksa,"ARIVET, obrt za veterinarsku djelatnost vl. Ivana Boranić",Opća veterinarska praksa za male životinje,Kralja Tomislava 17,35410,Nova Kapela,Brodsko-Posavska,035/456-090,https://www.facebook.com/Arivet17/
+praksa,"GOLDI, vl. dr.sc. Silvija Rakočević i dr. sc. Tatjana Šoban",Opća veterinarska praksa za male životinje,Tomašićeva 8,10000,Zagreb,Grad Zagreb,01/4854-725;  099/542-0187,https://www.goldi-vet.hr/
+praksa,"VETERINARSKA AMBULANTA ""BIBINO"", VL. ALEKSANDAR DÜRRIGL",Opća veterinarska praksa za male životinje,Jurjevska 25,10000,Zagreb,Grad Zagreb,01/4669-909;  091/4669-909,https://bibino.com.hr/
+praksa,"VETERINARSKA AMBULANTA - NOA, OBRT ZA USLUGE, VL. TIHOMIR KLJAIĆ",Opća veterinarska praksa za male životinje,V. Poljanice 2,10000,Zagreb,Grad Zagreb,01/2923-202;  098/911-2948,
+praksa,"Dobra veterinarska praksa d.o.o., Opća veterinarska praksa HAPPY VET",Opća veterinarska praksa za male životinje,Bolnička 63,10000,Zagreb,Grad Zagreb,01/3483-600,
+praksa,"COSA DEL CANI d.o.o., Specijalistička veterinarska praksa DOKTOR VAU",Specijalistička veterinarska praksa za male životinje,Davora Zbiljskog 24I,10000,Zagreb,Grad Zagreb,01/7077-999,
+praksa,"VET VIZIJA d.o.o., Specijalistička veterinarska praksa za male životinje VET VISION",Specijalistička veterinarska praksa za male životinje,Turinina 5,10000,Zagreb,Grad Zagreb,01/6624-847,https://www.facebook.com/vetvision.specijalistickaveterinarskapraksa/?locale=hr_HR
+praksa,"MALA ŽIVOTINJA d.o.o. , Ambulanta za male životinje ""PODSUSED""",Opća veterinarska praksa za male životinje,Vinobreška 20,10000,Zagreb,Grad Zagreb,01/349-1444;  091/567-2820,
+praksa,Veterinarska praksa za male životinje u sastavu tvrtke AGRO-MART d.o.o.,Opća veterinarska praksa za male životinje,Rudeška cesta 234,10000,Zagreb,Grad Zagreb,01/5804-443,
+praksa,"VETERINARSKA PRAKSA DR. ŠANDRIĆ j.d.o.o., Veterinarska praksa DR. ŠANDRIĆ",Opća veterinarska praksa za male i velike životinje,Karakašica 15,21230,Sinj,Splitsko-Dalmatinska,021/823-195,https://m.facebook.com/people/Veterinarska-praksa-Dr-%C5%A0andri%C4%87/100054406303970/
+praksa,VETERINARSKA PRAKSA DR. ŠANDRIĆ j.d.o.o. za veterinarsku djelatnost,Opća veterinarska praksa za male i velike životinje,Karakašica 15,21230,Sinj,Splitsko-Dalmatinska,021/823-195,https://m.facebook.com/people/Veterinarska-praksa-Dr-%C5%A0andri%C4%87/100054406303970/
+praksa,"TIP-TIP, vl. Ilija Stević",Opća veterinarska praksa za male i velike životinje,Josipa Lovretića 10,32100,Vinkovci,Vukovarsko-Srijemska,032/306-901 098/287-028,
+praksa,ŽARKO ŽGURIĆ,Opća veterinarska praksa za male i velike životinje,Omiška 18,10000,Zagreb,Grad Zagreb,091/73 98 005,
+praksa,"VETTI GROUP d.o.o., Veterinarska ambulanta BUBA",Opća veterinarska praksa za male i velike životinje,Dore Pfanove 11,10000,Zagreb,Grad Zagreb,01/3771-761,http://www.buba-vet.hr/
+praksa,ANIMALIA (u sastavu tvrtke VETERINARSKA AMBULANTA ANIMALIA d.o.o.),Opća veterinarska praksa za male i velike životinje,Pašmanski Prilaz bb,23000,Zadar,Zadarska,023/323-625,
+praksa,"REX, vl. Siniša Mišović",Opća veterinarska praksa za male i velike životinje,Lacco Sercio 5,52210,Rovinj - Rovigno,Istarska,052/813-368 098/420-459,
+praksa,"PEROKOVIĆ (u sastavu tvrtke VETERINARSKA AMBULANTA PEROKOVIĆ d.o.o., ista adresa)",Opća veterinarska praksa za male i velike životinje,A.B.Šimića 19,10000,Zagreb,Grad Zagreb,01/7898-850;01/2301 900;091/2001,
+praksa,"Stelar, društvo s ograničenom odgovornošću, specijalistička veterinarska praksa",Opća veterinarska praksa za male i velike životinje,Frana Krste Frankopana 5,10000,Zagreb,Grad Zagreb,01/4111-122;  095/3501-475,https://www.stelar.hr/
+praksa,"VETERINARSKA AMBULANTA ČETIRI ŠAPE d.o.o., Veterinarska praksa za male životinje",Opća veterinarska praksa za male i velike životinje,Basaričekova 4,10310,Ivanić-Grad,Zagrebačka,01/2888-133;  098/372-993,https://m.facebook.com/people/Veterinarska-Ambulanta-%C4%8Cetiri-%C5%A0ape/100063750033831/?locale=fo_FO
+praksa,NEVEN TANACKOVIĆ,Opća veterinarska praksa za male i velike životinje,Trg mladosti 15,48000,Koprivnica,Koprivničko-Križevačka,048/626-505 091/726-6032,
+praksa,"DR. PEZO, vl. Vladimir Pezo",Opća veterinarska praksa za male i velike životinje,Stonska 1f,10020,Zagreb,Grad Zagreb,01/6551-331 098/231-728,
+praksa,"FIDO, vl. Renata Čokolić",Opća veterinarska praksa za male i velike životinje,Kapucinska ulica 63,10000,Zagreb,Grad Zagreb,01/2859-285 098/457-172,
+praksa,"Veterinarska praksa Rajković, vl. Petar Rajković",Opća veterinarska praksa za male i velike životinje,Ivančani 26,10344,Farkaševac,Zagrebačka,,
+praksa,"PET PLUS, vl. Nina Domišljanović",Opća veterinarska praksa za male i velike životinje,Senjska 38,47000,Karlovac,Karlovačka,047/421-136 099/3505-734,
+praksa,"VETERINARSKA STANICA d.o.o., Opća veterinarska praksa za male životinje DUBOVAC",Opća veterinarska praksa za male i velike životinje,S.S. Kranjčevića 3,47000,Karlovac,Karlovačka,047/648-075; 099/3825-743,https://www.vsklc.hr/
+praksa,"DIVA VETERINA j.d.o.o., Opća veterinarska praksa za velike i male životinje",Opća veterinarska praksa za male i velike životinje,Mlinska ulica 22,20350,Metković,Dubrovačko-Neretvanska,020/681-277,https://www.facebook.com/p/DIVA-Veterina-jdoo-100063487873231/?locale=hr_HR
+praksa,Opća veterinarska praksa za male i velike životinje u sastavu tvrtke VETERINARSKA MEDICINA d.o.o.,Opća veterinarska praksa za male i velike životinje,Eugena Kumičića 8,35000,Slavonski Brod,Brodsko-Posavska,035/444-959,
+praksa,"DOGO, vl. Goran Domazet",Opća veterinarska praksa za male i velike životinje,Rudarska 1,52220,Labin,Istarska,052/856-566,
+praksa,"Veterinarska ambulanta privatne prakse za male životinje BOŠNJAK-MIOČ, vl. Ivica Bošnjak i Igor Mioč",Opća veterinarska praksa za male i velike životinje,Odeska 10,21000,Split,Splitsko-Dalmatinska,021/455-594 098/9786-086,
+praksa,"VAU-VAU, vl. Tadija Peraić",Opća veterinarska praksa za male i velike životinje,Stubište Baredine 6,51410,Opatija,Primorsko-Goranska,051/703-060 091/6030-601 091/603,
+praksa,"BUBA, vl. Bruno Ljolje",Opća veterinarska praksa za male i velike životinje,ILICA 184,10000,Zagreb,Grad Zagreb,01/3771-761; 098/703-009,
+praksa,"AV-AV, vl. Ana Mitrović",Opća veterinarska praksa za male i velike životinje,dr. Franje Tuđmana 56 A,23000,Zadar,Zadarska,023/305-181 091/568 0572,
+praksa,"MOUNT TRADE d.o.o., Opća veterinarska praksa za male i velike životinje MALA ŠAPA",Opća veterinarska praksa za male i velike životinje,Industrijska 13,43280,Garešnica,Bjelovarsko-Bilogorska,091/4859-148;  043/634-202,https://mount-trade.hr/
+praksa,"NJUŠKA d.o.o., vl. Darko Luštica",Opća veterinarska praksa za male i velike životinje,Ivana Matrljana 1a,51000,Rijeka,Primorsko-Goranska,051/411-013,
+praksa,BUNAREVIĆ-MIRČETIĆ d.o.o.,Opća veterinarska praksa za male i velike životinje,Vajdin vijenac 16,10000,Zagreb,Grad Zagreb,01/2339-127 098/9466-598,
+praksa,VETERINARSKA PRAKSA DADO d.o.o. za trgovinu i usluge,Opća veterinarska praksa za male i velike životinje,Kralja Petra Svačića 22,23210,Biograd Na Moru,Zadarska,023/383-985,https://www.facebook.com/p/Veterinarska-praksa-Dado-100046601726093/?locale=hr_HR
+praksa,GORAN BOBANEVIĆ-ČOLIĆ,Opća veterinarska praksa za male i velike životinje,A. Starčevića 33,20000,Dubrovnik,Dubrovačko-Neretvanska,020/357-345 098/243-938,
+praksa,"ANIMA-VITA d.o.o., Opća veterinarska praksa za male životinje",Opća veterinarska praksa za male i velike životinje,Uz jadransku cestu 1/b,20236,Dubrovnik,Dubrovačko-Neretvanska,020/454-333,https://www.vetdubrovnik.com/
+praksa,"""VET-POINT"", VETERINARSKA AMBULANTA ZA KUĆNE LJUBIMCE, VL. ŽARKO ĆIRIĆ",Opća veterinarska praksa za male i velike životinje,Dekanići 15,10000,Zagreb,Grad Zagreb,01/3883-403 091/633-8896,
+praksa,"VETERINARSKA PRAKSA AVA FIZIO VET, društvo s ograničenom odgovornošću za veterinarsku djelatnost",Opća veterinarska praksa za male i velike životinje,Tina Ujevića 30,52440,Poreč - Parenzo,Istarska,052/649-422;  091/4355-855,https://www.facebook.com/ava.fizio.vet/
+praksa,TINA VUKOVIĆ,Opća veterinarska praksa za male i velike životinje,Bunjaki 6,10000,Zagreb,Grad Zagreb,01/4645-631 098/902-1321,
+praksa,"Veterinarska ambulanta privatne prakse za male životinje ""VITA"", vl. Nenad Gulija",Opća veterinarska praksa za male i velike životinje,J. Križanića 85,42000,Varaždin,Varaždinska,042/260-585 098/943-9857,
+praksa,Specijalistička veterinarska praksa ValVet društvo s ograničenom odgovornošću za veterinarske djelatnosti,Opća veterinarska praksa za male i velike životinje,Adama Reisnera 14,31000,Osijek,Osječko-Baranjska,031/354-798;  099/7397-443,https://svp-valvet.hr/
+praksa,VETERINARSKA AMBULANTA INES-VET d.o.o. u sastavu tvrtke INES-VET d.o.o.,Opća veterinarska praksa za male i velike životinje,Trg Antuna Gustava Matoša 3,43000,Bjelovar,Bjelovarsko-Bilogorska,"043/636-612, 099/6888-733",https://www.facebook.com/InesVeterinarska/?locale=hr_HR
+praksa,"Veterinarska ambulanta privatne prakse za velike i male životinje, vl. dr. vet. med. Saša Mohač",Opća veterinarska praksa za male i velike životinje,Dubrava Zabočka 181,49210,Zabok,Krapinsko-Zagorska,049/221-499 098/699-310,https://www.facebook.com/sasamohac/?locale=hr_HR
+praksa,"DON, vl. Nenad Domjan",Opća veterinarska praksa za male i velike životinje,Lašćinska cesta 82,10000,Zagreb,Grad Zagreb,01/234-6622 091/555-4202,
+praksa,"NERA, vl. Dragan Petrović",Opća veterinarska praksa za male i velike životinje,Avenija Dubrava 151a,10000,Zagreb,Grad Zagreb,01/2915-988 091/545-7954,
+praksa,SPECIJALISTIČKA VETERINARSKA AMBULANTA ZA MALE ŽIVOTINJE DUGI DOG,Specijalistička veterinarska praksa za male životinje,Kolodvorska ulica 68,10340,Vrbovec,Zagrebačka,01/638433,
+praksa,"Opća veterinarska praksa za male životinje ""HOP"", Viškovo",Opća veterinarska praksa za male i velike životinje,Furićevo 17,51216,Viškovo,Primorsko-Goranska,,
+praksa,Veterinarska praksa ZetaVet d.o.o. za veterinarske djelatnosti,Opća veterinarska praksa za male životinje,Matije Gupca 12,31550,Valpovo,Osječko-Baranjska,099/1635-512,https://www.facebook.com/p/Veterinarska-praksa-ZetaVet-Valpovo-61563250292455/?locale=hr_HR
+praksa,MAČJI KAŠALJ društvo s ograničenom odgovornošću za veterinarske djelatnosti i trgovinu,Specijalistička veterinarska praksa za male životinje,ULICA DAVORA ZBILJSKOG 24/1,10000,Zagreb,Grad Zagreb,01 2229 555,macjikasalj.hr
+praksa,SPECIJALISTIČKA VETERINARSKA PRAKSA TRI MACE društvo s ograničenom odgovornošću za veterinarske usluge i trgovinu,Specijalistička veterinarska praksa za male životinje,VUKOVARSKA 30,43000,Bjelovar,Bjelovarsko-Bilogorska,"043/525-273, 091/882-1337",
+praksa,VET FLEX d.o.o. za veterinarsku djelatnost,Opća veterinarska praksa za male životinje,ŠOPOTSKA ULICA 4,23000,Zadar,Zadarska,095/501-3872,https://www.facebook.com/people/Veterinarska-Praksa-Vet-Flex/pfbid0QPqarsm8uyWKth3EKrD2677zHWJL5tPvGULoR1rMdASpEBtykRvwrne4j2nHHTQil/
+praksa,Veterinarska praksa VET. AMAR d.o.o. za veterinarske djelatnosti,Opća veterinarska praksa za male životinje,JAMSKA 2,52463,Višnjan - Visignano,Istarska,052/352-579,www.vetamar.com
+praksa,TUROPOLJE VET d.o.o. za usluge i trgovinu,Specijalistička veterinarska praksa za male životinje,HORVATOVA ULICA 56,10410,Velika Gorica,Zagrebačka,"01/2009-485, 099/220-6938",vetco.hr
+praksa,Specijalistička veterinarska praksa za male životinje ŠIBENIK VET,Specijalistička veterinarska praksa za male životinje,DONJE POLJE 48,22000,Šibenik,Šibensko-Kninska,091/504-5704,
+praksa,Opća veterinarska praksa MEDI VET d.o.o.,Opća veterinarska praksa za male životinje,DRINSKA ULICA 26,10000,Zagreb,Grad Zagreb,01/4102-439,
+služba,"LUKAČ d.o.o., Derežani 66",,Derežani 66,10310,Ivanić-Grad,Zagrebačka,01/3098-884,http://lukac.hr/
+služba,ARGUMENTUM VITAE d.o.o. za trgovinu i usluge,,Đakovština 3,31000,Osijek,Osječko-Baranjska,031/235-504,https://www.zito.hr/hr/clanica-grupe/20
+služba,ŽITO d.o.o. za proizvodnju i trgovinu,,Đakovština 3,31000,Osijek,Osječko-Baranjska,031/235-504;  031/389-366,http://www.zito.hr/
+služba,UNIKOM d.o.o. za komunalno gospodarstvo,,Ružina ulica 11A,31000,Osijek,Osječko-Baranjska,031/374-212,http://unikom.hr/
+služba,"PRO MILK društvo s ograničenom odgovornošću za trgovinu, proizvodnju i usluge",,Sadilovac 2A,47245,Rakovica,Karlovačka,047/417-288,
+služba,"MAJDAK-PROMET društvo s ograničenom odgovornošću za proizvodnju, trgovinu, ugostiteljstvo i usluge",,Kuhačeva 22,43500,Daruvar,Bjelovarsko-Bilogorska,043/331-804,
+služba,"BIO-VET d.o.o. za proizvodnju, promet i usluge",,Donji Sređani 6,43506,Dežanovac,Bjelovarsko-Bilogorska,043/286-120;  043/286-129,https://perfa.hr/
+služba,"OBUČNI CENTAR VODIČA I SLUŽBENIH PASA ""SATNIK KREŠIMIR IVOŠEVIĆ"" PUKOVNIJE VOJNE POLICIJE",,Domobranska bb,10370,Dugo Selo,Zagrebačka,01/4861-944;  01/4861-802,https://www.vojna-policija.com/obucni-centar-vojne-policijesatnik-kresimir-ivosevic/
+služba,AGROKOKA - PULA društvo s ograničenom odgovornošću za proizvodnju i promet peradarskih proizvoda,,Želiski 25,52207,Barban,Istarska,052/543-700,https://www.facebook.com/p/Agrokoka-Pula-doo-100067161703831/
+služba,"CENTAR ZA RAZVOJ POLJOPRIVREDE I TRGOVINU POLJOPRIVREDNIM PROIZVODIMA d.o.o., Utinja 12",,Utinja 12,47000,Karlovac,Karlovačka,047/654-460,https://crpk.hr/
+služba,VRANA d.o.o. za proizvodnju i trgovinu hranom,,II. Peradarska ul. 1,23210,Biograd Na Moru,Zadarska,023/386-048;  023/386-830,https://vrana.hr/
+služba,BOVIS POLJOPRIVREDA društvo s ograničenom odgovornošću za proizvodnju i usluge,,Kralja Tomislava 3A,43240,Čazma,Bjelovarsko-Bilogorska,098/9866-814,
+služba,"ZDENAČKA FARMA društvo s ograničenom odgovornošću za proizvodnju mlijeka, uzgoj stoke i poljodjelsku proizvodnju",,Mate Lovraka 118b,43293,Grubišno Polje,Bjelovarsko-Bilogorska,043/427-340,https://www.granolio.hr/kontakt/
+služba,"GORUP STOČARSTVO d.o.o., Bilogorska bb",,Bilogorska bb,43212,Rovišće,Bjelovarsko-Bilogorska,049/200-888;  049/550-753,
+služba,WEST d.o.o. za poljoprivredu i usluge,,Vladimira Nazora 104A,31542,Magadenovac,Osječko-Baranjska,031/647-049;  091/6671-266,https://www.zito.hr/hr/clanica-grupe/21
+služba,"WEST d.o.o.,  Ekonomija Šljivoševci bb",,Ekonomija Šljivoševci bb,31542,Magadenovac,Osječko-Baranjska,031/647-049,https://www.zito.hr/hr/clanica-grupe/21
+služba,"KORINA PROIZVODNJA d.o.o. poljoprivreda, proizvodnja i promet",,Radnička ulica 14a,44323,Novska,Sisačko-Moslavačka,044/600-535,
+služba,"P P K d.d., VETERINARSKA SLUŽBA ŠUMBAR",,Rečička bb,47000,Karlovac,Karlovačka,047/644-138,
+služba,"CROMARIS d.d., Ilirska cesta bb",,Ilirska cesta bb,23232,Nin,Zadarska,052/448-187,https://cromaris.com/hr/
+služba,"ŽITAR društvo s ograničenom odgovornošću za poljoprivrednu proizvodnju, trgovinu i usluge",,Kralja Držislava 1,31540,Donji Miholjac,Osječko-Baranjska,031/644-623;  031/644-653,https://zitar.eu/
+služba,POLOJ društvo s ograničenom odgovornošću za poljoprivredu,,Gornji Poloj 1,47252,Barilović,Karlovačka,098/798-390,
+služba,"AGRO-VET društvo s ograničenom odgovornošću za proizvodnju, promet i usluge",,Alberta Štrige 7,48260,Križevci,Koprivničko-Križevačka,048/850-048,https://www.facebook.com/agrovet.krizevci/
+služba,"AGRO-VET d.o.o., Ljubljanica bb",,Ljubljanica bb,44201,Martinska Ves,Sisačko-Moslavačka,048/850-048,https://www.facebook.com/agrovet.krizevci/about
+služba,"USTANOVA ZOOLOŠKI VRT GRADA ZAGREBA, VETERINARSKA SLUŽBA ZOOLOŠKOG VRTA",,Maksimirski perivoj b.b.,10000,Zagreb,Grad Zagreb,01/7788-536;  01/2302-198,https://zoo.hr/kontakti-sluzbi/
+služba,LEKO društvo s ograničenom odgovornošću za trgovinu i usluge,,Frankopanska ulica 2/2,10000,Zagreb,Grad Zagreb,01/3704-904,
+služba,"MINISTARSTVO PRAVOSUĐA, UPRAVA ZA ZATVORSKI SUSTAV, KAZNIONICA LIPOVICA",,Lipovečka 22,44317,Popovača,Sisačko-Moslavačka,044/692-600,https://mpudt.gov.hr/kaznionica-u-lipovici-popovaci/6572
+služba,"Poljoprivredno poduzeće Ivanec d.o.o., Varaždinska 33",,Varaždinska 33,42240,Ivanec,Varaždinska,042/781-150;  042/781-152,https://pz-ivanec.hr/
+služba,NOVI AGRAR društvo s ograničenom odgovornošću za poljoprivrednu proizvodnju,,Đakovština 3,31000,Osijek,Osječko-Baranjska,031/235-500,https://www.zito.hr/hr/clanica-grupe/6
+služba,"NOVI AGRAR d.o.o.,  Zapadno predgrađe bb",,Zapadno predgrađe bb,31000,Osijek,Osječko-Baranjska,031/250-300,https://www.zito.hr/hr/clanica-grupe/6
+služba,SOKOLARSKI CENTAR  ŠIBENIK,,Škugori b.b.,22000,Šibenik,Šibensko-Kninska,022/642-333,http://sokolarskicentar.com/
+služba,"MAJDAK-PROMET d.o.o.,  Miljanovac 25",,Miljanovac 25,43541,Sirač,Bjelovarsko-Bilogorska,043/331-804,
+služba,"KRMIVA, društvo s ograničenom odgovornošću za unutarnju i vanjsku trgovinu, proizvodnju u poljoprivredi i industriji",,Tomićeva 3,10000,Zagreb,Grad Zagreb,01/4833-993,https://krmiva.hr/
+služba,"P P K karlovačka mesna industrija, dioničko društvo",,Selce 33,47000,Karlovac,Karlovačka,047/645-117,https://pivac.hr/hr
+služba,LACTIS d.o.o. farma muznih krava,,Stjepana Radića 172,31400,Đakovo,Osječko-Baranjska,031/833-420;  098/1858-259,
+služba,SVINJOGOJSKA FARMA LIPOVAČA-PRKOS d.o.o.,,Pustara Lipovača 1,31206,Erdut,Osječko-Baranjska,031/590-455,
+služba,VINDON društvo s ograničenom odgovornošću za proizvodnju i trgovinu,,Lučka ulica 4,35000,Slavonski Brod,Brodsko-Posavska,035/217-600,https://www.vindija.hr/
+služba,"ŠIRJAN društvo s ograničenom odgovornošću za proizvodnju, preradu i trgovinu",,Kusijevec 29,48267,Sveti Petar Orehovec,Koprivničko-Križevačka,048/850-750,https://sirjan.hr/
+služba,VIGENS d.o.o. za proizvodnju i usluge,,Put Sv. Bartula 37,23231,Zadar,Zadarska,023/368-704,
+služba,"AGROKOKA - PULA d.o.o., Valmade 58",,Valmade 58,52100,Pula - Pola,Istarska,052/543-700,https://www.facebook.com/p/Agrokoka-Pula-doo-100067161703831/
+služba,"OBUČNI CENTAR VODIČA I SLUŽBENIH PASA ""SATNIK KREŠIMIR IVOŠEVIĆ"" PUKOVNIJE VOJNE POLICIJE",,Čerinina 23,10000,Zagreb,Grad Zagreb,01/4861-944 01/4861-802 091/554,
+služba,Ustanova ZOOLOŠKI VRT GRADA ZAGREBA,,Fakultetsko dobro 1,10000,Zagreb,Grad Zagreb,01/2008-354,https://zoo.hr/
+služba,GORUP STOČARSTVO d.o.o. za proizvodnju u stočarstvu u stečaju,,Tomaševec 2,49290,Klanjec,Krapinsko-Zagorska,049/200-888;  049/550-753,
+služba,VRANA d.o.o.,,Jankolovica b.b.,23210,Biograd Na Moru,Zadarska,023/386-048 023/386-830 091/323-,
+služba,"MINISTARSTVO PRAVOSUĐA, UPRAVA ZA ZATVORSKI SUSTAV, KAZNIONICA U LEPOGLAVI",,Hrvatskih Pavlina 1,42250,Lepoglava,Varaždinska,042/792-790,https://mpudt.gov.hr/kaznionica-u-lepoglavi/6571?lang=hr
+služba,"SIMENTAL - COMMERCE d.o.o. za trgovinu, proizvodnju i usluge",,Fra Grge Martića 27,31000,Osijek,Osječko-Baranjska,098/339-362,https://www.simental-commerce.hr/
+služba,"CROMARIS d.d., Uvala Budava, Kavran 200",,Uvala Budava Kavran 200,52208,Marčana,Istarska,091/2530-800,https://cromaris.com/hr/odrzivost/nasa-uzgajalista/
+služba,BIK društvo s ograničenom odgovornošću za proizvodnju poljoprivrednih i stočarskih proizvoda i trgovinu,,Bojana 2,43240,Čazma,Bjelovarsko-Bilogorska,043/772-630,
+služba,"PROTEIN društvo s ograničenom odgovornošću za proizvodnju, unutarnju i vanjsku trgovinu i usluge",,Ćirićeva 1,32225,Trpinja,Vukovarsko-Srijemska,032/560-022,
+služba,"POLJOPRIVREDNA ZADRUGA NEGOSLAVCI, Braće Nerandžića bb",,Braće Nerandžića bb,32239,Negoslavci,Vukovarsko-Srijemska,032/517-080,
+služba,"MINISTARSTVO PRAVOSUĐA, UPRAVA ZA ZATVORSKI SUSTAV I PROBACIJU, KAZNIONICA U POŽEGI",,Osječka 77,34000,Požega,Požeško-Slavonska,034/230-400,https://mpudt.gov.hr/kaznionica-u-pozegi/6573
+služba,CENTAR ZA RAZVOJ POLJOPRIVREDE I TRGOVINU POLJOPRIVREDNIM PROIZVODIMA d.o.o. za trgovinu i usluge,,Mostanje 49,47000,Karlovac,Karlovačka,098/1896-999;  047/654-461,https://crpk.hr/
+služba,PIKO d.o.o. za uzgoj i proizvodnju peradi,,Volavje 32 d,10450,Jastrebarsko,Zagrebačka,01/6286-464,https://www.zito.hr/hr/clanica-grupe/36
+služba,"ARGUMENTUM VITAE d.o.o., Veliki Otok 138B",,Veliki Otok 138B,48317,Legrad,Koprivničko-Križevačka,031/235-576;  031/235-500,http://www.zito.hr/
+služba,"ŽITO d.o.o., VETERINARSKA SLUŽBA MALI RASTOVČIĆ",,Mali Rastovčić 6,31403,Vuka,Osječko-Baranjska,031/389-480,https://www.zito.hr/hr
+služba,"PRO MILK d.o.o., Grabovac 216A",,Grabovac 216A,47245,Rakovica,Karlovačka,047/417-288,
+služba,CROMARIS dioničko društvo za marikulturu,,Gaženička cesta 4/b,23000,Zadar,Zadarska,023/254-966,https://cromaris.com/hr/
+služba,"BOVIS d.o.o., Slatine 13",,Slatine 13,32281,Ivankovo,Vukovarsko-Srijemska,031/856-992,
+služba,"LEKO d.o.o., Sinac bb",,Sinac bb,53224,Otočac,Ličko-Senjska,01/3704-904,
+služba,"Ustanova ZOOLOŠKI VRT GRADA ZAGREBA, VETERINARSKA SLUŽBA DUMOVEC",,Franjčevićeva 43,10360,Zagreb,Grad Zagreb,01/2008-354,http://www.azilzagreb.com/ ;https://zoo.hr/kontakti-sluzbi/
+služba,OSILOVAC d.o.o. za poljoprivrednu proizvodnju,,Ferićeva 16,31512,Feričanci,Osječko-Baranjska,031/603-120,
+služba,"SIMENTAL COMMERCE d.o.o., Srijemska 46",,Srijemska 46,31000,Osijek,Osječko-Baranjska,098/339-362,https://www.simental-commerce.hr/
+služba,"MINISTARSTVO PRAVOSUĐA, UPRAVA ZA ZATVORSKI SUSTAV, KAZNIONICA VALTURA",,Valtursko polje 211,52100,Ližnjan - Lisignano,Istarska,052/300-700,https://mpudt.gov.hr/kaznionica-u-valturi/6575
+služba,"KRMIVA d.o.o., Bratina 115A",,Bratina 115A,10451,Pisarovina,Zagrebačka,01/6271-815,https://krmiva.hr/
+služba,KOMPOZITI d.o.o. za proizvodnju i trgovinu,,Ulica Nikole Tesle 6,48260,Križevci,Koprivničko-Križevačka,048/270-515,
+služba,"BIO-VET d.o.o., Donji Sređani 80/1",,Donji Sređani 80/1,43506,Dežanovac,Bjelovarsko-Bilogorska,043/286-129,https://perfa.hr/
+služba,"VINDON d.o.o.,  Zadubravlje b.b.",,Zadubravlje b.b.,35211,Garčin,Brodsko-Posavska,035/217-600,https://www.vindija.hr/
+služba,TVORNICA STOČNE HRANE dioničko društvo za proizvodnju i promet stočne hrane,,dr. Ivana Novaka 11,40000,Čakovec,Međimurska,040/329-160,http://www.tsh-cakovec.hr/
+služba,"MINISTARSTVO  PRAVOSUĐA, UPRAVA ZA ZATVORSKI SUSTAV, KAZNIONICA VALTURA",,Valtursko polje 211,52100,Pula - Pola,Istarska,052/300-700,
+služba,Centar za rehabilitaciju SILVER,,Štefanovec 34,10000,Zagreb,Grad Zagreb,01/2394-450,https://czrs.hr/
+služba,"LUKAČ društvo s ograničenom odgovornošću za proizvodnju, trgovinu i usluge",,Ostrovička ulica 1,10000,Zagreb,Grad Zagreb,01/309-8884,http://lukac.hr/
