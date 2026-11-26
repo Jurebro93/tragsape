@@ -7,6 +7,14 @@ export const content = {
       "Članci o kraju života ljubimca, o onome što slijedi nakon smrti i o tugovanju. Uz svaku cijenu i pravnu tvrdnju stoji izvor.",
     intro:
       "Članci o kraju života ljubimca, o onome što slijedi nakon smrti i o tugovanju. Uz svaku cijenu i pravnu tvrdnju stoji izvor s datumom pristupa.",
+    filter: {
+      label: "Teme",
+      count: "članaka: {count}",
+      all: "Prikaži sve teme",
+      read: "Pročitaj",
+    },
+    toolsTitle: "Alati koji pomažu odmah",
+    toolsLead: "Bez prijave i bez spremanja podataka.",
     clusters: {
       "kraj-zivota": {
         name: "Kraj života",

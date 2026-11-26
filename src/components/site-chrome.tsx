@@ -31,7 +31,7 @@ export function SiteHeader({ tone = "vanilla" }: { tone?: "vanilla" | "butter" }
             <Link
               key={link.href}
               href={link.href}
-              className="hidden rounded-full px-2.5 py-3 text-plum no-underline hover:bg-white/70 lg:inline-block"
+              className="hidden rounded-full px-2.5 py-3 text-plum no-underline hover:bg-white/70 md:inline-block"
             >
               {link.label}
             </Link>
@@ -46,7 +46,7 @@ export function SiteHeader({ tone = "vanilla" }: { tone?: "vanilla" | "butter" }
             <span className="sm:hidden">{common.nav.createShort}</span>
             <span className="hidden sm:inline">{common.nav.create}</span>
           </AttributedLink>
-          <details className="group relative lg:hidden">
+          <details className="group relative md:hidden">
             <summary
               aria-label={common.nav.menu}
               className="flex size-11 cursor-pointer list-none items-center justify-center rounded-full text-plum hover:bg-white/70 [&::-webkit-details-marker]:hidden"

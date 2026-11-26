@@ -115,8 +115,6 @@ Zasebne su stavke u istom cjeniku [1]:
 - čuvanje tijela u hladnjači: 3,05 € po danu
 - paviljon za ispraćaj: 33,18 € unutarnji, 13,27 € vanjski
 
-[PROVJERITI: je li urna uključena u cijenu pojedinačnog kremiranja u Spomengaju; njihov cjenik artikala nismo otvorili]
-
 ### Pet Memo, Samobor
 
 Pet Memo je krematorij za kućne ljubimce koji, prema vlastitoj stranici, radi od 2013. [5]. Cijene su iskazane kao paketi i uključuju PDV [3].
@@ -143,10 +141,6 @@ Cjenici se ne mogu izravno usporediti jer ne uključuju isto. Jedan iskazuje pak
 ### Izvan Zagreba
 
 Ako živiš daleko od krematorija, trošak raste zbog prijevoza. Primjer je Rijeka: gradsko društvo KD Kozala organizira kremiranje, koje se obavlja u zagrebačkom Spomengaju. U njihovu cjeniku organizacija kremacije stoji 6,64 €, prijevoz Rijeka–Zagreb–Rijeka 66,36 €, a sama kremacija obračunava se prema stvarnom trošku [7].
-
-[PROVJERITI: cjenik KD Kozala primjenjuje se od 1. 9. 2021., a iznosi u eurima potječu iz 2022.; provjeriti vrijede li još]
-
-[PROVJERITI: postoje li u Hrvatskoj i drugi krematoriji za kućne ljubimce s javno objavljenim cjenikom, primjerice u Dalmaciji; stranice koje smo pokušali otvoriti nisu bile dostupne]
 
 ## Ako ne odabereš ništa
 

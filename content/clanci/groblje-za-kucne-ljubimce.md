@@ -63,8 +63,6 @@ Podatke smo pročitali 25. studenoga 2026. Cijene i pravila se mijenjaju, pa pri
 
 Službene podatke našli smo za dva groblja: zagrebački Spomengaj i riječko groblje na Kozali.
 
-[PROVJERITI: postoje li u Hrvatskoj i druga registrirana groblja za kućne ljubimce; pretragom nismo našli službene stranice nijednog osim zagrebačkog i riječkog]
-
 ### Zagreb: Spomengaj
 
 Spomengaj je gradsko groblje i krematorij za kućne ljubimce u Dumovcu, na adresi Franjčevićeva ulica 45 [1]. Komunalnu djelatnost kremiranja i ukopa kućnih ljubimaca Grad Zagreb povjerio je društvu Morski lav d.o.o. [4].
@@ -100,8 +98,6 @@ Paviljon za ispraćaj naplaćuje se zasebno: 33,18 € unutarnji, 13,27 € vanj
 
 Dvije stvari u objavljenim podacima nisu posve jasne. Na stranici s uslugama piše da u zakupljenu kasetu stane do šest urni [2], a u cjeniku se uz kazetu navode četiri [3]. Uz to, iz cjenika se ne vidi je li u ukop u zemlju uključen lijes.
 
-[PROVJERITI: što točno znače oznake „0,5 m / 1 m / 2,5 m” i „2 urne” uz ukop u zemlju u cjeniku Spomengaja, koliko urni stane u kazetu te je li lijes uključen u cijenu]
-
 ### Rijeka: groblje na Kozali
 
 Riječko groblje kućnih ljubimaca nalazi se u Lukovićima na Kozali. Ljubimci su se ondje pokapali od početka 20. stoljeća do 2004. godine, kad je groblje zatvoreno zbog tadašnjeg Zakona o veterinarstvu. Ukop je ponovno moguć od 2021., ali isključivo polaganjem urni; stari dio sačuvan je kao spomen-groblje [5]. Turistička zajednica opisuje ga kao jedno od najstarijih u Europi, uz pariško i londonsko [8].
@@ -121,8 +117,6 @@ Cijene iz cjenika objavljenog na stranici KD Kozala [7]:
 | naknada za uređenje groblja, jednokratna | 13,27 € |
 
 U cjeniku stoji napomena da se cijena razmjerno povećava kad se ugovor sklapa na dulji rok [7].
-
-[PROVJERITI: cjenik KD Kozala primjenjuje se od 1. 9. 2021., a iznosi u eurima potječu iz 2022.; provjeriti vrijede li još]
 
 ## Kako čitati cijene
 

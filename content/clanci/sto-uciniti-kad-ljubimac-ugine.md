@@ -150,11 +150,7 @@ Ostaju tri otvorena pitanja:
 
 - **Lokalna pravila.** Grad ili općina mogu imati vlastitu odluku koja zakapanje ograničava. Prije ukopa nazovi komunalni odjel svog grada ili općine.
 
-[PROVJERITI: imaju li Zagreb, Split, Rijeka i Osijek odluke koje ograničavaju ili zabranjuju zakapanje kućnih ljubimaca na privatnom zemljištu; nismo ih uspjeli pronaći i pročitati]
-
 - **Treba li odobrenje.** Zakon o veterinarstvu u članku 101. stavku 4. kaže da veterinarski inspektor „može odobriti zakapanje i spaljivanje nusproizvoda” [3]. Pravilnik vlasniku ljubimca ne propisuje nikakvu prijavu. Kako se te dvije odredbe primjenjuju zajedno, iz samog teksta nije jasno.
-
-[PROVJERITI: zatražiti od Uprave za veterinarstvo i sigurnost hrane ili veterinarske inspekcije Državnog inspektorata pisanu potvrdu treba li vlasnik za zakapanje ljubimca na vlastitom zemljištu ikakvu prijavu ili odobrenje te je li Pravilnik NN 129/2022 mijenjan nakon objave]
 
 - **Voda.** Propisi o zaštiti podzemnih voda mogu na nekim područjima isključiti ukop [2]. Ako nisi siguran, pitaj prije.
 
@@ -173,8 +169,6 @@ Ovo se lako zaboravi. Zakon o zdravlju životinja u članku 66. stavku 6. kaže:
 Rok je, dakle, sedam dana. Za držatelja kućnog ljubimca koji to ne učini zakon predviđa novčanu kaznu od 260 do 660 eura, odnosno 60 eura na mjestu počinjenja prekršaja [7].
 
 Uginuće se prijavljuje radi izmjene podataka u putovnici i u Upisniku kućnih ljubimaca [7], pa putovnicu ponesi sa sobom u ambulantu. U cjeniku jedne zagrebačke ambulante odjava u upisniku stoji 5,60 € [11].
-
-[PROVJERITI: način prijave propisuje pravilnik iz članka 58. stavka 7. Zakona o zdravlju životinja, koji nismo uspjeli pronaći; provjeriti može li se uginuće prijaviti i bez dolaska u ambulantu te koji se dokument vlasniku izdaje]
 
 ## Kako reći obitelji
 

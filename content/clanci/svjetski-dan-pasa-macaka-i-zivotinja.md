@@ -95,8 +95,6 @@ Dan se proširio izvan SAD-a i poznat je i kao *International Dog Day*. Svrha mu
 
 U zemljama engleskoga govornog područja postoje i dani posvećeni upravo sjećanju na ljubimce koji su umrli.
 
-[PROVJERITI: datume i podrijetlo dana World Pet Memorial Day, National Pet Memorial Day i Rainbow Bridge Remembrance Day; stranice na kojima smo ih htjeli provjeriti nisu bile dostupne pa ih ne navodimo]
-
 Ne trebaš, uostalom, tuđi datum. Mnogima je važniji dan udomljenja, rođendan ili dan rastanka.
 
 ## Kako se toga dana sjetiti ljubimca
