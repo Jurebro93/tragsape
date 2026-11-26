@@ -65,7 +65,7 @@ Obveza pada na vlasnika, ne na veterinara ni na krematorij [1]. Ako je ljubimac 
 
 ## Što je Upisnik kućnih ljubimaca i što je Lysacan?
 
-Upisnik kućnih ljubimaca je evidencija svih označenih pasa, mačaka i pitomih vretica u računalnoj bazi kojom upravlja Ministarstvo poljoprivrede [1]. U stručnom tekstu Uprave za veterinarstvo naziva se „Središnji upisnik kućnih ljubimaca – baza podataka Lysacan” [2].
+Upisnik kućnih ljubimaca je evidencija svih označenih pasa, mačaka i pitomih vretica u računalnoj bazi kojom upravlja ministarstvo nadležno za poljoprivredu [1][2]. U stručnom tekstu Uprave za veterinarstvo naziva se „Središnji upisnik kućnih ljubimaca – baza podataka Lysacan” [2].
 
 Lysacan je, prema tom tekstu, središnji sustav za evidenciju cijepljenja i označavanja pasa, mačaka i pitomih vretica [2]. Veterinar u njega upisuje i svako cijepljenje psa protiv bjesnoće, kao i u putovnicu [3].
 
@@ -97,7 +97,7 @@ Stari pravilnik predviđao je da se u upisnik unese datum odjave i razlog odjave
 
 Zakon to ne zabranjuje, ali ni izričito ne uređuje. Putovnica je u Zakonu „identifikacijski dokument” koji izdaje ovlašteni veterinar, a uginuće se prijavljuje i radi izmjene podataka u njemu [1]. Zato je ponesi u ambulantu.
 
-Odredbu koja bi tražila da putovnicu psa ili mačke predaš ili vratiš nismo našli [1]. Za usporedbu, isti Zakon izričito kažnjava onoga tko nakon smrti konja ne vrati njegov identifikacijski dokument; za pse, mačke i vretice takve točke nema [1].
+Odredbu koja bi tražila da putovnicu psa ili mačke predaš ili vratiš nismo našli [1]. Za usporedbu, isti Zakon izričito kažnjava onoga tko nakon smrti kopitara, primjerice konja, ne vrati njegov identifikacijski dokument; za pse, mačke i vretice takve točke nema [1].
 
 Mnogima je putovnica uspomena: u njoj su ime, datumi i potpisi veterinara. Reci u ambulanti da je želiš zadržati i pitaj hoće li je nakon upisa vratiti. Ne tvrdimo da će svaka ambulanta postupiti jednako, jer pravilnik o tome nismo mogli pročitati.
 
