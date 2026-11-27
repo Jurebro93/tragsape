@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { ArrowRightIcon } from "@/components/icons";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { buttonClass } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/cn";
 import { fill } from "@/lib/text";
@@ -16,7 +17,7 @@ export const toolSectionTitle = "font-display text-2xl font-extrabold leading-ti
 type NextStepProps = { body: string; link: string; href: string };
 
 /**
- * Okvir stranice alata: zaglavlje s naslovom i uvodom, sadržaj, izvori i jedan tihi sljedeći korak.
+ * Okvir stranice alata: zaglavlje s naslovom i uvodom, sadržaj, izvori i jedan istaknut sljedeći korak.
  * `printSummaryOnly` skriva sve osim sažetka koji alat sam pripremi za ispis.
  */
 export function ToolPage({
@@ -146,19 +147,24 @@ export function Sources({ sources, className }: { sources: readonly ToolSource[]
   );
 }
 
-/** Jedan tihi sljedeći korak: rečenica i poveznica, bez prodajnog bloka. */
+/**
+ * Sljedeći korak: istaknuta kartica s jednom rečenicom i jednim gumbom, da se razlikuje od izvora.
+ * Bez prodajnog pritiska: nema odbrojavanja ni cijene, samo mogućnost.
+ */
 export function NextStep({ body, link, href }: NextStepProps) {
   return (
     <aside
       aria-label={t.nextStepLabel}
       data-print="hide"
-      className="flex flex-col items-start gap-1 border-t-2 border-line pt-6"
+      className="relative flex flex-col items-start gap-4 overflow-hidden rounded-[32px] bg-butter p-6 sm:p-8"
     >
-      <p className="leading-relaxed text-plum-soft">{body}</p>
-      <Link
-        href={href as Route}
-        className="inline-flex min-h-11 items-center gap-2 font-bold text-teal underline underline-offset-4 hover:text-teal-deep"
-      >
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-16 -top-20 size-52 rounded-full bg-sun/70"
+      />
+      <span className="relative text-sm font-bold uppercase tracking-[0.08em] text-terracotta">{t.nextStepLabel}</span>
+      <p className="relative max-w-md font-display text-xl font-extrabold leading-snug sm:text-2xl">{body}</p>
+      <Link href={href as Route} className={buttonClass("primary", "lg", "relative")}>
         {link}
         <ArrowRightIcon size={18} />
       </Link>

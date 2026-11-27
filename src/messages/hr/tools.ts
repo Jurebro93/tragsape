@@ -50,6 +50,16 @@ export const tools = {
     intro:
       "Mali, besplatni pomoćnici: za računanje dobi, za pronalaženje riječi i za razmišljanje o oproštaju. Ne traže prijavu, a ono što upišeš ostaje u tvom pregledniku.",
     open: "Otvori",
+    noSignup: "Bez prijave",
+    preview: {
+      dogCaption: "Pas od 10 godina, u ljudskim godinama",
+      catCaption: "Mačka u ljudskim godinama",
+      catOneYear: "1 godina",
+      catYears: "godina",
+      exampleCaption: "Primjer rezultata",
+      sampleName: "Medo",
+      farewellCaption: "Šest pitanja, a na kraju dva do tri od ovih načina",
+    },
   },
 
   registry: {
