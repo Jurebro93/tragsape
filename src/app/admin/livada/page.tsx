@@ -45,18 +45,18 @@ async function Flowers({ searchParams }: Pick<PageProps<"/admin/livada">, "searc
           <tbody>
             {rows.map((row) => (
               <tr key={row.id}>
-                <Td>{row.number}</Td>
+                <Td>{row.number ?? "–"}</Td>
                 <Td>{row.name}</Td>
                 <Td>{row.memorialSlug ? t.fromMemorial : t.fromVisitor}</Td>
                 <Td>{formatDateTime(row.createdAt)}</Td>
                 <Td>
-                  <Badge tone={row.status === "visible" ? "good" : "warn"}>
-                    {row.status === "visible" ? t.visible : t.hidden}
+                  <Badge tone={row.status === "visible" ? "good" : row.status === "pending" ? "neutral" : "warn"}>
+                    {row.status === "visible" ? t.visible : row.status === "pending" ? t.pending : t.hidden}
                   </Badge>
                 </Td>
                 <Td>
-                  {row.memorialSlug ? (
-                    <span className="text-sm text-plum-soft">{t.memorialNote}</span>
+                  {row.memorialSlug || row.status === "pending" ? (
+                    <span className="text-sm text-plum-soft">{row.memorialSlug ? t.memorialNote : "–"}</span>
                   ) : (
                     <form action={setFlowerStatusAction}>
                       <input type="hidden" name="id" value={row.id} />

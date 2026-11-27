@@ -83,6 +83,34 @@ export async function subscribe(email: string, source: string | null, consentTex
   await sendConfirmation(email.trim(), existing.confirm_token);
 }
 
+/**
+ * Prijava adrese koja je već potvrđena drugim putem (klikom na poveznicu iz e-maila za trag na livadi).
+ * Bilježi se privola i izvor; zasebna potvrda se ne šalje.
+ */
+export async function subscribeConfirmed(email: string, source: string | null, consentText: string): Promise<void> {
+  const admin = createAdminClient();
+  const normalized = email.trim().toLowerCase();
+  const now = new Date().toISOString();
+  const { data: existing, error } = await admin
+    .from("newsletter_subscribers")
+    .select("id, status")
+    .eq("email_normalized", normalized)
+    .maybeSingle();
+  if (error) {
+    throw new Error(`newsletter: čitanje prijave: ${error.message}`);
+  }
+  if (existing?.status === "confirmed") {
+    return;
+  }
+  const values = { status: "confirmed", source, consent_text: consentText, consented_at: now, confirmed_at: now, unsubscribed_at: null };
+  const result = existing
+    ? await admin.from("newsletter_subscribers").update(values).eq("id", existing.id)
+    : await admin.from("newsletter_subscribers").insert({ email: email.trim(), ...values });
+  if (result.error) {
+    throw new Error(`newsletter: upis potvrđene prijave: ${result.error.message}`);
+  }
+}
+
 /** Potvrda prijave gumbom s poveznice iz e-maila. Vraća false za nepoznatu ili već iskorištenu poveznicu. */
 export async function confirmSubscription(token: string): Promise<boolean> {
   if (!TOKEN.test(token)) {

@@ -5,10 +5,10 @@ import { createSessionClient } from "@/server/supabase/session";
 
 export type AdminFlowerRow = {
   id: string;
-  number: number;
+  number: number | null;
   name: string;
   species: string;
-  status: "visible" | "hidden";
+  status: "pending" | "visible" | "hidden";
   memorialSlug: string | null;
   createdAt: string;
 };
@@ -18,7 +18,7 @@ export async function loadMeadowFlowers(query: string | null): Promise<AdminFlow
   let request = supabase
     .from("meadow_flowers")
     .select("id, number, name, species, status, memorial_slug, created_at")
-    .order("number", { ascending: false })
+    .order("created_at", { ascending: false })
     .limit(200);
   if (query) {
     request = /^\d+$/.test(query) ? request.eq("number", Number(query)) : request.ilike("name", `%${query.replace(/[%_,()]/g, "")}%`);

@@ -262,6 +262,7 @@ const privacy = {
             "Prijave sadržaja: razlog i opis prijave te, ako je ostaviš, e-mail adresa.",
             "Podsjetnici: datumi iz spomena (rođendan, dan udomljenja, godišnjica) i tvoj izbor podsjetnika.",
             "Newsletter: e-mail adresa, stranica na kojoj si se prijavio, tekst privole koju si potvrdio i vremena prijave, potvrde i odjave. Prijava vrijedi tek kad je potvrdiš gumbom iz e-maila.",
+            "Velika livada: ime ljubimca, vrsta i boja cvijeta te e-mail adresa na koju šaljemo potvrdu, tekst privole i vrijeme potvrde. Trag postaje vidljiv tek kad ga potvrdiš gumbom iz e-maila; nepotvrđeni trag brišemo nakon 7 dana. Ako uz trag označiš i newsletter, potvrda traga potvrđuje i tu prijavu.",
             "Zaštita od zlouporabe: umjesto IP adrese spremamo njezin sažetak izračunat uz tajni dodatak koji se mijenja svaki dan. Iz sažetka se IP adresa ne može vratiti, a isti posjetitelj sljedeći dan ima drugi sažetak.",
             "Put do kupnje: bilježimo korake izrade (započet nacrt, pregled, naplata, plaćeno) i koja je naša stranica, primjerice članak, dovela do izrade. To je vezano uz nacrt ili narudžbu, bez identifikatora posjetitelja.",
             "Tehnički zapisi: pružatelji hostinga i baze mogu u svojim sigurnosnim zapisima kratkotrajno bilježiti IP adrese zahtjeva. [ROKOVI ČUVANJA TEHNIČKIH ZAPISA KOD PRUŽATELJA]",
@@ -288,6 +289,7 @@ const privacy = {
       blocks: [
         "Javni spomen može vidjeti svatko, a mogu ga pronaći i tražilice. Javni spomeni prikazuju se i na Livadi sjećanja.",
         "Poruke u knjizi sjećanja vide se uz ime koje je autor upisao, nakon odobrenja vlasnika spomena. Uz gestu se vide ime i poruka.",
+        "Na Velikoj livadi vide se ime ljubimca, vrsta, boja cvijeta, broj i datum traga. E-mail adresa se nikad ne prikazuje. Ako želiš da trag uklonimo, javi nam se s adrese na koju je stigla potvrda.",
         "U spomen i poruke ne upisuj osobne podatke drugih ljudi.",
         "Spomene „samo s poveznicom” i privatne spomene ne prikazujemo na Livadi sjećanja i ne prijavljujemo ih tražilicama.",
       ],

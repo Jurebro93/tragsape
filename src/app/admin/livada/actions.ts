@@ -14,7 +14,8 @@ export async function setFlowerStatusAction(formData: FormData): Promise<void> {
     return;
   }
   const supabase = await createSessionClient();
-  const { error } = await supabase.from("meadow_flowers").update({ status }).eq("id", id);
+  // Trag na čekanju nema mjesto; vidljivim ga čini samo potvrda vlasnika e-mailom.
+  const { error } = await supabase.from("meadow_flowers").update({ status }).eq("id", id).neq("status", "pending");
   if (error) {
     throw new Error(`Trag nije promijenjen: ${error.message}`);
   }

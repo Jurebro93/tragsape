@@ -639,6 +639,7 @@ export type Database = {
       meadow_flowers: {
         Row: {
           claim_token: string
+          confirmed_at: string | null
           consent_text: string | null
           created_at: string
           email: string | null
@@ -648,13 +649,15 @@ export type Database = {
           memorial_id: string | null
           memorial_slug: string | null
           name: string
-          number: number
+          newsletter_opt_in: boolean
+          number: number | null
           petal: string
           species: string
           status: string
         }
         Insert: {
           claim_token?: string
+          confirmed_at?: string | null
           consent_text?: string | null
           created_at?: string
           email?: string | null
@@ -664,13 +667,15 @@ export type Database = {
           memorial_id?: string | null
           memorial_slug?: string | null
           name: string
-          number?: never
+          newsletter_opt_in?: boolean
+          number?: number | null
           petal: string
           species: string
           status?: string
         }
         Update: {
           claim_token?: string
+          confirmed_at?: string | null
           consent_text?: string | null
           created_at?: string
           email?: string | null
@@ -680,7 +685,8 @@ export type Database = {
           memorial_id?: string | null
           memorial_slug?: string | null
           name?: string
-          number?: never
+          newsletter_opt_in?: boolean
+          number?: number | null
           petal?: string
           species?: string
           status?: string
@@ -1617,6 +1623,16 @@ export type Database = {
         Returns: boolean
       }
       claim_drafts: { Args: { p_token: string }; Returns: number }
+      confirm_meadow_flower: {
+        Args: { p_token: string }
+        Returns: {
+          email: string
+          name: string
+          newly_confirmed: boolean
+          newsletter_opt_in: boolean
+          number: number
+        }[]
+      }
       create_draft_claim: { Args: never; Returns: string }
       create_memorial_draft: { Args: { p_attribution?: Json }; Returns: string }
       create_order: { Args: { p_lines: Json; p_order: Json }; Returns: string }

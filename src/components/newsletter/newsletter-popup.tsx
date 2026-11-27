@@ -13,7 +13,7 @@ const SEEN_KEY = "ts-newsletter-ponuda";
  * Stranice na kojima se prijava ne nudi: spomen ljubimca, izrada spomena, korisnički račun,
  * plaćanje, admin i sam newsletter. Ondje bi skočni prozor usred tuge ili posla bio neprimjeren.
  */
-const EXCLUDED = ["/spomen", "/izradi", "/moji-ljubimci", "/prijava", "/admin", "/newsletter", "/kupnja", "/poklon", "/obitelj"];
+const EXCLUDED = ["/spomen", "/izradi", "/moji-ljubimci", "/prijava", "/admin", "/newsletter", "/kupnja", "/poklon", "/obitelj", "/livada/potvrda"];
 
 function excluded(path: string): boolean {
   return EXCLUDED.some((prefix) => path === prefix || path.startsWith(`${prefix}/`));
@@ -51,12 +51,20 @@ export function NewsletterPopup() {
     if (alreadySeen()) {
       return;
     }
-    const timer = window.setTimeout(() => {
-      if (!excluded(pathRef.current) && !alreadySeen()) {
-        markSeen();
-        setOpen(true);
+    let timer = 0;
+    const tryOpen = () => {
+      if (excluded(pathRef.current) || alreadySeen()) {
+        return;
       }
-    }, DELAY_MS);
+      // Ne prekida posjetitelja koji nešto ispunjava (obrazac u dijalogu) ili je na livadi preko cijelog zaslona.
+      if (document.querySelector('[aria-modal="true"]') || document.body.style.overflow === "hidden") {
+        timer = window.setTimeout(tryOpen, 15_000);
+        return;
+      }
+      markSeen();
+      setOpen(true);
+    };
+    timer = window.setTimeout(tryOpen, DELAY_MS);
     return () => window.clearTimeout(timer);
   }, []);
 

@@ -2,23 +2,34 @@
 
 import Link from "next/link";
 import type { Route } from "next";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { formatPetDate } from "@/lib/format";
 import {
   MEADOW_PETALS,
   MEADOW_SPECIES,
+  PAD_COUNT,
   PETAL_COLORS,
+  PHASE_COLORS,
+  PRINT_CAPACITY,
+  PRINT_RADIUS,
   SCENE_COLORS,
   SPECIES_COLORS,
   checkFlowerName,
+  dayPhase,
+  flowerPlace,
   flowerPosition,
   meadowBounds,
+  padOutline,
+  printFrame,
+  printsToShow,
   type MeadowPetal,
   type MeadowRow,
   type MeadowSpecies,
 } from "@/lib/meadow";
 import { fill } from "@/lib/text";
 import { meadow as t } from "@/messages/hr/meadow";
+import { FitIcon } from "@/components/icons";
+import { readMine } from "./mine";
 
 type Flower = {
   number: number;
@@ -32,35 +43,14 @@ type Flower = {
   search: string;
 };
 
-type Mine = { number: number; token: string };
-
-const MINE_KEY = "ts-livada-moji-tragovi";
 const FLOWER_SIZE = 26;
 const CELL = 120;
+const TUFT_CELL = 70;
 const MAX_SCALE = 2.6;
+const SMALL_SCREEN = "(max-width: 639px)";
 
 function plainSearch(text: string): string {
   return text.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/g, "d");
-}
-
-function readMine(): Mine[] {
-  try {
-    const raw = window.localStorage.getItem(MINE_KEY);
-    const parsed = raw ? (JSON.parse(raw) as unknown) : [];
-    return Array.isArray(parsed)
-      ? parsed.filter((item): item is Mine => typeof item?.number === "number" && typeof item?.token === "string")
-      : [];
-  } catch {
-    return [];
-  }
-}
-
-function writeMine(list: Mine[]): void {
-  try {
-    window.localStorage.setItem(MINE_KEY, JSON.stringify(list.slice(-20)));
-  } catch {
-    // Bez pohrane „Moj trag” radi samo do zatvaranja stranice; poveznica iz e-maila radi uvijek.
-  }
 }
 
 function toFlower(row: MeadowRow): Flower {
@@ -79,29 +69,82 @@ function toFlower(row: MeadowRow): Flower {
   };
 }
 
-/** Velika livada: svaki ljubimac je cvijet; mjesto određuje redni broj traga. */
+/** Stalan pseudoslučajan broj u [0, 1) za cijeli broj; služi za travu i primjer livade. */
+function hash(n: number): number {
+  let x = Math.imul(n ^ 0x9e3779b9, 0x85ebca6b);
+  x ^= x >>> 13;
+  x = Math.imul(x, 0xc2b2ae35);
+  x ^= x >>> 16;
+  return (x >>> 0) / 4294967296;
+}
+
+/** Izmišljena puna livada za primjer: uvijek ista, jasno označena, bez stvarnih imena. */
+function demoRows(): MeadowRow[] {
+  const names = t.demo.names;
+  const start = Date.UTC(2025, 0, 1);
+  return Array.from({ length: t.demo.count }, (_, index) => {
+    const number = index + 1;
+    const day = new Date(start + Math.floor(hash(number * 7) * 690) * 86_400_000).toISOString().slice(0, 10);
+    return [
+      number,
+      names[Math.floor(hash(number * 3) * names.length)],
+      Math.floor(hash(number * 5) * MEADOW_SPECIES.length),
+      Math.floor(hash(number * 11) * MEADOW_PETALS.length),
+      "",
+      day,
+    ];
+  });
+}
+
+/** Kad je cvjetova malo, crtaju se veći, da se vide i kad je prikazana cijela livada. */
+function minFlowerPx(count: number): number {
+  return count < 40 ? 24 : count < 400 ? 9 : 0;
+}
+
+function placeLabel(number: number): string {
+  const place = flowerPlace(number);
+  return fill(t.place.label, { print: place.print, pad: t.place.pads[place.pad] });
+}
+
+/** Velika livada: svaki ljubimac je cvijet; cvjetovi popunjavaju otiske šapa koji tvore trag. */
 export function BigMeadow() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const stageRef = useRef<HTMLDivElement>(null);
-  const [flowers, setFlowers] = useState<Flower[] | null>(null);
+  const [realFlowers, setRealFlowers] = useState<Flower[] | null>(null);
+  const [demo, setDemo] = useState(false);
+  const demoFlowers = useMemo(() => (demo ? demoRows().map(toFlower) : null), [demo]);
+  const flowers = demo ? demoFlowers : realFlowers;
   const [failed, setFailed] = useState(false);
   const [missing, setMissing] = useState<number | null>(null);
   const [selected, setSelected] = useState<Flower | null>(null);
-  const [mine, setMine] = useState<Mine[]>([]);
+  const [mine, setMine] = useState<number[]>([]);
   const [query, setQuery] = useState("");
   const [claimOpen, setClaimOpen] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [cardPos, setCardPos] = useState<{ left: number; top: number } | null>(null);
+  const [full, setFull] = useState(false);
+  const [small, setSmall] = useState(false);
+  const interactive = full || !small;
 
   const view = useRef({ x: 0, y: 0, scale: 1 });
   const size = useRef({ w: 0, h: 0, dpr: 1 });
   const fly = useRef<{ x: number; y: number; scale: number } | null>(null);
   const dirty = useRef(true);
   const fontFamily = useRef("system-ui, sans-serif");
+  const wantOverview = useRef(false);
+  const pendingFocus = useRef<Flower | null>(null);
+  const pushedFull = useRef(false);
 
   const byNumber = useMemo(() => new Map((flowers ?? []).map((flower) => [flower.number, flower])), [flowers]);
   const maxNumber = useMemo(() => (flowers ?? []).reduce((max, flower) => Math.max(max, flower.number), 0), [flowers]);
   const bounds = useMemo(() => meadowBounds(maxNumber), [maxNumber]);
+  const prints = useMemo(() => {
+    const total = printsToShow(maxNumber);
+    return Array.from({ length: total }, (_, p) => ({
+      frame: printFrame(p),
+      pads: Array.from({ length: PAD_COUNT }, (_, k) => padOutline(p, k)),
+      empty: p * PRINT_CAPACITY >= maxNumber,
+    }));
+  }, [maxNumber]);
   const grid = useMemo(() => {
     const cells = new Map<string, Flower[]>();
     for (const flower of flowers ?? []) {
@@ -112,19 +155,28 @@ export function BigMeadow() {
     }
     return cells;
   }, [flowers]);
-  const mineNumbers = useMemo(() => new Set(mine.map((item) => item.number)), [mine]);
+  const mineNumbers = useMemo(() => new Set(demo ? [] : mine), [mine, demo]);
+
+  // Veličina zaslona: na mobitelu je livada u stranici pregled, a prava livada otvara se preko cijelog zaslona.
+  useEffect(() => {
+    const media = window.matchMedia(SMALL_SCREEN);
+    const update = () => setSmall(media.matches);
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
 
   // Učitavanje cvjetova i vlastitih tragova iz preglednika.
   useEffect(() => {
     let cancelled = false;
     const load = (fresh: boolean): Promise<MeadowRow[]> =>
-      fetch(fresh ? "/api/livada/tragovi?svjeze=1" : "/api/livada/tragovi", fresh ? { cache: "no-store" } : undefined).then(
-        (response) => (response.ok ? response.json() : Promise.reject(new Error(String(response.status)))),
-      ).then((data: { rows: MeadowRow[] }) => data.rows);
+      fetch(fresh ? "/api/livada/tragovi?svjeze=1" : "/api/livada/tragovi", fresh ? { cache: "no-store" } : undefined)
+        .then((response) => (response.ok ? response.json() : Promise.reject(new Error(String(response.status)))))
+        .then((data: { rows: MeadowRow[] }) => data.rows);
     const wanted = Number(new URLSearchParams(window.location.search).get("trag"));
     load(false)
       .then(async (rows) => {
-        // Upravo ostavljen trag može kratko nedostajati u predmemoriranom popisu: jednom se dohvati svjež.
+        // Upravo potvrđen trag može kratko nedostajati u predmemoriranom popisu: jednom se dohvati svjež.
         if (Number.isInteger(wanted) && wanted > 0 && !rows.some((row) => row[0] === wanted)) {
           await new Promise((resolve) => window.setTimeout(resolve, 1500));
           rows = await load(true).catch(() => rows);
@@ -132,7 +184,7 @@ export function BigMeadow() {
         }
         if (!cancelled) {
           setMine(readMine());
-          setFlowers(rows.map(toFlower));
+          setRealFlowers(rows.map(toFlower));
         }
       })
       .catch(() => {
@@ -156,15 +208,38 @@ export function BigMeadow() {
     dirty.current = true;
   }, [bounds, minScale]);
 
+  const overview = useCallback(
+    () => ({ x: (bounds.minX + bounds.maxX) / 2, y: (bounds.minY + bounds.maxY) / 2, scale: minScale() }),
+    [bounds, minScale],
+  );
+
   const showAll = useCallback(() => {
-    fly.current = { x: (bounds.minX + bounds.maxX) / 2, y: (bounds.minY + bounds.maxY) / 2, scale: minScale() };
-  }, [bounds, minScale]);
+    fly.current = overview();
+  }, [overview]);
 
   const focus = useCallback((flower: Flower, open = true) => {
     // Cvijet dolazi malo ispod sredine, da kartica stane iznad njega i ne prekrije ime.
     const scale = Math.min(MAX_SCALE, Math.max(1.8, view.current.scale));
     fly.current = { x: flower.x, y: flower.y - Math.min(170, size.current.h * 0.28) / scale, scale };
     if (open) setSelected(flower);
+  }, []);
+
+  // Cijeli zaslon: na mobitelu ulaz preko povijesti, pa tipka „natrag” zatvara livadu.
+  const enterFull = useCallback((target?: Flower | null) => {
+    pendingFocus.current = target ?? null;
+    setFull(true);
+    if (window.matchMedia(SMALL_SCREEN).matches && !pushedFull.current) {
+      window.history.pushState({ livadaFull: true }, "");
+      pushedFull.current = true;
+    }
+  }, []);
+
+  const exitFull = useCallback(() => {
+    if (pushedFull.current) {
+      pushedFull.current = false;
+      window.history.back();
+    }
+    setFull(false);
   }, []);
 
   // Veličina platna i prvi pogled (cijela livada ili trag iz poveznice).
@@ -185,18 +260,31 @@ export function BigMeadow() {
     resize();
     if (!placedInitial.current) {
       placedInitial.current = true;
-      view.current = { x: (bounds.minX + bounds.maxX) / 2, y: (bounds.minY + bounds.maxY) / 2, scale: minScale() };
+      view.current = overview();
       clamp();
       const wanted = Number(new URLSearchParams(window.location.search).get("trag"));
       const target = Number.isInteger(wanted) ? byNumber.get(wanted) : undefined;
-      if (target) window.setTimeout(() => focus(target), 300);
+      if (target) {
+        // Poveznica na trag: na mobitelu se livada otvara preko cijelog zaslona, na računalu se pomakne u pogled.
+        if (window.matchMedia(SMALL_SCREEN).matches) {
+          window.setTimeout(() => enterFull(target), 0);
+        } else {
+          canvas.scrollIntoView({ block: "center" });
+          window.setTimeout(() => focus(target), 300);
+        }
+      }
+    }
+    if (wantOverview.current) {
+      wantOverview.current = false;
+      view.current = overview();
+      clamp();
     }
     const observer = new ResizeObserver(resize);
     observer.observe(canvas);
     return () => observer.disconnect();
-  }, [flowers, bounds, byNumber, clamp, focus, minScale]);
+  }, [flowers, bounds, byNumber, clamp, focus, overview, enterFull]);
 
-  // Crtanje: samo kad se nešto promijenilo, i samo cvjetovi u vidnom polju.
+  // Crtanje: samo kad se nešto promijenilo, i samo ono što je u vidnom polju.
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas || !flowers) return;
@@ -204,6 +292,13 @@ export function BigMeadow() {
     if (!ctx) return;
     let frame = 0;
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    // Doba dana po zagrebačkom vremenu; provjerava se svakih pet minuta.
+    let palette = PHASE_COLORS[dayPhase(new Date())];
+    const phaseTimer = window.setInterval(() => {
+      palette = PHASE_COLORS[dayPhase(new Date())];
+      dirty.current = true;
+    }, 5 * 60 * 1000);
+    const lastFrame = prints[prints.length - 1].frame;
 
     const draw = () => {
       const { w, h, dpr } = size.current;
@@ -212,46 +307,150 @@ export function BigMeadow() {
       const sy = (y: number) => (y - v.y) * v.scale + h / 2;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-      // Nebo, sunce i obzor iznad livade.
-      const horizonY = sy(bounds.minY + 230);
-      const sky = ctx.createLinearGradient(0, 0, 0, Math.max(1, horizonY));
-      sky.addColorStop(0, SCENE_COLORS.skyTop);
-      sky.addColorStop(1, SCENE_COLORS.sky);
+      // Nebo iznad zadnjeg otiska: trag vodi prema obzoru.
+      const horizonWorld = bounds.minY + 400;
+      const horizonY = sy(horizonWorld);
+      const sky = ctx.createLinearGradient(0, Math.min(0, horizonY - 400 * v.scale), 0, Math.max(1, horizonY));
+      sky.addColorStop(0, palette.skyTop);
+      sky.addColorStop(1, palette.sky);
       ctx.fillStyle = sky;
       ctx.fillRect(0, 0, w, h);
+
+      if (horizonY > 0) {
+        const sunX = sx(lastFrame.x + 420);
+        const sunR = Math.max(26, 150 * v.scale);
+        if (palette.sunHeight >= 0) {
+          const sunY = horizonY - sunR * palette.sunHeight * 1.6;
+          ctx.fillStyle = SCENE_COLORS.sun;
+          ctx.beginPath();
+          ctx.arc(sunX, sunY, sunR, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.strokeStyle = SCENE_COLORS.sunRing;
+          ctx.lineWidth = 2;
+          for (const k of [1.45, 1.95]) {
+            ctx.beginPath();
+            ctx.arc(sunX, sunY, sunR * k, 0, Math.PI * 2);
+            ctx.stroke();
+          }
+        } else {
+          // Noć: mjesec i nekoliko zvijezda, i dalje toplih boja.
+          ctx.fillStyle = SCENE_COLORS.star;
+          const shift = v.x * v.scale * 0.08;
+          for (let k = 0; k < 46; k++) {
+            const x = ((hash(k * 13) * (w + 200) - shift) % (w + 200) + (w + 200)) % (w + 200) - 100;
+            const y = horizonY - 30 - hash(k * 29) * Math.min(horizonY, 420);
+            if (y < 0) continue;
+            ctx.beginPath();
+            ctx.arc(x, y, 0.8 + hash(k * 31) * 1.3, 0, Math.PI * 2);
+            ctx.fill();
+          }
+          ctx.beginPath();
+          ctx.arc(sunX, horizonY - sunR * 1.9, sunR * 0.55, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        // Daleka brda: pomiču se sporije od livade, pa se vidi dubina.
+        const hills = (color: string, factor: number, amp: number, period: number) => {
+          const offset = v.x * v.scale * factor;
+          ctx.fillStyle = color;
+          ctx.beginPath();
+          ctx.moveTo(0, horizonY + 1);
+          for (let x = 0; x <= w + 24; x += 24) {
+            const u = (x + offset) / period;
+            const y = horizonY - amp * (0.55 + 0.35 * Math.sin(u * Math.PI * 2) + 0.1 * Math.sin(u * Math.PI * 5.3));
+            ctx.lineTo(x, y);
+          }
+          ctx.lineTo(w, horizonY + 1);
+          ctx.closePath();
+          ctx.fill();
+        };
+        const depth = Math.sqrt(v.scale);
+        hills(palette.hillFar, 0.25, 70 * depth, 520 * depth);
+        hills(palette.hillNear, 0.5, 38 * depth, 340 * depth);
+      }
+
       const ground = ctx.createLinearGradient(0, horizonY, 0, sy(bounds.maxY));
-      ground.addColorStop(0, SCENE_COLORS.hill);
-      ground.addColorStop(0.35, SCENE_COLORS.ground);
-      ground.addColorStop(1, SCENE_COLORS.groundDeep);
+      ground.addColorStop(0, palette.ground);
+      ground.addColorStop(1, palette.groundDeep);
       ctx.fillStyle = ground;
       ctx.fillRect(0, Math.max(0, horizonY), w, h);
-      const sunX = sx(bounds.maxX * 0.55);
-      const sunR = 110 * v.scale;
-      ctx.fillStyle = SCENE_COLORS.sun;
-      ctx.beginPath();
-      ctx.arc(sunX, horizonY - sunR * 0.35, sunR, Math.PI, 0);
-      ctx.fill();
-      ctx.strokeStyle = SCENE_COLORS.sunRing;
-      ctx.lineWidth = 2;
-      for (const k of [1.45, 1.95]) {
+
+      const left = v.x - w / 2 / v.scale;
+      const right = v.x + w / 2 / v.scale;
+      const top = v.y - h / 2 / v.scale;
+      const bottom = v.y + h / 2 / v.scale;
+
+      // Otisci šapa na travi: popunjeni su pokošeni, sljedeći je tek naznačen.
+      for (const print of prints) {
+        const { frame } = print;
+        if (frame.x + PRINT_RADIUS < left || frame.x - PRINT_RADIUS > right || frame.y + PRINT_RADIUS < top || frame.y - PRINT_RADIUS > bottom) {
+          continue;
+        }
+        for (const outline of print.pads) {
+          ctx.beginPath();
+          outline.forEach((point, index) => (index === 0 ? ctx.moveTo(sx(point.x), sy(point.y)) : ctx.lineTo(sx(point.x), sy(point.y))));
+          ctx.closePath();
+          ctx.fillStyle = SCENE_COLORS.pawGhost;
+          ctx.fill();
+          if (print.empty) {
+            ctx.setLineDash([6, 7]);
+            ctx.strokeStyle = SCENE_COLORS.pawNext;
+            ctx.lineWidth = 1.5;
+            ctx.stroke();
+            ctx.setLineDash([]);
+          }
+        }
+        if (print.empty && PRINT_RADIUS * v.scale > 70) {
+          const label = maxNumber === 0 ? t.firstPrint : t.nextPrint;
+          const fontSize = Math.round(Math.min(20, Math.max(12, PRINT_RADIUS * v.scale * 0.06)));
+          ctx.font = `700 ${fontSize}px ${fontFamily.current}`;
+          ctx.textAlign = "center";
+          ctx.textBaseline = "middle";
+          ctx.lineWidth = 4;
+          ctx.strokeStyle = SCENE_COLORS.labelHalo;
+          ctx.strokeText(label, sx(frame.x), sy(frame.y));
+          ctx.fillStyle = SCENE_COLORS.label;
+          ctx.fillText(label, sx(frame.x), sy(frame.y));
+        }
+      }
+
+      const px = FLOWER_SIZE * v.scale;
+
+      // Trava izbliza: kratke vlati na stalnim mjestima.
+      if (px >= 9) {
+        ctx.strokeStyle = SCENE_COLORS.tuft;
+        ctx.lineWidth = Math.max(1, v.scale * 1.2);
+        ctx.lineCap = "round";
+        const cx0 = Math.floor(left / TUFT_CELL);
+        const cx1 = Math.floor(right / TUFT_CELL);
+        const cy0 = Math.max(Math.floor(top / TUFT_CELL), Math.floor(horizonWorld / TUFT_CELL) + 1);
+        const cy1 = Math.floor(bottom / TUFT_CELL);
         ctx.beginPath();
-        ctx.arc(sunX, horizonY - sunR * 0.35, sunR * k, Math.PI, 0);
+        for (let gx = cx0; gx <= cx1; gx++) {
+          for (let gy = cy0; gy <= cy1; gy++) {
+            const seed = gx * 73856093 + gy * 19349663;
+            const x = sx((gx + hash(seed)) * TUFT_CELL);
+            const y = sy((gy + hash(seed + 1)) * TUFT_CELL);
+            // Tri savijene vlati različite visine; izdaleka se stapaju u teksturu trave.
+            const blade = (4.5 + hash(seed + 2) * 3) * v.scale;
+            const spread = blade * 0.18;
+            ctx.moveTo(x - spread, y);
+            ctx.quadraticCurveTo(x - spread * 1.4, y - blade * 0.6, x - blade * 0.5, y - blade * 0.85);
+            ctx.moveTo(x, y);
+            ctx.quadraticCurveTo(x + spread * 0.4, y - blade * 0.7, x + blade * 0.08, y - blade * 1.25);
+            ctx.moveTo(x + spread, y);
+            ctx.quadraticCurveTo(x + spread * 1.6, y - blade * 0.5, x + blade * 0.55, y - blade * 0.7);
+          }
+        }
         ctx.stroke();
       }
-      ctx.strokeStyle = SCENE_COLORS.horizon;
-      ctx.lineWidth = 1.5;
-      ctx.beginPath();
-      ctx.moveTo(0, horizonY);
-      ctx.lineTo(w, horizonY);
-      ctx.stroke();
 
-      // Vidljive ćelije.
+      // Vidljivi cvjetovi.
       const pad = FLOWER_SIZE * 2;
-      const x0 = Math.floor((v.x - w / 2 / v.scale - pad) / CELL);
-      const x1 = Math.floor((v.x + w / 2 / v.scale + pad) / CELL);
-      const y0 = Math.floor((v.y - h / 2 / v.scale - pad) / CELL);
-      const y1 = Math.floor((v.y + h / 2 / v.scale + pad) / CELL);
-      const px = FLOWER_SIZE * v.scale;
+      const x0 = Math.floor((left - pad) / CELL);
+      const x1 = Math.floor((right + pad) / CELL);
+      const y0 = Math.floor((top - pad) / CELL);
+      const y1 = Math.floor((bottom + pad) / CELL);
       const visible: Flower[] = [];
       for (let gx = x0; gx <= x1; gx++) {
         for (let gy = y0; gy <= y1; gy++) {
@@ -261,15 +460,17 @@ export function BigMeadow() {
       }
       visible.sort((a, b) => a.y - b.y);
 
+      const fpx = Math.max(px, minFlowerPx(flowers.length));
+      const showNames = fpx >= 30 || flowers.length < 40;
       for (const f of visible) {
         const cx = sx(f.x);
         const cy = sy(f.y);
         const isMine = mineNumbers.has(f.number);
         const isSelected = selected?.number === f.number;
-        if (px < 5) {
+        if (fpx < 5) {
           // Izdaleka: točkica u boji cvijeta.
           ctx.fillStyle = f.petal === "bijela" ? SCENE_COLORS.label : PETAL_COLORS[f.petal];
-          const r = Math.max(1.2, px * 0.35) * (isMine || isSelected ? 2.2 : 1);
+          const r = Math.max(1.2, fpx * 0.35) * (isMine || isSelected ? 2.2 : 1);
           ctx.beginPath();
           ctx.arc(cx, cy, r, 0, Math.PI * 2);
           ctx.fill();
@@ -282,8 +483,8 @@ export function BigMeadow() {
           }
           continue;
         }
-        const r = px * 0.32;
-        const stem = px * 0.9;
+        const r = fpx * 0.32;
+        const stem = fpx * 0.9;
         const headY = cy - stem;
         if (isMine || isSelected) {
           const glow = ctx.createRadialGradient(cx, headY, 0, cx, headY, r * 5);
@@ -295,7 +496,7 @@ export function BigMeadow() {
           ctx.fill();
         }
         ctx.strokeStyle = SCENE_COLORS.stem;
-        ctx.lineWidth = Math.max(1, px * 0.07);
+        ctx.lineWidth = Math.max(1, fpx * 0.07);
         ctx.lineCap = "round";
         ctx.beginPath();
         ctx.moveTo(cx, cy);
@@ -325,8 +526,8 @@ export function BigMeadow() {
           ctx.arc(cx, headY, r * 1.75, 0, Math.PI * 2);
           ctx.stroke();
         }
-        if (px >= 30 || isMine || isSelected) {
-          const fontSize = Math.round(Math.min(18, Math.max(11, px * 0.36)));
+        if (showNames || isMine || isSelected) {
+          const fontSize = Math.round(Math.min(18, Math.max(11, fpx * 0.36)));
           ctx.font = `700 ${fontSize}px ${fontFamily.current}`;
           ctx.textAlign = "center";
           ctx.textBaseline = "top";
@@ -337,6 +538,13 @@ export function BigMeadow() {
           ctx.fillText(f.name, cx, cy + 3);
         }
       }
+
+      // Blago zatamnjeni rubovi: pogled je kao kroz prozor na veći prostor.
+      const vignette = ctx.createRadialGradient(w / 2, h / 2, Math.min(w, h) * 0.42, w / 2, h / 2, Math.max(w, h) * 0.78);
+      vignette.addColorStop(0, "rgba(51,36,43,0)");
+      vignette.addColorStop(1, SCENE_COLORS.vignette);
+      ctx.fillStyle = vignette;
+      ctx.fillRect(0, 0, w, h);
     };
 
     const tick = () => {
@@ -360,8 +568,11 @@ export function BigMeadow() {
     };
     dirty.current = true;
     frame = window.requestAnimationFrame(tick);
-    return () => window.cancelAnimationFrame(frame);
-  }, [flowers, grid, bounds, mineNumbers, selected, clamp]);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.clearInterval(phaseTimer);
+    };
+  }, [flowers, grid, bounds, prints, maxNumber, mineNumbers, selected, clamp]);
 
   // Kartica prati odabrani cvijet.
   useEffect(() => {
@@ -376,14 +587,46 @@ export function BigMeadow() {
       const y = (selected.y - v.y) * v.scale + h / 2;
       const cardW = Math.min(300, w - 24);
       const left = Math.max(12, Math.min(w - cardW - 12, x - cardW / 2));
-      const above = y - FLOWER_SIZE * v.scale * 1.6 - 200;
-      const top = above > 64 ? above : Math.min(h - 220, y + 44);
+      const above = y - FLOWER_SIZE * v.scale * 1.6 - 230;
+      const top = above > 64 ? above : Math.min(h - 250, y + 44);
       setCardPos((previous) => (previous && Math.abs(previous.left - left) < 0.5 && Math.abs(previous.top - top) < 0.5 ? previous : { left, top }));
       frame = window.requestAnimationFrame(follow);
     };
     frame = window.requestAnimationFrame(follow);
     return () => window.cancelAnimationFrame(frame);
   }, [selected]);
+
+  useEffect(() => {
+    const onPop = () => {
+      if (pushedFull.current) {
+        pushedFull.current = false;
+        setFull(false);
+      }
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, []);
+
+  useEffect(() => {
+    if (!full) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const timer = window.setTimeout(() => {
+      const target = pendingFocus.current;
+      pendingFocus.current = null;
+      if (target) focus(target);
+      else showAll();
+    }, 60);
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && !claimOpen) exitFull();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = previous;
+      window.clearTimeout(timer);
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [full, claimOpen, exitFull, focus, showAll]);
 
   // Pomicanje, zumiranje i dodir.
   const pointers = useRef(new Map<number, { x: number; y: number }>());
@@ -414,7 +657,8 @@ export function BigMeadow() {
       const { w, h } = size.current;
       const wx = (sx - w / 2) / v.scale + v.x;
       const wy = (sy - h / 2) / v.scale + v.y;
-      const radius = Math.max(FLOWER_SIZE * 0.8, 14 / v.scale);
+      const fpx = Math.max(FLOWER_SIZE * v.scale, minFlowerPx(flowers?.length ?? 0));
+      const radius = Math.max(FLOWER_SIZE * 0.8, 14 / v.scale, (fpx * 0.7) / v.scale);
       let best: Flower | null = null;
       let bestDistance = Infinity;
       const gx = Math.floor(wx / CELL);
@@ -423,7 +667,7 @@ export function BigMeadow() {
         for (let dy = -1; dy <= 1; dy++) {
           for (const f of grid.get(`${gx + dx}:${gy + dy}`) ?? []) {
             // Glava cvijeta je iznad točke sadnje kad je cvijet dovoljno velik.
-            const headY = FLOWER_SIZE * v.scale >= 5 ? f.y - FLOWER_SIZE * 0.9 : f.y;
+            const headY = fpx >= 5 ? f.y - (fpx * 0.9) / v.scale : f.y;
             const d = Math.hypot(f.x - wx, headY - wy);
             if (d < radius && d < bestDistance) {
               best = f;
@@ -434,10 +678,14 @@ export function BigMeadow() {
       }
       return best;
     },
-    [grid],
+    [grid, flowers],
   );
 
   const onPointerDown = (event: React.PointerEvent<HTMLCanvasElement>) => {
+    if (!interactive) {
+      gesture.current = { x: event.clientX, y: event.clientY, vx: 0, vy: 0, moved: false, pinch: 0, scale: 0 };
+      return;
+    }
     event.currentTarget.setPointerCapture(event.pointerId);
     pointers.current.set(event.pointerId, { x: event.nativeEvent.offsetX, y: event.nativeEvent.offsetY });
     const points = [...pointers.current.values()];
@@ -453,6 +701,11 @@ export function BigMeadow() {
     fly.current = null;
   };
   const onPointerMove = (event: React.PointerEvent<HTMLCanvasElement>) => {
+    if (!interactive) {
+      const g = gesture.current;
+      if (g && Math.abs(event.clientX - g.x) + Math.abs(event.clientY - g.y) > 8) g.moved = true;
+      return;
+    }
     if (!pointers.current.has(event.pointerId) || !gesture.current) return;
     pointers.current.set(event.pointerId, { x: event.nativeEvent.offsetX, y: event.nativeEvent.offsetY });
     const g = gesture.current;
@@ -476,6 +729,15 @@ export function BigMeadow() {
     }
   };
   const onPointerUp = (event: React.PointerEvent<HTMLCanvasElement>) => {
+    if (!interactive) {
+      // Na mobitelu je livada u stranici samo pregled: dodir je otvara preko cijelog zaslona.
+      const g = gesture.current;
+      gesture.current = null;
+      if (g && !g.moved && event.type === "pointerup") {
+        enterFull(hitTest(event.nativeEvent.offsetX, event.nativeEvent.offsetY));
+      }
+      return;
+    }
     pointers.current.delete(event.pointerId);
     const g = gesture.current;
     if (g && !g.moved && pointers.current.size === 0) {
@@ -497,14 +759,14 @@ export function BigMeadow() {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas || !interactive) return;
     const onWheel = (event: WheelEvent) => {
       event.preventDefault();
       zoomAt(event.offsetX, event.offsetY, Math.exp(-event.deltaY * 0.0015));
     };
     canvas.addEventListener("wheel", onWheel, { passive: false });
     return () => canvas.removeEventListener("wheel", onWheel);
-  }, [zoomAt, flowers]);
+  }, [zoomAt, flowers, interactive]);
 
   const onKeyDown = (event: React.KeyboardEvent<HTMLCanvasElement>) => {
     const step = 80 / view.current.scale;
@@ -541,7 +803,27 @@ export function BigMeadow() {
     return { list: all.slice(0, 8), total: all.length };
   }, [query, flowers, byNumber]);
 
-  const myLatest = mine.length > 0 ? byNumber.get(mine[mine.length - 1].number) : undefined;
+  // Susjedi odabranog cvijeta: tri najbliža, da se osjeti da nije sam na livadi.
+  const neighbours = useMemo(() => {
+    if (!selected) return [];
+    const gx = Math.floor(selected.x / CELL);
+    const gy = Math.floor(selected.y / CELL);
+    const near: Array<{ flower: Flower; d: number }> = [];
+    for (let dx = -1; dx <= 1; dx++) {
+      for (let dy = -1; dy <= 1; dy++) {
+        for (const f of grid.get(`${gx + dx}:${gy + dy}`) ?? []) {
+          if (f.number !== selected.number) near.push({ flower: f, d: Math.hypot(f.x - selected.x, f.y - selected.y) });
+        }
+      }
+    }
+    return near
+      .sort((a, b) => a.d - b.d)
+      .slice(0, 3)
+      .map((item) => item.flower.name);
+  }, [selected, grid]);
+
+  const realByNumber = useMemo(() => new Map((realFlowers ?? []).map((flower) => [flower.number, flower])), [realFlowers]);
+  const myLatest = [...mine].reverse().map((number) => realByNumber.get(number)).find(Boolean);
 
   const copyLink = async (flower: Flower) => {
     const url = `${window.location.origin}/livada?trag=${flower.number}`;
@@ -559,88 +841,144 @@ export function BigMeadow() {
     return () => window.clearTimeout(timer);
   }, [toast]);
 
-  const onPlanted = (flower: Flower, token: string) => {
-    setFlowers((previous) => [...(previous ?? []).filter((item) => item.number !== flower.number), flower]);
-    const nextMine = [...readMine().filter((item) => item.number !== flower.number), { number: flower.number, token }];
-    writeMine(nextMine);
-    setMine(nextMine);
-    // Adresa odmah vodi na novi trag, pa je posjetitelj može spremiti ili podijeliti.
-    window.history.replaceState(null, "", `/livada?trag=${flower.number}`);
-    window.setTimeout(() => focus(flower), 60);
+  const startDemo = () => {
+    setSelected(null);
+    setQuery("");
+    wantOverview.current = true;
+    setDemo(true);
+    if (window.matchMedia(SMALL_SCREEN).matches) enterFull(null);
+  };
+  const stopDemo = () => {
+    setSelected(null);
+    setQuery("");
+    wantOverview.current = true;
+    setDemo(false);
+  };
+  const openClaim = () => {
+    if (demo) stopDemo();
+    setClaimOpen(true);
   };
 
   const count = flowers?.length ?? 0;
+  const currentPrint = Math.max(1, Math.ceil(maxNumber / PRINT_CAPACITY));
+  const filledInPrint = (flowers ?? []).filter((flower) => Math.ceil(flower.number / PRINT_CAPACITY) === currentPrint).length;
   const selectedIsMine = selected ? mineNumbers.has(selected.number) : false;
-  const selectedToken = selected ? mine.find((item) => item.number === selected.number)?.token : undefined;
+
+  const searchBox: ReactNode = (
+    <div className="relative min-w-0 flex-1">
+      <label htmlFor="livada-trazi" className="sr-only">
+        {t.search.label}
+      </label>
+      <input
+        id="livada-trazi"
+        type="search"
+        value={query}
+        onChange={(event) => setQuery(event.target.value)}
+        onFocus={() => {
+          if (!interactive) enterFull(null);
+        }}
+        placeholder={t.search.placeholder}
+        autoComplete="off"
+        className="min-h-12 w-full rounded-full border-2 border-line bg-white px-5 text-[16px] text-plum"
+      />
+      {results ? (
+        <div className="absolute inset-x-0 top-full z-30 mt-2 flex flex-col gap-1 rounded-3xl bg-white p-2 shadow-[0_18px_40px_-18px_rgba(51,36,43,0.55)]">
+          {results.list.length === 0 ? (
+            <p className="px-3 py-2 text-[15px] text-plum-soft">{t.search.none}</p>
+          ) : (
+            results.list.map((flower) => (
+              <button
+                key={flower.number}
+                type="button"
+                onClick={() => {
+                  setQuery("");
+                  if (!interactive) enterFull(flower);
+                  else focus(flower);
+                }}
+                className="flex min-h-11 cursor-pointer items-center justify-between gap-3 rounded-2xl px-3 text-left hover:bg-butter"
+              >
+                <span className="flex items-center gap-2 font-bold">
+                  <span className="size-3 rounded-full" style={{ background: PETAL_COLORS[flower.petal] }} aria-hidden="true" />
+                  {flower.name}
+                </span>
+                <span className="text-sm text-plum-soft">
+                  {t.species[flower.species]} · {fill(t.card.number, { number: flower.number.toLocaleString("hr-HR") })}
+                </span>
+              </button>
+            ))
+          )}
+          {results.total > results.list.length ? (
+            <p className="px-3 pb-1 text-[13px] text-plum-soft">{fill(t.search.more, { shown: results.list.length, total: results.total })}</p>
+          ) : null}
+        </div>
+      ) : null}
+    </div>
+  );
+
+  const myButton = myLatest ? (
+    <button
+      type="button"
+      onClick={() => (interactive ? focus(myLatest) : enterFull(myLatest))}
+      className="min-h-12 shrink-0 cursor-pointer rounded-full border-2 border-teal bg-mint px-5 font-bold text-teal-deep"
+    >
+      {fill(t.myTrail, { name: myLatest.name })}
+    </button>
+  ) : null;
+
+  const roundButton = "flex size-11 cursor-pointer items-center justify-center rounded-full bg-white/90 text-2xl font-bold text-plum";
 
   return (
-    <section aria-labelledby="velika-livada" className="flex flex-col gap-3">
-      <div className="flex flex-col gap-1">
+    <section aria-labelledby="velika-livada" className="flex flex-col gap-4">
+      <div className="flex flex-col gap-3">
         <h2 id="velika-livada" className="font-display text-3xl font-extrabold leading-tight">
           {t.title}
         </h2>
-        <p className="max-w-2xl leading-relaxed text-plum-soft">{t.lead}</p>
-      </div>
-
-      <div className="flex flex-col gap-2 sm:flex-row sm:items-start">
-        <div className="relative min-w-0 flex-1">
-          <label htmlFor="livada-trazi" className="sr-only">
-            {t.search.label}
-          </label>
-          <input
-            id="livada-trazi"
-            type="search"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            placeholder={t.search.placeholder}
-            autoComplete="off"
-            className="min-h-12 w-full rounded-full border-2 border-line bg-white px-5 text-[16px] text-plum"
-          />
-          {results ? (
-            <div className="absolute inset-x-0 top-full z-30 mt-2 flex flex-col gap-1 rounded-3xl bg-white p-2 shadow-[0_18px_40px_-18px_rgba(51,36,43,0.55)]">
-              {results.list.length === 0 ? (
-                <p className="px-3 py-2 text-[15px] text-plum-soft">{t.search.none}</p>
-              ) : (
-                results.list.map((flower) => (
-                  <button
-                    key={flower.number}
-                    type="button"
-                    onClick={() => {
-                      setQuery("");
-                      focus(flower);
-                    }}
-                    className="flex min-h-11 cursor-pointer items-center justify-between gap-3 rounded-2xl px-3 text-left hover:bg-butter"
-                  >
-                    <span className="flex items-center gap-2 font-bold">
-                      <span className="size-3 rounded-full" style={{ background: PETAL_COLORS[flower.petal] }} aria-hidden="true" />
-                      {flower.name}
-                    </span>
-                    <span className="text-sm text-plum-soft">
-                      {t.species[flower.species]} · {fill(t.card.number, { number: flower.number.toLocaleString("hr-HR") })}
-                    </span>
-                  </button>
-                ))
-              )}
-              {results.total > results.list.length ? (
-                <p className="px-3 pb-1 text-[13px] text-plum-soft">
-                  {fill(t.search.more, { shown: results.list.length, total: results.total })}
-                </p>
-              ) : null}
-            </div>
-          ) : null}
+        <p className="max-w-2xl text-lg leading-relaxed">{t.lead}</p>
+        <ul className="grid gap-2.5 sm:grid-cols-3">
+          {t.concept.map((item, index) => (
+            <li key={item.title} className="flex gap-3 rounded-3xl bg-white p-4">
+              <span
+                aria-hidden="true"
+                className="flex size-9 shrink-0 items-center justify-center rounded-full bg-butter font-display text-lg font-extrabold text-terracotta-deep"
+              >
+                {index + 1}
+              </span>
+              <span className="flex flex-col gap-0.5">
+                <span className="font-bold leading-snug">{item.title}</span>
+                <span className="text-[15px] leading-snug text-plum-soft">
+                  {fill(item.body, { capacity: PRINT_CAPACITY.toLocaleString("hr-HR") })}
+                </span>
+              </span>
+            </li>
+          ))}
+        </ul>
+        <div className="flex flex-wrap gap-2">
+          {demo ? (
+            <button type="button" onClick={stopDemo} className="min-h-11 cursor-pointer font-bold text-teal underline underline-offset-4">
+              {t.demo.exit}
+            </button>
+          ) : (
+            <button type="button" onClick={startDemo} className="min-h-11 cursor-pointer font-bold text-teal underline underline-offset-4">
+              {t.demoOpen}
+            </button>
+          )}
         </div>
-        {myLatest ? (
-          <button
-            type="button"
-            onClick={() => focus(myLatest)}
-            className="min-h-12 cursor-pointer rounded-full border-2 border-teal bg-mint px-5 font-bold text-teal-deep"
-          >
-            {t.myTrail}
-          </button>
-        ) : null}
       </div>
 
-      <div ref={stageRef} className="relative overflow-hidden rounded-[28px] bg-butter shadow-[0_18px_40px_-24px_rgba(51,36,43,0.5)]">
+      {!full ? (
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-start">
+          {searchBox}
+          {myButton}
+        </div>
+      ) : null}
+
+      <div
+        className={
+          full
+            ? "fixed inset-0 z-50 bg-butter"
+            : "relative overflow-hidden rounded-[28px] bg-butter shadow-[0_18px_40px_-24px_rgba(51,36,43,0.5)]"
+        }
+      >
         <canvas
           ref={canvasRef}
           tabIndex={0}
@@ -650,21 +988,17 @@ export function BigMeadow() {
           onPointerUp={onPointerUp}
           onPointerCancel={onPointerUp}
           onKeyDown={onKeyDown}
-          className="block h-[min(70vh,620px)] w-full cursor-grab touch-none font-sans outline-none focus-visible:ring-4 focus-visible:ring-teal"
+          className={`block w-full font-sans outline-none focus-visible:ring-4 focus-visible:ring-teal ${
+            full ? "h-dvh" : "h-[56vh] sm:h-[min(70vh,620px)]"
+          } ${interactive ? "cursor-grab touch-none" : "cursor-pointer touch-pan-y"}`}
         />
         {!flowers ? (
           <p className="absolute inset-0 flex items-center justify-center p-6 text-center font-semibold text-plum-soft" role="status">
             {failed ? t.loadError : t.loading}
           </p>
         ) : null}
-        {flowers && count === 0 ? (
-          <p className="absolute inset-x-6 top-1/3 text-center font-display text-xl font-extrabold">{t.empty}</p>
-        ) : null}
-        {missing !== null ? (
-          <p
-            role="status"
-            className="absolute inset-x-3 top-28 z-10 mx-auto max-w-sm rounded-2xl bg-white/95 p-3 text-center text-[15px] font-semibold"
-          >
+        {missing !== null && !demo ? (
+          <p role="status" className="absolute inset-x-3 top-32 z-10 mx-auto max-w-sm rounded-2xl bg-white/95 p-3 text-center text-[15px] font-semibold">
             {fill(t.missingTrail, { number: missing })}
             <button type="button" onClick={() => setMissing(null)} className="ml-2 min-h-11 font-bold text-teal underline">
               {t.card.close}
@@ -672,38 +1006,72 @@ export function BigMeadow() {
           </p>
         ) : null}
 
-        <div className="pointer-events-none absolute inset-x-3 top-3 flex flex-wrap items-start justify-between gap-2">
-          <span className="pointer-events-auto rounded-full bg-white/90 px-4 py-2 text-sm font-bold">
+        <div className="pointer-events-none absolute inset-x-3 top-3 flex flex-col gap-2">
+          {full ? (
+            <div className="pointer-events-auto flex items-start gap-2">
+              {searchBox}
+              <button type="button" onClick={exitFull} className="min-h-12 shrink-0 cursor-pointer rounded-full bg-plum px-5 font-bold text-white">
+                {t.full.close}
+              </button>
+            </div>
+          ) : null}
+          {demo ? (
+            <p className="pointer-events-auto flex flex-wrap items-center gap-x-2 self-start rounded-2xl bg-plum px-3.5 py-1 text-[13px] font-semibold text-white">
+              {fill(t.demo.banner, { count: t.demo.count.toLocaleString("hr-HR") })}
+              <button type="button" onClick={stopDemo} className="min-h-11 cursor-pointer font-bold text-butter underline underline-offset-4">
+                {t.demo.exitShort}
+              </button>
+            </p>
+          ) : null}
+          <p className="pointer-events-auto self-start rounded-full bg-white/90 px-3.5 py-1.5 text-[13px] font-bold">
             {fill(t.count, { count: count.toLocaleString("hr-HR") })}
-          </span>
-          <span className="pointer-events-auto flex gap-1.5">
-            <button
-              type="button"
-              aria-label={t.zoomIn}
-              onClick={zoomInCenter}
-              className="flex size-11 cursor-pointer items-center justify-center rounded-full bg-white/90 text-2xl font-bold text-plum"
-            >
-              <span aria-hidden="true">+</span>
-            </button>
-            <button
-              type="button"
-              aria-label={t.zoomOut}
-              onClick={zoomOutCenter}
-              className="flex size-11 cursor-pointer items-center justify-center rounded-full bg-white/90 text-2xl font-bold text-plum"
-            >
-              <span aria-hidden="true">−</span>
-            </button>
-            <button
-              type="button"
-              onClick={showAll}
-              className="min-h-11 cursor-pointer rounded-full bg-white/90 px-4 text-sm font-bold text-plum"
-            >
-              {t.zoomAll}
-            </button>
-          </span>
+            {flowers && interactive ? (
+              <span className="font-semibold text-plum-soft">
+                {" · "}
+                {fill(t.progress, {
+                  print: currentPrint,
+                  filled: Math.max(0, filledInPrint).toLocaleString("hr-HR"),
+                  capacity: PRINT_CAPACITY.toLocaleString("hr-HR"),
+                })}
+              </span>
+            ) : null}
+          </p>
         </div>
 
-        {selected && cardPos ? (
+        {interactive ? (
+          <div className="absolute right-3 top-1/2 z-10 flex -translate-y-1/2 flex-col gap-1.5">
+            <button type="button" aria-label={t.zoomIn} onClick={zoomInCenter} className={roundButton}>
+              <span aria-hidden="true">+</span>
+            </button>
+            <button type="button" aria-label={t.zoomOut} onClick={zoomOutCenter} className={roundButton}>
+              <span aria-hidden="true">−</span>
+            </button>
+            <button type="button" aria-label={t.zoomAll} title={t.zoomAll} onClick={showAll} className={roundButton}>
+              <FitIcon size={20} />
+            </button>
+          </div>
+        ) : null}
+        {interactive && !full ? (
+          <button
+            type="button"
+            onClick={() => enterFull(null)}
+            className="absolute right-3 top-3 z-10 hidden min-h-11 cursor-pointer rounded-full bg-white/90 px-4 text-sm font-bold text-plum sm:block"
+          >
+            {t.full.open}
+          </button>
+        ) : null}
+
+        {!interactive && flowers ? (
+          <button
+            type="button"
+            onClick={() => enterFull(null)}
+            className="absolute left-1/2 top-1/2 min-h-12 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/95 px-5 font-bold text-plum shadow-[0_12px_24px_-14px_rgba(51,36,43,0.6)]"
+          >
+            {t.full.tapHint}
+          </button>
+        ) : null}
+
+        {selected && cardPos && interactive ? (
           <div
             role="dialog"
             aria-label={selected.name}
@@ -725,33 +1093,38 @@ export function BigMeadow() {
             <span className="text-sm text-plum-soft">
               {t.species[selected.species]} · {fill(t.card.number, { number: selected.number.toLocaleString("hr-HR") })}
             </span>
+            <span className="text-sm font-semibold text-teal-deep">{placeLabel(selected.number)}</span>
             <span className="text-sm text-plum-soft">{fill(t.card.added, { date: formatPetDate(selected.day, "day") ?? selected.day })}</span>
-            <div className="mt-2 flex flex-wrap gap-2">
-              {selected.slug ? (
-                <Link
-                  href={`/spomen/${selected.slug}` as Route}
-                  className="inline-flex min-h-11 items-center rounded-full bg-terracotta px-4 text-sm font-bold text-white no-underline hover:bg-terracotta-deep"
+            {neighbours.length > 0 ? (
+              <span className="text-sm text-plum-soft">{fill(t.card.neighbours, { names: neighbours.join(", ") })}</span>
+            ) : null}
+            {!demo ? (
+              <div className="mt-2 flex flex-wrap gap-2">
+                {selected.slug ? (
+                  <Link
+                    href={`/spomen/${selected.slug}` as Route}
+                    className="inline-flex min-h-11 items-center rounded-full bg-terracotta px-4 text-sm font-bold text-white no-underline hover:bg-terracotta-deep"
+                  >
+                    {t.card.openMemorial}
+                  </Link>
+                ) : null}
+                {selectedIsMine && !selected.slug ? (
+                  <Link
+                    href={"/izradi?iz=livada" as Route}
+                    className="inline-flex min-h-11 items-center rounded-full bg-terracotta px-4 text-sm font-bold text-white no-underline hover:bg-terracotta-deep"
+                  >
+                    {t.card.makeMemorial}
+                  </Link>
+                ) : null}
+                <button
+                  type="button"
+                  onClick={() => copyLink(selected)}
+                  className="min-h-11 cursor-pointer rounded-full border-2 border-plum bg-white px-4 text-sm font-bold text-plum hover:bg-butter"
                 >
-                  {t.card.openMemorial}
-                </Link>
-              ) : null}
-              {selectedIsMine && !selected.slug ? (
-                <Link
-                  href={"/izradi?iz=livada" as Route}
-                  className="inline-flex min-h-11 items-center rounded-full bg-terracotta px-4 text-sm font-bold text-white no-underline hover:bg-terracotta-deep"
-                >
-                  {t.card.makeMemorial}
-                </Link>
-              ) : null}
-              <button
-                type="button"
-                onClick={() => copyLink(selected)}
-                className="min-h-11 cursor-pointer rounded-full border-2 border-plum bg-white px-4 text-sm font-bold text-plum hover:bg-butter"
-              >
-                {t.card.copyLink}
-              </button>
-            </div>
-            {selectedIsMine && selectedToken ? <SaveEmail number={selected.number} token={selectedToken} compact /> : null}
+                  {t.card.copyLink}
+                </button>
+              </div>
+            ) : null}
           </div>
         ) : null}
 
@@ -764,29 +1137,33 @@ export function BigMeadow() {
         <div className="absolute inset-x-3 bottom-4 flex justify-center">
           <button
             type="button"
-            onClick={() => setClaimOpen(true)}
+            onClick={openClaim}
             className="min-h-13 cursor-pointer rounded-full bg-terracotta px-6 text-[16px] font-bold text-white shadow-[0_12px_24px_-12px_rgba(168,58,24,0.8)] hover:bg-terracotta-deep"
           >
             {t.claim.open}
           </button>
         </div>
 
-        {claimOpen ? <ClaimSheet onClose={() => setClaimOpen(false)} onPlanted={onPlanted} /> : null}
+        {claimOpen ? <ClaimSheet onClose={() => setClaimOpen(false)} /> : null}
       </div>
     </section>
   );
 }
 
-function ClaimSheet({ onClose, onPlanted }: { onClose: () => void; onPlanted: (flower: Flower, token: string) => void }) {
+function ClaimSheet({ onClose }: { onClose: () => void }) {
   const [step, setStep] = useState<1 | 2 | 3>(1);
   const [name, setName] = useState("");
   const [species, setSpecies] = useState<MeadowSpecies>("pas");
   const [petal, setPetal] = useState<MeadowPetal>("terakota");
+  const [email, setEmail] = useState("");
+  const [consent, setConsent] = useState(false);
+  const [newsletter, setNewsletter] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
-  const [planted, setPlanted] = useState<{ number: number; token: string; name: string } | null>(null);
+  const [days, setDays] = useState(7);
   const startedAt = useRef(0);
   const nameInput = useRef<HTMLInputElement>(null);
+  const emailInput = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     startedAt.current = Date.now();
@@ -797,6 +1174,10 @@ function ClaimSheet({ onClose, onPlanted }: { onClose: () => void; onPlanted: (f
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [onClose]);
+
+  useEffect(() => {
+    if (step === 2) emailInput.current?.focus();
+  }, [step]);
 
   const next = () => {
     const check = checkFlowerName(name);
@@ -809,44 +1190,41 @@ function ClaimSheet({ onClose, onPlanted }: { onClose: () => void; onPlanted: (f
     setStep(2);
   };
 
-  const plant = async () => {
+  const send = async () => {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.trim())) {
+      setError(t.claim.errors.email);
+      emailInput.current?.focus();
+      return;
+    }
+    if (!consent) {
+      setError(t.claim.errors.consent);
+      return;
+    }
     setBusy(true);
     setError(null);
     try {
       const response = await fetch("/api/livada/tragovi", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, species, petal, elapsedMs: Date.now() - startedAt.current, website: "" }),
-      });
-      const data = (await response.json().catch(() => ({}))) as {
-        number?: number;
-        claimToken?: string;
-        createdAt?: string;
-        name?: string;
-        error?: keyof typeof t.claim.errors;
-      };
-      if (!response.ok || !data.number || !data.claimToken) {
-        setError(t.claim.errors[data.error && data.error in t.claim.errors ? data.error : "failed"]);
-        return;
-      }
-      const flowerName = data.name ?? name.trim();
-      const { x, y } = flowerPosition(data.number);
-      onPlanted(
-        {
-          number: data.number,
-          name: flowerName,
+        body: JSON.stringify({
+          name,
           species,
           petal,
-          slug: "",
-          day: (data.createdAt ?? new Date().toISOString()).slice(0, 10),
-          x,
-          y,
-          search: plainSearch(flowerName),
-        },
-        data.claimToken,
-      );
-      setPlanted({ number: data.number, token: data.claimToken, name: flowerName });
-      setStep(3);
+          email: email.trim(),
+          consent: true,
+          newsletter,
+          elapsedMs: Date.now() - startedAt.current,
+          website: "",
+        }),
+      });
+      const data = (await response.json().catch(() => ({}))) as { status?: string; days?: number; error?: string };
+      if (response.ok && data.status === "sent") {
+        setDays(data.days ?? 7);
+        setStep(3);
+        return;
+      }
+      const key = data.error && data.error in t.claim.errors ? (data.error as keyof typeof t.claim.errors) : "failed";
+      setError(t.claim.errors[key]);
     } catch {
       setError(t.claim.errors.failed);
     } finally {
@@ -856,15 +1234,22 @@ function ClaimSheet({ onClose, onPlanted }: { onClose: () => void; onPlanted: (f
 
   const steps = (
     <div className="flex gap-1.5" aria-hidden="true">
-      {[1, 2, 3].map((item) => (
+      {[1, 2].map((item) => (
         <span key={item} className={`h-1.5 flex-1 rounded-full ${item <= step ? "bg-terracotta" : "bg-line"}`} />
       ))}
     </div>
   );
+  const errorLine = error ? (
+    <p role="alert" className="text-sm font-medium text-danger">
+      {error}
+    </p>
+  ) : null;
+  const quiet = "min-h-11 cursor-pointer font-semibold text-plum-soft underline underline-offset-4";
+  const primary = "min-h-13 cursor-pointer rounded-full bg-terracotta font-bold text-white hover:bg-terracotta-deep disabled:opacity-60";
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-end justify-center bg-plum/35 p-3 sm:absolute sm:z-40 sm:items-center"
+      className="fixed inset-0 z-[60] flex items-end justify-center bg-plum/35 p-3 sm:items-center"
       onClick={(event) => {
         if (event.target === event.currentTarget) onClose();
       }}
@@ -873,9 +1258,9 @@ function ClaimSheet({ onClose, onPlanted }: { onClose: () => void; onPlanted: (f
         role="dialog"
         aria-modal="true"
         aria-labelledby="trag-naslov"
-        className="flex max-h-[calc(100dvh-1.5rem)] sm:max-h-full w-full max-w-md flex-col gap-3.5 overflow-auto rounded-[28px] bg-vanilla p-5 sm:p-6"
+        className="flex max-h-[calc(100dvh-1.5rem)] w-full max-w-md flex-col gap-3.5 overflow-auto rounded-[28px] bg-vanilla p-5 sm:p-6"
       >
-        {steps}
+        {step < 3 ? steps : null}
         {step === 1 ? (
           <>
             <span className="text-[13px] font-bold uppercase tracking-[0.08em] text-terracotta-deep">{fill(t.claim.stepOf, { step: 1 })}</span>
@@ -915,15 +1300,29 @@ function ClaimSheet({ onClose, onPlanted }: { onClose: () => void; onPlanted: (f
                 ))}
               </div>
             </fieldset>
-            {error ? (
-              <p role="alert" className="text-sm font-medium text-danger">
-                {error}
-              </p>
-            ) : null}
-            <button type="button" onClick={next} className="min-h-13 cursor-pointer rounded-full bg-terracotta font-bold text-white hover:bg-terracotta-deep">
+            <fieldset className="flex flex-col gap-2">
+              <legend className="mb-1 font-bold">{t.claim.petalLabel}</legend>
+              <p className="-mt-1 text-[14px] text-plum-soft">{t.claim.petalHint}</p>
+              <div className="flex flex-wrap gap-2">
+                {MEADOW_PETALS.map((key) => (
+                  <button
+                    key={key}
+                    type="button"
+                    aria-pressed={petal === key}
+                    aria-label={t.petals[key]}
+                    onClick={() => setPetal(key)}
+                    className={`flex size-11 cursor-pointer items-center justify-center rounded-full border-2 ${petal === key ? "border-teal bg-mint" : "border-line bg-white"}`}
+                  >
+                    <span className="size-6 rounded-full border border-plum/20" style={{ background: PETAL_COLORS[key] }} aria-hidden="true" />
+                  </button>
+                ))}
+              </div>
+            </fieldset>
+            {errorLine}
+            <button type="button" onClick={next} className={primary}>
               {t.claim.next}
             </button>
-            <button type="button" onClick={onClose} className="min-h-11 cursor-pointer font-semibold text-plum-soft underline underline-offset-4">
+            <button type="button" onClick={onClose} className={quiet}>
               {t.claim.cancel}
             </button>
           </>
@@ -932,148 +1331,68 @@ function ClaimSheet({ onClose, onPlanted }: { onClose: () => void; onPlanted: (f
           <>
             <span className="text-[13px] font-bold uppercase tracking-[0.08em] text-terracotta-deep">{fill(t.claim.stepOf, { step: 2 })}</span>
             <h3 id="trag-naslov" className="font-display text-2xl font-extrabold">
-              {t.claim.petalTitle}
+              {t.claim.emailTitle}
             </h3>
-            <p className="text-[15px] text-plum-soft">{t.claim.petalHint}</p>
-            <div className="flex flex-wrap gap-2" role="group" aria-label={t.claim.petalTitle}>
-              {MEADOW_PETALS.map((key) => (
-                <button
-                  key={key}
-                  type="button"
-                  aria-pressed={petal === key}
-                  aria-label={t.petals[key]}
-                  onClick={() => setPetal(key)}
-                  className={`flex size-12 cursor-pointer items-center justify-center rounded-full border-2 ${petal === key ? "border-teal bg-mint" : "border-line bg-white"}`}
-                >
-                  <span className="size-6 rounded-full border border-plum/20" style={{ background: PETAL_COLORS[key] }} aria-hidden="true" />
-                </button>
-              ))}
-            </div>
-            {error ? (
-              <p role="alert" className="text-sm font-medium text-danger">
-                {error}
-              </p>
-            ) : null}
-            <button
-              type="button"
-              disabled={busy}
-              onClick={plant}
-              className="min-h-13 cursor-pointer rounded-full bg-terracotta font-bold text-white hover:bg-terracotta-deep disabled:opacity-60"
-            >
+            <p className="flex items-center gap-2 rounded-2xl bg-white px-4 py-2.5 font-semibold [overflow-wrap:anywhere]">
+              <span className="size-3.5 shrink-0 rounded-full border border-plum/20" style={{ background: PETAL_COLORS[petal] }} aria-hidden="true" />
+              {fill(t.claim.summary, { name: name.trim(), species: t.species[species], petal: t.petals[petal] })}
+            </p>
+            <p className="text-[15px] leading-relaxed">{t.claim.emailBody}</p>
+            <label htmlFor="trag-email" className="flex flex-col gap-1.5 text-[15px] font-bold">
+              {t.claim.emailLabel}
+              <input
+                ref={emailInput}
+                id="trag-email"
+                type="email"
+                inputMode="email"
+                autoComplete="email"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter") send();
+                }}
+                placeholder={t.claim.emailPlaceholder}
+                className="min-h-12 rounded-2xl border-2 border-line bg-white px-4 font-medium text-plum"
+              />
+            </label>
+            <label className="flex items-start gap-2.5 text-[14px] leading-snug text-plum-soft">
+              <input type="checkbox" checked={consent} onChange={(event) => setConsent(event.target.checked)} className="mt-0.5 size-5 shrink-0 accent-terracotta" />
+              {t.claim.consent}
+            </label>
+            <label className="flex items-start gap-2.5 text-[14px] leading-snug text-plum-soft">
+              <input type="checkbox" checked={newsletter} onChange={(event) => setNewsletter(event.target.checked)} className="mt-0.5 size-5 shrink-0 accent-terracotta" />
+              {t.claim.newsletter}
+            </label>
+            {errorLine}
+            <button type="button" disabled={busy} onClick={send} className={primary}>
               {busy ? t.claim.sending : t.claim.submit}
             </button>
-            <button type="button" onClick={() => setStep(1)} className="min-h-11 cursor-pointer font-semibold text-plum-soft underline underline-offset-4">
+            <button
+              type="button"
+              onClick={() => {
+                setError(null);
+                setStep(1);
+              }}
+              className={quiet}
+            >
               {t.claim.back}
             </button>
           </>
         ) : null}
-        {step === 3 && planted ? (
+        {step === 3 ? (
           <>
-            <span className="text-[13px] font-bold uppercase tracking-[0.08em] text-teal-deep">
-              {fill(t.claim.doneEyebrow, { number: planted.number.toLocaleString("hr-HR") })}
-            </span>
-            <h3 id="trag-naslov" className="font-display text-2xl font-extrabold [overflow-wrap:anywhere]">
-              {fill(t.claim.doneTitle, { name: planted.name })}
+            <span className="text-[13px] font-bold uppercase tracking-[0.08em] text-teal-deep">{t.claim.sentEyebrow}</span>
+            <h3 id="trag-naslov" className="font-display text-2xl font-extrabold">
+              {t.claim.sentTitle}
             </h3>
-            <p className="text-[15px] leading-relaxed">{t.claim.doneBody}</p>
-            <SaveEmail number={planted.number} token={planted.token} />
-            <p className="text-[13px] text-plum-soft">{t.claim.linkHint}</p>
-            <button type="button" onClick={onClose} className="min-h-11 cursor-pointer font-semibold text-plum-soft underline underline-offset-4">
-              {t.claim.skip}
+            <p className="text-[16px] leading-relaxed [overflow-wrap:anywhere]">{fill(t.claim.sentBody, { email: email.trim(), days })}</p>
+            <p className="text-[14px] text-plum-soft">{t.claim.sentSpam}</p>
+            <button type="button" onClick={onClose} className={primary}>
+              {t.claim.sentClose}
             </button>
           </>
         ) : null}
       </div>
-    </div>
-  );
-}
-
-function SaveEmail({ number, token, compact = false }: { number: number; token: string; compact?: boolean }) {
-  const [email, setEmail] = useState("");
-  const [consent, setConsent] = useState(false);
-  const [newsletter, setNewsletter] = useState(false);
-  const [state, setState] = useState<{ kind: "idle" | "saved" } | { kind: "error"; message: string }>({ kind: "idle" });
-  const [busy, setBusy] = useState(false);
-  const [open, setOpen] = useState(!compact);
-
-  if (state.kind === "saved") {
-    return (
-      <p role="status" className="rounded-2xl bg-mint px-4 py-3 text-[15px] font-medium">
-        {t.claim.saved}
-      </p>
-    );
-  }
-  if (!open) {
-    return (
-      <button type="button" onClick={() => setOpen(true)} className="mt-1 min-h-11 cursor-pointer self-start text-sm font-bold text-teal underline underline-offset-4">
-        {t.card.save}
-      </button>
-    );
-  }
-  const submit = async () => {
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.trim())) {
-      setState({ kind: "error", message: t.claim.errors.email });
-      return;
-    }
-    if (!consent) {
-      setState({ kind: "error", message: t.claim.errors.consent });
-      return;
-    }
-    setBusy(true);
-    try {
-      const response = await fetch("/api/livada/tragovi/spremi", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ number, claimToken: token, email: email.trim(), consent: true, newsletter }),
-      });
-      const data = (await response.json().catch(() => ({}))) as { status?: string; error?: string };
-      if (response.ok && data.status === "saved") setState({ kind: "saved" });
-      else if (data.error === "rate") setState({ kind: "error", message: t.claim.errors.rate });
-      else if (data.error === "email") setState({ kind: "error", message: t.claim.errors.email });
-      else setState({ kind: "error", message: t.claim.errors.failed });
-    } catch {
-      setState({ kind: "error", message: t.claim.errors.failed });
-    } finally {
-      setBusy(false);
-    }
-  };
-  const id = `trag-email-${number}`;
-  return (
-    <div className="flex flex-col gap-2.5">
-      <label htmlFor={id} className="flex flex-col gap-1.5 text-[15px] font-bold">
-        {t.claim.emailLabel}
-        <input
-          id={id}
-          type="email"
-          inputMode="email"
-          autoComplete="email"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-          placeholder={t.claim.emailPlaceholder}
-          className="min-h-12 rounded-2xl border-2 border-line bg-white px-4 font-medium text-plum"
-        />
-      </label>
-      <label className="flex items-start gap-2.5 text-[14px] leading-snug text-plum-soft">
-        <input type="checkbox" checked={consent} onChange={(event) => setConsent(event.target.checked)} className="mt-0.5 size-5 shrink-0 accent-terracotta" />
-        {t.claim.consent}
-      </label>
-      <label className="flex items-start gap-2.5 text-[14px] leading-snug text-plum-soft">
-        <input type="checkbox" checked={newsletter} onChange={(event) => setNewsletter(event.target.checked)} className="mt-0.5 size-5 shrink-0 accent-terracotta" />
-        {t.claim.newsletter}
-      </label>
-      {state.kind === "error" ? (
-        <p role="alert" className="text-sm font-medium text-danger">
-          {state.message}
-        </p>
-      ) : null}
-      <button
-        type="button"
-        disabled={busy}
-        onClick={submit}
-        className="min-h-12 cursor-pointer rounded-full bg-terracotta px-5 font-bold text-white hover:bg-terracotta-deep disabled:opacity-60"
-      >
-        {t.claim.saveEmail}
-      </button>
     </div>
   );
 }

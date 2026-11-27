@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { FLOWER_SPACING, checkFlowerName, flowerPosition, meadowBounds } from "@/lib/meadow";
+import { FLOWER_SPACING, PRINT_CAPACITY, checkFlowerName, dayPhase, flowerPlace, flowerPosition, meadowBounds } from "@/lib/meadow";
 
 describe("Velika livada", () => {
   it("cvjetovi se ne preklapaju i ostaju unutar granica", () => {
@@ -7,19 +7,36 @@ describe("Velika livada", () => {
     const points = Array.from({ length: count }, (_, i) => flowerPosition(i + 1));
     const bounds = meadowBounds(count);
     let minDistance = Infinity;
-    // Provjera susjeda na uzorku: dovoljno za otkrivanje preklapanja u spirali.
-    for (let i = 0; i < count; i += 7) {
+    // Provjera susjeda na uzorku: dovoljno za otkrivanje preklapanja unutar i između otisaka.
+    for (let i = 0; i < count; i += 3) {
       for (let j = 0; j < count; j++) {
         if (i !== j) minDistance = Math.min(minDistance, Math.hypot(points[i].x - points[j].x, points[i].y - points[j].y));
       }
     }
-    expect(minDistance).toBeGreaterThan(FLOWER_SPACING * 0.3);
+    // Cvijet je promjera 26 jedinica: glave se ne smiju dodirivati.
+    expect(minDistance).toBeGreaterThan(26);
+    expect(FLOWER_SPACING).toBeGreaterThan(26);
     for (const p of points) {
       expect(p.x).toBeGreaterThan(bounds.minX);
       expect(p.x).toBeLessThan(bounds.maxX);
       expect(p.y).toBeGreaterThan(bounds.minY);
       expect(p.y).toBeLessThan(bounds.maxY);
     }
+  });
+
+  it("prvih pet tragova zauzme pet jastučića, pa se oblik šape vidi odmah", () => {
+    expect([1, 2, 3, 4, 5].map((n) => flowerPlace(n).pad).sort()).toEqual([0, 1, 2, 3, 4]);
+    expect(flowerPlace(1).print).toBe(1);
+    expect(flowerPlace(PRINT_CAPACITY).print).toBe(1);
+    expect(flowerPlace(PRINT_CAPACITY + 1).print).toBe(2);
+  });
+
+  it("doba dana računa se po zagrebačkom vremenu i godišnjem dobu", () => {
+    // 27. 11. u 17:30 u Zagrebu (16:30 UTC) sunce je već zašlo; 21. 6. u isto vrijeme je dan.
+    expect(dayPhase(new Date("2026-11-27T16:30:00Z"))).toBe("night");
+    expect(dayPhase(new Date("2026-06-21T15:30:00Z"))).toBe("day");
+    expect(dayPhase(new Date("2026-11-27T11:00:00Z"))).toBe("day");
+    expect(dayPhase(new Date("2026-11-27T15:15:00Z"))).toBe("dusk");
   });
 
   it("isti broj uvijek daje isto mjesto", () => {
