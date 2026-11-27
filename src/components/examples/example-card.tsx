@@ -2,6 +2,7 @@ import type { Route } from "next";
 import Link from "next/link";
 import { PetArt } from "@/components/examples/pet-art";
 import { CandleIcon } from "@/components/icons";
+import { examplePath } from "@/lib/example-memorials";
 import type { ExamplePet } from "@/lib/examples";
 import { plural } from "@/lib/text";
 import { livada } from "@/messages/hr/livada";
@@ -11,7 +12,7 @@ import { marketing } from "@/messages/hr/marketing";
 export function ExampleCard({ pet }: { pet: ExamplePet }) {
   return (
     <Link
-      href={"/primjer" as Route}
+      href={examplePath(pet.key) as Route}
       className="relative flex h-full flex-col items-center gap-2 rounded-3xl bg-white px-3 pb-4 pt-5 text-center text-plum no-underline hover:bg-butter"
     >
       <span className="absolute right-2.5 top-2.5 rounded-full bg-plum px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-white">
