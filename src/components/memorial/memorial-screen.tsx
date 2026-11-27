@@ -137,7 +137,10 @@ export function MemorialScreen({
           />
           {memorial.guestbookMode === "off" ? null : (
             <div className="flex-1">
-              <a href="#knjiga" className={buttonClass("secondary", "lg", "w-full px-3")}>
+              <a
+                href={interactive || mode === "example" ? "#napisi" : "#knjiga"}
+                className={buttonClass("secondary", "lg", "w-full px-3")}
+              >
                 <PenIcon />
                 {messages.write}
               </a>
@@ -343,6 +346,7 @@ export function MemorialScreen({
               </ul>
             )}
             {interactive ? <GuestbookForm memorialId={memorial.id} shareKey={shareKey} /> : null}
+            {mode === "example" ? <GuestbookForm memorialId={memorial.id} shareKey={null} demo /> : null}
           </section>
         )}
 

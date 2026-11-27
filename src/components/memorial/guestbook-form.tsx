@@ -8,10 +8,25 @@ import { useHydrated } from "@/lib/use-hydrated";
 import { common } from "@/messages/hr/common";
 import { memorial as messages } from "@/messages/hr/memorial";
 
-type Result = { kind: "idle" } | { kind: "sent"; status: "pending" | "approved" } | { kind: "error"; message: string };
+type Result =
+  | { kind: "idle" }
+  | { kind: "sent"; status: "pending" | "approved" }
+  | { kind: "demo" }
+  | { kind: "error"; message: string };
 
-/** Obrazac za poruku u knjizi sjećanja. Skriveno polje `website` je zamka za robote. */
-export function GuestbookForm({ memorialId, shareKey }: { memorialId: string; shareKey: string | null }) {
+/**
+ * Obrazac za poruku u knjizi sjećanja. Skriveno polje `website` je zamka za robote.
+ * Na primjeru spomena (`demo`) ništa se ne šalje: obrazac samo pokazuje kako izgleda.
+ */
+export function GuestbookForm({
+  memorialId,
+  shareKey,
+  demo = false,
+}: {
+  memorialId: string;
+  shareKey: string | null;
+  demo?: boolean;
+}) {
   const [result, setResult] = useState<Result>({ kind: "idle" });
   const [busy, setBusy] = useState(false);
   const startedAt = useRef<number>(0);
@@ -20,6 +35,10 @@ export function GuestbookForm({ memorialId, shareKey }: { memorialId: string; sh
 
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (demo) {
+      setResult({ kind: "demo" });
+      return;
+    }
     const form = new FormData(event.currentTarget);
     setBusy(true);
     try {
@@ -52,6 +71,14 @@ export function GuestbookForm({ memorialId, shareKey }: { memorialId: string; sh
     }
   }
 
+  if (result.kind === "demo") {
+    return (
+      <p className="rounded-3xl bg-mint px-5 py-4 font-medium" role="status">
+        {messages.guestbook.demoSent}
+      </p>
+    );
+  }
+
   if (result.kind === "sent") {
     return (
       <p className="rounded-3xl bg-mint px-5 py-4 font-medium" role="status">
@@ -69,9 +96,11 @@ export function GuestbookForm({ memorialId, shareKey }: { memorialId: string; sh
           startedAt.current = Date.now();
         }
       }}
-      className="flex flex-col gap-4 rounded-3xl bg-white p-5"
+      id="napisi"
+      className="flex scroll-mt-6 flex-col gap-4 rounded-3xl bg-white p-5"
     >
       <h3 className="text-xl font-extrabold">{messages.guestbook.title}</h3>
+      {demo ? <p className="text-sm text-plum-soft">{messages.guestbook.demoNote}</p> : null}
       <Field label={messages.guestbook.name} htmlFor="gb-name">
         <Input id="gb-name" name="name" required maxLength={60} autoComplete="name" />
       </Field>
@@ -97,8 +126,8 @@ export function GuestbookForm({ memorialId, shareKey }: { memorialId: string; sh
           {result.message}
         </p>
       ) : null}
-      <Turnstile onToken={setToken} />
-      <Button type="submit" disabled={busy || !hydrated || (turnstileEnabled && !token)}>
+      {demo ? null : <Turnstile onToken={setToken} />}
+      <Button type="submit" disabled={busy || !hydrated || (!demo && turnstileEnabled && !token)}>
         {busy ? messages.guestbook.sending : messages.guestbook.submit}
       </Button>
     </form>

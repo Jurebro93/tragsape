@@ -53,6 +53,8 @@ export const memorial = {
     published: "Hvala. Tvoja poruka je objavljena.",
     error: "Poruka nije poslana. Pokušaj ponovno za trenutak.",
     previewNote: "Ovdje će posjetitelji ostavljati poruke. Svaku odobravaš ti.",
+    demoNote: "Ovo je primjer. Na pravom spomenu poruka stiže vlasniku i prikaže se kad je odobri.",
+    demoSent: "Ovo je primjer, pa poruka nije poslana. Na pravom spomenu vlasnik bi je sada dobio na odobrenje.",
   },
   share: {
     label: "Podijeli",
