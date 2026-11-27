@@ -219,4 +219,4 @@ Rok ne postoji. AVMA piše da prevladavanje krivnje traži vrijeme i suosjećanj
 
 ## Sljedeći korak
 
-Ako ti je lakše napisati nego izgovoriti, [alat za oproštajno pismo](/alati/oprostaj) pomaže ti naći prve rečenice. Ako se već pitaš što dalje, pročitaj [Kada uzeti novog ljubimca nakon gubitka](/vodic/kada-uzeti-novog-ljubimca-nakon-gubitka).
+Ako ti je lakše napisati nego izgovoriti, [pomoćnik za posvetu](/alati/posveta) pomaže ti naći prve rečenice. Ako se već pitaš što dalje, pročitaj [Kada uzeti novog ljubimca nakon gubitka](/vodic/kada-uzeti-novog-ljubimca-nakon-gubitka).

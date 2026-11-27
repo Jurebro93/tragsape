@@ -62,6 +62,9 @@ Dan poslije je Dušni dan. Hrvatska enciklopedija navodi da se tada svijeće pal
 
 Običaj se mijenjao. Ista enciklopedija bilježi da su se grobovi nekada kitili i svijeće palile rjeđe, a da je to u novije doba postalo obvezno [1].
 
+> [!CINJENICA] Jeste li znali?
+> Uz svijeće, Dušni dan u pučkoj je tradiciji imao i druge znakove sjećanja. Ostatci obilne večere ostavljali su se noću na stolu za pokojnike, a ponegdje se za taj dan priprema jelo od leće, koje se nudi svakome tko naiđe ili dođe u kuću [2].
+
 ## Pomaže li takav obred?
 
 Postoji istraživanje koje govori upravo o tome. Psiholozi Michael Norton i Francesca Gino u tri su pokusa ispitivali obrede nakon gubitka. Sudionici koji su se prisjetili svog obreda ili su izveli novi izvijestili su o slabijoj tuzi [4].
@@ -105,11 +108,13 @@ Gesta može biti svijeća, šapica, cvijet, poslastica ili loptica. Plaća se je
 
 Gesta nije „bolja” svijeća. Ako želiš nešto reći vlasniku, besplatna poruka u knjizi sjećanja to čini jednako dobro. Što u nju napisati, pomaže [Što reći nekome kome je uginuo ljubimac](/vodic/sto-reci-nekome-kome-je-uginuo-ljubimac) i [alat za sućut](/alati/sucut).
 
+> [!ALAT] sucut
+
 ## Kada se pali svijeća za ljubimca?
 
 Pravila nema. Ovo su najčešći povodi:
 
-- **Godišnjica.** Dan kad je otišao mnogima je najteži u godini.
+- **Godišnjica.** Dan kad je otišao mnogima je najteži u godini. Kako ga obilježiti, piše u članku [Godišnjica smrti ljubimca: kako je obilježiti](/vodic/godisnjica-smrti-ljubimca-kako-je-obiljeziti).
 - **Rođendan.** Ako ne znaš točan datum, dovoljan je mjesec.
 - **Dan udomljenja.** Dan kad je došao u kuću često se pamti bolje od rođendana.
 - **Dani posvećeni životinjama.** Datumi su u članku [Svjetski dan pasa, mačaka i životinja](/vodic/svjetski-dan-pasa-macaka-i-zivotinja).
@@ -118,6 +123,9 @@ Pravila nema. Ovo su najčešći povodi:
 Za djecu svijeća može biti jednostavan, razumljiv čin. Kako s njima razgovarati, opisano je u članku [Kako djetetu objasniti smrt ljubimca](/vodic/kako-djetetu-objasniti-smrt-ljubimca).
 
 Svijeću možeš upaliti i za tuđeg ljubimca. Prijatelju koji tuguje to je tih znak da nije sam, bez obveze da odgovori.
+
+> [!SAVJET] Podsjetnik u kalendaru
+> Upiši godišnjicu, rođendan i dan udomljenja u kalendar na mobitelu, s podsjetnikom dan ranije. Tako ti važan datum neće proći nezamijećeno.
 
 ## Kako upaliti svijeću, korak po korak
 

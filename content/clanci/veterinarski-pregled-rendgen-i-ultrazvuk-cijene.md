@@ -57,6 +57,11 @@ sources:
     url: "https://cellulavet.com/rendgenska-dijagnostika/"
     publisher: "CellulaVet, Osijek"
     accessed_on: 2026-11-27
+  - claim: "Ultrazvučni snop potpuno se odbija na granici mekog tkiva i plina, a upija na granici mekog tkiva i kosti, pa plin i kost zasjenjuju strukture iza sebe; ultrazvuk se najčešće koristi za procjenu mekih tkiva trbuha, mišićno-koštanog sustava i prsnog koša (Timothy Manzi, VMD, Dipl. ACVR; pregled kolovoz 2024., izmjena travanj 2025.)"
+    title: "Ultrasonography in Animals"
+    url: "https://www.msdvetmanual.com/clinical-pathology-and-procedures/diagnostic-imaging/ultrasonography-in-animals"
+    publisher: "MSD Veterinary Manual"
+    accessed_on: 2026-11-27
 ---
 Opći klinički pregled psa ili mačke u cjenicima koje smo otvorili 27. studenoga 2026. stoji od 18,75 € do 40 €, osnovni rendgen od 18,58 € do 50 €, a ultrazvuk trbuha od 20 € do 70 €. Uz snimanje se često posebno plaćaju sedacija, očitanje i dodatne snimke. Iznosi su iz sedam objavljenih cjenika ambulanti i klinika, s datumom svakog cjenika.
 
@@ -73,6 +78,12 @@ Opći klinički pregled psa ili mačke u cjenicima koje smo otvorili 27. studeno
 Ustanove navodimo samo kao izvore cjenika, ne kao preporuku. Veterinarska stanica Osijek [1] i Veterinarska stanica Rijeka [7] na cjeniku nemaju datum. CellulaVet iz Osijeka objavio je cjenik 19. 11. 2026. [8], Veterina Branimir iz Zagreba ažurirala ga je 17. 11. 2026. [3], a Veterinarska stanica Sveti Ivan Zelina [2] i praksa Pilić iz Splita [6] objavile su ga 27. 11. 2026.
 
 Cjenik klinika Veterinarskog fakulteta u Zagrebu je od 14. 11. 2024. i najnoviji je koji smo našli [5]. Da su cijene s PDV-om, izričito pišu samo Veterina Branimir i Pilić [3][6].
+
+> [!BROJKE] Pregled i snimanje u brojkama
+> - **18,75–40 €** opći klinički pregled u otvorenim cjenicima [1][7]
+> - **20–70 €** ultrazvuk trbuha [4][5]
+> - **50 %** više stoje usluge na klinikama Veterinarskog fakulteta od 18 do 8 sati [5]
+> - **oko 30 minuta** traje ultrazvuk trbuha, prema Veterini Branimir [9]
 
 ## Koliko stoji klinički i kontrolni pregled
 
@@ -127,6 +138,9 @@ Snimanje s kontrastom posebna je stavka: 46,50 € u Pilića, 75 € u Osijeku i
 
 CellulaVet u cjeniku ima samo stavku „UZV Afast” za 20 € [8]. Veterina Branimir na stranici o ultrazvuku piše da ljubimac prije ultrazvuka trbuha ne bi trebao jesti barem osam sati te da pregled traje oko 30 minuta i nije bolan [9]. Kako se pripremiti za tvoj termin, pitaj ambulantu koja ga radi.
 
+> [!CINJENICA] Jeste li znali?
+> Ultrazvuk ne vidi kroz zrak ni kost. Na granici mekog tkiva i zraka zvuk se potpuno odbija, a na granici s kosti upija, pa zrak i kost zaklanjaju ono što je iza njih. Zato se ultrazvukom najčešće pregledavaju meka tkiva, primjerice organi u trbuhu, piše MSD-ov veterinarski priručnik [11].
+
 ## Koliko stoje EKG i CT
 
 EKG u otvorenim cjenicima stoji od 8,09 € na klinikama Veterinarskog fakulteta (2024.) do 40 € u Rijeci [5][7]. Između su Osijek sa 16,59 €, Pilić s 24 € i Veterina Branimir s 30 € za EKG s interpretacijom [1][4][6].
@@ -177,3 +191,5 @@ Izričito to pišu samo Veterina Branimir i Pilić [3][6]. Ostali cjenici to ne 
 Prije termina nazovi ambulantu i pitaj za ukupan iznos: pregled, snimke, sedaciju i očitanje zajedno. Cijene cijepljenja, sterilizacije i drugih zahvata su u članku [Cjenik veterinarskih usluga u Hrvatskoj: pregled po zahvatima](/vodic/cjenik-veterinarskih-usluga-u-hrvatskoj-pregled-po-zahvatima).
 
 Ako planiraš troškove kroz cijeli život ljubimca, korisno je znati koliko dugo njegova vrsta obično živi: [Koliko žive psi po pasminama](/vodic/koliko-zive-psi-po-pasminama) i [Koliko žive mačke](/vodic/koliko-zive-macke). Koliko je tvoj pas star u ljudskim godinama, izračunaj u alatu [Pseće godine](/alati/psece-godine).
+
+> [!ALAT] psece-godine

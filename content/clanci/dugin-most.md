@@ -130,4 +130,4 @@ Ako želiš zapisati nekoliko rečenica, a ne znaš kako početi, može pomoći 
 ## Sljedeći korak
 
 - Ako te zanima što je uobičajeno u tuzi, a što nije: [Tuga i krivnja nakon gubitka ljubimca](/vodic/tuga-i-krivnja-nakon-gubitka-ljubimca).
-- Ako pišeš oproštaj, isprobaj [alat za oproštajno pismo](/alati/oprostaj).
+- Ako pišeš oproštaj, isprobaj [pomoćnik za posvetu](/alati/posveta).

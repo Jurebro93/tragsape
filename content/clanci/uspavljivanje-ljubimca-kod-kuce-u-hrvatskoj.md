@@ -97,6 +97,36 @@ sources:
     url: "https://vcahospitals.com/know-your-pet/emergencies-in-cats"
     publisher: "VCA Animal Hospitals"
     accessed_on: 2026-11-27
+  - claim: "„Intervenciju veterinara i stručnog osoblja provodimo u ambulanti, a prema potrebi i kućnim posjetama.” Eutanazija ni cijena posjete nisu navedene"
+    title: "O nama – Veterinarska praksa Miki-Vet, Zagreb"
+    url: "https://mikivet.hr/o-nama.html"
+    publisher: "Veterinarska praksa Miki-Vet"
+    accessed_on: 2026-11-27
+  - claim: "Pod naslovom „Kućni posjeti”: „Ukoliko se pojavi potreba naše pacijente ćemo pregledati i u Vašoj kući. No, ipak treba napomenuti da se to radi u specifičnim situacijama jer je takav pregled dosta ograničen.” Eutanazija nije spomenuta"
+    title: "Dodatne usluge"
+    url: "https://www.vet-centar.hr/usluge/dodatne-usluge/"
+    publisher: "Veterinarska ambulanta Vet-Centar, Poreč"
+    accessed_on: 2026-11-27
+  - claim: "Pod naslovom „Terenski rad”: „Ukoliko niste u mogućnosti dovesti ljubimca u ambulantu, liječenje ćemo obaviti u Vašem domu”. Eutanazija nije spomenuta"
+    title: "Pregled i liječenje kućnih ljubimaca"
+    url: "https://vsvu.hr/usluge/pregled-i-lijecenje-kucnih-ljubimaca/"
+    publisher: "Veterinarska stanica Vukovar"
+    accessed_on: 2026-11-27
+  - claim: "Cjenik veterinarskih usluga (CSV od 26. 11. 2026., stupac MPC, datum sidrene cijene 10. 9. 2026.): „IZLAZAK NA INTERVENCIJU” 25,00 €; „IZLAZ-POZIV STRANKE-NIJE BILO INTERVENC” 25,00 €; „EUTANAZIJA PO 1KOM” 30,00 €; vrsta životinje uz stavke nije navedena"
+    title: "Cjenik – veterinarske usluge"
+    url: "https://vsvu.hr/cjenik/"
+    publisher: "Veterinarska stanica Vukovar"
+    accessed_on: 2026-11-27
+  - claim: "Cjenik objavljen 27. 11. 2026. (bazna cijena od 10. 9. 2026.): Eutanazija mačke 50,00 €; Eutanazija mačke i zbrinjavanje u VHS 70,00 €; Eutanazija psa i zbrinjavanje u VHS od 70,00 € (do 10 kg) do 140,00 € (50–60 kg); stavke za dolazak na adresu nema, a na stranici ambulante eutanazija kod kuće nije spomenuta"
+    title: "Cjenik"
+    url: "https://nera-vet.hr/cjenik/"
+    publisher: "Veterinarska ambulanta Nera, Zagreb"
+    accessed_on: 2026-11-27
+  - claim: "Hrvatska veterinarska komora u dopisu Ministarstvu poljoprivrede od 12. 2. 2020.: veterinarske organizacije propisane poslove obavljaju „u ambulantnim i terenskim uvjetima”; portal zaključuje da veterinari usluge smiju pružati i kod posjednika životinje (članak od 10. 2. 2022.)"
+    title: "Mobilna veterinarska ambulanta"
+    url: "https://veterina.com.hr/mobilna-veterinarska-ambulanta/"
+    publisher: "Veterina portal"
+    accessed_on: 2026-11-27
 ---
 Uspavljivanje psa ili mačke kod kuće u Hrvatskoj je moguće, ali nije usluga koju svaka ambulanta nudi, a njezinu cijenu nismo našli ni u jednom objavljenom cjeniku. Ovdje je što smo mogli provjeriti: tko piše da dolazi na adresu, što stoji izlazak veterinara, što kažu veterinarski izvori i što pitati kad zoveš.
 
@@ -105,7 +135,7 @@ Ovaj tekst ne zamjenjuje veterinara. Je li vrijeme i je li kućni postupak primj
 ## Ukratko
 
 - Životinju smije usmrtiti samo veterinar ili tehničar pod njegovim nadzorom; o mjestu članak 11. Zakona o zaštiti životinja ne govori [13].
-- Cijenu eutanazije na kućnoj adresi nismo našli ni u jednom objavljenom cjeniku. Izlazak se naplaćuje posebno, primjerice 12,50 € ili 25 € „bez intervencije” [4][5].
+- Cijenu eutanazije na kućnoj adresi nismo našli ni u jednom objavljenom cjeniku. Izlazak se naplaćuje posebno, primjerice 12,50 € ili 25 € „bez intervencije” [4][5] i 25 € za izlazak na intervenciju [22].
 - Prednosti su mir, poznat prostor i privatnost; ograničenja su prostor, svjetlo i manje pomoći za veterinara [1].
 - Prije dolaska dogovori što će biti s tijelom: odvoz preko ambulante, kremiranje ili ukop [1][10].
 - Uginuće čipiranog psa ili mačke prijavljuje se u roku od sedam dana [15].

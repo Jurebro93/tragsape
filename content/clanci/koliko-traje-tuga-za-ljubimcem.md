@@ -208,4 +208,4 @@ Nekima pomogne u oporavku, a neki ga dugo ne žele. Američka veterinarska udrug
 
 ## Sljedeći korak
 
-Ako želiš zapisati ono čega se bojiš zaboraviti, isprobaj [alat za oproštajno pismo](/alati/oprostaj). Ako netko blizak pita kako ti može pomoći, pošalji mu članak [Što poslati umjesto cvijeća kad ugine ljubimac](/vodic/sto-poslati-umjesto-cvijeca-kad-ugine-ljubimac).
+Ako želiš zapisati ono čega se bojiš zaboraviti, isprobaj [pomoćnik za posvetu](/alati/posveta). Ako netko blizak pita kako ti može pomoći, pošalji mu članak [Što poslati umjesto cvijeća kad ugine ljubimac](/vodic/sto-poslati-umjesto-cvijeca-kad-ugine-ljubimac).

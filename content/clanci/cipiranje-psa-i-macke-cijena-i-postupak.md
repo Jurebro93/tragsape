@@ -62,16 +62,26 @@ sources:
     url: "https://veterina.com.hr/20-godina-oznacavanja-kucnih-ljubimaca-u-republici-hrvatskoj/"
     publisher: "Veterina portal (autor Siniša Mandek, Uprava za veterinarstvo i sigurnost hrane)"
     accessed_on: 2026-11-27
+  - claim: "Odluka ministra poljoprivrede, šumarstva i ribarstva od 20. 2. 2025., na snazi od 1. 3. 2025.; troškove plaća subjekt (točka II.); točka 20. Priloga, stupac „Cijena bez PDV-a”, po životinji: označavanje mikročipom 12,90 € (materijalni troškovi uključeni); putovnica za kućnog ljubimca 10,06 €; promjena vlasnika i odjava psa u Središnjem upisniku i putovnici 4,48 €"
+    title: "Odluka o visini i opsegu naknada za troškove provedbe propisanih mjera iz područja veterinarstva, evidencija i dokumentacije (20. 2. 2025.)"
+    url: "https://veterinarstvo.mps.hr/UserDocsImages/AHL/Odluka%20o%20visini%20i%20opsegu%20naknade%20za%20tro%C5%A1kove%20provedbe%20propisanih%20mjera%20iz%20podru%C4%8Dja%20veterinarstva%2020.02.2025.pdf"
+    publisher: "Ministarstvo poljoprivrede, šumarstva i ribarstva"
+    accessed_on: 2026-11-27
+  - claim: "Na popisu odluka o naknadama najnovija je Odluka od 20. 2. 2025. s izmjenama od 5. 5., 25. 7. i 21. 10. 2025.; izmjene otvorene s te stranice ne mijenjaju točku 20. (cijepljenje i označavanje kućnih ljubimaca); novije odluke na popisu nema"
+    title: "Troškovi u veterinarstvu"
+    url: "https://veterinarstvo.mps.hr/hr/naslovna/troskovi-u-veterinarstvu-i-naknade-stete/troskovi-u-veterinarstvu/"
+    publisher: "Ministarstvo poljoprivrede, šumarstva i ribarstva – Uprava za veterinarstvo i sigurnost hrane"
+    accessed_on: 2026-11-27
 ---
-Psa u Hrvatskoj moraš čipirati najkasnije 90 dana od štenjenja, a ranije ako mijenja vlasnika [1]. Mačka se čipira kad to vlasnik zatraži, a obvezno prije odlaska u drugu državu [1]. U tri cjenika koja smo pročitali 27. studenoga 2026. čipiranje psa stoji od 12,15 do 16,13 € [7][8][9].
+Psa u Hrvatskoj moraš čipirati najkasnije 90 dana od štenjenja, a ranije ako mijenja vlasnika [1]. Mačka se čipira kad to vlasnik zatraži, a obvezno prije odlaska u drugu državu [1]. Naknadu za čip određuje ministar: 12,90 € bez PDV-a [12]. U tri cjenika koja smo pročitali 27. studenoga 2026. čipiranje psa stoji od 12,15 do 16,13 € [7][8][9].
 
 ## Ukratko
 
 - Pas: najkasnije 90 dana od štenjenja ili prije promjene vlasnika, ako je ona ranije (Zakon o zdravlju životinja, članak 66. stavak 1.) [1].
 - Mačka i pitoma vretica: na zahtjev vlasnika, obvezno prije premještanja u drugu državu [1].
 - Kazna za nečipiranog psa: 260 do 660 eura, ili 60 eura na mjestu prekršaja [1][2].
-- Čip ugrađuje ovlašteni veterinar, a pas i vlasnik upisuju se u Upisnik kućnih ljubimaca [1][11].
-- Promjenu vlasnika prijavljuješ u roku od sedam dana; u tri cjenika to stoji 5,60 € [1][7][8][9].
+- Čip ugrađuje ovlašteni veterinar, životinja se upisuje u Upisnik kućnih ljubimaca, a promjenu vlasnika prijavljuješ u sedam dana [1][11].
+- Naknade bez PDV-a određuje ministar: čip 12,90 €, putovnica 10,06 €, promjena vlasnika 4,48 € [12]; u cjenicima s PDV-om 16,13 €, 12,58 € i 5,60 € [8][9].
 
 ## Tko mora čipirati psa i do kada?
 
@@ -124,19 +134,21 @@ Upisnik se vodi u bazi Lysacan, koju vodi ministarstvo nadležno za poljoprivred
 
 ## Koliko stoji čipiranje?
 
-U tri cjenika koja smo pročitali 27. studenoga 2026. čipiranje psa stoji od 12,15 do 16,13 €. Troškove označavanja i registracije snosi vlasnik [1][3].
+Naknadu određuje ministar. Prema [Odluci o visini i opsegu naknada](https://veterinarstvo.mps.hr/UserDocsImages/AHL/Odluka%20o%20visini%20i%20opsegu%20naknade%20za%20tro%C5%A1kove%20provedbe%20propisanih%20mjera%20iz%20podru%C4%8Dja%20veterinarstva%2020.02.2025.pdf) od 20. veljače 2025., na snazi od 1. ožujka 2025., označavanje mikročipom stoji 12,90 € po životinji, bez PDV-a, a u iznos je uključen i materijal [12]. Kasnije izmjene Odluke tu stavku nisu mijenjale [13].
 
-| Usluga | VS Osijek | VS Sveti Ivan Zelina | Veterina Branimir, Zagreb |
-| --- | --- | --- | --- |
-| Čipiranje psa | 12,15 € | 16,13 € | 16,13 € (s upisom u registar) |
-| Čipiranje mačke | 12,13 € | nije navedeno | nije navedeno |
-| Čip i cijepljenje u jednoj stavci | 31,85 € („cijepljenje psa + čipiranje”) | 47,38 € („Microchip + bjesnoća”) | nije navedeno |
-| Putovnica za kućne ljubimce | 12,57 € | 12,58 € | 12,58 € |
-| Promjena vlasnika i odjava | 5,60 € | 5,60 € | 5,60 € |
-| Očitanje čipa | nije navedeno | 6,25 € | nije navedeno |
-| Datum u cjeniku | sidrena cijena 10. 9. 2026. [7] | objavljen 27. 11. 2026. [8] | ažuriran 17. 11. 2026. [9] |
+Troškove označavanja i registracije snosi vlasnik [1][3][12]. U cjenicima s PDV-om čip stoji 16,13 € [8][9], a Osijek traži 12,15 € [7].
 
-Osječki cjenik ne kaže koje cjepivo uključuje stavka s čipom [7]. Veterinarska stanica Karlovac na stranici bez datuma navodi da su „zakonom propisane cijene” 16,12 € za mikročip i 12,57 € za putovnicu [10]. Propis s tim iznosima nismo pronašli, pa cijenu provjeri u svojoj ambulanti.
+| Usluga | Odluka ministra, bez PDV-a [12] | VS Osijek | VS Sveti Ivan Zelina | Veterina Branimir, Zagreb |
+| --- | --- | --- | --- | --- |
+| Čipiranje psa | 12,90 € (po životinji) | 12,15 € | 16,13 € | 16,13 € (s upisom u registar) |
+| Čipiranje mačke | nema zasebne stavke | 12,13 € | nije navedeno | nije navedeno |
+| Čip i cijepljenje u jednoj stavci | nema (cijepljenje zasebno 25,00 €) | 31,85 € („cijepljenje psa + čipiranje”) | 47,38 € („Microchip + bjesnoća”) | nije navedeno |
+| Putovnica za kućne ljubimce | 10,06 € | 12,57 € | 12,58 € | 12,58 € |
+| Promjena vlasnika i odjava | 4,48 € („odjava psa”) | 5,60 € | 5,60 € | 5,60 € |
+| Očitanje čipa | nema stavke | nije navedeno | 6,25 € | nije navedeno |
+| Datum | 20. 2. 2025. | sidrena cijena 10. 9. 2026. [7] | objavljen 27. 11. 2026. [8] | ažuriran 17. 11. 2026. [9] |
+
+Osječki cjenik ne kaže koje cjepivo uključuje stavka s čipom [7]. Veterinarska stanica Karlovac iznose 16,12 € za mikročip i 12,57 € za putovnicu, s PDV-om, naziva „zakonom propisanim cijenama” [10]. Točnije, to su iznosi iz Odluke ministra uz PDV [12].
 
 ## Što kad pas ili mačka promijeni vlasnika?
 
@@ -158,7 +170,7 @@ Za sada samo prije premještanja u drugu državu članicu ili treću zemlju; ina
 
 ### Koliko stoji čipiranje psa?
 
-U cjenicima triju ambulanti koje smo pročitali stoji 12,15 €, 16,13 € i 16,13 € [7][8][9]. Putovnica je zasebna stavka, 12,57 ili 12,58 € [7][8][9].
+Ministar je naknadu odredio na 12,90 € bez PDV-a [12]. U cjenicima triju ambulanti stoji 12,15 €, 16,13 € i 16,13 € [7][8][9], a putovnica je zasebna stavka, 12,57 ili 12,58 € [7][8][9].
 
 ### Boli li čipiranje?
 

@@ -144,7 +144,7 @@ Dijete se treba oprostiti na svoj način [1]. Neke mogućnosti:
 
 Govorite o ljubimcu često i s ljubavlju [2].
 
-Ako dijete želi napisati nekoliko riječi, možete zajedno isprobati [alat za oproštajno pismo](/alati/oprostaj).
+Ako dijete želi napisati nekoliko riječi, možete zajedno isprobati [pomoćnik za posvetu](/alati/posveta).
 
 > [!ALAT] oprostaj
 

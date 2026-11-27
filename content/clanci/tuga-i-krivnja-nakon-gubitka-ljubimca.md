@@ -143,7 +143,7 @@ Isti savjetnici predlažu nekoliko koraka [1]:
 - **Budi iskren prema sebi** o tome zbog čega se točno osjećaš krivim.
 - **Provjeri pretpostavku.** Većina ljudi vjeruje da bi ishod bio bolji da su postupili drukčije. Jednako je vjerojatno da bi bio isti.
 - **Sjeti se da si čovjek.** Ne možeš nadzirati sve što se događa onima koje voliš.
-- **Napiši pismo.** Nekima pomaže pismo ljubimcu u kojem napišu sve što ih muči. Ako ne znaš kako početi, može pomoći [alat za oproštajno pismo](/alati/oprostaj).
+- **Napiši pismo.** Nekima pomaže pismo ljubimcu u kojem napišu sve što ih muči. Ako ne znaš kako početi, može pomoći [pomoćnik za posvetu](/alati/posveta).
 
 Krivnja ne prolazi preko noći. Odluke si donosio najbolje što si tada mogao [2].
 
@@ -191,6 +191,6 @@ Na engleskom jeziku postoje službe posvećene baš gubitku ljubimca:
 
 ## Sljedeći korak
 
-- Ako tražiš riječi: [alat za oproštajno pismo](/alati/oprostaj).
+- Ako tražiš riječi: [pomoćnik za posvetu](/alati/posveta).
 - Ako te zanima otkud izraz koji svi spominju: [Dugin most](/vodic/dugin-most).
 - Ako netko blizak ne zna što bi ti rekao, pošalji mu [Što reći nekome kome je uginuo ljubimac](/vodic/sto-reci-nekome-kome-je-uginuo-ljubimac).

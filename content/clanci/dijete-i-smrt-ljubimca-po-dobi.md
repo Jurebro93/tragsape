@@ -173,6 +173,6 @@ Upozoravajuće je kad dijete i mjesecima nakon smrti teško funkcionira kod kuć
 
 ## Sljedeći korak
 
-Djeci svih dobi pomaže da ljubimca zajedno s vama ispraćaju i pamte: crtežom, pričom ili pismom [1][4]. Za početak isprobajte [alat za oproštajno pismo](/alati/oprostaj) ili pogledajte savjete u članku [Pismo ljubimcu kojeg više nema](/vodic/pismo-ljubimcu-kojeg-vise-nema-kako-poceti).
+Djeci svih dobi pomaže da ljubimca zajedno s vama ispraćaju i pamte: crtežom, pričom ili pismom [1][4]. Za početak isprobajte [upitnik o načinima oproštaja](/alati/oprostaj) ili pogledajte savjete u članku [Pismo ljubimcu kojeg više nema](/vodic/pismo-ljubimcu-kojeg-vise-nema-kako-poceti).
 
 > [!ALAT] oprostaj
