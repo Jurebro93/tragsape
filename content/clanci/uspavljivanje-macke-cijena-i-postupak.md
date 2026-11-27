@@ -77,14 +77,24 @@ sources:
     url: "https://vcahospitals.com/know-your-pet/emergencies-in-cats"
     publisher: "VCA Animal Hospitals"
     accessed_on: 2026-11-27
+  - claim: "Cjenik objavljen 27. 11. 2026. (bazna cijena od 10. 9. 2026.): Eutanazija mačke 50,00 €; Eutanazija mačke i zbrinjavanje u VHS 70,00 €; Eutanazija psa i zbrinjavanje u VHS – do 10 kg 70,00 €; Pregled mačke 30,00 €; stavke za dolazak na adresu nema"
+    title: "Cjenik"
+    url: "https://nera-vet.hr/cjenik/"
+    publisher: "Veterinarska ambulanta Nera, Zagreb"
+    accessed_on: 2026-11-27
+  - claim: "Novinska izjava, ne objava ambulante (24sata, 27. 3. 2026., autorica Karolina Krčelić): Dragan Petrović, univ. mag. med. vet. (Veterinarska ambulanta Nera, Zagreb): „Mi uvijek preferiramo da se eutanazija obavi u ambulanti iz praktičnih razloga, ali na zahtjev vlasnika može se to obaviti i kod kuće.”"
+    title: "Hrvatski veterinari objasnili sve o eutanaziji pasa: Evo kako se izvodi i u kojim slučajevima..."
+    url: "https://www.24sata.hr/lifestyle/hrvatski-veterinari-objasnili-sve-o-eutanaziji-pasa-evo-kako-se-izvodi-i-u-kojim-slucajevima-1117610"
+    publisher: "24sata"
+    accessed_on: 2026-11-27
 ---
-Uspavljivanje mačke u Hrvatskoj u objavljenim cjenicima stoji od 26,54 € do 50,00 €, ali to je samo jedna stavka računa. Ovdje su cijene iz četiri cjenika, prateći troškovi i opis postupka kako ga daju veterinarski izvori.
+Uspavljivanje mačke u Hrvatskoj u objavljenim cjenicima stoji od 26,54 € do 50,00 €, ali to je samo jedna stavka računa. Ovdje su cijene iz pet cjenika, prateći troškovi i opis postupka kako ga daju veterinarski izvori.
 
 Ovaj tekst ne zamjenjuje veterinara. Je li vrijeme, koji je način primjeren tvojoj mački i koliko će točno stajati, može ti reći samo veterinar koji ju je pregledao, pa se obrati najbližoj veterinarskoj ambulanti.
 
 ## Ukratko
 
-- Sama stavka eutanazije u četiri cjenika: 26,54 € u Osijeku [2], 50,00 € u Veterini Branimir u Zagrebu [3], 50,00 € u Svetom Ivanu Zelini [5] i 26,54 € na klinikama Veterinarskog fakulteta (cjenik iz 2024.) [6].
+- Sama stavka eutanazije u pet cjenika: 26,54 € u Osijeku [2], 50,00 € u Veterini Branimir u Zagrebu [3], 50,00 € u zagrebačkoj ambulanti Nera [15], 50,00 € u Svetom Ivanu Zelini [5] i 26,54 € na klinikama Veterinarskog fakulteta (cjenik iz 2024.) [6].
 - Uz nju se obično plaćaju pregled, sedacija i zbrinjavanje tijela; zbroj dviju do triju stavki u istim cjenicima iznosi od 73,04 € do 112,04 € [2][3].
 - O uspavljivanju odlučuješ ti, na temelju mišljenja veterinara; provesti ga smije samo veterinar ili tehničar pod njegovim nadzorom [1].
 - Prije završne injekcije veterinari preporučuju duboku sedaciju [8].
@@ -98,10 +108,11 @@ Jedinstvene cijene nema; svaka ambulanta ima svoj cjenik. Ovo su stavke koje smo
 | --- | --- | --- |
 | Veterinarska stanica Osijek [2] | eutanazija mačke | 26,54 € |
 | Veterina Branimir, Zagreb, cjenik od 17. 11. 2026. [3][4] | Eutanazija | 50,00 € |
+| Veterinarska ambulanta Nera, Zagreb, cjenik od 27. 11. 2026. [15] | Eutanazija mačke | 50,00 € |
 | Veterinarska stanica Sveti Ivan Zelina, cjenik od 27. 11. 2026. [5] | Eutanazija | 50,00 € |
 | Klinike Veterinarskog fakulteta u Zagrebu, cjenik od 14. 11. 2024. [6] | Eutanazija mačke po usluzi (nakon traume) | 26,54 € |
 
-To su primjeri, a ne prosjek. Cjenik Veterinarskog fakulteta ima više stavki eutanazije s različitim cijenama po odjelima, pa ondje pitaj koja se primjenjuje [6].
+To su primjeri, a ne prosjek. Cjenik Veterinarskog fakulteta ima više stavki eutanazije s različitim cijenama po odjelima, pa ondje pitaj koja se primjenjuje [6]. Nera ima i zajedničku stavku „Eutanazija mačke i zbrinjavanje u VHS” za 70,00 € [15].
 
 ## Što se plaća uz samu eutanaziju
 
@@ -147,7 +158,7 @@ Veterinarski izvori savjetuju da prije postupka odlučiš što će biti s tijelo
 
 Na klinikama Veterinarskog fakulteta 58 % vlasnika eutanaziranih pasa i mačaka 2022. odabralo je zajedničko zbrinjavanje, 5,5 % krematorij, a 5,3 % je tijelo preuzelo [11]. Cijene kremiranja su u članku [Kremiranje mačke: cijena, postupak i što se dobiva](/vodic/kremiranje-macke-cijena). Ako želiš pramen dlake ili otisak šape, reci to prije [13].
 
-Postupak se može obaviti u ambulanti ili kod kuće, a mjesto u pravilu bira obitelj [13]. Kako to ide u Hrvatskoj, piše u [Uspavljivanje ljubimca kod kuće u Hrvatskoj](/vodic/uspavljivanje-ljubimca-kod-kuce-u-hrvatskoj).
+Postupak se može obaviti u ambulanti ili kod kuće, a mjesto u pravilu bira obitelj [13]. Hrvatsku ambulantu koja na svojoj stranici izričito nudi eutanaziju na adresi nismo našli; zagrebački veterinar Dragan Petrović u izjavi za 24sata kaže da se na zahtjev vlasnika može obaviti i kod kuće [16]. Kako to ide u Hrvatskoj, piše u [Uspavljivanje ljubimca kod kuće u Hrvatskoj](/vodic/uspavljivanje-ljubimca-kod-kuce-u-hrvatskoj).
 
 ## Kada odmah veterinaru
 
@@ -165,11 +176,11 @@ Javi se svom veterinaru ili najbližoj dežurnoj ambulanti.
 
 ### Koliko stoji eutanazija mačke?
 
-U četiri cjenika koja smo otvorili sama stavka stoji 26,54 € ili 50,00 € [2][3][5][6]. S pregledom, sedacijom i zbrinjavanjem tijela račun je viši, pa pitaj za ukupan iznos.
+U pet cjenika koja smo otvorili sama stavka stoji 26,54 € ili 50,00 € [2][3][5][6][15]. S pregledom, sedacijom i zbrinjavanjem tijela račun je viši, pa pitaj za ukupan iznos.
 
 ### Je li eutanazija mačke jeftinija od eutanazije psa?
 
-U nekim cjenicima jest: u Osijeku je eutanazija mačke 26,54 €, a psa 29,86 € [2]. Veterina Branimir i Zelina imaju jednu stavku za sve životinje [3][5]. Usporedbu za pse imaš u članku [Uspavljivanje psa: cijena i postupak](/vodic/uspavljivanje-psa-cijena).
+U nekim cjenicima jest: u Osijeku je eutanazija mačke 26,54 €, a psa 29,86 € [2]. Veterina Branimir i Zelina imaju jednu stavku za sve životinje [3][5]. U Neri eutanazija sa zbrinjavanjem stoji 70,00 € i za mačku i za psa do 10 kg [15]. Usporedbu za pse imaš u članku [Uspavljivanje psa: cijena i postupak](/vodic/uspavljivanje-psa-cijena).
 
 ### Hoće li je boljeti?
 

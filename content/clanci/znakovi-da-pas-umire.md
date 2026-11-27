@@ -27,6 +27,11 @@ sources:
     url: "https://vmc.vet.osu.edu/sites/default/files/documents/how%20will%20i%20know.pdf"
     publisher: "The Ohio State University Veterinary Medical Center, Honoring the Bond Program"
     accessed_on: 2026-11-25
+  - claim: "Ljestvica kvalitete života psa (HHHHHMM) prilagođena prema veterinarskoj onkologinji Alice Villalobos: bol i disanje, glad, hidracija, higijena, sreća, pokretljivost, više dobrih dana nego loših; svako područje ocjenjuje se od 1 do 9; iznad 5 je prihvatljivo, ispod 5 potrebna je intervencija"
+    title: "Canine Quality of Life Scale (the HHHHHMM Scale)"
+    url: "https://www.dovelewis.org/sites/default/files/resource-files/QualityOfLife_Canine.pdf"
+    publisher: "DoveLewis Veterinary Emergency & Specialty Hospital, Portland"
+    accessed_on: 2026-11-27
 ---
 Ako ovo čitaš, vjerojatno gledaš psa koji se promijenio i pokušavaš shvatiti što to znači. Popis znakova može pomoći, ali ne može odgovoriti na glavno pitanje: je li ovo kraj ili bolest koja se još može liječiti.
 
@@ -53,6 +58,14 @@ Promjene se mogu javiti i tri mjeseca prije smrti, a mogu biti tjelesne ili u po
 - **Promjene ćudi.** Može se javiti agresivnost, najčešće zbog trajne boli [1].
 
 U posljednjim satima tijelo se hladi. Udovi su hladniji na dodir, desni mogu biti blijede ili plavkaste, a disanje nepravilno, katkad nalik hvatanju zraka [1][2]. Veterinari hospicijske skrbi pišu da takve promjene znače da je kraj vrlo blizu, katkad pitanje minuta [2].
+
+> [!BROJKE] Vremena koja treba znati
+> - **do 3 mjeseca** prije smrti mogu se javiti prve promjene [1]
+> - **5 minuta**: napadaj dulji od toga razlog je za hitan poziv veterinaru [3]
+> - **6–12 sati** povraćanja ili proljeva: nakon toga ne čekaj, javi se veterinaru [3]
+> - **30 minuta** bez disanja i otkucaja srca znači da je pas uginuo [1]
+
+Kako se mijenja pas koji stari, a još nije na samom kraju, opisali smo u članku [Stari pas: znakovi da pati](/vodic/stari-pas-znakovi-da-pati).
 
 ## Što izgleda slično, a nije nužno kraj
 
@@ -87,6 +100,9 @@ Mnogi se nadaju da će pas jednostavno zaspati. Veterinari upozoravaju da se to 
 
 To nije poziv na žurbu, nego razlog da s veterinarom razgovaraš prije krize. Kako ljudi pristupaju toj odluci, opisali smo u članku [Kako odlučiti o uspavljivanju](/vodic/kako-odluciti-o-uspavljivanju).
 
+> [!CINJENICA] Sedam pitanja za procjenu
+> Veterinarska bolnica DoveLewis vlasnicima nudi ljestvicu kvalitete života prilagođenu prema veterinarskoj onkologinji Alice Villalobos, poznatu po početnim slovima engleskih riječi kao HHHHHMM. Ocjenjuje se sedam područja: bol i disanje, apetit, hidracija, higijena, raspoloženje, pokretljivost i ima li više dobrih dana nego loših. Svako se ocjenjuje od 1 do 9, a ocjena ispod 5 prema toj ljestvici znači da treba nešto poduzeti [5].
+
 ## Kako mu olakšati
 
 Ovo su opće mjere udobnosti iz veterinarskih izvora. Lijekove i doze određuje isključivo veterinar.
@@ -96,7 +112,7 @@ Ovo su opće mjere udobnosti iz veterinarskih izvora. Lijekove i doze određuje 
 - **Sve nadohvat.** Hrana i voda uz mjesto na kojem leži; noćno svjetlo i tepisi ili staze po kojima se ne kliže [2].
 - **Hrana bez prisile.** Ugrij je, ponudi iz ruke, ali ne tjeraj [2].
 - **Poznati mirisi.** Njegova deka, igračka ili komad tvoje odjeće uz ležaj [1].
-- **Tvoja blizina.** Ako se povlači, ne nameći mu se, ali ostani u blizini [2]. Vrijeme uz njega ujedno ti pokazuje je li mu neugodno ili ga nešto boli [1].
+- **Tvoja blizina.** Ako se povlači, ne nameći mu se, ali ostani u blizini [2]. Vrijeme uz njega ujedno ti pokazuje je li mu neugodno ili ga nešto boli [1]. Ideje za zajedničke posljednje trenutke skupili smo u članku [Posljednji dan s ljubimcem: kako ga provesti](/vodic/posljednji-dan-s-ljubimcem-kako-ga-provesti).
 - **Propisani lijekovi.** Nastavi ih davati ako ih podnosi. Ako ne jede, pitaj veterinara kako prilagoditi terapiju; neki lijekovi na prazan želudac izazivaju mučninu [1].
 - **Bez lijekova za ljude.** Ne daji ih bez savjeta veterinara [3].
 

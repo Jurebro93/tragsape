@@ -68,8 +68,8 @@ sources:
     publisher: "American Animal Hospital Association"
     accessed_on: 2026-11-27
   - claim: "Sažetak smjernica: bolesti zubi i usta najčešća su stanja u praksi malih životinja; smjernice ističu zahtjeve anestezije i dobrobiti; stomatologija bez anestezije je u najboljem slučaju nedjelotvorna, a u najgorem štetna (Niemiec i sur., 2026.)"
-    title: "World Small Animal Veterinary Association Global Dental Guidelines (2026.), sažetak u bazi Europe PMC"
-    url: "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1111/jsap.70057&format=json&resultType=core"
+    title: "World Small Animal Veterinary Association Global Dental Guidelines (B. Niemiec i sur.; J Small Anim Pract 2026; 67(10); DOI 10.1111/jsap.70057), sažetak"
+    url: "https://europepmc.org/article/MED/42687403"
     publisher: "Journal of Small Animal Practice / Europe PMC"
     accessed_on: 2026-11-27
   - claim: "Psi malih pasmina obično imaju više problema s parodontitisom od velikih; neugodan zadah je čest; desni krvare na dodir; slabiji apetit i oteklina na licu; kod prijeloma do pulpe potrebno je liječenje kanala ili vađenje (Alexander M. Reiter, DAVDC, DEVDC; ažurirano listopad 2025.)"
@@ -91,6 +91,11 @@ sources:
     title: "Pravilnik o uvjetima kojima moraju udovoljavati veterinarske organizacije, veterinarska praksa i veterinarska služba (NN 103/2013), Prilog"
     url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2013_08_103_2321.html"
     publisher: "Narodne novine"
+    accessed_on: 2026-11-27
+  - claim: "Najočitiji znak bolesti pulpe je slomljen zub s otvorenom pulpnom komorom ili kanalom; kod komplicirane frakture krune pulpa je izložena i bez hitnog liječenja odumire; terapija vitalne pulpe najuspješnija je što prije nakon ozljede, idealno unutar 24–48 sati; zubi s bolešću pulpe smatraju se bolnima dok je živac živ, a životinje nelagodu često ne pokazuju (Brenda L. Mulherin, DVM, DAVDC; potpuni pregled veljača 2024., ažurirano rujna 2024.)"
+    title: "Endodontic Disease in Small Animals (stručna verzija)"
+    url: "https://www.merckvetmanual.com/digestive-system/dentistry/endodontic-disease-in-small-animals"
+    publisher: "Merck Veterinary Manual"
     accessed_on: 2026-11-27
 ---
 Samo čišćenje kamenca u cjenicima stoji od 27,88 € do 170 €, ali račun gotovo nikad nije samo ta stavka. Uz njega se plaćaju anestezija, pretrage krvi, rendgen i vađenje zuba ako ga treba, pa ukupan iznos može biti nekoliko puta veći.
@@ -177,7 +182,7 @@ AVDC preporučuje svakodnevnu njegu zubi od rane dobi, prije svega četkanje, uz
 ## Kada odmah veterinaru
 
 - Oteklina na licu ili ispod oka: može biti apsces korijena zuba, koji je vrlo bolan i liječi se što prije [14][15].
-- Slomljen zub: ako prijelom seže do pulpe, treba liječenje kanala ili vađenje [14].
+- Slomljen zub, osobito ako se na mjestu loma vidi crvena ili tamna točka: to može biti otvorena pulpa, koja bez hitnog liječenja odumire [14][18]. Ne čekaj nekoliko dana, jer je liječenje koje može sačuvati živ zub najuspješnije unutar 24 do 48 sati od ozljede; inače ostaju liječenje kanala ili vađenje [14][18].
 - Pas ne želi žvakati, ispušta hranu ili krvari iz usta [12][15].
 - Nakon zahvata povraća, ima proljev, malaksao je ili ne jede [16].
 

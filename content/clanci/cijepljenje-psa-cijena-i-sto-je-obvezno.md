@@ -137,11 +137,11 @@ Za mačke i pitome vretice Naredba cijepljenje protiv bjesnoće samo preporučuj
 
 ## Koliko košta cijepljenje protiv bjesnoće
 
-Iznos određuje ministar odlukom [1][3]. Važeća je [Odluka o visini i opsegu naknada](https://veterinarstvo.mps.hr/UserDocsImages/AHL/Odluka%20o%20visini%20i%20opsegu%20naknade%20za%20tro%C5%A1kove%20provedbe%20propisanih%20mjera%20iz%20podru%C4%8Dja%20veterinarstva%2020.02.2025.pdf) za propisane veterinarske mjere, koju je ministar poljoprivrede, šumarstva i ribarstva donio 20. veljače 2025., a na snazi je od 1. ožujka 2025. [18]. Cijepljenje protiv bjesnoće, dehelmintizacija i upis u registar i putovnicu prema njoj stoje 25,00 € po životinji, bez PDV-a [18].
+Iznos određuje ministar odlukom [1][3]. Važeća je [Odluka o visini i opsegu naknada](https://veterinarstvo.mps.hr/UserDocsImages/AHL/Odluka%20o%20visini%20i%20opsegu%20naknade%20za%20tro%C5%A1kove%20provedbe%20propisanih%20mjera%20iz%20podru%C4%8Dja%20veterinarstva%2020.02.2025.pdf) koju je ministar poljoprivrede, šumarstva i ribarstva donio 20. veljače 2025., na snazi od 1. ožujka 2025. [18]. Cijepljenje protiv bjesnoće, dehelmintizacija i upis u registar i putovnicu prema njoj stoje 25,00 € po životinji, bez PDV-a [18].
 
-Isti je iznos bio i u Odluci od 20. lipnja 2024. [4], a kasnije izmjene stavku nisu dirale [19].
+Isti je iznos bio u Odluci od 20. lipnja 2024. [4], a kasnije izmjene ga nisu dirale [19].
 
-S PDV-om to je 31,25 €: Veterinarska stanica Daruvar stavku prikazuje upravo kao 25,00 € bez PDV-a i 31,25 € s PDV-om [15]. Toliko piše u sedam cjenika [9][10][11][12][13][14][16], a u praksi Pilić 32,00 € [17].
+S PDV-om to je 31,25 €: Veterinarska stanica Daruvar stavku za mačku prikazuje kao 25,00 € bez PDV-a i 31,25 € s PDV-om, a za psa upućuje na cjenik Ministarstva [15]. Toliko piše u sedam cjenika [9][10][11][12][13][14][16], a u praksi Pilić 32,00 € [17].
 
 Ista Odluka određuje i naknadu za čip, 12,90 €, i za putovnicu, 10,06 €, obje bez PDV-a [18]. U cjenicima putovnica stoji 12,57 do 12,58 € [9][11][12][13], a čip najčešće 16,12 do 16,13 € [10][12][14]. Više o čipu piše u članku [Čipiranje psa i mačke: cijena i postupak](/vodic/cipiranje-psa-i-macke-cijena-i-postupak).
 

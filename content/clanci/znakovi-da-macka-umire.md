@@ -47,6 +47,16 @@ sources:
     url: "https://catvets.com/end-of-life-toolkit/decision-making"
     publisher: "Feline Veterinary Medical Association (FelineVMA)"
     accessed_on: 2026-11-25
+  - claim: "Predenje može biti znak da je mačka u boli ili pod stresom; ako prede mnogo više nego inače ili u drukčijim situacijama, to može značiti da nešto nije u redu; kod promjene ponašanja odvesti je veterinaru (blog, 22. 2. 2023.)"
+    title: "Why does my cat purr?"
+    url: "https://www.cats.org.uk/cats-blog/why-does-my-cat-purr"
+    publisher: "Cats Protection"
+    accessed_on: 2026-11-27
+  - claim: "Ljestvica mačjih grimasa razvijena i potvrđena na Fakultetu veterinarske medicine Sveučilišta u Montréalu; pet akcijskih jedinica: položaj ušiju, stezanje očnih kapaka, napetost njuške, promjena brkova i položaj glave"
+    title: "Evangelista, M. C. i sur. (2019.): Facial expressions of pain in cats: the development and validation of a Feline Grimace Scale. Scientific Reports 9"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6911058/"
+    publisher: "Scientific Reports (PubMed Central)"
+    accessed_on: 2026-11-27
 ---
 Kod mačke se kraj života rijetko najavljuje glasno. Češće primijetiš da više ne dolazi na prozor, da joj je dlaka zapuštena ili da spava na mjestu na kojem nikad prije nije spavala.
 
@@ -57,6 +67,9 @@ Ovaj tekst ne zamjenjuje veterinara. Znakovi koje opisujemo često imaju uzrok k
 Mačke su vrlo vješte u skrivanju bolesti. Stručnjaci Sveučilišta Cornell pišu da mačka često ima ozbiljan zdravstveni problem, a ne pokazuje nikakav znak dok stanje ne uznapreduje [1]. International Cat Care isto kaže za bol: mačke je skrivaju, a neugodu pokazuju suptilno [2].
 
 Veterinari VCA bolnica dodaju pojedinost koju je dobro znati: mačka kojoj je teško disati postaje vrlo mirna [5].
+
+> [!CINJENICA] Predenje ne znači uvijek da je dobro
+> Britanska udruga Cats Protection piše da predenje može biti i znak boli ili stresa. Ako mačka prede mnogo više nego inače ili u neobičnim situacijama, to može značiti da nešto nije u redu [9].
 
 Zato kod mačke više vrijedi pratiti promjene u navikama nego čekati očit znak.
 
@@ -85,7 +98,10 @@ Posljednji dani razlikuju se od mačke do mačke, ovisno o njezinoj povijesti bo
 - dehidrirana je
 - tjelesna temperatura joj je niska
 
-Veterinari hospicijske skrbi dodaju da naglo mršavljenje kod mačaka daje licu prepoznatljiv, upao izgled te da mačka može prestati stizati do posude za pijesak [4]. Neke se mačke pred kraj osame, a neke postanu privrženije nego inače [4].
+Veterinari hospicijske skrbi dodaju da naglo mršavljenje kod mačaka daje licu prepoznatljiv, upao izgled te da mačka može prestati stizati do posude za pijesak [4]. Neke se mačke pred kraj osame, a neke postanu privrženije nego inače [4]. Promjene koje se kod starije mačke javljaju postupno opisali smo u članku [Stara mačka: znakovi da pati](/vodic/stara-macka-znakovi-da-pati).
+
+> [!CINJENICA] Bol se vidi i na licu
+> Veterinari Sveučilišta u Montréalu 2019. objavili su ljestvicu mačjih grimasa (Feline Grimace Scale). Bol se na njoj procjenjuje prema pet promjena na licu: položaju ušiju, stisnutim očima, napetosti njuške, promjeni brkova i položaju glave [10].
 
 ## Isti znakovi, drugi uzrok
 
@@ -132,11 +148,13 @@ Lijekove protiv boli i mučnine određuje isključivo veterinar. Kod kuće može
 
 ## Ako se ništa ne poduzme
 
-Bez veterinarske pomoći umiranje može uključivati otežano disanje, pad tjelesne temperature i nepokretnost, i može biti dugo i mučno [3]. Veterinari citirani u tom vodiču kažu da mačka kroz umiranje ne bi trebala prolaziti bez veterinarske skrbi; ta skrb može biti hospicijska ili palijativna njega ili eutanazija [3].
+Bez veterinarske pomoći umiranje može uključivati otežano disanje, pad tjelesne temperature i nepokretnost, i može biti dugo i mučno [3]. Veterinari citirani u tom vodiču kažu da mačka kroz umiranje ne bi trebala prolaziti bez veterinarske skrbi; ta skrb može biti hospicijska ili palijativna njega ili eutanazija [3]. Kako eutanazija mačke izgleda i koliko stoji, piše u članku [Uspavljivanje mačke: cijena i postupak](/vodic/uspavljivanje-macke-cijena-i-postupak).
 
 ## Koliko žive mačke
 
 Prema udruzi Cats Protection prosječan je životni vijek mačke oko 12 godina, a mnoge žive znatno dulje [7]. Ako te zanima koliko je tvoja mačka stara u ljudskim godinama, isprobaj [kalkulator mačjih godina](/alati/macje-godine).
+
+> [!ALAT] macje-godine
 
 ## Sljedeći korak
 

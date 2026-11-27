@@ -57,6 +57,21 @@ sources:
     url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_152_2373.html"
     publisher: "Narodne novine"
     accessed_on: 2026-11-25
+  - claim: "Cjenik objavljen 27. 11. 2026. (bazna cijena od 10. 9. 2026.): Eutanazija psa i zbrinjavanje u VHS – do 10 kg 70,00 €, 10–20 kg 90,00 €, 20–30 kg 110,00 €, 30–40 kg 120,00 €, 40–50 kg 130,00 €, 50–60 kg 140,00 €; Pregled psa 30,00 €; stavke za dolazak na adresu nema"
+    title: "Cjenik"
+    url: "https://nera-vet.hr/cjenik/"
+    publisher: "Veterinarska ambulanta Nera, Zagreb"
+    accessed_on: 2026-11-27
+  - claim: "Novinska izjava, ne objava ambulante (24sata, 27. 3. 2026., autorica Karolina Krčelić): Dragan Petrović, univ. mag. med. vet. (Veterinarska ambulanta Nera, Zagreb): postupak sa sedacijom obično traje 15–30 minuta; „Mi uvijek preferiramo da se eutanazija obavi u ambulanti iz praktičnih razloga, ali na zahtjev vlasnika može se to obaviti i kod kuće.”"
+    title: "Hrvatski veterinari objasnili sve o eutanaziji pasa: Evo kako se izvodi i u kojim slučajevima..."
+    url: "https://www.24sata.hr/lifestyle/hrvatski-veterinari-objasnili-sve-o-eutanaziji-pasa-evo-kako-se-izvodi-i-u-kojim-slucajevima-1117610"
+    publisher: "24sata"
+    accessed_on: 2026-11-27
+  - claim: "Cjenik veterinarskih usluga (CSV od 26. 11. 2026., stupac MPC, datum sidrene cijene 10. 9. 2026.): „IZLAZAK NA INTERVENCIJU” 25,00 €; „IZLAZ-POZIV STRANKE-NIJE BILO INTERVENC” 25,00 €; vrsta životinje uz stavke nije navedena"
+    title: "Cjenik – veterinarske usluge"
+    url: "https://vsvu.hr/cjenik/"
+    publisher: "Veterinarska stanica Vukovar"
+    accessed_on: 2026-11-27
 ---
 Uz odluku o uspavljivanju odmah dođu i praktična pitanja: koliko košta, kako izgleda, smijem li biti uz njega, što poslije. Ovdje su odgovori koje smo mogli potkrijepiti izvorima.
 
@@ -74,6 +89,8 @@ Jedinstvene cijene nema. Svaka ambulanta ima svoj cjenik, a konačni iznos ovisi
 | Klinike Veterinarskog fakulteta u Zagrebu, cjenik od 14. 11. 2024. [7] | Eutanazija psa po usluzi (nakon traume) | 39,82 € |
 
 To su četiri primjera, a ne prosjek ni preporuka. Cijene se mijenjaju i razlikuju se od mjesta do mjesta, pa prije dolaska nazovi i pitaj za ukupan iznos.
+
+Neki cjenici eutanaziju i zbrinjavanje tijela vode kao jednu stavku. Zagrebačka ambulanta Nera u cjeniku objavljenom 27. 11. 2026. ima „Eutanazija psa i zbrinjavanje u VHS”, od 70 € za psa do 10 kg do 140 € za psa od 50 do 60 kg [11].
 
 ## Od čega se račun zapravo sastoji
 
@@ -101,6 +118,8 @@ Sam postupak veterinarski izvori opisuju ovako:
 3. Slijedi završna injekcija. Pas odmah gubi svijest, duboko i nepovratno; smrt obično nastupa u roku od nekoliko minuta [2][3].
 4. Veterinar potvrđuje smrt: sluša srce, traži puls i disanje [3].
 
+Zagrebački veterinar Dragan Petrović u izjavi za 24sata kaže da postupak sa sedacijom obično traje 15 do 30 minuta [12].
+
 ## Pitanja koja se najčešće postavljaju na forumima
 
 **Hoće li ga boljeti?** Prema Američkoj veterinarskoj udruzi smrt je brza i bezbolna, jer sredstvo najprije zaustavlja rad mozga [2]. Osjetiti može ubod pri postavljanju katetera [3].
@@ -117,9 +136,11 @@ Sam postupak veterinarski izvori opisuju ovako:
 
 ## Uspavljivanje psa kod kuće
 
-Dolazi li veterinar na kućnu adresu, ovisi o ambulanti; cijenu eutanazije na adresi nismo našli ni u jednom objavljenom cjeniku. U američkom vodiču koji smo citirali piše da eutanaziju kod kuće nude mnogi veterinari [9], ali to ne govori ništa o tvom mjestu. Više o tome piše u članku [Uspavljivanje ljubimca kod kuće u Hrvatskoj](/vodic/uspavljivanje-ljubimca-kod-kuce-u-hrvatskoj).
+Dolazi li veterinar na kućnu adresu, ovisi o ambulanti. U američkom vodiču koji smo citirali piše da eutanaziju kod kuće nude mnogi veterinari [9], ali to ne govori ništa o tvom mjestu.
 
-Cijenu eutanazije na kućnoj adresi nismo našli ni u jednom objavljenom cjeniku. Vidljivo je samo da se izlazak na teren naplaćuje posebno: 12,50 € u Zelini i 25 € u Osijeku, i to „bez intervencije” [4][6].
+Nijedna hrvatska ambulanta čije smo stranice pregledali 27. 11. 2026. ne nudi izričito eutanaziju na adresi. Postoji novinska izjava: Dragan Petrović iz zagrebačke ambulante Nera rekao je za 24sata da je radije obavljaju u ambulanti, „ali na zahtjev vlasnika može se to obaviti i kod kuće” [12]. U cjeniku te ambulante stavke za dolazak na adresu nema [11].
+
+Cijenu eutanazije na kućnoj adresi nismo našli ni u jednom objavljenom cjeniku. Vidljivo je samo da se izlazak naplaćuje posebno: 12,50 € u Zelini i 25 € u Osijeku „bez intervencije” [4][6], a 25 € u Vukovaru za izlazak na intervenciju [13]. Tko još piše da dolazi kući, piše u članku [Uspavljivanje ljubimca kod kuće u Hrvatskoj](/vodic/uspavljivanje-ljubimca-kod-kuce-u-hrvatskoj).
 
 Kad zoveš, pitaj tri stvari: dolazite li na adresu i kada, koliko stoje dolazak i postupak zajedno, te možete li odmah preuzeti tijelo.
 

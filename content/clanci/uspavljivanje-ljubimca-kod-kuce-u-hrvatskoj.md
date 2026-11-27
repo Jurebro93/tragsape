@@ -22,7 +22,7 @@ sources:
     url: "https://vetosan.com.hr/"
     publisher: "Veterinarska ambulanta Vetosan"
     accessed_on: 2026-11-27
-  - claim: "Cjenik usluga (stupac MPC, datum sidrene cijene 10. 9. 2026.): izlazak bez intervencije 25 €; „pregled i liječenje u kući vlasnika” naveden dvaput, 26,54 € i 5,67 €, s istim nazivom, istom sidrenom cijenom i datumom; stupci su samo naziv, MPC, posebni oblik prodaje, sidrena cijena i datum, bez vrste životinje i jedinice; eutanazija psa 29,86 €; eutanazija mačke 26,54 €; odvoz i neškodljivo uklanjanje – mačke 37,50 €, – psi 37,50 €"
+  - claim: "Cjenik usluga (stupac MPC, datum sidrene cijene 10. 9. 2026.): izlazak bez intervencije 25 €; „pregled i liječenje u kući vlasnika” naveden dvaput, 26,54 € i 5,67 €, istog naziva i datuma, sidrena cijena jednaka MPC-u; cjenik nema stupac za vrstu životinje ni jedinicu; eutanazija psa 29,86 €; eutanazija mačke 26,54 €; odvoz i neškodljivo uklanjanje – mačke 37,50 €, – psi 37,50 €"
     title: "Cjenik"
     url: "https://vetos.hr/cjenik/"
     publisher: "Veterinarska stanica Osijek"
@@ -145,11 +145,16 @@ Ovaj tekst ne zamjenjuje veterinara. Je li vrijeme i je li kućni postupak primj
 Neke ambulante na svojim stranicama pišu da dolaze kući. Navodimo ih samo kao primjer onoga što javno stoji, a ne kao preporuku:
 
 - Zagrebačka ambulanta Galavet piše: „Ne možete vi do nas? Mi dolazimo k vama. Cijepljenja, profilaksa i rutinski pregledi u kući.” Eutanaziju ne spominje [2].
+- Zagrebačka praksa Miki-Vet piše da intervencije provodi u ambulanti, „a prema potrebi i kućnim posjetama” [19].
+- Porečka ambulanta Vet-Centar piše da svoje pacijente pregledava i kod kuće, ali samo u specifičnim situacijama, jer je takav pregled „dosta ograničen” [20].
+- Veterinarska stanica Vukovar piše: „Ukoliko niste u mogućnosti dovesti ljubimca u ambulantu, liječenje ćemo obaviti u Vašem domu” [21].
 - Veterinarska stanica Osijek u cjeniku ima stavke „pregled i liječenje u kući vlasnika” i „izlazak bez intervencije” [4].
 - Veterinarska stanica Sveti Ivan Zelina u cjeniku ima „Izlazak na teren bez intervencije” [5].
 - Osječka ambulanta Vetosan pod naslovom „Izlazak na teren” piše da izvan radnog vremena intervenira samo kad prijeti životna ugroza i samo za svoje pacijente [3].
 
-Nijedna od tih stranica izričito ne nudi eutanaziju na adresi. Hrvatski veterinar Dragan Petrović za 24sata kaže da u njegovoj ambulanti eutanaziju radije obavljaju u ambulanti, „ali na zahtjev vlasnika može se to obaviti i kod kuće” [7]. Zato je najbrži put pitati veterinara koji već liječi tvoju životinju [16].
+Pregledali smo 27. studenoga 2026. stranice i cjenike dvadesetak hrvatskih ambulanti i stanica. Nijedna izričito ne nudi eutanaziju na adresi niti objavljuje njezinu cijenu.
+
+Jedino što smo našli je novinska izjava. Dragan Petrović iz zagrebačke ambulante Nera rekao je za 24sata da eutanaziju radije obavljaju u ambulanti, „ali na zahtjev vlasnika može se to obaviti i kod kuće” [7]. Na stranici i u cjeniku te ambulante dolazak na adresu nije naveden [23], pa je najbrži put pitati veterinara koji već liječi tvoju životinju [16].
 
 ## Koliko stoji izlazak veterinara
 
@@ -159,11 +164,14 @@ Iz objavljenih cjenika vidi se samo cijena izlaska, a ne cijena cijelog kućnog 
 | --- | --- | --- |
 | Veterinarska stanica Osijek [4] | izlazak bez intervencije | 25,00 € |
 | Veterinarska stanica Osijek [4] | pregled i liječenje u kući vlasnika | 26,54 € ili 5,67 € (dvije stavke istog naziva) |
+| Veterinarska stanica Vukovar, 26. 11. 2026. [22] | izlazak na intervenciju | 25,00 € |
 | Veterinarska stanica Sveti Ivan Zelina, 27. 11. 2026. [5] | Izlazak na teren bez intervencije | 12,50 € |
 | Veterinarska stanica Sveti Ivan Zelina [5] | Dolazak vet. izvan radnog vremena | 25,00 € |
 | Klinike Veterinarskog fakulteta, 14. 11. 2024. [6] | Izlazak na teren/sat | 27,00 € |
 
-Iz cjenika nije jasno koja se stavka primjenjuje kad veterinar na adresi zaista obavi postupak. Uz izlazak se zasebno plaćaju eutanazija, sedacija i zbrinjavanje tijela; te cijene su u člancima [Uspavljivanje psa: cijena i postupak](/vodic/uspavljivanje-psa-cijena) i [Uspavljivanje mačke: cijena i postupak](/vodic/uspavljivanje-macke-cijena-i-postupak). Na klinikama Veterinarskog fakulteta usluge od 18 do 8 sati te nedjeljom i praznikom skuplje su za 50 % [6].
+Osječki cjenik razliku između dviju stavki „pregled i liječenje u kući vlasnika” ne objašnjava. Obje imaju isti naziv i isti datum, a cjenik nema stupac za vrstu životinje ni jedinicu [4]; pitaj ambulantu koja se primjenjuje.
+
+Vukovarski cjenik jedini u tablici odvaja izlazak na intervenciju od poziva nakon kojeg intervencije nije bilo, a ne navodi za koje se životinje stavke primjenjuju [22]. Uz izlazak se zasebno plaćaju eutanazija, sedacija i zbrinjavanje tijela; te cijene su u člancima [Uspavljivanje psa: cijena i postupak](/vodic/uspavljivanje-psa-cijena) i [Uspavljivanje mačke: cijena i postupak](/vodic/uspavljivanje-macke-cijena-i-postupak). Na klinikama Veterinarskog fakulteta usluge od 18 do 8 sati te nedjeljom i praznikom skuplje su za 50 % [6].
 
 ## Prednosti i ograničenja prema veterinarima
 
@@ -171,7 +179,11 @@ Smjernice Američke udruge bolnica za životinje (AAHA) i međunarodne udruge za
 
 Iste smjernice navode i ograničenja: malo prostora, loše svjetlo ili prozračivanje i nedostatak pomoćnog osoblja [1]. Veterinar zato može povesti tehničara [1]. Cornellov stručnjak za mačke kaže da većina veterinara radije radi u mirno doba dana u ambulanti, gdje vlasnik ne mora izlaziti kroz punu čekaonicu [8].
 
-Postupak je isti kao u ambulanti: sedacija, zatim injekcija, a injekcijske metode jednako su sigurne kod kuće [1][10]. Hrvatski veterinar navodi da postupak sa sedacijom obično traje 15 do 30 minuta [7].
+Postupak je isti kao u ambulanti: sedacija, zatim injekcija, a injekcijske metode jednako su sigurne kod kuće [1][10]. Dragan Petrović u izjavi za 24sata navodi da postupak sa sedacijom obično traje 15 do 30 minuta [7].
+
+## Postoji li hospicij ili palijativna skrb za ljubimce
+
+Specijaliziranu uslugu ili udrugu za palijativnu skrb ili hospicij za ljubimce u Hrvatskoj nismo našli kad smo pretraživali 27. studenoga 2026. O ublažavanju boli i njezi u posljednjim tjednima zato razgovaraj s veterinarom koji liječi tvoju životinju.
 
 ## Što pitati kad zoveš
 
@@ -224,7 +236,7 @@ Cijenu cijelog kućnog postupka nismo našli ni u jednom objavljenom cjeniku. Iz
 
 ### Smije li veterinar uspavati psa ili mačku kod kuće?
 
-Zakon o zaštiti životinja u članku 11. propisuje tko smije usmrtiti životinju, a o mjestu ne govori [13]. Hrvatski veterinari to rade i kod kuće na zahtjev vlasnika, ali hoće li doći, odlučuje svaka ambulanta sama [3][7].
+Zakon o zaštiti životinja u članku 11. propisuje tko smije usmrtiti životinju, a o mjestu ne govori [13]. Hrvatska veterinarska komora navela je 2020. da veterinarske organizacije rade „u ambulantnim i terenskim uvjetima”, kako prenosi portal Veterina [24]. Hoće li doći na adresu, odlučuje svaka ambulanta sama [3][7].
 
 ### Je li kod kuće mirnije za životinju?
 

@@ -72,13 +72,28 @@ sources:
     url: "https://cellulavet.com/cjenik-veterinarska/"
     publisher: "CellulaVet, Osijek"
     accessed_on: 2026-11-27
+  - claim: "Odluka ministra poljoprivrede, šumarstva i ribarstva od 20. 2. 2025., na snazi od 1. 3. 2025.; troškove plaća subjekt (točka II.); točka 20. Priloga, stupac „Cijena bez PDV-a”, po životinji: označavanje mikročipom 12,90 €; putovnica 10,06 €; cijepljenje protiv bjesnoće, dehelmintizacija i upis u registar i putovnicu 25,00 €; promjena vlasnika i odjava psa 4,48 €"
+    title: "Odluka o visini i opsegu naknada za troškove provedbe propisanih mjera iz područja veterinarstva, evidencija i dokumentacije (20. 2. 2025.)"
+    url: "https://veterinarstvo.mps.hr/UserDocsImages/AHL/Odluka%20o%20visini%20i%20opsegu%20naknade%20za%20tro%C5%A1kove%20provedbe%20propisanih%20mjera%20iz%20podru%C4%8Dja%20veterinarstva%2020.02.2025.pdf"
+    publisher: "Ministarstvo poljoprivrede, šumarstva i ribarstva"
+    accessed_on: 2026-11-27
+  - claim: "Članak 129. stavak 1. točka 7.: zadaća Hrvatske veterinarske komore je donošenje nomenklature veterinarskih usluga i, u suradnji s drugim komorama, određivanje kriterija za cijene veterinarskih usluga koje se ne financiraju iz državnog proračuna i ne provode u sklopu obveznih mjera koje propisuje Ministarstvo (pročišćeni tekst, NN 82/13 do 18/23)"
+    title: "Zakon o veterinarstvu (pročišćeni tekst), članak 129."
+    url: "https://www.zakon.hr/z/468/zakon-o-veterinarstvu"
+    publisher: "Zakon.hr"
+    accessed_on: 2026-11-27
+  - claim: "Baza ažurirana 19. 11. 2026. (zaključno s NN 128/26): Statut Hrvatske veterinarske komore iz NN 89/16 označen je kao važeći, bez navedenih izmjena; članak 81.: Gospodarstveni odbor predlaže kriterije za formiranje cijena i minimalne cijene veterinarskih usluga prema nomenklaturi"
+    title: "NN 89/16 od 05.10.2016. Statut Hrvatske veterinarske komore"
+    url: "https://www.zakon.hr/c/podzakonski-propis/17458/nn-89-16-od-05.10.2016.-statut-hrvatske-veterinarske-komore"
+    publisher: "Zakon.hr"
+    accessed_on: 2026-11-27
 ---
 Jedinstvenog cjenika veterinarskih usluga u Hrvatskoj nema: svaka ambulanta sama određuje cijene. Ovdje su iznosi iz šest objavljenih cjenika iz Osijeka, Svetog Ivana Zeline, Zagreba, Splita i Rijeke, onako kako stoje u cjenicima koje smo otvorili 27. studenoga 2026.
 
 ## Ukratko
 
 - Opći klinički pregled psa ili mačke stoji od 18,75 € u Osijeku do 40 € u Rijeci [1][7].
-- Cijepljenje protiv bjesnoće u pet od šest cjenika stoji točno 31,25 €, a čipiranje psa uglavnom 16,12 do 16,13 € [1][2][4][5][7].
+- Cijepljenje protiv bjesnoće u pet od šest cjenika stoji točno 31,25 €, a čipiranje psa uglavnom 16,12 do 16,13 € [1][2][4][5][7]. Te naknade određuje ministar: 25,00 € i 12,90 € bez PDV-a [14].
 - Najveće su razlike kod sterilizacije kuje: od 74,66 € u Osijeku do 250–350 € u Rijeci, ovisno o stavci [1][7].
 - Anestezija, lijekovi i materijal često se naplaćuju posebno, pa je račun veći od jedne stavke iz cjenika [3].
 - Da su cijene s PDV-om, izričito piše samo u dva cjenika [3][6].
@@ -140,9 +155,13 @@ Samo dva cjenika to izričito kažu: Veterina Branimir i praksa Pilić navode da
 
 ## Propisuje li itko cijene veterinarskih usluga
 
-Obvezni jedinstveni cjenik za preglede i zahvate kod kućnih ljubimaca nismo našli. Statut Hrvatske veterinarske komore iz 2016. kaže da Komora određuje kriterije za izračun cijena, a njezin Gospodarstveni odbor predlaže kriterije i minimalne cijene [8]. Objavljeni popis minimalnih cijena Komore nismo pronašli, a cjenici iz tablice međusobno se jako razlikuju.
+Za preglede i zahvate obvezni jedinstveni cjenik nismo našli. Zakon o veterinarstvu Komori daje zadaću da donese nomenklaturu veterinarskih usluga i odredi kriterije za cijene usluga koje se ne plaćaju iz proračuna i nisu dio obveznih mjera Ministarstva [15]. Prema Statutu iz 2016., za koji baza propisa ne navodi izmjene [16], Gospodarstveni odbor Komore predlaže kriterije i minimalne cijene [8].
 
-Prema priopćenju Komore iz rujna 2026., cijene dijela poslova od javnog interesa, poput mjera protiv zaraznih bolesti životinja, određuju ministar nadležan za poljoprivredu i Državni inspektorat [9]. Cijepljenje protiv bjesnoće u pet cjenika stoji isto, 31,25 € [1][2][4][5][7]. Propis koji taj iznos određuje nismo pronašli, pa to ne tvrdimo.
+Objavljenu nomenklaturu ni popis minimalnih ili preporučenih cijena Komore nismo pronašli, a cjenici iz tablice međusobno se jako razlikuju.
+
+Drukčije je s obveznim mjerama. Prema priopćenju Komore iz rujna 2026., cijene mjera protiv zaraznih bolesti određuje ministar nadležan za poljoprivredu [9]. Važeća [Odluka o visini i opsegu naknada](https://veterinarstvo.mps.hr/UserDocsImages/AHL/Odluka%20o%20visini%20i%20opsegu%20naknade%20za%20tro%C5%A1kove%20provedbe%20propisanih%20mjera%20iz%20podru%C4%8Dja%20veterinarstva%2020.02.2025.pdf) od 20. veljače 2025. za cijepljenje protiv bjesnoće s dehelmintizacijom i upisom određuje 25,00 €, za čip 12,90 €, za putovnicu 10,06 €, a za promjenu vlasnika i odjavu psa 4,48 €, sve bez PDV-a [14].
+
+Zato cijepljenje protiv bjesnoće u pet cjenika stoji isto, 31,25 € [1][2][4][5][7], a Veterina Branimir, koja navodi cijene s PDV-om, za čip traži 16,13 € [3][4]. Više o tim stavkama piše u člancima [Cijepljenje psa: cijena i što je obvezno](/vodic/cijepljenje-psa-cijena-i-sto-je-obvezno) i [Čipiranje psa i mačke: cijena i postupak](/vodic/cipiranje-psa-i-macke-cijena-i-postupak).
 
 Država od 17. studenoga 2026. propisuje kako se cjenici objavljuju, ne koliko usluga košta. Tko ima mrežnu stranicu, mora na njoj objaviti cjenik usluga u obliku .csv ili .xml i čuvati ga 30 dana [10][12]. Uz cijenu se ističe i cijena na dan 10. rujna 2026. [11]: kontrolni pregled u Veterini Branimir sada stoji 24,80 €, a tada je stajao 19,80 € [3].
 
@@ -162,11 +181,11 @@ Koji je zahvat potreban, procjenjuje veterinar koji je životinju pregledao. Ova
 
 ### Postoji li službeni cjenik veterinarskih usluga u Hrvatskoj?
 
-Jedinstveni obvezni cjenik nismo našli. Statut Hrvatske veterinarske komore predviđa da Komora određuje kriterije i predlaže minimalne cijene [8], ali svaka ambulanta objavljuje svoj cjenik.
+Za preglede i zahvate ne: Statut Hrvatske veterinarske komore predviđa da Komora predlaže minimalne cijene [8], ali takav popis nismo našli i svaka ambulanta ima svoj cjenik. Za obvezne mjere, poput cijepljenja protiv bjesnoće i čipiranja, naknadu određuje ministar [14].
 
 ### Zašto je cijepljenje protiv bjesnoće gotovo svugdje 31,25 €?
 
-U pet od šest cjenika iznos je isti [1][2][4][5][7], u Splitu 32 € [6]. Propis koji određuje taj iznos nismo pronašli, pa razlog ne navodimo.
+Jer naknadu određuje ministar: Odluka od 20. veljače 2025. za cijepljenje, dehelmintizaciju i upis propisuje 25,00 € bez PDV-a [14]. U pet od šest cjenika stoji 31,25 € [1][2][4][5][7], u Splitu 32 € [6].
 
 ### Je li anestezija uključena u cijenu sterilizacije?
 

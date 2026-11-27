@@ -67,15 +67,25 @@ sources:
     url: "https://veterinarstvo.mps.hr/hr/naslovna/kucni-ljubimci-nekomercijalno-i-komercijalno-premjestanje/"
     publisher: "Ministarstvo poljoprivrede, šumarstva i ribarstva – Uprava za veterinarstvo i sigurnost hrane"
     accessed_on: 2026-11-27
+  - claim: "Odluka ministra poljoprivrede, šumarstva i ribarstva od 20. 2. 2025., na snazi od 1. 3. 2025.; troškove plaća subjekt (točka II.); točka 20. Priloga, stupac „Cijena bez PDV-a”, po životinji: putovnica za kućnog ljubimca 10,06 €; cijepljenje protiv bjesnoće, dehelmintizacija i upis u registar i putovnicu 25,00 €; označavanje mikročipom 12,90 €"
+    title: "Odluka o visini i opsegu naknada za troškove provedbe propisanih mjera iz područja veterinarstva, evidencija i dokumentacije (20. 2. 2025.)"
+    url: "https://veterinarstvo.mps.hr/UserDocsImages/AHL/Odluka%20o%20visini%20i%20opsegu%20naknade%20za%20tro%C5%A1kove%20provedbe%20propisanih%20mjera%20iz%20podru%C4%8Dja%20veterinarstva%2020.02.2025.pdf"
+    publisher: "Ministarstvo poljoprivrede, šumarstva i ribarstva"
+    accessed_on: 2026-11-27
+  - claim: "Utvrđuje predložak putovnice (Prilog I.) i primjenjuje se od 22. 4. 2026.; Provedbena uredba 577/2013 stavlja se izvan snage od 22. 4. 2026.; putovnica po starom predlošku iz Priloga III. Uredbi 577/2013 smatra se usklađenom ako je izdana prije 1. 1. 2028. (članak 6.); uvodna izjava 1.: Uredba 576/2013 stavljena je izvan snage 21. 4. 2021., ali se primjenjivala do 21. 4. 2026."
+    title: "Provedbena uredba Komisije (EU) 2026/705 o utvrđivanju predloška identifikacijskih dokumenata i predloška deklaracija za nekomercijalna premještanja kućnih ljubimaca"
+    url: "https://publications.europa.eu/resource/celex/32026R0705"
+    publisher: "Ured za publikacije Europske unije (Službeni list EU, L 2026/705)"
+    accessed_on: 2026-11-27
 ---
-Za put sa psom, mačkom ili pitomom vreticom u drugu državu EU trebaju tri stvari: čip, cijepljenje protiv bjesnoće najmanje 21 dan prije puta i europska putovnica za kućne ljubimce [1][3]. Putovnicu izdaje ovlašteni veterinar [4][7]. U tri cjenika koja smo pročitali 27. studenoga 2026. stoji 12,57 ili 12,58 € [9][10][11].
+Za put sa psom, mačkom ili pitomom vreticom u drugu državu EU trebaju tri stvari: čip, cijepljenje protiv bjesnoće najmanje 21 dan prije puta i europska putovnica za kućne ljubimce [1][3]. Putovnicu izdaje ovlašteni veterinar [4][7], a naknadu za nju određuje ministar: 10,06 € bez PDV-a [13]. U tri cjenika koja smo pročitali 27. studenoga 2026. stoji 12,57 ili 12,58 € s PDV-om [9][10][11].
 
 ## Ukratko
 
 - Redoslijed je važan: najprije čip, zatim cijepljenje protiv bjesnoće, i to sa najmanje 12 tjedana [1][5].
 - Nakon prvog cijepljenja čeka se najmanje 21 dan; ako docjepljuješ na vrijeme, čekanja nema [1][3][8].
 - Putovnicu izdaje službeni ili ovlašteni veterinar, i to samo vlasniku s boravištem u EU [1][4].
-- Cijena u tri cjenika: putovnica 12,57 do 12,58 €, cijepljenje psa protiv bjesnoće 31,25 €, čip 12,15 do 16,13 € [9][10][11].
+- Naknade bez PDV-a određuje ministar: putovnica 10,06 €, cijepljenje protiv bjesnoće 25,00 €, čip 12,90 € [13]. U cjenicima: 12,57 do 12,58 €, 31,25 € i 12,15 do 16,13 € [9][10][11].
 - Finska, Irska, Malta, Sjeverna Irska i Norveška za pse traže i tretman protiv trakavice 1 do 5 dana prije ulaska [1][6].
 
 ## Što treba za put sa psom ili mačkom po EU?
@@ -88,9 +98,9 @@ Pravila vrijede za nekomercijalna putovanja, bez prodaje ili promjene vlasnika [
 
 ## Koja pravila vrijede od 22. travnja 2026.?
 
-Nova europska pravila, s istim osnovnim uvjetima. Uredba (EU) br. 576/2013, koju još navode mnoge stranice, primjenjivala se do 21. travnja 2026. [2]. Od 22. travnja 2026. vrijede Delegirane uredbe (EU) 2026/131 i 2026/132 [3][4].
+Nova europska pravila, s istim osnovnim uvjetima. Uredba (EU) br. 576/2013, koju još navode mnoge stranice, stavljena je izvan snage još 2021., ali se za putovanja s ljubimcima primjenjivala do 21. travnja 2026. [2][14]. Od 22. travnja 2026. vrijede Delegirane uredbe (EU) 2026/131 i 2026/132 [3][4], a novi obrazac putovnice propisuje Provedbena uredba (EU) 2026/705 [14].
 
-Za vlasnika se malo što mijenja. Čip, cijepljenje, 21 dan i putovnica ostaju [3]. Putovnice izdane prije 22. travnja 2026. po dotadašnjem obrascu i dalje vrijede, pa ne trebaš novu [4].
+Za vlasnika se malo što mijenja. Čip, cijepljenje, 21 dan i putovnica ostaju [3]. Putovnice izdane prije 22. travnja 2026. po dotadašnjem obrascu i dalje vrijede, pa ne trebaš novu [4]. Putovnica po starom obrascu izdana do kraja 2027. smatra se usklađenom s novim [14].
 
 U izborniku stranica Uprave za veterinarstvo o putovanju s ljubimcima na dan pristupa i dalje stoji Uredba 576/2013 [12]. Ako nešto nije jasno, Upravi možeš pisati na adresu navedenu na toj stranici [12].
 
@@ -112,17 +122,17 @@ U putovnici su broj čipa i mjesto ugradnje, ime, datum rođenja i opis ljubimca
 
 ## Koliko stoji putovnica i sve što uz nju ide?
 
-Putovnica u tri pročitana cjenika stoji 12,57 ili 12,58 €. Troškove cijepljenja protiv bjesnoće snosi vlasnik [8].
+Naknadu određuje ministar. Prema [Odluci o visini i opsegu naknada](https://veterinarstvo.mps.hr/UserDocsImages/AHL/Odluka%20o%20visini%20i%20opsegu%20naknade%20za%20tro%C5%A1kove%20provedbe%20propisanih%20mjera%20iz%20podru%C4%8Dja%20veterinarstva%2020.02.2025.pdf) od 20. veljače 2025., na snazi od 1. ožujka 2025., putovnica stoji 10,06 € po životinji, bez PDV-a [13]. U tri pročitana cjenika s PDV-om to je 12,57 ili 12,58 €. Troškove cijepljenja protiv bjesnoće snosi vlasnik [8].
 
-| Usluga | VS Osijek | VS Sveti Ivan Zelina | Veterina Branimir, Zagreb |
-| --- | --- | --- | --- |
-| Putovnica za kućne ljubimce | 12,57 € | 12,58 € | 12,58 € |
-| Cijepljenje psa protiv bjesnoće | 31,25 € (s dehelmintizacijom) | 31,25 € | 31,25 € |
-| Cijepljenje mačke protiv bjesnoće | 19,91 € | nije navedeno | nije navedeno |
-| Čipiranje psa | 12,15 € | 16,13 € | 16,13 € |
-| Datum u cjeniku | sidrena cijena 10. 9. 2026. [9] | objavljen 27. 11. 2026. [10] | ažuriran 17. 11. 2026. [11] |
+| Usluga | Odluka ministra, bez PDV-a [13] | VS Osijek | VS Sveti Ivan Zelina | Veterina Branimir, Zagreb |
+| --- | --- | --- | --- | --- |
+| Putovnica za kućne ljubimce | 10,06 € | 12,57 € | 12,58 € | 12,58 € |
+| Cijepljenje psa protiv bjesnoće | 25,00 € (s dehelmintizacijom i upisom) | 31,25 € (s dehelmintizacijom) | 31,25 € | 31,25 € |
+| Cijepljenje mačke protiv bjesnoće | stavka ne navodi vrstu | 19,91 € | nije navedeno | nije navedeno |
+| Čipiranje psa | 12,90 € | 12,15 € | 16,13 € | 16,13 € |
+| Datum | 20. 2. 2025. | sidrena cijena 10. 9. 2026. [9] | objavljen 27. 11. 2026. [10] | ažuriran 17. 11. 2026. [11] |
 
-Za psa koji još nema ništa, čip, cijepljenje i putovnica zajedno u tim cjenicima stoje oko 56 do 60 €. Naredba traži da se pas pri cijepljenju protiv bjesnoće tretira i protiv trakavice [8]; u Zagrebu je to zasebna stavka od 8,50 € [11].
+Za psa koji još nema ništa, čip, cijepljenje i putovnica prema Odluci zajedno stoje 47,96 € bez PDV-a [13], a u tim cjenicima oko 56 do 60 €. Naredba traži da se pas pri cijepljenju protiv bjesnoće tretira i protiv trakavice [8]; u Zagrebu je to zasebna stavka od 8,50 € [11].
 
 Osječki cjenik ima i stavku „HVI – bjesnoća – titar” od 110 € [9]. Taj test ne treba za put unutar EU, ali treba za neke povratke iz zemalja izvan EU [3].
 
@@ -144,7 +154,7 @@ Za premještanje u drugu državu EU ili iz nje bez propisanih uvjeta fizičkoj o
 
 ### Koliko stoji putovnica za psa ili mačku?
 
-U tri cjenika koja smo pročitali 27. studenoga 2026. stoji 12,57 € ili 12,58 € [9][10][11]. Cijepljenje i čip plaćaju se zasebno.
+Ministar je naknadu odredio na 10,06 € bez PDV-a [13]. U tri cjenika koja smo pročitali 27. studenoga 2026. stoji 12,57 € ili 12,58 € [9][10][11]; cijepljenje i čip plaćaju se zasebno.
 
 ### Koliko dana prije puta ljubimac mora biti cijepljen?
 
@@ -156,7 +166,7 @@ Službeni ili ovlašteni veterinar, nakon provjere čipa i tvog potpisa [4][7].
 
 ### Vrijedi li stara putovnica nakon promjene pravila?
 
-Da. Putovnice izdane prije 22. travnja 2026. po dotadašnjem obrascu i dalje vrijede [4].
+Da. Putovnice izdane prije 22. travnja 2026. po dotadašnjem obrascu i dalje vrijede [4], a stari obrazac smatra se usklađenim ako je putovnica izdana prije 1. siječnja 2028. [14].
 
 ### Treba li putovnica za put unutar Hrvatske?
 
