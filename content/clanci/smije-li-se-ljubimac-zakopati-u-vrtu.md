@@ -102,6 +102,12 @@ Uvjeta je pet, a svi proizlaze iz članaka 42. i 43. Pravilnika [1].
 
 Pedeset centimetara je sloj zemlje iznad tijela, a ne dubina jame. Jama zato mora biti dublja za onoliko koliko je tijelo visoko.
 
+> [!BROJKE] Ukop u vrtu u brojkama
+> - **50 cm** zemlje najmanje mora biti iznad tijela [1]
+> - **5 uvjeta** iz članaka 42. i 43. Pravilnika [1]
+> - **7 dana** rok je za prijavu uginuća označenog ljubimca [8]
+> - **2004.** zatvoreno je staro groblje ljubimaca na riječkoj Kozali [6]
+
 Pravilnik ne propisuje udaljenost od kuće, bunara, međe ili vodotoka u metrima. Te pojedinosti, ako postoje, nalaze se u lokalnim propisima i propisima o vodama, na koje Pravilnik samo upućuje [1].
 
 ## Što ako je ljubimac bio bolestan?
@@ -121,6 +127,9 @@ Na taj se zakon poziva i Grad Rijeka kad objašnjava zašto je 2004. zatvoreno s
 Propisi to ne kažu jednoznačno. Zakon o veterinarstvu kaže da zakapanje „može odobriti” veterinarski inspektor, u skladu s europskim uredbama 1069/2009 i 142/2011 [2]. Isti članak ministru prepušta da pravilnikom propiše način postupanja s tijelima životinja, a Pravilnik iz 2022. donesen je upravo na temelju te odredbe [1][2].
 
 Europska uredba tijelo ljubimca svrstava u materijal kategorije 1, ali dopušta da nadležno tijelo odobri „zakopavanje uginulih kućnih ljubimaca” (članak 19. stavak 1. točka (a)) [9]. Pravilnik se poziva baš na tu odredbu i vlasniku dopušta ukop uz uvjete iz članaka 42. i 43. [1]. Provedbena uredba traži da tijelo bude zakopano tako da do njega ne mogu doći mesojedi ni svejedi, bez štete za zdravlje i okoliš [10].
+
+> [!CINJENICA] Jeste li znali?
+> Ista odredba europske uredbe koja dopušta zakopavanje kućnih ljubimaca govori i o kopitarima, primjerice konjima [9].
 
 Za ukop ljubimca Pravilnik ne traži ni zahtjev ni obavijest inspektoru, a za zakapanje u udaljenim područjima obavijest izričito traži (članak 44. stavak 2.) [1]. Je li za ljubimca dovoljan sam Pravilnik, u propisima ne piše. Uputu Ministarstva za građane o ukopu ljubimca nismo našli [11].
 

@@ -115,6 +115,11 @@ Ovaj tekst ne zamjenjuje veterinara. Koja cjepiva tvoj pas treba i kada, procjen
 - Osnovna cjepiva prema smjernicama WSAVA-e iz 2024. štite od štenećaka, zaraznog hepatitisa (adenovirus tip 1) i parvoviroze [6].
 - Cijepljenje protiv zaraznih bolesti stoji od 12,50 € [9] do 31,00 € [17], a negdje se cjepivo naplaćuje zasebno [14].
 
+> [!BROJKE] Cijepljenje psa u brojkama
+> - **90 dana** starosti: od tada je cijepljenje protiv bjesnoće obvezno [1]
+> - **25,00 €** bez PDV-a za bjesnoću s dehelmintizacijom i upisom, prema Odluci ministra [18]
+> - **21 dan** čekanja nakon prvog cijepljenja prije puta u EU [5]
+
 ## Što je u Hrvatskoj obvezno
 
 Obvezno je cijepljenje protiv bjesnoće. Propisuje ga Naredba o provedbi i financiranju mjera sprječavanja, kontrole i nadziranja bolesti životinja, objavljena u [Narodnim novinama 1/2023](https://narodne-novine.nn.hr/clanci/sluzbeni/2023_01_1_10.html) [1]. Ministar ju je donio na temelju članka 18. Zakona o zdravlju životinja [3].
@@ -193,6 +198,9 @@ Rijeka ima i zajedničku stavku za obje vrste cijepljenja, 50,00 € [16]. Pregl
 ## Što ako putuješ sa psom
 
 Za putovanje unutar EU-a pas mora imati čip, europsku putovnicu i cijepljenje protiv bjesnoće obavljeno nakon čipiranja [5]. Pri prvom cijepljenju mora biti star najmanje 12 tjedana, a nakon njega se čeka najmanje 21 dan prije puta [5].
+
+> [!SAVJET] Prije puta
+> Provjeri datum u putovnici. Zakasniš li, cijepljenje se smatra prvim [1], a nakon prvog se čeka najmanje 21 dan [5].
 
 ## Kada odmah veterinaru
 

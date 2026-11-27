@@ -83,6 +83,12 @@ Psa u Hrvatskoj moraš čipirati najkasnije 90 dana od štenjenja, a ranije ako 
 - Čip ugrađuje ovlašteni veterinar, životinja se upisuje u Upisnik kućnih ljubimaca, a promjenu vlasnika prijavljuješ u sedam dana [1][11].
 - Naknade bez PDV-a određuje ministar: čip 12,90 €, putovnica 10,06 €, promjena vlasnika 4,48 € [12]; u cjenicima s PDV-om 16,13 €, 12,58 € i 5,60 € [8][9].
 
+> [!BROJKE] Čipiranje u brojkama
+> - **90 dana** od štenjenja: najkasnije tada pas mora biti čipiran [1]
+> - **12,90 €** bez PDV-a naknada za čip prema Odluci ministra [12]
+> - **7 dana** rok za prijavu promjene vlasnika [1]
+> - **260–660 €** kazna za nečipiranog psa [1][2]
+
 ## Tko mora čipirati psa i do kada?
 
 Svaki pas, najkasnije 90 dana od dana štenjenja. Zakon kaže da svi psi moraju biti označeni injektibilnim transponderom „prije premještanja u svrhu promjene vlasništva, a najkasnije 90 dana od dana štenjenja” [1].
@@ -132,6 +138,9 @@ Upisnik se vodi u bazi Lysacan, koju vodi ministarstvo nadležno za poljoprivred
 
 Čip vrijedi koliko i podaci uz njega. Kad dobiješ ispis, provjeri ime, adresu i telefon. Ako se nešto promijeni, javi se ambulanti, jer bez točnih podataka pronađenu životinju nitko ne može vratiti [6].
 
+> [!CINJENICA] Jeste li znali?
+> Čip nije GPS. Nema bateriju i ne odašilje signal; pročita ga tek čitač prislonjen uz tijelo [6].
+
 ## Koliko stoji čipiranje?
 
 Naknadu određuje ministar. Prema [Odluci o visini i opsegu naknada](https://veterinarstvo.mps.hr/UserDocsImages/AHL/Odluka%20o%20visini%20i%20opsegu%20naknade%20za%20tro%C5%A1kove%20provedbe%20propisanih%20mjera%20iz%20podru%C4%8Dja%20veterinarstva%2020.02.2025.pdf) od 20. veljače 2025., na snazi od 1. ožujka 2025., označavanje mikročipom stoji 12,90 € po životinji, bez PDV-a, a u iznos je uključen i materijal [12]. Kasnije izmjene Odluke tu stavku nisu mijenjale [13].
@@ -157,6 +166,9 @@ Promjenu prijavljuješ najkasnije u roku od sedam dana [1]. Prijava služi izmje
 To vrijedi i za udomljavanje. Dok podaci nisu prepisani, čip vodi do prethodnog vlasnika ili skloništa. Ako predaš ili udomiš životinju, idite zajedno u ambulantu ili se dogovorite tko će prijaviti promjenu.
 
 Za propuštenu prijavu kazna je od 260 do 660 eura [1][2]. Isti rok od sedam dana vrijedi i za uginuće; postupak je opisan u članku [Odjava psa nakon uginuća: rok i postupak](/vodic/odjava-psa-nakon-uginuca-rok-i-postupak). Što se s čipom i putovnicom događa tada, piše u članku [Što s čipom i putovnicom nakon smrti ljubimca](/vodic/sto-s-cipom-i-putovnicom-nakon-smrti-ljubimca).
+
+> [!SAVJET] Uzimaš štene?
+> Prije predaje pitaj ima li čip i ispis iz Upisnika na ime prodavatelja ili uzgajivača [1].
 
 ## Česta pitanja
 

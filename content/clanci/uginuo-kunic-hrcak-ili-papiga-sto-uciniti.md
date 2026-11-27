@@ -79,6 +79,11 @@ sources:
     url: "https://www.legislation.gov.uk/eur/2006/865/article/11/2019-02-27"
     publisher: "legislation.gov.uk (The National Archives, UK)"
     accessed_on: 2026-11-27
+  - claim: "Članak 3. točka 8.: „kućni ljubimac” znači bilo koju životinju vrste o kojoj se obično brine i koju drži čovjek za namjene različite od prehrane i poljoprivrednih namjena; članak 19. stavak 1. točka (a): nadležno tijelo može odobriti odlaganje zakopavanjem uginulih kućnih ljubimaca"
+    title: "Uredba (EZ) br. 1069/2009 Europskog parlamenta i Vijeća o nusproizvodima životinjskog podrijetla (CELEX 32009R1069, SL L 300, 14. 11. 2009.)"
+    url: "https://publications.europa.eu/resource/celex/32009R1069"
+    publisher: "Ured za publikacije Europske unije"
+    accessed_on: 2026-11-27
 ---
 Ako ti je uginuo kunić, hrčak ili papiga, danas trebaš tri stvari: provjeriti da je doista uginuo, umotati tijelo i položiti ga na hladno te odlučiti hoćeš li ga zakopati ili kremirati. Odjava u upisniku nije potrebna, jer se u njega upisuju samo psi, mačke i pitome vretice [11]. Odluka o ukopu ili kremiranju može pričekati do sutra.
 
@@ -89,6 +94,12 @@ Ako ti je uginuo kunić, hrčak ili papiga, danas trebaš tri stvari: provjeriti
 - Vlasnik smije sam zakopati ljubimca uz uvjete iz propisa, među kojima je najmanje 50 cm zemlje iznad tijela [7].
 - Pojedinačno kremiranje ljubimca do 1 kg u jednom objavljenom cjeniku stoji 46,45 €, a paket do 2 kg u drugom 75,00 € [8][9].
 - Ako imaš još ptica ili želiš znati uzrok, tijelo ne zamrzavaj nego ga drži u hladnjaku i nazovi veterinara [1][5].
+
+> [!BROJKE] Mali ljubimac u brojkama
+> - **24 sata** može dobro ohlađeno tijelo stajati u hladnjaku [1]
+> - **ispod 5 °C** najčešći je uzrok torpora kod hrčka [2]
+> - **50 cm** zemlje najmanje mora biti iznad tijela pri ukopu [7]
+> - **4 %** težine životinje ostaje kao pepeo [10]
 
 ## Kako znati da je mali ljubimac doista uginuo?
 
@@ -118,6 +129,9 @@ Sljedećih dana prati jede li i pije li preživjeli kunić. Woodgreen upozorava 
 ## Smijem li malog ljubimca zakopati u vrtu?
 
 Smiješ, uz uvjete. Pravilnik dopušta da vlasnik sam zakopa kućnog ljubimca ako nema sumnje na bolest koja se obvezno prijavljuje [7]. U samom Pravilniku nema popisa vrsta; govori o „kućnom ljubimcu” [7].
+
+> [!CINJENICA] Jeste li znali?
+> Ni europska uredba o nusproizvodima ne nabraja vrste. Kućni ljubimac je u njoj svaka životinja vrste o kojoj se čovjek obično brine i drži je za namjene različite od prehrane i poljoprivrede [15].
 
 Uvjeti su isti kao za psa ili mačku [7]:
 

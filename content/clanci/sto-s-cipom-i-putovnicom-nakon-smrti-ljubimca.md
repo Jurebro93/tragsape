@@ -81,6 +81,12 @@ Lysacan je, prema tom tekstu, središnji sustav za evidenciju cijepljenja i ozna
 
 Sredinom listopada 2024. u bazi je bilo 766 356 aktivnih ljubimaca [2]. Isti izvor navodi da vlasnici moraju osigurati da su podaci u bazi točni i ažurirani [2]. Prijava uginuća dio je toga.
 
+> [!BROJKE] Čip i putovnica u brojkama
+> - **7 dana** od uginuća rok je za prijavu [1]
+> - **260–660 €** kazna je za propuštenu prijavu [1]
+> - **90 dana** od štenjenja pas mora biti čipiran [1]
+> - **766 356** aktivnih ljubimaca bilo je u bazi sredinom listopada 2024. [2]
+
 ## Gdje se uginuće prijavljuje i koliko stoji?
 
 Zakon ne imenuje šalter ni obrazac. Kaže da se prijavljuje „na način kako je to propisano pravilnikom” koji donosi ministar, a taj pravilnik treba urediti i identifikacijske dokumente (članak 58. stavak 7.) [1]. U Narodnim novinama od 2023. do 27. studenoga 2026. nismo ga našli. Pravilnik iz 2025. o registraciji objekata za držane kopnene životinje odjavu ljubimaca ne uređuje [8].
@@ -112,6 +118,9 @@ Zakon to ne zabranjuje, ali ni izričito ne uređuje. Putovnica je u Zakonu „i
 Odredbu koja bi tražila da putovnicu psa ili mačke predaš ili vratiš nismo našli [1]. Za usporedbu, isti Zakon izričito kažnjava onoga tko nakon smrti kopitara, primjerice konja, ne vrati njegov identifikacijski dokument; za pse, mačke i vretice takve točke nema [1].
 
 Mnogima je putovnica uspomena: u njoj su ime, datumi i potpisi veterinara. Reci u ambulanti da je želiš zadržati i pitaj hoće li je nakon upisa vratiti. Ne tvrdimo da će svaka ambulanta postupiti jednako, jer pravilnik koji bi to uredio nismo našli [1][8].
+
+> [!SAVJET] Prije odlaska u ambulantu
+> Fotografiraj stranice putovnice s imenom, datumima i potpisima. Tako ti uspomena ostaje i ako putovnicu ne dobiješ natrag.
 
 ## Što s čime: pregled
 

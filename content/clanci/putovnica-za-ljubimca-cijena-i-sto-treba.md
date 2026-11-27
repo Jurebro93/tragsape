@@ -88,6 +88,12 @@ Za put sa psom, mačkom ili pitomom vreticom u drugu državu EU trebaju tri stva
 - Naknade bez PDV-a određuje ministar: putovnica 10,06 €, cijepljenje protiv bjesnoće 25,00 €, čip 12,90 € [13]. U cjenicima: 12,57 do 12,58 €, 31,25 € i 12,15 do 16,13 € [9][10][11].
 - Finska, Irska, Malta, Sjeverna Irska i Norveška za pse traže i tretman protiv trakavice 1 do 5 dana prije ulaska [1][6].
 
+> [!BROJKE] Putovanje u brojkama
+> - **12 tjedana** najmanja dob pri cijepljenju protiv bjesnoće [1]
+> - **21 dan** čekanja nakon prvog cijepljenja [1][3]
+> - **10,06 €** bez PDV-a naknada za putovnicu prema Odluci ministra [13]
+> - **5** pasa, mačaka ili vretica najviše uz jednu osobu [2]
+
 ## Što treba za put sa psom ili mačkom po EU?
 
 Čip, valjano cijepljenje protiv bjesnoće i putovnica. Uredba (EU) 2016/429 kaže da se pas, mačka ili pitoma vretica ne premještaju u drugu državu članicu ako nisu označeni, ako ne ispunjavaju propisane mjere protiv bolesti i ako ih ne prati ispravno ispunjen identifikacijski dokument [2].
@@ -95,6 +101,9 @@ Za put sa psom, mačkom ili pitomom vreticom u drugu državu EU trebaju tri stva
 Za mačke i vretice to je i hrvatska obveza: čipiranje im je inače dobrovoljno, ali obvezno prije premještanja u drugu državu [7]. O samom čipiranju piše članak [Čipiranje psa i mačke: cijena i postupak](/vodic/cipiranje-psa-i-macke-cijena-i-postupak).
 
 Pravila vrijede za nekomercijalna putovanja, bez prodaje ili promjene vlasnika [1]. Uz jednu osobu smije putovati najviše pet pasa, mačaka ili vretica, osim za natjecanja i izložbe uz dokaz o prijavi [2].
+
+> [!SAVJET] Kreni na vrijeme
+> Ako ljubimac još nema ništa, redom idu čip, cijepljenje protiv bjesnoće i najmanje 21 dan čekanja [1][5].
 
 ## Koja pravila vrijede od 22. travnja 2026.?
 
@@ -119,6 +128,9 @@ Službeni ili ovlašteni veterinar [4]. Hrvatski zakon kaže da identifikacijski
 Prema novom pravilu, veterinar putovnicu izdaje tek nakon što provjeri čip, upiše podatke i ti je potpišeš [4]. Putovnica se izdaje u državi u kojoj vlasnik ima uobičajeno boravište [3]. Your Europe dodaje da je dobivaju samo vlasnici s boravištem u EU [1].
 
 U putovnici su broj čipa i mjesto ugradnje, ime, datum rođenja i opis ljubimca, tvoji podaci, podaci veterinara te cijepljenja i tretmani [4]. Valjana je dok se u nju redovito upisuju cijepljenja [1].
+
+> [!CINJENICA] Jeste li znali?
+> Putovnice izdane prije 22. travnja 2026. po dotadašnjem obrascu i dalje vrijede, pa zbog novih pravila ne trebaš novu [4].
 
 ## Koliko stoji putovnica i sve što uz nju ide?
 

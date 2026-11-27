@@ -115,6 +115,12 @@ Ovaj tekst ne zamjenjuje veterinara. Koja cjepiva tvoja mačka treba i kada, pro
 - Odrasla mačka niskog rizika osnovna cjepiva dobiva svake tri godine ili rjeđe [4][6].
 - Cijene: osnovno cjepivo od 12,50 € [10] do 35,00 € [18], leukemija od 12,50 € [10] do 40,00 € [18], bjesnoća od 19,91 € [10] do 32,00 € [17].
 
+> [!BROJKE] Cijepljenje mačke u brojkama
+> - **6–8 tjedana** prvo cijepljenje mačića prema WSAVA-i [4]
+> - **3 godine** ili rjeđe: osnovna cjepiva odrasle mačke niskog rizika [4][6]
+> - **21 dan** čekanja nakon prvog cijepljenja protiv bjesnoće prije puta u EU [3]
+> - **12,50–35,00 €** osnovno cjepivo u cjenicima koje smo otvorili [10][18]
+
 ## Je li išta obvezno u Hrvatskoj
 
 Ne, dok mačka ne putuje. Naredba (NN 1/2023) obvezu cijepljenja protiv bjesnoće propisuje za pse, a za mačke i pitome vretice kaže samo: „Preporuča se cijepljenje mačaka i pitomih vretica protiv infekcije virusom bjesnoće” [1]. Ako mačku cijepiš, smije se koristiti samo monovalentno cjepivo od umrtvljenih sojeva virusa [1].
@@ -124,6 +130,9 @@ Ne, dok mačka ne putuje. Naredba (NN 1/2023) obvezu cijepljenja protiv bjesnoć
 Za putovanje unutar EU-a mačka treba čip, europsku putovnicu i cijepljenje protiv bjesnoće obavljeno nakon čipiranja [3]. Pri prvom cijepljenju mora imati najmanje 12 tjedana, a nakon njega se čeka najmanje 21 dan prije puta [3].
 
 Za pse vrijede druga pravila; o njima piše članak [Cijepljenje psa: cijena i što je obvezno](/vodic/cijepljenje-psa-cijena-i-sto-je-obvezno).
+
+> [!CINJENICA] Jeste li znali?
+> Virus panleukopenije u okolišu opstaje i dulje od godinu dana i prenosi se i predmetima [8]. Zato osnovna cjepiva treba i mačka koja ne izlazi [7].
 
 ## Koja su cjepiva osnovna, a koja dodatna
 
@@ -191,6 +200,9 @@ Ozbiljna reakcija na cjepivo može početi nekoliko minuta do nekoliko sati nako
 - [ ] uporno povraćanje ili proljev
 
 Umor, slabiji apetit, blaga temperatura i osjetljivo mjesto uboda česti su i obično prolaze; ako traju dulje od 24 sata, nazovi veterinara [9]. Necijepljen mačić s vrućicom, potištenošću, bez apetita, s povraćanjem ili znakovima dehidracije treba odmah veterinaru, jer to mogu biti znakovi panleukopenije [8].
+
+> [!SAVJET] Ako se bojiš reakcije
+> Nakon uboda pričekaj 30 do 60 minuta u ambulanti [9].
 
 ## Česta pitanja
 

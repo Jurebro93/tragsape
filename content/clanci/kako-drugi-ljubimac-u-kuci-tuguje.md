@@ -98,6 +98,12 @@ Crtica znači da istraživanje to nije pitalo na isti način. Drugi znakovi koje
 
 Kod pasa se može javiti i nelagoda kad ostanu sami: dahtanje, hodanje, cviljenje, lajanje ili odbijanje poslastica [3][9].
 
+> [!BROJKE] Tugovanje drugog ljubimca u brojkama
+> - **86,6 %** vlasnika pasa primijetilo je promjene u talijanskoj anketi [1]
+> - **43 %** mačaka češće se glasa nakon gubitka druga [2]
+> - **manje od 6 mjeseci** medijan trajanja promjena kod pasa i mačaka [2]
+> - **24 sata** bez hrane mogu ozbiljno ugroziti zdravlje odrasle mačke [6]
+
 ## Koliko dugo traje?
 
 Najčešće do šest mjeseci. U anketi iz Novog Zelanda i Australije medijan trajanja bio je kraći od šest mjeseci, a za promjene u hranjenju kod pasa medijan je bio dva mjeseca ili kraće [2].
@@ -109,6 +115,9 @@ U talijanskoj anketi, među vlasnicima koji su primijetili promjene, 29 % reklo 
 Smiješ, ali ne moraš. VCA navodi da posjet tijelu može pomoći da životinja shvati gubitak [4], a International Cat Care piše da to nije štetno ako nema rizika od zaraze i ako okolnosti to dopuštaju [5].
 
 Istraživanja ipak nisu našla razliku. Promjene ponašanja javljale su se jednako i kod životinja koje su tijelo vidjele i kod onih koje nisu [1][2]. Ako tvoj pas ili mačka nije bio uz drugoga na kraju, nisi ništa propustio.
+
+> [!CINJENICA] Jeste li znali?
+> U anketi iz Novog Zelanda i Australije 73 % životinja koje su vidjele tijelo njušilo ga je i istraživalo [2].
 
 ## Kako pomoći
 

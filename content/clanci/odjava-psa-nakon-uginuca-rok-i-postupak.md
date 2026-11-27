@@ -59,6 +59,11 @@ sources:
     url: "https://veterinarstvo.mps.hr/hr/ostalo/footer-linkovi/kontakt/"
     publisher: "Ministarstvo poljoprivrede, šumarstva i ribarstva – Uprava za veterinarstvo i sigurnost hrane"
     accessed_on: 2026-11-27
+  - claim: "Označavanje kućnih ljubimaca u Hrvatskoj zakonski je regulirana obveza od 2004.; baza Lysacan počela je raditi 2003. kao evidencija cijepljenja i označavanja pasa; 15. 10. 2024. u bazi je bilo 766 356 aktivnih ljubimaca"
+    title: "20 godina označavanja kućnih ljubimaca u Republici Hrvatskoj"
+    url: "https://veterina.com.hr/20-godina-oznacavanja-kucnih-ljubimaca-u-republici-hrvatskoj/"
+    publisher: "Veterina portal (autor Siniša Mandek, Uprava za veterinarstvo i sigurnost hrane)"
+    accessed_on: 2026-11-27
 ---
 Uginuće čipiranog psa moraš prijaviti najkasnije u roku od sedam dana od dana uginuća. Tako propisuje članak 66. stavak 6. Zakona o zdravlju životinja (NN 152/2022) [1]. U praksi se odjava obavlja u veterinarskoj ambulanti, koja podatak upisuje u Upisnik kućnih ljubimaca.
 
@@ -69,6 +74,12 @@ Uginuće čipiranog psa moraš prijaviti najkasnije u roku od sedam dana od dana
 - U tri objavljena cjenika koja smo pročitali stoji 5,60 € [4][5][6].
 - O odjavi dobivaš ispis iz Upisnika [1]. Pravilnik koji bi propisao postupak odjave u Narodnim novinama nismo našli, pa način odjave ovisi o ambulanti [1].
 - Kazna za propušteni rok je od 260 do 660 eura, ili 60 eura na mjestu počinjenja prekršaja [2].
+
+> [!BROJKE] Odjava psa u brojkama
+> - **7 dana** od uginuća rok je za prijavu [1]
+> - **5,60 €** stoji odjava u tri objavljena cjenika veterinara [4][5][6]
+> - **260–660 €** kazna je za propušteni rok [2]
+> - **60 €** kazna je na mjestu počinjenja prekršaja [2]
 
 ## Koji je rok za odjavu psa nakon uginuća?
 
@@ -98,7 +109,10 @@ Ni stranica Uprave za veterinarstvo o Lysacanu ne opisuje postupak [7]. Zato poj
 
 Lysacan je naziv pod kojim veterinari u cjenicima navode bazu u koju se upisuju psi. Veterinarska stanica Osijek uslugu zove „promjena i odjava vlasnika psa Lysacan” [4]. Veterina Branimir istu uslugu zove odjavom u aplikaciji „Središnji upisnik kućnih ljubimaca” [6].
 
-Zakon koristi naziv Upisnik kućnih ljubimaca [1]. Uprava za veterinarstvo Lysacan navodi među svojim bazama podataka [7]. Kako god je ambulanta zvala, tražiš isto: da se uginuće upiše u Upisnik.
+Zakon koristi naziv Upisnik kućnih ljubimaca [1]. Uprava za veterinarstvo Lysacan navodi među svojim bazama podataka [7]. Kako god je ambulanta zvala, tražiš isto: da se uginuće upiše u Upisnik. Što je s čipom i putovnicom nakon uginuća, objašnjava članak [Što s čipom i putovnicom nakon smrti ljubimca](/vodic/sto-s-cipom-i-putovnicom-nakon-smrti-ljubimca).
+
+> [!CINJENICA] Jeste li znali?
+> Lysacan radi od 2003., a označavanje ljubimaca zakonska je obveza od 2004. Sredinom listopada 2024. u bazi je bilo 766 356 aktivnih ljubimaca [11].
 
 ## Kako izgleda postupak, korak po korak?
 

@@ -130,6 +130,11 @@ Ovdje su doplate onako kako stoje u objavljenim cjenicima koje smo otvorili 27. 
 - Pravilnik iz 2013., koji je i dalje na snazi, traži da ambulanta izvan radnog vremena ima dežurstvo ili pripravnost, ali ne određuje koliko se smije doplatiti [13][20].
 - Broj za hitne slučajeve i najbližu službu 0–24 potraži dok ti ne treba [15].
 
+> [!BROJKE] Hitna pomoć u brojkama
+> - **+50 %** na klinikama Veterinarskog fakulteta od 18 do 8 h te nedjeljom i praznikom iza 11 h [1]
+> - **17,50–100 €** fiksna doplata u ostalim cjenicima [2][6][7]
+> - **139 €** dolazak dežurnog veterinara i pregled u Veterini Branimir, prije pretraga i lijekova [2]
+
 ## Koliko se doplaćuje izvan radnog vremena
 
 Stavke se zovu različito i nisu usporedive jedna s drugom. Negdje je to dolazak veterinara, negdje prijem ili intervencija, a pregled se često plaća uz to.
@@ -215,6 +220,9 @@ Merckov priručnik savjetuje da odgovore znaš prije hitnog slučaja [15]:
 - [ ] Kako ću ga prevesti ako ne može hodati?
 - [ ] Kolika je doplata u mojoj ambulanti noću i nedjeljom?
 - [ ] Imaju li te brojeve i osobe koje mi čuvaju psa? [16]
+
+> [!CINJENICA] Jeste li znali?
+> Sveučilišna veterinarska bolnica u Zagrebu hitne pacijente prima 0–24 bez najave, ali na telefonske pozive ne odgovara [11].
 
 ## Ako pomoć nije stigla na vrijeme
 

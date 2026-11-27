@@ -125,11 +125,19 @@ Oba daju do tri plaćena radna dana godišnje za hitan obiteljski razlog uzrokov
 
 ZOR je Zakon o radu, a ZOZO Zakon o obveznom zdravstvenom osiguranju.
 
+> [!BROJKE] Slobodni dani u brojkama
+> - **7 radnih dana** plaćenog dopusta godišnje [1]
+> - **3 dana** unaprijed najavljuješ dan godišnjeg [1]
+> - **3 radna dana** za hitan obiteljski razlog u državnim i javnim službama [10][12]
+
 ## Kako iskoristiti dan godišnjeg odmora po svom izboru?
 
 Najjednostavnije je jedan dan godišnjeg odmora, jer ga ne moraš opravdavati. Zakon ti daje pravo da ga koristiš kad želiš, uz obavijest poslodavcu najmanje tri dana prije [1].
 
 Ako ti slobodan dan treba već sutra, to više nije zakonsko pravo nego dogovor s poslodavcem.
+
+> [!CINJENICA] Jeste li znali?
+> U anketi RSPCA-a 73 % ispitanika reklo je da bi im slobodan dan pomogao u tuzi [5].
 
 ## Što je „hitan obiteljski razlog” iz članka 87.a?
 

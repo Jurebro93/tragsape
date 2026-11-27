@@ -165,6 +165,9 @@ Sve fotografije odjednom izvoze se alatom Google Takeout [7].
 
 Izrada arhive traje od nekoliko minuta do nekoliko dana. Arhiva istječe za oko 7 dana i može se preuzeti pet puta [7].
 
+> [!CINJENICA] Jeste li znali?
+> Google Takeout ne mora biti jednokratan: može sam izrađivati novu arhivu svaka dva mjeseca, tijekom godine dana [7].
+
 Provjeri i u kojoj su kvaliteti snimke spremane. U načinu „Storage saver” fotografije veće od 16 MP smanjuju se na 16 MP, a video iznad 1080p na 1080p [8]. Ako izvornik još postoji na mobitelu, sačuvaj njega.
 
 ## Kako preuzeti fotografije s Facebooka i Instagrama?
@@ -198,6 +201,10 @@ Ispis nije skup: u cjeniku CEWE-a očitanom 26. 11. 2026. standardna fotografija
 Ispisane fotografije čuvaj na temperaturi ispod otprilike 24 °C i vlažnosti ispod 65 %, izvan vlažnog podruma, garaže i vrućeg tavana [13]. Albumi trebaju imati kiselinski neutralne stranice, bez ljepila i samoljepljivih stranica [13].
 
 Na zid stavi kopiju, a izvornik spremi u kutiju. Dnevno svjetlo oštećuje fotografije, pa ih ne izlaži suncu [14]. Kad ih skupiš, fotografije mogu postati knjiga, slika ili stranica: usporedba je u članku [Fotoknjiga, portret ili online spomen](/vodic/fotoknjiga-portret-ili-online-spomen-usporedba).
+
+Ako uz ispisanu fotografiju želiš nekoliko riječi, primjeri su u članku [Što napisati uz fotografiju ljubimca kojeg više nema](/vodic/sto-napisati-uz-fotografiju-ljubimca-kojeg-vise-nema), a pomoćnik za posvetu je odmah ispod.
+
+> [!ALAT] posveta
 
 ## Česta pitanja
 

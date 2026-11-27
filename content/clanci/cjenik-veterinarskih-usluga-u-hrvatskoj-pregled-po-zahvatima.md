@@ -94,9 +94,15 @@ Jedinstvenog cjenika veterinarskih usluga u Hrvatskoj nema: svaka ambulanta sama
 
 - Opći klinički pregled psa ili mačke stoji od 18,75 € u Osijeku do 40 € u Rijeci [1][7].
 - Cijepljenje protiv bjesnoće u pet od šest cjenika stoji točno 31,25 €, a čipiranje psa uglavnom 16,12 do 16,13 € [1][2][4][5][7]. Te naknade određuje ministar: 25,00 € i 12,90 € bez PDV-a [14].
-- Najveće su razlike kod sterilizacije kuje: od 74,66 € u Osijeku do 250–350 € u Rijeci, ovisno o stavci [1][7].
+- Najveće su razlike kod sterilizacije kuje: od 74,66 € u Osijeku do 200–400 € u Splitu i 250–350 € u Rijeci, ovisno o stavci i težini [1][6][7].
 - Anestezija, lijekovi i materijal često se naplaćuju posebno, pa je račun veći od jedne stavke iz cjenika [3].
 - Da su cijene s PDV-om, izričito piše samo u dva cjenika [3][6].
+
+> [!BROJKE] Cjenici u brojkama
+> - **18,75–40 €** opći klinički pregled psa ili mačke [1][7]
+> - **31,25 €** cijepljenje protiv bjesnoće u pet od šest cjenika [1][2][4][5][7]
+> - **25,00 €** bez PDV-a: naknada za to cijepljenje prema Odluci ministra [14]
+> - **+50 %** na klinikama Veterinarskog fakulteta od 18 do 8 h te nedjeljom i praznikom iza 11 h [5]
 
 ## Iz kojih su cjenika iznosi
 
@@ -153,6 +159,9 @@ Treći je razlog vrijeme. Na klinikama Veterinarskog fakulteta usluge od 18 do 8
 
 Samo dva cjenika to izričito kažu: Veterina Branimir i praksa Pilić navode da su sve cijene s PDV-om [3][6]. Ostala četiri cjenika to ne spominju, pa pitaj u ambulanti [1][2][5][7].
 
+> [!CINJENICA] Jeste li znali?
+> Uz cijenu se ističe i cijena na dan 10. rujna 2026. [11], pa se vidi i poskupljenje: kontrolni pregled u Veterini Branimir sada stoji 24,80 €, a tada 19,80 € [3].
+
 ## Propisuje li itko cijene veterinarskih usluga
 
 Za preglede i zahvate obvezni jedinstveni cjenik nismo našli. Zakon o veterinarstvu Komori daje zadaću da donese nomenklaturu veterinarskih usluga i odredi kriterije za cijene usluga koje se ne plaćaju iz proračuna i nisu dio obveznih mjera Ministarstva [15]. Prema Statutu iz 2016., za koji baza propisa ne navodi izmjene [16], Gospodarstveni odbor Komore predlaže kriterije i minimalne cijene [8].
@@ -174,6 +183,9 @@ Komora je zatražila da se veterinari izuzmu od tih pravila jer cijena usluge č
 3. Pitaj koliki je najmanji iznos i što ga može povećati. Veterina Branimir prije zahvata daje procjenu s minimalnom cijenom [3].
 4. Pitaj je li PDV uključen i je li cijena drukčija izvan radnog vremena.
 5. Usporedi odgovor s objavljenim cjenikom ambulante.
+
+> [!SAVJET] Prije poziva
+> Ambulanta s mrežnom stranicom mora na njoj objaviti cjenik usluga [10][12]. Otvori ga prije poziva, pa ćeš znati za koje stavke pitati.
 
 Koji je zahvat potreban, procjenjuje veterinar koji je životinju pregledao. Ovaj tekst o tome ne daje savjet.
 

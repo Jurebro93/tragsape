@@ -110,6 +110,12 @@ Ovaj tekst ne zamjenjuje veterinara. Treba li tvom psu čišćenje, koje zube tr
 - AVDC, WSAVA i AAHA slažu se: čišćenje bez opće anestezije nije prihvatljiva zamjena [11][12][13].
 - Prije zahvata dogovori rendgen, okvirnu cijenu i što se smije raditi bez poziva tebi [12][17].
 
+> [!BROJKE] Čišćenje zubi u brojkama
+> - **27,88–170 €** sama stavka čišćenja u sedam cjenika [4][7]
+> - **10–120 €** vađenje jednog zuba [8][9]
+> - **349,63 €** ukupno na primjeru stvarnog računa, od toga čišćenje 27,88 € [5]
+> - **28 %** zuba koji su izgledali zdravo imalo je važan nalaz na rendgenu [12]
+
 ## Koliko stoji čišćenje zubnog kamenca u cjenicima
 
 Jedinstvene cijene nema. U tablici su stavke za psa iz cjenika koje smo otvorili 27. studenoga 2026.; ustanove navodimo samo kao izvore cjenika, ne kao preporuku.
@@ -157,6 +163,9 @@ Zadah je znak bolesti, a ne samo kamenca. AAHA navodi neugodan zadah, slinjenje,
 
 Male pasmine su osjetljivije. Merckov veterinarski priručnik piše da psi malih pasmina obično imaju više problema s parodontitisom od velikih [14]. Prema AAHA-i, rendgen je kod 28 % zuba pasa koji su izgledali zdravo otkrio važan nalaz [12].
 
+> [!CINJENICA] Jeste li znali?
+> Psi bol u ustima skrivaju. Odaju je zadah, mršavljenje, promjena u jelu i povlačenje [12].
+
 ## Što dogovoriti prije zahvata
 
 Prava procjena moguća je tek u anesteziji. AAHA piše da se plan liječenja i cijena mogu točno odrediti tek nakon pregleda u anesteziji i rendgena, i da pristanak treba reći da se ono što nije dogovoreno ne radi ako te ne mogu dobiti telefonom [12]. Hrvatski pravilnik traži da te ambulanta izvijesti o koristi, rizicima i cijeni i da daš pristanak prije usluge te da izda detaljan račun [17].
@@ -172,6 +181,8 @@ Prava procjena moguća je tek u anesteziji. AAHA piše da se plan liječenja i c
 Sama dob nije razlog za odustajanje. AAHA kaže da potrebne zahvate ne treba odbijati samo zbog dobi ili većine pratećih bolesti, ali stariji psi traže posebnu pozornost, pregled i pretrage prije anestezije [12]. Koliko tvoj pas ima u ljudskim godinama, pogledaj u tablici [pasjih godina](/vodic/pasje-godine-u-ljudskima-tablica-po-velicini).
 
 Rizik neliječenih zubi je bol. AAHA piše da psi bol u ustima skrivaju, a vidi se kroz zadah, mršavljenje, promjenu u jelu i povlačenje [12]. Odluku o riziku za tvog psa donosi veterinar.
+
+> [!ALAT] psece-godine
 
 ## Nakon zahvata i kod kuće
 
