@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { Route } from "next";
 import { Suspense } from "react";
 import { ExampleGrid } from "@/components/examples/example-card";
+import { BigMeadow } from "@/components/livada/big-meadow";
 import { CandleHour } from "@/components/livada/candle-hour";
 import { MemorialGrid } from "@/components/livada/memorial-card";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
@@ -129,10 +130,16 @@ export default function LivadaPage(props: PageProps<"/livada">) {
         </div>
       </div>
       <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-6 px-5 pb-16 pt-7">
+        <BigMeadow />
         <CandleHour />
-        <Suspense fallback={<div className="min-h-96 rounded-3xl bg-white" />}>
-          <Meadow searchParams={props.searchParams} />
-        </Suspense>
+        <section aria-labelledby="spomeni-title" className="flex flex-col gap-4 pt-2">
+          <h2 id="spomeni-title" className="font-display text-3xl font-extrabold">
+            {livada.memorialsTitle}
+          </h2>
+          <Suspense fallback={<div className="min-h-96 rounded-3xl bg-white" />}>
+            <Meadow searchParams={props.searchParams} />
+          </Suspense>
+        </section>
         <section aria-labelledby="primjeri-title" className="flex flex-col gap-4 pt-4">
           <h2 id="primjeri-title" className="font-display text-3xl font-extrabold">
             {livada.examples.title}

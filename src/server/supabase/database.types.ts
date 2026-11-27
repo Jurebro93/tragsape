@@ -636,6 +636,65 @@ export type Database = {
           },
         ]
       }
+      meadow_flowers: {
+        Row: {
+          claim_token: string
+          consent_text: string | null
+          created_at: string
+          email: string | null
+          email_saved_at: string | null
+          id: string
+          ip_hash: string | null
+          memorial_id: string | null
+          memorial_slug: string | null
+          name: string
+          number: number
+          petal: string
+          species: string
+          status: string
+        }
+        Insert: {
+          claim_token?: string
+          consent_text?: string | null
+          created_at?: string
+          email?: string | null
+          email_saved_at?: string | null
+          id?: string
+          ip_hash?: string | null
+          memorial_id?: string | null
+          memorial_slug?: string | null
+          name: string
+          number?: never
+          petal: string
+          species: string
+          status?: string
+        }
+        Update: {
+          claim_token?: string
+          consent_text?: string | null
+          created_at?: string
+          email?: string | null
+          email_saved_at?: string | null
+          id?: string
+          ip_hash?: string | null
+          memorial_id?: string | null
+          memorial_slug?: string | null
+          name?: string
+          number?: never
+          petal?: string
+          species?: string
+          status?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "meadow_flowers_memorial_id_fkey"
+            columns: ["memorial_id"]
+            isOneToOne: true
+            referencedRelation: "memorials"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       memorial_members: {
         Row: {
           accepted_at: string | null

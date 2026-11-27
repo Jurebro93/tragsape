@@ -17,7 +17,7 @@ export function normalizeSource(source: unknown): string | null {
     return null;
   }
   const clean = source.trim().toLowerCase();
-  return /^(popup|podnozje|naslovnica|clanak:[a-z0-9-]{1,100})$/.test(clean) ? clean : null;
+  return /^(popup|podnozje|naslovnica|livada|clanak:[a-z0-9-]{1,100})$/.test(clean) ? clean : null;
 }
 
 async function sendConfirmation(email: string, token: string): Promise<void> {
@@ -32,7 +32,7 @@ async function sendConfirmation(email: string, token: string): Promise<void> {
 }
 
 /** Nova prijava ili ponovna prijava odjavljene adrese. Potvrđenoj adresi ne šalje se ništa. */
-export async function subscribe(email: string, source: string | null): Promise<void> {
+export async function subscribe(email: string, source: string | null, consentText: string = t.consent): Promise<void> {
   const admin = createAdminClient();
   const normalized = email.trim().toLowerCase();
   const { data: existing, error } = await admin
@@ -47,7 +47,7 @@ export async function subscribe(email: string, source: string | null): Promise<v
   if (!existing) {
     const { data, error: insertError } = await admin
       .from("newsletter_subscribers")
-      .insert({ email: email.trim(), source, consent_text: t.consent })
+      .insert({ email: email.trim(), source, consent_text: consentText })
       .select("id, confirm_token")
       .single();
     if (insertError) {
@@ -71,7 +71,7 @@ export async function subscribe(email: string, source: string | null): Promise<v
     .update({
       status: "pending",
       source,
-      consent_text: t.consent,
+      consent_text: consentText,
       consented_at: new Date().toISOString(),
       confirmation_sent_at: new Date().toISOString(),
       unsubscribed_at: null,

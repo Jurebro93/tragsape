@@ -2,6 +2,7 @@
 export const livada = {
   title: "Livada sjećanja",
   intro: "Zajedničko mjesto svih ljubimaca čiji su vlasnici odlučili podijeliti spomen. Zastani kod nekoga i zapali svijeću.",
+  memorialsTitle: "Spomen-stranice na Livadi",
   metaDescription: "Livada sjećanja: javni spomeni ljubimaca na Tragu šape. Svake večeri u 21:00 je sat svijeća.",
   filter: {
     species: "Vrsta",

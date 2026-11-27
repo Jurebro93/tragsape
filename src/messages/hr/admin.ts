@@ -10,6 +10,7 @@ export const admin = {
     { href: "/admin/donacije", label: "Donacije" },
     { href: "/admin/clanci", label: "Članci" },
     { href: "/admin/newsletter", label: "Newsletter" },
+    { href: "/admin/livada", label: "Velika livada" },
     { href: "/admin/sekcije", label: "Prodajne sekcije" },
     { href: "/admin/moderacija", label: "Moderacija" },
     { href: "/admin/postavke", label: "Cijene i postavke" },
