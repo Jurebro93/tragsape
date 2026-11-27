@@ -83,11 +83,20 @@ U drugom pokusu sudionici su izgubili na lutriji, a polovica je zatim izvela kra
 
 Jedna napomena: ti su pokusi rađeni na gubitku ljudi, prekidu veze i lutriji, ne na ljubimcima. Pregled 36 istraživanja o tugovanju za ljubimcima ipak navodi isto: rituali, spomeni i sjećanja pomažu i smanjuju jačinu tuge [3].
 
+> [!CINJENICA] Čitanje nije dovoljno
+> U jednom od pokusa Nortona i Gino samo čitanje o tome da drugi ljudi nakon gubitka izvode rituale nije donijelo utjehu. Pomoglo je tek kad su sudionici ritual izveli sami [2].
+
 ## Zašto se oproštaj od ljubimca mora smisliti sam?
 
 Zato što ga društvo obično ne nudi. Za gubitak ljubimca nema ustaljenog sprovoda, obreda ni slobodnog dana [4]. U američkoj anketi 340 vlasnika nakon eutanazije tri četvrtine njih tugovalo je privatno [4].
 
 Savjetnici veterinarske bolnice Sveučilišta Ohio State pišu da je ritual važan kod gubitka i da ga možeš izvesti sam ili s onima koji su ljubimca voljeli [5]. Pravila nema: oblik biraš ti.
+
+> [!BROJKE] Oproštaj od ljubimca u brojkama
+> - **74,7 %** vlasnika u američkoj anketi nakon eutanazije tugovalo je privatno [4]
+> - **58,2 %** potražilo je podršku obitelji i prijatelja [4]
+> - **36** istraživanja obuhvaća pregled o trajnoj vezi s uginulim ljubimcem [3]
+> - **58 %** vlasnika eutanaziranih pasa i mačaka na klinikama Veterinarskog fakulteta u Zagrebu 2022. odabralo je skupno zbrinjavanje [11]
 
 ## Kako se oprostiti od tijela prije ukopa ili kremiranja?
 
@@ -119,6 +128,8 @@ Uz tablicu:
 - **Svijeća.** Može biti i na internetu; o tome piše [Virtualna svijeća za ljubimca](/vodic/virtualna-svijeca-za-ljubimca).
 - **Ukop.** Prije ukopa u vlastitom vrtu provjeri uvjete u članku [Smije li se ljubimac zakopati u vrtu](/vodic/smije-li-se-ljubimac-zakopati-u-vrtu).
 - **Vjera.** Ako ti je vjera oslonac, i to je način; Purdue među idejama navodi i duhovne ili vjerske običaje [7]. Ovaj tekst o tome ne govori dalje, jer je to tvoja stvar.
+
+> [!ALAT] oprostaj
 
 ## Kako uključiti djecu?
 

@@ -34,6 +34,11 @@ sources:
     url: "https://www.cats.org.uk/what-we-do/grief/advice/grief-guidance-resources/grief-in-surviving-pets"
     publisher: "Cats Protection"
     accessed_on: 2026-11-26
+  - claim: "Istraživanje 1210 nestalih mačaka: mačke koje ne izlaze pronađene su u medijanu 39 m od mjesta nestanka, mačke koje izlaze bez nadzora 300 m; 75 % mačaka pronađeno je unutar 500 m od mjesta nestanka"
+    title: "Huang, L. i sur. (2018.): Search Methods Used to Locate Missing Cats and Locations Where Missing Cats Are Found. Animals 8(1), 5"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5789300/"
+    publisher: "Animals (MDPI), PubMed Central"
+    accessed_on: 2026-11-27
 ---
 Dobra poruka sućuti za mačku ima dvije do tri rečenice: priznaje gubitak, spominje mačku imenom i ne traži odgovor. Ispod je trideset primjera, složenih po tome kome pišeš i koliko prostora imaš. Nakon njih slijedi što ne pisati i zašto.
 
@@ -52,6 +57,8 @@ Sve smo ih napisali mi, za ovaj članak. Nisu citati stvarnih ljudi.
 Gdje piše „[ime]”, upiši ime mačke. Rečenice su složene tako da ime ostaje u osnovnom obliku. Ako je riječ o mačku, „mačka” zamijeni s „mačak” i prilagodi riječ uz nju.
 
 Poruka vrijedi više ako dodaš jedno svoje sjećanje, jer većina ljudi želi govoriti o onome za kim tuguje [2]. Ako mačku nikad nisi vidio, sjećanje ne izmišljaj; dovoljno je da ti je žao.
+
+> [!ALAT] sucut
 
 ## Bliskom prijatelju
 
@@ -109,6 +116,9 @@ Poruku 27 napiši samo ako ste donaciju stvarno uplatili. RSPCA je navodi kao je
 
 Cats Protection izričito navodi da se tuguje i kad mačka nestane, a ne samo kad ugine [3]. U takvoj poruci ne nagađaj što se dogodilo i ne obećavaj da će se vratiti.
 
+> [!CINJENICA] Nestale mačke često su blizu
+> U istraživanju 1210 nestalih mačaka one koje inače ne izlaze pronađene su u medijanu 39 m od mjesta gdje su nestale, a one koje izlaze bez nadzora 300 m. Tri četvrtine pronađenih mačaka bilo je unutar 500 m [6]. Ako nudiš pomoć u traženju, kreni od susjedstva.
+
 ## Po čemu se poruka za mačku razlikuje od one za psa?
 
 Razlikuje se u slikama, ne u pravilima. Pseća poruka poseže za šetnjom i parkom; mačja za prozorskom daskom, krilom, predenjem i tišinom koja ostane u stanu.
@@ -134,6 +144,9 @@ Ne piši ništa što gubitak umanjuje, objašnjava ili požuruje. Tablica prenos
 | „Zašto si je puštao van?” | Krivnja je ionako jedan od najčešćih osjećaja nakon smrti ljubimca [4]. |
 | „Barem imaš drugu mačku.” | Jedna mačka ne zamjenjuje drugu [1]. |
 | Savjete kako da se razvedri | Tuga se ne popravlja; često je dovoljno biti uz osobu [2][3]. |
+
+> [!SAVJET] Prije nego pošalješ
+> Pročitaj poruku još jednom i izbaci svaku rečenicu koja objašnjava, savjetuje ili obećava da će biti bolje. Ako ostanu samo „žao mi je” i ime mačke, poruka je dobra.
 
 Bolje zamjene za rečenice koje se najčešće izgovore u dobroj namjeri nalaze se u članku [Što reći nekome kome je uginuo ljubimac](/vodic/sto-reci-nekome-kome-je-uginuo-ljubimac).
 

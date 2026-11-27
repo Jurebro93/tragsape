@@ -54,6 +54,11 @@ sources:
     url: "https://kd-kozala.hr/wp-content/uploads/2021/09/cjenik-usluga.pdf"
     publisher: "KD Kozala d.o.o., Rijeka"
     accessed_on: 2026-11-26
+  - claim: "Kremiranje svodi tijelo na ostatke kostiju, koji se zatim usitnjavaju u komadiće obično ne veće od jedne osmine inča; ostaci kostiju uglavnom su kalcijevi fosfati s nešto drugih minerala, obično bijele do sive boje; metal se odvaja prije usitnjavanja (opis kremiranja ljudi)"
+    title: "Cremation Process"
+    url: "https://www.cremationassociation.org/cremationprocess.html"
+    publisher: "Cremation Association of North America (CANA)"
+    accessed_on: 2026-11-27
 ---
 Urna za ljubimca bira se prema dvije stvari: koliko pepela treba primiti i gdje će stajati. U jedinom cjeniku urni koji smo našli javno objavljen u Hrvatskoj cijene idu od 25,88 € za urnu od 0,2 litre do 162,50 € za mramornu [1]. Cijene smo pročitali 26. studenoga 2026.; prije narudžbe provjeri aktualni cjenik.
 
@@ -93,6 +98,9 @@ Pet Memo uz svoje urne navodi samo šifre i slike, bez cijena i volumena, i upu�
 
 Trebaš urnu čiji je volumen barem tolik koliko ima pepela, a korisno je uzeti malo veću. Pet Memo navodi da pepela ostaje otprilike 4 % težine životinje i za izbor veličine upućuje na savjet djelatnika [6].
 
+> [!CINJENICA] Jeste li znali?
+> Ono što zovemo pepelom zapravo su usitnjeni ostaci kostiju. Sjevernoamerička udruga za kremiranje CANA, opisujući kremiranje općenito, navodi da su to uglavnom kalcijevi fosfati, obično bijele do sive boje, koji se melju u komadiće najčešće ne veće od oko 3 milimetra [10].
+
 Udruga ICCFA daje jednostavno pravilo: jedan kubični inč volumena urne na jednu funtu težine ljubimca [7]. Preračunato u naše mjere, to je oko 36 mililitara po kilogramu. Ista udruga napominje da mnoge obitelji uzimaju veću urnu kako bi u nju stala i ogrlica ili igračka [7].
 
 | Težina ljubimca | Pepela otprilike (4 %) | Volumen po pravilu ICCFA | Prva veća urna s navedenim volumenom u Spomengajevu cjeniku |
@@ -127,6 +135,12 @@ Prema Spomengajevu cjeniku artikala, urne stoje od 13,81 € za najmanju tubu do
 
 Brojčane oznake uz porculanske, metalne i mramorne urne te tube cjenik ne objašnjava [1]. Ne pretpostavljaj da je to volumen; pitaj.
 
+> [!BROJKE] Urne u brojkama
+> - **13,81 €** najjeftinija stavka u Spomengajevu cjeniku, tuba [1]
+> - **162,50 €** najskuplja, mramorna urna [1]
+> - **4 %** težine ljubimca ostaje kao pepeo [6]
+> - **oko 36 ml** volumena urne po kilogramu težine, prema pravilu ICCFA u našem preračunu [7]
+
 Dostava urne unutar Zagreba ili pošiljka urne u istom je cjeniku 15,00 € [2]. Ukupne iznose kremiranja za mačku naći ćeš u članku [Kremiranje mačke: cijena](/vodic/kremiranje-macke-cijena).
 
 ## Što ako želiš samo dio pepela ili uspomenu?
@@ -153,6 +167,10 @@ Urnu možeš ponijeti kući ili je položiti na groblju za kućne ljubimce. Spom
 Na novom dijelu riječkog groblja kućnih ljubimaca polažu se isključivo urne [8]. Riječki cjenik je iz 2021., s iznosima preračunatima u eure 2022., i navodi još jednokratnu naknadu za uređenje groblja od 13,27 € [9]. Prije dogovora provjeri vrijede li ti iznosi i danas.
 
 Propis koji bi posebno uređivao držanje urne s pepelom ljubimca kod kuće nismo našli, pa o tome ovdje ništa ne tvrdimo. Više o grobljima piše u članku [Groblje za kućne ljubimce](/vodic/groblje-za-kucne-ljubimce).
+
+Ako na urnu ili pločicu uz nju želiš kratak natpis, pomoćnik ispod od tvojih riječi složit će nekoliko polaznih rečenica.
+
+> [!ALAT] posveta
 
 ## Što pitati prije nego što odabereš urnu?
 

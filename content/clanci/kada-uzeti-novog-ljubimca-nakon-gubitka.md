@@ -78,6 +78,9 @@ Ta pitanja možeš proći sam ili s ukućanima:
 
 Ako je više odgovora „ne" ili „ne znam", to ne znači nikad, nego zasad.
 
+> [!SAVJET] Ako ti netko želi pokloniti ljubimca
+> Joelle Nielsen, socijalna radnica programa Honoring the Bond, savjetuje da se novi ljubimac ne poklanja nekome tko tuguje [3]. Smiješ zahvaliti i reći da ćete odluku donijeti sami, kad se svi u kući slože [1][3].
+
 ## Novi ljubimac nije zamjena
 
 Savjetnici s Ohio Statea pišu da novi ljubimac nije izdaja onoga koji je otišao: prethodnog nećeš zamijeniti, nego otvaraš dom novom prijatelju [2]. AVMA kaže isto: ljubimca kojeg si izgubio ne možeš zamijeniti, ali možeš naći drugog s kojim ćeš dijeliti život [1].
@@ -93,6 +96,9 @@ To ne umanjuje ono što si osjećao uz svog ljubimca. Znači samo da novi ljubim
 ## Kad u kući ima drugi ljubimac
 
 Ljubimac koji je ostao često se promijeni. U istraživanju na 426 vlasnika u Italiji psi su nakon smrti drugog psa češće tražili pažnju, manje se igrali, bili manje aktivni i manje jeli; kod četvrtine pasa promjene su trajale dulje od šest mjeseci [4]. Autori napominju da ne mogu potvrditi da je riječ o tuzi, jer se oslanjaju na opis vlasnika [4].
+
+> [!CINJENICA] Duljina zajedničkog života nije presudila
+> U istom istraživanju nije bilo važno koliko su dugo psi živjeli zajedno: promjene u ponašanju psa koji je ostao nisu ovisile o tome [4].
 
 | Što primijetiš | Udio pasa u istraživanju [4] |
 | --- | --- |

@@ -83,6 +83,9 @@ Cijena raste s formatom, brojem stranica i vrstom papira. U CEWE-ovu cjeniku mal
 
 Knjiga ima i slabu stranu: postoji u jednom primjerku. Ako želiš da je ima i baka, naručuješ još jednu.
 
+> [!SAVJET] Ako uz knjigu slažeš i album
+> Za papirnate fotografije biraj album s kiselinski neutralnim stranicama, bez ljepila. Američki nacionalni arhiv ne preporučuje samoljepljive, takozvane magnetne stranice [5].
+
 ## Kada je portret najbolji izbor?
 
 Portret je najbolji izbor kad imaš jednu fotografiju koju voliš i želiš je viđati svaki dan. Ne traži odabir ni slaganje.
@@ -103,6 +106,10 @@ Ima i jasna ograničenja. Ne možeš ga uzeti u ruku, a postoji samo dok postoji
 
 Nekima je javno dijeljenje strano i draže im je sjećanje zadržati kod kuće. Tada je knjiga ili portret bolji izbor od bilo koje stranice.
 
+Uz fotografiju spomen traži i nekoliko rečenica. Ako ne znaš kako početi, pomoćnik za posvetu od tvojih riječi složi nekoliko polaznih rečenica:
+
+> [!ALAT] posveta
+
 ## Što traje najdulje?
 
 Najdulje traje ono o čemu netko brine, bez obzira na oblik. Papir ne treba struju ni lozinku, ali ne podnosi vlagu, vrućinu ni sunce.
@@ -110,6 +117,12 @@ Najdulje traje ono o čemu netko brine, bez obzira na oblik. Papir ne treba stru
 Američki nacionalni arhiv savjetuje čuvanje papira i fotografija na temperaturi ispod otprilike 24 °C i vlažnosti ispod 65 %, izvan vlažnih podruma, garaža i vrućih tavana [5]. Isti izvor navodi da fotografije u boji na sobnoj temperaturi blijede u roku od nekoliko desetljeća [5].
 
 Digitalno traje drukčije: datoteka se ne troši, ali se lako izgubi. Kongresna knjižnica savjetuje najmanje dvije kopije na različitim mjestima, provjeru jednom godišnje i nove kopije svakih pet godina [7]. To vrijedi i za fotografije od kojih si naručio knjigu ili portret.
+
+> [!BROJKE] Čuvanje u brojkama
+> - **ispod 24 °C** temperatura na kojoj se čuvaju papir i fotografije [5]
+> - **ispod 65 %** relativna vlažnost zraka [5]
+> - **2 kopije** digitalnih fotografija, na različitim mjestima [7]
+> - **5 godina** nakon kojih se kopije prenose na nove medije [7]
 
 ## Kako odabrati u četiri koraka?
 

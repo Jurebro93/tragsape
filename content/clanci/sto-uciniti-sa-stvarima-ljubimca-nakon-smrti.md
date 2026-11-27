@@ -54,6 +54,11 @@ sources:
     url: "https://vs-zelina.hr/cjenici/"
     publisher: "Veterinarska stanica Sveti Ivan Zelina"
     accessed_on: 2026-11-26
+  - claim: "Internetski upitnik za 426 talijanskih vlasnika koji su imali barem dva psa, od kojih je jedan uginuo: 13,4 % nije primijetilo promjene u ponašanju preživjelog psa; 67 % više traženja pažnje, 57 % manje igre, 46 % manje aktivnosti, 35 % više spavanja; promjene mogu biti i reakcija na tugu vlasnika; podaci se temelje na izvještajima vlasnika"
+    title: "Uccheddu S. i sur. (2022.): Domestic dogs (Canis familiaris) grieve over the loss of a conspecific, Scientific Reports 12, 1920"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8873218/"
+    publisher: "Scientific Reports (PubMed Central)"
+    accessed_on: 2026-11-27
 ---
 Sa stvarima ljubimca ne moraš učiniti ništa odmah. Za ležaj, zdjelice, povodac i igračke nema roka ni ispravnog redoslijeda [1][4]. Rok imaju samo papiri: uginuće označenog psa, mačke ili pitome vretice prijavljuje se u roku od sedam dana [5].
 
@@ -64,6 +69,11 @@ Sa stvarima ljubimca ne moraš učiniti ništa odmah. Za ležaj, zdjelice, povod
 - Neiskorištene lijekove vrati veterinarskoj ambulanti ili veterinarskoj ljekarni, ne bacaj ih u smeće [6].
 - Putovnica i odjava iz upisnika jedino su što ima zakonski rok: sedam dana [5].
 - Ako je pas imao parvovirus, ležaj i zdjelice ne daju se dalje bez dezinfekcije [8].
+
+> [!BROJKE] Ono malo što ima rok i cijenu
+> - **7 dana** rok za prijavu uginuća označenog psa, mačke ili pitome vretice [5]
+> - **5,60 €** odjava psa u cjeniku VS Sveti Ivan Zelina od 26. 11. 2026. [9]
+> - **0 €** naknade kad ambulanta od svog korisnika preuzima otpad od liječenja kod kuće [7]
 
 ## Moram li stvari maknuti odmah?
 
@@ -112,6 +122,9 @@ Prije nego što išta odneseš, nazovi azil. Potrebe se razlikuju od skloništa 
 
 Ne moraš dati sve. Daj ono s čim se možeš rastati, a ostalo ostavi za kasnije.
 
+> [!SAVJET] Fotografiraj prije nego daš
+> Prije nego što ležaj, povodac ili zdjelicu odneseš, fotografiraj ih onako kako su stajali u kući. Fotografija ne zauzima mjesto, a uspomena ostaje.
+
 ## Kamo s lijekovima?
 
 Lijekove vrati veterinaru. Prema pravilniku, veterinarske ambulante i veterinarske ljekarne dužne su od građana preuzimati stare veterinarske lijekove [6].
@@ -141,6 +154,11 @@ Za druge bolesti i druge vrste nismo tražili izvore, pa vrijedi isto pravilo: p
 Zajedničke stvari ostaju njemu, a raspored neka bude isti. Humane World for Animals savjetuje da preživjelom ljubimcu zadržiš ustaljeni ritam i posvetiš mu više pažnje [3].
 
 Preživjele životinje mogu biti tjeskobne, privrženije nego inače i izgubiti zanimanje za igru, san ili hranu [2]. Ako to potraje, odvedi ljubimca veterinaru [3]. Ohio State posebno upozorava da mačka koja prestane jesti treba veterinara što prije [2].
+
+> [!CINJENICA] Preživjeli pas obično primijeti
+> U talijanskom istraživanju s 426 vlasnika koji su izgubili jednog od dvaju pasa samo je 13,4 % reklo da se preživjeli pas nije promijenio. Najčešće su primijetili da traži više pažnje (67 %) i da se manje igra (57 %). Autori upozoravaju da pas možda reagira i na tugu vlasnika [10].
+
+Kako prepoznati tugu kod psa ili mačke koji su ostali, opisali smo u članku [Kako drugi ljubimac u kući tuguje](/vodic/kako-drugi-ljubimac-u-kuci-tuguje).
 
 U izvorima koje smo pregledali nema pravila o tome treba li stvari uginulog ljubimca maknuti zbog onoga koji je ostao.
 

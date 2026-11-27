@@ -39,6 +39,11 @@ sources:
     url: "https://pubmed.ncbi.nlm.nih.gov/34096419/"
     publisher: "PubMed, National Library of Medicine"
     accessed_on: 2026-11-26
+  - claim: "U godišnjim anketama RSPCA-e o tuzi za ljubimcem sudjelovalo je više od 4000 ljudi; samo 6,9 % ispitanika smatra da društvo tugu za ljubimcem shvaća ozbiljno koliko bi trebalo; 57,1 % osjećalo je da tugu mora skrivati"
+    title: "What our survey data tells us about pet grief"
+    url: "https://www.rspca.org.uk/adviceandwelfare/pets/bereavement/survey"
+    publisher: "RSPCA"
+    accessed_on: 2026-11-27
 ---
 Dobra poruka sućuti za psa ima dvije do tri rečenice: priznaje gubitak, spominje psa imenom i ne traži odgovor. Ispod je trideset primjera koje možeš poslati takve kakvi jesu. Nakon njih slijedi što je bolje izostaviti i zašto.
 
@@ -56,6 +61,8 @@ Sve smo ih napisali mi, za ovaj članak. Nisu citati stvarnih ljudi.
 Gdje piše „Ime”, upiši ime psa. Rečenice su složene tako da ime ostaje u osnovnom obliku i da se ništa drugo ne mora mijenjati, bez obzira na to je li riječ o psu ili kuji.
 
 Poruka vrijedi više ako dodaš jedno svoje sjećanje. Većina ljudi želi govoriti o onome za kim tuguje [2].
+
+> [!ALAT] sucut
 
 ## Bliskom prijatelju
 
@@ -116,6 +123,9 @@ Djetetu se govori jednostavno i iskreno. Izrazi poput „otišao je” mogu ga z
 
 Vlasnici nakon gubitka ljubimca često opisuju sram i usamljenost, a pregled 48 istraživanja pokazuje da njihova tuga često ostaje nepriznata [6]. To znači da izostane podrška koju bi čovjek inače dobio [4]. Jedna nespretna rečenica zato teže pada nego što bi se očekivalo.
 
+> [!CINJENICA] Tuga koja se skriva
+> U godišnjim anketama britanske udruge RSPCA, u kojima je sudjelovalo više od 4000 ljudi, samo 6,9 % ispitanika smatra da društvo tugu za ljubimcem shvaća ozbiljno koliko bi trebalo. Njih 57,1 % osjećalo je da tugu mora skrivati [7].
+
 | Što izostaviti | Zašto |
 | --- | --- |
 | Prijedlog novog psa | Može voditi u izolaciju i osjećaj „već bih trebao biti dobro” [2]. |
@@ -133,6 +143,9 @@ Rečenice koje se najčešće izgovore u dobroj namjeri, s boljom zamjenom za sv
 Čim saznaš. Kratka poruka danas bolja je od savršene za tjedan dana.
 
 Zatim se javi opet. Savjetnici preporučuju redovito javljanje, porukom, pozivom ili pismom [2], i to tjednima, mjesecima i godinama nakon gubitka [3]. Poruka na godišnjicu često znači više od one prve, jer tada više nitko ne piše.
+
+> [!SAVJET] Zapiši datum
+> Kad pošalješ prvu poruku, u kalendar upiši podsjetnik za mjesec dana i za godišnjicu. Tako se javiš i onda kad drugi zaborave.
 
 ## Treba li spomenuti novog psa?
 

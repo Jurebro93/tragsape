@@ -54,6 +54,11 @@ sources:
     url: "https://hrcak.srce.hr/file/478637"
     publisher: "Veterinar (Hrčak – portal hrvatskih znanstvenih i stručnih časopisa)"
     accessed_on: 2026-11-25
+  - claim: "Ispraćaji u paviljonu organiziraju se prema uputama i željama vlasnika, uz mogućnost praćenja početka kremacije; groblje se prostire na 8000 m²; urna se može položiti u zid sjećanja, kasetu ili grobno mjesto, a tijelo ukopati u grobno mjesto"
+    title: "O nama"
+    url: "https://spomengaj.hr/o-nama/"
+    publisher: "Spomengaj – gradsko groblje i krematorij za kućne ljubimce, Zagreb"
+    accessed_on: 2026-11-27
 ---
 Kremiranje je za mnoge vlasnike način da ljubimca zadrže blizu ili da mu sami odaberu mjesto. Ovdje je opisano kako postupak izgleda, u čemu je razlika između pojedinačnog i skupnog kremiranja te koliko stoji prema cjenicima koje krematoriji sami objavljuju.
 
@@ -65,7 +70,7 @@ Cijene smo pročitali 25. studenoga 2026. Mijenjaju se, pa prije dogovora provje
 
 **Skupno (grupno) kremiranje** znači da se istodobno kremira dvoje ili više ljubimaca. Pepeo se tada ne može vratiti vlasniku. U Spomengaju se pepeo skupnih kremacija odlaže u za to predviđen prostor na groblju [2]. Pet Memo navodi da se grupno kremira zajedno s dva do tri druga ljubimca [5].
 
-Jedno nije „pravo”, a drugo „manje vrijedno”. Razlika je u tome želiš li pepeo natrag i koliko možeš izdvojiti.
+Jedno nije „pravo”, a drugo „manje vrijedno”. Razlika je u tome želiš li pepeo natrag i koliko možeš izdvojiti. Kako odlučiti, potanko prolazi članak [Pojedinačno ili skupno kremiranje ljubimca](/vodic/pojedinacno-ili-skupno-kremiranje-ljubimca-razlika).
 
 ## Kako postupak izgleda
 
@@ -78,9 +83,18 @@ Pepela ostaje otprilike 4 % težine životinje [4]. Od mačke teške pet kilogra
 
 Ako želiš oproštaj prije kremiranja, pitaj za to. Spomengaj nudi ispraćaj u unutarnjem ili vanjskom paviljonu [2].
 
+> [!CINJENICA] Oproštaj do posljednjeg trenutka
+> U Spomengaju se ispraćaj u paviljonu uređuje prema željama vlasnika, a uz njega je moguće pratiti i početak kremacije. Groblje uz krematorij prostire se na 8000 četvornih metara [10].
+
 ## Koliko stoji
 
 Cijene nisu propisane. Pravilnik o naknadama kaže da je naknada za zbrinjavanje tijela kućnih ljubimaca „regulirana tržišnim odnosima” i da je navedena u javno dostupnim cjenicima, uključujući cjenike spalionica [6]. Našli smo dva takva cjenika.
+
+> [!BROJKE] Kremiranje u brojkama
+> - **46,45 €** najniža cijena pojedinačnog kremiranja, ljubimac do 1 kg [1]
+> - **331,81 €** najviša, pas teži od 50 kg [1]
+> - **1–3 sata** traje samo kremiranje [4]
+> - **4 %** težine životinje ostaje kao pepeo [4]
 
 ### Spomengaj, Zagreb
 
@@ -138,6 +152,8 @@ Raspon je širok: pojedinačno kremiranje stoji od 46,45 € za najmanje životi
 
 Cjenici se ne mogu izravno usporediti jer ne uključuju isto. Jedan iskazuje paket s urnom i prijevozom u nekim gradovima, drugi prijevoz i dostavu urne naplaćuje zasebno. Zato pitaj za ukupan iznos za svoju situaciju.
 
+Primjere izračuna po težini nađi u člancima [Kremiranje psa: cijena po težini](/vodic/kremiranje-psa-cijena) i [Kremiranje mačke: cijena](/vodic/kremiranje-macke-cijena).
+
 ### Izvan Zagreba
 
 Ako živiš daleko od krematorija, trošak raste zbog prijevoza. Primjer je Rijeka: gradsko društvo KD Kozala organizira kremiranje, koje se obavlja u zagrebačkom Spomengaju. U njihovu cjeniku organizacija kremacije stoji 6,64 €, prijevoz Rijeka–Zagreb–Rijeka 66,36 €, a sama kremacija obračunava se prema stvarnom trošku [7].
@@ -162,3 +178,5 @@ Ako želiš kremiranje, reci to veterinaru prije postupka ili odmah nakon uginu�
 - Ako razmišljaš o trajnom mjestu za urnu: [Groblje za kućne ljubimce](/vodic/groblje-za-kucne-ljubimce).
 - Ako tražiš riječi za natpis ili posvetu, može pomoći [alat za posvetu](/alati/posveta).
 - Sve mogućnosti na jednom mjestu: [Što učiniti kad ljubimac ugine](/vodic/sto-uciniti-kad-ljubimac-ugine).
+
+> [!ALAT] posveta

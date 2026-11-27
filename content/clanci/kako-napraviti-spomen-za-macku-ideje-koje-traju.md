@@ -44,6 +44,11 @@ sources:
     url: "https://vet.purdue.edu/hospital/client-services/client-counseling-and-support-services/memorial-ideas.php"
     publisher: "Purdue University College of Veterinary Medicine"
     accessed_on: 2026-11-26
+  - claim: "Na Cipru, u neolitičkom naselju Shillourokambos, pronađen je grob star oko 9500 godina u kojem su čovjek i mačka pokopani 40 cm jedno od drugoga, uz školjke, glačano kamenje i druge ukrasne predmete; nalaz je stariji od ranih egipatskih prikaza mačaka za 4000 godina ili više"
+    title: "Oldest Known Pet Cat? 9,500-Year-Old Burial Found on Cyprus (John Pickrell, 8. 4. 2004.)"
+    url: "https://www.nationalgeographic.com/animals/article/oldest-known-pet-cat-9500-year-old-burial-found-on-cyprus"
+    publisher: "National Geographic"
+    accessed_on: 2026-11-27
 ---
 Spomen za mačku možeš napraviti od onoga što već imaš: dekice s prozora, pramena dlake, fotografija u mobitelu i nekoliko rečenica. Ne mora biti ni skup ni velik. Dobar je onaj koji možeš napraviti sada i kojem ćeš se htjeti vraćati.
 
@@ -62,6 +67,9 @@ Spomen daje oblik gubitku za koji nema uobičajenih obreda. Stručnjaci tugu za 
 Savjetnici veterinarske bolnice Sveučilišta Ohio State pišu da je obred kod gubitka važan i da je bitniji sam postupak izrade nego izgled onoga što nastane [1]. Pregled istraživanja iz 2022. navodi obrede, spomene i sjećanja među načinima suočavanja koji su vlasnicima pomogli [2].
 
 Isti pregled donosi i oprez: trajna veza s uginulim ljubimcem nekim ljudima tugu ponekad i pojača [2]. Centar za zdravlje mačaka Sveučilišta Cornell zato piše da nema ispravnog načina tugovanja i da neki sjećanja radije čuvaju privatno [3]. Ako ti neka ideja s ovog popisa teško pada, preskoči je.
+
+> [!CINJENICA] Jeste li znali?
+> Veza ljudi i mačaka stara je tisućljećima. Na Cipru je u neolitičkom naselju Shillourokambos pronađen grob star oko 9500 godina, u kojem su čovjek i mačka pokopani 40 centimetara jedno od drugoga, uz školjke i glačano kamenje. Nalaz je tisućama godina stariji od ranih egipatskih prikaza mačaka [8].
 
 ## Osam ideja, redom
 
@@ -111,6 +119,8 @@ Pisma ljubimcu i zapis o njegovu životu redovito su na popisima savjetovališta
 
 Pismo ne mora nitko pročitati. Ako ne znaš kako početi, kreni od dvije rečenice: primjeri su u članku [Posveta za mačku: 40 primjera](/vodic/posveta-za-macku-40-primjera), a [alat za posvetu](/alati/posveta) slaže prve rečenice od tvojih riječi.
 
+> [!ALAT] posveta
+
 ### 8. Spomen-stranica na internetu
 
 Fotografije i priče mogu se podijeliti na internetu s ljudima koji su ljubimca voljeli, uz poziv da dodaju svoje [5]. Spomen-stranica to drži na jednom mjestu, s jednom adresom.
@@ -133,6 +143,9 @@ Cijene navodimo samo gdje su nam poznate iz vlastitog cjenika. Procjene truda i 
 | Donacija | Iznos biraš sam | Mali | Jednokratno, osim ako je ponavljaš |
 | Pismo ili zapis | Bez troška | Mali do srednji | Dok ga čuvaš |
 | Spomen-stranica | Osnovna je besplatna | Mali: fotografija i nekoliko rečenica | Dok postoji servis na kojem je |
+
+> [!VAZNO] Dvije ideje ne mogu čekati
+> Pramen dlake i otisak šape uzimaju se prije ukopa ili kremiranja. Ako ih želiš, reci to veterinaru ili krematoriju prije predaje tijela; za sve ostale ideje imaš vremena koliko ti treba.
 
 ## Što ako je u kući ostala druga mačka?
 

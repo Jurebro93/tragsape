@@ -75,6 +75,11 @@ Usamljenost tu nije sporedna stvar. Svjetska zdravstvena organizacija navodi da 
 
 Ljubimac je mogao biti dio zaštite od toga. Među 830 pacijenata starijih od 60 godina vlasnici ljubimaca rjeđe su prijavljivali usamljenost, a najusamljeniji su bili oni koji žive sami i nemaju životinju [2]. To istraživanje ne dokazuje da ljubimac uzrokuje manju usamljenost, ali pokazuje koga gubitak najviše izlaže [2].
 
+> [!BROJKE] Usamljenost u starijoj dobi
+> - **oko 25 %** starijih osoba pogađaju socijalna izolacija i usamljenost, prema SZO-u [3]
+> - **20–34 %** starijih osoba usamljeno je u Kini, Indiji, SAD-u te dijelovima Europe i Latinske Amerike [4]
+> - **36 %** rjeđe su usamljenost prijavljivali vlasnici ljubimaca među 830 pacijenata starijih od 60 godina [2]
+
 ## Tuga koju drugi ne vide
 
 Roditelj možda neće reći koliko ga boli. Sudionice spomenutog istraživanja pričale su da im je okolina tugu umanjivala, pa su o smrti ljubimca govorile samo nekolicini ljudi [1].
@@ -105,6 +110,9 @@ Svjetska zdravstvena organizacija navodi da smislene društvene aktivnosti pobol
 4. **Pitaj o ljubimcu.** Kako je došao, što je volio, koje su zgode zapamtili. Sudionicama istraživanja pomogli su ljudi koji su gubitak prihvatili ozbiljno i uspomene koje su sačuvale, poput fotografija i otiska šape [1].
 5. **Pazi na drugog ljubimca, ako ga ima.** I on se može promijeniti, a ako prestane jesti, treba veterinara; više u članku [Kako drugi ljubimac u kući tuguje](/vodic/kako-drugi-ljubimac-u-kuci-tuguje).
 
+> [!SAVJET] Podsjetnik u kalendaru
+> Upiši si podsjetnike za poziv dva, četiri i osam tjedana nakon gubitka, kad se drugi javljaju sve rjeđe. Zapiši i datum kad je ljubimac uginuo; kako dočekati taj dan iduće godine, piše u članku [Godišnjica smrti ljubimca](/vodic/godisnjica-smrti-ljubimca-kako-je-obiljeziti).
+
 ## Kada se zabrinuti
 
 Tuga nema rok i bol obično s vremenom popušta [5]. Zabrini se ako se ni nakon nekoliko tjedana ne smanjuje ili ako roditelju ometa svakodnevni život [5].
@@ -130,6 +138,8 @@ Ako roditelj ipak razmišlja o novom ljubimcu, ovo su pitanja koja vrijedi proć
 - **Tko je preuzima?** Dogovorite unaprijed i zapišite tko brine o životinji ako roditelj završi u bolnici ili umre. Cats Protection piše da mnoge starije osobe brine upravo to [8].
 - **Kako do veterinara?** Ako roditelj ne vozi, dogovorite tko vozi na preglede i u hitnim slučajevima.
 - **Koliko to košta?** Hranu, preglede i lijekove procijenite prije odluke, ne poslije.
+
+> [!ALAT] macje-godine
 
 Ugovor kojim udruga ili sklonište jamči da će preuzeti životinju nakon smrti vlasnika, kakav u Ujedinjenom Kraljevstvu nudi Cats Protection [8], u Hrvatskoj nismo pronašli kao uslugu. Ako roditelj udomljuje preko udruge, pitajte što ugovor kaže o povratku životinje ako se on više ne može brinuti o njoj.
 

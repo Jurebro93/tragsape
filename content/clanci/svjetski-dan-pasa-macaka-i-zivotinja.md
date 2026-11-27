@@ -49,6 +49,11 @@ sources:
     url: "https://vmc.vet.osu.edu/sites/default/files/documents/coping_with_loss_brochure_2024_web.pdf"
     publisher: "The Ohio State University Veterinary Medical Center, Honoring the Bond Program"
     accessed_on: 2026-11-25
+  - claim: "National Pet Memorial Day pada druge nedjelje u rujnu; uveden je da vlasnici odaju počast ljubimcima koji su s njima i onima kojih više nema te da se skrene pažnja na tugu za ljubimcem (Hannah Beers, 4. 9. 2017.)"
+    title: "Take Time to Grieve Your Pet"
+    url: "https://vetmed.illinois.edu/pet-health-columns/pet-memorial-day/"
+    publisher: "University of Illinois Urbana-Champaign, College of Veterinary Medicine"
+    accessed_on: 2026-11-27
 ---
 Nekoliko dana u godini posvećeno je životinjama. Tada su mreže pune fotografija pasa i mačaka. Ako je tvoj ljubimac još uz tebe, to su lijepi povodi. Ako ga više nema, isti dani mogu zaboljeti, ali mogu biti i prilika da ga se sjetiš na svoj način.
 
@@ -95,7 +100,15 @@ Dan se proširio izvan SAD-a i poznat je i kao *International Dog Day*. Svrha mu
 
 U zemljama engleskoga govornog područja postoje i dani posvećeni upravo sjećanju na ljubimce koji su umrli.
 
+> [!CINJENICA] Dan sjećanja u rujnu
+> Veterinarski fakultet Sveučilišta Illinois piše o danu National Pet Memorial Day, koji pada druge nedjelje u rujnu. Smisao mu je odati počast ljubimcima koji su još s nama i onima kojih više nema te skrenuti pažnju na tugu za ljubimcem [9]. Godine 2027. to je 12. rujna.
+
 Ne trebaš, uostalom, tuđi datum. Mnogima je važniji dan udomljenja, rođendan ili dan rastanka.
+
+Kako obilježiti dan rastanka, piše u članku [Godišnjica smrti ljubimca: kako je obilježiti](/vodic/godisnjica-smrti-ljubimca-kako-je-obiljeziti). Sve datume kroz godinu, i one posvećene sjećanju, skupili smo u članku [Kalendar spomen-dana za ljubimce](/vodic/kalendar-spomen-dana-za-ljubimce).
+
+> [!SAVJET] Podsjetnik tjedan ranije
+> Ako znaš da će ti neki od ovih dana biti težak, upiši ga u kalendar tjedan ranije. Tada možeš unaprijed odlučiti kako ćeš ga provesti, umjesto da te iznenade pune mreže.
 
 ## Kako se toga dana sjetiti ljubimca
 
@@ -108,6 +121,8 @@ Nema pravog načina. Evo nekoliko mogućnosti koje savjetnici za gubitak ljubimc
 - **Daruj u njegovo ime.** Vrijeme, novac ili vještinu skloništu ili udruzi za životinje. Na Svjetski dan životinja to ima i dodatni smisao.
 
 Ako ti je toga dana preteško gledati tuđe fotografije, slobodno preskoči mreže. I to je način da se pobrineš za sebe.
+
+> [!ALAT] oprostaj
 
 ## Ako je ljubimac još s tobom
 

@@ -80,6 +80,12 @@ Tuga za ljubimcem nema rok koji vrijedi za svakoga. Istraživanja pokazuju da je
 - Alkohol i tablete na svoju ruku ne skraćuju tugu i mogu je otežati [7][10].
 - Psihologu ili liječniku javi se ako se tuga ne smanjuje ni nakon nekoliko tjedana, ako ne možeš raditi i živjeti uobičajeno ili ako ti je potištenost svaki dan dulje od dva tjedna [7][8].
 
+> [!BROJKE] Tuga u brojkama
+> - **2.–6. mjesec** razdoblje u kojem je tuga u više istraživanja najjača [1]
+> - **oko 30 %** ispitanika jednog istraživanja imalo je blažu tugu i žalost šest mjeseci ili dulje [2]
+> - **do 20 %** vlasnika imalo je simptome i godinu dana nakon smrti ljubimca [1]
+> - **2 tjedna** svakodnevne potištenosti razlog su da se javiš liječniku [7]
+
 ## Postoji li rok za tugu za ljubimcem?
 
 Ne postoji. Veterinarska bolnica Sveučilišta Ohio State piše da tuga ne slijedi plan, formulu ni raspored, a Američka veterinarska udruga da svatko tuguje drukčije i svojim tempom [8][9].
@@ -99,6 +105,9 @@ Istraživanja ne daju rok, ali pokazuju obrazac koji se ponavlja. Ovo je sažeta
 | Oko godine dana | Tuga se u nekim istraživanjima ponovno pojačala oko godišnjice; do 20 % vlasnika još je imalo simptome | [1] |
 
 Ta su istraživanja mala, a autori pregleda upozoravaju da se uglavnom temelje na odraslim ženama iz SAD-a [1]. Brojke zato govore što je česta pojava, a ne što će biti tebi.
+
+> [!CINJENICA] Tuga koja se mjeri kao i druge
+> U britanskom istraživanju iz 2026. produljeno tugovanje nakon smrti voljenog ljubimca imalo je 7,5 % ljudi. To je gotovo jednako kao nakon smrti bliskog prijatelja (7,8 %) ili brata ili sestre (8,9 %) [3].
 
 ## Zašto je nakon mjesec dana često teže?
 
@@ -131,6 +140,8 @@ Strah od zaborava je čest. Ako ti neka sjećanja izblijede, to ne znači da zab
 - **Redoviti obroci i mali ciljevi**, umjesto pokušaja da sve odjednom bude kao prije [7].
 - **Obred ili spomen**, bilo koji: svijeća, zapis, album [1].
 - **Predah.** Smiješ gledati film, raditi i smijati se. To je dio tugovanja, a ne bijeg od njega [6].
+
+> [!ALAT] oprostaj
 
 ## Zašto alkohol i tablete na svoju ruku ne pomažu?
 

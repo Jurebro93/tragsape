@@ -49,6 +49,11 @@ sources:
     url: "https://skupstina.zagreb.hr/UserDocsImages/neslužbeni%20pročišćeni%20tekstovi%20akata/Odluka%20o%20komunalnom%20redu%20(14-19,%2024-19,%2022-20).pdf"
     publisher: "Gradska skupština Grada Zagreba"
     accessed_on: 2026-11-26
+  - claim: "Grob kraj Bonna, slučajno pronađen 1914., star oko 14.000 godina, najstariji je poznati grob u kojem su zajedno pokopani ljudi i psi (muškarac, žena i dva psa); mlađi pas uginuo je s 27 do 28 tjedana, kao štene vjerojatno je bolovao od štenećaka i preživio samo zahvaljujući brižnoj ljudskoj njezi (Janssens i sur., Journal of Archaeological Science; objava 7. 2. 2018.)"
+    title: "Emotional bond between humans and dogs goes back 14,000 years"
+    url: "https://www.universiteitleiden.nl/en/news/2018/02/emotional-bond-between-humans-and-dogs-goes-back-14000-years"
+    publisher: "Universiteit Leiden"
+    accessed_on: 2026-11-27
 ---
 Spomen za psa može biti ogrlica u okviru, stablo u dvorištu, pismo ili stranica na internetu. Nijedan od tih načina nije „pravi”. Dobar je onaj koji možeš napraviti sada i kojem ćeš se htjeti vraćati.
 
@@ -68,6 +73,9 @@ Savjetnici veterinarske bolnice Sveučilišta Ohio State pišu da je obred kod g
 
 Isti pregled donosi i oprez. Trajna veza s uginulim ljubimcem nekim ljudima tugu i pojača, osobito kad osjećaju da je okolina ne priznaje [2]. Ako ti neka ideja s ovog popisa teško pada, preskoči je.
 
+> [!CINJENICA] Najstariji poznati grob psa i čovjeka
+> Grob pronađen 1914. kraj Bonna star je oko 14.000 godina i najstariji je poznati grob u kojem su zajedno pokopani ljudi i psi. Mlađi pas kao štene je teško bolovao i, prema istraživačima sa Sveučilišta u Leidenu, preživio je samo zahvaljujući ljudskoj njezi [9].
+
 ## Osam ideja, redom
 
 ### 1. Spomen-stranica na internetu
@@ -81,6 +89,9 @@ Odgovara obitelji koja živi na više adresa i svima koji žele da psa mogu spom
 ### 2. Foto-knjiga
 
 Tiskana knjiga fotografija može ispričati cijeli život psa, od prvog dana [6]. Najviše truda odlazi na odabir: fotografije su razasute po mobitelima cijele obitelji.
+
+> [!SAVJET] Prvo sve na jedno mjesto
+> Prije odabira zamoli ukućane da fotografije i videa psa pošalju u jednu zajedničku mapu, pa tek onda biraj. Kako ih sačuvati da se ne izgube, piše u članku [Kako sačuvati fotografije i videa ljubimca](/vodic/kako-sacuvati-fotografije-i-videa-ljubimca).
 
 Cijena ovisi o tiskari, formatu i broju stranica, pa je ne navodimo. Odgovara onima koji vole listati i obiteljima s djecom: izrada knjige sjećanja djeci može pomoći u tugovanju [4].
 
@@ -109,6 +120,8 @@ Iznos biraš sam. Prije uplate provjeri prima li azil donacije i što mu stvarno
 Pisma ljubimcu redovito su na popisima veterinarskih savjetovališta [3]. Neki vlasnici pišu i pismo isprike, u kojem kažu ono s čime se muče [1].
 
 Pismo ne mora nitko pročitati. Ako ne znaš kako početi, kreni od kratke posvete: [alat za posvetu](/alati/posveta) slaže prve rečenice od tvojih riječi, a primjeri su u članku [Posveta za psa: 40 primjera](/vodic/posveta-za-psa-primjeri).
+
+> [!ALAT] posveta
 
 ### 7. Obred na godišnjicu
 

@@ -57,6 +57,11 @@ sources:
     url: "https://hrcak.srce.hr/file/478637"
     publisher: "Veterinar (Hrčak)"
     accessed_on: 2026-11-27
+  - claim: "Uzorak na vrhu pasjeg nosa (izbočine i brazde) jedinstven je za svakog psa i ne mijenja se tijekom praćenja; ispitan na 278 snimaka 70 pasa; kod štenadi beagla potpuno je oblikovan u drugom mjesecu"
+    title: "Choi, H. I. i sur. (2021.): Study on the Viability of Canine Nose Pattern as a Unique Biometric Marker. Animals 11(12), 3372"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8697952/"
+    publisher: "Animals (MDPI), PubMed Central"
+    accessed_on: 2026-11-27
 ---
 Posljednji dan s ljubimcem ne mora biti poseban da bi bio dobar. Najviše vrijedi ono najjednostavnije: biti uz njega, na mjestu koje voli, bez žurbe. Sve ostalo, od papira do odluke o tijelu, bolje je riješiti dan ranije, da te na sam dan ne odvlači.
 
@@ -75,6 +80,9 @@ O hrani, lijekovima i stanju tvog ljubimca odlučuje veterinar koji ga liječi. 
 Jest. Savjetnici veterinarske bolnice Sveučilišta Ohio State tugu prije smrti nazivaju anticipacijskom tugom i opisuju je kao prirodnu kod teške bolesti ljubimca [1]. Može donijeti tugu, poricanje i teškoće s razumijevanjem onoga što ti veterinar govori [1].
 
 Zato je pomoć popis. Ono što zapišeš danas ne moraš se sjetiti sutra, kad ti glava neće biti bistra.
+
+> [!SAVJET] Ne idi sam na razgovor
+> Na razgovor s veterinarom povedi nekoga tko će zapisivati odgovore ili zamoli da ti ključne stvari pošalju porukom. Tako ne moraš sve zapamtiti u danu kad ti je najteže.
 
 ## Što dogovoriti s veterinarom unaprijed?
 
@@ -129,6 +137,9 @@ Otisak šape, pramen dlake i fotografije, jer se kasnije ne mogu nadoknaditi. AV
 | Pramen dlake | Dan ranije ili pri postupku | Škarama, s mjesta koje voliš maziti [2][3] |
 | Fotografije | Danas, na dnevnom svjetlu | Snimi i sebe s njim, ne samo njega [2] |
 | Kratka snimka | Danas | Njegovi zvukovi: hod, pijenje, disanje u snu |
+
+> [!CINJENICA] Otisak nosa je samo njegov
+> Sitne izbočine i brazde na vrhu pasjeg nosa čine uzorak koji se razlikuje od psa do psa. U istraživanju na 70 pasa uzorak je bio jedinstven za svakog psa i nije se mijenjao tijekom praćenja [11].
 
 Kako fotografije i snimke spremiti da ne nestanu s mobitelom, piše u članku [Kako sačuvati fotografije i videa ljubimca](/vodic/kako-sacuvati-fotografije-i-videa-ljubimca).
 

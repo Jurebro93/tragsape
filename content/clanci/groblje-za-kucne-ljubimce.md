@@ -54,6 +54,11 @@ sources:
     url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_11_129_1954.html"
     publisher: "Narodne novine"
     accessed_on: 2026-11-25
+  - claim: "Odvjetnik Georges Harmois i novinarka Marguerite Durand osnovali su 2. 5. 1899. društvo za groblje pasa i drugih kućnih životinja u Asnières-sur-Seineu, otvoreno iste godine; pas lutalica pokopan 1958. bio je 40 000. pokopana životinja; grad je zemljište kupio 1989., a upravljanje u cijelosti preuzeo 1. 2. 1997."
+    title: "Le cimetière des chiens"
+    url: "https://asnieres-sur-seine.fr/en/sortir-a-asnieres/tourisme-et-patrimoine/patrimoine-naturel/le-cimetiere-des-chiens"
+    publisher: "Grad Asnières-sur-Seine"
+    accessed_on: 2026-11-27
 ---
 Nekima je važno imati mjesto na koje mogu doći. Groblje za kućne ljubimce to nudi, ali ih u Hrvatskoj nema mnogo. Ovdje je ono što o njima pišu njihove službene stranice, s cijenama ondje gdje su objavljene.
 
@@ -62,6 +67,12 @@ Podatke smo pročitali 25. studenoga 2026. Cijene i pravila se mijenjaju, pa pri
 ## Gdje postoje
 
 Službene podatke našli smo za dva groblja: zagrebački Spomengaj i riječko groblje na Kozali.
+
+> [!BROJKE] Dva groblja u brojkama
+> - **8000 m²** groblje Spomengaj u Dumovcu [1]
+> - **1200 m²** groblje na Kozali, sa 181 novim grobnim mjestom [6]
+> - **66,36 €** najniža stavka ukopa u Spomengajevu cjeniku [3]
+> - **53,09 €** godišnja naknada za kazetu s dvije urne na Kozali [7]
 
 ### Zagreb: Spomengaj
 
@@ -102,6 +113,9 @@ Dvije stvari u objavljenim podacima nisu posve jasne. Na stranici s uslugama pi�
 
 Riječko groblje kućnih ljubimaca nalazi se u Lukovićima na Kozali. Ljubimci su se ondje pokapali od početka 20. stoljeća do 2004. godine, kad je groblje zatvoreno zbog tadašnjeg Zakona o veterinarstvu. Ukop je ponovno moguć od 2021., ali isključivo polaganjem urni; stari dio sačuvan je kao spomen-groblje [5]. Turistička zajednica opisuje ga kao jedno od najstarijih u Europi, uz pariško i londonsko [8].
 
+> [!CINJENICA] Groblje iz 1899.
+> Groblje za pse i druge kućne životinje u Asnières-sur-Seineu kraj Pariza otvoreno je 1899. Osnovali su ga odvjetnik Georges Harmois i novinarka Marguerite Durand. Pas lutalica pokopan ondje 1958. bio je četrdesettisućita životinja na groblju, a od 1997. njime u cijelosti upravlja grad [10].
+
 O groblju od 2021. skrbi gradsko društvo KD Kozala. Novi dio ima 181 grobno mjesto u obliku pretinaca i kazeta ukopanih u zemlju; cijelo groblje ima 1200 četvornih metara [6]. Za informacije i dogovor potrebna je prethodna najava [6].
 
 Budući da se polažu samo urne, ljubimca prije treba kremirati. KD Kozala organizira i to, a kremiranje se obavlja u zagrebačkom Spomengaju [7].
@@ -123,6 +137,7 @@ U cjeniku stoji napomena da se cijena razmjerno povećava kad se ugovor sklapa n
 - **Zakup je na određeno vrijeme.** U Zagrebu se plaća za dvije, pet ili deset godina [3], u Rijeci po godini [7]. Pitaj koliko stoji produljenje i što biva s mjestom ako ga ne produljiš.
 - **Ukop i zakup nisu isto.** U riječkom cjeniku otvaranje i zatvaranje pretinca zasebna je stavka uz godišnju naknadu [7].
 - **Prije groblja dolazi kremiranje**, osim ako se ukapa tijelo. Cijene kremiranja su u članku [Kremiranje kućnih ljubimaca: cijena i postupak](/vodic/kremiranje-kucnih-ljubimaca-cijena).
+- **Urna se plaća posebno ili je u cijeni kremiranja**, ovisno o krematoriju. Vrste i veličine su u članku [Urna za ljubimca: vrste, veličine i cijene](/vodic/urna-za-ljubimca-vrste-velicine-i-cijene).
 
 ## Što kažu propisi
 
@@ -137,7 +152,7 @@ Groblje ne može biti bilo koja ograđena livada. Onaj tko njime upravlja mora b
 
 Isti pravilnik uređuje i ukop izvan groblja. Vlasnik ljubimca može ga zakopati sam, uz uvjete: suglasnost vlasnika zemljišta ako zemljište nije njegovo, poštovanje lokalnih propisa i propisa o zaštiti voda i okoliša, najmanje 50 cm zemlje iznad tijela i nepostojanje sumnje na bolest koja se obvezno prijavljuje [9].
 
-Odredbe u cijelosti, i ono što u njima nije jasno, prenijeli smo u vodiču [Što učiniti kad ljubimac ugine](/vodic/sto-uciniti-kad-ljubimac-ugine).
+Odredbe u cijelosti, i ono što u njima nije jasno, prenijeli smo u vodiču [Što učiniti kad ljubimac ugine](/vodic/sto-uciniti-kad-ljubimac-ugine). Ukop u vlastitom dvorištu posebno opisujemo u članku [Smije li se ljubimac zakopati u vrtu](/vodic/smije-li-se-ljubimac-zakopati-u-vrtu).
 
 ## Što pitati prije zakupa
 
@@ -151,3 +166,5 @@ Odredbe u cijelosti, i ono što u njima nije jasno, prenijeli smo u vodiču [Št
 
 - Usporedi s kremiranjem: [Kremiranje kućnih ljubimaca: cijena i postupak](/vodic/kremiranje-kucnih-ljubimaca-cijena).
 - Ako tražiš riječi za natpis, može pomoći [alat za posvetu](/alati/posveta).
+
+> [!ALAT] posveta

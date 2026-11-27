@@ -44,6 +44,11 @@ sources:
     url: "https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_hr.htm"
     publisher: "Your Europe (Europska unija)"
     accessed_on: 2026-11-26
+  - claim: "Groblje Hartsdale kraj New Yorka osnovano je 1896.; veterinar Samuel Johnson ponudio je svoj voćnjak klijentu kojem je uginuo pas, jer u gradu pokapanje životinja nije bilo dopušteno; najveće i najstarije groblje za ljubimce u SAD-u, s više od 80 000 ukopa"
+    title: "Hartsdale Pet Cemetery"
+    url: "https://en.wikipedia.org/wiki/Hartsdale_Pet_Cemetery"
+    publisher: "Wikipedia"
+    accessed_on: 2026-11-27
 ---
 Online spomen-stranica za ljubimca je jedna trajna adresa na internetu na kojoj stoje njegova fotografija, nekoliko riječi o njemu i sjećanja ljudi koji su ga poznavali. Odgovara onima koji žele jedno mjesto koje mogu podijeliti s obitelji i prijateljima. Ne zamjenjuje grob ni urnu, a tugu ne skraćuje.
 
@@ -60,6 +65,9 @@ Online spomen-stranica za ljubimca je jedna trajna adresa na internetu na kojoj 
 Online spomen je mjesto na internetu stvoreno da bi se nekoga pamtilo. Može biti jedna stranica s imenom i nekoliko riječi ili opsežna zbirka priča i fotografija [1].
 
 Ideja nije nova. Prvi takvi spomeni pojavili su se krajem devedesetih, a prvo internetsko groblje pokrenuto je 1995. godine [1]. Spomen-stranica za ljubimca isti je oblik, samo za psa, mačku, kunića, papigu ili bilo kojeg drugog ljubimca.
+
+> [!CINJENICA] Groblje za ljubimce staro 130 godina
+> Najstarije groblje za ljubimce u SAD-u, Hartsdale kraj New Yorka, nastalo je 1896. Veterinar Samuel Johnson ponudio je svoj voćnjak klijentu kojem je uginuo pas, jer u gradu životinje nije bilo dopušteno pokapati. Danas ondje počiva više od 80 000 životinja [8].
 
 ## Što posjetitelj vidi?
 
@@ -109,11 +117,16 @@ Nekoliko minuta. Za početak ne treba ni račun ni kartica.
 2. **Fotografija i posveta.** Jedna slika i nekoliko rečenica. Ako ne znaš kako početi, pomaže [alat za posvetu](/alati/posveta).
 3. **Pregled i objava.** Vidiš stranicu onako kako će je vidjeti drugi i objavljuješ tek kad ti izgleda kako treba.
 
+> [!ALAT] posveta
+
 Nacrt se sprema i možeš ga nastaviti poslije, uz potvrdu e-mailom. Dok ga ne objaviš, vidiš ga samo ti. Ideje za tekst imaš i u člancima [Posveta za psa: primjeri](/vodic/posveta-za-psa-primjeri) i [Spomen za psa: ideje](/vodic/spomen-za-psa-ideje).
 
 ## Što se događa s podacima i fotografijama?
 
 Fotografija snimljena mobitelom često u sebi nosi točno mjesto i vrijeme snimanja, a da vlasnik to i ne zna [5]. Zato se pri učitavanju s fotografije uklanjaju ti metapodaci (EXIF), zajedno s lokacijom.
+
+> [!SAVJET] Spomen nije sigurnosna kopija
+> Besplatni spomen nosi jednu fotografiju. Sve snimke ljubimca spremi i na računalo ili vanjski disk; kako ih sačuvati da ne nestanu s mobitelom, piše u članku [Kako sačuvati fotografije i videa ljubimca](/vodic/kako-sacuvati-fotografije-i-videa-ljubimca).
 
 Privatni spomeni i oni „samo s poveznicom” nikad nisu u karti weba, na Livadi ni na obiteljskoj stranici, a tražilicama se označavaju oznakom `noindex`. Google stranicu s tom oznakom izostavlja iz rezultata [6].
 

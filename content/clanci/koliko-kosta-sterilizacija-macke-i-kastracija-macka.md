@@ -151,11 +151,22 @@ Na računu za mačka nema pretraga krvi ni inhalacijske anestezije, što pokazuj
 
 Sterilizacija sprječava gnojnu upalu maternice (piometru), infekciju koja može ugroziti život [1][4]. Operacija piometre u istim je cjenicima skuplja od redovnog zahvata: 80,00 € u Đakovu [6], 111,49 € u Veterini Branimir [9] i 150,00 € na Veterinarskom fakultetu [12].
 
+> [!BROJKE] Sterilizacija i kastracija mačke u brojkama
+> - **30–80 €** sterilizacija mačke, sam zahvat [6][12]
+> - **15–65 €** kastracija mačka, sam zahvat [6][7]
+> - **188,64 €** stvarni račun za mačku u jednoj zagrebačkoj ambulanti [8]
+> - **15–20 minuta** traje sterilizacija prema Cornellu [2]
+
 ## U kojoj dobi
 
 International Cat Care piše da mačke spolno sazrijevaju od oko četvrtog mjeseca i da se zahvat rutinski radi u toj dobi; prvo tjeranje je obično oko šestog mjeseca, ali može biti i ranije [1]. WSAVA navodi da se europske kratkodlake mačke i pasmine slične veličine mogu kastrirati već s tri do četiri mjeseca bez štetnih učinaka, ako su u dobroj kondiciji i cijepljene [3]. Cornell Feline Health Center savjetuje sterilizaciju mačke prije prvog tjeranja, a kastraciju mačka po mogućnosti s tri do šest mjeseci [2].
 
 Za vrlo velike pasmine, poput maine coona, International Cat Care savjetuje da dob dogovoriš s veterinarom [1]. Mačka se može sterilizirati i dok je u tjeranju, uz nešto veći rizik krvarenja [4].
+
+> [!CINJENICA] Jeste li znali?
+> Mačka koja nije sterilizirana može imati do tri legla godišnje [1].
+
+> [!ALAT] macje-godine
 
 ## Kako izgleda zahvat i oporavak
 

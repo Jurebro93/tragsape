@@ -32,6 +32,11 @@ sources:
     url: "https://hrabritelefon.hr/"
     publisher: "Hrabri telefon"
     accessed_on: 2026-11-25
+  - claim: "Mala djeca (2–6 godina) tugu mogu prorađivati u igri i glumiti sprovod ili smrt; mogu nazadovati, primjerice u odvikavanju od pelena; mogu se bojati da će se zakopani ljubimac probuditi"
+    title: "Children and Pet Loss"
+    url: "https://www.vet.purdue.edu/hospital/client-services/client-counseling-and-support-services/children-and-pet-loss.php"
+    publisher: "Purdue University Veterinary Hospitals"
+    accessed_on: 2026-11-27
 ---
 Za mnogu je djecu smrt ljubimca prvi pravi susret s gubitkom. Dječji psihijatri pišu da djeci tada više od složenih objašnjenja trebaju utjeha, ljubav i podrška [1]. Ovaj tekst skuplja ono što stručni izvori savjetuju roditeljima.
 
@@ -54,7 +59,7 @@ Prema Američkoj akademiji za dječju i adolescentnu psihijatriju, reakcija djet
 | 6 do 8 godina | Počinje stvarnije shvaćati što smrt jest i što znači [1]. | Iskreni odgovori na sve više pitanja. |
 | Oko 9 godina i dalje | Razumije da je smrt trajna i konačna [1]. | Razgovor o osjećajima; prostor za vlastiti način tugovanja. |
 
-Granice nisu oštre. Djeca se razvijaju različito, pa prati dijete, a ne tablicu [3].
+Granice nisu oštre. Djeca se razvijaju različito, pa prati dijete, a ne tablicu [3]. Detaljniju razradu, od najmlađih do tinejdžera, donosimo u članku [Dijete i smrt ljubimca po dobi](/vodic/dijete-i-smrt-ljubimca-po-dobi).
 
 ## Kako reći
 
@@ -98,7 +103,7 @@ Samu eutanaziju možeš objasniti jasno i bez uljepšavanja, onoliko koliko dije
 
 > Veterinar joj više ne može pomoći da ozdravi. Dat će joj injekciju nakon koje je više ništa neće boljeti, a zatim će joj srce prestati kucati.
 
-Hoće li dijete biti prisutno, ovisi o njegovoj dobi i zrelosti. Neka su djeca dovoljno zrela da budu uz ljubimca i tješe ga, a mnoga se samo žele oprostiti prije [2].
+Hoće li dijete biti prisutno, ovisi o njegovoj dobi i zrelosti. Neka su djeca dovoljno zrela da budu uz ljubimca i tješe ga, a mnoga se samo žele oprostiti prije [2]. Što će dijete pritom vidjeti, opisano je u članku [Biti uz ljubimca tijekom uspavljivanja: što očekivati](/vodic/biti-uz-ljubimca-tijekom-uspavljivanja-sto-ocekivati).
 
 ## Pitanja koja će doći
 
@@ -125,6 +130,9 @@ To što dijete ne pokazuje tugu ne znači nužno da se dobro nosi s gubitkom [3]
 
 Dvije praktične stvari pomažu: zadrži uobičajenu dnevnu rutinu i obavijesti odgojiteljicu ili učitelja, jer se ne može predvidjeti gdje će se tuga pokazati [3].
 
+> [!CINJENICA] Sprovod u igri
+> Savjetnici veterinarske bolnice Sveučilišta Purdue pišu da djeca od dvije do šest godina tugu mogu prorađivati kroz igru i u njoj glumiti sprovod ili smrt. Neka se boje da bi se zakopani ljubimac mogao probuditi [6].
+
 ## Kako pomoći djetetu da se oprosti
 
 Dijete se treba oprostiti na svoj način [1]. Neke mogućnosti:
@@ -137,6 +145,8 @@ Dijete se treba oprostiti na svoj način [1]. Neke mogućnosti:
 Govorite o ljubimcu često i s ljubavlju [2].
 
 Ako dijete želi napisati nekoliko riječi, možete zajedno isprobati [alat za oproštajno pismo](/alati/oprostaj).
+
+> [!ALAT] oprostaj
 
 ## Kada potražiti pomoć
 

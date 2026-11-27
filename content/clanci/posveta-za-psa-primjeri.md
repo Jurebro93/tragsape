@@ -34,6 +34,11 @@ sources:
     url: "https://blogs.vetmed.vt.edu/veterinary-social-work/animal-loss-support/Memorialization.html"
     publisher: "Virginia-Maryland College of Veterinary Medicine, Veterinary Social Work"
     accessed_on: 2026-11-26
+  - claim: "Herodot, Povijesti 2.66: ukućani kuće u kojoj je mačka uginula prirodnom smrću briju samo obrve; gdje je uginuo pas, briju glavu i cijelo tijelo"
+    title: "Herodotus, The Histories 2.66 (engleski prijevod A. D. Godley)"
+    url: "https://cts.perseids.org/read/greekLit/tlg0016/tlg001/perseus-eng2/2.66.3-2.66.4"
+    publisher: "Perseids Project, Tufts University"
+    accessed_on: 2026-11-27
 ---
 Posveta za psa je nekoliko rečenica koje stoje uz ime i fotografiju: na spomen-stranici, pločici, u okviru ili foto-knjizi. Dobra posveta je kratka, istinita i tvoja. Ispod je 40 primjera koje možeš uzeti kakvi jesu, a zatim tri pitanja uz koja ćeš napisati vlastitu.
 
@@ -52,6 +57,9 @@ Za ljubimcem se tuguje bez ustaljenih riječi. Stručnjaci to nazivaju nepriznat
 Zato veterinarska savjetovališta među načinima sjećanja redovito navode pisanje: zapis o životu ljubimca, oproštajni govor, pismo [1][5]. Prisjećanje činjenica o ljubimcu ističe koliko je njegov život značio i može utješiti [4]. Pregled istraživanja iz 2022. navodi spomene i sjećanja među načinima suočavanja koji su vlasnicima pomogli, uz napomenu da ne pomažu svakome jednako [2].
 
 Ime je pola posvete. Britanska udruga RSPCA savjetuje da se u razgovoru s onim tko tuguje koristi ime ljubimca, jer ono čuva sjećanje bliskim [3].
+
+> [!CINJENICA] Iz povijesti
+> Tugovanje za psom nije novost. Starogrčki povjesničar Herodot zapisao je da u Egiptu, kad u kući ugine pas, ukućani obriju glavu i cijelo tijelo [6]. Kad mačka ugine prirodnom smrću, briju samo obrve [6].
 
 ## Kako koristiti primjere
 
@@ -130,7 +138,12 @@ Gotov primjer je početak. Posveta postaje tvoja kad u njoj stoji nešto što vr
 
 Odgovori na svako pitanje jednom rečenicom. Ispred stavi ime, na kraj ono što osjećaš sada, i posveta je gotova.
 
+> [!SAVJET] Pročitaj je naglas
+> Kad je posveta gotova, pročitaj je naglas, polako. Ondje gdje zapneš rečenica je preduga ili zvuči kao tuđa, pa je skrati ili napiši svojim riječima.
+
 Ako ti je lakše uz pomoć, [alat za posvetu](/alati/posveta) pita slična pitanja i od tvojih riječi slaže tri do četiri polazne rečenice. Nije umjetna inteligencija i ništa ne sprema.
+
+> [!ALAT] posveta
 
 ## Što izbjegavati
 

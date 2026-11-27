@@ -63,6 +63,9 @@ Na godišnjicu se često vrate i sjećanja na sam dan smrti i na ono što mu je 
 
 To vrijedi i za ljubimce. Pregled istraživanja o tugovanju za ljubimcima navodi radove u kojima se tuga vlasnika ponovno pojačala otprilike godinu dana nakon smrti [5].
 
+> [!CINJENICA] Godinu dana poslije
+> U istraživanjima koja navodi isti pregled osjećaji su bili najjači dva do šest mjeseci nakon smrti ljubimca, a do 20 % vlasnika imalo je simptome tuge i godinu dana poslije [5]. Ako ti je na godišnjicu teško, nisi iznimka.
+
 Dva izvora u ovom tekstu, Cruse i Sue Ryder, pisana su za ljude koji su izgubili čovjeka. Koristimo ih zato što opisuju isti mehanizam, a to uz tvrdnju i navodimo.
 
 ## Kako godišnjica može izgledati?
@@ -86,6 +89,9 @@ Odluči unaprijed, barem okvirno. Organizacija Cruse navodi da pomaže unaprijed
 3. **Reci bližnjima što trebaš**: društvo, mir ili samo da znaju koji je dan [3].
 4. **Dogovori se s ukućanima.** Ne morate svi isto; u redu je da svatko dan provede drukčije [2].
 5. **Ostavi si izlaz.** Plan smiješ promijeniti ili otkazati tog jutra.
+
+> [!SAVJET] Ako ne znaš što odabrati
+> Britanska organizacija Sue Ryder predlaže da taj dan učiniš nešto što je onaj kojeg nema volio [4]. Za ljubimca to može biti njegova šetnja, omiljeno mjesto ili igra koju ste igrali.
 
 Ako u kući ima djece, pitaj ih žele li sudjelovati i kako. Više o razgovoru s njima piše u članku [Kako djetetu objasniti smrt ljubimca](/vodic/kako-djetetu-objasniti-smrt-ljubimca).
 
@@ -112,6 +118,10 @@ Nekoliko napomena uz tablicu:
 - **Svijeća.** Može biti prava ili na internetu; o tome piše [Virtualna svijeća za ljubimca](/vodic/virtualna-svijeca-za-ljubimca).
 - **Sklonište.** Prije nego što nešto kupiš, nazovi i pitaj što im stvarno treba.
 - **Osvrt.** Savjetnici Sveučilišta Florida predlažu da se na godišnjicu osvrneš na proteklu godinu i vidiš koliko si daleko došao [3].
+
+Ako dan obilježavate zajedno, a ne znate što bi kome odgovaralo, kratak upitnik predložit će dva do tri načina oproštaja:
+
+> [!ALAT] oprostaj
 
 Trajnije ideje, poput foto-knjige ili stabla, opisane su u članku [Kako napraviti spomen za psa](/vodic/spomen-za-psa-ideje).
 

@@ -78,6 +78,9 @@ Stručni izvori dob dijele različito. Američka akademija za dječju i adolesce
 
 Tablica ih slaže u pet skupina. Prati dijete, a ne godinu rođenja: šestogodišnjak ponekad postavi pitanje kakvo bi postavio tinejdžer, a tinejdžeru ponekad treba ono što treba malom djetetu [6].
 
+> [!CINJENICA] Stručnjaci se razilaze i do pet godina
+> Kada dijete shvati da je smrt konačna? Zagrebačka psihologinja Bruna Profaca kaže da već sa sedam godina [9], Američka akademija za dječju i adolescentnu psihijatriju da većina djece oko devete [1], a UNICEF Hrvatska da oko dvanaeste godine djeca razumiju da je smrt nepovratna [8].
+
 ## Što dijete razumije, što mu reći i što izbjeći
 
 | Dob | Što obično razumije | Što reći | Što izbjeći |
@@ -126,6 +129,9 @@ Pazi na rizično ponašanje i promjene raspoloženja koje ne prolaze. Kod misli 
 
 ## Što vrijedi u svakoj dobi
 
+> [!SAVJET] Tri rečenice za svaku dob
+> „Umro je.” „Neće se vratiti.” „Nisi ti kriv.” Riječi „umro” i „smrt” preporučuju stručnjaci za dječje tugovanje [5][6], a posljednja je rečenica važna jer djeca mogu misliti da su smrt izazvala nečim što su rekla ili pomislila [5][6].
+
 - **Ne skrivaj svoju tugu.** Dijete tako uči da je u redu biti tužan i o tome govoriti [2][8]. O svojoj tuzi pišemo u članku [Tuga i krivnja nakon gubitka ljubimca](/vodic/tuga-i-krivnja-nakon-gubitka-ljubimca).
 - **Zadrži rutinu.** Djeci svih dobi pomaže sigurnost poznatog dana [5].
 - **Ne zaključuj prerano.** To što dijete ne pokazuje tugu ne znači da se dobro nosi s gubitkom [7].
@@ -168,3 +174,5 @@ Upozoravajuće je kad dijete i mjesecima nakon smrti teško funkcionira kod kuć
 ## Sljedeći korak
 
 Djeci svih dobi pomaže da ljubimca zajedno s vama ispraćaju i pamte: crtežom, pričom ili pismom [1][4]. Za početak isprobajte [alat za oproštajno pismo](/alati/oprostaj) ili pogledajte savjete u članku [Pismo ljubimcu kojeg više nema](/vodic/pismo-ljubimcu-kojeg-vise-nema-kako-poceti).
+
+> [!ALAT] oprostaj

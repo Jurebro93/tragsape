@@ -108,6 +108,12 @@ Može se dogoditi da mačku nađeš tek kad se vratiš kući ili kad se probudi�
 
 Oči se nakon smrti ne zatvaraju same [2]. Kratki trzaji mogući su i nakon smrti; to su refleksi, a ne znakovi života [2].
 
+> [!BROJKE] Prvi dan u brojkama
+> - **1–2 sata** nakon smrti tijelo se počinje hladiti i kočiti [1]
+> - **24 sata** može čekati dobro ohlađeno tijelo [3]
+> - **7 dana** rok je za prijavu uginuća čipirane mačke [6]
+> - **4 %** težine mačke ostaje kao pepeo nakon kremiranja [10]
+
 ## Ako je uginula vani
 
 Mačke koje izlaze ponekad uginu izvan kuće, na cesti ili u susjedstvu. Ako si je našao i možeš je uzeti, učini to i postupi kao u prethodnom poglavlju.
@@ -123,6 +129,9 @@ Ako se čipirana mačka ne vrati i ne znaš što je s njom, zakon traži i prija
 Američka udruga ASPCA preporučuje umotano tijelo staviti u hladnjak ili zamrzivač [3]. Ako to ne želiš ili ne možeš, položi je u najhladniju prostoriju, izvan sunca, s vrećicama leda uokolo. Tijelo tada stavi u plastičnu vreću da se ne smoči [3].
 
 Dobro ohlađeno tijelo može čekati do 24 sata, ali što prije bude preuzeto, to bolje [3]. Hospicijski veterinari savjetuju prijevoz ili ukop unutar 12 do 24 sata [1].
+
+> [!VAZNO] Ako želiš znati uzrok smrti
+> Tijelo tada ne stavljaj u zamrzivač, nego samo u hladnjak, i veterinara nazovi što prije [3].
 
 ## Koga nazvati i što možeš odabrati
 
@@ -170,7 +179,7 @@ Za razliku od pasa, mačke se u Hrvatskoj čipiraju na zahtjev vlasnika. Obvezno
 
 Ako je tvoja mačka čipirana, uginuće prijavljuješ u roku od sedam dana, radi izmjene podataka u putovnici i upisniku [6]. Za propust je predviđena kazna od 260 do 660 eura, odnosno 60 eura na mjestu počinjenja [6].
 
-Odredba govori o označenim životinjama, pa se na mačku bez čipa taj rok ne odnosi [6]. Jedna zagrebačka ambulanta odjavu u upisniku i putovnici naplaćuje 5,60 € [14].
+Odredba govori o označenim životinjama, pa se na mačku bez čipa taj rok ne odnosi [6]. Jedna zagrebačka ambulanta odjavu u upisniku i putovnici naplaćuje 5,60 € [14]. Kako odjava ide i što s putovnicom, piše u članku [Što s čipom i putovnicom nakon smrti ljubimca](/vodic/sto-s-cipom-i-putovnicom-nakon-smrti-ljubimca).
 
 ## Djeca i druge mačke u kući
 
@@ -209,3 +218,5 @@ Ako možeš, uzmi je i postupi kao da je uginula kod kuće. Za lešine na javnim
 ## Sljedeći korak
 
 Kad praktično bude iza tebe, možeš joj otvoriti spomen-stranicu s fotografijama i nekoliko rečenica; počinje se na [/izradi](/izradi). Ako ne znaš kako početi pisati, pomoći će [alat za posvetu](/alati/posveta).
+
+> [!ALAT] posveta

@@ -79,6 +79,11 @@ sources:
     url: "https://www.zakon.hr/z/257/Zakon-o-za%C5%A1titi-%C5%BEivotinja"
     publisher: "Zakon.hr"
     accessed_on: 2026-11-27
+  - claim: "U godišnjim anketama RSPCA-e o tuzi za ljubimcem sudjelovalo je više od 4000 ljudi; 59,5 % ispitanika osjećalo je krivnju"
+    title: "What our survey data tells us about pet grief"
+    url: "https://www.rspca.org.uk/adviceandwelfare/pets/bereavement/survey"
+    publisher: "RSPCA"
+    accessed_on: 2026-11-27
 ---
 Krivnja nakon uspavljivanja toliko je česta da je socijalna radnica veterinarske bolnice Sveučilišta Ohio State naziva najvećom emocijom koju viđa kod gubitka ljubimca, i to kod ljudi koji znaju da su odlučili ispravno [4]. Krivnja sama po sebi ne dokazuje da si pogriješio. Ovaj tekst prolazi kroz misli koje se najčešće vrte: prerano, prekasno, u žurbi, zbog novca i „jesam li ga ubio".
 
@@ -91,6 +96,9 @@ Ovaj tekst ne zamjenjuje veterinara ni stručnjaka za mentalno zdravlje. Što se
 - Novac je u veterini čest dio odluke, a veterinarski izvori to navode kao opravdano pitanje [1][2][4].
 - Patnju je nanosila bolest ili ozljeda; eutanazija ju je prekinula [1].
 - Ako krivnja ne slabi ni nakon nekoliko tjedana ili ti remeti san, posao i odnose, potraži stručnu podršku [3][5].
+
+> [!CINJENICA] Nisi jedini
+> U godišnjim anketama britanske udruge RSPCA o tuzi za ljubimcem, u kojima je sudjelovalo više od 4000 ljudi, 59,5 % ispitanika navelo je da je osjećalo krivnju [15]. Ankete obuhvaćaju sve gubitke ljubimca, ne samo uspavljivanje.
 
 ## „Pustio sam ga prerano"
 
@@ -115,6 +123,9 @@ Ako ti je ostalo nejasno što se dogodilo, razgovaraj s veterinarom koji je lije
 1. Koji su bili najbolji, a koji najgori mogući ishodi?
 2. Koliko je, po vašoj procjeni, osjećao bol ili patio?
 3. Koliko je vremena realno mogao imati?
+
+> [!SAVJET] Prije razgovora s veterinarom
+> Zapiši pitanja na papir i povedi nekoga tko će slušati s tobom ili zapisivati. Ako ti je lakše, zamoli da razgovor bude telefonom, u vrijeme koje tebi odgovara.
 
 ## Kad je novac bio dio odluke
 
@@ -159,6 +170,10 @@ Lap of Love to sažima jednom rečenicom: osjećati se krivim nije isto što i b
 - **Sjeti se cijelog zajedničkog života**, ne samo posljednjeg dana [5].
 - **Napiši mu pismo.** Savjetnici s Ohio Statea predlažu pismo u kojem napišeš što te muči [3]; kako početi, piše u članku [Pismo ljubimcu kojeg više nema](/vodic/pismo-ljubimcu-kojeg-vise-nema-kako-poceti).
 - **Ne tuguj sam.** U jednom američkom istraživanju oko tri četvrtine vlasnika tugovalo je nasamo, što autori vide kao rizik izolacije [12]. Ako partner ili ukućani odluku vide drukčije, to je česta pojava: svatko kvalitetu života procjenjuje kroz vlastitu tugu [1].
+
+Nekima pomaže i nešto učiniti, a ne samo razmišljati. Kratki upitnik ispod predlaže nekoliko načina oproštaja, bez ocjene koji je ispravan.
+
+> [!ALAT] oprostaj
 
 ## Kada potražiti stručnu podršku
 

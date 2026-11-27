@@ -29,7 +29,7 @@ sources:
     accessed_on: 2026-11-27
   - claim: "Za putovanje unutar EU-a pas, mačka ili pitoma vretica treba mikročip, cijepljenje protiv bjesnoće obavljeno nakon čipiranja, najmanje 12 tjedana starosti pri prvom cijepljenju, 21 dan čekanja nakon prvog cijepljenja i europsku putovnicu za kućne ljubimce"
     title: "Putovanje s kućnim ljubimcima i drugim životinjama u EU-u"
-    url: "https://europa.eu/youreurope/citizens/travel/carry/animal-plant/index_hr.htm"
+    url: "https://europa.eu/youreurope/citizens/travel/carry/pets-and-other-animals/index_hr.htm"
     publisher: "Europska unija, Your Europe"
     accessed_on: 2026-11-27
   - claim: "Osnovna cjepiva za pse: CDV, CAV, CPV; bjesnoća i leptospiroza osnovne gdje su endemske; dodatna: Bordetella, CPiV, Borrelia, CIV, Leishmania; štenad od 6–8 tjedana svaka 2–4 tjedna do 16+ tjedana, zatim sa 26+ tjedana; odrasli ne češće od svake 3 godine, leptospiroza godišnje; bjesnoća prema propisu; reakcije tipa I unutar minuta do sat vremena (Squires, Crawford, Marcondes, Whitley)"
@@ -92,6 +92,16 @@ sources:
     url: "https://veterina-ivana-pilic.hr/cjenik/"
     publisher: "Specijalistička veterinarska praksa Pilić, Split"
     accessed_on: 2026-11-27
+  - claim: "Odluka ministra poljoprivrede, šumarstva i ribarstva od 20. 2. 2025., na snazi od 1. 3. 2025., zamjenjuje odluku od 22. 10. 2024.; troškove plaća subjekt (točka II.); točka 20. Priloga, stupac „Cijena bez PDV-a”, po životinji: označavanje mikročipom 12,90 €; putovnica za kućnog ljubimca 10,06 €; cijepljenje protiv bjesnoće, dehelmintizacija i upis u registar i putovnicu 25,00 €"
+    title: "Odluka o visini i opsegu naknada za troškove provedbe propisanih mjera iz područja veterinarstva, evidencija i dokumentacije (20. 2. 2025.)"
+    url: "https://veterinarstvo.mps.hr/UserDocsImages/AHL/Odluka%20o%20visini%20i%20opsegu%20naknade%20za%20tro%C5%A1kove%20provedbe%20propisanih%20mjera%20iz%20podru%C4%8Dja%20veterinarstva%2020.02.2025.pdf"
+    publisher: "Ministarstvo poljoprivrede, šumarstva i ribarstva"
+    accessed_on: 2026-11-27
+  - claim: "Na popisu odluka o naknadama najnovija je Odluka od 20. 2. 2025. s izmjenama od 5. 5., 25. 7. i 21. 10. 2025.; izmjene otvorene s te stranice ne mijenjaju točku 20. (cijepljenje i označavanje kućnih ljubimaca); novije odluke na popisu nema"
+    title: "Troškovi u veterinarstvu"
+    url: "https://veterinarstvo.mps.hr/hr/naslovna/troskovi-u-veterinarstvu-i-naknade-stete/troskovi-u-veterinarstvu/"
+    publisher: "Ministarstvo poljoprivrede, šumarstva i ribarstva – Uprava za veterinarstvo i sigurnost hrane"
+    accessed_on: 2026-11-27
 ---
 U Hrvatskoj je za psa obvezno samo cijepljenje protiv bjesnoće, i to za svakog psa starog 90 dana ili više [1]. Ostala cjepiva preporučuju veterinarske smjernice, ne propis. U cjenicima koje smo otvorili 27. studenoga 2026. cijepljenje protiv bjesnoće stoji 31,25 € ili 32,00 €, a cijepljenje protiv zaraznih bolesti od 12,50 do 31,00 €.
 
@@ -101,13 +111,13 @@ Ovaj tekst ne zamjenjuje veterinara. Koja cjepiva tvoj pas treba i kada, procjen
 
 - Cijepljenje protiv bjesnoće obvezno je za svakog psa od 90. dana starosti, a ponavlja se najkasnije do datuma upisanog u putovnicu [1].
 - Pas mora biti čipiran najkasnije 90 dana nakon štenjenja ili prije cijepljenja, a pri cijepljenju protiv bjesnoće tretira se i protiv trakavice [1].
-- Naknadu za cijepljenje protiv bjesnoće s dehelmintizacijom i upisom određuje ministar: 25,00 € [4]. U sedam cjenika piše 31,25 €, u jednom 32,00 € [17].
+- Cijenu cijepljenja protiv bjesnoće s dehelmintizacijom i upisom određuje ministar: 25,00 € bez PDV-a [18], odnosno 31,25 € s PDV-om [15]. Tako piše u sedam cjenika, u jednom 32,00 € [17].
 - Osnovna cjepiva prema smjernicama WSAVA-e iz 2024. štite od štenećaka, zaraznog hepatitisa (adenovirus tip 1) i parvoviroze [6].
 - Cijepljenje protiv zaraznih bolesti stoji od 12,50 € [9] do 31,00 € [17], a negdje se cjepivo naplaćuje zasebno [14].
 
 ## Što je u Hrvatskoj obvezno
 
-Obvezno je cijepljenje protiv bjesnoće. Propisuje ga Naredba o provedbi i financiranju mjera sprječavanja, kontrole i nadziranja bolesti životinja na području Republike Hrvatske, objavljena u [Narodnim novinama 1/2023](https://narodne-novine.nn.hr/clanci/sluzbeni/2023_01_1_10.html), čije se mjere provode od 1. siječnja 2023. [1]. Ministar ju je donio na temelju članka 18. Zakona o zdravlju životinja [3].
+Obvezno je cijepljenje protiv bjesnoće. Propisuje ga Naredba o provedbi i financiranju mjera sprječavanja, kontrole i nadziranja bolesti životinja, objavljena u [Narodnim novinama 1/2023](https://narodne-novine.nn.hr/clanci/sluzbeni/2023_01_1_10.html) [1]. Ministar ju je donio na temelju članka 18. Zakona o zdravlju životinja [3].
 
 Zasebnu naredbu za 2026. nismo našli. Naredba je izmijenjena 2025. (NN 107/2025), ali samo u člancima o lisicama i bolesti plavog jezika; članak o cijepljenju pasa ostao je isti [2].
 
@@ -121,17 +131,19 @@ Zasebnu naredbu za 2026. nismo našli. Naredba je izmijenjena 2025. (NN 107/2025
 
 Prema članku 9., pas se pri cijepljenju protiv bjesnoće mora tretirati i protiv trakavice Echinococcus, odobrenim veterinarskim pripravkom [1]. Troškove obiju mjera snosi vlasnik [1].
 
-U članku 7. nema izuzeća iz zdravstvenih razloga ni odredbe o titru protutijela umjesto cijepljenja [1]. Ako ti veterinar zbog bolesti psa savjetuje odgodu, pitaj ga što to znači za rok u putovnici.
+U članku 7. nema izuzeća iz zdravstvenih razloga ni odredbe o titru protutijela umjesto cijepljenja [1]. Ako ti veterinar savjetuje odgodu, pitaj što to znači za rok u putovnici.
 
 Za mačke i pitome vretice Naredba cijepljenje protiv bjesnoće samo preporučuje [1]. Više o tome je u članku [Cijepljenje mačke: cijena i raspored](/vodic/cijepljenje-macke-cijena-i-raspored).
 
 ## Koliko košta cijepljenje protiv bjesnoće
 
-Iznos određuje ministar odlukom [1][3]. Prema Odluci ministra od 20. lipnja 2024., na snazi od 1. srpnja 2024., cijepljenje protiv bjesnoće, dehelmintizacija i upis u registar i putovnicu stoje 25,00 € po životinji [4].
+Iznos određuje ministar odlukom [1][3]. Važeća je [Odluka o visini i opsegu naknada](https://veterinarstvo.mps.hr/UserDocsImages/AHL/Odluka%20o%20visini%20i%20opsegu%20naknade%20za%20tro%C5%A1kove%20provedbe%20propisanih%20mjera%20iz%20podru%C4%8Dja%20veterinarstva%2020.02.2025.pdf) za propisane veterinarske mjere, koju je ministar poljoprivrede, šumarstva i ribarstva donio 20. veljače 2025., a na snazi je od 1. ožujka 2025. [18]. Cijepljenje protiv bjesnoće, dehelmintizacija i upis u registar i putovnicu prema njoj stoje 25,00 € po životinji, bez PDV-a [18].
 
-U sedam cjenika ta stavka stoji 31,25 € [9][10][11][12][13][14][16], a u splitskoj praksi Pilić 32,00 € [17]. Veterinarska stanica Daruvar za psa upućuje na cjenik Ministarstva, a za mačku istu stavku prikazuje kao 25,00 € bez PDV-a i 31,25 € s PDV-om [15]. Iz same Odluke nismo mogli pročitati odnosi li se iznos na cijenu bez PDV-a.
+Isti je iznos bio i u Odluci od 20. lipnja 2024. [4], a kasnije izmjene stavku nisu dirale [19].
 
-Uz to se ponekad plaćaju putovnica i čip. Odluka za putovnicu navodi 10,06 €, a za čip 12,90 € [4]; u cjenicima putovnica stoji 12,57 do 12,58 € [9][11][12][13], a čip od 12,15 € [9] do 28,70 € [13]. Više o čipu piše u članku [Čipiranje psa i mačke: cijena i postupak](/vodic/cipiranje-psa-i-macke-cijena-i-postupak).
+S PDV-om to je 31,25 €: Veterinarska stanica Daruvar stavku prikazuje upravo kao 25,00 € bez PDV-a i 31,25 € s PDV-om [15]. Toliko piše u sedam cjenika [9][10][11][12][13][14][16], a u praksi Pilić 32,00 € [17].
+
+Ista Odluka određuje i naknadu za čip, 12,90 €, i za putovnicu, 10,06 €, obje bez PDV-a [18]. U cjenicima putovnica stoji 12,57 do 12,58 € [9][11][12][13], a čip najčešće 16,12 do 16,13 € [10][12][14]. Više o čipu piše u članku [Čipiranje psa i mačke: cijena i postupak](/vodic/cipiranje-psa-i-macke-cijena-i-postupak).
 
 ## Koja su cjepiva osnovna, a koja dodatna
 
@@ -145,7 +157,7 @@ Smjernice Svjetskog udruženja veterinara malih životinja (WSAVA) iz 2024. dije
 | Dodatna | Bordetella bronchiseptica, parainfluenca pasa (CPiV) | prema procjeni rizika |
 | Dodatna, uža dostupnost | lajmska borelioza, influenca pasa, lišmanioza | prema procjeni rizika i kraju |
 
-Izvor tablice: WSAVA [6]. O dodatnim cjepivima, piše WSAVA, odlučuje se u razgovoru veterinara i vlasnika [6].
+O dodatnim cjepivima, piše WSAVA, odlučuje se u razgovoru veterinara i vlasnika [6].
 
 ## Kako WSAVA opisuje raspored
 
@@ -156,7 +168,7 @@ WSAVA daje okvir, a ne raspored za tvog psa [6]. U Hrvatskoj uz njega vrijede ro
 - **Odrasli pas s nepoznatom poviješću:** jedna doza osnovnog cjepiva i cjepiva protiv bjesnoće, a za leptospirozu dvije doze u razmaku od 2 do 4 tjedna pa svake godine [6].
 - **Bjesnoća:** razmak određuje propis, a gdje ga nema, uputa cjepiva; cjepiva obično vrijede jednu ili tri godine [6].
 
-Zašto je štenetu važno doći do kraja serije: parvoviroza najčešće pogađa necijepljene i nepotpuno cijepljene pse, a najosjetljiviji su psi od oko 6 tjedana do 6 mjeseci [7].
+Zašto štene treba završiti seriju: parvoviroza najčešće pogađa necijepljene i nepotpuno cijepljene pse, a najosjetljiviji su psi od oko 6 tjedana do 6 mjeseci [7].
 
 ## Koliko stoji cijepljenje protiv zaraznih bolesti
 
@@ -176,7 +188,7 @@ Ova stavka najviše se razlikuje od mjesta do mjesta:
 
 To su primjeri, a ne prosjek ni preporuka; stranice bez datuma pročitali smo 27. 11. 2026. Daruvar izričito piše da je cjepivo uključeno i da štiti od hepatitisa, štenećaka i leptospiroze [15]. Đakovo u cjeniku robe zasebno navodi doze kombiniranih cjepiva za pse, od 6,64 do 8,00 € [14]; za ostale cjenike ne piše je li cjepivo u cijeni.
 
-Rijeka ima i zajedničku stavku za bjesnoću i zarazne bolesti, 50,00 € [16]. Pregled je obično posebna stavka, primjerice 20,00 € u Daruvaru [15], 30,00 € u Đakovu [14] i 40,00 € u Rijeci [16]. Kad zoveš, pitaj koliko će stajati sve zajedno: pregled, cjepivo i upis.
+Rijeka ima i zajedničku stavku za obje vrste cijepljenja, 50,00 € [16]. Pregled je obično posebna stavka, primjerice 20,00 € u Daruvaru [15], 30,00 € u Đakovu [14] i 40,00 € u Rijeci [16]. Kad zoveš, pitaj koliko će stajati sve zajedno: pregled, cjepivo i upis.
 
 ## Što ako putuješ sa psom
 
@@ -193,7 +205,7 @@ Ozbiljna reakcija na cjepivo može početi nekoliko minuta do nekoliko sati nako
 - [ ] oteknuće oko očiju, na njušci ili licu
 - [ ] uporno povraćanje ili proljev
 
-Blago crvenilo, oteklina na mjestu uboda, umor, slabiji apetit i blago povišena temperatura česti su; ako traju dulje od 24 sata, nazovi veterinara [8]. Kvržica na mjestu uboda trebala bi se smanjiti u 14 dana; javi se ako traje dulje od tri tjedna, raste ili sve više boli [8].
+Blago crvenilo i oteklina na mjestu uboda, umor, slabiji apetit i blaga temperatura česti su; ako traju dulje od 24 sata, nazovi veterinara [8]. Kvržica na mjestu uboda trebala bi se smanjiti u 14 dana; javi se ako traje dulje od tri tjedna, raste ili sve više boli [8].
 
 Necijepljeno ili nepotpuno cijepljeno štene koje povraća, ima proljev (osobito krvav), ne jede i klonulo je treba odmah veterinaru [7]. Pse za koje se sumnja da imaju parvovirozu treba odmah odvojiti od drugih pasa [7], pa ambulantu nazovi prije dolaska.
 
@@ -213,7 +225,7 @@ Cijepljenje nakon isteka roka smatra se prvim, a u putovnicu se ponovno upisuje 
 
 ### Je li cijena cijepljenja protiv bjesnoće svugdje ista?
 
-Gotovo. Naknadu određuje ministar, a Odluka od 1. srpnja 2024. navodi 25,00 € [4]; u osam cjenika s iznosom stavka stoji 31,25 € ili 32,00 € [9][17].
+Gotovo. Ministar ju je Odlukom od 20. veljače 2025. odredio na 25,00 € bez PDV-a [18], što je s PDV-om 31,25 € [15]. Toliko stoji u sedam cjenika, a u jednom 32,00 € [17].
 
 ### Treba li odrasli pas svake godine sva cjepiva?
 

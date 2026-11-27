@@ -74,6 +74,11 @@ sources:
     url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_11_129_1954.html"
     publisher: "Narodne novine"
     accessed_on: 2026-11-26
+  - claim: "Na Klinici za unutarnje bolesti i Klinici za kirurgiju, ortopediju i oftalmologiju Veterinarskog fakulteta u Zagrebu 2022. eutanazirano je 379 pasa i mačaka; vlasnici 58 % (220/379) odabrali su skupno neškodljivo zbrinjavanje lešine, 5,5 % (21/379) krematorij Pet Memo, a 5,3 % (20/379) preuzelo je tijelo na vlastitu odgovornost"
+    title: "Lulić, E., Musulin, A., Brkljačić, M. (2025.): Eutanazija – viša sila ili nužni zahvat? Veterinar 63(1)"
+    url: "https://hrcak.srce.hr/file/478637"
+    publisher: "Veterinar (Hrčak – portal hrvatskih znanstvenih i stručnih časopisa)"
+    accessed_on: 2026-11-27
 ---
 Jedinstvene cijene nema: svaku stavku naplaćuje drugi pružatelj, prema vlastitom cjeniku. Prema cjenicima koje smo pročitali 26. studenoga 2026., zbrinjavanje tijela preko veterinara stoji od 37,50 €, skupno kremiranje od 38,49 €, a pojedinačno od 46,45 € do 331,81 €, ovisno o težini [1][8][10]. Uspavljivanje, urna, mjesto na groblju i spomen zasebne su stavke, i nijedna osim zbrinjavanja tijela nije obvezna.
 
@@ -84,6 +89,12 @@ Jedinstvene cijene nema: svaku stavku naplaćuje drugi pružatelj, prema vlastit
 - Pojedinačno kremiranje stoji od 46,45 € do 331,81 €, a skupno od 38,49 € do 185,00 € [1][5].
 - Urna je negdje u cijeni, a negdje se kupuje zasebno, od 25,88 € [2][5].
 - Mjesto za urnu na groblju za ljubimce počinje od 66,36 € za godinu dana u Zagrebu [1].
+
+> [!BROJKE] Troškovi u brojkama
+> - **37,50 €** najniža objavljena cijena zbrinjavanja tijela preko veterinara [8][10]
+> - **38,49 €** najniža cijena skupnog kremiranja, ljubimac do 2 kg [1]
+> - **331,81 €** najviša cijena pojedinačnog kremiranja, pas teži od 50 kg [1]
+> - **5,60 €** odjava iz upisnika u tri cjenika [8][9][10]
 
 ## Tko određuje cijene i zašto se razlikuju?
 
@@ -107,6 +118,9 @@ U cjeniku iz Osijeka i iz Zeline uz cijene stoji sidrena cijena na dan 10. 9. 20
 Dolazak veterinara izvan radnog vremena posebna je stavka: Veterina Branimir za dolazak dežurnog veterinara navodi 100 € [9]. Kako postupak izgleda, piše u članku [Uspavljivanje psa: cijena i postupak](/vodic/uspavljivanje-psa-cijena).
 
 „Zbrinjavanje” ovdje znači da tijelo ostaje kod veterinara i da se ne vraća pepeo. Uginuće označenog psa, mačke ili pitome vretice moraš prijaviti u roku od sedam dana [12].
+
+> [!CINJENICA] Što biraju drugi vlasnici?
+> Na dvije klinike Veterinarskog fakulteta u Zagrebu 2022. je uspavano 379 pasa i mačaka. Vlasnici 58 % njih odabrali su skupno zbrinjavanje preko veterinara, 5,5 % krematorij, a 5,3 % preuzelo je tijelo sami [14].
 
 ## Koliko stoji preuzimanje tijela i kremiranje?
 

@@ -44,6 +44,11 @@ sources:
     url: "https://theconversation.com/profound-grief-for-a-pet-is-normal-how-to-help-yourself-or-a-friend-weather-the-loss-of-a-beloved-family-member-195099"
     publisher: "The Conversation (Melissa Starling, University of Sydney)"
     accessed_on: 2026-11-26
+  - claim: "Izraz nepriznata tuga (disenfranchised grief) skovao je dr. Kenneth Doka u knjizi Disenfranchised Grief: Recognizing Hidden Sorrow iz 1989.; među primjerima nepriznate tuge navodi se smrt ljubimca"
+    title: "Disenfranchised grief (Research Starters)"
+    url: "https://www.ebsco.com/research-starters/psychology/disenfranchised-grief"
+    publisher: "EBSCO"
+    accessed_on: 2026-11-27
 ---
 Prijatelju koji tuguje za ljubimcem pomažeš s tri stvari: priznaš da je gubitak stvaran, učiniš nešto konkretno i ostaneš uz njega dulje od prvog tjedna. Tugu ne možeš skratiti. Možeš učiniti da je ne nosi sam.
 
@@ -65,6 +70,9 @@ Nepriznatost dolazi i iznutra. Čovjek tugu može uskratiti sam sebi, tako da je
 
 U anketi britanske udruge RSPCA iz 2025. više od polovice vlasnika reklo je da nije našlo podršku koja im je trebala, a 28 % nije znalo kome se obratiti [4]. Tvoja prisutnost zato nije sitnica.
 
+> [!CINJENICA] Jeste li znali?
+> Izraz nepriznata tuga uveo je 1989. Kenneth Doka, u knjizi „Disenfranchised Grief: Recognizing Hidden Sorrow”. Smrt ljubimca i danas se navodi kao jedan od tipičnih primjera takve tuge [8].
+
 ## Što učiniti kada?
 
 Raspored u tablici naš je prijedlog. Izvori ne propisuju dane; kažu da pomoć treba biti konkretna i da treba trajati.
@@ -84,6 +92,8 @@ Prvi dan reci da ti je žao i ništa ne traži zauzvrat. Ne moraš razumjeti kol
 Poruka je dovoljna. Autorica s australskog sveučilišta, koja je pisala o gubitku vlastitog psa, kaže da nije imala snage odgovoriti na poruke, ali da joj je svaka značila [7].
 
 Ne ispituj kako se dogodilo, osobito ako je ljubimac uspavan. Te su okolnosti vrlo osobne i pitanja mogu vratiti najteži trenutak [2]. Što točno napisati, naći ćeš u članku [Što reći nekome kome je uginuo ljubimac](/vodic/sto-reci-nekome-kome-je-uginuo-ljubimac).
+
+> [!ALAT] sucut
 
 ## Prvi tjedan: koja praktična pomoć stvarno pomaže?
 
@@ -119,6 +129,9 @@ U ovom razdoblju najlakše je pogriješiti. Evo zamjena za najčešće rečenice
 Vlastiti gubitak spominji oprezno. Može pokazati da razumiješ, ali može i pojačati osjećaj izoliranosti, jer je iskustvo drugoga uvijek drukčije [7].
 
 Ne nagovaraj ga ni na velike promjene, poput selidbe ili novog ljubimca. Savjetnici ih u ovom razdoblju ne preporučuju [1].
+
+> [!SAVJET] Upiši podsjetnik
+> Odmah upiši u kalendar dva datuma: mjesec dana i godinu dana od gubitka. Tada će se rijetko tko drugi sjetiti javiti, a podrška treba i mjesecima poslije [1].
 
 ## Nakon mjesec dana: kako pomoći oko sjećanja?
 

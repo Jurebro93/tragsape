@@ -22,6 +22,11 @@ sources:
     url: "https://www.nature.com/articles/s41598-022-10341-6"
     publisher: "Scientific Reports (Nature Portfolio)"
     accessed_on: 2026-11-27
+  - claim: "Tablice života (VetCompass, 30.563 psa): očekivani vijek pri rođenju kastriranih ženki 11,98, kastriranih mužjaka 11,49, nekastriranih ženki 10,50 i nekastriranih mužjaka 10,58 godina; prednost ženki ovisi o kastraciji, a dobitak od nje veći je kod ženki; kastracija može biti i pokazatelj bolje skrbi vlasnika, pa te tablice treba čitati oprezno"
+    title: "Teng, K. T. i sur. (2022.): Life tables of annual life expectancy and mortality for companion dogs in the United Kingdom (puni tekst)"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9050668/"
+    publisher: "Scientific Reports (PubMed Central); autori s Royal Veterinary College"
+    accessed_on: 2026-11-27
 ---
 Psi u Ujedinjenoj Kraljevini u prosjeku dožive dvanaestak godina, ali razlika među pasminama je velika: medijan je 5,4 godine kod kavkaskog ovčara, a 15,4 kod lancashire heelera [1]. Sve brojke u ovom tekstu potječu iz dva objavljena britanska istraživanja, jer za Hrvatsku usporedivih podataka nema.
 
@@ -34,6 +39,12 @@ Brojka za pasminu govori o skupini pasa, ne o tvom psu. Koliko je zdrav tvoj pas
 - Psi kratke njuške žive najkraće: medijan 11,2 godine, naspram 12,8 kod pasa srednje duge njuške [1].
 - Među čestim pasminama najdulje žive jack russell terijer i jorkširski terijer, a najkraće francuski i engleski buldog [2][3].
 - Ženke u oba istraživanja žive nešto dulje od mužjaka [1][3].
+
+> [!BROJKE] Psi u brojkama
+> - **584.734** psa obuhvaćena su najvećim britanskim istraživanjem [1]
+> - **12,5 godina** medijan životnog vijeka svih pasa [1]
+> - **18,3 godine** dob do koje ugine 95 % pasa [1]
+> - **5,4 do 15,4 godine** raspon medijana od pasmine do pasmine [1]
 
 ## Odakle su brojke
 
@@ -104,6 +115,8 @@ Veličina se u podacima jasno vidi. Medijan je 12,7 godina za male, 12,5 za sred
 
 Velike i divovske pasmine često su pri dnu popisa. Medijan je 10,6 godina za njemačku dogu i rotvajlera, 10,1 za bernskog planinskog psa i 9,9 za irskog vučjaka [2]. Istraživanje ne utvrđuje uzrok, jer ne bilježi od čega su psi uginuli [1].
 
+> [!ALAT] psece-godine
+
 ## Kratka njuška, kraći život
 
 Psi kratke, plosnate njuške (brahicefalični psi) imaju medijan 11,2 godine, psi srednje duge njuške 12,8, a psi duge njuške 12,1 [1]. Najkraće žive srednje veliki psi kratke njuške, s medijanom 9,4 godine, a u toj je skupini samo jedna pasmina [1].
@@ -117,6 +130,9 @@ Oko 95 % pasa ugine do 18,3 godine, i kod čistokrvnih i kod mješanaca [1]. Pol
 Mješanci nisu uvijek dugovječniji. U istraživanju iz 2024. gotovo polovica pasmina (47,1 %) imala je dulji medijan od mješanaca, a četvrtina kraći [1].
 
 Brojke ne razdvajaju prirodnu smrt od eutanazije. Autori istraživanja iz 2022. upozoravaju da česta eutanazija može dati kraći očekivani vijek nego što bi bio bez nje [3]. Kastrirani psi u tom istraživanju imali su dulji očekivani vijek od nekastriranih, a ženke 11,41 godinu naspram 11,07 kod mužjaka [3].
+
+> [!CINJENICA] Prednost ženki vezana je uz kastraciju
+> Nekastrirane ženke imale su očekivani vijek pri rođenju 10,50 godina, a nekastrirani mužjaci 10,58, dakle gotovo isto. Razlika se vidi tek kod kastriranih: 11,98 godina kod ženki i 11,49 kod mužjaka. Autori upozoravaju da kastracija može biti i znak bolje skrbi vlasnika, pa te brojke treba čitati oprezno [4].
 
 Na koje promjene kod starijeg psa treba pripaziti i kada odmah zvati veterinara, opisano je u tekstu [znakovi da pas umire](/vodic/znakovi-da-pas-umire). Ako razmišljaš i o mački, isti podaci za mačke su u tekstu [koliko žive mačke](/vodic/koliko-zive-macke).
 

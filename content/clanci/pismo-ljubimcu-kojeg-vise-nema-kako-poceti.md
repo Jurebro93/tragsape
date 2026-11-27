@@ -44,6 +44,11 @@ sources:
     url: "https://www.cruse.org.uk/?p=976"
     publisher: "Cruse Bereavement Support"
     accessed_on: 2026-11-26
+  - claim: "Telefon vjetra u Ōtsuchiju (prefektura Iwate, Japan): nepovezana telefonska govornica koju je vrtlar Itaru Sasaki postavio u prosincu 2010. da ostane povezan s preminulim rođakom; za javnost otvorena 2011. nakon potresa i tsunamija; više od 30 000 posjetitelja"
+    title: "Wind phone"
+    url: "https://en.wikipedia.org/wiki/Wind_phone"
+    publisher: "Wikipedia"
+    accessed_on: 2026-11-27
 ---
 Pismo ljubimcu kojeg više nema počinje jednom običnom rečenicom, na primjer „Jutros sam opet krenuo po tvoju zdjelicu”. Ne treba ti ni uvod ni lijep stil. Pišeš ti njemu, svojim riječima, i nitko ga ne mora pročitati.
 
@@ -61,6 +66,9 @@ Pismo ti daje sugovornika. Ono što se u glavi vrti bez reda na papiru dobije po
 
 Pismo umrlome nije neobična ideja. U radu s ožalošćenima koristi se često i dio je više provjerenih terapijskih postupaka za produljeno tugovanje. Opisuje se kao način da simbolično nastaviš razgovor i preradiš osjećaje vezane uz gubitak [4].
 
+> [!CINJENICA] Telefon koji nije nikamo spojen
+> U japanskom gradiću Ōtsuchi stoji telefonska govornica s telefonom koji nije spojen ni na kakvu liniju. Vrtlar Itaru Sasaki postavio ju je 2010. da bi „razgovarao” s preminulim rođakom, a otkad je 2011., nakon potresa i tsunamija, otvorena za javnost, posjetilo ju je više od 30 000 ljudi [8].
+
 Isto predlažu i savjetovališta veterinarskih fakulteta. Virginia-Maryland među načinima sjećanja navodi pisma ljubimcu i dnevnik o gubitku [6]. Savjetnici Sveučilišta Ohio State pišu da nekim vlasnicima pomaže pismo isprike, u kojem napišu osjećaje s kojima se bore [5].
 
 ## Što istraživanja stvarno kažu?
@@ -76,6 +84,12 @@ Kod tugovanja je slika drukčija. Isti pregled navodi da ožalošćenima pisanje
 Za samo pismo umrlome vrijedi slično. Koristi se široko, ali istraživanja još nisu utvrdila koliko pomaže samo po sebi, izvan terapije [4].
 
 Zaključak je skroman: pismo je jeftin i siguran pokušaj koji nekim ljudima pomaže. Ne možemo ti obećati da će pomoći i tebi.
+
+> [!BROJKE] Istraživanja pisanja u brojkama
+> - **46** studenata u ranom pokusu Jamesa Pennebakera, 15 minuta dnevno četiri dana zaredom [2]
+> - **68** ožalošćenih studenata u pokusu s usmjerenim pisanjem [3]
+> - **3 × 20 minuta** pisanja u tjedan dana u tom pokusu [3]
+> - **1–2 mjeseca** nakon teškog događaja Pennebaker savjetuje pričekati s detaljnim pisanjem [2]
 
 ## Kada pisati i koliko dugo?
 
@@ -144,6 +158,8 @@ Ako te zanima otkud slika o mjestu na kojem ljubimci čekaju, pročitaj [Dugin m
 - [ ] Uništi ga, ako je bilo samo za tebe.
 
 Ako želiš kraći oblik, jedna rečenica umjesto cijelog pisma, pogledaj [primjere posveta](/vodic/posveta-za-psa-primjeri). Druge načine sjećanja skupili smo u članku [Kako napraviti spomen za psa](/vodic/spomen-za-psa-ideje).
+
+> [!ALAT] posveta
 
 Pisma možeš čuvati i na Tragu šape. Uz paket Memorijal svako pismo dobiva datum, a sam biraš je li privatno, pa ga vidiš samo ti, ili stoji na stranici spomena. Papir i bilježnica služe jednako dobro.
 

@@ -60,6 +60,12 @@ Pojedinačno kremiranje mačke od tri do sedam kilograma stoji od 99,54 € do 1
 - Pepela ostaje otprilike 4 % težine, što je za mačku od 4 kg oko 160 grama [5].
 - Kremiranje traje jedan do tri sata, a urna se vraća u prosjeku za četiri tjedna [5].
 
+> [!BROJKE] Kremiranje mačke u brojkama
+> - **53,09 €** najniža cijena pojedinačnog kremiranja, mačka od 1 do 3 kg [1]
+> - **5 kg** prag nakon kojeg mačka u oba cjenika ulazi u viši razred [1][4]
+> - **160 g** pepela otprilike ostaje od mačke od 4 kg [5]
+> - **4 tjedna** u prosjeku se čeka urna [5]
+
 ## Koliko stoji kremiranje mačke?
 
 Cijenu određuje krematorij, a ne država. Pravilnik propisuje samo da je naknada „regulirana tržišnim odnosima” i da je cjenik javno dostupan [8]. Cjenik s težinskim razredima našli smo kod dva krematorija.
@@ -146,6 +152,9 @@ Prve sate nakon uginuća opisuje članak [Uginula mi je mačka: što učiniti](/
 - [ ] Što biva s pepelom nakon skupnog kremiranja?
 
 Na pitanje o praćenju oba krematorija imaju objavljen odgovor. Spomengaj tijelo označava serijskim brojem i identifikacijskim kamenom, a Pet Memo navodi da oznake provjerava četiri puta [3][5].
+
+> [!CINJENICA] Pravila praćenja dolaze izvana
+> Pet Memo navodi da je postupke praćenja i sustav obilježavanja ostataka preuzeo od najvećeg međunarodnog udruženja krematorija za kućne ljubimce, a na stranici se predstavlja kao član udruženja IAOPCC [5].
 
 Ako umjesto urne kod kuće razmišljaš o trajnom mjestu, pogledaj [Groblje za kućne ljubimce](/vodic/groblje-za-kucne-ljubimce). Sve mogućnosti nakon uginuća opisuje [Što učiniti kad ljubimac ugine](/vodic/sto-uciniti-kad-ljubimac-ugine).
 

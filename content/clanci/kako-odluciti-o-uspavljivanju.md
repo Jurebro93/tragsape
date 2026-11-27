@@ -63,6 +63,9 @@ Druga zabluda je da će ljubimac mirno umrijeti kod kuće. Bez pomoći tek mali 
 
 Zato je preporuka početi razmišljati rano, dok je glava još koliko-toliko bistra. Odluke donesene usred krize lako se čine iznuđenima [1].
 
+> [!VAZNO] Kada ne čekati
+> Bol koju ništa ne ublažava ili izrazito teško disanje sami po sebi znače vrlo lošu kvalitetu života [1]. Tada ne čekaj da kalendar ili ljestvica pokažu isto: nazovi svog veterinara, a noću ili vikendom najbližu dežurnu ambulantu. Kako dežurstva rade, piše u članku [Hitna veterinarska pomoć noću i vikendom](/vodic/hitna-veterinarska-pomoc-nocu-i-vikendom-doplate).
+
 ## Pitanja koja pomažu
 
 Američka veterinarska udruga predlaže da si postaviš nekoliko jednostavnih pitanja [4]:
@@ -102,6 +105,12 @@ Ljestvica nije presuda. Više vrijedi kao način da promjene pratiš kroz vrijem
 
 I jedna stavka može prevagnuti: jaka bol znači lošu kvalitetu života čak i kad je sve ostalo još dobro [1].
 
+> [!BROJKE] Ljestvica kvalitete života u brojkama
+> - **7** kategorija ima ljestvica HHHHHMM [2]
+> - **1–10** ocjena za svaku kategoriju, a 10 je najbolje [3]
+> - **više od 35** bodova ukupno upućuje na još prihvatljivu kvalitetu života [3]
+> - **2004.** ljestvica je prvi put objavljena [2]
+
 ## Tri jednostavne navike
 
 1. **Kalendar dobrih i loših dana.** Dovoljno je nasmiješeno ili tužno lice na svakom danu. Kad loših bude više nego dobrih, vrijeme je za razgovor s veterinarom [1]. Isto preporučuju i veterinari specijalizirani za mačke: oznake „dobar”, „loš” ili „prosječan” dan daju trezveniju sliku od sjećanja [6].
@@ -118,6 +127,9 @@ Isti izvor dodaje još jedno: o kvaliteti života dobro je razgovarati mnogo pri
 - Ako nastavimo s njegom kod kuće, možemo li bol i tjeskobu držati pod kontrolom i što ja pritom moram raditi? [1]
 - Po kojim ću znakovima znati da je vrijeme? Dogovor unaprijed kasnije služi kao oslonac [4].
 - Kako izgleda sam postupak i koliko stoji? O tome više u članku [Uspavljivanje psa: cijena, postupak i što slijedi nakon toga](/vodic/uspavljivanje-psa-cijena).
+
+> [!SAVJET] Ponesi zapise
+> Na pregled ponesi kalendar dobrih i loših dana i ljestvice koje su ukućani ispunili. Pitanja zapiši unaprijed: u takvom razgovoru lako je zaboraviti što si htio pitati.
 
 ## Sumnja i krivnja su normalne
 

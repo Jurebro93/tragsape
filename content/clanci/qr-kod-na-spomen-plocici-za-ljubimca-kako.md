@@ -59,6 +59,11 @@ sources:
     url: "https://help.archive.org/help/save-pages-in-the-wayback-machine/"
     publisher: "Internet Archive"
     accessed_on: 2026-11-26
+  - claim: "QR znači quick response; oznake za određivanje položaja od kvadrata pokazuju čitaču gdje je kod i kako je okrenut, pod bilo kojim kutom od 360°; kod se mogao čitati više od 10 puta brže od drugih kodova; Denso Wave objavio je QR kod 1994."
+    title: "History of QR Code"
+    url: "https://www.qrcode.com/en/history/"
+    publisher: "Denso Wave (QRcode.com)"
+    accessed_on: 2026-11-27
 ---
 QR kod na spomen-pločici je slika u kojoj je zapisana adresa spomen-stranice: tko uperi kameru mobitela u kod, otvori stranicu s fotografijama i pričom ljubimca. Kod sam ne sadrži ni fotografije ni tekst, samo adresu. Zato pločica radi dok je kod čitljiv i dok stranica na toj adresi postoji.
 
@@ -77,6 +82,9 @@ QR kod je dvodimenzionalni kod od crnih i bijelih kvadratića koji se zovu modul
 Kamera mobitela prepozna kod, pročita adresu i ponudi da je otvori. Za sam kod ne treba prijava ni naknada dok se poštuje standard [4]. To znači da kod nema „rok trajanja”: dok se vidi, čita se.
 
 Kod ima ugrađeno ispravljanje pogrešaka, koje vraća podatke ako je dio koda prljav ili oštećen [3]. Postoje četiri razine, koje vraćaju otprilike 7, 15, 25 i 30 % zapisa [1]. Za okruženja u kojima se kod prlja Denso Wave preporučuje dvije najviše razine [3].
+
+> [!CINJENICA] Zašto se kod čita i ukoso
+> Naziv QR dolazi od engleskog „quick response”, brz odgovor. Kvadratne oznake na kodu pokazuju čitaču gdje je kod i kako je okrenut, pa se čita pod bilo kojim kutom, a Denso Wave navodi da se od početka čitao više od deset puta brže od drugih kodova [11].
 
 ## Što Trag šape nudi, a što ne?
 
@@ -112,6 +120,12 @@ Oko koda mora ostati prazan rub širok četiri modula sa svih strana, bez teksta
 
 Duljina adrese također igra ulogu. Što je više podataka u kodu, to kod ima više modula i mora biti veći [5]; verzije idu od 21 × 21 do 177 × 177 modula [1]. Adresa spomena je kratka, pa su moduli razmjerno krupni i lakše se graviraju.
 
+> [!BROJKE] QR kod na pločici u brojkama
+> - **2 × 2 cm** najmanja veličina koju pročita većina čitača [5]
+> - **4 modula** širok prazan rub sa svih strana koda [2]
+> - **10 : 1** omjer udaljenosti skeniranja i širine koda [5]
+> - **25 %** zapisa vraća razina ispravljanja Q, kojom je izrađen kod spomena [1]
+
 ## Koji materijal i koje graviranje odabrati?
 
 Odaberi materijal na kojem kod ispada taman na svijetloj, mat podlozi. Denso Wave preporučuje crni kod na bijeloj podlozi, a svaku drugu kombinaciju savjetuje ispitati [4]. Sjaj, tekstura i izloženost vremenu utječu na čitljivost [5], a odsjaj može ometati čitanje [4].
@@ -137,6 +151,8 @@ Na tamnoj anodiziranoj pločici laser ostavlja svijetli trag [7]. Dogovori s gra
 6. Uz kod ugraviraj ime i godine, po želji i kratku posvetu.
 
 Za tekst uz kod pomoći će ti primjeri u članku [Posveta za psa: 40 primjera](/vodic/posveta-za-psa-primjeri). Ako pločica ide na grob, prvo provjeri pravila groblja; više u članku [Groblje za kućne ljubimce](/vodic/groblje-za-kucne-ljubimce).
+
+> [!ALAT] posveta
 
 ## Što ako stranica jednog dana nestane?
 

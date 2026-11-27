@@ -44,6 +44,11 @@ sources:
     url: "https://spomengaj.hr/wp-content/uploads/2026/11/Spomengaj-Cjenik-16112026-Sidrene-cijene-artikli.csv"
     publisher: "Spomengaj – gradsko groblje i krematorij za kućne ljubimce, Zagreb"
     accessed_on: 2026-11-26
+  - claim: "Tijelo se kremira na temperaturi od 760 do 1150 °C; suhi ulomci kostiju zatim se usitnjavaju u stroju (kremulatoru); kremirani ostaci uglavnom su suhi kalcijevi fosfati s nešto minerala"
+    title: "Cremation"
+    url: "https://en.wikipedia.org/wiki/Cremation"
+    publisher: "Wikipedia"
+    accessed_on: 2026-11-27
 ---
 Kod pojedinačnog kremiranja ljubimac se kremira sam i pepeo ti se vraća u urni. Kod skupnog se kremira zajedno s drugim životinjama i pepeo se ne vraća [1][3]. Sve ostalo, od cijene do rokova, proizlazi iz te razlike.
 
@@ -54,6 +59,12 @@ Kod pojedinačnog kremiranja ljubimac se kremira sam i pepeo ti se vraća u urni
 - Skupno je prema dva objavljena cjenika jeftinije za 20 do 46 €, ovisno o težini i krematoriju [2][4].
 - Skupno kremiranje u tim cjenicima nije dostupno za velike pse: Spomengaj ga navodi do 30 kg, a Pet Memo do 20 kg [2][4].
 - Odluka se donosi prije kremiranja i ne može se naknadno promijeniti.
+
+> [!BROJKE] Razlika u brojkama
+> - **20–46 €** koliko je skupno kremiranje jeftinije prema dva objavljena cjenika [2][4]
+> - **30 kg** najveća težina za skupno kremiranje u Spomengaju; u Pet Memu je to 20 kg [2][4]
+> - **4 puta** Pet Memo provjerava oznake kod individualnog kremiranja [5]
+> - **4 tjedna** u prosjeku se čeka urna za manjeg ljubimca [5]
 
 ## U čemu je razlika između pojedinačnog i skupnog kremiranja?
 
@@ -89,6 +100,9 @@ Pet Memo navodi da individualne kremacije obavlja isključivo jednu po jednu i d
 
 Udruga PLPA pritom iskreno navodi granicu: i kad se kremira jedna po jedna životinja, neizbježno ostaje vrlo mala količina pepela od prethodne kremacije, unatoč svem trudu da se sve prikupi [6]. Prije sljedeće kremacije treba prikupiti sav pepeo koji se može prikupiti [6].
 
+> [!CINJENICA] Pepeo zapravo nije pepeo
+> Kremiranje tijelo svodi na ulomke kostiju, koji se zatim usitnjavaju [6]. Prema općem opisu kremiranja to se događa na 760 do 1150 °C, a ono što ostane u urni uglavnom su suhi kalcijevi fosfati iz kostiju [8].
+
 ## Postoji li nešto između: „pregrađeno” kremiranje?
 
 U nekim zemljama postoji i treća vrsta. PLPA je naziva „partitioned”: više životinja je u peći istodobno, odvojene su pregradama i pepeo se vraća, ali uz djelomično miješanje koje se ne može potpuno isključiti [6].
@@ -118,6 +132,9 @@ Sve stavke po težinskim razredima nalaze se u člancima [Kremiranje psa: cijena
 ## Kako odlučiti što je za tebe?
 
 Odluči prema jednom pitanju: želiš li pepeo. Ako želiš urnu kod kuće, mjesto na groblju ili mogućnost da pepeo položiš negdje sam, treba ti pojedinačno kremiranje.
+
+> [!VAZNO] Skupno se ne može poništiti
+> Nakon skupnog kremiranja pepeo se više ne može odvojiti [5]. Ako dvojiš, reci krematoriju da ti treba dan za odluku.
 
 Skupno ima smisla ako ti pepeo nije važan, a želiš da ljubimac bude kremiran, a ne zbrinut kao otpad. Pet Memo navodi da bez usluge krematorija veterinar nakon eutanazije predaje ostatke u kafileriju, gdje se obrađuju s drugim životinjskim otpadom [5].
 

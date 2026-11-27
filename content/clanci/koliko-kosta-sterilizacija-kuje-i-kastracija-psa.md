@@ -87,6 +87,11 @@ sources:
     url: "https://www.orahovica.hr/2026/03/javni-poziv-za-za-sufinanciranju-sterilizacije-i-kastracije-pasa-i-macaka-na-podrucju-grada-orahovice-u-2026-godini/"
     publisher: "Grad Orahovica"
     accessed_on: 2026-11-27
+  - claim: "Većina kuja tjera se dvaput godišnje, ali razmak se razlikuje po pasmini i od psa do psa; manje pasmine prvi se put tjeraju ranije, a velike i divovske pasmine možda tek s 18 mjeseci do dvije godine (Malcolm Weir, DVM; Ryan Llera, DVM; Cheryl Yuill, DVM)"
+    title: "Estrous Cycles in Dogs"
+    url: "https://vcahospitals.com/know-your-pet/estrus-cycles-in-dogs"
+    publisher: "VCA Animal Hospitals"
+    accessed_on: 2026-11-27
 ---
 Sterilizacija kuje u objavljenim cjenicima koje smo otvorili 27. studenoga 2026. stoji od 70 do 250 eura za klasični zahvat, a kastracija psa od 50 do 165 eura. To je cijena samog zahvata: anestezija, pretrage krvi i materijal najčešće se plaćaju posebno, pa ukupni račun može biti i nekoliko puta veći.
 
@@ -149,6 +154,12 @@ Veterina Branimir objavila je stvarne račune bez osobnih podataka [3]:
 
 To su primjeri jedne ambulante, a ne prosjek.
 
+> [!BROJKE] Sterilizacija i kastracija psa u brojkama
+> - **70–250 €** sterilizacija kuje, sam klasični zahvat [1][2]
+> - **50–165 €** kastracija psa, sam zahvat [2][6]
+> - **423,75 €** stvarni račun za kuju težu od 15 kg u jednoj zagrebačkoj ambulanti [3]
+> - **5–10 dana** do uobičajene aktivnosti za većinu pasa [10][11]
+
 ## Sterilizacija stoji manje od operacije upale maternice
 
 Sterilizacija sprječava gnojnu upalu maternice (piometru), koju VCA opisuje kao smrtonosnu infekciju [10]. Operacija piometre u istim je cjenicima skuplja od redovnog zahvata: 130–190 € u Đakovu [1], 187,50 € u Osijeku [6], 236,90 € u Veterini Branimir [4] i 250–350 € na Veterinarskom fakultetu [7].
@@ -169,6 +180,9 @@ Američka udruga AAHA i WSAVA ne preporučuju istu dob, pa je dogovori s veterin
 | --- | --- | --- |
 | Kuja | do oko 20 kg odrasle težine: prije prvog tjeranja, 5–6 mjeseci; veće: 5–15 mjeseci, prema procjeni veterinara | idealno nakon prvog ili drugog tjeranja |
 | Pas | do oko 20 kg: oko 6 mjeseci; veći: kad završi rast, oko 9–15 mjeseci | ovisi o razlogu; rizike zahvata prije puberteta treba pažljivo odvagnuti |
+
+> [!CINJENICA] Jeste li znali?
+> Većina kuja tjera se dvaput godišnje, ali ne sve jednako rano. Veterinari VCA-a navode da se male pasmine prvi put tjeraju ranije, a velike i divovske možda tek s 18 mjeseci do dvije godine [17].
 
 AAHA navodi da sterilizirani psi u prosjeku žive dulje, ali i da je rizik od debljine najveći u prve dvije godine nakon zahvata [8]. WSAVA navodi da se nakon zahvata kod 5 do 20 % kuja javlja nemogućnost zadržavanja mokraće [9]. Više o životnom vijeku piše u članku [Koliko žive psi po pasminama](/vodic/koliko-zive-psi-po-pasminama).
 

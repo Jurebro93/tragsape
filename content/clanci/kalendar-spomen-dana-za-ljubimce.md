@@ -79,6 +79,11 @@ sources:
     url: "https://smallanimal.vethospital.ufl.edu/resources-2/pet-loss-support/coping-through-holidays-and-special-event-days"
     publisher: "University of Florida Small Animal Hospital"
     accessed_on: 2026-11-27
+  - claim: "Prvi Svjetski dan životinja organizirao je kinolog Heinrich Zimmermann 24. 3. 1925. u Sportskoj palači u Berlinu, s više od 5000 posjetitelja; planiran je za 4. listopada, ali dvorana tada nije bila slobodna; na 4. listopada prvi je put održan 1929.; prijedlog da taj datum vrijedi svugdje prihvaćen je na međunarodnom kongresu za zaštitu životinja u Firenci u svibnju 1931."
+    title: "World Animal Day"
+    url: "https://en.wikipedia.org/wiki/World_Animal_Day"
+    publisher: "Wikipedia"
+    accessed_on: 2026-11-27
 ---
 Kroz godinu postoji nekoliko datuma posvećenih životinjama, a dva od njih namijenjena su baš sjećanju na ljubimce koji su umrli. Kod nas im se pridružuju Svi sveti i Dušni dan, kad se pale svijeće za pokojne. Ovdje su svi na jednom mjestu, uz napomenu tko je koji dan pokrenuo i odakle to znamo.
 
@@ -112,6 +117,12 @@ Svi datumi osim Pet Memorial Daya svake su godine isti.
 
 Nijedan od ta dva dana nije službeni dan u Hrvatskoj [10]. Svatko ih ipak može uzeti kao povod.
 
+> [!BROJKE] Spomen-dani u brojkama
+> - **1972.** uspostavljen je National Pet Memorial Day [8]
+> - **12. rujna 2027.** sljedeći je Pet Memorial Day [7]
+> - **28. kolovoza** svake je godine Rainbow Bridge Remembrance Day [5]
+> - **998.** uveden je Dušni dan [13]
+
 ## Svi sveti i Dušni dan: domaći dani sjećanja
 
 Svi sveti su 1. studenoga i u Hrvatskoj su blagdan i neradni dan [10]. Hrvatska enciklopedija opisuje ih kao katolički blagdan obilježen štovanjem pokojnika, uz uređivanje i kićenje grobova i paljenje svijeća [11].
@@ -125,6 +136,9 @@ Ti su dani posvećeni ljudima, a ne životinjama. Izvor koji bi opisivao poseban
 Svjetski dan životinja, Međunarodni dan mačaka i dan pasa nisu dani žalosti nego slavlja. Tada su mreže pune fotografija živih pasa i mačaka, što nakon gubitka može zaboljeti.
 
 Svjetski dan životinja pada na blagdan svetog Franje Asiškog, zaštitnika životinja [1]. Kako su ti dani nastali i zašto je dan mačaka nekoliko puta godišnje, opisali smo u članku [Svjetski dan pasa, mačaka i životinja](/vodic/svjetski-dan-pasa-macaka-i-zivotinja).
+
+> [!CINJENICA] Jeste li znali?
+> Prvi Svjetski dan životinja nije bio 4. listopada. Heinrich Zimmermann okupio je 24. ožujka 1925. u berlinskoj Sportskoj palači više od 5000 ljudi, jer dvorana 4. listopada nije bila slobodna. Na 4. listopada dan je prvi put obilježen 1929. godine [15].
 
 ## Tvoji vlastiti datumi
 
@@ -146,6 +160,8 @@ Iz istog izvora dolazi nekoliko prijedloga [14]:
 - Reci bližnjima što ti treba, pa makar to bilo da te ostave na miru.
 - Promijeni stare navike ako ti više ne odgovaraju.
 - Uključi ljubimca u dan na mali način: svijeća za večerom ili pismo njemu.
+
+> [!ALAT] oprostaj
 
 ## Datumi koje nismo uvrstili
 

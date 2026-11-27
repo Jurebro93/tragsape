@@ -59,6 +59,11 @@ sources:
     url: "https://www.cats.org.uk/what-we-do/grief"
     publisher: "Cats Protection"
     accessed_on: 2026-11-25
+  - claim: "Produljeno tugovanje najnoviji je poremećaj u priručniku DSM, uvršten u izdanje DSM-5-TR objavljeno u ožujku 2022.; kod odraslih gubitak mora biti star najmanje godinu dana; procjenjuje se da trajne simptome ima 4–15 % ožalošćenih odraslih (stranicu su pregledali H. G. Prigerson, P. Appelbaum i L. Yousif, kolovoz 2025.)"
+    title: "What is Prolonged Grief Disorder?"
+    url: "https://www.psychiatry.org/patients-families/prolonged-grief-disorder"
+    publisher: "American Psychiatric Association"
+    accessed_on: 2026-11-27
 ---
 Kuća je tiša. Ruka i dalje kreće prema povodcu, a zdjelica stoji na istom mjestu. Ako ti je teže nego što si očekivao, to ne znači da pretjeruješ.
 
@@ -71,6 +76,12 @@ Tuga je zdrav i normalan odgovor na gubitak [1]. To vrijedi i kad je riječ o ž
 Razlika je u okolini. Za ljubimcem se tuguje bez ustaljenih obreda [5], a društvo tu tugu često ne priznaje jednako kao tugu za čovjekom. Stručnjaci je zato nazivaju nepriznatom tugom: podrška koju bi inače dobio može izostati [1].
 
 Koliko ovaj gubitak može biti težak, pokazuje jedno istraživanje iz 2026. godine. Među 975 odraslih u Ujedinjenom Kraljevstvu trećina je doživjela smrt voljenog ljubimca. Gotovo svi oni izgubili su i nekog od ljudi, a ipak je svaki peti upravo smrt ljubimca označio kao gubitak koji ga je najviše pogodio [3].
+
+> [!BROJKE] Istraživanje iz 2026. u brojkama
+> - **975** odraslih u Ujedinjenom Kraljevstvu sudjelovalo je u istraživanju [3]
+> - **32,6 %** njih doživjelo je smrt voljenog ljubimca [3]
+> - **21,0 %** tih ljudi upravo je taj gubitak označilo kao najteži [3]
+> - **7,5 %** imalo je simptome koji odgovaraju produljenom tugovanju [3]
 
 ## Kako tuga može izgledati
 
@@ -98,6 +109,11 @@ Ono što se može reći jest sljedeće:
 
 Kod manjeg broja ljudi tuga ostaje teška dugo. U spomenutom istraživanju 7,5 % ljudi koji su izgubili ljubimca imalo je simptome koji odgovaraju produljenom tugovanju, otprilike koliko i nakon mnogih gubitaka ljudi. Autor pritom napominje da se ta dijagnoza službeno postavlja samo nakon smrti čovjeka [3].
 
+> [!CINJENICA] Jeste li znali?
+> Produljeno tugovanje kao zasebna dijagnoza vrlo je novo. Američko psihijatrijsko udruženje uvrstilo ga je u svoj priručnik dijagnoza tek u izdanju iz ožujka 2022., a kod odraslih se može postaviti tek kad od gubitka prođe najmanje godinu dana. Procjenjuje se da trajne simptome ima 4 do 15 % odraslih koji su izgubili blisku osobu [11].
+
+Što o trajanju tuge još znamo, skupili smo u članku [Koliko traje tuga za ljubimcem](/vodic/koliko-traje-tuga-za-ljubimcem).
+
 ## Krivnja
 
 Krivnja je jedan od najčešćih osjećaja nakon smrti ljubimca [1]. Javlja se u obliku rečenica koje počinju s „da sam barem”:
@@ -111,7 +127,7 @@ Američka veterinarska udruga piše da se ti osjećaji javljaju i kad je čovjek
 
 ### Krivnja nakon uspavljivanja
 
-Odluka o uspavljivanju posebna je po tome što si je morao donijeti ti. Zato se gotovo svatko poslije pita je li bilo prerano ili prekasno [2].
+Odluka o uspavljivanju posebna je po tome što si je morao donijeti ti. Zato se gotovo svatko poslije pita je li bilo prerano ili prekasno [2]. Toj smo temi posvetili i zaseban članak, [Krivnja nakon uspavljivanja ljubimca](/vodic/krivnja-nakon-uspavljivanja-ljubimca).
 
 Savjetnici veterinarske bolnice Sveučilišta Ohio State, koji rade s vlasnicima u toj situaciji, pišu [4]:
 
@@ -140,6 +156,10 @@ Krivnja ne prolazi preko noći. Odluke si donosio najbolje što si tada mogao [2
 - **Kreći se.** Šetnja pomaže snu. Ako te uobičajena ruta previše podsjeća, neko vrijeme hodaj drugdje ili u drugo doba dana [1].
 - **Pripremi se za okidače.** Kad znaš što te pogađa, lakše to dočekaš [5].
 - **Učini nešto u spomen.** Zapis sjećanja, album, malo spomen-mjesto, dar skloništu [5].
+
+Ako ne znaš kakav bi oproštaj odgovarao tebi i tvojoj obitelji, pomoći će šest kratkih pitanja ispod. Više ideja je u članku [Rituali oproštaja od ljubimca](/vodic/rituali-oprostaja-od-ljubimca).
+
+> [!ALAT] oprostaj
 
 ## Kada potražiti stručnu podršku
 

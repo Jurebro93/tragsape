@@ -100,6 +100,12 @@ Nekoliko stvari može uznemiriti ako za njih ne znaš. Tijelo se nakon smrti opu
 
 Ako je uginuo naglo i bez jasnog razloga, reci to veterinaru prije nego što odlučiš što dalje.
 
+> [!BROJKE] Prvi dani u brojkama
+> - **1–2 sata** nakon smrti tijelo se počinje hladiti i kočiti [1]
+> - **12–24 sata** okvir za prijevoz ili ukop [1]
+> - **50 cm** zemlje najmanje mora prekrivati tijelo pri ukopu [2]
+> - **7 dana** rok za prijavu uginuća označenog psa, mačke ili pitome vretice [7]
+
 ## Koje su mogućnosti
 
 | Mogućnost | Što dobivaš | Više |
@@ -168,7 +174,10 @@ Ovo se lako zaboravi. Zakon o zdravlju životinja u članku 66. stavku 6. kaže:
 
 Rok je, dakle, sedam dana. Za držatelja kućnog ljubimca koji to ne učini zakon predviđa novčanu kaznu od 260 do 660 eura, odnosno 60 eura na mjestu počinjenja prekršaja [7].
 
-Uginuće se prijavljuje radi izmjene podataka u putovnici i u Upisniku kućnih ljubimaca [7], pa putovnicu ponesi sa sobom u ambulantu. U cjeniku jedne zagrebačke ambulante odjava u upisniku stoji 5,60 € [11].
+Uginuće se prijavljuje radi izmjene podataka u putovnici i u Upisniku kućnih ljubimaca [7], pa putovnicu ponesi sa sobom u ambulantu. U cjeniku jedne zagrebačke ambulante odjava u upisniku stoji 5,60 € [11]. Postupak korak po korak opisali smo u članku [Odjava psa nakon uginuća: rok i postupak](/vodic/odjava-psa-nakon-uginuca-rok-i-postupak).
+
+> [!SAVJET] Putovnicu ponesi odmah
+> Ako tijelo predaješ preko ambulante, ponesi putovnicu već tada i pitaj može li se prijava uginuća riješiti u istom posjetu. Tako ne moraš dolaziti dvaput.
 
 ## Kako reći obitelji
 
@@ -181,6 +190,8 @@ S djecom vrijedi isto pravilo: istina, jednostavnim riječima. Dječji psihijatr
 Prije nego što predaš tijelo, razmisli želiš li nešto zadržati. Savjetnici veterinarske bolnice Sveučilišta Ohio State spominju ogrlicu i pločicu, igračke, otisak šape, pramen dlake i fotografije [13]. Otisak i pramen poslije se više ne mogu uzeti.
 
 Kasnije, kad bude vrijeme, ljudima pomažu i druge stvari: mali oproštaj u krugu obitelji, biljka posađena njemu u spomen, zapis o tome kako ste se upoznali i po čemu je bio poseban [13]. Neki sjećanja skupe i na spomen-stranici, da ih mogu dopuniti obitelj i prijatelji.
+
+> [!ALAT] oprostaj
 
 ## Kratki podsjetnik
 

@@ -24,6 +24,11 @@ sources:
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11776356/"
     publisher: "OMEGA - Journal of Death and Dying (PubMed Central)"
     accessed_on: 2026-11-26
+  - claim: "Anketa 426 talijanskih vlasnika koji su imali najmanje dva psa kad je jedan uginuo: 86,6 % primijetilo je barem jednu promjenu ponašanja psa koji je ostao, najčešće više traženja pažnje (67 %) i manje igre (57 %); autori ne mogu potvrditi da je riječ o tuzi, a ne o stresu zbog odvajanja"
+    title: "Uccheddu, S. i sur. (2022.): Domestic dogs (Canis familiaris) grieve over the loss of a conspecific. Scientific Reports 12, 1920"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8873218/"
+    publisher: "Scientific Reports (PubMed Central)"
+    accessed_on: 2026-11-27
 ---
 Kad je obitelj kroz godine imala više ljubimaca, na Tragu šape svaki dobiva svoj spomen, a obiteljska stranica okuplja ih na jednoj adresi. Tako nijedan ne dijeli stranicu s drugim, a ti i dalje šalješ samo jednu poveznicu. Ovdje je opisano što obiteljska stranica radi, što ne radi i kako je složiti.
 
@@ -99,6 +104,9 @@ Redoslijed nije važan, jer se kartice ionako slažu po datumu smrti. Kreni od l
 
 Za ljubimca kojeg nema već desetljećima dovoljni su ime i približni datumi, čak i samo godina. Jedna skenirana fotografija i dvije rečenice posvete sasvim su dovoljne.
 
+> [!SAVJET] Stare fotografije
+> Za ljubimce iz vremena prije mobitela pitaj roditelje, braću i sestre imaju li koju papirnatu fotografiju. Kako je sačuvati i kako sve skupiti na jedno mjesto, piše u članku [Kako sačuvati fotografije i videa ljubimca](/vodic/kako-sacuvati-fotografije-i-videa-ljubimca).
+
 Spomen za tek uginulog ljubimca ne mora biti gotov isti dan. Nacrt se sprema i možeš mu se vratiti.
 
 ## Kako pisati o više ljubimaca a da nijedan ne ostane u sjeni?
@@ -109,6 +117,8 @@ Veterinarski centar Sveučilišta Ohio State podsjeća da svaki član obitelji m
 
 Isti izvor među načinima sjećanja navodi zapis ljubimčeve priče: kako ste se upoznali, njegove osobine i nadimke, što ćeš najviše pamtiti [1]. To je dobar okvir za posvetu svakog od njih. Djeca tugu često prorađuju crtanjem [1], pa crtež može biti njihov dio spomena; više u članku [Kako djetetu objasniti smrt ljubimca](/vodic/kako-djetetu-objasniti-smrt-ljubimca).
 
+> [!ALAT] posveta
+
 Uvod obiteljske stranice mjesto je za ono zajedničko: kuću, dvorište, godine. Ostalo pripada pojedinim spomenima.
 
 ## Što s ljubimcem koji je još s tobom?
@@ -116,6 +126,9 @@ Uvod obiteljske stranice mjesto je za ono zajedničko: kuću, dvorište, godine.
 Obiteljska stranica skuplja spomene, pa ljubimac koji je živ na nju ne ide. Možeš ga spomenuti u uvodu ako želiš.
 
 Ljubimci koji ostanu mogu se neko vrijeme ponašati drukčije: više se držati ukućana, manje jesti, spavati ili se igrati [1]. Kod mačaka je to neujednačeno: neke traže onu koje nema i glasaju se, druge ne pokazuju ništa [2]. Preporuka je držati se poznate rutine [2], a ako te promjene brinu, javiti se veterinaru [1].
+
+> [!CINJENICA] I psi primijete gubitak
+> U talijanskoj anketi s 426 vlasnika, njih 86,6 % primijetilo je barem jednu promjenu kod psa koji je ostao nakon smrti drugog psa iz kuće. Najčešće je više tražio pažnju (67 %) i manje se igrao (57 %), ali autori ne mogu potvrditi je li to tuga ili stres zbog odvajanja [4].
 
 ## Je li novi ljubimac izdaja starog?
 

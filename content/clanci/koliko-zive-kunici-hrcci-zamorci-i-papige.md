@@ -112,6 +112,11 @@ sources:
     url: "https://cdn.ymaws.com/www.aav.org/resource/resmgr/pdf_2020/aav_trifold_2020.pdf"
     publisher: "Association of Avian Veterinarians (AAV)"
     accessed_on: 2026-11-27
+  - claim: "Glodavci i dvojezubići (kunići) imaju zube otvorenog korijena koji rastu cijeli život; zubi kunića normalno rastu otprilike 1 cm mjesečno, a sjekutići koji se ne dodiruju i do 1 mm dnevno; značajan čimbenik bolesti zuba je prehrana s premalo vlakana; prevencija se temelji na sijenu bogatom vlaknima (Gregory Rich, DVM; Laurie Hess, DVM; Rick Axelson, DVM)"
+    title: "Dental Disease in Rabbits"
+    url: "https://vcahospitals.com/know-your-pet/dental-disease-in-rabbits"
+    publisher: "VCA Animal Hospitals"
+    accessed_on: 2026-11-27
 ---
 Kunić u kući najčešće živi 8 do 12 godina, zamorac 4 do 8, hrčak oko dvije godine, a papige od pet do šezdeset godina, ovisno o vrsti [1][3][4][7][9][13][17]. To su rasponi iz veterinarskih priručnika i udruga za dobrobit životinja. Istraživanja britanskih veterinarskih ambulanti pokazuju da velik dio malih ljubimaca ugine ranije od tih raspona [6][11][16].
 
@@ -122,6 +127,12 @@ Kunić u kući najčešće živi 8 do 12 godina, zamorac 4 do 8, hrčak oko dvij
 - Hrčak: od 18 mjeseci do 3 godine, a Roborovski i do 4 godine [13].
 - Papige: tigrica 5–10 godina, nimfa do 20, žako 30–50, ara 30–60 [17].
 - Najviše se spominju smještaj, prehrana, sterilizacija ženki kunića i redoviti pregledi [2][4][15][19].
+
+> [!BROJKE] Mali ljubimci u brojkama
+> - **14,4 godine** najdulji zabilježeni život kunića u britanskim ambulantama [6]
+> - **do 85 %** rizik od raka spolnih organa kod nesteriliziranih ženki kunića [5]
+> - **36–48 mjeseci** živi hrčak Roborovski, najdulji raspon među hrčcima u MSD priručniku [13]
+> - **30–60 godina** živi ara [17]
 
 ## Koliko žive mali ljubimci po vrsti?
 
@@ -172,6 +183,9 @@ House Rabbit Society navodi da kunići u kući obično žive 8–12 godina, a on
 Prehrana se kao čimbenik javlja kod svih četiriju vrsta. MSD priručnik kaže da kunići uz pravilnu prehranu i zdrave uvjete mogu živjeti 10–12 godina ili dulje [1]. Zamorci ne mogu sami stvarati vitamin C, pa ga moraju dobiti hranom, a peleti za kuniće im ga ne daju dovoljno [12].
 
 Kod ptica i hrčaka izvori upozoravaju na sjemenke. VCA piše da prehrana samo sjemenkama može izazvati pothranjenost i skratiti život tigrice, a za hrčke savjetuje izbjegavati takvu prehranu jer su skloni pretilosti [15][20]. MSD priručnik navodi da sjemenke ne bi smjele činiti većinu ptičje prehrane [19].
+
+> [!CINJENICA] Zubi koji nikad ne prestaju rasti
+> Kunići i glodavci imaju zube koji rastu cijeli život. Prema veterinarima VCA-a, zubi kunića rastu otprilike 1 cm mjesečno, a troši ih žvakanje hrane bogate vlaknima, prije svega sijena. Prehrana s premalo vlakana jedan je od značajnih uzroka bolesti zuba [22].
 
 ### Sterilizacija ženki kunića
 

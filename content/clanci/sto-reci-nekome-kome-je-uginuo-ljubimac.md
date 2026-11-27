@@ -39,6 +39,11 @@ sources:
     url: "https://ebusiness.avma.org/files/productdownloads/mcm-client-brochures-pet-euthanasia-2025.pdf"
     publisher: "American Veterinary Medical Association"
     accessed_on: 2026-11-25
+  - claim: "Internetska anketa 975 odraslih u Ujedinjenom Kraljevstvu (1.–27. 3. 2024.): 32,6 % ispitanika doživjelo je smrt voljenog ljubimca; od onih koji su izgubili i ljubimca i čovjeka 21,0 % odabralo je smrt ljubimca kao najteži gubitak; produljeni poremećaj tugovanja nakon smrti ljubimca kod 7,5 %"
+    title: "Hyland P. (2026.): No pets allowed: Evidence that prolonged grief disorder can occur following the death of a pet, PLOS ONE"
+    url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0339213"
+    publisher: "PLOS ONE"
+    accessed_on: 2026-11-27
 ---
 Prijateljici je uginuo pas, a ti već deseti put brišeš poruku. Sve što napišeš zvuči ili premalo ili previše. Dobra je vijest da savršena rečenica nije potrebna. Važnije je da se javiš.
 
@@ -47,6 +52,9 @@ Prijateljici je uginuo pas, a ti već deseti put brišeš poruku. Sve što napi�
 Kad umre čovjek, postoje riječi i običaji na koje se svi mogu osloniti. Kad ugine ljubimac, toga nema. Stručnjaci tu tugu nazivaju nepriznatom: okolina je često ne smatra jednako opravdanom, pa izostane podrška koju bi čovjek inače dobio [4].
 
 Zato ljudi koji tuguju često čuju „to je samo pas” ili „nabavi drugoga” [5]. I oni koji im žele dobro znaju reći nešto što zaboli [6]. U anketi britanske udruge RSPCA iz 2025. više od polovice vlasnika reklo je da nije našlo podršku koja im je trebala [1].
+
+> [!CINJENICA] Za neke je to najteži gubitak
+> U istraživanju na 975 odraslih iz Ujedinjenog Kraljevstva, provedenom u ožujku 2024., 21 % ispitanika koji su izgubili i ljubimca i blisku osobu reklo je da im je smrt ljubimca bila najteža [7].
 
 Tvoja poruka, makar kratka, može biti ono što je nekome nedostajalo.
 
@@ -62,6 +70,11 @@ Savjeti organizacija koje se bave podrškom nakon gubitka ljubimca svode se na n
 - **Pitaj što treba.** „Što mogu učiniti?” otvoreno je pitanje na koje osoba može odgovoriti kako joj odgovara [2].
 - **Javi se opet.** Za tjedan, za mjesec, na godišnjicu. Tuga ne završava kad prestanu stizati poruke [2][3].
 - **Poštuj tišinu.** Ako osoba treba mira, ne shvaćaj to osobno [1].
+
+Kako biti uz prijatelja i u tjednima poslije, opisali smo u članku [Kako pomoći prijatelju koji tuguje za ljubimcem](/vodic/kako-pomoci-prijatelju-koji-tuguje-za-ljubimcem).
+
+> [!SAVJET] Kad ne znaš smiješ li nazvati
+> Ako ne znaš je li osoba spremna razgovarati, pošalji poruku umjesto poziva. Pročitat će je kad bude mogla i odgovoriti kad bude htjela.
 
 ## Što boli
 
@@ -115,6 +128,10 @@ Ove smo poruke napisali mi, kao primjere. Ime i pojedinosti zamijeni svojima; po
 > Ne znam što bih rekao, ali mislim na tebe.
 
 Ako ti treba još prijedloga, isprobaj [alat za poruku sućuti](/alati/sucut).
+
+> [!ALAT] sucut
+
+Više gotovih poruka, složenih po odnosu, ima u člancima [Poruka sućuti za psa](/vodic/poruka-sucuti-za-psa) i [Što napisati kolegi kojem je uginuo ljubimac](/vodic/sto-napisati-kolegi-kojem-je-uginuo-ljubimac).
 
 ## Ako tuguje dijete
 

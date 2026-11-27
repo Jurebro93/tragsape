@@ -34,6 +34,11 @@ sources:
     url: "https://vmc.vet.osu.edu/sites/default/files/documents/coping_with_loss_brochure_2024_web.pdf"
     publisher: "The Ohio State University Veterinary Medical Center, Honoring the Bond Program"
     accessed_on: 2026-11-26
+  - claim: "Članak 86.: plaćeni dopust za važne osobne potrebe (sklapanje braka, rođenje djeteta, teža bolest ili smrt člana uže obitelji i sl.), ukupno sedam radnih dana godišnje, ako nije drukčije uređeno kolektivnim ugovorom, pravilnikom o radu ili ugovorom o radu; st. 3. nabraja članove uže obitelji, među kojima nema životinja"
+    title: "Zakon o radu (pročišćeni tekst, NN 93/14, 127/17, 98/19, 151/22, 46/23, 64/23)"
+    url: "https://www.zakon.hr/z/307/Zakon-o-radu"
+    publisher: "Zakon.hr"
+    accessed_on: 2026-11-27
 ---
 Kolegi kojem je uginuo ljubimac napiši dvije rečenice: da ti je žao i što možeš preuzeti. Ne treba ti ni duga poruka ni bliskost. Na poslu je i kratko priznanje gubitka više nego što većina ljudi dobije.
 
@@ -50,6 +55,11 @@ Kolegi kojem je uginuo ljubimac napiši dvije rečenice: da ti je žao i što mo
 Javi se zato što tuga za ljubimcem dolazi i na posao, a ondje je se najrjeđe priznaje. U anketi britanske udruge RSPCA iz 2025. godine 92 % zaposlenih ispitanika reklo je da im je tuga utjecala na rad. Njih 77 % smatra da se gubitak ljubimca na poslu ne shvaća dovoljno ozbiljno [1].
 
 Stručnjaci to zovu nepriznatom tugom: okolina je ne smatra jednako opravdanom, pa izostane podrška koju bi čovjek inače dobio [5]. U istoj anketi gotovo polovica ispitanika rekla je da bi im pomogao suosjećajan kolega [1].
+
+> [!BROJKE] Tuga za ljubimcem na poslu
+> - **92 %** zaposlenih ispitanika ankete RSPCA kaže da je tuga utjecala na njihov rad [1]
+> - **77 %** smatra da se gubitak ljubimca na poslu ne shvaća dovoljno ozbiljno [1]
+> - **73 %** reklo je da bi im pomoglo slobodno vrijeme [1]
 
 Ne moraš biti prijatelj da bi to bio ti. Dovoljna je poruka.
 
@@ -75,6 +85,8 @@ Ove smo poruke napisali mi, kao primjere. Ime i pojedinosti zamijeni svojima.
 6. „Riki je bio na pola naših videopoziva. Nedostajat će i nama.”
 
 Šesta poruka dijeli sjećanje. To pomaže ako si ljubimca poznavao, makar samo s ekrana [3].
+
+> [!ALAT] sucut
 
 ## Primjeri za e-mail
 
@@ -108,6 +120,9 @@ Kao šef priznaj gubitak i pitaj što bi pomoglo. RSPCA voditeljima predlaže pi
 16. „Prezentaciju u četvrtak preuzima Ana. Ako ti treba dan ili rad od kuće, reci mi pa ćemo vidjeti što možemo.”
 
 Ne obećavaj ono što ne ovisi o tebi. Prije razgovora provjeri što pravila tvoje tvrtke dopuštaju: slobodan dan, godišnji odmor, rad od kuće.
+
+> [!CINJENICA] Što kaže Zakon o radu
+> Zakon o radu daje plaćeni dopust od ukupno sedam radnih dana godišnje za važne osobne potrebe, ako kolektivni ugovor, pravilnik o radu ili ugovor o radu ne određuju drukčije. Kao primjere navodi brak, rođenje djeteta te težu bolest ili smrt člana uže obitelji; ljubimac se ne spominje [6]. Što to znači u praksi, piše u članku [Tuga za ljubimcem i posao](/vodic/tuga-za-ljubimcem-i-posao-slobodan-dan-i).
 
 Ne procjenjuj koliko je gubitak „velik”. Psihologinja koju RSPCA citira kaže da je pravo pitanje koliko je gubitak značajan toj osobi, a ne tko je umro [1]. Tuga se na poslu često vidi tek kao rastresenost, umor ili povučenost [1].
 

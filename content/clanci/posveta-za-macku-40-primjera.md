@@ -34,6 +34,11 @@ sources:
     url: "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/health-topics/grieving-loss-your-cat"
     publisher: "Cornell University College of Veterinary Medicine, Cornell Feline Health Center"
     accessed_on: 2026-11-26
+  - claim: "Herodot, Povijesti 2.66: ukućani kuće u kojoj je mačka uginula prirodnom smrću briju samo obrve; gdje je uginuo pas, briju glavu i cijelo tijelo"
+    title: "Herodotus, The Histories 2.66 (engleski prijevod A. D. Godley)"
+    url: "https://cts.perseids.org/read/greekLit/tlg0016/tlg001/perseus-eng2/2.66.3-2.66.4"
+    publisher: "Perseids Project, Tufts University"
+    accessed_on: 2026-11-27
 ---
 Posveta za mačku je nekoliko rečenica koje stoje uz ime i fotografiju: na spomen-stranici, u okviru, na pločici ili u foto-knjizi. Dobra posveta je kratka, istinita i tvoja. Ispod je 40 primjera koje možeš uzeti kakvi jesu, a zatim tri pitanja uz koja ćeš napisati vlastitu.
 
@@ -52,6 +57,9 @@ Teško je jer za ljubimcem tugujemo bez ustaljenih riječi. Stručnjaci to naziv
 Pisanje zato pomaže. Prisjećanje činjenica o ljubimcu ističe koliko je njegov život značio i može utješiti [4]. Pregled istraživanja iz 2022. navodi spomene i sjećanja među načinima suočavanja koji su vlasnicima pomogli, uz napomenu da trajna veza nekima tugu i pojača [2].
 
 Ime je pola posvete. Britanska udruga RSPCA savjetuje da se u razgovoru s onim tko tuguje koristi ime ljubimca, jer ono čuva sjećanje bliskim [3].
+
+> [!CINJENICA] Iz povijesti
+> Tugovanje za mačkom nije novost. Starogrčki povjesničar Herodot zapisao je da u Egiptu ukućani, kad im mačka ugine prirodnom smrću, obriju obrve [6].
 
 ## Kako koristiti primjere
 
@@ -135,6 +143,8 @@ Odgovori na svako pitanje jednom rečenicom. Ispred stavi ime, na kraj ono što 
 
 Ako ti je lakše uz pomoć, [alat za posvetu](/alati/posveta) pita slična pitanja i od tvojih riječi slaže tri do četiri polazne rečenice. Nije umjetna inteligencija i sve ostaje u tvom pregledniku.
 
+> [!ALAT] posveta
+
 ## Što izbjegavati
 
 - [ ] **Pisanje u ime mačke.** „Čekam vas na prozoru” nije njezina rečenica, nego tvoja želja. Posveta govori iz tvog ili obiteljskog ugla.
@@ -147,6 +157,9 @@ Ako ti je lakše uz pomoć, [alat za posvetu](/alati/posveta) pita slična pitan
 ## Koliko duga treba biti posveta za mačku?
 
 Za pločicu ili okvir dovoljna je jedna rečenica. Na besplatnom spomenu Traga šape posveta ima najviše 300 znakova, što je otprilike tri do pet kratkih rečenica.
+
+> [!SAVJET] Prije graviranja
+> Graveru pošalji posvetu napisanu, a ne izdiktiranu, i prije izrade zatraži da ti pokaže kako će izgledati. Pogrešku u imenu na metalu ili kamenu više ne možeš ispraviti. Ako uz posvetu ide i QR kod, pogledaj [QR kod na spomen-pločici za ljubimca](/vodic/qr-kod-na-spomen-plocici-za-ljubimca-kako).
 
 Ako ti treba više prostora, to više nije posveta, nego priča ili pismo. Kako se oni uklapaju uz ostale načine sjećanja, piše u članku [Kako napraviti spomen za mačku](/vodic/kako-napraviti-spomen-za-macku-ideje-koje-traju).
 

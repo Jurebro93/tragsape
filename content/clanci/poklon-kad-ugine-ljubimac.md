@@ -39,6 +39,11 @@ sources:
     url: "https://pubmed.ncbi.nlm.nih.gov/34096419/"
     publisher: "PubMed, National Library of Medicine"
     accessed_on: 2026-11-26
+  - claim: "Cijela biljka ljiljana otrovna je za mačke: stabljika, listovi, cvjetovi, pelud, pa i voda u vazi; najopasniji su pravi ljiljani (Lilium) i dnevni ljiljani (Hemerocallis); zatajenje bubrega nastupa unutar 24 do 72 sata; ljiljane ne držati u kući s mačkom (sadržaj ažuriran 16. 9. 2021.)"
+    title: "Lovely Lilies and Curious Cats: A Dangerous Combination"
+    url: "https://www.fda.gov/animal-veterinary/animal-health-literacy/lovely-lilies-and-curious-cats-dangerous-combination"
+    publisher: "U.S. Food and Drug Administration (FDA), Center for Veterinary Medicine"
+    accessed_on: 2026-11-27
 ---
 Nekome kome je uginuo ljubimac najviše pomaže poklon koji je malen, osoban i ne traži ništa zauzvrat: kartica s jednim sjećanjem, fotografija, ručak. Skup poklon nije potreban. Važno je da pokaže kako znaš koga je osoba izgubila.
 
@@ -66,11 +71,16 @@ Jedna vlasnica rekla je za RSPCA da joj je veterinar poslao rukom pisanu karticu
 
 Kartice se čuvaju. Jedan veterinarski centar vlasnicima čak predlaže da kartice i poruke sućuti sačuvaju i od njih slože kolaž [3]. Ako ne znaš kako početi, pogledaj [30 primjera poruke sućuti](/vodic/poruka-sucuti-za-psa).
 
+> [!ALAT] sucut
+
 ### Uokvirena fotografija
 
 Fotografije su među podsjetnicima koje veterinarske udruge navode kao način sjećanja [4]. Najbolje su one koje vlasnik nema: snimka s izleta, rođendana ili iz tvog dvorišta.
 
 Nije svatko odmah spreman gledati fotografije. Predaj je zamotanu i reci što je unutra, pa neka je osoba otvori kad joj bude vrijeme.
+
+> [!SAVJET] Ako nemaš svoju fotografiju
+> Pretraži stare poruke i grupne razgovore ili pitaj zajedničke prijatelje. Uz uokvirenu fotografiju pošalji je i digitalno, da je vlasnik može spremiti.
 
 ### Donacija skloništu u ime ljubimca
 
@@ -83,6 +93,9 @@ U kartici napiši kome je donacija uplaćena i u čije ime. Iznos ne moraš spom
 Sadnja nečega što raste jedan je od načina sjećanja koje savjetnici nabrajaju [3]. Biljka u loncu odgovara i onome tko nema vrt.
 
 Ovo je poklon koji traži brigu. Nekome je to utjeha, nekome još jedna obveza, pa procijeni kome daruješ.
+
+> [!CINJENICA] Ljiljan nije za kuću s mačkom
+> Pravi ljiljani (rod Lilium) i dnevni ljiljani (Hemerocallis) za mačke su otrovni u cijelosti: stabljika, listovi, cvjetovi, pelud, pa i voda iz vaze. Mački mogu izazvati zatajenje bubrega unutar 24 do 72 sata [7]. Ako u kući ima mačka, izaberi drugu biljku ili cvijeće.
 
 ### Obrok ili praktična pomoć
 

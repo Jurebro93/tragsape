@@ -29,6 +29,11 @@ sources:
     url: "https://blogs.vetmed.vt.edu/veterinary-social-work/animal-loss-support/Memorialization.html"
     publisher: "Virginia-Maryland College of Veterinary Medicine, Veterinary Social Work"
     accessed_on: 2026-11-26
+  - claim: "Izraz „disenfranchised grief” (nepriznata tuga) uveo je Kenneth Doka 1989. u knjizi Disenfranchised Grief: Recognizing Hidden Sorrow; to je tuga koju društvo ne priznaje ili ne smatra važnom; smrt ljubimca navodi se među gubicima koje ljudi često ne priznaju"
+    title: "Disenfranchised grief (Research Starters)"
+    url: "https://www.ebsco.com/research-starters/psychology/disenfranchised-grief"
+    publisher: "EBSCO"
+    accessed_on: 2026-11-27
 ---
 Uz fotografiju ljubimca kojeg više nema dovoljne su dvije do tri rečenice: ime, jedna stvarna pojedinost i ono što osjećaš. Ne moraš objasniti što se dogodilo ni napisati nešto lijepo za druge. Ispod je 28 primjera za objavu na društvenim mrežama, složenih po tonu.
 
@@ -47,6 +52,9 @@ Ne trebaš, ali mnogima pomogne. Veterinari koji pišu o sjećanju na ljubimce n
 Objava ima i praktičnu stranu. Jednom javiš svima, pa ne moraš istu vijest ponavljati svakome posebno.
 
 Tuga za ljubimcem često ostane bez uobičajene podrške. Stručnjaci je zovu nepriznatom tugom, a podršku okoline navode kao važan način da se osjećaji potvrde [1]. Objava daje ljudima oko tebe priliku da se jave.
+
+> [!CINJENICA] Otkud izraz „nepriznata tuga”?
+> Izraz je 1989. uveo Kenneth Doka, u knjizi *Disenfranchised Grief: Recognizing Hidden Sorrow*. Tako se zove tuga koju okolina ne priznaje ili ne smatra važnom, a smrt ljubimca navodi se među takvim gubicima [5].
 
 ## Od čega se sastoji dobar tekst uz fotografiju?
 
@@ -121,6 +129,11 @@ Odaberi ton kojim inače pišeš. Tablica pokazuje kada koji odgovara i gdje su 
 27. [ime]. Svatko od nas pamti nešto svoje: djeca igru u dvorištu, baka mjesto kraj peći, ja šetnje.
 28. Večeras svi zajedno gledamo stare fotografije i prepričavamo. [ime]. Hvala ti od svih nas.
 
+> [!SAVJET] Prvo u bilješke
+> Tekst napiši najprije u bilješke na mobitelu, a ne izravno u objavu. Možeš ga mirno doraditi, a ostaje ti i kad objava ode niz stranicu.
+
+Fotografiju koju objaviš sačuvaj i izvan društvene mreže. Kako složiti kopije da se ništa ne izgubi, piše u članku [Kako sačuvati fotografije i videa ljubimca](/vodic/kako-sacuvati-fotografije-i-videa-ljubimca).
+
 ## Što izbjegavati u objavi?
 
 Izbjegavaj sve što nije tvoje: tuđi glas, tuđa uvjerenja i objašnjenja koja nikome ne duguješ.
@@ -144,6 +157,8 @@ Ako si s druge strane i ne znaš što napisati pod tuđu objavu, pomoći će ti 
 ## Što ako ti treba više od dvije rečenice?
 
 Tada to više nije tekst uz fotografiju, nego posveta, priča ili pismo. Savjetnici veterinarskog fakulteta Virginia-Maryland među načinima sjećanja navode životopis, oproštajni govor, pismo ljubimcu i album s fotografijama i uspomenama [4].
+
+> [!ALAT] posveta
 
 Objava na društvenoj mreži brzo ode niz stranicu. Ako želiš da fotografija i riječi ostanu na jednoj adresi, to je posao spomen-stranice; kako ona izgleda, piše u članku [Online spomen-stranica za ljubimca](/vodic/online-spomen-stranica-za-ljubimca).
 

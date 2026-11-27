@@ -79,6 +79,11 @@ Ovaj tekst ne zamjenjuje veterinara. Kako će postupak izgledati kod tvog ljubim
 - Možeš ostati do kraja, ostati samo do sedacije ili se oprostiti ranije. Veterinarski izvori kažu da nijedan izbor nije pogrešan [3][9].
 - Smrt uvijek potvrđuje veterinar: sluša srce i provjerava disanje i refleks oka [2].
 
+> [!BROJKE] Uspavljivanje u brojkama
+> - **2 koraka** obično ima postupak: sedaciju i završnu injekciju [2][3]
+> - **6–12 sekundi** nakon završne injekcije životinja pada u dubok san [3]
+> - **oko 30 minuta** traje kućni posjet zajedno s razgovorom [4]
+
 ## Kako postupak teče, korak po korak
 
 Opis u nastavku spaja ono što pišu Američka veterinarska udruga, Sveučilište Cornell, Ohio State i veterinari Lap of Lovea. Redoslijed i lijekovi razlikuju se od ambulante do ambulante.
@@ -131,6 +136,9 @@ Ako ti se misli vrte oko toga, pomaže znati što se događalo: ljubimac je bio 
 ## Što dogovoriti s veterinarom unaprijed
 
 Ovo su pitanja koja ti mogu poštedjeti iznenađenja na sam dan:
+
+> [!SAVJET] Zapiši odgovore
+> Pitanja postavi pri dogovoru termina, a ne na sam dan, i uz svako zapiši odgovor. U trenutku oproštaja teško je sjetiti se što je dogovoreno, a papir to pamti umjesto tebe.
 
 - [ ] Hoćete li dati sedativ prije završne injekcije i kako: u venu ili ubodom pod kožu ili u mišić?
 - [ ] Hoćete li postaviti kateter?

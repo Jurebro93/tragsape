@@ -119,6 +119,12 @@ Kopije čuvaj na barem dvije različite vrste medija, jer svaka ima svoju slabos
 
 Automatsko osvježavanje kopije je praktično, ali ima manu. Ako se izvorna datoteka ošteti, oštećenje se može prenijeti i na kopiju [1]. Zato je dobro imati i jednu kopiju koju ne diraš, primjerice disk koji spojiš samo kad dodaješ nove snimke.
 
+> [!BROJKE] Čuvanje snimaka u brojkama
+> - **3 kopije** svake važne snimke, na dvije vrste medija, jedna izvan kuće [1]
+> - **1 put godišnje** provjeri mogu li se kopije otvoriti [2]
+> - **5 godina** nakon kojih kopije prebacuješ na nove medije [2]
+> - **16 MP** granica iznad koje Google u načinu „Storage saver” smanjuje fotografije [8]
+
 ## Kako skupiti fotografije na jedno mjesto?
 
 Počni od popisa mjesta, pa tek onda kopiraj. Kongresna knjižnica preporučuje ovaj redoslijed [2][3].
@@ -131,6 +137,9 @@ Počni od popisa mjesta, pa tek onda kopiraj. Kongresna knjižnica preporučuje 
 6. **Napravi kopije.** Tek kad je sve na jednom mjestu, kopiraj mapu na drugi medij i na mjesto izvan kuće.
 
 Ako je ljubimac nedavno uginuo, ne moraš sve odjednom. Dovoljno je danas napraviti jednu kopiju mobitela, a odabir ostaviti za kasnije. Što je prvih dana doista hitno, piše u članku [Što učiniti kad ljubimac ugine](/vodic/sto-uciniti-kad-ljubimac-ugine).
+
+> [!VAZNO] Arhive istječu
+> Kad zatražiš izvoz, preuzmi ga čim stigne obavijest. Googleova arhiva istječe za oko 7 dana i može se preuzeti pet puta [7], Facebookov izvoz dostupan je 4 dana [9], a Appleova kopija 14 dana [6]. Ako rok prođe, izvoz treba tražiti ispočetka.
 
 ## Kako izvesti fotografije s iPhonea i iClouda?
 

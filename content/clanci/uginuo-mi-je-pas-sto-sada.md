@@ -111,6 +111,12 @@ Ako je tvoj pas upravo uginuo, danas trebaš napraviti tri stvari: provjeriti da
 
 Sitni trzaji mišića i izlazak zraka mogući su i nakon smrti. To nisu znakovi života [1].
 
+> [!BROJKE] Prvi dan u brojkama
+> - **1–2 sata** nakon smrti tijelo se počinje hladiti i kočiti [1]
+> - **24 sata** može čekati dobro ohlađeno tijelo [2]
+> - **12–24 sata** okvir je za prijevoz ili ukop [1]
+> - **7 dana** rok je za prijavu uginuća psa [5]
+
 ## Kako ohladiti tijelo i koliko može čekati
 
 Kod psa je glavna poteškoća veličina. Američka udruga ASPCA daje ovaj redoslijed [2]:
@@ -130,6 +136,9 @@ Ako je pas uginuo naglo i želiš znati uzrok, odmah to reci veterinaru. Tijelo 
 - **Noću i vikendom.** Pet Memo izvan radnog vremena prima zahtjev putem obrasca na stranici, a tijelo do preuzimanja može čuvati tvoj ili dežurni veterinar [9].
 
 To su primjeri pružatelja koji objavljuju cjenik, ne preporuka.
+
+> [!SAVJET] Prije poziva
+> Pripremi približnu težinu psa i adresu na kojoj je tijelo. Cijene kremiranja i zbrinjavanja računaju se po težinskim razredima, pa ćeš tako odmah dobiti točniji iznos [6][12].
 
 ## Što možeš odabrati
 
@@ -174,7 +183,7 @@ Za pse teže od 50 kg Spomengaj navodi 331,81 € [6]. Veterinarska stanica Osij
 
 Svi psi u Hrvatskoj moraju biti čipirani najkasnije 90 dana od štenjenja, pa ova obveza vrijedi gotovo za svakog psa [5]. Vlasnik je dužan prijaviti uginuće najkasnije u roku od sedam dana, radi izmjene podataka u putovnici i Upisniku kućnih ljubimaca [5].
 
-Za propust je predviđena kazna od 260 do 660 eura, odnosno 60 eura na mjestu počinjenja [5]. Odjavu u cjeniku imaju veterinarske ambulante: u tri cjenika koja smo otvorili stoji 5,60 € [11][12][14]. Ponesi putovnicu psa.
+Za propust je predviđena kazna od 260 do 660 eura, odnosno 60 eura na mjestu počinjenja [5]. Odjavu u cjeniku imaju veterinarske ambulante: u tri cjenika koja smo otvorili stoji 5,60 € [11][12][14]. Ponesi putovnicu psa. Postupak korak po korak opisan je u članku [Odjava psa nakon uginuća: rok i postupak](/vodic/odjava-psa-nakon-uginuca-rok-i-postupak).
 
 ## Djeca i drugi ljubimci
 
@@ -211,3 +220,5 @@ Reci to veterinaru prije nego što odlučiš što s tijelom. Ako želiš razudbu
 ## Sljedeći korak
 
 Kad praktično bude iza tebe, možeš mu otvoriti spomen-stranicu s fotografijama i nekoliko rečenica; počinje se na [/izradi](/izradi). Ako ne znaš kako početi pisati, pomoći će [alat za posvetu](/alati/posveta).
+
+> [!ALAT] posveta

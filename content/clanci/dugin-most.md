@@ -44,6 +44,11 @@ sources:
     url: "https://ebusiness.avma.org/files/productdownloads/mcm-client-brochures-pet-euthanasia-2025.pdf"
     publisher: "American Veterinary Medical Association"
     accessed_on: 2026-11-25
+  - claim: "Bifröst je u nordijskoj mitologiji most između Midgarda, svijeta ljudi, i Asgarda, svijeta bogova; spominje se u Pjesničkoj Eddi, sastavljenoj u 13. stoljeću, i u Proznoj Eddi Snorrija Sturlusona iz istog stoljeća; u Proznoj Eddi kaže se da ga se može nazvati dugom; čuva ga bog Heimdall"
+    title: "Bifröst"
+    url: "https://en.wikipedia.org/wiki/Bifr%C3%B6st"
+    publisher: "Wikipedia"
+    accessed_on: 2026-11-27
 ---
 „Otišao je preko Duginog mosta.” Tu ćeš rečenicu vidjeti u porukama sućuti, na društvenim mrežama i na spomen-pločicama. Dolazi iz kratkog teksta na engleskom, *Rainbow Bridge*, koji se desetljećima dijelio bez imena autora.
 
@@ -56,6 +61,9 @@ Jednoga dana životinja zastane, pogleda u daljinu i potrči. Stigao je njezin �
 Izvornik počinje rečenicom: „Just this side of heaven is a place called Rainbow Bridge.” [1] U našem prijevodu: tik s ove strane neba postoji mjesto koje se zove Dugin most.
 
 Povjesničar umjetnosti Paul Koudounaris, koji je istražio podrijetlo teksta, opisuje to mjesto kao svojevrsnu međupostaju, a ne sam raj: životinja ondje čeka svog čovjeka da bi dalje pošli zajedno [2].
+
+> [!CINJENICA] Most od duge stariji je od teksta
+> U nordijskoj mitologiji most Bifröst povezuje Midgard, svijet ljudi, i Asgard, svijet bogova. Spominje se u Eddama zapisanima u 13. stoljeću, a u Proznoj Eddi o njemu piše da ga se može nazvati dugom [8]. Izvori koje smo čitali ne povezuju ga s tekstom o ljubimcima.
 
 ## Tko ga je napisao
 
@@ -79,6 +87,12 @@ Koudounaris je sastavio popis od oko dvadeset pet imena povezanih s tekstom i pr
 
 Pod istim je imenom poznata i kasnija pjesma u rimovanim stihovima, drugih autora [3]. Izraz „Dugin most” zato danas označava više sliku nego jedan određeni tekst.
 
+> [!BROJKE] Dugin most u brojkama
+> - **1959.** Edna Clyne-Rekhy napisala je tekst, s devetnaest godina [1][2]
+> - **1994.** objavila ga je kolumna Dear Abby, koju je čitalo oko sto milijuna ljudi [1][2]
+> - **15** zahtjeva za autorsko pravo na „Rainbow Bridge” u sljedećih pet godina [2]
+> - **oko 25** imena povezanih s tekstom provjerio je Paul Koudounaris [1]
+
 ## Zašto ga ljudi dijele
 
 Koudounaris nudi jedno objašnjenje. Mnogi su odrasli uz tvrdnju da životinje nemaju dušu i da za njih nema vječnosti. *Dugin most* popunjava tu prazninu: daje jednostavnu sliku ponovnog susreta koja se može uklopiti u gotovo svako vjerovanje [1][2].
@@ -95,7 +109,7 @@ Savjetnici jednog američkog veterinarskog fakulteta upozoravaju na isto kad je 
 
 Zato, ako tješiš nekoga, najprije poslušaj kako sam govori o svom ljubimcu. Ako on spomene Dugin most, slobodno ga spomeni i ti. Ako ne spomene, dovoljno je reći da ti je žao. Više o tome u članku [Što reći nekome kome je uginuo ljubimac](/vodic/sto-reci-nekome-kome-je-uginuo-ljubimac).
 
-S djecom je potreban dodatni oprez. Izrazi poput „otišao je na bolje mjesto” mogu malo dijete zbuniti ili u njemu pobuditi nadu da će se ljubimac vratiti [6]. Slika mosta može doći uz jasnu rečenicu da je ljubimac umro, ali ne umjesto nje.
+S djecom je potreban dodatni oprez. Izrazi poput „otišao je na bolje mjesto” mogu malo dijete zbuniti ili u njemu pobuditi nadu da će se ljubimac vratiti [6]. Slika mosta može doći uz jasnu rečenicu da je ljubimac umro, ali ne umjesto nje. Kako djetetu to reći, opisujemo u članku [Kako djetetu objasniti smrt ljubimca](/vodic/kako-djetetu-objasniti-smrt-ljubimca).
 
 ## Drugi načini da obilježiš gubitak
 
@@ -107,7 +121,11 @@ Kod gubitka je obred važan [6]. Ne mora uključivati nikakvo vjerovanje.
 - **Njegova priča.** Kako ste se upoznali, kakve je navike imao, kako ste ga sve zvali, što će ti najviše nedostajati [6].
 - **Dar u njegovo ime.** Vrijeme ili novac skloništu ili udruzi za zaštitu životinja [6][7].
 
+Više ideja, od malih kućnih obreda do okupljanja s prijateljima, skupili smo u članku [Rituali oproštaja od ljubimca](/vodic/rituali-oprostaja-od-ljubimca).
+
 Ako želiš zapisati nekoliko rečenica, a ne znaš kako početi, može pomoći [alat za posvetu](/alati/posveta).
+
+> [!ALAT] posveta
 
 ## Sljedeći korak
 

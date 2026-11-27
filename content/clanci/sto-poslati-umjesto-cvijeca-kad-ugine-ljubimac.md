@@ -44,6 +44,11 @@ sources:
     url: "https://ebusiness.avma.org/files/productdownloads/mcm-client-brochures-pet-euthanasia-2025.pdf"
     publisher: "American Veterinary Medical Association"
     accessed_on: 2026-11-27
+  - claim: "Nisu sve vrste ljiljana otrovne za mačke, ali uz uskrsni ljiljan izrazito su otrovni i dnevni ljiljani, tigrasti ljiljani, đurđica i azijski hibridi; i jedan zalogaj bilo kojeg dijela uskrsnog ljiljana može izazvati zatajenje bubrega; mačku i biljku odmah odnijeti veterinaru (dr. Bruce Kornreich, ravnatelj Cornell Feline Health Center)"
+    title: "Easter Peril: Look Out for Lilies and Other Items"
+    url: "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/cat-health-news/easter-peril-look-out-lilies-and-other-items"
+    publisher: "Cornell University College of Veterinary Medicine, Cornell Feline Health Center"
+    accessed_on: 2026-11-27
 ---
 Umjesto cvijeća pošalji nešto što pokazuje da znaš koga je osoba izgubila: poruku s jednim sjećanjem, fotografiju ljubimca ili konkretnu ponudu pomoći. To možeš učiniti još danas, s mobitela, i većina toga ne košta ništa. Ako želiš dati i novac, donacija udruzi u ime ljubimca stiže isti dan.
 
@@ -61,11 +66,17 @@ Cvijeće nije pogrešan izbor, ali je u ovoj prilici često neosobno. Buket ne g
 
 Postoji i praktičan razlog. Mnogi koji su izgubili ljubimca imaju još jednu životinju, a ljiljani su za mačke opasni. Američka agencija FDA navodi da je otrovna cijela biljka, uključujući pelud i vodu u vazi, te da ljiljan može izazvati smrtonosno zatajenje bubrega za manje od tri dana [5]. Ako ipak šalješ cvijeće u kuću s mačkom, provjeri da u buketu nema ljiljana.
 
+> [!CINJENICA] Nije opasan samo jedan ljiljan
+> Ravnatelj Cornell Feline Health Center Bruce Kornreich navodi da nisu sve vrste ljiljana otrovne za mačke, ali da su uz uskrsni ljiljan izrazito otrovni i dnevni ljiljani, tigrasti ljiljani, azijski hibridi i đurđica. Ako mačka pojede dio takve biljke, savjetuje da nju i biljku odmah odneseš veterinaru [8].
+
 ## Što možeš poslati još danas?
 
 ### Poruku s jednim sjećanjem
 
 Ovo je najvažnije i ništa ne košta. Savjetnici RSPCA preporučuju da kažeš da ti je žao i spomeneš ljubimca imenom [1]. Britanska udruga Sue Ryder za kartice sućuti kaže da je „smisleni dio” upravo kratko sjećanje [6].
+
+> [!SAVJET] Ako ne znaš ime ljubimca
+> Pitaj nekoga zajedničkog prije nego što pošalješ poruku. Ako ga ne možeš saznati, napiši „tvoj pas” ili „tvoja mačka” i pošalji poruku svejedno.
 
 Poruka može stići na bilo koji način. Savjetnici veterinarskog fakulteta Sveučilišta Louisiana State navode poruku, e-mail, telefonski poziv i pismo kao jednako dobre načine da se javiš [2]. Vlasnicima se čak predlaže da sačuvaju i e-mailove sućuti, ne samo kartice [4].
 
@@ -127,6 +138,8 @@ Primjer: „Jako mi je žao. Ime je uvijek prvi dotrčao do vrata kad bih došao
 Dodaj i rečenicu koja skida obvezu, na primjer „Ne moraš odgovoriti.” To je naš savjet, a ne nalaz istraživanja: osoba u tuzi često nema snage zahvaljivati, a RSPCA podsjeća da joj može trebati prostor [1].
 
 Gotove rečenice za različite odnose nalaze se u člancima [Poruka sućuti za psa](/vodic/poruka-sucuti-za-psa), [Poruka sućuti za mačku](/vodic/poruka-sucuti-za-macku-30-primjera) i [Što napisati kolegi kojem je uginuo ljubimac](/vodic/sto-napisati-kolegi-kojem-je-uginuo-ljubimac).
+
+> [!ALAT] sucut
 
 ## Što ne pisati?
 

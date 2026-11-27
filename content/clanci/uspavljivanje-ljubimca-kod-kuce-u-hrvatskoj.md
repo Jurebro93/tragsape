@@ -22,7 +22,7 @@ sources:
     url: "https://vetosan.com.hr/"
     publisher: "Veterinarska ambulanta Vetosan"
     accessed_on: 2026-11-27
-  - claim: "Cjenik usluga (stupac MPC, datum sidrene cijene 10. 9. 2026.): izlazak bez intervencije 25 €; „pregled i liječenje u kući vlasnika” naveden dvaput, 26,54 € i 5,67 €; eutanazija psa 29,86 €; eutanazija mačke 26,54 €; odvoz i neškodljivo uklanjanje – mačke 37,50 €, – psi 37,50 €"
+  - claim: "Cjenik usluga (stupac MPC, datum sidrene cijene 10. 9. 2026.): izlazak bez intervencije 25 €; „pregled i liječenje u kući vlasnika” naveden dvaput, 26,54 € i 5,67 €, s istim nazivom, istom sidrenom cijenom i datumom; stupci su samo naziv, MPC, posebni oblik prodaje, sidrena cijena i datum, bez vrste životinje i jedinice; eutanazija psa 29,86 €; eutanazija mačke 26,54 €; odvoz i neškodljivo uklanjanje – mačke 37,50 €, – psi 37,50 €"
     title: "Cjenik"
     url: "https://vetos.hr/cjenik/"
     publisher: "Veterinarska stanica Osijek"
@@ -37,8 +37,8 @@ sources:
     url: "https://www.vef.unizg.hr/wp-content/uploads/2021/01/cjenik-klinike-zavodi-2024.pdf"
     publisher: "Veterinarski fakultet Sveučilišta u Zagrebu"
     accessed_on: 2026-11-27
-  - claim: "Dragan Petrović, univ. mag. med. vet. (Veterinarska ambulanta Nera): postupak sa sedacijom obično traje 15–30 minuta; „Mi uvijek preferiramo da se eutanazija obavi u ambulanti iz praktičnih razloga, ali na zahtjev vlasnika može se to obaviti i kod kuće.” (članak od 27. 3. 2026.)"
-    title: "Hrvatski veterinari objasnili sve o eutanaziji pasa"
+  - claim: "Novinska izjava, ne objava ambulante (24sata, 27. 3. 2026., autorica Karolina Krčelić): Dragan Petrović, univ. mag. med. vet. (Veterinarska ambulanta Nera, Zagreb): postupak sa sedacijom obično traje 15–30 minuta; „Mi uvijek preferiramo da se eutanazija obavi u ambulanti iz praktičnih razloga, ali na zahtjev vlasnika može se to obaviti i kod kuće.”"
+    title: "Hrvatski veterinari objasnili sve o eutanaziji pasa: Evo kako se izvodi i u kojim slučajevima..."
     url: "https://www.24sata.hr/lifestyle/hrvatski-veterinari-objasnili-sve-o-eutanaziji-pasa-evo-kako-se-izvodi-i-u-kojim-slucajevima-1117610"
     publisher: "24sata"
     accessed_on: 2026-11-27

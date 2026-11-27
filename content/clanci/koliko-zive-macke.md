@@ -27,6 +27,11 @@ sources:
     url: "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/loving-care-older-cats"
     publisher: "Cornell Feline Health Center, Cornell University College of Veterinary Medicine"
     accessed_on: 2026-11-27
+  - claim: "Creme Puff, rođena 3. 8. 1967., živjela je do 6. 8. 2005., ukupno 38 godina i 3 dana, s vlasnikom Jakeom Perryjem u Austinu u Teksasu; nositeljica rekorda za najstariju mačku ikad"
+    title: "Oldest cat ever"
+    url: "https://www.guinnessworldrecords.com/world-records/oldest-cat-ever"
+    publisher: "Guinness World Records"
+    accessed_on: 2026-11-27
 ---
 Mačka u prosjeku doživi oko dvanaest godina: prema prvim tablicama života za mačke iz britanskih veterinarskih ambulanti, očekivani vijek pri rođenju je 11,74 godine [1]. Neke žive i više od 20 godina [2].
 
@@ -39,6 +44,12 @@ Brojke su iz Ujedinjene Kraljevine, jer za Hrvatsku usporedivih objavljenih poda
 - Kastrirane mačke i mačke bez pasmine u prosjeku žive dulje [1].
 - Među pasminama najdulje žive burmanska i birmanska mačka (oko 14,4 godine), a najkraće sfinga (6,68) [1].
 - Promjene vezane uz starenje kod mnogih mačaka počinju između 7. i 10. godine [3].
+
+> [!BROJKE] Mačke u brojkama
+> - **11,74 godine** očekivani vijek mačke pri rođenju [1]
+> - **1,07 godina** dulje u prosjeku žive kastrirane mačke [1]
+> - **83,7 %** mačaka u istraživanju uginulo je eutanazijom [1]
+> - **više od 20 godina** dožive neke mačke [2]
 
 ## Odakle su brojke
 
@@ -66,6 +77,8 @@ U tablici je očekivani preostali vijek mačke na početku navedene godine živo
 Vjerojatnost da mačka ugine u nekoj godini ne prelazi 5 % sve do devete godine, a nakon toga raste iz godine u godinu [1].
 
 Dob u ljudskim godinama možeš izračunati alatom [mačje godine](/alati/macje-godine).
+
+> [!ALAT] macje-godine
 
 ## Ženke, kastrirane mačke i mješanci žive dulje
 
@@ -128,6 +141,9 @@ Kako prepoznati da se kraj približava, opisano je u tekstu [znakovi da mačka u
 Većina mačaka u istraživanju, 83,7 %, uginula je eutanazijom [1]. Autori pišu da to daje kraći očekivani vijek nego što bi bio da su sve mačke uginule same [1].
 
 Podaci obuhvaćaju samo mačke koje su išle veterinaru, pa nedostaju mačke uginule na ulici, u skloništu ili nakon okota kod kuće prije prvog pregleda [1]. Ranije istraživanje istog programa, na mačkama uginulima od 2009. do 2012., dalo je medijan od 14,0 godina, ali autori novijeg rada upozoravaju da je ono moglo biti pristrano [1].
+
+> [!CINJENICA] Najstarija mačka ikad
+> Prema Guinnessovoj knjizi rekorda, najstarija mačka ikad bila je Creme Puff iz Austina u Teksasu. Rođena je 3. kolovoza 1967. i živjela je do 6. kolovoza 2005., ukupno 38 godina i 3 dana [5].
 
 ## Česta pitanja
 

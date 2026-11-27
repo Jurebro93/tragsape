@@ -19,7 +19,7 @@ sources:
     accessed_on: 2026-11-27
   - claim: "Za putovanje unutar EU-a pas, mačka ili pitoma vretica treba mikročip, cijepljenje protiv bjesnoće nakon čipiranja, najmanje 12 tjedana starosti pri prvom cijepljenju, 21 dan čekanja nakon prvog cijepljenja i europsku putovnicu"
     title: "Putovanje s kućnim ljubimcima i drugim životinjama u EU-u"
-    url: "https://europa.eu/youreurope/citizens/travel/carry/animal-plant/index_hr.htm"
+    url: "https://europa.eu/youreurope/citizens/travel/carry/pets-and-other-animals/index_hr.htm"
     publisher: "Europska unija, Your Europe"
     accessed_on: 2026-11-27
   - claim: "Osnovna cjepiva za mačke: FPV, FCV, FHV; bjesnoća gdje je endemska; FeLV osnovno za mačke do godine dana i odrasle s izlaskom; mačići od 6–8 tjedana svaka 2–4 tjedna do 16+ tjedana, doza sa 26+ tjedana; niski rizik svake 3 godine, FCV/FHV za viši rizik do godišnje; samo FeLV-negativne mačke; česte i rjeđe reakcije; promatranje do 24 sata; pravilo 3-2-1 (Squires i sur.)"
@@ -97,6 +97,11 @@ sources:
     url: "https://www.vef.unizg.hr/wp-content/uploads/2021/01/cjenik-klinike-zavodi-2024.pdf"
     publisher: "Veterinarski fakultet Sveučilišta u Zagrebu"
     accessed_on: 2026-11-27
+  - claim: "Odluka ministra od 20. 2. 2025., na snazi od 1. 3. 2025.: određuje naknade za troškove propisanih mjera (točka I.); točka 20. Priloga, stupac „Cijena bez PDV-a”: cijepljenje protiv bjesnoće, dehelmintizacija i upis u registar i putovnicu 25,00 € po životinji, bez navođenja vrste; promjena vlasnika i odjava navodi „psa”"
+    title: "Odluka o visini i opsegu naknada za troškove provedbe propisanih mjera iz područja veterinarstva, evidencija i dokumentacije (20. 2. 2025.)"
+    url: "https://veterinarstvo.mps.hr/UserDocsImages/AHL/Odluka%20o%20visini%20i%20opsegu%20naknade%20za%20tro%C5%A1kove%20provedbe%20propisanih%20mjera%20iz%20podru%C4%8Dja%20veterinarstva%2020.02.2025.pdf"
+    publisher: "Ministarstvo poljoprivrede, šumarstva i ribarstva"
+    accessed_on: 2026-11-27
 ---
 Za mačku u Hrvatskoj nijedno cjepivo nije obvezno: Naredba cijepljenje protiv bjesnoće mački samo preporučuje [1]. Obvezno postaje kad mačka putuje u drugu državu EU-a, i to uz čip [2][3]. Osnovno cjepivo protiv zaraznih bolesti u cjenicima koje smo otvorili 27. studenoga 2026. stoji od 12,50 do 35,00 €.
 
@@ -108,7 +113,7 @@ Ovaj tekst ne zamjenjuje veterinara. Koja cjepiva tvoja mačka treba i kada, pro
 - Osnovna cjepiva prema WSAVA-i (2024.) štite od panleukopenije, mačjeg herpesvirusa i kalicivirusa; preporučuju se i mačkama koje ne izlaze [4][7].
 - Mačić se prema WSAVA-i počinje cijepiti sa 6 do 8 tjedana, a serija traje do 16 tjedana ili dulje [4].
 - Odrasla mačka niskog rizika osnovna cjepiva dobiva svake tri godine ili rjeđe [4][6].
-- Cijene: osnovno cjepivo od 12,50 € [10] do 35,00 € [18], leukemija od 12,50 € [10] do 40,00 € [18].
+- Cijene: osnovno cjepivo od 12,50 € [10] do 35,00 € [18], leukemija od 12,50 € [10] do 40,00 € [18], bjesnoća od 19,91 € [10] do 32,00 € [17].
 
 ## Je li išta obvezno u Hrvatskoj
 
@@ -169,6 +174,12 @@ Zvjezdica znači da stavka ne navodi vrstu životinje. Stranice bez datuma proč
 
 Đakovo cjepivo naplaćuje zasebno, prema cjeniku robe: doze cjepiva za mačke od 7,81 do 14,00 €, a kombiniranog s leukemijom 21,04 € [12]. U Splitu neke stavke uključuju i pregled [17]. Drugdje se pregled obično plaća posebno, primjerice 20,00 € u Daruvaru [14] i 40,00 € u Rijeci [16].
 
+### Je li cijena cijepljenja protiv bjesnoće propisana i za mačku?
+
+Ministar je [Odlukom od 20. veljače 2025.](https://veterinarstvo.mps.hr/UserDocsImages/AHL/Odluka%20o%20visini%20i%20opsegu%20naknade%20za%20tro%C5%A1kove%20provedbe%20propisanih%20mjera%20iz%20podru%C4%8Dja%20veterinarstva%2020.02.2025.pdf) cijepljenje protiv bjesnoće, dehelmintizaciju i upis odredio na 25,00 € po životinji, bez PDV-a [19]. Stavka ne navodi vrstu, ali Odluka uređuje naknade za propisane mjere, a mački je to cijepljenje samo preporuka [1][19].
+
+Iz teksta Odluke zato ne možemo reći vrijedi li iznos i za mačku. Daruvar ga za mačku primjenjuje, 25,00 € bez PDV-a i 31,25 € s PDV-om [14], a Osijek za mačku traži 19,91 € [10]. Pitaj u svojoj ambulanti.
+
 ## Kada odmah veterinaru
 
 Ozbiljna reakcija na cjepivo može početi nekoliko minuta do nekoliko sati nakon uboda [9]. Odmah se vrati u ambulantu ili idi na najbližu dežurnu ako primijetiš [9]:
@@ -205,7 +216,7 @@ Mala kvržica obično nestane unutar 14 dana [9]. Prema pravilu 3-2-1 koje WSAVA
 
 ### Je li cijepljenje protiv bjesnoće za mačku jeftinije nego za psa?
 
-Ponekad. U Osijeku stavka za mačku stoji 19,91 € [10], a u Daruvaru 31,25 € s cjepivom [14]; ostali cjenici navode jednu stavku od 31,25 € ili 32,00 € bez vrste životinje [13][15][16][17].
+Ponekad. Za psa, kojemu je cijepljenje obvezno, iznos je određen Odlukom: 25,00 € bez PDV-a [19]. Za mačku u Osijeku stavka stoji 19,91 € [10], a u Daruvaru 31,25 € s cjepivom [14]; ostali cjenici navode jednu stavku od 31,25 € ili 32,00 € bez vrste životinje [13][15][16][17].
 
 ## Sljedeći korak
 
