@@ -403,3 +403,62 @@ export function renderSiteCard({ title, subtitle, label }: { title: string; subt
     </div>
   );
 }
+
+/**
+ * Naslovna slika članka (tipografski predložak koji je vlasnik odabrao 27. 11. 2026.):
+ * znak brenda gore, a dolje tema, kratka crta i naslov. Bez fotografije, u paleti stranice.
+ */
+export function renderArticleCard({ title, topic }: { title: string; topic: string }) {
+  const { width, height } = CARD_SIZES.og;
+  const titleSize = title.length > 90 ? 54 : title.length > 64 ? 62 : title.length > 40 ? 72 : 86;
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        width,
+        height,
+        background: colors.vanilla,
+        fontFamily: SANS,
+        padding: "64px 72px 72px",
+      }}
+    >
+      <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+        <Mark size={44} color={colors.terracotta} />
+        <span style={{ fontFamily: DISPLAY, fontSize: 38, fontWeight: 800, color: colors.plum }}>Trag šape</span>
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+        <div
+          style={{
+            display: "flex",
+            fontSize: 26,
+            fontWeight: 700,
+            letterSpacing: 3,
+            textTransform: "uppercase",
+            color: colors.terracotta,
+          }}
+        >
+          {topic}
+        </div>
+        <div
+          style={{ display: "flex", width: 132, height: 8, borderRadius: 8, background: colors.sun, margin: "22px 0 30px" }}
+        />
+        <div
+          style={{
+            display: "flex",
+            fontFamily: DISPLAY,
+            fontSize: titleSize,
+            fontWeight: 800,
+            lineHeight: 1.06,
+            letterSpacing: -1.5,
+            color: colors.plum,
+            maxWidth: 1040,
+          }}
+        >
+          {title}
+        </div>
+      </div>
+    </div>
+  );
+}
