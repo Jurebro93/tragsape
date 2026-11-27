@@ -127,7 +127,7 @@ Za mačke i pitome vretice Naredba cijepljenje protiv bjesnoće samo preporučuj
 
 ## Koliko košta cijepljenje protiv bjesnoće
 
-Iznos određuje ministar odlukom [1][3]. Prema Odluci koja vrijedi od 1. srpnja 2024., cijepljenje protiv bjesnoće, dehelmintizacija i upis u registar i putovnicu stoje 25,00 € po životinji [4].
+Iznos određuje ministar odlukom [1][3]. Prema Odluci ministra od 20. lipnja 2024., na snazi od 1. srpnja 2024., cijepljenje protiv bjesnoće, dehelmintizacija i upis u registar i putovnicu stoje 25,00 € po životinji [4].
 
 U sedam cjenika ta stavka stoji 31,25 € [9][10][11][12][13][14][16], a u splitskoj praksi Pilić 32,00 € [17]. Veterinarska stanica Daruvar za psa upućuje na cjenik Ministarstva, a za mačku istu stavku prikazuje kao 25,00 € bez PDV-a i 31,25 € s PDV-om [15]. Iz same Odluke nismo mogli pročitati odnosi li se iznos na cijenu bez PDV-a.
 
@@ -176,7 +176,7 @@ Ova stavka najviše se razlikuje od mjesta do mjesta:
 
 To su primjeri, a ne prosjek ni preporuka; stranice bez datuma pročitali smo 27. 11. 2026. Daruvar izričito piše da je cjepivo uključeno i da štiti od hepatitisa, štenećaka i leptospiroze [15]. Đakovo u cjeniku robe zasebno navodi doze kombiniranih cjepiva za pse, od 6,64 do 8,00 € [14]; za ostale cjenike ne piše je li cjepivo u cijeni.
 
-Rijeka ima i zajedničku stavku za bjesnoću i zarazne bolesti, 50,00 € [16]. Pregled je obično posebna stavka: od 20,00 € u Daruvaru [15] do 40,00 € u Rijeci [16]. Kad zoveš, pitaj koliko će stajati sve zajedno: pregled, cjepivo i upis.
+Rijeka ima i zajedničku stavku za bjesnoću i zarazne bolesti, 50,00 € [16]. Pregled je obično posebna stavka, primjerice 20,00 € u Daruvaru [15], 30,00 € u Đakovu [14] i 40,00 € u Rijeci [16]. Kad zoveš, pitaj koliko će stajati sve zajedno: pregled, cjepivo i upis.
 
 ## Što ako putuješ sa psom
 

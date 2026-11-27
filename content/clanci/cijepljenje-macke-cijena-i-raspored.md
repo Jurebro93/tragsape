@@ -87,7 +87,7 @@ sources:
     url: "https://veterinarska.hr/cjenik/"
     publisher: "Veterinarska stanica Rijeka"
     accessed_on: 2026-11-27
-  - claim: "Cjenik objavljen 27. 11. 2026., sve cijene s PDV-om: cijepljenje mačaka protiv zaraznih bolesti od 25,00 do 29,50 € ovisno o cjepivu (neke stavke uključuju pregled); cijepljenje protiv leukemije 28,00 €"
+  - claim: "Cjenik objavljen 27. 11. 2026., sve cijene s PDV-om: cijepljenje mačaka protiv zaraznih bolesti od 25,00 do 29,50 € ovisno o cjepivu (neke stavke uključuju pregled); cijepljenje protiv leukemije 28,00 €; cijepljenje protiv bjesnoće 32,00 € (stavka ne navodi vrstu)"
     title: "Cjenik"
     url: "https://veterina-ivana-pilic.hr/cjenik/"
     publisher: "Specijalistička veterinarska praksa Pilić, Split"
@@ -98,7 +98,7 @@ sources:
     publisher: "Veterinarski fakultet Sveučilišta u Zagrebu"
     accessed_on: 2026-11-27
 ---
-Za mačku u Hrvatskoj nijedno cjepivo nije obvezno: Naredba cijepljenje protiv bjesnoće mački samo preporučuje [1]. Obvezno postaje kad mačka putuje u drugu državu EU-a, i to uz čip [2][3]. Osnovno cjepivo protiv zaraznih bolesti u devet cjenika koje smo otvorili 27. studenoga 2026. stoji od 12,50 do 35,00 €.
+Za mačku u Hrvatskoj nijedno cjepivo nije obvezno: Naredba cijepljenje protiv bjesnoće mački samo preporučuje [1]. Obvezno postaje kad mačka putuje u drugu državu EU-a, i to uz čip [2][3]. Osnovno cjepivo protiv zaraznih bolesti u cjenicima koje smo otvorili 27. studenoga 2026. stoji od 12,50 do 35,00 €.
 
 Ovaj tekst ne zamjenjuje veterinara. Koja cjepiva tvoja mačka treba i kada, procjenjuje veterinar koji ju je pregledao, pa se za raspored obrati najbližoj veterinarskoj ambulanti.
 
@@ -112,7 +112,7 @@ Ovaj tekst ne zamjenjuje veterinara. Koja cjepiva tvoja mačka treba i kada, pro
 
 ## Je li išta obvezno u Hrvatskoj
 
-Ne, dok mačka ne putuje. Naredba (NN 1/2023) obvezu cijepljenja protiv bjesnoće propisuje za pse, a za mačke i pitome vretice kaže samo: „Preporuča se cijepljenje mačaka i pitomih vretica protiv infekcije virusom bjesnoće" [1]. Ako mačku cijepiš, smije se koristiti samo monovalentno cjepivo od umrtvljenih sojeva virusa [1].
+Ne, dok mačka ne putuje. Naredba (NN 1/2023) obvezu cijepljenja protiv bjesnoće propisuje za pse, a za mačke i pitome vretice kaže samo: „Preporuča se cijepljenje mačaka i pitomih vretica protiv infekcije virusom bjesnoće” [1]. Ako mačku cijepiš, smije se koristiti samo monovalentno cjepivo od umrtvljenih sojeva virusa [1].
 
 Čip za mačku također nije obvezan dok ostaje u Hrvatskoj: Zakon o zdravlju životinja kaže da se mačke čipiraju na zahtjev vlasnika, a obvezno prije odlaska u drugu državu [2]. Više o tome je u članku [Čipiranje psa i mačke: cijena i postupak](/vodic/cipiranje-psa-i-macke-cijena-i-postupak).
 
@@ -131,7 +131,7 @@ I WSAVA (2024.) i AAHA/AAFP (2020.) dijele cjepiva na osnovna, koja treba svaka 
 
 ### Treba li cijepiti mačku koja ne izlazi?
 
-Da, osnovna cjepiva. International Cat Care piše da su osnovna cjepiva potrebna i mačkama koje ne izlaze [7]. Virus panleukopenije u okolišu opstaje i dulje od godinu dana i prenosi se i predmetima [8], a smjernice AAHA/AAFP navode da strogo kućne mačke mogu biti i osjetljivije na neke bolesti jer se s uzročnicima ne susreću prirodno [5].
+Da, osnovna cjepiva. International Cat Care piše da su osnovna cjepiva potrebna i mačkama koje ne izlaze [7]. Virus panleukopenije u okolišu opstaje i dulje od godinu dana i prenosi se i predmetima [8], a smjernice AAHA/AAFP navode da strogo kućne mačke mogu biti i osjetljivije na panleukopeniju i kalicivirus, jer ne dobivaju „prirodno” docjepljivanje susretom s uzročnicima [5].
 
 ## Okvirni raspored prema smjernicama
 
@@ -143,7 +143,7 @@ Ovo je okvir iz smjernica, a ne raspored za tvoju mačku [4][6]:
 | Ponavljanje u seriji | svaka 2 do 4 tjedna, do 16 tjedana ili dulje | svaka 3 do 4 tjedna, do 16 do 20 tjedana |
 | Doza nakon serije | sa 26 tjedana ili kasnije | razmotriti sa 6 mjeseci |
 | Odrasla mačka niskog rizika | ne češće od svake 3 godine | svake 3 godine |
-| Odrasla mačka višeg rizika | herpesvirus i kalicivirus do jednom godišnje | ponoviti 7 do 10 dana prije smještaja u hotel za mačke ako nije cijepljena u zadnjih godinu dana |
+| Odrasla mačka višeg rizika | herpesvirus i kalicivirus do jednom godišnje | prije smještaja u hotel za mačke može biti opravdano docjepljivanje 7 do 10 dana ranije, osobito ako nije cijepljena u zadnjih godinu dana |
 | Leukemija (FeLV) | dvije doze u razmaku 3 do 4 tjedna, od 8 tjedana; ponovno nakon godinu dana; zatim godišnje uz visok rizik, inače prema uputi cjepiva | test prije cijepljenja; dvije doze u razmaku 3 do 4 tjedna, od 8 tjedana; ponovno nakon 12 mjeseci; zatim godišnje uz visok rizik ili svake 2 do 3 godine uz manji |
 | Bjesnoća | prema propisu, inače prema uputi cjepiva | prema uputi cjepiva i propisu |
 
@@ -162,8 +162,8 @@ U cjenicima koje smo otvorili stavke izgledaju ovako:
 | Veterinarska stanica Daruvar [14] | 25. 11. 2026. | nema stavke | nema stavke | 31,25 € s cjepivom |
 | Veterina Branimir, Zagreb [15] | 17. 11. 2026. | 27,00 € | 20,66 € | 31,25 €* |
 | Veterinarska stanica Rijeka [16] | bez datuma | 25,00 € ili 30,00 € | 30,00 € | 31,25 €* |
-| Specijalistička veterinarska praksa Pilić, Split [17] | 27. 11. 2026. | 25,00–29,50 € | 28,00 € | nema stavke za mačku |
-| Klinike Veterinarskog fakulteta u Zagrebu [18] | 14. 11. 2024. | 35,00 € | 40,00 € | nema stavke za mačku |
+| Specijalistička veterinarska praksa Pilić, Split [17] | 27. 11. 2026. | 25,00–29,50 € | 28,00 € | 32,00 €* |
+| Klinike Veterinarskog fakulteta u Zagrebu [18] | 14. 11. 2024. | 35,00 € | 40,00 € | nema zasebne stavke za mačku |
 
 Zvjezdica znači da stavka ne navodi vrstu životinje. Stranice bez datuma pročitali smo 27. 11. 2026. Ovo su primjeri, a ne prosjek ni preporuka.
 
@@ -197,7 +197,7 @@ Obje smjernice kažu da se cijepe samo mačke kojima je test na FeLV negativan, 
 
 ### Mačka je jednom teško reagirala na cjepivo. Smije li se opet cijepiti?
 
-O tome odlučuje veterinar koji poznaje njezinu povijest, pa mu obavezno reci za raniju reakciju [9]. WSAVA navodi da životinju s ranijom reakcijom nakon cijepljenja treba pažljivo pratiti do 24 sata i da se takve reakcije obično jave unutar sat vremena [4]; VCA predlaže da pričekaš 30 do 60 minuta u ambulanti [9].
+O tome odlučuje veterinar koji poznaje njezinu povijest, pa mu obavezno reci za raniju reakciju [9]. WSAVA navodi da životinju s ranijom reakcijom nakon cijepljenja treba pažljivo pratiti do 24 sata, iako se takve reakcije obično jave unutar nekoliko minuta do sat vremena [4]; VCA predlaže da pričekaš 30 do 60 minuta u ambulanti [9].
 
 ### Što ako se nakon cijepljenja pojavi kvržica?
 
@@ -205,7 +205,7 @@ Mala kvržica obično nestane unutar 14 dana [9]. Prema pravilu 3-2-1 koje WSAVA
 
 ### Je li cijepljenje protiv bjesnoće za mačku jeftinije nego za psa?
 
-Ponekad. U Osijeku stavka za mačku stoji 19,91 € [10], a u Daruvaru 31,25 € s cjepivom [14]; ostali cjenici navode jednu stavku od 31,25 € bez vrste životinje [13][15][16].
+Ponekad. U Osijeku stavka za mačku stoji 19,91 € [10], a u Daruvaru 31,25 € s cjepivom [14]; ostali cjenici navode jednu stavku od 31,25 € ili 32,00 € bez vrste životinje [13][15][16][17].
 
 ## Sljedeći korak
 
