@@ -46,6 +46,9 @@ export const metadata: Metadata = {
   applicationName: common.brand,
   openGraph: { siteName: common.brand, locale: "hr_HR", type: "website" },
   twitter: { card: "summary_large_image" },
+  // Chrome iz teksta često pogrešno prepozna hrvatski kao bosanski, unatoč lang="hr", i nudi
+  // „prijevod s bosanskog". Stranica je za hrvatsko tržište, pa ponudu prijevoda isključujemo.
+  other: { google: "notranslate" },
 };
 
 export const viewport: Viewport = {
@@ -56,7 +59,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="hr" className={`${display.variable} ${sans.variable} ${fraunces.variable} ${newsreader.variable} h-full antialiased`}>
+    <html lang="hr" translate="no" className={`${display.variable} ${sans.variable} ${fraunces.variable} ${newsreader.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         {children}
         <CookieNotice />

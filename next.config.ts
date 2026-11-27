@@ -3,6 +3,10 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   cacheComponents: true,
+  // Jezik sadržaja i u zaglavlju odgovora, uz lang="hr" u HTML-u.
+  async headers() {
+    return [{ source: "/:path*", headers: [{ key: "Content-Language", value: "hr" }] }];
+  },
   partialPrefetching: true,
   experimental: {
     // Dokaz o isplati donacije (do 10 MB) učitava se poslužiteljskom akcijom; zadano je 1 MB.
