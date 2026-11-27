@@ -85,6 +85,7 @@ export function BigMeadow() {
   const stageRef = useRef<HTMLDivElement>(null);
   const [flowers, setFlowers] = useState<Flower[] | null>(null);
   const [failed, setFailed] = useState(false);
+  const [missing, setMissing] = useState<number | null>(null);
   const [selected, setSelected] = useState<Flower | null>(null);
   const [mine, setMine] = useState<Mine[]>([]);
   const [query, setQuery] = useState("");
@@ -116,12 +117,22 @@ export function BigMeadow() {
   // Učitavanje cvjetova i vlastitih tragova iz preglednika.
   useEffect(() => {
     let cancelled = false;
-    fetch("/api/livada/tragovi")
-      .then((response) => (response.ok ? response.json() : Promise.reject(new Error(String(response.status)))))
-      .then((data: { rows: MeadowRow[] }) => {
+    const load = (fresh: boolean): Promise<MeadowRow[]> =>
+      fetch(fresh ? "/api/livada/tragovi?svjeze=1" : "/api/livada/tragovi", fresh ? { cache: "no-store" } : undefined).then(
+        (response) => (response.ok ? response.json() : Promise.reject(new Error(String(response.status)))),
+      ).then((data: { rows: MeadowRow[] }) => data.rows);
+    const wanted = Number(new URLSearchParams(window.location.search).get("trag"));
+    load(false)
+      .then(async (rows) => {
+        // Upravo ostavljen trag može kratko nedostajati u predmemoriranom popisu: jednom se dohvati svjež.
+        if (Number.isInteger(wanted) && wanted > 0 && !rows.some((row) => row[0] === wanted)) {
+          await new Promise((resolve) => window.setTimeout(resolve, 1500));
+          rows = await load(true).catch(() => rows);
+          if (!cancelled && !rows.some((row) => row[0] === wanted)) setMissing(wanted);
+        }
         if (!cancelled) {
           setMine(readMine());
-          setFlowers(data.rows.map(toFlower));
+          setFlowers(rows.map(toFlower));
         }
       })
       .catch(() => {
@@ -553,6 +564,8 @@ export function BigMeadow() {
     const nextMine = [...readMine().filter((item) => item.number !== flower.number), { number: flower.number, token }];
     writeMine(nextMine);
     setMine(nextMine);
+    // Adresa odmah vodi na novi trag, pa je posjetitelj može spremiti ili podijeliti.
+    window.history.replaceState(null, "", `/livada?trag=${flower.number}`);
     window.setTimeout(() => focus(flower), 60);
   };
 
@@ -646,6 +659,17 @@ export function BigMeadow() {
         ) : null}
         {flowers && count === 0 ? (
           <p className="absolute inset-x-6 top-1/3 text-center font-display text-xl font-extrabold">{t.empty}</p>
+        ) : null}
+        {missing !== null ? (
+          <p
+            role="status"
+            className="absolute inset-x-3 top-28 z-10 mx-auto max-w-sm rounded-2xl bg-white/95 p-3 text-center text-[15px] font-semibold"
+          >
+            {fill(t.missingTrail, { number: missing })}
+            <button type="button" onClick={() => setMissing(null)} className="ml-2 min-h-11 font-bold text-teal underline">
+              {t.card.close}
+            </button>
+          </p>
         ) : null}
 
         <div className="pointer-events-none absolute inset-x-3 top-3 flex flex-wrap items-start justify-between gap-2">

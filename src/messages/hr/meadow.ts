@@ -7,6 +7,7 @@ export const meadow = {
   loading: "Livada se učitava…",
   loadError: "Livada se nije učitala. Osvježi stranicu za trenutak.",
   empty: "Livada je još prazna. Prvi cvijet može biti tvoj.",
+  missingTrail: "Trag br. {number} nije na livadi. Možda poveznica nije potpuna ili je trag uklonjen.",
   zoomIn: "Približi",
   zoomOut: "Udalji",
   zoomAll: "Cijela livada",
