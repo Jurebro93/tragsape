@@ -7,7 +7,7 @@ seo_title: "Uspavljivanje mačke: cijena i postupak (2026.)"
 seo_description: "Cijena eutanazije mačke iz objavljenih cjenika ambulanti u Hrvatskoj, prateće stavke, tijek postupka prema veterinarskim izvorima i što odlučiti unaprijed."
 needs_vet_review: true
 sources:
-  - claim: "Članak 11. stavak 2.: o usmrćivanju zbog dugotrajnog liječenja neizvjesna ishoda, visoke starosti, neizlječive bolesti ili jake i neotklonjive boli odlučuje vlasnik na temelju prethodnog mišljenja doktora veterinarske medicine; stavak 4.: usmrtiti smije samo doktor veterinarske medicine ili stručno osposobljeni veterinarski tehničar pod njegovim nadzorom; stavak 5.: vlasnik bez odgađanja mora osigurati usmrćivanje životinje koja trpi jaku i neotklonjivu bol"
+  - claim: "Članak 11. stavak 2.: o usmrćivanju zbog neizvjesnog liječenja, visoke starosti, neizlječive bolesti ili jake i neotklonjive boli odlučuje vlasnik na temelju mišljenja veterinara; stavak 4.: usmrtiti smije samo veterinar ili tehničar pod njegovim nadzorom; stavak 5.: vlasnik bez odgađanja mora osigurati usmrćivanje životinje koja trpi jaku i neotklonjivu bol"
     title: "Zakon o zaštiti životinja (NN 102/2017), članak 11."
     url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2017_10_102_2342.html"
     publisher: "Narodne novine"
@@ -42,7 +42,7 @@ sources:
     url: "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/euthanasia-what-expect-and-what-questions-ask-first"
     publisher: "Cornell Feline Health Center, Cornell University College of Veterinary Medicine"
     accessed_on: 2026-11-27
-  - claim: "Prije završne injekcije preporučuje se duboka sedacija ili anestezija; kod iscrpljenih mačaka venu je često teško naći, pa se koriste i drugi odobreni putovi koji zahtijevaju da mačka bude bez svijesti; oči se ne zatvaraju; mokrenje i pražnjenje crijeva su česti"
+  - claim: "Prije završne injekcije preporučuje se duboka sedacija ili anestezija, koja smanjuje strah, tjeskobu i bol; kod iscrpljenih mačaka venu je često teško naći, pa se koriste i drugi odobreni putovi koji zahtijevaju da mačka bude bez svijesti; oči se ne zatvaraju; mokrenje i pražnjenje crijeva su česti"
     title: "End of Life Toolkit: Euthanasia Process"
     url: "https://catvets.com/resource/end-of-life-toolkit-euthanasia-process/"
     publisher: "Feline Veterinary Medical Association (FelineVMA, prije AAFP)"

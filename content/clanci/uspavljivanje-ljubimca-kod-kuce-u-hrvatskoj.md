@@ -7,7 +7,7 @@ seo_title: "Uspavljivanje ljubimca kod kuće: kako i koliko košta"
 seo_description: "Eutanazija psa ili mačke kod kuće u Hrvatskoj: tko dolazi na adresu, cijene izlaska iz cjenika, prednosti i ograničenja, što pitati i što s tijelom."
 needs_vet_review: true
 sources:
-  - claim: "Eutanazija se može obaviti u domu vlasnika, što mnogi vlasnici više vole: životinja ne putuje i ostaje u poznatom okruženju, više je privatnosti, može biti prisutno više članova obitelji, manje je vremenskog pritiska; ograničenja su malo prostora, loše svjetlo ili prozračivanje i nedostatak pomoćnog osoblja; veterinar može povesti tehničara; injekcijske metode jednako su sigurne kod kuće; prijevoz i zbrinjavanje tijela dogovaraju se unaprijed; sedacija znači i veći trošak"
+  - claim: "Mnogi vlasnici više vole eutanaziju kod kuće: nema putovanja, poznat prostor, privatnost, više članova obitelji, manje žurbe; ograničenja: malo prostora, loše svjetlo ili prozračivanje, nema pomoćnog osoblja; veterinar može povesti tehničara; injekcijske metode jednako su sigurne kod kuće; prijevoz i zbrinjavanje tijela dogovaraju se unaprijed"
     title: "2016 AAHA/IAAHPC End-of-Life Care Guidelines: The end-of-life event"
     url: "https://www.aaha.org/resources/2016-aaha-iaahpc-end-of-life-care-guidelines/end-of-life-event/"
     publisher: "American Animal Hospital Association i International Association for Animal Hospice and Palliative Care"
@@ -104,7 +104,7 @@ Ovaj tekst ne zamjenjuje veterinara. Je li vrijeme i je li kućni postupak primj
 
 ## Ukratko
 
-- Zakon dopušta da životinju usmrti samo veterinar ili tehničar pod njegovim nadzorom, a mjesto ne propisuje [13].
+- Životinju smije usmrtiti samo veterinar ili tehničar pod njegovim nadzorom; o mjestu članak 11. Zakona o zaštiti životinja ne govori [13].
 - Cijenu eutanazije na kućnoj adresi nismo našli ni u jednom objavljenom cjeniku. Izlazak se naplaćuje posebno, primjerice 12,50 € ili 25 € „bez intervencije” [4][5].
 - Prednosti su mir, poznat prostor i privatnost; ograničenja su prostor, svjetlo i manje pomoći za veterinara [1].
 - Prije dolaska dogovori što će biti s tijelom: odvoz preko ambulante, kremiranje ili ukop [1][10].
@@ -159,7 +159,7 @@ Odaberi mjesto gdje je životinji najugodnije; AAHA navodi i spavaću sobu, pod 
 
 Posljednji obrok ili poslastica: Sveučilište Ohio savjetuje oprez zbog probave i dogovor s veterinarom [9]. Čokolada i luk nisu bezopasna „zadnja poslastica”: čokolada može izazvati opasne poremećaje srčanog ritma, a luk i češnjak oštećuju krv, sa znakovima nekoliko dana kasnije [11][12].
 
-Ako želiš otisak šape, pramen dlake ili zajedničku fotografiju, pripremi to dan ranije [10]. Ideje su i u članku [Kako sačuvati fotografije i videa ljubimca](/vodic/kako-sacuvati-fotografije-i-videa-ljubimca).
+Ako želiš sačuvati otisak šape ili pramen dlake, reci to veterinaru unaprijed [16]. Fotografije, otisci šapa i pramen dlake uspomene su koje vlasnici često čuvaju [10]. Ideje su i u članku [Kako sačuvati fotografije i videa ljubimca](/vodic/kako-sacuvati-fotografije-i-videa-ljubimca).
 
 ## Djeca i druge životinje u kući
 
@@ -181,10 +181,10 @@ Uginuće čipiranog psa ili mačke prijavi u roku od sedam dana [15].
 
 Kućni termin se čeka samo dok životinja ne pati jako. Zakon kaže da vlasnik mora bez odgađanja osigurati usmrćivanje životinje koja trpi jaku i neotklonjivu bol [13]. Ne čekaj i javi se najbližoj dežurnoj ambulanti ako:
 
-- životinja diše otežano, mačka otvorenih usta [16][17],
-- ima napadaj dulji od pet minuta ili više napadaja zaredom [17],
-- izgubi svijest ili se sruši [16],
-- mačka odlazi u posudu za nuždu, a mokraće nema [17].
+- životinja diše otežano, mačka otvorenih usta [17][18],
+- ima napadaj dulji od pet minuta ili više napadaja zaredom [18],
+- izgubi svijest ili se sruši [17],
+- mačka odlazi u posudu za nuždu, a mokraće nema [18].
 
 ## Česta pitanja
 
@@ -194,7 +194,7 @@ Cijenu cijelog kućnog postupka nismo našli ni u jednom objavljenom cjeniku. Iz
 
 ### Smije li veterinar uspavati psa ili mačku kod kuće?
 
-Smije; zakon određuje tko smije usmrtiti životinju, a ne gdje [13]. Hoće li doći, odlučuje svaka ambulanta sama [3][7].
+Zakon o zaštiti životinja u članku 11. propisuje tko smije usmrtiti životinju, a o mjestu ne govori [13]. Hrvatski veterinari to rade i kod kuće na zahtjev vlasnika, ali hoće li doći, odlučuje svaka ambulanta sama [3][7].
 
 ### Je li kod kuće mirnije za životinju?
 
@@ -202,11 +202,11 @@ Veterinarske smjernice navode da životinja kod kuće ne putuje i ostaje u pozna
 
 ### Što ako mi ambulanta ne dolazi na adresu?
 
-Pitaj za mirni termin u ambulanti, na kraju dana [8]. Možeš pitati i postoji li u blizini veterinar koji dolazi kući [16].
+Pitaj za termin u ambulanti u mirno doba dana [8]. Možeš pitati i postoji li u blizini veterinar koji dolazi kući [16].
 
 ### Što ako na zadnji dan izgleda bolje?
 
-To se događa i ne znači nužno da je odluka bila pogrešna. Nazovi veterinara i reci mu što vidiš; odluku o odgodi donosite zajedno. Više u članku [Kako odlučiti o uspavljivanju](/vodic/kako-odluciti-o-uspavljivanju).
+Nazovi veterinara i reci mu što vidiš; o odgodi odlučujete zajedno, a on ti može reći je li poboljšanje stvarno ili prolazno. Više u članku [Kako odlučiti o uspavljivanju](/vodic/kako-odluciti-o-uspavljivanju).
 
 ### Mora li veterinar odnijeti tijelo?
 

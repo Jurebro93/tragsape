@@ -47,11 +47,6 @@ sources:
     url: "https://hrcak.srce.hr/file/478637"
     publisher: "Veterinar (Hrčak – portal hrvatskih znanstvenih i stručnih časopisa)"
     accessed_on: 2026-11-25
-  - claim: "Ambulanta na svojoj stranici navodi: „Kućne posjete veterinara – prema dogovoru” (bez objavljene cijene)"
-    title: "Specijalističke veterinarske ambulante Marković"
-    url: "https://www.markovic.hr/"
-    publisher: "Specijalističke veterinarske ambulante Marković"
-    accessed_on: 2026-11-25
   - claim: "Zakazivanje unaprijed mnogim vlasnicima daje osjećaj kontrole; eutanazija kod kuće opisana je kao mogućnost koju nude mnogi veterinari (podatak se odnosi na SAD)"
     title: "Assessing Quality of Life and Making Difficult Decisions for Your Pet"
     url: "https://vmc.vet.osu.edu/sites/default/files/documents/how%20will%20i%20know.pdf"
@@ -87,7 +82,7 @@ Stavka „eutanazija” rijetko je cijeli račun. Veterina Branimir uz svoj cjen
 - **Pregled.** Opći klinički pregled stoji 39 € u Veterini Branimir [5], 35 € u Zelini [6] i 18,75 € u Osijeku [4].
 - **Sedacija.** U Veterini Branimir od 23,04 € (mačka i pas do 10 kg) do 46,09 € (pas teži od 30 kg) [5]; u Zelini 17,50 € [6]; u Osijeku 25 € za „Sedaciju kategorije 1.” [4].
 - **Zbrinjavanje tijela**, ako ga prepuštaš ambulanti: 37,50 € u Osijeku [4]; u Zelini 37,50 € do 10 kg, 50,00 € od 11 do 30 kg i 62,50 € iznad 30 kg [6]; na Veterinarskom fakultetu 25,00 € [7]. Kremiranje se plaća zasebno, a cijene su u članku [Kremiranje kućnih ljubimaca: cijena i postupak](/vodic/kremiranje-kucnih-ljubimaca-cijena).
-- **Dolazak izvan radnog vremena.** Na klinikama Veterinarskog fakulteta usluge od 18 do 8 sati te nedjeljom i praznikom iza 11 sati uvećavaju se za 50 % [7]. Veterina Branimir dolazak dežurnog veterinara izvan radnog vremena naplaćuje 100 €, a pregled posebno [5].
+- **Dolazak izvan radnog vremena.** Na klinikama Veterinarskog fakulteta usluge od 18 do 8 sati te nedjeljom i praznikom iza 11 sati uvećavaju se za 50 % [7]. Veterina Branimir dolazak dežurnog veterinara izvan radnog vremena naplaćuje 100 €, a pregled posebno; dežurstvo je u ambulanti, uz obaveznu telefonsku najavu [5].
 
 Da vidiš red veličine: u cjeniku Veterine Branimir eutanazija (50,00 €) i sedacija psa do 30 kg (38,41 €) zajedno iznose 88,41 €, bez pregleda, materijala i zbrinjavanja tijela [5]. To je naš zbroj dviju stavki iz cjenika, a ne ponuda ambulante.
 
@@ -116,13 +111,13 @@ Sam postupak veterinarski izvori opisuju ovako:
 
 **Tko odlučuje, ja ili veterinar?** Ti, ali na temelju mišljenja veterinara. Zakon uz to kaže da vlasnik mora bez odgađanja osigurati usmrćivanje životinje koja trpi jaku i neotklonjivu bol [1].
 
-**Mogu li termin dogovoriti unaprijed?** Možeš pitati. Savjetnici sveučilišne veterinarske bolnice u Ohiju pišu da mnogim vlasnicima pomaže kad sami odaberu vrijeme, dok pas još ne pati jako i dok mogu doći oni kojima je stalo [10].
+**Mogu li termin dogovoriti unaprijed?** Možeš pitati. Savjetnici sveučilišne veterinarske bolnice u Ohiju pišu da mnogim vlasnicima pomaže kad sami odaberu vrijeme, dok pas još ne pati jako i dok mogu doći oni kojima je stalo [9].
 
-**Moram li psa odjaviti?** Da. Uginuće označenog psa prijavljuje se u roku od sedam dana [11]. U dvama cjenicima koje smo gledali odjava u upisniku stoji 5,60 € [4][5].
+**Moram li psa odjaviti?** Da. Uginuće označenog psa prijavljuje se u roku od sedam dana [10]. U dvama cjenicima koje smo gledali odjava u upisniku stoji 5,60 € [4][5].
 
 ## Uspavljivanje psa kod kuće
 
-Neke ambulante dolaze na kućnu adresu. Zagrebačke Specijalističke veterinarske ambulante Marković, primjerice, na svojoj stranici navode kućne posjete „prema dogovoru”, bez cijene [9]. U američkom vodiču koji smo citirali piše da eutanaziju kod kuće nude mnogi veterinari [10], ali to ne govori ništa o tvom mjestu.
+Dolazi li veterinar na kućnu adresu, ovisi o ambulanti; cijenu eutanazije na adresi nismo našli ni u jednom objavljenom cjeniku. U američkom vodiču koji smo citirali piše da eutanaziju kod kuće nude mnogi veterinari [9], ali to ne govori ništa o tvom mjestu. Više o tome piše u članku [Uspavljivanje ljubimca kod kuće u Hrvatskoj](/vodic/uspavljivanje-ljubimca-kod-kuce-u-hrvatskoj).
 
 Cijenu eutanazije na kućnoj adresi nismo našli ni u jednom objavljenom cjeniku. Vidljivo je samo da se izlazak na teren naplaćuje posebno: 12,50 € u Zelini i 25 € u Osijeku, i to „bez intervencije” [4][6].
 
