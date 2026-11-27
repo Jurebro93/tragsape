@@ -128,11 +128,20 @@ Izvan radnog vremena račun raste. Na klinikama Veterinarskog fakulteta usluge o
 
 Za red veličine: u Veterini Branimir eutanazija i sedacija mačke zajedno su 73,04 €, a s pregledom 112,04 € [3]. U Osijeku eutanazija, sedacija i zbrinjavanje tijela zajedno su 89,04 € [2]. To su naši zbrojevi stavki iz cjenika, a ne ponude ambulanti.
 
+> [!BROJKE] Račun u brojkama
+> - **26,54–50,00 €** sama stavka eutanazije mačke [2][3][5][6][15]
+> - **17,50–25,00 €** sedacija [2][3][5][6]
+> - **25,00–37,50 €** zbrinjavanje tijela preko ambulante [2][5][6]
+> - **50 %** skuplje od 18 do 8 sati te nedjeljom i praznikom na klinikama Veterinarskog fakulteta [6]
+
 ## Tko odlučuje i tko smije uspavati mačku
 
 Kad je mačka neizlječivo bolesna, vrlo stara s otkazivanjem osnovnih funkcija ili trpi jaku i neotklonjivu bol, odlučuješ ti, na temelju prethodnog mišljenja veterinara [1]. Usmrtiti je smije samo doktor veterinarske medicine ili stručno osposobljeni veterinarski tehničar pod njegovim nadzorom [1].
 
 Prije postupka potpisuješ pristanak [7]. Na klinikama Veterinarskog fakulteta to je obrazac „Zahtjev za eutanaziju” [11]. Ako dvojiš je li vrijeme, pomoći će ti [Kako odlučiti o uspavljivanju](/vodic/kako-odluciti-o-uspavljivanju) i [Znakovi da mačka umire](/vodic/znakovi-da-macka-umire).
+
+> [!CINJENICA] Mačke češće nego psi
+> Na klinikama Veterinarskog fakulteta u Zagrebu 2022. eutanazirano je 5,2 % zaprimljenih mačaka i 4,5 % pasa [11].
 
 ## Kako postupak izgleda kod mačke
 

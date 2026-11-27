@@ -51,6 +51,12 @@ AKC na istoj stranici prenosi navod Američke veterinarske udruge (AVMA): suprot
 
 Drugi razlog je veličina. AVMA navodi da veće pasmine u prosjeku žive kraće od manjih [3]. AKC prenosi procjenu istraživača da svakih 4,4 funte tjelesne mase, oko 2 kg, skraćuju očekivani život psa za otprilike mjesec dana, i dodaje da razlog još nije poznat [1].
 
+> [!BROJKE] Pasje godine u brojkama
+> - **15** ljudskih godina vrijedi prva godina srednje velikog psa [1]
+> - **oko 5** ljudskih godina svaka godina nakon druge [1]
+> - **oko 1 mjesec** kraći očekivani život za svaka 2 kg mase, prema procjeni istraživača [1]
+> - **25 %** posljednja četvrtina očekivanog vijeka: tada je pas senior [3][4]
+
 ## Tablica pasjih godina po veličini psa
 
 Ovo je tablica Američkoga kinološkog saveza (AKC), „How Old Is My Dog in Human Years?” [2]. Granice veličine u izvoru su u funtama; kilograme smo preračunali i zaokružili.
@@ -75,6 +81,9 @@ Ovo je tablica Američkoga kinološkog saveza (AKC), „How Old Is My Dog in Hum
 | 16 | 80 | 87 | 99 | 121 |
 
 Do pete godine mali, srednji i veliki psi u tablici imaju iste vrijednosti, a divovski se odvajaju ranije [2]. Poslije se razlike brzo šire. AKC napominje da se pasja dob ne može precizno odrediti jer ovisi o mnogo čimbenika, pa tablicu čitaj kao orijentir [1].
+
+> [!CINJENICA] Štene i dijete s istim zubima
+> Prema istraživanju epigenetskog sata, štene od oko 8 tjedana odgovara djetetu od oko 9 mjeseci: obama tada rastu mliječni zubi [5].
 
 Tablica počinje s navršenom godinom. Za štene mlađe od godinu dana izvor nema vrijednosti po mjesecima, pa ih ne navodimo [2].
 

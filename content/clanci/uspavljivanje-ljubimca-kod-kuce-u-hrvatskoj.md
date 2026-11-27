@@ -173,6 +173,12 @@ Osječki cjenik razliku između dviju stavki „pregled i liječenje u kući vla
 
 Vukovarski cjenik jedini u tablici odvaja izlazak na intervenciju od poziva nakon kojeg intervencije nije bilo, a ne navodi za koje se životinje stavke primjenjuju [22]. Uz izlazak se zasebno plaćaju eutanazija, sedacija i zbrinjavanje tijela; te cijene su u člancima [Uspavljivanje psa: cijena i postupak](/vodic/uspavljivanje-psa-cijena) i [Uspavljivanje mačke: cijena i postupak](/vodic/uspavljivanje-macke-cijena-i-postupak). Na klinikama Veterinarskog fakulteta usluge od 18 do 8 sati te nedjeljom i praznikom skuplje su za 50 % [6].
 
+> [!BROJKE] Kućni termin u brojkama
+> - **12,50–27 €** izlazak veterinara u cjenicima [4][5][6]
+> - **50 %** skuplje od 18 do 8 sati te nedjeljom i praznikom na klinikama Veterinarskog fakulteta [6]
+> - **15–30 minuta** postupak sa sedacijom, prema izjavi veterinara [7]
+> - **7 dana** rok za prijavu uginuća čipirane životinje [15]
+
 ## Prednosti i ograničenja prema veterinarima
 
 Smjernice Američke udruge bolnica za životinje (AAHA) i međunarodne udruge za palijativnu skrb životinja navode da mnogi vlasnici više vole eutanaziju kod kuće [1]. Životinja ne putuje i ostaje u poznatom prostoru, ima više privatnosti, može biti prisutno više članova obitelji i manje se žuri [1].
@@ -194,6 +200,9 @@ Specijaliziranu uslugu ili udrugu za palijativnu skrb ili hospicij za ljubimce u
 - [ ] Možete li odnijeti tijelo, i koliko to stoji [1][4]?
 - [ ] Što trebam pripremiti: mjesto, deku, podlogu, svjetlo [1]?
 - [ ] Što ću potpisati?
+
+> [!SAVJET] Pitanja na papiru
+> Ispiši pitanja prije poziva i odgovore zapiši uz njih. U takvom razgovoru lako je nešto zaboraviti.
 
 ## Kako se pripremiti za taj dan
 

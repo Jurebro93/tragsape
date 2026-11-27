@@ -93,6 +93,9 @@ Smjernice za skrb o starim mačkama američke udruge AAFP upozoravaju da vlasnic
 
 U ambulanti se mačka ne ponaša kao kod kuće. Zato WSAVA preporučuje kućne snimke hodanja, skakanja, stuba i odlaska u posudu [3].
 
+> [!CINJENICA] Predugi nokti mogu biti znak boli
+> Mačka s bolnim zglobovima manje grebe, pa joj nokti narastu predugi [1][5].
+
 ## Znakovi koje opisuju veterinarske udruge
 
 Popis je sastavljen prema iCatCare, FelineVMA, smjernicama AAFP-a i Centru za zdravlje mačaka Sveučilišta Cornell [1][5][6][8]. Nijedan znak sam po sebi ne dokazuje bol.
@@ -168,6 +171,9 @@ Prema FelineVMA, plan protiv boli može uključivati lijekove, fizikalnu terapij
 
 Lijek i dozu određuje isključivo veterinar. Mački nikad ne daji lijekove za ljude bez njegova savjeta [11]; WSAVA izričito navodi da se paracetamol mačkama ne daje [4].
 
+> [!SAVJET] Pregled češće nego jednom godišnje
+> FelineVMA savjetuje da stara mačka ide na pregled češće nego jednom godišnje, a vrlo stara prema AAFP-u može trebati pregled svakih tri do šest mjeseci [5][6].
+
 ## Kada odmah veterinaru
 
 Ne čekaj redovan termin ako vidiš nešto od ovoga [11]:
@@ -211,5 +217,7 @@ FelineVMA preporučuje pregled najmanje jednom godišnje, a stare i kronično bo
 ## Sljedeći korak
 
 Ovaj tjedan snimi mačku kako skače, silazi i ulazi u posudu za pijesak i ponesi snimke na pregled [3]. Koliko ima ljudskih godina, provjeri u [kalkulatoru mačjih godina](/alati/macje-godine). Ako imaš i starog psa: [Stari pas: znakovi da pati](/vodic/stari-pas-znakovi-da-pati).
+
+> [!ALAT] macje-godine
 
 Sa svime što si primijetio obrati se najbližoj veterinarskoj ambulanti.

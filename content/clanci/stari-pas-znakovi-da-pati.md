@@ -98,6 +98,9 @@ Američka udruga bolnica za male životinje (AAHA) dodaje da vlasnici obično pa
 
 Tvoja je prednost što psa poznaješ najbolje. Prema AAHA-i, odstupanje od njegova uobičajenog ponašanja upućuje na mogućnost boli [3].
 
+> [!CINJENICA] Bol se često vidi tek kad prođe
+> Veterinari VCA bolnica pišu da vlasnici često tek kad bol nakon liječenja nestane shvate da je pas trpio [6].
+
 ## Znakovi kronične boli koje veterinari opisuju
 
 Nijedan znak sam po sebi ne dokazuje bol i nijedan pas ne pokazuje sve. Popis je sastavljen prema Centru za zdravlje pasa Sveučilišta Cornell i veterinarima VCA bolnica [5][6].
@@ -140,6 +143,9 @@ Ljestvica akutne boli Sveučilišta Colorado State, koju veterinari koriste u kl
 | Reži kad ga diraš, ne da se podići | Bol; kod malih pasa duljih leđa često bol u leđima [6] | Ne forsiraj dodir, reci veterinaru gdje reagira |
 | Manje jede, mršavi | Bol ili druga bolest [5][7] | Zapiši težinu i što jede, javi se veterinaru [7] |
 | Kraće i sporije šetnje | Kronična bol, ne nužno starost [6] | Usporedi sa snimkama od prije [7] |
+
+> [!SAVJET] Zapiši i snimi
+> Uz svaki znak zapiši kad si ga prvi put primijetio i snimi ga mobitelom. Strah u ambulanti može prikriti bol [5].
 
 ## Ljestvice boli: što je za veterinara, a što za tebe
 
@@ -216,5 +222,7 @@ Ne sama po sebi, jer se bol često može ublažiti [2]. Ako se bol ne može drž
 ## Sljedeći korak
 
 Ovaj tjedan zapiši tri do pet stvari koje tvoj pas najviše voli, snimi kako ustaje i penje se stubama i ponesi to na pregled [3][7]. Koliko ima ljudskih godina, provjeri u [kalkulatoru psećih godina](/alati/psece-godine). Ako imaš i staru mačku, njezini su znakovi drukčiji: [Stara mačka: znakovi da pati](/vodic/stara-macka-znakovi-da-pati).
+
+> [!ALAT] psece-godine
 
 Sa svime što si primijetio obrati se najbližoj veterinarskoj ambulanti.

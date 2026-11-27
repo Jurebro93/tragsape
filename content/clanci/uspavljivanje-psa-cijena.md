@@ -105,6 +105,12 @@ Da vidiš red veličine: u cjeniku Veterine Branimir eutanazija (50,00 €) i se
 
 Veterina Branimir navodi da njezine cijene uključuju PDV [5]. Kod ostalih cjenika pitaj je li PDV uključen.
 
+> [!BROJKE] Račun u brojkama
+> - **29,86–50,00 €** sama stavka eutanazije u četiri cjenika [4][5][6][7]
+> - **17,50–46,09 €** sedacija, ovisno o ambulanti i težini psa [4][5][6]
+> - **25,00–62,50 €** zbrinjavanje tijela preko ambulante [4][6][7]
+> - **7 dana** rok za prijavu uginuća označenog psa [10]
+
 ## Kako postupak izgleda
 
 Životinju u Hrvatskoj smije usmrtiti samo doktor veterinarske medicine ili stručno osposobljeni veterinarski tehničar pod njegovim nadzorom. Kad je riječ o životinji u visokoj starosti kojoj otkazuju osnovne životne funkcije, o neizlječivoj bolesti, o dugotrajnom liječenju neizvjesna ishoda ili o jakoj i neotklonjivoj boli, odlučuje vlasnik, na temelju prethodnog mišljenja veterinara [1].
@@ -147,6 +153,9 @@ Kad zoveš, pitaj tri stvari: dolazite li na adresu i kada, koliko stoje dolazak
 ## Što nakon postupka
 
 Prije postupka reci ambulanti što želiš da bude s tijelom. Mogućnosti su tri: zbrinjavanje preko ambulante, kremiranje ili ukop.
+
+> [!SAVJET] Uspomena se dogovara prije
+> Ako želiš sačuvati otisak šape ili pramen dlake, reci to veterinaru prije postupka.
 
 Na klinikama Veterinarskog fakulteta u Zagrebu vlasnici 58 % pasa i mačaka eutanaziranih 2022. odabrali su zajedničko zbrinjavanje preko klinike, 5,5 % krematorij, a 5,3 % je tijelo preuzelo samo [8]. Nijedan izbor nije mjera toga koliko si svog psa volio.
 

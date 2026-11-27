@@ -152,6 +152,9 @@ Uvjeti za ukop jesu [5]:
 
 Same odredbe i ono što u njima nije jasno prenijeli smo u općem vodiču [Što učiniti kad ljubimac ugine](/vodic/sto-uciniti-kad-ljubimac-ugine).
 
+> [!SAVJET] Prije poziva krematoriju
+> Cijena kremiranja ovisi o težini [7][9], pa reci koliko je mačka otprilike teška i je li tijelo kod kuće ili u ambulanti.
+
 ## Koliko stoji kremiranje mačke
 
 Cijene su iz cjenika koje smo otvorili 26. studenoga 2026. Mačke ulaze u najniže težinske razrede.
