@@ -44,6 +44,16 @@ sources:
     url: "https://petmemo.hr/cesta-pitanja/"
     publisher: "Pet Memo d.o.o., Samobor"
     accessed_on: 2026-11-26
+  - claim: "Donesen na temelju čl. 51. st. 5., 52. st. 5., 53. st. 5. i 59. st. 4. Zakona o zdravlju životinja (ne na temelju čl. 58. st. 7.); uređuje registraciju i odobravanje subjekata i objekata za držane kopnene životinje, a ne označavanje, odjavu ni identifikacijski dokument kućnih ljubimaca"
+    title: "Pravilnik o registraciji i odobravanju subjekata i objekata za držane kopnene životinje (NN 102/2025)"
+    url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2025_07_102_1416.html"
+    publisher: "Narodne novine"
+    accessed_on: 2026-11-27
+  - claim: "Kontakt Uprave za veterinarstvo i sigurnost hrane: Planinska 2a, Zagreb, tel. (01) 6443 540, e-pošta veterinarstvo@mps.hr"
+    title: "Kontakt"
+    url: "https://veterinarstvo.mps.hr/hr/ostalo/footer-linkovi/kontakt/"
+    publisher: "Ministarstvo poljoprivrede, šumarstva i ribarstva – Uprava za veterinarstvo i sigurnost hrane"
+    accessed_on: 2026-11-27
 ---
 Nakon smrti čipiranog psa, mačke ili pitome vretice imaš jednu zakonsku obvezu: uginuće prijaviti u roku od sedam dana, kako bi se izmijenili podaci u putovnici i u Upisniku kućnih ljubimaca [1]. S čipom ne trebaš raditi ništa. Zakon ne traži ni da putovnicu predaš ili uništiš [1].
 
@@ -73,7 +83,9 @@ Sredinom listopada 2024. u bazi je bilo 766 356 aktivnih ljubimaca [2]. Isti izv
 
 ## Gdje se uginuće prijavljuje i koliko stoji?
 
-Zakon ne imenuje šalter ni obrazac. Kaže da se prijavljuje „na način kako je to propisano pravilnikom” koji donosi ministar [1]. Taj pravilnik nismo uspjeli pronaći, pa ovdje ne opisujemo korake koje nismo mogli pročitati.
+Zakon ne imenuje šalter ni obrazac. Kaže da se prijavljuje „na način kako je to propisano pravilnikom” koji donosi ministar, a taj pravilnik treba urediti i identifikacijske dokumente (članak 58. stavak 7.) [1]. U Narodnim novinama od 2023. do 27. studenoga 2026. nismo ga našli. Pravilnik iz 2025. o registraciji objekata za držane kopnene životinje odjavu ljubimaca ne uređuje [8].
+
+Zato ovdje ne opisujemo korake koje propis ne navodi. Pitanja o Upisniku možeš poslati Upravi za veterinarstvo i sigurnost hrane [9].
 
 Ono što Zakon kaže jest da životinje označavaju i registriraju ovlaštene veterinarske organizacije, veterinarske prakse i ovlašteni veterinari [1]. Zato je prva adresa ambulanta u kojoj je ljubimac čipiran ili cijepljen.
 
@@ -91,7 +103,7 @@ Raniji Pravilnik o označavanju pasa to je govorio izravno: mikročip je „traj
 
 Zakon govori o „izmjeni podataka”, ne o brisanju [1]. Što točno nakon prijave piše uz broj čipa i koliko se dugo zapis čuva, u Zakonu ne stoji [1].
 
-Stari pravilnik predviđao je da se u upisnik unese datum odjave i razlog odjave, među kojima je i uginuće [5]. Vrijedi li isti oblik zapisa i danas, nismo mogli potvrditi.
+Stari pravilnik predviđao je da se u upisnik unese datum odjave i razlog odjave, među kojima je i uginuće [5]. Novi pravilnik koji bi to propisao nismo našli, pa ne znamo kako zapis izgleda danas.
 
 ## Smijem li zadržati putovnicu?
 
@@ -99,7 +111,7 @@ Zakon to ne zabranjuje, ali ni izričito ne uređuje. Putovnica je u Zakonu „i
 
 Odredbu koja bi tražila da putovnicu psa ili mačke predaš ili vratiš nismo našli [1]. Za usporedbu, isti Zakon izričito kažnjava onoga tko nakon smrti kopitara, primjerice konja, ne vrati njegov identifikacijski dokument; za pse, mačke i vretice takve točke nema [1].
 
-Mnogima je putovnica uspomena: u njoj su ime, datumi i potpisi veterinara. Reci u ambulanti da je želiš zadržati i pitaj hoće li je nakon upisa vratiti. Ne tvrdimo da će svaka ambulanta postupiti jednako, jer pravilnik o tome nismo mogli pročitati.
+Mnogima je putovnica uspomena: u njoj su ime, datumi i potpisi veterinara. Reci u ambulanti da je želiš zadržati i pitaj hoće li je nakon upisa vratiti. Ne tvrdimo da će svaka ambulanta postupiti jednako, jer pravilnik koji bi to uredio nismo našli [1][8].
 
 ## Što s čime: pregled
 

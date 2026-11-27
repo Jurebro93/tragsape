@@ -67,7 +67,7 @@ Uginuće čipiranog psa moraš prijaviti najkasnije u roku od sedam dana od dana
 - Rok je sedam dana od dana uginuća [1].
 - Odjava se u cjenicima veterinara vodi kao „odjava psa” u Lysacanu ili Središnjem upisniku kućnih ljubimaca [4][6].
 - U tri objavljena cjenika koja smo pročitali stoji 5,60 € [4][5][6].
-- O odjavi dobivaš ispis iz Upisnika [1]. Pravilnik koji bi propisao postupak odjave još nije objavljen, pa način odjave ovisi o ambulanti [1][9].
+- O odjavi dobivaš ispis iz Upisnika [1]. Pravilnik koji bi propisao postupak odjave u Narodnim novinama nismo našli, pa način odjave ovisi o ambulanti [1].
 - Kazna za propušteni rok je od 260 do 660 eura, ili 60 eura na mjestu počinjenja prekršaja [2].
 
 ## Koji je rok za odjavu psa nakon uginuća?
@@ -90,7 +90,7 @@ U veterinarskoj ambulanti. Zakon u sustav označavanja i registracije kućnih lj
 
 Zakon ne opisuje sam postupak. Upućuje na pravilnik koji donosi ministar [1]. Stari Pravilnik o označavanju pasa (NN 72/2010), u čijem je upisniku postojala rubrika „Razlog odjave (uginuće, promjena vlasnika, promjena izdavatelja)”, prestao je važiti stupanjem na snagu novog zakona [3].
 
-Taj pravilnik, prema članku 58. stavku 7. Zakona, treba urediti označavanje i registraciju, identifikacijske dokumente i unos podataka u bazu [1]. U Narodnim novinama od 2023. do 27. studenoga 2026. nismo ga našli. Pravilnik iz 2025. koji se zove slično uređuje registraciju objekata za držane životinje, a ne odjavu ljubimaca [9]. Zakon od 2022. nije mijenjan [2].
+Novi pravilnik iz članka 58. stavka 7. Zakona trebao bi urediti provedbu označavanja i registracije, identifikacijske dokumente i unos podataka u bazu [1]. U Narodnim novinama od 2023. do 27. studenoga 2026. nismo ga našli. Pravilnik iz 2025. o registraciji objekata za držane kopnene životinje ne uređuje odjavu ljubimaca [9]. Zakon od 2022. nije mijenjan [2].
 
 Ni stranica Uprave za veterinarstvo o Lysacanu ne opisuje postupak [7]. Zato pojedinosti provjeri izravno u ambulanti, a pitanja o samom Upisniku možeš poslati Upravi za veterinarstvo i sigurnost hrane [10].
 
@@ -156,7 +156,7 @@ U cjenicima triju ambulanti koje smo pročitali 26. studenoga 2026. stoji 5,60 �
 
 ### Što se događa s putovnicom psa nakon odjave?
 
-Zakon kaže da se uginuće prijavljuje radi izmjene podataka u identifikacijskom dokumentu i u Upisniku [1]. Ne kaže ostaje li putovnica vlasniku, a pravilnik koji bi to mogao urediti nije objavljen, pa pitaj u ambulanti ako je želiš sačuvati.
+Zakon kaže da se uginuće prijavljuje radi izmjene podataka u identifikacijskom dokumentu i u Upisniku [1]. Ne kaže ostaje li putovnica vlasniku, a pravilnik koji bi to mogao urediti nismo našli, pa pitaj u ambulanti ako je želiš sačuvati.
 
 ### Moram li odjaviti i čipiranu mačku?
 
