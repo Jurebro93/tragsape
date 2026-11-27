@@ -55,6 +55,12 @@ Kremiranje psa naplaćuje se prema težini. U dva cjenika koja hrvatski kremator
 - Samo kremiranje traje u prosjeku jedan do tri sata, a na urnu se može čekati i četiri tjedna ili dulje [5].
 - Pepela ostaje otprilike 4 % težine psa [5].
 
+> [!BROJKE] Kremiranje psa u brojkama
+> - **46,45 €** najniža cijena pojedinačnog kremiranja u objavljenim cjenicima, pas do 1 kg [1]
+> - **331,81 €** najviša, pas teži od 50 kg [1]
+> - **1–3 sata** traje samo kremiranje [5]
+> - **4 %** težine psa ostaje kao pepeo [5]
+
 ## Koliko stoji kremiranje psa po težini?
 
 Cijenu ne određuje država. Pravilnik kaže da je naknada za zbrinjavanje tijela kućnih ljubimaca „regulirana tržišnim odnosima” i da mora biti javno dostupna u cjenicima [7]. Cjenik s težinskim razredima našli smo kod dva krematorija: Spomengaj u Zagrebu i Pet Memo u Samoboru.
@@ -82,6 +88,9 @@ Spomengajev cjenik nosi oznaku 16. 11. 2026. [1]. Pet Memo ne navodi datum cjeni
 | Pet Memo | do 30 kg | 250,00 € | nije u ponudi |
 | Pet Memo | do 40 kg | 275,00 € | nije u ponudi |
 | Pet Memo | do 50 kg | 325,00 € | nije u ponudi |
+
+> [!SAVJET] Na granici razreda
+> Ako je tvoj pas težinom točno na granici dvaju razreda, pitaj krematorij koji se razred primjenjuje prije nego potvrdiš dogovor.
 
 Spomengaj za skupno kremiranje ima šire razrede (do 2, 2–5, 5–10, 10–20 i 20–30 kg), pa smo ih u tablici pridružili razredima pojedinačnog [1]. Ako je tvoj pas težinom točno na granici razreda, pitaj koji se razred primjenjuje.
 

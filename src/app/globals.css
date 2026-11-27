@@ -102,3 +102,29 @@
   font-family: var(--font-display);
 }
 
+
+/* Okvir „U brojkama” u članku: stavke popisa postaju kartice s velikom brojkom (podebljani dio). */
+.callout-brojke ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  padding-left: 0;
+}
+.callout-brojke li {
+  border-radius: 1.25rem;
+  background: var(--color-vanilla);
+  padding: 0.9rem 1rem;
+  padding-left: 1rem;
+  font-size: 15px;
+  line-height: 1.4;
+}
+.callout-brojke li strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.05;
+  color: var(--color-terracotta-deep);
+}

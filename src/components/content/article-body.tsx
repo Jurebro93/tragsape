@@ -3,10 +3,13 @@ import Link from "next/link";
 import { isValidElement, type ReactNode } from "react";
 import Markdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { ArticleCallout } from "@/components/content/article-callout";
 import { CtaBlock } from "@/components/content/cta-block";
 import { cn } from "@/lib/cn";
 import { isInternalPath } from "@/lib/content/attribution";
+import { isCalloutKind } from "@/lib/content/callouts";
 import { headingId } from "@/lib/content/headings";
+import { CALLOUT_ATTRIBUTE, CALLOUT_TITLE_ATTRIBUTE, remarkCallouts } from "@/lib/content/remark-callouts";
 import { CTA_SLOT_ATTRIBUTE, remarkCtaSlots } from "@/lib/content/remark-cta-slots";
 import { CTA_SLOTS, isCtaSlot, type CtaBlockData, type CtaSlot } from "@/lib/content/types";
 import { content } from "@/messages/hr/content";
@@ -170,8 +173,18 @@ export function ArticleBody({
         </h2>
       );
     },
-    aside: ({ node: _node, ...props }) => {
-      const slot = (props as Record<string, unknown>)[CTA_SLOT_ATTRIBUTE];
+    aside: ({ node: _node, children, ...props }) => {
+      const attributes = props as Record<string, unknown>;
+      const callout = attributes[CALLOUT_ATTRIBUTE];
+      if (typeof callout === "string" && isCalloutKind(callout)) {
+        const title = attributes[CALLOUT_TITLE_ATTRIBUTE];
+        return (
+          <ArticleCallout kind={callout} title={typeof title === "string" ? title : ""}>
+            {children}
+          </ArticleCallout>
+        );
+      }
+      const slot = attributes[CTA_SLOT_ATTRIBUTE];
       const block = typeof slot === "string" && isCtaSlot(slot) ? cta[slot] : undefined;
       return block ? <CtaBlock block={block} articleSlug={slug} id={`sekcija-${slot}`} className="my-10" /> : null;
     },
@@ -180,7 +193,7 @@ export function ArticleBody({
     // Obični blok, ne flex: razmaci susjednih elemenata se tada stapaju umjesto da se zbrajaju.
     <div>
       <Markdown
-        remarkPlugins={[remarkGfm, [remarkCtaSlots, { slots }]]}
+        remarkPlugins={[remarkGfm, remarkCallouts, [remarkCtaSlots, { slots }]]}
         remarkRehypeOptions={{
           footnoteLabel: content.article.footnotes,
           footnoteLabelTagName: "h2",

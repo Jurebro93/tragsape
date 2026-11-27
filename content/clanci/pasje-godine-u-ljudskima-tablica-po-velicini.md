@@ -78,6 +78,8 @@ Do pete godine mali, srednji i veliki psi u tablici imaju iste vrijednosti, a di
 
 Tablica počinje s navršenom godinom. Za štene mlađe od godinu dana izvor nema vrijednosti po mjesecima, pa ih ne navodimo [2].
 
+> [!ALAT] psece-godine
+
 ## Kada je pas senior?
 
 Kad uđe u posljednju četvrtinu očekivanog vijeka svoje pasmine. Tako to definiraju i AVMA i Američka bolnička udruga za životinje (AAHA) [3][4]. Budući da veliki psi žive kraće, i seniori postaju ranije.

@@ -87,6 +87,14 @@ export const content = {
     footnotes: "Bilješke",
     footnoteBack: "Natrag na tekst",
     newTab: "otvara se u novoj kartici",
+    callouts: {
+      cinjenica: "Jeste li znali?",
+      savjet: "Savjet",
+      vazno: "Važno",
+      brojke: "U brojkama",
+      toolEyebrow: "Isprobaj odmah",
+      toolOpen: "Otvori alat na posebnoj stranici",
+    },
   },
   cta: {
     /** Mala oznaka iznad naslova sekcije: čitatelj vidi da je to dio servisa, a ne članka. */

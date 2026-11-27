@@ -229,6 +229,30 @@ function requireText(errors, value, name, max) {
   return true;
 }
 
+
+/** Javni alati koji se smiju ugraditi u članak; čitaju se iz registra da popis ne zastari. */
+const EMBEDDABLE_TOOLS = new Set(["psece-godine", "macje-godine", "posveta", "sucut", "oprostaj"]);
+function publicToolSlugs() {
+  const registry = readFileSync(join(ROOT, "src", "lib", "tools", "registry.ts"), "utf8");
+  return new Set([...registry.matchAll(/slug: "([a-z0-9-]+)"[^}]*status: "public"/g)].map((match) => match[1]));
+}
+const CALLOUT_KINDS = ["cinjenica", "savjet", "vazno", "brojke", "alat"];
+
+/** Okviri [!VRSTA] u tekstu: poznata vrsta, a alat mora biti javan i ugradiv. */
+function validateCallouts(body, errors) {
+  const tools = publicToolSlugs();
+  for (const line of withoutCode(body).split("\n")) {
+    const match = /^>\s*\[!([^\]]+)\]\s*(.*)$/u.exec(line);
+    if (!match) continue;
+    const kind = match[1].toLowerCase();
+    if (!CALLOUT_KINDS.includes(kind)) {
+      errors.push(`okvir [!${match[1]}] ne postoji (${CALLOUT_KINDS.map((k) => k.toUpperCase()).join(", ")})`);
+    } else if (kind === "alat" && !(tools.has(match[2].trim()) && EMBEDDABLE_TOOLS.has(match[2].trim()))) {
+      errors.push(`okvir [!ALAT] ${match[2].trim()}: alat nije javan ili se ne može ugraditi (${[...EMBEDDABLE_TOOLS].join(", ")})`);
+    }
+  }
+}
+
 function validateArticle(article, allSlugs) {
   const { meta, body, file } = article;
   const errors = [];
@@ -260,6 +284,8 @@ function validateArticle(article, allSlugs) {
   if (typeof meta.needs_vet_review !== "boolean") {
     errors.push('polje "needs_vet_review" mora biti true ili false');
   }
+
+  validateCallouts(body, errors);
 
   // Prodajne sekcije
   const cta = meta.cta ?? {};

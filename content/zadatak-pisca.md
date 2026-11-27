@@ -17,6 +17,7 @@ Ovo je zajednički zadatak za svakog pisca koji dobije dvije teme. Pravila pisan
 - Cijene samo iz javno objavljenih cjenika, uz naziv ustanove i datum cjenika. Za usporedbu cijena traže se najmanje tri cjenika iz različitih mjesta ako postoje.
 - Propisi iz teksta propisa (narodne-novine.nn.hr, zakon.hr, stranice ministarstava i gradova), s člankom i brojem NN. Gdje propis nije jednoznačan, reci to.
 - Kratki odlomci (2–3 rečenice). Podnaslovi kao pitanja ili tvrdnje. Prva rečenica odjeljka izravno odgovara na podnaslov. Barem jedna tablica gdje ima smisla. „## Česta pitanja" s 5–6 pitanja.
+- Dodaj 2–4 istaknuta okvira i, gdje ima smisla, jedan ugrađeni alat, prema odjeljku „Istaknuti okviri i ugrađeni alati” u `content/UPUTE.md`.
 - Najmanje tri interne poveznice `/vodic/{slug}`, samo na članke koji postoje u `content/clanci` ili na drugi članak iz tvog para.
 - Trag šape se spominje najviše jednom, mirno, bez cijene brojkom (uputi na `/cjenik`). U skupini `zdravlje` i `kraj-zivota` čitatelj još ima ljubimca: spomen se ne nudi.
 - Ne spominji nijedan drugi servis vlasnika. Ne piši u ime ljubimca.

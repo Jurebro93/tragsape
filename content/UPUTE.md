@@ -34,3 +34,31 @@ Ostalo:
 
 ## Provjera
 `node scripts/seed-articles.mjs --check` mora proći bez pogrešaka. Uzor oblika zaglavlja: `content/clanci/dugin-most.md`.
+
+## Istaknuti okviri i ugrađeni alati
+
+Članak nije samo tekst. Gdje dodaju vrijednost, koristi okvire; pišu se kao citat s oznakom u prvom retku:
+
+```
+> [!BROJKE] Kremiranje psa u brojkama
+> - **46,45 €** najniža cijena pojedinačnog kremiranja, pas do 1 kg [1]
+> - **4 %** težine psa ostaje kao pepeo [5]
+
+> [!CINJENICA] Jeste li znali?
+> Jedna zanimljiva, provjerena činjenica uz izvor [3].
+
+> [!SAVJET] Prije poziva
+> Konkretan praktičan savjet.
+
+> [!VAZNO] Kada ne čekati
+> Upozorenje koje čitatelj ne smije propustiti.
+
+> [!ALAT] psece-godine
+```
+
+- **BROJKE**: 3–4 stavke; podebljani dio je brojka (cijena, postotak, rok, broj godina), ostatak kratak opis s oznakom izvora. Samo brojke koje članak već potkrepljuje izvorom.
+- **CINJENICA**: jedna do dvije po članku; nešto što čitatelj vjerojatno ne zna. Uvijek s izvorom.
+- **SAVJET** i **VAZNO**: najviše po jedan do dva; ne ponavljaju odlomak ispod sebe.
+- **ALAT**: ugrađuje javni alat u članak. Dopušteno: `psece-godine`, `macje-godine`, `posveta`, `sucut`, `oprostaj`. Stavi ga tamo gdje čitatelj upravo treba izračun ili pomoć (npr. kalkulator dobi u članku o životnom vijeku, pomoćnik za posvetu u članku o posveti). Najviše jedan alat po članku. U skupinama `zdravlje` i `kraj-zivota` ne ugrađuj alate koji vode prema spomenu (`posveta`, `oprostaj`).
+- Okvir se ne stavlja odmah ispod naslova članka ni u „Česta pitanja". Najviše četiri okvira po članku.
+- `node scripts/seed-articles.mjs --check` javlja grešku za nepoznatu oznaku ili alat koji se ne smije ugraditi.
