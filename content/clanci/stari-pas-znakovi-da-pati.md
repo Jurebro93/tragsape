@@ -67,6 +67,16 @@ sources:
     url: "https://www.veterinarypracticenews.com/quality-of-life-scale/"
     publisher: "Veterinary Practice News"
     accessed_on: 2026-11-27
+  - claim: "Hitnu veterinarsku pomoć za psa ili mačku treba potražiti kod otežanog disanja ili kolapsa, teške ozljede ili krvarenja, napadaja, nagle slabosti ili oduzetosti, upornog povraćanja ili proljeva, jake boli ili uznemirenosti te sumnje na trovanje; ako nisi siguran, najsigurnije je doći"
+    title: "Signs of a veterinary emergency and FAQs"
+    url: "https://www.sydney.edu.au/vet-hospital/emergency/signs-and-symptoms-faqs.html"
+    publisher: "The University of Sydney, University Veterinary Teaching Hospitals"
+    accessed_on: 2026-11-27
+  - claim: "Među simptomima koji mogu tražiti hitnu veterinarsku pomoć su jako povraćanje ili proljev, blijede desni, napuhnut trbuh, teška klonulost i glasanje od boli (objavljeno 15. 8. 2023., ažurirano 13. 7. 2026.)"
+    title: "When to Seek Emergency Care for your Pet"
+    url: "https://www.vetmed.wisc.edu/when-to-seek-emergency-care-for-your-pet/"
+    publisher: "University of Wisconsin–Madison School of Veterinary Medicine, UW Veterinary Care"
+    accessed_on: 2026-11-27
 ---
 Stari pas rijetko pokaže bol onako kako je očekuješ. Kronična bol mijenja ponašanje polako i tiho, pa je vlasnici lako pripišu starosti [1][6]. Ovdje su znakovi koje opisuju veterinarske smjernice i načini da promjene pratiš.
 
@@ -175,7 +185,7 @@ Ne čekaj redovan termin ako vidiš nešto od ovoga [10]:
 - noćni kašalj, brzo umaranje, plavkast jezik ili desni
 - ubrzano disanje, blijede desni, hladne šape i jaka klonulost
 
-Bez odgađanja se javi i ako pas stalno stenje ili jauče i ne može ga se odvratiti od boli; ljestvica Colorado State to opisuje kao najjaču bol [4].
+Jaka bol sama je razlog za hitan pregled. Veterinarska bolnica Sveučilišta u Sydneyju navodi jaku bol ili uznemirenost među stanjima zbog kojih treba odmah potražiti pomoć, a veterinarski fakultet Sveučilišta Wisconsin–Madison glasanje od boli [13][14]. Ako pas stalno stenje ili jauče i ne može ga se odvratiti od boli, ljestvica Colorado State to opisuje kao najjaču bol [4], pa ne čekaj redovan termin.
 
 ## Česta pitanja
 
