@@ -1088,7 +1088,7 @@ export function BigMeadow() {
   const myLatest = [...mine].reverse().map((number) => realByNumber.get(number)).find(Boolean);
 
   const copyLink = async (flower: Flower) => {
-    const url = `${window.location.origin}/livada?trag=${flower.number}`;
+    const url = `${window.location.origin}/livada/trag/${flower.number}`;
     try {
       await navigator.clipboard.writeText(url);
       setToast(t.card.copied);
@@ -1424,6 +1424,12 @@ export function BigMeadow() {
                     {t.card.makeMemorial}
                   </Link>
                 ) : null}
+                <Link
+                  href={`/livada/trag/${selected.number}` as Route}
+                  className="inline-flex min-h-11 items-center rounded-full border-2 border-teal bg-mint px-4 text-sm font-bold text-teal-deep no-underline"
+                >
+                  {t.card.page}
+                </Link>
                 <button
                   type="button"
                   onClick={() => copyLink(selected)}
@@ -1492,6 +1498,8 @@ function ClaimSheet({ onClose }: { onClose: () => void }) {
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
   const [newsletter, setNewsletter] = useState(false);
+  const [anniversary, setAnniversary] = useState(false);
+  const [dedication, setDedication] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const [days, setDays] = useState(7);
@@ -1547,6 +1555,8 @@ function ClaimSheet({ onClose }: { onClose: () => void }) {
           email: email.trim(),
           consent: true,
           newsletter,
+          anniversary,
+          dedication: dedication.trim(),
           elapsedMs: Date.now() - startedAt.current,
           website: "",
         }),
@@ -1689,6 +1699,21 @@ function ClaimSheet({ onClose }: { onClose: () => void }) {
                 className="min-h-12 rounded-2xl border-2 border-line bg-white px-4 font-medium text-plum"
               />
             </label>
+            <label htmlFor="trag-posveta" className="flex flex-col gap-1.5 text-[15px] font-bold">
+              {t.claim.dedicationLabel}
+              <textarea
+                id="trag-posveta"
+                value={dedication}
+                maxLength={80}
+                rows={2}
+                onChange={(event) => setDedication(event.target.value)}
+                placeholder={t.claim.dedicationPlaceholder}
+                className="min-h-12 resize-none rounded-2xl border-2 border-line bg-white px-4 py-2.5 font-medium text-plum"
+              />
+              <span className="text-[13px] font-normal text-plum-soft">
+                {t.claim.dedicationHint} {[...dedication.trim()].length}/80
+              </span>
+            </label>
             <label className="flex items-start gap-2.5 text-[14px] leading-snug text-plum-soft">
               <input type="checkbox" checked={consent} onChange={(event) => setConsent(event.target.checked)} className="mt-0.5 size-5 shrink-0 accent-terracotta" />
               {t.claim.consent}
@@ -1696,6 +1721,10 @@ function ClaimSheet({ onClose }: { onClose: () => void }) {
             <label className="flex items-start gap-2.5 text-[14px] leading-snug text-plum-soft">
               <input type="checkbox" checked={newsletter} onChange={(event) => setNewsletter(event.target.checked)} className="mt-0.5 size-5 shrink-0 accent-terracotta" />
               {t.claim.newsletter}
+            </label>
+            <label className="flex items-start gap-2.5 text-[14px] leading-snug text-plum-soft">
+              <input type="checkbox" checked={anniversary} onChange={(event) => setAnniversary(event.target.checked)} className="mt-0.5 size-5 shrink-0 accent-terracotta" />
+              {t.claim.anniversary}
             </label>
             {errorLine}
             <button type="button" disabled={busy} onClick={send} className={primary}>

@@ -39,12 +39,20 @@ export function MeadowConfirmForm({
           })}
         </p>
         <p className="text-[15px] text-plum-soft">{t.doneHint}</p>
-        <Link
-          href={`/livada?trag=${state.number}` as Route}
-          className="inline-flex min-h-12 items-center rounded-full bg-terracotta px-6 font-bold text-white no-underline hover:bg-terracotta-deep"
-        >
-          {t.open}
-        </Link>
+        <div className="flex flex-wrap gap-2">
+          <Link
+            href={`/livada?trag=${state.number}` as Route}
+            className="inline-flex min-h-12 items-center rounded-full bg-terracotta px-6 font-bold text-white no-underline hover:bg-terracotta-deep"
+          >
+            {t.open}
+          </Link>
+          <Link
+            href={`/livada/trag/${state.number}` as Route}
+            className="inline-flex min-h-12 items-center rounded-full border-2 border-teal bg-white px-6 font-bold text-teal-deep no-underline"
+          >
+            {meadow.card.page}
+          </Link>
+        </div>
       </div>
     );
   }

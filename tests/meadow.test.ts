@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { FLOWER_SPACING, PRINT_CAPACITY, checkFlowerName, dayPhase, flowerPlace, flowerPosition, meadowBounds } from "@/lib/meadow";
+import { FLOWER_SPACING, PRINT_CAPACITY, checkDedication, checkFlowerName, dayPhase, flowerPlace, flowerPosition, meadowBounds } from "@/lib/meadow";
 
 describe("Velika livada", () => {
   it("cvjetovi se ne preklapaju i ostaju unutar granica", () => {
@@ -37,6 +37,15 @@ describe("Velika livada", () => {
     expect(dayPhase(new Date("2026-06-21T15:30:00Z"))).toBe("day");
     expect(dayPhase(new Date("2026-11-27T11:00:00Z"))).toBe("day");
     expect(dayPhase(new Date("2026-11-27T15:15:00Z"))).toBe("dusk");
+  });
+
+  it("posveta: neobavezna, do 80 znakova, bez poveznica i oznaka", () => {
+    expect(checkDedication("  ")).toEqual({ ok: true, text: null });
+    expect(checkDedication("Hvala za  svaku šetnju uz Savu.")).toEqual({ ok: true, text: "Hvala za svaku šetnju uz Savu." });
+    expect(checkDedication("a".repeat(81))).toEqual({ ok: false, reason: "dedicationLong" });
+    expect(checkDedication("<b>Medo</b>")).toEqual({ ok: false, reason: "dedicationChars" });
+    expect(checkDedication("Posjeti reklama.hr").ok).toBe(false);
+    expect(checkDedication("www.nesto").ok).toBe(false);
   });
 
   it("isti broj uvijek daje isto mjesto", () => {

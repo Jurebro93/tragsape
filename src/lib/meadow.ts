@@ -231,6 +231,27 @@ export function checkFlowerName(input: string): NameCheck {
   return { ok: true, name };
 }
 
+export type DedicationCheck = { ok: true; text: string | null } | { ok: false; reason: "dedicationLong" | "dedicationChars" | "dedicationBlocked" };
+
+/** Kratka posveta uz trag: neobavezna, do 80 znakova, bez poveznica i znakova za oznake. Prikazuje se tek nakon odobrenja. */
+export function checkDedication(input: unknown): DedicationCheck {
+  const text = typeof input === "string" ? input.normalize("NFC").replace(/\s+/g, " ").trim() : "";
+  if (text === "") {
+    return { ok: true, text: null };
+  }
+  if ([...text].length > 80) {
+    return { ok: false, reason: "dedicationLong" };
+  }
+  if (/[<>{}\[\]\\]/.test(text)) {
+    return { ok: false, reason: "dedicationChars" };
+  }
+  const lower = text.toLowerCase();
+  if (BLOCKED.some((word) => lower.includes(word)) || /\b[a-z0-9-]+\.(hr|com|net|org|eu)\b/.test(lower)) {
+    return { ok: false, reason: "dedicationBlocked" };
+  }
+  return { ok: true, text };
+}
+
 export function isMeadowSpecies(value: unknown): value is MeadowSpecies {
   return typeof value === "string" && (MEADOW_SPECIES as readonly string[]).includes(value);
 }

@@ -3,8 +3,8 @@ import { Suspense } from "react";
 import { Badge, DataTable, EmptyState, LoadingBlock, PageHeader, Section, Td, Th } from "@/components/admin/ui";
 import { formatDateTime } from "@/lib/format";
 import { adminMeadow as t } from "@/messages/hr/meadow";
-import { loadMeadowFlowers } from "@/server/admin/meadow";
-import { setFlowerStatusAction } from "./actions";
+import { loadMeadowFlowers, loadPendingDedications } from "@/server/admin/meadow";
+import { setDedicationStatusAction, setFlowerStatusAction } from "./actions";
 
 export const metadata: Metadata = { title: t.title };
 
@@ -76,10 +76,50 @@ async function Flowers({ searchParams }: Pick<PageProps<"/admin/livada">, "searc
   );
 }
 
+async function Dedications() {
+  const rows = await loadPendingDedications();
+  return (
+    <Section title={t.dedicationsTitle} description={t.dedicationsIntro}>
+      {rows.length === 0 ? (
+        <EmptyState>{t.dedicationsEmpty}</EmptyState>
+      ) : (
+        <ul className="flex flex-col gap-3">
+          {rows.map((row) => (
+            <li key={row.id} className="flex flex-col gap-2 rounded-2xl border border-line bg-white p-4">
+              <span className="text-sm text-plum-soft">
+                {row.name} · {row.number ?? "–"} · {formatDateTime(row.createdAt)}
+              </span>
+              <span className="text-[17px] font-semibold">„{row.dedication}”</span>
+              <div className="flex gap-3">
+                {(["approved", "rejected"] as const).map((status) => (
+                  <form key={status} action={setDedicationStatusAction}>
+                    <input type="hidden" name="id" value={row.id} />
+                    <input type="hidden" name="number" value={row.number ?? ""} />
+                    <input type="hidden" name="status" value={status} />
+                    <button
+                      type="submit"
+                      className={`min-h-11 rounded-full px-4 font-bold ${status === "approved" ? "bg-teal text-white" : "border-2 border-plum text-plum"}`}
+                    >
+                      {status === "approved" ? t.approve : t.reject}
+                    </button>
+                  </form>
+                ))}
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </Section>
+  );
+}
+
 export default function AdminMeadowPage(props: PageProps<"/admin/livada">) {
   return (
     <>
       <PageHeader title={t.title} intro={t.intro} />
+      <Suspense fallback={<LoadingBlock className="h-40" />}>
+        <Dedications />
+      </Suspense>
       <Suspense fallback={<LoadingBlock className="h-40" />}>
         <Flowers searchParams={props.searchParams} />
       </Suspense>

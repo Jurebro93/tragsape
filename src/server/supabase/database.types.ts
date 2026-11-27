@@ -638,10 +638,14 @@ export type Database = {
       }
       meadow_flowers: {
         Row: {
+          anniversary_last_year: number | null
+          anniversary_opt_in: boolean
           claim_token: string
           confirmed_at: string | null
           consent_text: string | null
           created_at: string
+          dedication: string | null
+          dedication_status: string
           email: string | null
           email_saved_at: string | null
           id: string
@@ -656,10 +660,14 @@ export type Database = {
           status: string
         }
         Insert: {
+          anniversary_last_year?: number | null
+          anniversary_opt_in?: boolean
           claim_token?: string
           confirmed_at?: string | null
           consent_text?: string | null
           created_at?: string
+          dedication?: string | null
+          dedication_status?: string
           email?: string | null
           email_saved_at?: string | null
           id?: string
@@ -674,10 +682,14 @@ export type Database = {
           status?: string
         }
         Update: {
+          anniversary_last_year?: number | null
+          anniversary_opt_in?: boolean
           claim_token?: string
           confirmed_at?: string | null
           consent_text?: string | null
           created_at?: string
+          dedication?: string | null
+          dedication_status?: string
           email?: string | null
           email_saved_at?: string | null
           id?: string
@@ -1595,6 +1607,17 @@ export type Database = {
           source: string
         }[]
       }
+      admin_meadow_dedications: {
+        Args: { p_status?: string }
+        Returns: {
+          created_at: string
+          dedication: string
+          dedication_status: string
+          id: string
+          name: string
+          number: number
+        }[]
+      }
       admin_memorial_counts: {
         Args: never
         Returns: {
@@ -1692,6 +1715,19 @@ export type Database = {
       memorial_share_key: { Args: { p_id: string }; Returns: string }
       order_memorials: { Args: { p_order_id: string }; Returns: Json }
       price_list_csv: { Args: never; Returns: string }
+      public_meadow_trail: {
+        Args: { p_number: number }
+        Returns: {
+          confirmed_at: string
+          created_at: string
+          dedication: string
+          memorial_slug: string
+          name: string
+          number: number
+          petal: string
+          species: string
+        }[]
+      }
       publish_memorial: { Args: { p_id: string }; Returns: string }
       redeem_gift: { Args: { p_code: string }; Returns: string }
       refund_order: { Args: { p_order_id: string }; Returns: Json }

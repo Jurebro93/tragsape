@@ -37,3 +37,21 @@ export async function loadMeadowFlowers(query: string | null): Promise<AdminFlow
     createdAt: row.created_at,
   }));
 }
+
+export type AdminDedication = { id: string; number: number | null; name: string; dedication: string; createdAt: string };
+
+/** Posvete na čekanju. Stupac posvete javne uloge ne vide; admin ga čita kroz funkciju koja provjerava ulogu. */
+export async function loadPendingDedications(): Promise<AdminDedication[]> {
+  const supabase = await createSessionClient();
+  const { data, error } = await supabase.rpc("admin_meadow_dedications", { p_status: "pending" });
+  if (error) {
+    throw new Error(`Posvete na livadi nisu učitane: ${error.message}`);
+  }
+  return (data ?? []).map((row) => ({
+    id: row.id,
+    number: row.number,
+    name: row.name,
+    dedication: row.dedication,
+    createdAt: row.created_at,
+  }));
+}

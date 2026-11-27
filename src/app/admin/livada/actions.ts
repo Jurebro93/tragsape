@@ -22,3 +22,23 @@ export async function setFlowerStatusAction(formData: FormData): Promise<void> {
   updateTag("livada-tragovi");
   refresh();
 }
+
+/** Odobrava ili odbija posvetu uz trag. Odobrena se odmah prikazuje na stranici traga. */
+export async function setDedicationStatusAction(formData: FormData): Promise<void> {
+  await requireAdmin("/admin/livada");
+  const id = String(formData.get("id") ?? "");
+  const number = Number(formData.get("number"));
+  const status = formData.get("status") === "approved" ? "approved" : "rejected";
+  if (!isUuid(id)) {
+    return;
+  }
+  const supabase = await createSessionClient();
+  const { error } = await supabase.from("meadow_flowers").update({ dedication_status: status }).eq("id", id);
+  if (error) {
+    throw new Error(`Posveta nije promijenjena: ${error.message}`);
+  }
+  if (Number.isInteger(number) && number > 0) {
+    updateTag(`livada-trag:${number}`);
+  }
+  refresh();
+}

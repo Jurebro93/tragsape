@@ -13,7 +13,7 @@ const SEEN_KEY = "ts-newsletter-ponuda";
  * Stranice na kojima se prijava ne nudi: spomen ljubimca, izrada spomena, korisnički račun,
  * plaćanje, admin i sam newsletter. Ondje bi skočni prozor usred tuge ili posla bio neprimjeren.
  */
-const EXCLUDED = ["/spomen", "/izradi", "/moji-ljubimci", "/prijava", "/admin", "/newsletter", "/kupnja", "/poklon", "/obitelj", "/livada/potvrda"];
+const EXCLUDED = ["/spomen", "/izradi", "/moji-ljubimci", "/prijava", "/admin", "/newsletter", "/kupnja", "/poklon", "/obitelj", "/livada/potvrda", "/livada/podsjetnik-odjava"];
 
 function excluded(path: string): boolean {
   return EXCLUDED.some((prefix) => path === prefix || path.startsWith(`${prefix}/`));

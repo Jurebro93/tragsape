@@ -64,6 +64,8 @@ export async function createPendingFlower(input: {
   petal: MeadowPetal;
   email: string;
   newsletter: boolean;
+  anniversary: boolean;
+  dedication: string | null;
   ipHash: string;
 }): Promise<"sent" | "limit"> {
   const admin = createAdminClient();
@@ -80,7 +82,9 @@ export async function createPendingFlower(input: {
   if ((count ?? 0) >= 3) {
     return "limit";
   }
-  const consent = input.newsletter ? `${t.claim.consent} ${t.claim.newsletter}` : t.claim.consent;
+  const consent = [t.claim.consent, input.newsletter ? t.claim.newsletter : null, input.anniversary ? t.claim.anniversary : null]
+    .filter(Boolean)
+    .join(" ");
   const { data, error } = await admin
     .from("meadow_flowers")
     .insert({
@@ -93,6 +97,9 @@ export async function createPendingFlower(input: {
       consent_text: consent,
       email_saved_at: new Date().toISOString(),
       newsletter_opt_in: input.newsletter,
+      anniversary_opt_in: input.anniversary,
+      dedication: input.dedication,
+      dedication_status: input.dedication ? "pending" : "none",
       ip_hash: input.ipHash,
     })
     .select("claim_token")
@@ -111,7 +118,103 @@ export async function createPendingFlower(input: {
 }
 
 export function trailUrl(number: number): string {
-  return `${env.siteUrl}/livada?trag=${number}`;
+  return `${env.siteUrl}/livada/trag/${number}`;
+}
+
+export type PublicTrail = {
+  number: number;
+  name: string;
+  species: MeadowSpecies;
+  petal: MeadowPetal;
+  memorialSlug: string | null;
+  day: string;
+  dedication: string | null;
+};
+
+/** Javni podaci jednog traga za njegovu stranicu; posveta samo ako je odobrena. */
+export async function getPublicTrail(number: number): Promise<PublicTrail | null> {
+  "use cache";
+  cacheLife("minutes");
+  cacheTag(MEADOW_TAG, `livada-trag:${number}`);
+  if (!Number.isInteger(number) || number < 1 || number > 1e12) {
+    return null;
+  }
+  const { data, error } = await createAnonClient().rpc("public_meadow_trail", { p_number: number });
+  if (error) {
+    throw new Error(`Livada: čitanje traga: ${error.message}`);
+  }
+  const row = data?.[0];
+  if (!row) {
+    return null;
+  }
+  return {
+    number: row.number,
+    name: row.name,
+    species: (MEADOW_SPECIES as readonly string[]).includes(row.species) ? (row.species as MeadowSpecies) : "drugo",
+    petal: (MEADOW_PETALS as readonly string[]).includes(row.petal) ? (row.petal as MeadowPetal) : "terakota",
+    memorialSlug: row.memorial_slug,
+    day: (row.confirmed_at ?? row.created_at).slice(0, 10),
+    dedication: row.dedication,
+  };
+}
+
+/** Datum u Zagrebu kao [godina, mjesec, dan]. */
+function zagrebDate(date: Date): [number, number, number] {
+  const parts = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Zagreb", year: "numeric", month: "numeric", day: "numeric" }).formatToParts(date);
+  const get = (type: string) => Number(parts.find((part) => part.type === type)?.value ?? 0);
+  return [get("year"), get("month"), get("day")];
+}
+
+/**
+ * Godišnji podsjetnik: jednom godišnje, na dan kad je trag potvrđen, poveznica na cvijet.
+ * Samo uz privolu; 29. veljače se u običnoj godini šalje 28. veljače. Ponovni poziv istog dana ne šalje dvaput.
+ */
+export async function sendDueAnniversaries(now: Date = new Date()): Promise<number> {
+  const admin = createAdminClient();
+  const [year, month, day] = zagrebDate(now);
+  const leap = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+  const { data, error } = await admin
+    .from("meadow_flowers")
+    .select("id, number, name, email, claim_token, confirmed_at, anniversary_last_year")
+    .eq("status", "visible")
+    .eq("anniversary_opt_in", true)
+    .not("email", "is", null)
+    .not("confirmed_at", "is", null)
+    .limit(5000);
+  if (error) {
+    throw new Error(`Livada: čitanje podsjetnika: ${error.message}`);
+  }
+  let sent = 0;
+  for (const row of data ?? []) {
+    if (!row.email || !row.confirmed_at || row.number === null) continue;
+    const [y, m, d] = zagrebDate(new Date(row.confirmed_at));
+    const dueDay = m === 2 && d === 29 && !leap ? 28 : d;
+    if (y >= year || m !== month || dueDay !== day || (row.anniversary_last_year ?? 0) >= year) continue;
+    const years = year - y;
+    const { html, text } = renderEmail({
+      heading: fill(t.anniversaryEmail.heading, { name: row.name }),
+      paragraphs: [fill(years === 1 ? t.anniversaryEmail.oneYear : t.anniversaryEmail.years, { years }), t.anniversaryEmail.paragraph],
+      button: { label: t.anniversaryEmail.button, url: trailUrl(row.number) },
+      footnote: fill(t.anniversaryEmail.footnote, { url: `${env.siteUrl}/livada/podsjetnik-odjava?t=${row.claim_token}` }),
+    });
+    await sendEmail({ to: row.email, subject: fill(t.anniversaryEmail.subject, { name: row.name }), html, text });
+    await admin.from("meadow_flowers").update({ anniversary_last_year: year }).eq("id", row.id);
+    sent += 1;
+  }
+  return sent;
+}
+
+/** Odjava godišnjeg podsjetnika gumbom s poveznice iz e-maila. */
+export async function stopAnniversary(token: string): Promise<boolean> {
+  if (!TOKEN.test(token)) {
+    return false;
+  }
+  const { data, error } = await createAdminClient()
+    .from("meadow_flowers")
+    .update({ anniversary_opt_in: false })
+    .eq("claim_token", token)
+    .select("id");
+  return !error && (data?.length ?? 0) > 0;
 }
 
 const TOKEN = /^[0-9a-f]{48}$/;

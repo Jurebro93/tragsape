@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { checkFlowerName, isMeadowPetal, isMeadowSpecies } from "@/lib/meadow";
+import { checkDedication, checkFlowerName, isMeadowPetal, isMeadowSpecies } from "@/lib/meadow";
 import { createPendingFlower, listMeadowRows, PENDING_DAYS } from "@/server/meadow";
 import { NEWSLETTER_EMAIL } from "@/server/newsletter";
 import { dailyIpHash, withinRateLimit } from "@/server/public/visitor";
@@ -44,6 +44,10 @@ export async function POST(request: Request) {
   if (body.consent !== true) {
     return NextResponse.json({ error: "consent" }, { status: 400 });
   }
+  const dedication = checkDedication(body.dedication);
+  if (!dedication.ok) {
+    return NextResponse.json({ error: dedication.reason }, { status: 400 });
+  }
   const ipHash = dailyIpHash(request);
   if (!(await withinRateLimit(`livada:${ipHash}`, 3600, 6))) {
     return NextResponse.json({ error: "rate" }, { status: 429 });
@@ -55,6 +59,8 @@ export async function POST(request: Request) {
       petal: body.petal,
       email,
       newsletter: body.newsletter === true,
+      anniversary: body.anniversary === true,
+      dedication: dedication.text,
       ipHash,
     });
     if (result === "limit") {
