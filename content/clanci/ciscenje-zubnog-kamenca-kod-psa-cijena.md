@@ -52,7 +52,7 @@ sources:
     url: "https://veterinarska-koprivnica.hr/wp-content/uploads/cijenehr/35631964454_veterinarska-ambulanta_Mihovila-P.-Miskine-66-Koprivnica_AMB-KC_usluge_014_20261127_0715.csv"
     publisher: "Veterinarska ambulanta Otto, Koprivnica"
     accessed_on: 2026-11-27
-  - claim: "Kompletna oralna higijena znači ultrazvučno uklanjanje zubnog kamenca i detaljan pregled usne šupljine u općoj anesteziji"
+  - claim: "Kompletna oralna higijena znači ultrazvučno uklanjanje zubnog kamenca i detaljan pregled usne šupljine u općoj anesteziji; ljudske paste za zube nisu namijenjene životinjama"
     title: "Oralna higijena"
     url: "https://veterinarska-koprivnica.hr/index.php/usluga/oralna-higijena/"
     publisher: "Veterinarska ambulanta Otto, Koprivnica"
@@ -99,7 +99,7 @@ Ovaj tekst ne zamjenjuje veterinara. Treba li tvom psu čišćenje, koje zube tr
 
 ## Ukratko
 
-- Stavka čišćenja kamenca u sedam cjenika iz pet gradova stoji od 27,88 € do 170 €, ovisno o ustanovi i stupnju [1][2][4][6][7][8][9].
+- Stavka čišćenja kamenca u sedam cjenika iz šest mjesta stoji od 27,88 € do 170 €, ovisno o ustanovi i stupnju [1][2][4][6][7][8][9].
 - Vađenje jednog zuba stoji od 10 € do 120 €; u cjenicima koji razlikuju zube očnjak je među najskupljima [1][4][6][8][9].
 - Na primjeru stvarnog računa iz Zagreba čišćenje je bilo 27,88 € od ukupno 349,63 € [5].
 - AVDC, WSAVA i AAHA slažu se: čišćenje bez opće anestezije nije prihvatljiva zamjena [11][12][13].
@@ -111,7 +111,7 @@ Jedinstvene cijene nema. U tablici su stavke za psa iz cjenika koje smo otvorili
 
 | Ustanova (datum cjenika) | Čišćenje kamenca | Vađenje zuba | Anestezija | Rendgen |
 | --- | --- | --- | --- | --- |
-| VS Osijek (bez datuma) [1] | 31,25 €; s poliranjem 43,75 € | 25,00–68,75 € po zubu | opća s nadzorom 50,00 €; inhalacijska 20,00 € | 18,58 € (nije posebno za zube) |
+| VS Osijek (bez datuma) [1] | 31,25 €; s poliranjem 43,75 € | 25,00–56,25 € po zubu; dva ili više očnjaka 68,75 € | opća s nadzorom 50,00 €; inhalacijska 20,00 € | 18,58 € (nije posebno za zube) |
 | VS Sveti Ivan Zelina (27. 11. 2026.) [2] | 56,25 € | 15,00 € po zubu | samo sedacija, 17,50 € | nema stavke |
 | Veterina Branimir, Zagreb (17. 11. 2026.) [3][4] | 27,88–55,74 € (st. I–III) | 13,94–62,75 € | 63,00 € (do 15 kg) i 69,30 € (iznad 15 kg) za 1 sat | 50,00 € do 2 projekcije |
 | Klinike Veterinarskog fakulteta, Zagreb (14. 11. 2024.) [6] | 65,00 € (I. st.); 80,00 € (II. st.) | 50,00–105,00 €; dva ili više očnjaka 160,00 € | 60,00–70,00 € za 60 min, po težini | dentalni RTG čeljusti 20,00 € i 30,00 € |
