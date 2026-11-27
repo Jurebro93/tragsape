@@ -137,7 +137,7 @@ Veterina Branimir piše da cijena zahvata obično uključuje anesteziju, potroš
 | --- | --- |
 | Pretrage krvi prije anestezije | 35,00 € u Đakovu [1]; hematologija 29,00 € i predanestezijski panel 30,63 € u CellulaVetu [2]; biokemija i krvna slika po 20,00 € u Zelini [5] |
 | Anestezija do sat vremena | 50–60 € u Đakovu [1], 63,00–69,30 € u Veterini Branimir [4], 60–70 € na Veterinarskom fakultetu [7], „opća anestezija i monitoring” 50,00 € u Osijeku [6] |
-| Ovratnik | 2,88–7,69 € na Veterinarskom fakultetu [7] |
+| Ovratnik | od 2,88 € naviše na Veterinarskom fakultetu, ovisno o veličini [7] |
 | Kontrolni pregled | 16,00 € [2], 17,00 € [1], 18,75 € [5], 24,80 € [4] |
 | Vađenje šavova | 7,00 € [7], 10,56 € [4] |
 
@@ -168,7 +168,7 @@ Američka udruga AAHA i WSAVA ne preporučuju istu dob, pa je dogovori s veterin
 | | AAHA (2019.) [8] | WSAVA (2024.) [9] |
 | --- | --- | --- |
 | Kuja | do oko 20 kg odrasle težine: prije prvog tjeranja, 5–6 mjeseci; veće: 5–15 mjeseci, prema procjeni veterinara | idealno nakon prvog ili drugog tjeranja |
-| Pas | do oko 20 kg: oko 6 mjeseci; veći: kad završi rast, oko 9–15 mjeseci | ovisi o razlogu; rizike ranog zahvata treba pažljivo odvagnuti |
+| Pas | do oko 20 kg: oko 6 mjeseci; veći: kad završi rast, oko 9–15 mjeseci | ovisi o razlogu; rizike zahvata prije puberteta treba pažljivo odvagnuti |
 
 AAHA navodi da sterilizirani psi u prosjeku žive dulje, ali i da je rizik od debljine najveći u prve dvije godine nakon zahvata [8]. WSAVA navodi da se nakon zahvata kod 5 do 20 % kuja javlja nemogućnost zadržavanja mokraće [9]. Više o životnom vijeku piše u članku [Koliko žive psi po pasminama](/vodic/koliko-zive-psi-po-pasminama).
 
@@ -180,10 +180,10 @@ Neki gradovi dio troška plaćaju. Grad Klanjec u pozivu od 25. veljače 2026. d
 
 ## Kada odmah veterinaru
 
-Javi se odmah veterinaru koji je operirao ili najbližoj dežurnoj ambulanti ako:
+Javi se veterinaru koji je operirao, a ako ga ne možeš dobiti, najbližoj dežurnoj ambulanti, ako:
 
 - pas povraća, ne jede, ne može se smiriti ni udobno leći ili je izrazito mlitav [12];
-- ni dan nakon zahvata nije živahan, ili slabost raste umjesto da prolazi [12][13];
+- slabost ili mlitavost se pogoršava umjesto da prolazi [13];
 - se rez otvorio, sve je crveniji, otečeniji ili topliji, curi iz njega gnoj ili neugodno miriše [13];
 - ne može mokriti ili se jako napinje [13];
 - bol se pojačava, cvili ili se ne želi micati [13];
@@ -197,7 +197,7 @@ U cjenicima koje smo pregledali anestezija je zasebna stavka, oko 50 do 70 € z
 
 ### Zašto je sterilizacija kuje skuplja od kastracije psa?
 
-Sterilizacija kuje je operacija u trbušnoj šupljini, a VCA je opisuje kao veliki zahvat [10]. U pet od šest cjenika koje smo pregledali stavka za kuju skuplja je od stavke za psa.
+Sterilizacija kuje je operacija u trbušnoj šupljini, a VCA je opisuje kao veliki zahvat [10]. U većini cjenika koje smo pregledali stavka za kuju skuplja je od stavke za psa.
 
 ### Koliko traje oporavak?
 

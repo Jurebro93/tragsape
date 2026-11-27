@@ -82,8 +82,18 @@ sources:
     url: "https://vsdaruvar.hr/cjenik/"
     publisher: "Veterinarska stanica Daruvar"
     accessed_on: 2026-11-27
+  - claim: "Cjenik usluga (stranica bez datuma, pročitana 27. 11. 2026.): cijepljenje pasa protiv virusnih zaraznih bolesti 30,00 €; cijepljenje protiv bjesnoće 31,25 €; cijepljenje protiv bjesnoće i zaraznih bolesti 50,00 €; pregled pasa i mačaka 40,00 €"
+    title: "Cjenik"
+    url: "https://veterinarska.hr/cjenik/"
+    publisher: "Veterinarska stanica Rijeka"
+    accessed_on: 2026-11-27
+  - claim: "Cjenik objavljen 27. 11. 2026., sve cijene s PDV-om: cijepljenje pasa protiv zaraznih bolesti 29,50 € i 31,00 € (ovisno o cjepivu); cijepljenje protiv bjesnoće 32,00 €; opći klinički pregled 29,00 €"
+    title: "Cjenik"
+    url: "https://veterina-ivana-pilic.hr/cjenik/"
+    publisher: "Specijalistička veterinarska praksa Pilić, Split"
+    accessed_on: 2026-11-27
 ---
-U Hrvatskoj je za psa obvezno samo cijepljenje protiv bjesnoće, i to za svakog psa starog 90 dana ili više [1]. Ostala cjepiva preporučuju veterinarske smjernice, ne propis. U cjenicima koje smo otvorili 27. studenoga 2026. cijepljenje protiv bjesnoće posvuda stoji 31,25 €, a cijepljenje protiv zaraznih bolesti od 12,50 do 30,00 €.
+U Hrvatskoj je za psa obvezno samo cijepljenje protiv bjesnoće, i to za svakog psa starog 90 dana ili više [1]. Ostala cjepiva preporučuju veterinarske smjernice, ne propis. U devet cjenika koje smo otvorili 27. studenoga 2026. cijepljenje protiv bjesnoće stoji 31,25 € ili 32,00 €, a cijepljenje protiv zaraznih bolesti od 12,50 do 31,00 €.
 
 Ovaj tekst ne zamjenjuje veterinara. Koja cjepiva tvoj pas treba i kada, procjenjuje veterinar koji ga je pregledao, pa se za raspored obrati najbližoj veterinarskoj ambulanti.
 
@@ -91,9 +101,9 @@ Ovaj tekst ne zamjenjuje veterinara. Koja cjepiva tvoj pas treba i kada, procjen
 
 - Cijepljenje protiv bjesnoće obvezno je za svakog psa od 90. dana starosti, a ponavlja se najkasnije do datuma upisanog u putovnicu [1].
 - Pas mora biti čipiran najkasnije 90 dana nakon štenjenja ili prije cijepljenja, a pri cijepljenju protiv bjesnoće tretira se i protiv trakavice [1].
-- Naknadu za cijepljenje protiv bjesnoće s dehelmintizacijom i upisom određuje ministar: 25,00 € [4]. U cjenicima ambulanti piše 31,25 € [9][10][11][13][14].
+- Naknadu za cijepljenje protiv bjesnoće s dehelmintizacijom i upisom određuje ministar: 25,00 € [4]. U sedam cjenika piše 31,25 €, u jednom 32,00 € [17].
 - Osnovna cjepiva prema smjernicama WSAVA-e iz 2024. štite od štenećaka, zaraznog hepatitisa (adenovirus tip 1) i parvoviroze [6].
-- Cijepljenje protiv zaraznih bolesti u sedam cjenika stoji od 12,50 do 30,00 €, a negdje se cjepivo naplaćuje zasebno [12][14].
+- Cijepljenje protiv zaraznih bolesti stoji od 12,50 do 31,00 €, a negdje se cjepivo naplaćuje zasebno [14].
 
 ## Što je u Hrvatskoj obvezno
 
@@ -111,7 +121,7 @@ Zasebnu naredbu za 2026. nismo našli. Naredba je izmijenjena 2025. (NN 107/2025
 
 Prema članku 9., pas se pri cijepljenju protiv bjesnoće mora tretirati i protiv trakavice Echinococcus, odobrenim veterinarskim pripravkom [1]. Troškove obiju mjera snosi vlasnik [1].
 
-U članku 7. nema izuzeća iz zdravstvenih razloga ni odredbe o titru protutijela umjesto cijepljenja [1]. Ako ti veterinar zbog bolesti psa savjetuje odgodu, pitaj ga kako se to bilježi i što to znači za rok u putovnici.
+U članku 7. nema izuzeća iz zdravstvenih razloga ni odredbe o titru protutijela umjesto cijepljenja [1]. Ako ti veterinar zbog bolesti psa savjetuje odgodu, pitaj ga što to znači za rok u putovnici.
 
 Za mačke i pitome vretice Naredba cijepljenje protiv bjesnoće samo preporučuje [1]. Više o tome je u članku [Cijepljenje mačke: cijena i raspored](/vodic/cijepljenje-macke-cijena-i-raspored).
 
@@ -119,9 +129,9 @@ Za mačke i pitome vretice Naredba cijepljenje protiv bjesnoće samo preporučuj
 
 Iznos određuje ministar odlukom [1][3]. Prema Odluci koja vrijedi od 1. srpnja 2024., cijepljenje protiv bjesnoće, dehelmintizacija i upis u registar i putovnicu stoje 25,00 € po životinji [4].
 
-U svih šest cjenika koji tu stavku navode s iznosom piše 31,25 € [9][10][11][12][13][14]. Veterinarska stanica Daruvar za psa upućuje na cjenik Ministarstva, a za mačku istu brojku prikazuje kao 25,00 € bez PDV-a i 31,25 € s PDV-om [15]. Iz same Odluke nismo mogli pročitati odnosi li se iznos na cijenu bez PDV-a.
+U sedam cjenika ta stavka stoji 31,25 € [9][10][11][12][13][14][16], a u splitskoj praksi Pilić 32,00 € [17]. Veterinarska stanica Daruvar za psa upućuje na cjenik Ministarstva, a za mačku istu stavku prikazuje kao 25,00 € bez PDV-a i 31,25 € s PDV-om [15]. Iz same Odluke nismo mogli pročitati odnosi li se iznos na cijenu bez PDV-a.
 
-Uz to se ponekad plaćaju putovnica i čip. Odluka za putovnicu navodi 10,06 €, a za čip 12,90 € [4]; u cjenicima putovnica stoji 12,57 do 12,58 € [9][11][12][13], a čip od 12,15 € [9] do 28,70 € [13].
+Uz to se ponekad plaćaju putovnica i čip. Odluka za putovnicu navodi 10,06 €, a za čip 12,90 € [4]; u cjenicima putovnica stoji 12,57 do 12,58 € [9][11][12][13], a čip od 12,15 € [9] do 28,70 € [13]. Više o čipu piše u članku [Čipiranje psa i mačke: cijena i postupak](/vodic/cipiranje-psa-i-macke-cijena-i-postupak).
 
 ## Koja su cjepiva osnovna, a koja dodatna
 
@@ -150,25 +160,27 @@ Zašto je štenetu važno doći do kraja serije: parvoviroza najčešće pogađa
 
 ## Koliko stoji cijepljenje protiv zaraznih bolesti
 
-Ova stavka najviše se razlikuje od mjesta do mjesta. U cjenicima koje smo otvorili izgleda ovako:
+Ova stavka najviše se razlikuje od mjesta do mjesta:
 
 | Ustanova (vlastiti cjenik) | Datum cjenika | Protiv zaraznih bolesti | Protiv bjesnoće |
 | --- | --- | --- | --- |
-| Veterinarska stanica Osijek [9] | bez datuma, pročitan 27. 11. 2026. | 12,50 € | 31,25 € |
+| Veterinarska stanica Osijek [9] | bez datuma | 12,50 € | 31,25 € |
 | Veterinarska stanica Đakovo [14] | 25. 11. 2026. | 15,00 € + cjepivo | 31,25 € |
 | Veterinarska stanica Ivanec [13] | 18. 11. 2026. | 16,25 € | 31,25 € |
 | Veterinarska stanica Sveti Ivan Zelina [11] | 27. 11. 2026. | 18,75 € | 31,25 € |
 | Veterinarska stanica Daruvar [15] | 25. 11. 2026. | 25,00 € s cjepivom | prema cjeniku Ministarstva |
 | Veterina Branimir, Zagreb [10] | 17. 11. 2026. | 27,00 € | 31,25 € |
+| Specijalistička veterinarska praksa Pilić, Split [17] | 27. 11. 2026. | 29,50 € ili 31,00 € | 32,00 € |
+| Veterinarska stanica Rijeka [16] | bez datuma | 30,00 € | 31,25 € |
 | Klinike Veterinarskog fakulteta u Zagrebu [12] | 14. 11. 2024. | 30,00 € | 31,25 € |
 
-To su primjeri, a ne prosjek ni preporuka. Daruvar izričito piše da je cjepivo uključeno i da štiti od hepatitisa, štenećaka i leptospiroze [15]. Đakovo u cjeniku robe zasebno navodi doze kombiniranih cjepiva za pse, od 6,64 do 8,00 € [14]; za ostale cjenike ne piše je li cjepivo u cijeni.
+To su primjeri, a ne prosjek ni preporuka; stranice bez datuma pročitali smo 27. 11. 2026. Daruvar izričito piše da je cjepivo uključeno i da štiti od hepatitisa, štenećaka i leptospiroze [15]. Đakovo u cjeniku robe zasebno navodi doze kombiniranih cjepiva za pse, od 6,64 do 8,00 € [14]; za ostale cjenike ne piše je li cjepivo u cijeni.
 
-Pregled se u cjenicima vodi kao posebna stavka: 20,00 € u Daruvaru [15], 30,00 € u Đakovu [14], 35,00 € u Zelini [11] i 39,00 € u Veterini Branimir [10]. Kad zoveš, pitaj koliko će stajati sve zajedno: pregled, cjepivo i upis.
+Rijeka ima i zajedničku stavku za bjesnoću i zarazne bolesti, 50,00 € [16]. Pregled je obično posebna stavka: od 20,00 € u Daruvaru [15] do 40,00 € u Rijeci [16]. Kad zoveš, pitaj koliko će stajati sve zajedno: pregled, cjepivo i upis.
 
 ## Što ako putuješ sa psom
 
-Za putovanje unutar EU-a pas mora imati čip, europsku putovnicu i cijepljenje protiv bjesnoće obavljeno nakon čipiranja [5]. Pri prvom cijepljenju mora biti star najmanje 12 tjedana, a nakon prvog cijepljenja čeka se najmanje 21 dan prije puta [5].
+Za putovanje unutar EU-a pas mora imati čip, europsku putovnicu i cijepljenje protiv bjesnoće obavljeno nakon čipiranja [5]. Pri prvom cijepljenju mora biti star najmanje 12 tjedana, a nakon njega se čeka najmanje 21 dan prije puta [5].
 
 ## Kada odmah veterinaru
 
@@ -193,15 +205,15 @@ Da. Naredba propisuje da svi psi u Hrvatskoj stari 90 dana i više moraju biti c
 
 ### Koliko često se pas cijepi protiv bjesnoće?
 
-Najkasnije do datuma do kojeg vrijedi prethodno cijepljenje, a taj je datum upisan u putovnicu [1]. Koliko dugo cijepljenje vrijedi ovisi o cjepivu; WSAVA navodi da cjepiva obično vrijede jednu ili tri godine [6].
+Najkasnije do datuma do kojeg vrijedi prethodno cijepljenje, a taj je datum upisan u putovnicu [1]. Koliko dugo cijepljenje vrijedi ovisi o cjepivu; prema WSAVA-i obično jednu ili tri godine [6].
 
 ### Što ako sam zakasnio s cijepljenjem protiv bjesnoće?
 
-Cijepljenje nakon isteka roka smatra se prvim cijepljenjem, a u putovnicu se ponovno upisuje datum od kada vrijedi [1]. Ako planiraš put u drugu državu EU-a, nakon prvog cijepljenja čeka se najmanje 21 dan [5].
+Cijepljenje nakon isteka roka smatra se prvim, a u putovnicu se ponovno upisuje datum od kada vrijedi [1]. Za put u drugu državu EU-a nakon prvog cijepljenja čeka se najmanje 21 dan [5].
 
 ### Je li cijena cijepljenja protiv bjesnoće svugdje ista?
 
-Naknadu određuje ministar, a Odluka od 1. srpnja 2024. navodi 25,00 € [4]. U šest cjenika koji stavku navode s iznosom piše 31,25 € [9][10][11][12][13][14].
+Gotovo. Naknadu određuje ministar, a Odluka od 1. srpnja 2024. navodi 25,00 € [4]; u osam cjenika s iznosom stavka stoji 31,25 € ili 32,00 € [9][17].
 
 ### Treba li odrasli pas svake godine sva cjepiva?
 
@@ -213,6 +225,6 @@ Prema WSAVA-i ne: osnovna cjepiva odraslom psu najčešće ne treba davati češ
 
 ## Sljedeći korak
 
-Otvori putovnicu svog psa, pronađi rubriku s datumom do kojeg vrijedi cijepljenje protiv bjesnoće i dogovori termin prije tog datuma. Ako u kući imaš i mačku, pogledaj [Cijepljenje mačke: cijena i raspored](/vodic/cijepljenje-macke-cijena-i-raspored).
+Otvori putovnicu svog psa, pronađi datum do kojeg vrijedi cijepljenje protiv bjesnoće i dogovori termin prije tog datuma. Ako u kući imaš i mačku, pogledaj [Cijepljenje mačke: cijena i raspored](/vodic/cijepljenje-macke-cijena-i-raspored).
 
-Za starijeg psa korisno je znati i [koliko žive psi po pasminama](/vodic/koliko-zive-psi-po-pasminama) te koliko mu je godina u ljudskim mjerilima: [tablica pasjih godina po veličini](/vodic/pasje-godine-u-ljudskima-tablica-po-velicini) ili [kalkulator pasjih godina](/alati/psece-godine).
+Za starijeg psa korisno je znati i [koliko žive psi po pasminama](/vodic/koliko-zive-psi-po-pasminama) te koliko mu je godina u ljudskim mjerilima: [kalkulator pasjih godina](/alati/psece-godine).

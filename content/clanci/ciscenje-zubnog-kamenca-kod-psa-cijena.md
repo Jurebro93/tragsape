@@ -4,7 +4,7 @@ cluster: zdravlje
 title: "Čišćenje zubnog kamenca kod psa: cijena"
 excerpt: "Koliko u Hrvatskoj stoji čišćenje zubnog kamenca kod psa, zajedno s anestezijom, vađenjem zuba i rendgenom zubi, prema sedam objavljenih cjenika. Uz to: zašto se zahvat radi u općoj anesteziji, što o čišćenju bez anestezije kažu AVDC, WSAVA i AAHA i što dogovoriti prije zahvata."
 seo_title: "Čišćenje zubnog kamenca kod psa: cijena (2026.)"
-seo_description: "Cijene čišćenja kamenca, anestezije, vađenja zuba i rendgena zubi iz sedam cjenika, što zahvat uključuje i zašto struka ne preporučuje čišćenje bez anestezije."
+seo_description: "Cijene čišćenja kamenca, anestezije, vađenja i rendgena zubi iz sedam cjenika, što zahvat uključuje i zašto struka ne preporučuje čišćenje bez anestezije."
 needs_vet_review: true
 sources:
   - claim: "Cjenik usluga (stupac MPC, uz svaku stavku sidrena cijena na dan 10. 9. 2026., datum cjenika nije naveden): UZV čišćenje zubnog kamenca PAS 31,25 €, s poliranjem 43,75 €; ekstrakcija pretkutnjaka I.–III. (jedan) 25 €, IV. pretkutnjaka 37,50 €, kutnjaka 31,25 €, očnjaka 56,25 €, dva ili više očnjaka 68,75 €; opća anestezija i monitoring 50 €; inhalacijska anestezija 20 €; RTG psi 18,58 €"
@@ -22,7 +22,7 @@ sources:
     url: "https://www.veterinabranimir.hr/cjenik/"
     publisher: "Veterina Branimir"
     accessed_on: 2026-11-27
-  - claim: "Cjenik usluga ordinacije Lanište (CSV): čišćenje zubnog kamenca ultrazvučno st. I. 27,88 €, st. II. 41,80 €, st. III. 55,74 €; ekstrakcija sjekutića i decidualnih zuba 13,94 €, pretkutnjaka i kutnjaka 27,88 €, IV. pretkutnjaka 50 €, očnjaka kod psa 62,75 €; inhalacijska anestezija za operacijski zahvat do 15 kg (1 h) 63 €, iznad 15 kg 69,30 €; dodatni sat anestezije 23,41 €; RTG do 2 projekcije 50 €; stomatološki potrošni materijal 35 €"
+  - claim: "Cjenik usluga ordinacije Lanište (CSV): ultrazvučno čišćenje kamenca st. I.–III. 27,88 / 41,80 / 55,74 €; ekstrakcija sjekutića 13,94 €, pretkutnjaka i kutnjaka 27,88 €, IV. pretkutnjaka 50 €, očnjaka kod psa 62,75 €; inhalacijska anestezija za zahvat 1 h: 63 € (do 15 kg), 69,30 € (iznad 15 kg); RTG do 2 projekcije 50 €"
     title: "Cjenik usluga, VB Lanište (CSV)"
     url: "https://www.veterinabranimir.hr/wp-content/uploads/vb-cjenik/cjenik-laniste.csv"
     publisher: "Veterina Branimir"
@@ -32,7 +32,7 @@ sources:
     url: "https://www.veterinabranimir.hr/wp-content/uploads/2026/11/primjer-stvarnog-racuna-06-ciscenje-zubnog-kamenca-i-vadenje-zuba-pas.webp"
     publisher: "Veterina Branimir"
     accessed_on: 2026-11-27
-  - claim: "Cjenik od 14. 11. 2024.: ultrazvučno čišćenje zubnog kamenca I. stupanj (pas) 65 €, II. stupanj u narkozi 80 €; ekstrakcija sjekutića 50 €, prvog do trećeg pretkutnjaka 90 €, četvrtog pretkutnjaka, kutnjaka i očnjaka u psa po 105 €, dva ili više očnjaka 160 €; inhalacijska anestezija pasa 60 min 60–70 € ovisno o težini; RTG gornje i donje čeljusti dentalnim RTG uređajem 20 € i 30 €; stomatološki pregled 22 €"
+  - claim: "Cjenik od 14. 11. 2024.: ultrazvučno čišćenje kamenca I. st. (pas) 65 €, II. st. u narkozi 80 €; ekstrakcija sjekutića 50 €, I.–III. pretkutnjaka 90 €, IV. pretkutnjaka, kutnjaka i očnjaka u psa po 105 €, dva ili više očnjaka 160 €; inhalacijska anestezija 60 min 60–70 € po težini; dentalni RTG čeljusti 20 € i 30 €"
     title: "Cjenik – svi odjeli (14. 11. 2024.)"
     url: "https://www.vef.unizg.hr/wp-content/uploads/2021/01/cjenik-klinike-zavodi-2024.pdf"
     publisher: "Veterinarski fakultet Sveučilišta u Zagrebu"
@@ -57,12 +57,12 @@ sources:
     url: "https://veterinarska-koprivnica.hr/index.php/usluga/oralna-higijena/"
     publisher: "Veterinarska ambulanta Otto, Koprivnica"
     accessed_on: 2026-11-27
-  - claim: "Čišćenje bez anestezije (AFTS) nije zamjena za stomatološki zahvat u anesteziji ni djelotvorna prevencija; uklanjanje kamenca iznad desni je kozmetika; ispod desni se kod budne životinje ne može doprijeti; inhalacijska anestezija s tubusom štiti dišne putove; zahvat u anesteziji uključuje pregled, rendgen cijelih usta te čišćenje i poliranje svih površina; preporučuje se svakodnevna njega zubi (stav AVDC-a, travanj 2024.)"
+  - claim: "Čišćenje bez anestezije nije zamjena za zahvat u anesteziji ni djelotvorna prevencija; učinak je kozmetički; ispod desni se kod budne životinje ne može doprijeti; inhalacijska anestezija s tubusom štiti dišne putove i pluća; preporučuje se svakodnevna njega zubi i redoviti pregledi (stav AVDC-a, travanj 2024.)"
     title: "Position Statement on Anesthesia-Free Dentistry (AFD)"
     url: "https://avdc.org/download/30/position-statements/2876/dental-scaling-without-anesthesia.pdf"
     publisher: "American Veterinary Dental College"
     accessed_on: 2026-11-27
-  - claim: "Parodontna bolest je najčešća bolest usne šupljine pasa; opća anestezija s intubacijom potrebna je za čišćenje; čišćenje bez anestezije je neprihvatljivo; dob sama nije razlog za odustajanje; preporuka rendgena cijelih usta; 28 % zuba koji izgledaju zdravo imalo je važan nalaz na rendgenu; protokol od 12 koraka; ako vlasnik nije dostupan, ne radi se ništa što nije u pristanku (Bellows i sur., 2019.)"
+  - claim: "Parodontna bolest je najčešća bolest usta; za čišćenje je potrebna opća anestezija s intubacijom; čišćenje bez anestezije je neprihvatljivo; dob sama nije razlog za odustajanje; rendgen cijelih usta; 28 % zuba koji izgledaju zdravo ima nalaz na rendgenu; 12 koraka; bez vlasnika se ne radi ništa izvan pristanka (Bellows i sur., 2019.)"
     title: "2019 AAHA Dental Care Guidelines for Dogs and Cats"
     url: "https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/dental/aaha_dental_guidelines.pdf"
     publisher: "American Animal Hospital Association"
@@ -100,10 +100,10 @@ Ovaj tekst ne zamjenjuje veterinara. Treba li tvom psu čišćenje, koje zube tr
 ## Ukratko
 
 - Stavka čišćenja kamenca u sedam cjenika iz pet gradova stoji od 27,88 € do 170 €, ovisno o ustanovi i stupnju [1][2][4][6][7][8][9].
-- Vađenje jednog zuba stoji od 10 € do 120 €, a očnjak je gotovo svugdje najskuplji [1][4][6][8][9].
+- Vađenje jednog zuba stoji od 10 € do 120 €; u cjenicima koji razlikuju zube očnjak je među najskupljima [1][4][6][8][9].
 - Na primjeru stvarnog računa iz Zagreba čišćenje je bilo 27,88 € od ukupno 349,63 € [5].
 - AVDC, WSAVA i AAHA slažu se: čišćenje bez opće anestezije nije prihvatljiva zamjena [11][12][13].
-- Prije zahvata dogovori rendgen, okvirnu cijenu i što se smije raditi bez poziva tebi [12][16].
+- Prije zahvata dogovori rendgen, okvirnu cijenu i što se smije raditi bez poziva tebi [12][17].
 
 ## Koliko stoji čišćenje zubnog kamenca u cjenicima
 
@@ -129,7 +129,7 @@ Zato pitaj za ukupan iznos, ne za cijenu čišćenja. Ista ambulanta piše da na
 
 ## Zašto se zubi čiste u općoj anesteziji
 
-Stručna društva veterinarskih stomatologa to traže zbog onoga što se ne vidi. Američki koledž veterinarske stomatologije (AVDC) piše da je najvažniji dio čišćenja ispod ruba desni, gdje bolest napreduje, a do tog prostora kod budnog psa nije moguće doći [11]. Inhalacijska anestezija s tubusom u dušniku uz to štiti dišne putove i pluća od vode i nečistoće [11].
+Stručna društva veterinarskih stomatologa to traže zbog onoga što se ne vidi. Američki koledž veterinarske stomatologije (AVDC) piše da je najvažniji dio čišćenja ispod ruba desni, gdje bolest napreduje, a do tog prostora kod budnog psa nije moguće doći [11]. Inhalacijska anestezija s tubusom u dušniku uz to štiti dišne putove i pluća od slučajnog udisanja sadržaja iz usta [11].
 
 Smjernice Američkog udruženja bolnica za životinje (AAHA) kažu da je za čišćenje zubi potrebna opća anestezija s intubacijom i nadzorom [12]. U zahvat ubrajaju 12 koraka, među njima:
 
@@ -154,7 +154,7 @@ Male pasmine su osjetljivije. Merckov veterinarski priručnik piše da psi malih
 
 ## Što dogovoriti prije zahvata
 
-Prava procjena moguća je tek u anesteziji. AAHA piše da se plan liječenja i cijena mogu točno odrediti tek nakon pregleda u anesteziji i rendgena, i da pristanak treba reći da se ono što nije dogovoreno ne radi ako te ne mogu dobiti telefonom [12]. Hrvatski pravilnik traži da te ambulanta izvijesti o koristi, rizicima i cijeni i da daš pristanak prije usluge te da izda detaljan račun [16].
+Prava procjena moguća je tek u anesteziji. AAHA piše da se plan liječenja i cijena mogu točno odrediti tek nakon pregleda u anesteziji i rendgena, i da pristanak treba reći da se ono što nije dogovoreno ne radi ako te ne mogu dobiti telefonom [12]. Hrvatski pravilnik traži da te ambulanta izvijesti o koristi, rizicima i cijeni i da daš pristanak prije usluge te da izda detaljan račun [17].
 
 - [ ] Hoće li se snimiti cijela usta ili samo pojedini zubi?
 - [ ] Koliki je najmanji iznos i koliko stoji svaki izvađeni zub?
@@ -170,16 +170,16 @@ Rizik neliječenih zubi je bol. AAHA piše da psi bol u ustima skrivaju, a vidi 
 
 ## Nakon zahvata i kod kuće
 
-Usta mogu biti osjetljiva nekoliko dana, a koliko dugo pas jede mekanu hranu, odredit će veterinar [15]. Sveučilišna bolnica u Washingtonu u uputama za otpust traži da se javiš ako pas povraća, ima proljev, malaksao je ili ne jede [15].
+Usta mogu biti osjetljiva nekoliko dana, a koliko dugo pas jede mekanu hranu, odredit će veterinar [16]. Veterinarska bolnica Sveučilišta Washington State u uputama za otpust traži da se javiš ako pas povraća, ima proljev, malaksao je ili ne jede [16].
 
 AVDC preporučuje svakodnevnu njegu zubi od rane dobi, prije svega četkanje, uz redovite preglede [11]. Ljudsku pastu za zube ne koristi; Ambulanta Otto piše da nije namijenjena životinjama [10].
 
 ## Kada odmah veterinaru
 
 - Oteklina na licu ili ispod oka: može biti apsces korijena zuba, koji je vrlo bolan i liječi se što prije [14][15].
-- Slomljen zub kod kojeg se vidi unutrašnjost: prijelom do pulpe traži liječenje kanala ili vađenje [14].
+- Slomljen zub: ako prijelom seže do pulpe, treba liječenje kanala ili vađenje [14].
 - Pas ne želi žvakati, ispušta hranu ili krvari iz usta [12][15].
-- Nakon zahvata povraća, ima proljev, malaksao je ili ne jede [15].
+- Nakon zahvata povraća, ima proljev, malaksao je ili ne jede [16].
 
 Ako je to noću ili vikendom, u članku [Hitna veterinarska pomoć noću i vikendom: doplate](/vodic/hitna-veterinarska-pomoc-nocu-i-vikendom-doplate) piše koliko se doplaćuje i kako unaprijed naći dežurnu službu.
 
@@ -199,7 +199,7 @@ AAHA preporučuje rendgen cijelih usta kod svakog stomatološkog pacijenta, jer 
 
 ### Smije li veterinar izvaditi zube bez mog pristanka?
 
-Hrvatski pravilnik traži da budeš izviješten o koristi, rizicima i cijeni i da daš pristanak prije usluge [16]. AAHA preporučuje da se ono što nije u pristanku ne radi ako vlasnik nije dostupan [12].
+Hrvatski pravilnik traži da budeš izviješten o koristi, rizicima i cijeni i da daš pristanak prije usluge [17]. AAHA preporučuje da se ono što nije u pristanku ne radi ako vlasnik nije dostupan [12].
 
 ### Koliko često psu treba čistiti zube?
 
