@@ -836,7 +836,8 @@ export function BigMeadow() {
           const width = ctx.measureText(label).width + 20;
           const reach = printRadius(zone) * 0.75 * v.scale;
           const side = zone === "psi" || zone === "ostali" ? -1 : zone === "ptice" ? 0 : 1;
-          const lx = sx(first.x) + side * (reach + width / 2);
+          // Naziv ostaje unutar zaslona i kad je otisak uz rub.
+          const lx = Math.min(w - 12 - width / 2, Math.max(12 + width / 2, sx(first.x) + side * (reach + width / 2)));
           const ly = sy(first.y) + (side === 0 ? reach + 16 : 0);
           // Naziv koji bi prekrio drugi se ne crta; psi i mačke imaju prednost jer su prvi na popisu.
           const box = { x0: lx - width / 2 - 4, x1: lx + width / 2 + 4, y0: ly - 17, y1: ly + 17 };
