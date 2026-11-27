@@ -380,7 +380,12 @@ function validateArticle(article, allSlugs) {
   // Unutarnje poveznice vode samo na članke iz ovog skupa i na postojeće alate.
   for (const match of text.matchAll(/\]\((\/[^)\s]*)\)/g)) {
     const path = match[1];
-    if (path.startsWith("/vodic/")) {
+    if (path.startsWith("/vodic/tema/")) {
+      // Stranica teme postoji za svaku dopuštenu temu.
+      if (!CLUSTERS.includes(path.slice("/vodic/tema/".length))) {
+        errors.push(`poveznica ${path} vodi na temu koja ne postoji (${CLUSTERS.join(", ")})`);
+      }
+    } else if (path.startsWith("/vodic/")) {
       const slug = path.slice("/vodic/".length);
       if (!allSlugs.has(slug)) {
         errors.push(`poveznica ${path} vodi na članak koji ne postoji u content/clanci`);

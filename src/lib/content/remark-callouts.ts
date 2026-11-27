@@ -1,4 +1,4 @@
-import { parseCalloutMarker } from "@/lib/content/callouts";
+import { calloutId, parseCalloutMarker } from "@/lib/content/callouts";
 
 /**
  * Dodatak za remark: citat s oznakom [!VRSTA] postaje istaknuti okvir (`aside` s atributom
@@ -16,17 +16,18 @@ type MarkdownNode = {
 export const CALLOUT_ATTRIBUTE = "data-callout";
 export const CALLOUT_TITLE_ATTRIBUTE = "data-callout-title";
 
-function transform(node: MarkdownNode): void {
+/** Vraća true ako je citat postao okvir. */
+function transform(node: MarkdownNode, index: number): boolean {
   const first = node.children?.[0];
   const text = first?.type === "paragraph" ? first.children?.[0] : undefined;
   if (!first || text?.type !== "text" || typeof text.value !== "string") {
-    return;
+    return false;
   }
   const newline = text.value.indexOf("\n");
   const firstLine = newline === -1 ? text.value : text.value.slice(0, newline);
   const marker = parseCalloutMarker(firstLine);
   if (!marker) {
-    return;
+    return false;
   }
   text.value = newline === -1 ? "" : text.value.slice(newline + 1);
   if (text.value === "") {
@@ -41,18 +42,20 @@ function transform(node: MarkdownNode): void {
   }
   node.data = {
     hName: "aside",
-    hProperties: { dataCallout: marker.kind, dataCalloutTitle: marker.rest },
+    hProperties: { dataCallout: marker.kind, dataCalloutTitle: marker.rest, id: calloutId(index) },
   };
   if (marker.kind === "alat") {
     node.children = [];
   }
+  return true;
 }
 
 export function remarkCallouts() {
   return (tree: MarkdownNode): void => {
+    let index = 0;
     for (const child of tree.children ?? []) {
-      if (child.type === "blockquote") {
-        transform(child);
+      if (child.type === "blockquote" && transform(child, index)) {
+        index += 1;
       }
     }
   };

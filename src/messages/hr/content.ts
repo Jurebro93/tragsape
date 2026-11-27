@@ -94,6 +94,13 @@ export const content = {
       brojke: "U brojkama",
       toolEyebrow: "Isprobaj odmah",
       toolOpen: "Otvori alat na posebnoj stranici",
+      barLabel: "Zanimljivosti iz članka",
+      barIdea: "Ideja",
+      barPrevious: "Prethodna",
+      barNext: "Sljedeća",
+      barClose: "Zatvori traku",
+      barRead: "Pročitaj u članku",
+      barCount: "{current} od {total}",
     },
   },
   cta: {

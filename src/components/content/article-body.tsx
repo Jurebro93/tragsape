@@ -179,7 +179,7 @@ export function ArticleBody({
       if (typeof callout === "string" && isCalloutKind(callout)) {
         const title = attributes[CALLOUT_TITLE_ATTRIBUTE];
         return (
-          <ArticleCallout kind={callout} title={typeof title === "string" ? title : ""}>
+          <ArticleCallout kind={callout} title={typeof title === "string" ? title : ""} id={typeof props.id === "string" ? props.id : undefined}>
             {children}
           </ArticleCallout>
         );

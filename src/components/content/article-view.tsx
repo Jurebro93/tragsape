@@ -2,6 +2,8 @@ import type { Route } from "next";
 import Link from "next/link";
 import { topicPath } from "@/components/content/article-card";
 import { ArticleBody } from "@/components/content/article-body";
+import { FactsBar } from "@/components/content/facts-bar";
+import { extractCallouts } from "@/lib/content/callouts";
 import { CtaBlock } from "@/components/content/cta-block";
 import { ArrowRightIcon, CheckIcon } from "@/components/icons";
 import { Eyebrow } from "@/components/ui/card";
@@ -200,6 +202,14 @@ export function ArticleView({
       ) : null}
 
       {hasBody ? <Toc headings={extractHeadings(article.bodyMd)} /> : null}
+
+      {hasBody ? (
+        <FactsBar
+          items={extractCallouts(article.bodyMd).filter(
+            (item) => (item.kind === "cinjenica" || item.kind === "savjet") && item.text !== "",
+          )}
+        />
+      ) : null}
 
       {hasBody ? <ArticleBody markdown={article.bodyMd} slug={article.slug} cta={article.cta} /> : null}
 

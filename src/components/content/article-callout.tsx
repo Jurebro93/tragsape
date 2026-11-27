@@ -36,7 +36,17 @@ const STYLES: Record<Exclude<CalloutKind, "alat">, { box: string; icon: ReactNod
 };
 
 /** Istaknuti okvir u članku: zanimljivost, savjet, upozorenje, brojke ili ugrađeni alat. */
-export function ArticleCallout({ kind, title, children }: { kind: CalloutKind; title: string; children: ReactNode }) {
+export function ArticleCallout({
+  kind,
+  title,
+  id,
+  children,
+}: {
+  kind: CalloutKind;
+  title: string;
+  id?: string;
+  children: ReactNode;
+}) {
   if (kind === "alat") {
     const slug = embeddable(title);
     if (!slug) {
@@ -44,7 +54,7 @@ export function ArticleCallout({ kind, title, children }: { kind: CalloutKind; t
     }
     const tool = getTool(slug);
     return (
-      <aside className="my-10 flex flex-col gap-4 rounded-[32px] bg-butter p-5 sm:p-7" aria-label={tool.title}>
+      <aside id={id} className="my-10 flex scroll-mt-28 flex-col gap-4 rounded-[32px] bg-butter p-5 sm:p-7" aria-label={tool.title}>
         <div className="flex flex-col gap-1">
           <span className="text-sm font-bold uppercase tracking-[0.08em] text-terracotta">{t.toolEyebrow}</span>
           <h2 className="font-display text-2xl font-extrabold leading-tight">{tool.title}</h2>
@@ -63,7 +73,7 @@ export function ArticleCallout({ kind, title, children }: { kind: CalloutKind; t
   }
   const style = STYLES[kind];
   return (
-    <aside className={cn("callout my-8 flex flex-col gap-3 rounded-3xl p-5 sm:p-6", `callout-${kind}`, style.box)}>
+    <aside id={id} className={cn("callout my-8 flex scroll-mt-28 flex-col gap-3 rounded-3xl p-5 sm:p-6", `callout-${kind}`, style.box)}>
       <p className="flex items-center gap-2 text-sm font-bold uppercase tracking-[0.08em] text-terracotta-deep">
         {style.icon}
         {title || style.label}
