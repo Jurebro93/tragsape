@@ -1,5 +1,6 @@
 import type { Route } from "next";
 import Link from "next/link";
+import { topicPath } from "@/components/content/article-card";
 import { ArticleBody } from "@/components/content/article-body";
 import { CtaBlock } from "@/components/content/cta-block";
 import { ArrowRightIcon, CheckIcon } from "@/components/icons";
@@ -172,7 +173,11 @@ export function ArticleView({
           ← {t.back}
         </Link>
         <Cover slug={article.slug} title={article.title} />
-        <Eyebrow>{content.guide.clusters[article.cluster].name}</Eyebrow>
+        <Eyebrow>
+          <Link href={topicPath(article.cluster)} className="inline-flex min-h-11 items-center text-terracotta-deep no-underline hover:underline">
+            {content.guide.clusters[article.cluster].name}
+          </Link>
+        </Eyebrow>
         <h1 className="text-4xl font-extrabold leading-[1.1] [overflow-wrap:anywhere] sm:text-5xl">{article.title}</h1>
         {article.excerpt ? <p className="text-xl leading-relaxed text-plum-soft">{article.excerpt}</p> : null}
         <div className="flex flex-col gap-1.5 text-[15px] text-plum-soft">

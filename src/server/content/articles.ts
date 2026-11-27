@@ -62,7 +62,7 @@ export async function getPublishedArticle(slug: string): Promise<ArticleView | n
   return loadArticleView(createAnonClient(), { slug, publishedOnly: true });
 }
 
-export type ArticleSitemapEntry = { slug: string; updatedAt: string };
+export type ArticleSitemapEntry = { slug: string; cluster: string; updatedAt: string };
 
 /** Adrese objavljenih članaka za sitemap. */
 export async function listPublishedArticleSlugs(): Promise<ArticleSitemapEntry[]> {
@@ -72,7 +72,7 @@ export async function listPublishedArticleSlugs(): Promise<ArticleSitemapEntry[]
 
   const { data, error } = await createAnonClient()
     .from("articles")
-    .select("slug, updated_at")
+    .select("slug, cluster, updated_at")
     .eq("status", "published")
     .eq("locale", "hr")
     .order("published_at", { ascending: false })
@@ -80,5 +80,5 @@ export async function listPublishedArticleSlugs(): Promise<ArticleSitemapEntry[]
   if (error) {
     throw new Error(`Članci za sitemap se ne mogu pročitati: ${error.message}`);
   }
-  return data.map((row) => ({ slug: row.slug, updatedAt: row.updated_at }));
+  return data.map((row) => ({ slug: row.slug, cluster: row.cluster, updatedAt: row.updated_at }));
 }

@@ -19,23 +19,44 @@ export const content = {
       zdravlje: {
         name: "Zdravlje i cijene",
         lead: "Cijepljenje, česti zdravstveni problemi i koliko što košta kod veterinara.",
+        description:
+          "Ovdje su članci za vlasnike čiji je ljubimac živ i zdrav, ili tek treba pregled: cijepljenje, čipiranje, sterilizacija, životni vijek i cijene veterinarskih usluga iz objavljenih cjenika. Tekstovi o zdravlju pisani su iz veterinarskih izvora navedenih uz svaki članak. Ne zamjenjuju pregled, pa za savjet o svom ljubimcu nazovi najbližu veterinarsku ambulantu.",
+        metaTitle: "Zdravlje ljubimca i cijene kod veterinara",
       },
       "kraj-zivota": {
         name: "Kraj života",
         lead: "Kako prepoznati da se kraj bliži i kako donijeti odluku.",
+        description:
+          "Članci za razdoblje kad je ljubimac star ili teško bolestan: kako prepoznati bol i patnju, kako izgleda uspavljivanje i koliko košta, može li se obaviti kod kuće i kako provesti posljednje dane. Odluku uvijek donosiš zajedno s veterinarom koji je ljubimca pregledao; ovi tekstovi pomažu da znaš što pitati.",
+        metaTitle: "Kraj života ljubimca: znakovi, uspavljivanje i odluka",
       },
       "nakon-smrti": {
         name: "Što nakon smrti",
         lead: "Praktični koraci, troškovi i propisi.",
+        description:
+          "Što učiniti kad ljubimac ugine: prvi koraci, kremiranje i ukop, urne, odjava psa i propisi koji vrijede u Hrvatskoj. Uz svaku cijenu stoji čiji je cjenik i kada smo ga pročitali, a uz svaki propis članak i broj Narodnih novina.",
+        metaTitle: "Što nakon smrti ljubimca: koraci, kremiranje i propisi",
       },
       tugovanje: {
         name: "Tugovanje",
         lead: "O tuzi za ljubimcem, kod odraslih i kod djece.",
+        description:
+          "Tuga za ljubimcem je stvarna tuga, i kod odraslih i kod djece. Ovdje su članci o tome koliko tuga traje, kako se nositi s krivnjom, kako razgovarati s djetetom, što napisati nekome tko je izgubio ljubimca i kako sačuvati sjećanje. Kad je tuga preteška ili ne popušta, razgovor s psihologom ili liječnikom može pomoći.",
+        metaTitle: "Tugovanje za ljubimcem: tuga, krivnja, djeca i sućut",
       },
       "prigodni-datumi": {
         name: "Prigodni datumi",
         lead: "Godišnjice, rođendani i načini da ih obilježiš.",
+        description:
+          "Godišnjice, rođendani, blagdani i spomen-dani kroz godinu. Ovdje su ideje kako obilježiti datum koji ti je važan, sam ili s obitelji, i popis dana posvećenih životinjama s izvorom za svaki.",
+        metaTitle: "Prigodni datumi: godišnjice i spomen-dani za ljubimce",
       },
+    },
+    topic: {
+      back: "Vodič",
+      count: "Članaka u ovoj temi: {count}",
+      otherTopics: "Ostale teme",
+      seeAll: "Svi članci: {name} ({count})",
     },
     empty: {
       title: "Članci su u pripremi",

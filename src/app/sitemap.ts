@@ -78,6 +78,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Vodič bez ijednog objavljenog članka nosi noindex, pa ga tada nema ni ovdje.
     ...(articles.length > 0 ? [{ url: `${base}/vodic` }] : []),
     // Samo objavljeni alati i članci: nacrti (zdravlje, propisi) ne postoje za tražilice.
+    // Stranice tema koje imaju barem jedan objavljen članak.
+    ...[...new Set(articles.map((article) => article.cluster))].map((cluster) => ({ url: `${base}/vodic/tema/${cluster}` })),
     ...publicTools().map((tool) => ({ url: `${base}${toolPath(tool.slug)}` })),
     ...articles.map((article) => ({
       url: `${base}/vodic/${article.slug}`,
