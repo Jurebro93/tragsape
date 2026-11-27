@@ -275,6 +275,25 @@ export function dayPhase(date: Date): DayPhase {
   return hour > sunrise && hour < sunset ? "day" : "night";
 }
 
+export type Season = "proljece" | "ljeto" | "jesen" | "zima";
+
+/** Godišnje doba po datumu u Zagrebu (meteorološko: zima je prosinac, siječanj i veljača). */
+export function seasonOf(date: Date): Season {
+  const month = Number(new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Zagreb", month: "numeric" }).format(date));
+  if (month === 12 || month <= 2) return "zima";
+  if (month <= 5) return "proljece";
+  if (month <= 8) return "ljeto";
+  return "jesen";
+}
+
+/** Tlo i ugođaj za svako godišnje doba; zimi inje, ujesen lišće, u proljeće latice, ljeti leptiri. */
+export const SEASON_COLORS: Record<Season, { ground: string; groundDeep: string; tuft: string; particle: string; particleAlt: string }> = {
+  proljece: { ground: "#E2EED3", groundDeep: "#CFE3BE", tuft: "rgba(95,150,95,0.26)", particle: "#F4C6CF", particleAlt: "#FFFFFF" },
+  ljeto: { ground: "#E4ECD6", groundDeep: "#D3E3C8", tuft: "rgba(95,140,105,0.22)", particle: "#F8B93B", particleAlt: "#E07B53" },
+  jesen: { ground: "#E3E8CC", groundDeep: "#D3DBB5", tuft: "rgba(150,130,80,0.25)", particle: "#D98B4A", particleAlt: "#E0B04F" },
+  zima: { ground: "#EDF1EA", groundDeep: "#DFE7DC", tuft: "rgba(120,150,135,0.22)", particle: "rgba(255,255,255,0.92)", particleAlt: "rgba(255,255,255,0.7)" },
+};
+
 /** Boje prizora na platnu (nebo, brežuljci, stabljike); nijanse tokena iz globals.css. */
 export const SCENE_COLORS = {
   sun: "rgba(248,185,59,0.75)",
@@ -291,6 +310,12 @@ export const SCENE_COLORS = {
   tuft: "rgba(95,140,105,0.22)",
   vignette: "rgba(51,36,43,0.10)",
   star: "rgba(255,250,235,0.85)",
+  frost: "rgba(255,255,255,0.75)",
+  night: "rgba(51,36,43,0.07)",
+  minimapBg: "rgba(255,253,245,0.94)",
+  minimapPaw: "rgba(127,168,137,0.55)",
+  minimapPawFull: "#7FA889",
+  minimapView: "#C2451F",
 } as const;
 
 /** Nebo, daleka brda i tlo za svako doba dana. I noć ostaje topla i svijetla, bez crne. */

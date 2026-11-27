@@ -13,6 +13,7 @@ import {
   PRINT_CAPACITY,
   PRINT_RADIUS,
   SCENE_COLORS,
+  SEASON_COLORS,
   SPECIES_COLORS,
   checkFlowerName,
   dayPhase,
@@ -22,6 +23,7 @@ import {
   padOutline,
   printFrame,
   printsToShow,
+  seasonOf,
   type MeadowPetal,
   type MeadowRow,
   type MeadowSpecies,
@@ -48,6 +50,8 @@ const CELL = 120;
 const TUFT_CELL = 70;
 const MAX_SCALE = 2.6;
 const SMALL_SCREEN = "(max-width: 639px)";
+const FILTERS = ["all", "pas", "macka", "kunic", "ptica", "drugo", "spomen"] as const;
+type Filter = (typeof FILTERS)[number];
 
 function plainSearch(text: string): string {
   return text.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/g, "d");
@@ -123,6 +127,10 @@ export function BigMeadow() {
   const [cardPos, setCardPos] = useState<{ left: number; top: number } | null>(null);
   const [full, setFull] = useState(false);
   const [small, setSmall] = useState(false);
+  const [filter, setFilter] = useState<Filter>("all");
+  const [walking, setWalking] = useState(false);
+  const [walkCaption, setWalkCaption] = useState("");
+  const [zoomedIn, setZoomedIn] = useState(false);
   const interactive = full || !small;
 
   const view = useRef({ x: 0, y: 0, scale: 1 });
@@ -133,6 +141,11 @@ export function BigMeadow() {
   const wantOverview = useRef(false);
   const pendingFocus = useRef<Flower | null>(null);
   const pushedFull = useRef(false);
+  const zoomedRef = useRef(false);
+  const walk = useRef<{ path: Array<{ x: number; y: number }>; total: number; distance: number; lastStep: number } | null>(null);
+  const bloom = useRef<{ number: number; start: number } | null>(null);
+  const minimapRef = useRef<HTMLCanvasElement>(null);
+  const minimapTransform = useRef({ m: 1, ox: 0, oy: 0 });
 
   const byNumber = useMemo(() => new Map((flowers ?? []).map((flower) => [flower.number, flower])), [flowers]);
   const maxNumber = useMemo(() => (flowers ?? []).reduce((max, flower) => Math.max(max, flower.number), 0), [flowers]);
@@ -224,6 +237,24 @@ export function BigMeadow() {
     if (open) setSelected(flower);
   }, []);
 
+  // Mini-karta i šetnja mijenjaju što se crta povrh livade.
+  useEffect(() => {
+    dirty.current = true;
+  }, [zoomedIn, walking]);
+
+  // Nakon zatvaranja cijelog zaslona pregled u stranici opet pokazuje cijeli trag.
+  const wasFull = useRef(false);
+  useEffect(() => {
+    if (wasFull.current && !full) {
+      const timer = window.setTimeout(() => {
+        fly.current = overview();
+      }, 80);
+      wasFull.current = full;
+      return () => window.clearTimeout(timer);
+    }
+    wasFull.current = full;
+  }, [full, overview]);
+
   // Cijeli zaslon: na mobitelu ulaz preko povijesti, pa tipka „natrag” zatvara livadu.
   const enterFull = useCallback((target?: Flower | null) => {
     pendingFocus.current = target ?? null;
@@ -239,6 +270,8 @@ export function BigMeadow() {
       pushedFull.current = false;
       window.history.back();
     }
+    walk.current = null;
+    setWalking(false);
     setFull(false);
   }, []);
 
@@ -265,6 +298,7 @@ export function BigMeadow() {
       const wanted = Number(new URLSearchParams(window.location.search).get("trag"));
       const target = Number.isInteger(wanted) ? byNumber.get(wanted) : undefined;
       if (target) {
+        bloom.current = { number: target.number, start: performance.now() + 700 };
         // Poveznica na trag: na mobitelu se livada otvara preko cijelog zaslona, na računalu se pomakne u pogled.
         if (window.matchMedia(SMALL_SCREEN).matches) {
           window.setTimeout(() => enterFull(target), 0);
@@ -284,23 +318,33 @@ export function BigMeadow() {
     return () => observer.disconnect();
   }, [flowers, bounds, byNumber, clamp, focus, overview, enterFull]);
 
-  // Crtanje: samo kad se nešto promijenilo, i samo ono što je u vidnom polju.
+  // Crtanje: prizor se iscrtava kad se nešto promijeni; njihanje, cvjetanje, šetnja i čestice godišnjeg doba
+  // crtaju se do 30 puta u sekundi, i nikad kad posjetitelj traži manje kretanja.
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas || !flowers) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
+    const main = canvas.getContext("2d");
+    const sceneCanvas = document.createElement("canvas");
+    const sceneCtx = sceneCanvas.getContext("2d");
+    if (!main || !sceneCtx) return;
     let frame = 0;
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    // Doba dana po zagrebačkom vremenu; provjerava se svakih pet minuta.
+    // Doba dana i godišnje doba po zagrebačkom vremenu; provjerava se svakih pet minuta.
     let palette = PHASE_COLORS[dayPhase(new Date())];
+    let season = seasonOf(new Date());
+    let seasonColors = SEASON_COLORS[season];
     const phaseTimer = window.setInterval(() => {
       palette = PHASE_COLORS[dayPhase(new Date())];
+      season = seasonOf(new Date());
+      seasonColors = SEASON_COLORS[season];
       dirty.current = true;
     }, 5 * 60 * 1000);
     const lastFrame = prints[prints.length - 1].frame;
+    const matches = (f: Flower) =>
+      filter === "all" ? true : filter === "spomen" ? f.slug !== "" : f.species === filter;
 
-    const draw = () => {
+    // Prizor se crta na zasebno platno; čestice godišnjeg doba i mini-karta idu povrh njega.
+    const drawScene = (ctx: CanvasRenderingContext2D, now: number, sway: boolean) => {
       const { w, h, dpr } = size.current;
       const v = view.current;
       const sx = (x: number) => (x - v.x) * v.scale + w / 2;
@@ -370,10 +414,14 @@ export function BigMeadow() {
       }
 
       const ground = ctx.createLinearGradient(0, horizonY, 0, sy(bounds.maxY));
-      ground.addColorStop(0, palette.ground);
-      ground.addColorStop(1, palette.groundDeep);
+      ground.addColorStop(0, seasonColors.ground);
+      ground.addColorStop(1, seasonColors.groundDeep);
       ctx.fillStyle = ground;
       ctx.fillRect(0, Math.max(0, horizonY), w, h);
+      if (palette.sunHeight < 0) {
+        ctx.fillStyle = SCENE_COLORS.night;
+        ctx.fillRect(0, Math.max(0, horizonY), w, h);
+      }
 
       const left = v.x - w / 2 / v.scale;
       const right = v.x + w / 2 / v.scale;
@@ -418,7 +466,7 @@ export function BigMeadow() {
 
       // Trava izbliza: kratke vlati na stalnim mjestima.
       if (px >= 9) {
-        ctx.strokeStyle = SCENE_COLORS.tuft;
+        ctx.strokeStyle = seasonColors.tuft;
         ctx.lineWidth = Math.max(1, v.scale * 1.2);
         ctx.lineCap = "round";
         const cx0 = Math.floor(left / TUFT_CELL);
@@ -443,6 +491,19 @@ export function BigMeadow() {
           }
         }
         ctx.stroke();
+        if (season === "zima") {
+          // Inje: sitne bijele točke na vrhovima vlati.
+          ctx.fillStyle = SCENE_COLORS.frost;
+          for (let gx = cx0; gx <= cx1; gx++) {
+            for (let gy = cy0; gy <= cy1; gy++) {
+              const seed = gx * 73856093 + gy * 19349663;
+              const blade = (4.5 + hash(seed + 2) * 3) * v.scale;
+              ctx.beginPath();
+              ctx.arc(sx((gx + hash(seed)) * TUFT_CELL) + blade * 0.08, sy((gy + hash(seed + 1)) * TUFT_CELL) - blade * 1.25, Math.max(0.8, v.scale * 1.1), 0, Math.PI * 2);
+              ctx.fill();
+            }
+          }
+        }
       }
 
       // Vidljivi cvjetovi.
@@ -467,6 +528,7 @@ export function BigMeadow() {
         const cy = sy(f.y);
         const isMine = mineNumbers.has(f.number);
         const isSelected = selected?.number === f.number;
+        ctx.globalAlpha = matches(f) ? 1 : 0.14;
         if (fpx < 5) {
           // Izdaleka: točkica u boji cvijeta.
           ctx.fillStyle = f.petal === "bijela" ? SCENE_COLORS.label : PETAL_COLORS[f.petal];
@@ -483,16 +545,21 @@ export function BigMeadow() {
           }
           continue;
         }
-        const r = fpx * 0.32;
-        const stem = fpx * 0.9;
+        // Novi trag procvjeta: raste iz zemlje nešto više od sekunde.
+        const growth = bloom.current && bloom.current.number === f.number ? Math.max(0, Math.min(1, (now - bloom.current.start) / 1200)) : 1;
+        const grow = 1 - (1 - growth) ** 3;
+        const r = fpx * 0.32 * grow;
+        const stem = fpx * 0.9 * grow;
+        const lean = sway ? Math.sin(now * 0.0016 + f.number * 1.7 + f.x * 0.002) * fpx * 0.09 : 0;
+        const headX = cx + lean;
         const headY = cy - stem;
         if (isMine || isSelected) {
-          const glow = ctx.createRadialGradient(cx, headY, 0, cx, headY, r * 5);
+          const glow = ctx.createRadialGradient(headX, headY, 0, headX, headY, Math.max(1, r * 5));
           glow.addColorStop(0, SCENE_COLORS.glow);
           glow.addColorStop(1, "rgba(255,255,255,0)");
           ctx.fillStyle = glow;
           ctx.beginPath();
-          ctx.arc(cx, headY, r * 5, 0, Math.PI * 2);
+          ctx.arc(headX, headY, Math.max(1, r * 5), 0, Math.PI * 2);
           ctx.fill();
         }
         ctx.strokeStyle = SCENE_COLORS.stem;
@@ -500,14 +567,14 @@ export function BigMeadow() {
         ctx.lineCap = "round";
         ctx.beginPath();
         ctx.moveTo(cx, cy);
-        ctx.quadraticCurveTo(cx + r * 0.3, cy - stem * 0.5, cx, headY);
+        ctx.quadraticCurveTo(cx + r * 0.3 + lean * 0.3, cy - stem * 0.5, headX, headY);
         ctx.stroke();
         ctx.fillStyle = PETAL_COLORS[f.petal];
         const turn = (f.number * 0.7) % (Math.PI * 2);
         for (let k = 0; k < 5; k++) {
           const a = turn + (k / 5) * Math.PI * 2;
           ctx.beginPath();
-          ctx.arc(cx + Math.cos(a) * r * 0.78, headY + Math.sin(a) * r * 0.78, r * 0.62, 0, Math.PI * 2);
+          ctx.arc(headX + Math.cos(a) * r * 0.78, headY + Math.sin(a) * r * 0.78, r * 0.62, 0, Math.PI * 2);
           ctx.fill();
           if (f.petal === "bijela") {
             ctx.strokeStyle = SCENE_COLORS.outline;
@@ -517,13 +584,13 @@ export function BigMeadow() {
         }
         ctx.fillStyle = SPECIES_COLORS[f.species];
         ctx.beginPath();
-        ctx.arc(cx, headY, r * 0.48, 0, Math.PI * 2);
+        ctx.arc(headX, headY, r * 0.48, 0, Math.PI * 2);
         ctx.fill();
         if (isMine) {
           ctx.strokeStyle = SCENE_COLORS.mineRing;
           ctx.lineWidth = 2.5;
           ctx.beginPath();
-          ctx.arc(cx, headY, r * 1.75, 0, Math.PI * 2);
+          ctx.arc(headX, headY, r * 1.75, 0, Math.PI * 2);
           ctx.stroke();
         }
         if (showNames || isMine || isSelected) {
@@ -538,6 +605,7 @@ export function BigMeadow() {
           ctx.fillText(f.name, cx, cy + 3);
         }
       }
+      ctx.globalAlpha = 1;
 
       // Blago zatamnjeni rubovi: pogled je kao kroz prozor na veći prostor.
       const vignette = ctx.createRadialGradient(w / 2, h / 2, Math.min(w, h) * 0.42, w / 2, h / 2, Math.max(w, h) * 0.78);
@@ -547,7 +615,90 @@ export function BigMeadow() {
       ctx.fillRect(0, 0, w, h);
     };
 
-    const tick = () => {
+    // Čestice godišnjeg doba u prostoru zaslona: snijeg, latice, lišće ili poneki leptir.
+    const drawParticles = (now: number) => {
+      const { w, h, dpr } = size.current;
+      main.setTransform(dpr, 0, 0, dpr, 0, 0);
+      const count = season === "ljeto" ? 6 : season === "proljece" ? 18 : season === "jesen" ? 22 : 44;
+      const t = now / 1000;
+      for (let k = 0; k < count; k++) {
+        const speed = 0.3 + hash(k * 7) * 0.7;
+        const baseX = hash(k * 3) * w;
+        if (season === "ljeto") {
+          const x = baseX + Math.sin(t * 0.6 + k) * 60;
+          const y = hash(k * 5) * h * 0.8 + Math.cos(t * 0.45 + k * 2) * 40;
+          const flap = Math.abs(Math.sin(t * 9 + k));
+          main.fillStyle = k % 2 ? seasonColors.particle : seasonColors.particleAlt;
+          main.beginPath();
+          main.ellipse(x - 3, y, 4 * flap + 1, 3, -0.4, 0, Math.PI * 2);
+          main.ellipse(x + 3, y, 4 * flap + 1, 3, 0.4, 0, Math.PI * 2);
+          main.fill();
+          continue;
+        }
+        const fall = season === "zima" ? 0.05 : 0.035;
+        const y = ((hash(k * 5) + t * speed * fall) % 1) * (h + 20) - 10;
+        const x = baseX + Math.sin(t * speed + k) * 18;
+        main.fillStyle = k % 3 ? seasonColors.particle : seasonColors.particleAlt;
+        main.beginPath();
+        if (season === "zima") main.arc(x, y, 1.2 + speed * 1.6, 0, Math.PI * 2);
+        else main.ellipse(x, y, season === "jesen" ? 4.5 : 3.2, season === "jesen" ? 2.4 : 2, t * speed + k, 0, Math.PI * 2);
+        main.fill();
+      }
+    };
+
+    // Mini-karta: cijeli trag i okvir trenutnog pogleda.
+    const drawMinimap = () => {
+      const mini = minimapRef.current;
+      if (!mini || mini.clientWidth === 0) return;
+      const mctx = mini.getContext("2d");
+      if (!mctx) return;
+      const dpr = Math.min(2, window.devicePixelRatio || 1);
+      const mw = mini.clientWidth;
+      const mh = mini.clientHeight;
+      if (mini.width !== Math.round(mw * dpr)) {
+        mini.width = Math.round(mw * dpr);
+        mini.height = Math.round(mh * dpr);
+      }
+      mctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      const m = Math.min(mw / (bounds.maxX - bounds.minX), mh / (bounds.maxY - bounds.minY)) * 0.9;
+      const ox = mw / 2 - ((bounds.minX + bounds.maxX) / 2) * m;
+      const oy = mh / 2 - ((bounds.minY + bounds.maxY) / 2) * m;
+      minimapTransform.current = { m, ox, oy };
+      mctx.clearRect(0, 0, mw, mh);
+      mctx.fillStyle = SCENE_COLORS.minimapBg;
+      mctx.beginPath();
+      mctx.roundRect(0, 0, mw, mh, 16);
+      mctx.fill();
+      for (const print of prints) {
+        mctx.fillStyle = print.empty ? SCENE_COLORS.minimapPaw : SCENE_COLORS.minimapPawFull;
+        for (const outline of print.pads) {
+          mctx.beginPath();
+          outline.forEach((point, index) => (index % 4 === 0 ? (index === 0 ? mctx.moveTo(ox + point.x * m, oy + point.y * m) : mctx.lineTo(ox + point.x * m, oy + point.y * m)) : null));
+          mctx.closePath();
+          mctx.fill();
+        }
+      }
+      mctx.fillStyle = SCENE_COLORS.mineRing;
+      for (const number of mineNumbers) {
+        const f = byNumber.get(number);
+        if (!f) continue;
+        mctx.beginPath();
+        mctx.arc(ox + f.x * m, oy + f.y * m, 3.5, 0, Math.PI * 2);
+        mctx.fill();
+      }
+      const { w, h } = size.current;
+      const v = view.current;
+      mctx.strokeStyle = SCENE_COLORS.minimapView;
+      mctx.lineWidth = 2;
+      mctx.strokeRect(ox + (v.x - w / 2 / v.scale) * m, oy + (v.y - h / 2 / v.scale) * m, (w / v.scale) * m, (h / v.scale) * m);
+    };
+
+    let lastAnimated = 0;
+    let lastCaption = 0;
+    let lastTime = performance.now();
+    const tick = (now: number) => {
+      const dt = Math.min(100, now - lastTime);
+      lastTime = now;
       const target = fly.current;
       if (target) {
         const v = view.current;
@@ -560,9 +711,73 @@ export function BigMeadow() {
           fly.current = null;
         }
       }
-      if (dirty.current) {
+      // Šetnja tragom: pogled polako slijedi put kroz jastučiće, od prvog otiska do zadnjeg.
+      const w8 = walk.current;
+      if (w8) {
+        fly.current = null;
+        w8.distance += (dt / 1000) * (reduced ? 0 : 210);
+        if (reduced && now - w8.lastStep > 2500) {
+          w8.lastStep = now;
+          w8.distance += 600;
+        }
+        let rest = w8.distance;
+        let point = w8.path[w8.path.length - 1];
+        for (let i = 1; i < w8.path.length; i++) {
+          const a = w8.path[i - 1];
+          const b = w8.path[i];
+          const len = Math.hypot(b.x - a.x, b.y - a.y);
+          if (rest <= len) {
+            point = { x: a.x + ((b.x - a.x) * rest) / len, y: a.y + ((b.y - a.y) * rest) / len };
+            break;
+          }
+          rest -= len;
+        }
+        const v = view.current;
+        v.x = point.x;
+        v.y = point.y;
+        v.scale += (1.25 - v.scale) * 0.08;
+        clamp();
+        if (now - lastCaption > 700) {
+          lastCaption = now;
+          const near = (flowers ?? [])
+            .map((f) => ({ name: f.name, d: Math.hypot(f.x - v.x, f.y - v.y) }))
+            .filter((item) => item.d < 260)
+            .sort((a, b) => a.d - b.d)
+            .slice(0, 3)
+            .map((item) => item.name);
+          setWalkCaption((previous) => (previous === near.join(", ") ? previous : near.join(", ")));
+        }
+        if (w8.distance >= w8.total) {
+          walk.current = null;
+          setWalking(false);
+          setWalkCaption("");
+        }
+      }
+      const zoomed = view.current.scale > minScale() * 1.6;
+      if (zoomed !== zoomedRef.current) {
+        zoomedRef.current = zoomed;
+        setZoomedIn(zoomed);
+      }
+      const sway = !reduced && FLOWER_SIZE * view.current.scale >= 12;
+      const blooming = bloom.current !== null && now - bloom.current.start < 1300;
+      const animate = !reduced && now - lastAnimated >= 33;
+      const redrawScene = dirty.current || ((sway || blooming) && animate) || walk.current !== null;
+      if (redrawScene) {
         dirty.current = false;
-        draw();
+        const { w, h, dpr } = size.current;
+        if (sceneCanvas.width !== Math.round(w * dpr) || sceneCanvas.height !== Math.round(h * dpr)) {
+          sceneCanvas.width = Math.round(w * dpr);
+          sceneCanvas.height = Math.round(h * dpr);
+        }
+        drawScene(sceneCtx, now, sway);
+        drawMinimap();
+      }
+      if (redrawScene || animate) {
+        lastAnimated = now;
+        main.setTransform(1, 0, 0, 1, 0, 0);
+        main.clearRect(0, 0, canvas.width, canvas.height);
+        main.drawImage(sceneCanvas, 0, 0);
+        if (!reduced) drawParticles(now);
       }
       frame = window.requestAnimationFrame(tick);
     };
@@ -572,7 +787,7 @@ export function BigMeadow() {
       window.cancelAnimationFrame(frame);
       window.clearInterval(phaseTimer);
     };
-  }, [flowers, grid, bounds, prints, maxNumber, mineNumbers, selected, clamp]);
+  }, [flowers, grid, bounds, prints, maxNumber, mineNumbers, selected, clamp, filter, byNumber, minScale]);
 
   // Kartica prati odabrani cvijet.
   useEffect(() => {
@@ -615,7 +830,7 @@ export function BigMeadow() {
       const target = pendingFocus.current;
       pendingFocus.current = null;
       if (target) focus(target);
-      else showAll();
+      else if (!walk.current) showAll();
     }, 60);
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape" && !claimOpen) exitFull();
@@ -633,6 +848,42 @@ export function BigMeadow() {
   const gesture = useRef<{ x: number; y: number; vx: number; vy: number; moved: boolean; pinch: number; scale: number } | null>(null);
   const lastTap = useRef(0);
 
+  const stopWalk = useCallback(() => {
+    if (walk.current) {
+      walk.current = null;
+      setWalking(false);
+      setWalkCaption("");
+    }
+  }, []);
+
+  const startWalk = () => {
+    // Put kroz jastučiće svih otisaka koji imaju cvjetove: veliki jastučić, pa prsti slijeva nadesno.
+    const path: Array<{ x: number; y: number }> = [];
+    for (const print of prints) {
+      if (print.empty && path.length > 0) break;
+      for (const outline of print.pads) {
+        const cx = outline.reduce((sum, point) => sum + point.x, 0) / outline.length;
+        const cy = outline.reduce((sum, point) => sum + point.y, 0) / outline.length;
+        path.push({ x: cx, y: cy });
+      }
+    }
+    let total = 0;
+    for (let i = 1; i < path.length; i++) total += Math.hypot(path[i].x - path[i - 1].x, path[i].y - path[i - 1].y);
+    if (path.length < 2) return;
+    setSelected(null);
+    if (!interactive) enterFull(null);
+    walk.current = { path, total, distance: 0, lastStep: 0 };
+    setWalking(true);
+  };
+
+  const onMinimap = (event: React.PointerEvent<HTMLCanvasElement>) => {
+    const { m, ox, oy } = minimapTransform.current;
+    const x = (event.nativeEvent.offsetX - ox) / m;
+    const y = (event.nativeEvent.offsetY - oy) / m;
+    stopWalk();
+    fly.current = { x, y, scale: Math.max(view.current.scale, minScale() * 2.5) };
+  };
+
   const zoomAt = useCallback(
     (sx: number, sy: number, factor: number) => {
       const v = view.current;
@@ -648,8 +899,14 @@ export function BigMeadow() {
     [clamp, minScale],
   );
 
-  const zoomInCenter = useCallback(() => zoomAt(size.current.w / 2, size.current.h / 2, 1.5), [zoomAt]);
-  const zoomOutCenter = useCallback(() => zoomAt(size.current.w / 2, size.current.h / 2, 1 / 1.5), [zoomAt]);
+  const zoomInCenter = useCallback(() => {
+    stopWalk();
+    zoomAt(size.current.w / 2, size.current.h / 2, 1.5);
+  }, [zoomAt, stopWalk]);
+  const zoomOutCenter = useCallback(() => {
+    stopWalk();
+    zoomAt(size.current.w / 2, size.current.h / 2, 1 / 1.5);
+  }, [zoomAt, stopWalk]);
 
   const hitTest = useCallback(
     (sx: number, sy: number): Flower | null => {
@@ -686,6 +943,7 @@ export function BigMeadow() {
       gesture.current = { x: event.clientX, y: event.clientY, vx: 0, vy: 0, moved: false, pinch: 0, scale: 0 };
       return;
     }
+    stopWalk();
     event.currentTarget.setPointerCapture(event.pointerId);
     pointers.current.set(event.pointerId, { x: event.nativeEvent.offsetX, y: event.nativeEvent.offsetY });
     const points = [...pointers.current.values()];
@@ -762,13 +1020,15 @@ export function BigMeadow() {
     if (!canvas || !interactive) return;
     const onWheel = (event: WheelEvent) => {
       event.preventDefault();
+      stopWalk();
       zoomAt(event.offsetX, event.offsetY, Math.exp(-event.deltaY * 0.0015));
     };
     canvas.addEventListener("wheel", onWheel, { passive: false });
     return () => canvas.removeEventListener("wheel", onWheel);
-  }, [zoomAt, flowers, interactive]);
+  }, [zoomAt, flowers, interactive, stopWalk]);
 
   const onKeyDown = (event: React.KeyboardEvent<HTMLCanvasElement>) => {
+    stopWalk();
     const step = 80 / view.current.scale;
     const { w, h } = size.current;
     const actions: Record<string, () => void> = {
@@ -821,6 +1081,8 @@ export function BigMeadow() {
       .slice(0, 3)
       .map((item) => item.flower.name);
   }, [selected, grid]);
+
+  const latest = useMemo(() => [...(flowers ?? [])].sort((a, b) => b.number - a.number).slice(0, 10), [flowers]);
 
   const realByNumber = useMemo(() => new Map((realFlowers ?? []).map((flower) => [flower.number, flower])), [realFlowers]);
   const myLatest = [...mine].reverse().map((number) => realByNumber.get(number)).find(Boolean);
@@ -1036,7 +1298,44 @@ export function BigMeadow() {
               </span>
             ) : null}
           </p>
+          {interactive && flowers && count > 0 ? (
+            <div className="pointer-events-auto -mx-3 flex gap-1.5 overflow-x-auto px-3 pb-1 [scrollbar-width:none]" role="group" aria-label={t.filtersLabel}>
+              <button
+                type="button"
+                onClick={() => (walking ? stopWalk() : startWalk())}
+                className="min-h-11 shrink-0 cursor-pointer rounded-full bg-teal px-4 text-[13px] font-bold text-white"
+              >
+                {walking ? t.walk.stop : t.walk.start}
+              </button>
+              {FILTERS.map((key) => (
+                <button
+                  key={key}
+                  type="button"
+                  aria-pressed={filter === key}
+                  onClick={() => setFilter(key)}
+                  className={`min-h-11 shrink-0 cursor-pointer rounded-full px-3.5 text-[13px] font-bold ${filter === key ? "bg-plum text-white" : "bg-white/90 text-plum"}`}
+                >
+                  {t.filters[key]}
+                </button>
+              ))}
+            </div>
+          ) : null}
         </div>
+
+        {interactive && zoomedIn && !walking ? (
+          <canvas
+            ref={minimapRef}
+            role="img"
+            aria-label={t.minimap}
+            onPointerDown={onMinimap}
+            className="absolute bottom-20 left-3 z-10 h-28 w-28 cursor-pointer rounded-2xl shadow-[0_10px_24px_-14px_rgba(51,36,43,0.6)] sm:h-36 sm:w-36"
+          />
+        ) : null}
+        {walking && walkCaption ? (
+          <p role="status" className="absolute inset-x-3 bottom-20 z-10 mx-auto max-w-sm rounded-2xl bg-white/95 px-4 py-2 text-center text-[15px] font-semibold">
+            {fill(t.walk.passing, { names: walkCaption })}
+          </p>
+        ) : null}
 
         {interactive ? (
           <div className="absolute right-3 top-1/2 z-10 flex -translate-y-1/2 flex-col gap-1.5">
@@ -1046,7 +1345,16 @@ export function BigMeadow() {
             <button type="button" aria-label={t.zoomOut} onClick={zoomOutCenter} className={roundButton}>
               <span aria-hidden="true">−</span>
             </button>
-            <button type="button" aria-label={t.zoomAll} title={t.zoomAll} onClick={showAll} className={roundButton}>
+            <button
+              type="button"
+              aria-label={t.zoomAll}
+              title={t.zoomAll}
+              onClick={() => {
+                stopWalk();
+                showAll();
+              }}
+              className={roundButton}
+            >
               <FitIcon size={20} />
             </button>
           </div>
@@ -1146,6 +1454,32 @@ export function BigMeadow() {
 
         {claimOpen ? <ClaimSheet onClose={() => setClaimOpen(false)} /> : null}
       </div>
+
+      {latest.length > 0 && !full ? (
+        <div className="flex flex-col gap-2">
+          <h3 className="font-display text-xl font-extrabold">{t.latestTitle}</h3>
+          <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none]">
+            {latest.map((flower) => (
+              <button
+                key={flower.number}
+                type="button"
+                onClick={() => {
+                  if (!interactive) enterFull(flower);
+                  else {
+                    canvasRef.current?.scrollIntoView({ block: "center", behavior: "smooth" });
+                    focus(flower);
+                  }
+                }}
+                className="flex min-h-11 shrink-0 cursor-pointer items-center gap-2 rounded-full border-2 border-line bg-white px-4 text-[15px] font-bold"
+              >
+                <span className="size-3 rounded-full" style={{ background: PETAL_COLORS[flower.petal] }} aria-hidden="true" />
+                {flower.name}
+                <span className="font-medium text-plum-soft">{t.species[flower.species]}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      ) : null}
     </section>
   );
 }

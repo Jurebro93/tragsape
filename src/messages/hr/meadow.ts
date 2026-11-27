@@ -29,6 +29,15 @@ export const meadow = {
   zoomOut: "Udalji",
   zoomAll: "Cijela livada",
   myTrail: "Moj trag: {name}",
+  filters: { all: "Svi", pas: "Psi", macka: "Mačke", kunic: "Kunići", ptica: "Ptice", drugo: "Ostali", spomen: "Sa spomenom" },
+  filtersLabel: "Prikaži",
+  latestTitle: "Najnovije na livadi",
+  minimap: "Karta cijele livade. Dodirni mjesto na koje želiš skočiti.",
+  walk: {
+    start: "Prošeći tragom",
+    stop: "Zaustavi šetnju",
+    passing: "Prolaziš pored: {names}",
+  },
   full: {
     open: "Preko cijelog zaslona",
     close: "Zatvori",
