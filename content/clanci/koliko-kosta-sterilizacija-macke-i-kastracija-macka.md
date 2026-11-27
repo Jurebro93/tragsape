@@ -17,7 +17,7 @@ sources:
     url: "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/spaying-and-neutering"
     publisher: "Cornell Feline Health Center, Cornell University College of Veterinary Medicine"
     accessed_on: 2026-11-27
-  - claim: "Europske kratkodlake mačke i slične pasmine mogu se kastrirati već s 3–4 mjeseca bez štetnih učinaka, uz dobru kondiciju i cijepljenje; nakon zahvata veći rizik od debljine i dijabetesa tipa 2, osobito kod mačaka, što ublažuju kretanje i manje kalorija; za ženke se općenito preporučuje ovariektomija; analgezija je obvezna"
+  - claim: "Europske kratkodlake mačke i slične pasmine mogu se kastrirati već s 3–4 mjeseca bez štetnih učinaka, uz dobru kondiciju i cijepljenje; nakon zahvata veći rizik od debljine i dijabetesa tipa 2, osobito kod mužjaka, što ublažuju kretanje i manje kalorija; za ženke se općenito preporučuje ovariektomija; analgezija je obvezna"
     title: "WSAVA Guidelines for the Control of Reproduction in Dogs and Cats – Executive Summary"
     url: "https://wsava.org/wp-content/uploads/2024/06/Executive-Summary.pdf"
     publisher: "World Small Animal Veterinary Association"
@@ -117,7 +117,7 @@ Ovaj tekst ne zamjenjuje veterinara. Kada je tvoja mačka spremna za zahvat i ko
 
 ## Koliko košta sterilizacija mačke i kastracija mačka
 
-Cjenici ženke i mužjaka često oboje zovu kastracijom; ovdje sterilizacija znači zahvat kod mačke, a kastracija kod mačka. Ovo su stavke za sam zahvat iz cjenika otvorenih 27. studenoga 2026. Ustanove navodimo samo kao izvore cjenika, ne kao preporuku.
+Cjenici često i zahvat kod ženke zovu kastracijom; ovdje sterilizacija znači zahvat kod mačke, a kastracija kod mačka. Ovo su stavke za sam zahvat iz cjenika otvorenih 27. studenoga 2026. Ustanove navodimo samo kao izvore cjenika, ne kao preporuku.
 
 | Ustanova (datum cjenika) | Mačka | Mačak |
 | --- | --- | --- |
@@ -163,13 +163,13 @@ Kod mačke se u općoj anesteziji uklanjaju jajnici, a ponekad i maternica; kod 
 
 Većina mačaka ide kući isti dan; prvu noć su pospane, a sutradan bi trebale biti živahne [1][13]. Drži je u maloj, mirnoj prostoriji, po potrebi s pijeskom niskog ruba, i ne dopusti joj skakanje [14]. Cornell savjetuje oko tjedan dana mira, a šavovi se, ako ih ima, vade nakon sedam do deset dana [1][2].
 
-Nakon zahvata mačke se lakše debljaju. WSAVA navodi i veći rizik od šećerne bolesti, osobito kod mačaka, što ublažuju kretanje i manje kalorija [3]. Kastrirane mačke u prosjeku žive dulje; više u članku [Koliko žive mačke](/vodic/koliko-zive-macke).
+Nakon zahvata mačke se lakše debljaju. WSAVA navodi i veći rizik od šećerne bolesti, osobito kod mužjaka, što ublažuju kretanje i manje kalorija [3]. Kako kastracija utječe na životni vijek, piše u članku [Koliko žive mačke](/vodic/koliko-zive-macke).
 
 ## Što kažu zakon i gradske odluke
 
 Zakon o zaštiti životinja traži da vlasnici osiguraju kontrolu razmnožavanja svojih ljubimaca i zbrinu njihovu mladunčad (članak 52. stavci 1. i 2., NN 102/2017) [15]. Zakon ne kaže izričito da svaka mačka mora biti sterilizirana, ali gradovi i općine mogu sterilizaciju propisati kao obveznu (članak 62. stavak 6.) [15]. Ako vlasnik napusti mladunčad, veterinarski inspektor može mu odrediti sterilizaciju ljubimca na njegov trošak [15].
 
-Grad Zagreb na službenoj stranici navodi da su, prema gradskoj odluci iz 2018., vlasnici nesteriliziranih pasa i mačaka obvezni prijaviti ih u evidenciju; izuzeća su, među ostalim, rodovnik, samostalno zbrinjavanje mladunčadi i zdravstveni razlog [16]. Tekst same zagrebačke odluke nismo uspjeli otvoriti. Rijeka u svojoj odluci propisuje da se razmnožavanje kontrolira preventivnim djelovanjem te sterilizacijom ili kastracijom [17].
+Grad Zagreb na službenoj stranici navodi da su, prema gradskoj odluci iz 2018., vlasnici nesteriliziranih pasa i mačaka obvezni prijaviti ih u evidenciju; izuzeća su, među ostalim, samostalno zbrinjavanje mladunčadi, nerazmnožavanje uz preventivne mjere i zdravstveni razlog [16]. Točne uvjete provjeri u samoj odluci ili kod Grada. Rijeka u svojoj odluci (neslužbeni pročišćeni tekst) propisuje da se razmnožavanje kontrolira preventivnim djelovanjem te sterilizacijom ili kastracijom [17].
 
 Neki gradovi plaćaju dio troška. Grad Klanjec u pozivu od 25. veljače 2026. daje 40 € za mačku i 30 € za mačka, za jednu mačku po vlasniku, kod ambulante s kojom ima ugovor; zahtjevi se primaju do 15. prosinca 2026. [18]. Grad Orahovica u pozivu od 6. ožujka 2026. daje 30 € za mačku i 15 € za mačka [19].
 

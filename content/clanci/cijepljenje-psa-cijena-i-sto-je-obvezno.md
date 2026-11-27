@@ -93,7 +93,7 @@ sources:
     publisher: "Specijalistička veterinarska praksa Pilić, Split"
     accessed_on: 2026-11-27
 ---
-U Hrvatskoj je za psa obvezno samo cijepljenje protiv bjesnoće, i to za svakog psa starog 90 dana ili više [1]. Ostala cjepiva preporučuju veterinarske smjernice, ne propis. U devet cjenika koje smo otvorili 27. studenoga 2026. cijepljenje protiv bjesnoće stoji 31,25 € ili 32,00 €, a cijepljenje protiv zaraznih bolesti od 12,50 do 31,00 €.
+U Hrvatskoj je za psa obvezno samo cijepljenje protiv bjesnoće, i to za svakog psa starog 90 dana ili više [1]. Ostala cjepiva preporučuju veterinarske smjernice, ne propis. U cjenicima koje smo otvorili 27. studenoga 2026. cijepljenje protiv bjesnoće stoji 31,25 € ili 32,00 €, a cijepljenje protiv zaraznih bolesti od 12,50 do 31,00 €.
 
 Ovaj tekst ne zamjenjuje veterinara. Koja cjepiva tvoj pas treba i kada, procjenjuje veterinar koji ga je pregledao, pa se za raspored obrati najbližoj veterinarskoj ambulanti.
 
@@ -103,7 +103,7 @@ Ovaj tekst ne zamjenjuje veterinara. Koja cjepiva tvoj pas treba i kada, procjen
 - Pas mora biti čipiran najkasnije 90 dana nakon štenjenja ili prije cijepljenja, a pri cijepljenju protiv bjesnoće tretira se i protiv trakavice [1].
 - Naknadu za cijepljenje protiv bjesnoće s dehelmintizacijom i upisom određuje ministar: 25,00 € [4]. U sedam cjenika piše 31,25 €, u jednom 32,00 € [17].
 - Osnovna cjepiva prema smjernicama WSAVA-e iz 2024. štite od štenećaka, zaraznog hepatitisa (adenovirus tip 1) i parvoviroze [6].
-- Cijepljenje protiv zaraznih bolesti stoji od 12,50 do 31,00 €, a negdje se cjepivo naplaćuje zasebno [14].
+- Cijepljenje protiv zaraznih bolesti stoji od 12,50 € [9] do 31,00 € [17], a negdje se cjepivo naplaćuje zasebno [14].
 
 ## Što je u Hrvatskoj obvezno
 
