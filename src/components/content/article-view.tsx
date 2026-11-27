@@ -101,23 +101,6 @@ function Related({ articles }: { articles: readonly ArticleSummary[] }) {
   );
 }
 
-/**
- * Naslovna slika po predlošku: ista slika koja se prikazuje kad se poveznica podijeli (naslov na
- * kartici brenda), pa svi članci izgledaju jednako.
- */
-function Cover({ slug, title }: { slug: string; title: string }) {
-  return (
-    // eslint-disable-next-line @next/next/no-img-element -- sliku crta vlastita ruta, poznatih je dimenzija
-    <img
-      src={`/vodic/${slug}/opengraph-image`}
-      alt={title}
-      width={1200}
-      height={630}
-      className="h-auto w-full rounded-[28px]"
-    />
-  );
-}
-
 function Toc({ headings }: { headings: ArticleHeading[] }) {
   if (headings.length < 3) {
     return null;
@@ -174,7 +157,6 @@ export function ArticleView({
         <Link href="/vodic" className="flex min-h-11 items-center self-start text-[15px] font-semibold">
           ← {t.back}
         </Link>
-        <Cover slug={article.slug} title={article.title} />
         <Eyebrow>
           <Link href={topicPath(article.cluster)} className="inline-flex min-h-11 items-center text-terracotta-deep no-underline hover:underline">
             {content.guide.clusters[article.cluster].name}
