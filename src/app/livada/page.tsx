@@ -5,6 +5,7 @@ import { ExampleGrid } from "@/components/examples/example-card";
 import { CandleHour } from "@/components/livada/candle-hour";
 import { MemorialGrid } from "@/components/livada/memorial-card";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { TrailBackdrop } from "@/components/trail-backdrop";
 import { Button, ButtonLink } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Select } from "@/components/ui/field";
@@ -120,8 +121,9 @@ export default function LivadaPage(props: PageProps<"/livada">) {
   return (
     <>
       <SiteHeader tone="butter" />
-      <div className="rounded-b-[40px] bg-butter">
-        <div className="mx-auto flex w-full max-w-5xl flex-col gap-3 px-5 pb-9 pt-4">
+      <div className="relative overflow-hidden rounded-b-[40px] bg-butter">
+        <TrailBackdrop />
+        <div className="relative mx-auto flex w-full max-w-5xl flex-col gap-3 px-5 pb-28 pt-6 sm:pb-32">
           <h1 className="text-5xl font-extrabold">{livada.title}</h1>
           <p className="max-w-xl text-lg">{livada.intro}</p>
         </div>

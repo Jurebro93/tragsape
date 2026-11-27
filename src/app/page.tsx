@@ -25,6 +25,7 @@ import { livada } from "@/messages/hr/livada";
 import { marketing } from "@/messages/hr/marketing";
 import { getProducts, getSettings } from "@/server/catalog";
 import { NewsletterCard } from "@/components/newsletter/newsletter-form";
+import { TrailBackdrop } from "@/components/trail-backdrop";
 
 const t = marketing.home;
 
@@ -107,8 +108,9 @@ export default async function HomePage() {
     <>
       <SiteHeader tone="butter" />
       <main className="w-full flex-1">
-        <section aria-labelledby="hero-title" className="overflow-hidden rounded-b-[40px] bg-butter">
-          <div className="mx-auto grid w-full max-w-5xl items-center gap-8 px-5 pb-10 pt-6 md:grid-cols-[1.1fr_0.9fr] md:gap-10 md:pb-16 md:pt-10">
+        <section aria-labelledby="hero-title" className="relative overflow-hidden rounded-b-[40px] bg-butter">
+          <TrailBackdrop />
+          <div className="relative mx-auto grid w-full max-w-5xl items-center gap-8 px-5 pb-10 pt-6 md:grid-cols-[1.1fr_0.9fr] md:gap-10 md:pb-16 md:pt-10">
             <div className="flex min-w-0 flex-col items-start gap-5">
               <Eyebrow>{t.hero.eyebrow}</Eyebrow>
               <h1 id="hero-title" className="font-display text-[2.6rem] font-extrabold leading-[1.02] sm:text-6xl">
