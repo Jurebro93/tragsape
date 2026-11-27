@@ -40,7 +40,7 @@ export const env = {
     return optional("RESEND_API_KEY");
   },
   get emailFrom() {
-    return optional("EMAIL_FROM") ?? "Trag šape <pozdrav@tragsape.hr>";
+    return optional("EMAIL_FROM") ?? "Trag šape <pozdrav@tragsape.com>";
   },
   get mailpitUrl() {
     return optional("MAILPIT_URL");

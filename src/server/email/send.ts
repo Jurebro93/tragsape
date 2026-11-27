@@ -31,7 +31,7 @@ export async function sendEmail(input: EmailInput): Promise<void> {
       return;
     }
     if (env.mailpitUrl) {
-      const from = /<([^>]+)>/.exec(env.emailFrom)?.[1] ?? "pozdrav@tragsape.hr";
+      const from = /<([^>]+)>/.exec(env.emailFrom)?.[1] ?? "pozdrav@tragsape.com";
       const response = await fetch(`${env.mailpitUrl}/api/v1/send`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
