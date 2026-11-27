@@ -14,11 +14,11 @@ sources:
     url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_152_2373.html"
     publisher: "Narodne novine"
     accessed_on: 2026-11-26
-  - claim: "Pročišćeni tekst označen kao važeći, na snazi od 1. 1. 2023.; članak 66. stavak 6. glasi jednako kao u NN 152/2022; članak 108. stavak 1. točka 17. i stavci 5. i 6.: fizička osoba držatelj kućnog ljubimca kažnjava se s 260,00 do 660,00 eura, odnosno 60,00 eura na mjestu počinjenja prekršaja"
+  - claim: "Tekst NN 152/22 i 154/22 (ispravak), na snazi od 1. 1. 2023., bez kasnijih izmjena (baza ažurirana 19. 11. 2026.); članak 66. stavak 6. glasi jednako kao u NN 152/2022; članak 108. stavak 1. točka 17. i stavci 5. i 6.: fizička osoba držatelj kućnog ljubimca kažnjava se s 260,00 do 660,00 eura, odnosno 60,00 eura na mjestu počinjenja prekršaja"
     title: "Zakon o zdravlju životinja (pročišćeni tekst)"
     url: "https://www.zakon.hr/z/3424/zakon-o-zdravlju-zivotinja"
     publisher: "Zakon.hr"
-    accessed_on: 2026-11-26
+    accessed_on: 2026-11-27
   - claim: "Članak 11.: Središnji upisnik pasa sadržavao je, među ostalim, podatke „Odjava psa (datum)” i „Razlog odjave (uginuće, promjena vlasnika, promjena izdavatelja)”; taj je pravilnik prestao važiti prema članku 115. stavku 3. točki 21. Zakona o zdravlju životinja"
     title: "Pravilnik o označavanju pasa (NN 72/2010)"
     url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2010_06_72_2153.html"
@@ -49,6 +49,16 @@ sources:
     url: "https://www.zakon.hr/z/257/zakon-o-zastiti-zivotinja"
     publisher: "Zakon.hr"
     accessed_on: 2026-11-26
+  - claim: "Donesen na temelju čl. 51. st. 5., 52. st. 5., 53. st. 5. i 59. st. 4. Zakona o zdravlju životinja (ne na temelju čl. 58. st. 7.); uređuje registraciju i odobravanje subjekata i objekata za držane kopnene životinje, a ne označavanje, odjavu ni identifikacijski dokument kućnih ljubimaca"
+    title: "Pravilnik o registraciji i odobravanju subjekata i objekata za držane kopnene životinje (NN 102/2025)"
+    url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2025_07_102_1416.html"
+    publisher: "Narodne novine"
+    accessed_on: 2026-11-27
+  - claim: "Kontakt Uprave za veterinarstvo i sigurnost hrane: Planinska 2a, Zagreb, tel. (01) 6443 540, e-pošta veterinarstvo@mps.hr"
+    title: "Kontakt"
+    url: "https://veterinarstvo.mps.hr/hr/ostalo/footer-linkovi/kontakt/"
+    publisher: "Ministarstvo poljoprivrede, šumarstva i ribarstva – Uprava za veterinarstvo i sigurnost hrane"
+    accessed_on: 2026-11-27
 ---
 Uginuće čipiranog psa moraš prijaviti najkasnije u roku od sedam dana od dana uginuća. Tako propisuje članak 66. stavak 6. Zakona o zdravlju životinja (NN 152/2022) [1]. U praksi se odjava obavlja u veterinarskoj ambulanti, koja podatak upisuje u Upisnik kućnih ljubimaca.
 
@@ -57,7 +67,7 @@ Uginuće čipiranog psa moraš prijaviti najkasnije u roku od sedam dana od dana
 - Rok je sedam dana od dana uginuća [1].
 - Odjava se u cjenicima veterinara vodi kao „odjava psa” u Lysacanu ili Središnjem upisniku kućnih ljubimaca [4][6].
 - U tri objavljena cjenika koja smo pročitali stoji 5,60 € [4][5][6].
-- O odjavi dobivaš ispis iz Upisnika [1].
+- O odjavi dobivaš ispis iz Upisnika [1]. Pravilnik koji bi propisao postupak odjave još nije objavljen, pa način odjave ovisi o ambulanti [1][9].
 - Kazna za propušteni rok je od 260 do 660 eura, ili 60 eura na mjestu počinjenja prekršaja [2].
 
 ## Koji je rok za odjavu psa nakon uginuća?
@@ -80,7 +90,9 @@ U veterinarskoj ambulanti. Zakon u sustav označavanja i registracije kućnih lj
 
 Zakon ne opisuje sam postupak. Upućuje na pravilnik koji donosi ministar [1]. Stari Pravilnik o označavanju pasa (NN 72/2010), u čijem je upisniku postojala rubrika „Razlog odjave (uginuće, promjena vlasnika, promjena izdavatelja)”, prestao je važiti stupanjem na snagu novog zakona [3].
 
-Noviji pravilnik koji bi opisao odjavu korak po korak nismo našli. Ni stranica Uprave za veterinarstvo o Lysacanu ne opisuje postupak [7]. Zato pojedinosti provjeri izravno u ambulanti.
+Taj pravilnik, prema članku 58. stavku 7. Zakona, treba urediti označavanje i registraciju, identifikacijske dokumente i unos podataka u bazu [1]. U Narodnim novinama od 2023. do 27. studenoga 2026. nismo ga našli. Pravilnik iz 2025. koji se zove slično uređuje registraciju objekata za držane životinje, a ne odjavu ljubimaca [9]. Zakon od 2022. nije mijenjan [2].
+
+Ni stranica Uprave za veterinarstvo o Lysacanu ne opisuje postupak [7]. Zato pojedinosti provjeri izravno u ambulanti, a pitanja o samom Upisniku možeš poslati Upravi za veterinarstvo i sigurnost hrane [10].
 
 ## Što je Lysacan?
 
@@ -144,7 +156,7 @@ U cjenicima triju ambulanti koje smo pročitali 26. studenoga 2026. stoji 5,60 �
 
 ### Što se događa s putovnicom psa nakon odjave?
 
-Zakon kaže da se uginuće prijavljuje radi izmjene podataka u identifikacijskom dokumentu i u Upisniku [1]. Ne kaže ostaje li putovnica vlasniku, pa to pitaj u ambulanti ako je želiš sačuvati.
+Zakon kaže da se uginuće prijavljuje radi izmjene podataka u identifikacijskom dokumentu i u Upisniku [1]. Ne kaže ostaje li putovnica vlasniku, a pravilnik koji bi to mogao urediti nije objavljen, pa pitaj u ambulanti ako je želiš sačuvati.
 
 ### Moram li odjaviti i čipiranu mačku?
 

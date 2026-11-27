@@ -9,16 +9,16 @@ needs_vet_review: false
 cta:
   end: pogledaj-primjer
 sources:
-  - claim: "Članak 43. stavak 3.: vlasnik kućnog ljubimca može zakopati lešinu ako nema sumnje na bolest koja se obvezno prijavljuje, uz uvjete iz članka 43. stavka 1. točaka c) i f) i članka 42. stavka 2. (suglasnost vlasnika zemljišta, sprečavanje rizika, lokalni propisi, propisi o vodama i okolišu, najmanje 50 cm zemlje); članak 43. stavak 2.: preuzimanje tijela nakon razudbe"
+  - claim: "Donesen na temelju čl. 101. st. 5. Zakona o veterinarstvu; čl. 42. st. 1.: uklanjanje na temelju čl. 19. st. 1. Uredbe 1069/2009 uz uvjete Priloga VI. Uredbe 142/2011; čl. 42. st. 2.: lokalni propisi, vode i okoliš, najmanje 50 cm zemlje; čl. 43. st. 2. i 3.: razudba; ukop vlasnika bez sumnje na bolest koja se prijavljuje, uz čl. 43. st. 1. t. c) i f); čl. 44. st. 2.: obavijest inspektoru"
     title: "Pravilnik o registraciji i odobravanju objekata i subjekata u poslovanju s nusproizvodima životinjskog podrijetla koji nisu za prehranu ljudi (NN 129/2022)"
     url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_11_129_1954.html"
     publisher: "Narodne novine"
-    accessed_on: 2026-11-26
-  - claim: "Pročišćeni tekst (NN 82/13, 148/13, 115/18, 52/21, 83/22, 152/22, 18/23): članak 101. stavak 3. – posjednik je dužan predati lešinu koncesionaru ili sakupljaču; stavak 4. – veterinarski inspektor može odobriti zakapanje; članak 102. stavak 1. – lešine s javnih površina zbrinjava jedinica lokalne samouprave; članak 174. stavak 1. točka 4. – kazna za fizičku osobu od 1.000,00 do 5.000,00 kuna"
+    accessed_on: 2026-11-27
+  - claim: "Pročišćeni tekst (NN 82/13 do 18/23): čl. 101. st. 3. – posjednik predaje lešinu kao nusproizvod kategorije 1 ili 2 koncesionaru ili sakupljaču; st. 4. – inspektor može odobriti zakapanje u skladu s uredbama 1069/2009 i 142/2011; st. 5. – način postupanja propisuje ministar; čl. 102. st. 1. – javne površine; čl. 174. st. 1. t. 4. – kazna 1.000,00 do 5.000,00 kuna za povredu čl. 101. st. 1.–3. i 5."
     title: "Zakon o veterinarstvu (pročišćeni tekst)"
     url: "https://www.zakon.hr/z/468/Zakon-o-veterinarstvu"
     publisher: "Zakon.hr"
-    accessed_on: 2026-11-26
+    accessed_on: 2026-11-27
   - claim: "Pročišćeni tekst (NN 102/17, 32/19, 78/24): članak 51. stavak 5. – uvjete i način držanja kućnih ljubimaca propisuju općim aktima predstavnička tijela jedinica lokalne samouprave; u tekstu zakona nema odredbe o zakapanju ni o lešinama kućnih ljubimaca"
     title: "Zakon o zaštiti životinja (pročišćeni tekst)"
     url: "https://www.zakon.hr/z/257/zakon-o-zastiti-zivotinja"
@@ -49,6 +49,26 @@ sources:
     url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_152_2373.html"
     publisher: "Narodne novine"
     accessed_on: 2026-11-26
+  - claim: "Članak 8. točka (a) podtočka iii.: čitava tijela kućnih ljubimaca materijal su kategorije 1.; članak 19. stavak 1. točka (a): odstupajući od članaka 12., 13., 14. i 21., nadležno tijelo može odobriti odlaganje zakopavanjem uginulih kućnih ljubimaca i kopitara"
+    title: "Uredba (EZ) br. 1069/2009 Europskog parlamenta i Vijeća o nusproizvodima životinjskog podrijetla (CELEX 32009R1069, SL L 300, 14. 11. 2009.)"
+    url: "https://publications.europa.eu/resource/celex/32009R1069"
+    publisher: "Ured za publikacije Europske unije"
+    accessed_on: 2026-11-27
+  - claim: "Prilog VI., Poglavlje III., Odjeljak 1., točka 3.: zakopavanje na mjestima iz čl. 19. st. 1. Uredbe 1069/2009 mora se obaviti tako da mesojedi ili svejedi ne mogu doći do nusproizvoda, bez ugrožavanja zdravlja ljudi i uz postupke koji ne štete okolišu (izvorni tekst iz 2011.)"
+    title: "Uredba Komisije (EU) br. 142/2011 o provedbi Uredbe (EZ) br. 1069/2009 (CELEX 32011R0142, SL L 54, 26. 2. 2011.)"
+    url: "https://publications.europa.eu/resource/celex/32011R0142"
+    publisher: "Ured za publikacije Europske unije"
+    accessed_on: 2026-11-27
+  - claim: "Stranica o nusproizvodima navodi propise iz tog područja, među njima Zakon o veterinarstvu, uredbe 1069/2009 i 142/2011 i Pravilnik NN 129/2022; uputa za građane o ukopu kućnog ljubimca na stranici nema"
+    title: "Nusproizvodi životinjskog podrijetla / Animal by-products"
+    url: "https://veterinarstvo.mps.hr/hr/naslovna/nusproizvodi-zivotinjskog-podrijetla-animal-by-products/"
+    publisher: "Ministarstvo poljoprivrede, šumarstva i ribarstva – Uprava za veterinarstvo i sigurnost hrane"
+    accessed_on: 2026-11-27
+  - claim: "Veterinarska inspekcija više nije u sastavu Ministarstva poljoprivrede; upiti i prijave iz njezina djelokruga šalju se online obrascem Državnog inspektorata; kontakt Uprave za veterinarstvo: veterinarstvo@mps.hr"
+    title: "Kontakt"
+    url: "https://veterinarstvo.mps.hr/hr/ostalo/footer-linkovi/kontakt/"
+    publisher: "Ministarstvo poljoprivrede, šumarstva i ribarstva – Uprava za veterinarstvo i sigurnost hrane"
+    accessed_on: 2026-11-27
 ---
 Da, pod uvjetima. Pravilnik iz 2022. izričito kaže da vlasnik kućnog ljubimca može sam zakopati tijelo ljubimca ako nema sumnje na bolest koja se obvezno prijavljuje i ako ispuni nekoliko uvjeta [1]. Jedan od tih uvjeta su lokalni propisi, pa konačan odgovor ovisi i o mjestu u kojem živiš.
 
@@ -58,7 +78,7 @@ Da, pod uvjetima. Pravilnik iz 2022. izričito kaže da vlasnik kućnog ljubimca
 - Iznad tijela mora biti najmanje 50 cm zemlje, tako da ga druge životinje ne mogu otkopati [1].
 - Ako zemljište nije tvoje, treba ti pisana suglasnost vlasnika [1].
 - Ukop mora biti u skladu s propisima tvoje općine ili grada te s propisima o zaštiti podzemnih voda i okoliša [1].
-- Zakon o veterinarstvu i dalje govori o predaji tijela sakupljaču, pa se propisi ne čitaju jednoznačno. Ako nisi siguran, pitaj veterinara ili komunalno redarstvo [2].
+- Zakon o veterinarstvu govori o predaji tijela sakupljaču i o odobrenju veterinarskog inspektora, a Pravilnik odobrenje ne spominje. Treba li ti ono, propisi ne kažu jednoznačno; pitaj veterinarsku inspekciju [1][2][12].
 
 ## Što točno piše u propisu?
 
@@ -92,11 +112,19 @@ Ako je obavljena razudba, tijelo smiješ preuzeti tek kad nalaz potvrdi da nema 
 
 ## Zašto se često čuje da je to zabranjeno?
 
-Zato što Zakon o veterinarstvu polazi od predaje tijela, a ne od ukopa. Članak 101. stavak 3. kaže da je posjednik životinje dužan predati lešinu koncesionaru ili osobama koje sakupljaju nusproizvode [2]. Stavak 4. dodaje da zakapanje „može odobriti” veterinarski inspektor [2].
+Zato što Zakon o veterinarstvu polazi od predaje tijela, a ne od ukopa. Članak 101. stavak 3. kaže da je posjednik životinje dužan predati lešinu koncesionaru ili osobama koje sakupljaju nusproizvode [2].
 
 Na taj se zakon poziva i Grad Rijeka kad objašnjava zašto je 2004. zatvoreno staro groblje ljubimaca na Kozali [6]. Na novom dijelu tog groblja i danas se polažu samo urne [6].
 
-Pravilnik iz 2022. noviji je i izričito spominje vlasnika kućnog ljubimca [1]. U propisima koje smo pročitali ne piše treba li vlasnik za ukop u vrtu još i posebno odobrenje inspektora. Ako ti je to važno, pitaj veterinarsku inspekciju ili svog veterinara.
+## Treba li ti odobrenje veterinarskog inspektora?
+
+Propisi to ne kažu jednoznačno. Zakon o veterinarstvu kaže da zakapanje „može odobriti” veterinarski inspektor, u skladu s europskim uredbama 1069/2009 i 142/2011 [2]. Isti članak ministru prepušta da pravilnikom propiše način postupanja s tijelima životinja, a Pravilnik iz 2022. donesen je upravo na temelju te odredbe [1][2].
+
+Europska uredba tijelo ljubimca svrstava u materijal kategorije 1, ali dopušta da nadležno tijelo odobri „zakopavanje uginulih kućnih ljubimaca” (članak 19. stavak 1. točka (a)) [9]. Pravilnik se poziva baš na tu odredbu i vlasniku dopušta ukop uz uvjete iz članaka 42. i 43. [1]. Provedbena uredba traži da tijelo bude zakopano tako da do njega ne mogu doći mesojedi ni svejedi, bez štete za zdravlje i okoliš [10].
+
+Za ukop ljubimca Pravilnik ne traži ni zahtjev ni obavijest inspektoru, a za zakapanje u udaljenim područjima obavijest izričito traži (članak 44. stavak 2.) [1]. Je li za ljubimca dovoljan sam Pravilnik, u propisima ne piše. Uputu Ministarstva za građane o ukopu ljubimca nismo našli [11].
+
+Ako želiš pisani odgovor, pitaj veterinarsku inspekciju. Ona više nije u Ministarstvu poljoprivrede, nego u Državnom inspektoratu, koji upite prima preko obrasca na mreži [12].
 
 ## Što kažu gradovi i općine?
 
@@ -121,6 +149,7 @@ Tijela životinja s javnih površina zbrinjava grad ili općina, o svom trošku 
 - [ ] Dopuštaju li to propisi moje općine ili grada? Pitaj komunalno redarstvo.
 - [ ] Je li mjesto u zoni zaštite izvorišta ili uz vodu? Ako ne znaš, pitaj u općini.
 - [ ] Mogu li iskopati toliko da iznad tijela ostane najmanje 50 cm zemlje?
+- [ ] Ako nisam siguran treba li mi odobrenje, jesam li pitao veterinarsku inspekciju?
 - [ ] Jesam li u roku od sedam dana prijavio uginuće označenog psa ili mačke?
 
 Posljednja točka ne ovisi o načinu oproštaja. Uginuće označenog ljubimca prijavljuje se u roku od sedam dana i kad ga pokopaš sam [8]. Postupak je opisan u članku [Odjava psa nakon uginuća: rok i postupak](/vodic/odjava-psa-nakon-uginuca-rok-i-postupak).
@@ -135,7 +164,7 @@ Ako želiš pepeo zadržati kod sebe, pogledaj [Kremiranje kućnih ljubimaca: ci
 
 ### Je li zakapanje ljubimca u vlastitom vrtu legalno u Hrvatskoj?
 
-Pravilnik NN 129/2022 u članku 43. stavku 3. kaže da vlasnik može zakopati tijelo kućnog ljubimca uz propisane uvjete [1]. Jedan od uvjeta su lokalni propisi, pa provjeri i pravila svoje općine ili grada.
+Pravilnik NN 129/2022 u članku 43. stavku 3. kaže da vlasnik može zakopati tijelo kućnog ljubimca uz propisane uvjete [1]. Jedan od uvjeta su lokalni propisi, a treba li uz to i odobrenje inspektora, propisi ne kažu jednoznačno [2].
 
 ### Koliko duboko treba zakopati psa ili mačku?
 
@@ -151,7 +180,7 @@ Samo uz pisanu suglasnost vlasnika zemljišta [1]. Bez nje uvjet iz članka 43. 
 
 ### Postoji li kazna ako se s tijelom ne postupi po propisu?
 
-Zakon o veterinarstvu za fizičku osobu koja postupi protivno članku 101. stavku 3. predviđa novčanu kaznu od 1.000,00 do 5.000,00 kuna; iznos je u pročišćenom tekstu još uvijek naveden u kunama [2]. Kako se ta odredba primjenjuje na ukop u vrtu koji ispunjava uvjete Pravilnika, u propisima ne piše, pa pitaj veterinarsku inspekciju.
+Zakon o veterinarstvu za fizičku osobu koja postupi protivno članku 101. stavcima 1., 2., 3. ili 5. predviđa novčanu kaznu od 1.000,00 do 5.000,00 kuna; iznos je u pročišćenom tekstu još uvijek naveden u kunama [2]. Kako se ta odredba primjenjuje na ukop u vrtu koji ispunjava uvjete Pravilnika, u propisima ne piše, pa pitaj veterinarsku inspekciju [12].
 
 ### Smijem li zakopati ljubimca koji je uginuo od zarazne bolesti?
 
