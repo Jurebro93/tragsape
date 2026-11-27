@@ -1,11 +1,11 @@
 /** Tekstovi Velike livade: objašnjenje, platno, kartica traga, ostavljanje traga, potvrda i primjer. */
 export const meadow = {
   title: "Velika livada",
-  lead: "Svaki cvijet je jedan ljubimac. Cvjetovi zajedno ispunjavaju otiske šapa, a otisci tvore trag koji se proteže preko livade.",
+  lead: "Svaki cvijet je jedan ljubimac. Oko jezera su svjetovi: psi ostavljaju otiske na livadi, mačke u vrtu, a kunići, ptice i ostali ljubimci dobivaju svoj kutak čim stigne prvi. Cvjetovi zajedno ispunjavaju otiske, a otisci tvore trag prema obzoru.",
   concept: [
     {
       title: "Mjesta ima za svakog ljubimca",
-      body: "Broj mjesta nije ograničen. Jedan otisak šape ima {capacity} mjesta; kad se popuni, trag se nastavlja novim otiskom.",
+      body: "Broj mjesta nije ograničen. Jedan otisak pseće šape ima {capacity} mjesta; kad se popuni, trag se nastavlja novim otiskom.",
     },
     {
       title: "Besplatno je",
@@ -17,19 +17,19 @@ export const meadow = {
     },
   ],
   demoOpen: "Pogledaj kako izgleda puna livada",
-  progress: "Otisak {print}: {filled} od {capacity} mjesta",
+  progress: "{zone}, otisak {print}: {filled} od {capacity} mjesta",
   count: "Na livadi: {count}",
   canvasLabel: "Livada s cvjetovima ljubimaca. Povuci za pomicanje, kotačić ili dva prsta za približavanje, dodirni cvijet za pojedinosti.",
   loading: "Livada se učitava…",
   loadError: "Livada se nije učitala. Osvježi stranicu za trenutak.",
-  firstPrint: "Ovdje nastaje prvi otisak šape",
+  firstPrint: "Ovdje nastaje prvi otisak",
   nextPrint: "Sljedeći otisak",
   missingTrail: "Trag br. {number} nije na livadi. Možda poveznica nije potpuna ili je trag uklonjen.",
   zoomIn: "Približi",
   zoomOut: "Udalji",
   zoomAll: "Cijela livada",
   myTrail: "Moj trag: {name}",
-  filters: { all: "Svi", pas: "Psi", macka: "Mačke", kunic: "Kunići", ptica: "Ptice", drugo: "Ostali", spomen: "Sa spomenom" },
+  filters: { all: "Cijeli krajolik", pas: "Psi", macka: "Mačke", kunic: "Kunići", ptica: "Ptice", drugo: "Ostali", spomen: "Sa spomenom" },
   filtersLabel: "Prikaži",
   latestTitle: "Najnovije na livadi",
   minimap: "Karta cijele livade. Dodirni mjesto na koje želiš skočiti.",
@@ -44,8 +44,14 @@ export const meadow = {
     tapHint: "Dodirni za ulazak na livadu",
   },
   place: {
-    label: "Otisak {print}, {pad}",
-    pads: ["veliki jastučić", "prvi prst", "drugi prst", "treći prst", "četvrti prst"],
+    label: "{zone} · {unit} {print}, {pad}",
+  },
+  zones: {
+    psi: { name: "Livada pasa", unit: "otisak", pads: ["veliki jastučić", "prvi prst", "drugi prst", "treći prst", "četvrti prst"] },
+    macke: { name: "Mačji vrt", unit: "otisak", pads: ["veliki jastučić", "prvi prst", "drugi prst", "treći prst", "četvrti prst"] },
+    mali: { name: "Djetelina", unit: "otisak", pads: ["stopalo", "prvi prst", "drugi prst", "treći prst", "četvrti prst"] },
+    ptice: { name: "Obala", unit: "trag", pads: ["sredina", "lijevi prst", "srednji prst", "desni prst", "stražnji prst"] },
+    ostali: { name: "Staza", unit: "dio", pads: ["prva gredica", "druga gredica", "treća gredica", "četvrta gredica", "peta gredica"] },
   },
   search: {
     label: "Pronađi trag",

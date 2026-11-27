@@ -6,7 +6,7 @@ import { useActionState, useEffect } from "react";
 import type { MeadowConfirmState } from "@/app/livada/potvrda/actions";
 import { Button } from "@/components/ui/button";
 import { keepValues } from "@/lib/keep-values";
-import { flowerPlace } from "@/lib/meadow";
+import { placeText } from "@/lib/meadow-text";
 import { fill } from "@/lib/text";
 import { meadow } from "@/messages/hr/meadow";
 import { rememberMine } from "./mine";
@@ -28,14 +28,13 @@ export function MeadowConfirmForm({
   }, [state]);
 
   if (state.status === "done") {
-    const place = flowerPlace(state.number);
     return (
       <div role="status" className="flex flex-col items-start gap-3 rounded-3xl bg-mint px-5 py-5">
         <p className="font-display text-2xl font-extrabold [overflow-wrap:anywhere]">{fill(t.doneTitle, { name: state.name })}</p>
         <p className="text-[17px]">
           {fill(t.doneBody, {
             number: state.number.toLocaleString("hr-HR"),
-            place: fill(meadow.place.label, { print: place.print, pad: meadow.place.pads[place.pad] }),
+            place: placeText(state.species, state.zoneIndex),
           })}
         </p>
         <p className="text-[15px] text-plum-soft">{t.doneHint}</p>

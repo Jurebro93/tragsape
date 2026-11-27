@@ -10,24 +10,30 @@ import {
   PAD_COUNT,
   PETAL_COLORS,
   PHASE_COLORS,
+  ALWAYS_SHOWN,
+  MEADOW_ZONES,
   PRINT_CAPACITY,
-  PRINT_RADIUS,
+  POND,
+  ZONE_CAPACITY,
   SCENE_COLORS,
   SEASON_COLORS,
   SPECIES_COLORS,
   checkFlowerName,
   dayPhase,
-  flowerPlace,
   flowerPosition,
   meadowBounds,
   padOutline,
   printFrame,
+  printRadius,
   printsToShow,
   seasonOf,
+  zoneOf,
   type MeadowPetal,
   type MeadowRow,
   type MeadowSpecies,
+  type MeadowZone,
 } from "@/lib/meadow";
+import { placeText } from "@/lib/meadow-text";
 import { fill } from "@/lib/text";
 import { meadow as t } from "@/messages/hr/meadow";
 import { FitIcon } from "@/components/icons";
@@ -40,6 +46,8 @@ type Flower = {
   petal: MeadowPetal;
   slug: string;
   day: string;
+  zone: MeadowZone;
+  zoneIndex: number;
   x: number;
   y: number;
   search: string;
@@ -58,15 +66,19 @@ function plainSearch(text: string): string {
 }
 
 function toFlower(row: MeadowRow): Flower {
-  const [number, name, speciesIndex, petalIndex, slug, day] = row;
-  const { x, y } = flowerPosition(number);
+  const [number, name, speciesIndex, petalIndex, slug, day, zoneIndex] = row;
+  const species = MEADOW_SPECIES[speciesIndex] ?? "drugo";
+  const zone = zoneOf(species);
+  const { x, y } = flowerPosition(zone, zoneIndex);
   return {
     number,
     name,
-    species: MEADOW_SPECIES[speciesIndex] ?? "drugo",
+    species,
     petal: MEADOW_PETALS[petalIndex] ?? "terakota",
     slug,
     day,
+    zone,
+    zoneIndex,
     x,
     y,
     search: plainSearch(name),
@@ -86,18 +98,30 @@ function hash(n: number): number {
 function demoRows(): MeadowRow[] {
   const names = t.demo.names;
   const start = Date.UTC(2025, 0, 1);
+  const counters: Record<MeadowZone, number> = { psi: 0, macke: 0, mali: 0, ptice: 0, ostali: 0 };
   return Array.from({ length: t.demo.count }, (_, index) => {
     const number = index + 1;
     const day = new Date(start + Math.floor(hash(number * 7) * 690) * 86_400_000).toISOString().slice(0, 10);
+    // Kao u stvarnosti: najviše pasa i mačaka, poneki kunić, ptica i drugi ljubimac.
+    const roll = hash(number * 5);
+    const speciesIndex = roll < 0.55 ? 0 : roll < 0.9 ? 1 : roll < 0.94 ? 2 : roll < 0.97 ? 3 : 4;
+    const zone = zoneOf(MEADOW_SPECIES[speciesIndex]);
+    counters[zone] += 1;
     return [
       number,
       names[Math.floor(hash(number * 3) * names.length)],
-      Math.floor(hash(number * 5) * MEADOW_SPECIES.length),
+      speciesIndex,
       Math.floor(hash(number * 11) * MEADOW_PETALS.length),
       "",
       day,
+      counters[zone],
     ];
   });
+}
+
+/** Svijet koji filtar prikazuje; „svi” i „sa spomenom” vode na livadu pasa. */
+function filterZone(filter: Filter): MeadowZone {
+  return filter === "macka" ? "macke" : filter === "kunic" ? "mali" : filter === "ptica" ? "ptice" : filter === "drugo" ? "ostali" : "psi";
 }
 
 /** Kad je cvjetova malo, crtaju se veći, da se vide i kad je prikazana cijela livada. */
@@ -105,9 +129,8 @@ function minFlowerPx(count: number): number {
   return count < 40 ? 24 : count < 400 ? 9 : 0;
 }
 
-function placeLabel(number: number): string {
-  const place = flowerPlace(number);
-  return fill(t.place.label, { print: place.print, pad: t.place.pads[place.pad] });
+function placeLabel(flower: Flower): string {
+  return placeText(flower.species, flower.zoneIndex);
 }
 
 /** Velika livada: svaki ljubimac je cvijet; cvjetovi popunjavaju otiske šapa koji tvore trag. */
@@ -148,16 +171,50 @@ export function BigMeadow() {
   const minimapTransform = useRef({ m: 1, ox: 0, oy: 0 });
 
   const byNumber = useMemo(() => new Map((flowers ?? []).map((flower) => [flower.number, flower])), [flowers]);
-  const maxNumber = useMemo(() => (flowers ?? []).reduce((max, flower) => Math.max(max, flower.number), 0), [flowers]);
-  const bounds = useMemo(() => meadowBounds(maxNumber), [maxNumber]);
+  const maxByZone = useMemo(() => {
+    const max: Record<MeadowZone, number> = { psi: 0, macke: 0, mali: 0, ptice: 0, ostali: 0 };
+    for (const flower of flowers ?? []) max[flower.zone] = Math.max(max[flower.zone], flower.zoneIndex);
+    return max;
+  }, [flowers]);
+  const maxKey = MEADOW_ZONES.map((zone) => maxByZone[zone]).join(",");
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- ključ se mijenja točno kad se mijenja broj mjesta po svijetu
+  const bounds = useMemo(() => meadowBounds(maxByZone), [maxKey]);
+  const shownZones = useMemo(
+    () => MEADOW_ZONES.filter((zone) => ALWAYS_SHOWN.includes(zone) || maxByZone[zone] > 0),
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- isto kao gore
+    [maxKey],
+  );
   const prints = useMemo(() => {
-    const total = printsToShow(maxNumber);
-    return Array.from({ length: total }, (_, p) => ({
-      frame: printFrame(p),
-      pads: Array.from({ length: PAD_COUNT }, (_, k) => padOutline(p, k)),
-      empty: p * PRINT_CAPACITY >= maxNumber,
-    }));
-  }, [maxNumber]);
+    return shownZones.flatMap((zone) =>
+      Array.from({ length: printsToShow(zone, maxByZone[zone]) }, (_, p) => ({
+        zone,
+        index: p,
+        frame: printFrame(zone, p),
+        pads: Array.from({ length: PAD_COUNT }, (_, k) => padOutline(zone, p, k)),
+        empty: p * ZONE_CAPACITY[zone] >= maxByZone[zone],
+      })),
+    );
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- isto kao gore
+  }, [shownZones, maxKey]);
+  /** Stabla po krajoliku: stalna mjesta, dalje od otisaka, staza i jezera. */
+  const trees = useMemo(() => {
+    const list: Array<{ x: number; y: number; r: number }> = [];
+    const step = 1500;
+    for (let gx = Math.floor(bounds.minX / step); gx <= Math.ceil(bounds.maxX / step); gx++) {
+      for (let gy = Math.floor((bounds.minY + 600) / step); gy <= Math.ceil(bounds.maxY / step); gy++) {
+        const seed = gx * 92821 + gy * 68917;
+        if (hash(seed) < 0.55) continue;
+        const x = (gx + hash(seed + 1)) * step;
+        const y = (gy + hash(seed + 2)) * step;
+        const r = 150 + hash(seed + 3) * 150;
+        if (Math.hypot((x - POND.x) / (POND.rx + 350), (y - POND.y) / (POND.ry + 350)) < 1) continue;
+        if (prints.some((print) => Math.hypot(print.frame.x - x, print.frame.y - y) < printRadius(print.zone) + r + 120)) continue;
+        if (MEADOW_ZONES.some((zone) => Math.hypot(printFrame(zone, 0).x - x, printFrame(zone, 0).y - y) < printRadius(zone) + r + 400)) continue;
+        list.push({ x, y, r });
+      }
+    }
+    return list;
+  }, [bounds, prints]);
   const grid = useMemo(() => {
     const cells = new Map<string, Flower[]>();
     for (const flower of flowers ?? []) {
@@ -339,7 +396,7 @@ export function BigMeadow() {
       seasonColors = SEASON_COLORS[season];
       dirty.current = true;
     }, 5 * 60 * 1000);
-    const lastFrame = prints[prints.length - 1].frame;
+    const lastFrame = prints.reduce((top, print) => (print.frame.y < top.y ? print.frame : top), prints[0].frame);
     const matches = (f: Flower) =>
       filter === "all" ? true : filter === "spomen" ? f.slug !== "" : f.species === filter;
 
@@ -428,10 +485,99 @@ export function BigMeadow() {
       const top = v.y - h / 2 / v.scale;
       const bottom = v.y + h / 2 / v.scale;
 
-      // Otisci šapa na travi: popunjeni su pokošeni, sljedeći je tek naznačen.
+      // Staze od jezera do prvog otiska svakog svijeta.
+      ctx.strokeStyle = SCENE_COLORS.sand;
+      ctx.lineCap = "round";
+      ctx.lineWidth = Math.max(2, 150 * v.scale);
+      for (const zone of shownZones) {
+        const first = printFrame(zone, 0);
+        const angle = Math.atan2(first.y - POND.y, first.x - POND.x);
+        const startX = POND.x + Math.cos(angle) * POND.rx * 0.92;
+        const startY = POND.y + Math.sin(angle) * POND.ry * 0.92;
+        ctx.beginPath();
+        ctx.moveTo(sx(startX), sy(startY));
+        ctx.quadraticCurveTo(sx((startX + first.x) / 2 + 220), sy((startY + first.y) / 2), sx(first.x), sy(first.y));
+        ctx.stroke();
+      }
+
+      // Tlo svakog svijeta: mačji vrt s niskom ogradom, djetelina, pješčana obala, staza s gredicama.
       for (const print of prints) {
-        const { frame } = print;
-        if (frame.x + PRINT_RADIUS < left || frame.x - PRINT_RADIUS > right || frame.y + PRINT_RADIUS < top || frame.y - PRINT_RADIUS > bottom) {
+        const { frame, zone } = print;
+        const r = printRadius(zone);
+        if (frame.x + r < left || frame.x - r > right || frame.y + r < top || frame.y - r > bottom || zone === "psi") continue;
+        ctx.beginPath();
+        ctx.ellipse(sx(frame.x), sy(frame.y), r * 0.88 * v.scale, r * 0.78 * v.scale, frame.rot, 0, Math.PI * 2);
+        ctx.fillStyle = zone === "macke" ? SCENE_COLORS.garden : zone === "mali" ? SCENE_COLORS.clover : zone === "ptice" ? SCENE_COLORS.shore : SCENE_COLORS.sand;
+        if (zone !== "ostali") ctx.fill();
+        if (zone === "macke") {
+          ctx.setLineDash([Math.max(3, 30 * v.scale), Math.max(3, 18 * v.scale)]);
+          ctx.strokeStyle = SCENE_COLORS.fence;
+          ctx.lineWidth = Math.max(1.2, 12 * v.scale);
+          ctx.stroke();
+          ctx.setLineDash([]);
+        }
+        if (zone === "ostali") {
+          // Gredice uz stazu povezuje šljunčani put.
+          const centers = print.pads.map((outline) => ({
+            x: outline.reduce((sum, p) => sum + p.x, 0) / outline.length,
+            y: outline.reduce((sum, p) => sum + p.y, 0) / outline.length,
+          }));
+          ctx.strokeStyle = SCENE_COLORS.sand;
+          ctx.lineWidth = Math.max(2, 120 * v.scale);
+          ctx.beginPath();
+          centers.forEach((c, i) => (i === 0 ? ctx.moveTo(sx(c.x), sy(c.y)) : ctx.lineTo(sx(c.x), sy(c.y))));
+          ctx.stroke();
+        }
+      }
+
+      // Jezero s lokvanjima i mreškanjem; zimi se uz rub uhvati led.
+      if (POND.x + POND.rx > left && POND.x - POND.rx < right && POND.y + POND.ry > top && POND.y - POND.ry < bottom) {
+        ctx.fillStyle = seasonColors.water;
+        ctx.beginPath();
+        ctx.ellipse(sx(POND.x), sy(POND.y), POND.rx * v.scale, POND.ry * v.scale, 0, 0, Math.PI * 2);
+        ctx.fill();
+        if (season === "zima") {
+          ctx.strokeStyle = SCENE_COLORS.ice;
+          ctx.lineWidth = 70 * v.scale;
+          ctx.beginPath();
+          ctx.ellipse(sx(POND.x), sy(POND.y), (POND.rx - 35) * v.scale, (POND.ry - 35) * v.scale, 0, 0, Math.PI * 2);
+          ctx.stroke();
+        }
+        ctx.strokeStyle = SCENE_COLORS.waterRipple;
+        ctx.lineWidth = 1.5;
+        for (let k = 0; k < 3; k++) {
+          const phase = ((now / 4000 + k / 3) % 1);
+          ctx.globalAlpha = 1 - phase;
+          ctx.beginPath();
+          ctx.ellipse(sx(POND.x + 260), sy(POND.y - 90), (60 + phase * 260) * v.scale, (34 + phase * 150) * v.scale, 0, 0, Math.PI * 2);
+          ctx.stroke();
+        }
+        ctx.globalAlpha = 1;
+        for (let k = 0; k < 26; k++) {
+          const r = Math.sqrt((k + 0.5) / 26) * 0.8;
+          const a = k * 2.39996;
+          const lx = sx(POND.x + Math.cos(a) * r * POND.rx);
+          const ly = sy(POND.y + Math.sin(a) * r * POND.ry);
+          const size = (26 + hash(k * 7) * 18) * v.scale;
+          ctx.fillStyle = seasonColors.lily;
+          ctx.beginPath();
+          ctx.moveTo(lx, ly);
+          ctx.arc(lx, ly, Math.max(1.2, size), 0.45, Math.PI * 2 - 0.1);
+          ctx.fill();
+          if (season !== "zima" && hash(k * 3) < 0.3 && size > 4) {
+            ctx.fillStyle = SCENE_COLORS.lilyFlower;
+            ctx.beginPath();
+            ctx.arc(lx + size * 0.2, ly - size * 0.2, size * 0.38, 0, Math.PI * 2);
+            ctx.fill();
+          }
+        }
+      }
+
+      // Otisci na travi: popunjeni su pokošeni, sljedeći je tek naznačen.
+      for (const print of prints) {
+        const { frame, zone } = print;
+        const radius = printRadius(zone);
+        if (frame.x + radius < left || frame.x - radius > right || frame.y + radius < top || frame.y - radius > bottom) {
           continue;
         }
         for (const outline of print.pads) {
@@ -448,9 +594,9 @@ export function BigMeadow() {
             ctx.setLineDash([]);
           }
         }
-        if (print.empty && PRINT_RADIUS * v.scale > 70) {
-          const label = maxNumber === 0 ? t.firstPrint : t.nextPrint;
-          const fontSize = Math.round(Math.min(20, Math.max(12, PRINT_RADIUS * v.scale * 0.06)));
+        if (print.empty && radius * v.scale > 70) {
+          const label = print.index === 0 ? t.firstPrint : t.nextPrint;
+          const fontSize = Math.round(Math.min(18, Math.max(12, radius * v.scale * 0.055)));
           ctx.font = `700 ${fontSize}px ${fontFamily.current}`;
           ctx.textAlign = "center";
           ctx.textBaseline = "middle";
@@ -459,6 +605,47 @@ export function BigMeadow() {
           ctx.strokeText(label, sx(frame.x), sy(frame.y));
           ctx.fillStyle = SCENE_COLORS.label;
           ctx.fillText(label, sx(frame.x), sy(frame.y));
+        }
+      }
+
+      // Stabla: sjena, krošnja koja se lagano njiše; zimi snijeg, u proljeće cvat.
+      for (const tree of trees) {
+        const r = tree.r * v.scale;
+        const x = sx(tree.x);
+        const y = sy(tree.y);
+        // Izdaleka su stabla premala da bi se prepoznala, pa se ne crtaju.
+        if (x < -r * 2 || x > w + r * 2 || y < -r * 2 || y > h + r * 2 || r < 7) continue;
+        const swayX = sway ? Math.sin(now * 0.0008 + tree.x) * r * 0.04 : 0;
+        ctx.fillStyle = SCENE_COLORS.shadow;
+        ctx.beginPath();
+        ctx.ellipse(x + r * 0.25, y + r * 0.35, r, r * 0.55, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = seasonColors.treeShade;
+        ctx.beginPath();
+        ctx.arc(x + swayX, y, r, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = seasonColors.tree;
+        ctx.beginPath();
+        ctx.arc(x + swayX - r * 0.12, y - r * 0.12, r * 0.82, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = SCENE_COLORS.treeHighlight;
+        ctx.beginPath();
+        ctx.arc(x + swayX - r * 0.32, y - r * 0.32, r * 0.42, 0, Math.PI * 2);
+        ctx.fill();
+        if (season === "zima") {
+          ctx.fillStyle = SCENE_COLORS.snowCap;
+          ctx.beginPath();
+          ctx.arc(x + swayX - r * 0.3, y - r * 0.3, r * 0.4, 0, Math.PI * 2);
+          ctx.arc(x + swayX + r * 0.32, y + r * 0.1, r * 0.22, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        if (seasonColors.blossom) {
+          ctx.fillStyle = seasonColors.blossom;
+          for (let k = 0; k < 6; k++) {
+            ctx.beginPath();
+            ctx.arc(x + swayX + Math.cos(k * 1.7 + tree.x) * r * 0.55, y + Math.sin(k * 2.3 + tree.y) * r * 0.55, r * 0.11, 0, Math.PI * 2);
+            ctx.fill();
+          }
         }
       }
 
@@ -548,6 +735,35 @@ export function BigMeadow() {
         // Novi trag procvjeta: raste iz zemlje nešto više od sekunde.
         const growth = bloom.current && bloom.current.number === f.number ? Math.max(0, Math.min(1, (now - bloom.current.start) / 1200)) : 1;
         const grow = 1 - (1 - growth) ** 3;
+        if (f.zone === "ptice") {
+          // Ptica dobiva pero uz trag nožice.
+          ctx.save();
+          ctx.translate(cx, cy);
+          ctx.rotate(((f.number % 7) - 3) * 0.18 + (sway ? Math.sin(now * 0.0016 + f.number) * 0.06 : 0));
+          ctx.fillStyle = SCENE_COLORS.feather;
+          ctx.beginPath();
+          ctx.ellipse(0, -fpx * 0.4 * grow, Math.max(0.5, fpx * 0.22 * grow), Math.max(0.5, fpx * 0.55 * grow), 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.strokeStyle = SCENE_COLORS.featherShaft;
+          ctx.lineWidth = Math.max(1, fpx * 0.04);
+          ctx.beginPath();
+          ctx.moveTo(0, fpx * 0.12);
+          ctx.lineTo(0, -fpx * 0.95 * grow);
+          ctx.stroke();
+          ctx.restore();
+          if (showNames || isMine || isSelected) {
+            const fontSize = Math.round(Math.min(18, Math.max(11, fpx * 0.36)));
+            ctx.font = `700 ${fontSize}px ${fontFamily.current}`;
+            ctx.textAlign = "center";
+            ctx.textBaseline = "top";
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = SCENE_COLORS.labelHalo;
+            ctx.strokeText(f.name, cx, cy + 3);
+            ctx.fillStyle = SCENE_COLORS.label;
+            ctx.fillText(f.name, cx, cy + 3);
+          }
+          continue;
+        }
         const r = fpx * 0.32 * grow;
         const stem = fpx * 0.9 * grow;
         const lean = sway ? Math.sin(now * 0.0016 + f.number * 1.7 + f.x * 0.002) * fpx * 0.09 : 0;
@@ -606,6 +822,34 @@ export function BigMeadow() {
         }
       }
       ctx.globalAlpha = 1;
+
+      // Nazivi svjetova kad je prikazan cijeli krajolik.
+      if (FLOWER_SIZE * v.scale < 9) {
+        ctx.font = `700 ${Math.round(Math.max(12, Math.min(15, 6 + v.scale * 40)))}px ${fontFamily.current}`;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        const placed: Array<{ x0: number; x1: number; y0: number; y1: number }> = [];
+        for (const zone of shownZones) {
+          // Naziv stoji uz prvi otisak, na vanjskoj strani, gdje trag ne ide: psi lijevo, mačke desno.
+          const first = printFrame(zone, 0);
+          const label = t.zones[zone].name;
+          const width = ctx.measureText(label).width + 20;
+          const reach = printRadius(zone) * 0.75 * v.scale;
+          const side = zone === "psi" || zone === "ostali" ? -1 : zone === "ptice" ? 0 : 1;
+          const lx = sx(first.x) + side * (reach + width / 2);
+          const ly = sy(first.y) + (side === 0 ? reach + 16 : 0);
+          // Naziv koji bi prekrio drugi se ne crta; psi i mačke imaju prednost jer su prvi na popisu.
+          const box = { x0: lx - width / 2 - 4, x1: lx + width / 2 + 4, y0: ly - 17, y1: ly + 17 };
+          if (placed.some((b) => box.x0 < b.x1 && box.x1 > b.x0 && box.y0 < b.y1 && box.y1 > b.y0)) continue;
+          placed.push(box);
+          ctx.fillStyle = SCENE_COLORS.zoneLabelBg;
+          ctx.beginPath();
+          ctx.roundRect(lx - width / 2, ly - 13, width, 26, 13);
+          ctx.fill();
+          ctx.fillStyle = SCENE_COLORS.label;
+          ctx.fillText(label, lx, ly + 1);
+        }
+      }
 
       // Blago zatamnjeni rubovi: pogled je kao kroz prozor na veći prostor.
       const vignette = ctx.createRadialGradient(w / 2, h / 2, Math.min(w, h) * 0.42, w / 2, h / 2, Math.max(w, h) * 0.78);
@@ -787,7 +1031,7 @@ export function BigMeadow() {
       window.cancelAnimationFrame(frame);
       window.clearInterval(phaseTimer);
     };
-  }, [flowers, grid, bounds, prints, maxNumber, mineNumbers, selected, clamp, filter, byNumber, minScale]);
+  }, [flowers, grid, bounds, prints, trees, shownZones, mineNumbers, selected, clamp, filter, byNumber, minScale]);
 
   // Kartica prati odabrani cvijet.
   useEffect(() => {
@@ -856,10 +1100,34 @@ export function BigMeadow() {
     }
   }, []);
 
+  const chooseFilter = (key: Filter) => {
+    setFilter(key);
+    stopWalk();
+    if (key === "all" || key === "spomen") {
+      showAll();
+      return;
+    }
+    // Filtar vrste vodi u njezin svijet: pogled obuhvati sve otiske tog svijeta.
+    const zone = filterZone(key);
+    const own = prints.filter((print) => print.zone === zone);
+    if (own.length === 0) return;
+    const r = printRadius(zone);
+    const minX = Math.min(...own.map((p) => p.frame.x)) - r;
+    const maxX = Math.max(...own.map((p) => p.frame.x)) + r;
+    const minY = Math.min(...own.map((p) => p.frame.y)) - r;
+    const maxY = Math.max(...own.map((p) => p.frame.y)) + r;
+    const { w, h } = size.current;
+    fly.current = {
+      x: (minX + maxX) / 2,
+      y: (minY + maxY) / 2,
+      scale: Math.min(MAX_SCALE, Math.max(minScale(), Math.min(w / (maxX - minX), h / (maxY - minY)) * 0.9)),
+    };
+  };
+
   const startWalk = () => {
     // Put kroz jastučiće svih otisaka koji imaju cvjetove: veliki jastučić, pa prsti slijeva nadesno.
     const path: Array<{ x: number; y: number }> = [];
-    for (const print of prints) {
+    for (const print of prints.filter((item) => item.zone === focusZone)) {
       if (print.empty && path.length > 0) break;
       for (const outline of print.pads) {
         const cx = outline.reduce((sum, point) => sum + point.x, 0) / outline.length;
@@ -1122,8 +1390,11 @@ export function BigMeadow() {
   };
 
   const count = flowers?.length ?? 0;
-  const currentPrint = Math.max(1, Math.ceil(maxNumber / PRINT_CAPACITY));
-  const filledInPrint = (flowers ?? []).filter((flower) => Math.ceil(flower.number / PRINT_CAPACITY) === currentPrint).length;
+  const focusZone = filterZone(filter);
+  const currentPrint = Math.max(1, Math.ceil(maxByZone[focusZone] / ZONE_CAPACITY[focusZone]));
+  const filledInPrint = (flowers ?? []).filter(
+    (flower) => flower.zone === focusZone && Math.ceil(flower.zoneIndex / ZONE_CAPACITY[focusZone]) === currentPrint,
+  ).length;
   const selectedIsMine = selected ? mineNumbers.has(selected.number) : false;
 
   const searchBox: ReactNode = (
@@ -1291,9 +1562,10 @@ export function BigMeadow() {
               <span className="font-semibold text-plum-soft">
                 {" · "}
                 {fill(t.progress, {
+                  zone: t.zones[focusZone].name,
                   print: currentPrint,
                   filled: Math.max(0, filledInPrint).toLocaleString("hr-HR"),
-                  capacity: PRINT_CAPACITY.toLocaleString("hr-HR"),
+                  capacity: ZONE_CAPACITY[focusZone].toLocaleString("hr-HR"),
                 })}
               </span>
             ) : null}
@@ -1307,12 +1579,12 @@ export function BigMeadow() {
               >
                 {walking ? t.walk.stop : t.walk.start}
               </button>
-              {FILTERS.map((key) => (
+              {FILTERS.filter((key) => key === "all" || key === "spomen" || shownZones.includes(filterZone(key))).map((key) => (
                 <button
                   key={key}
                   type="button"
                   aria-pressed={filter === key}
-                  onClick={() => setFilter(key)}
+                  onClick={() => chooseFilter(key)}
                   className={`min-h-11 shrink-0 cursor-pointer rounded-full px-3.5 text-[13px] font-bold ${filter === key ? "bg-plum text-white" : "bg-white/90 text-plum"}`}
                 >
                   {t.filters[key]}
@@ -1401,7 +1673,7 @@ export function BigMeadow() {
             <span className="text-sm text-plum-soft">
               {t.species[selected.species]} · {fill(t.card.number, { number: selected.number.toLocaleString("hr-HR") })}
             </span>
-            <span className="text-sm font-semibold text-teal-deep">{placeLabel(selected.number)}</span>
+            <span className="text-sm font-semibold text-teal-deep">{placeLabel(selected)}</span>
             <span className="text-sm text-plum-soft">{fill(t.card.added, { date: formatPetDate(selected.day, "day") ?? selected.day })}</span>
             {neighbours.length > 0 ? (
               <span className="text-sm text-plum-soft">{fill(t.card.neighbours, { names: neighbours.join(", ") })}</span>

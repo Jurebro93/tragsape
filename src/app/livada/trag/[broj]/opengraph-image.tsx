@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { flowerPlace } from "@/lib/meadow";
+import { placeText } from "@/lib/meadow-text";
 import { fill } from "@/lib/text";
 import { common } from "@/messages/hr/common";
 import { meadow } from "@/messages/hr/meadow";
@@ -17,12 +17,11 @@ export default async function Image({ params }: { params: Promise<{ broj: string
   if (!trail) {
     return new Response(null, { status: 404 });
   }
-  const place = flowerPlace(trail.number);
   const fonts = await loadCardFonts();
   return new ImageResponse(
     renderArticleCard({
       title: fill(meadow.trail.title, { name: trail.name }),
-      topic: `${fill(meadow.card.number, { number: trail.number.toLocaleString("hr-HR") })} · ${fill(meadow.place.label, { print: place.print, pad: meadow.place.pads[place.pad] })}`,
+      topic: `${fill(meadow.card.number, { number: trail.number.toLocaleString("hr-HR") })} · ${placeText(trail.species, trail.zoneIndex)}`,
     }),
     { ...size, fonts },
   );

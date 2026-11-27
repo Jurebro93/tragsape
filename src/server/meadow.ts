@@ -26,7 +26,7 @@ export async function listMeadowRows(): Promise<MeadowRow[]> {
   for (let from = 0; from < MAX_ROWS; from += PAGE) {
     const { data, error } = await supabase
       .from("meadow_flowers")
-      .select("number, name, species, petal, memorial_slug, created_at")
+      .select("number, zone_index, name, species, petal, memorial_slug, created_at")
       .eq("status", "visible")
       .order("number")
       .range(from, from + PAGE - 1);
@@ -34,7 +34,7 @@ export async function listMeadowRows(): Promise<MeadowRow[]> {
       throw new Error(`Livada: čitanje cvjetova: ${error.message}`);
     }
     for (const row of data) {
-      if (row.number === null) continue;
+      if (row.number === null || row.zone_index === null) continue;
       rows.push([
         row.number,
         row.name,
@@ -42,6 +42,7 @@ export async function listMeadowRows(): Promise<MeadowRow[]> {
         Math.max(0, MEADOW_PETALS.indexOf(row.petal as MeadowPetal)),
         row.memorial_slug ?? "",
         row.created_at.slice(0, 10),
+        row.zone_index,
       ]);
     }
     if (data.length < PAGE) {
@@ -123,6 +124,7 @@ export function trailUrl(number: number): string {
 
 export type PublicTrail = {
   number: number;
+  zoneIndex: number;
   name: string;
   species: MeadowSpecies;
   petal: MeadowPetal;
@@ -149,6 +151,7 @@ export async function getPublicTrail(number: number): Promise<PublicTrail | null
   }
   return {
     number: row.number,
+    zoneIndex: row.zone_index,
     name: row.name,
     species: (MEADOW_SPECIES as readonly string[]).includes(row.species) ? (row.species as MeadowSpecies) : "drugo",
     petal: (MEADOW_PETALS as readonly string[]).includes(row.petal) ? (row.petal as MeadowPetal) : "terakota",
@@ -223,7 +226,9 @@ const TOKEN = /^[0-9a-f]{48}$/;
  * Potvrda traga gumbom s poveznice iz e-maila: trag postaje vidljiv i dobiva broj.
  * Ako je uz trag tražen i newsletter, potvrda adrese vrijedi i za njega.
  */
-export async function confirmFlower(token: string): Promise<{ number: number; name: string; newlyConfirmed: boolean } | null> {
+export async function confirmFlower(
+  token: string,
+): Promise<{ number: number; zoneIndex: number; species: MeadowSpecies; name: string; newlyConfirmed: boolean } | null> {
   if (!TOKEN.test(token)) {
     return null;
   }
@@ -240,7 +245,13 @@ export async function confirmFlower(token: string): Promise<{ number: number; na
       console.error("[livada] newsletter uz potvrdu traga nije upisan", failure);
     });
   }
-  return { number: row.number, name: row.name, newlyConfirmed: row.newly_confirmed };
+  return {
+    number: row.number,
+    zoneIndex: row.zone_index,
+    species: (MEADOW_SPECIES as readonly string[]).includes(row.species) ? (row.species as MeadowSpecies) : "drugo",
+    name: row.name,
+    newlyConfirmed: row.newly_confirmed,
+  };
 }
 
 /** Briše tragove koji nisu potvrđeni u roku; njihov e-mail se ne čuva. */

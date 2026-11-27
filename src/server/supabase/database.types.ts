@@ -658,6 +658,7 @@ export type Database = {
           petal: string
           species: string
           status: string
+          zone_index: number | null
         }
         Insert: {
           anniversary_last_year?: number | null
@@ -680,6 +681,7 @@ export type Database = {
           petal: string
           species: string
           status?: string
+          zone_index?: number | null
         }
         Update: {
           anniversary_last_year?: number | null
@@ -702,6 +704,7 @@ export type Database = {
           petal?: string
           species?: string
           status?: string
+          zone_index?: number | null
         }
         Relationships: [
           {
@@ -1654,6 +1657,8 @@ export type Database = {
           newly_confirmed: boolean
           newsletter_opt_in: boolean
           number: number
+          species: string
+          zone_index: number
         }[]
       }
       create_draft_claim: { Args: never; Returns: string }
@@ -1712,7 +1717,9 @@ export type Database = {
           total: number
         }[]
       }
+      meadow_zone: { Args: { p_species: string }; Returns: string }
       memorial_share_key: { Args: { p_id: string }; Returns: string }
+      next_meadow_zone_index: { Args: { p_species: string }; Returns: number }
       order_memorials: { Args: { p_order_id: string }; Returns: Json }
       price_list_csv: { Args: never; Returns: string }
       public_meadow_trail: {
@@ -1726,6 +1733,7 @@ export type Database = {
           number: number
           petal: string
           species: string
+          zone_index: number
         }[]
       }
       publish_memorial: { Args: { p_id: string }; Returns: string }

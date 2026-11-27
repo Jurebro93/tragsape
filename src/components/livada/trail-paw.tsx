@@ -1,12 +1,12 @@
-import { PAD_COUNT, PETAL_COLORS, flowerPlace, flowerPosition, padOutline, type MeadowPetal } from "@/lib/meadow";
+import { PAD_COUNT, PETAL_COLORS, flowerPlace, flowerPosition, padOutline, type MeadowPetal, type MeadowZone } from "@/lib/meadow";
 
 /**
  * Crtež otiska šape u kojem je cvijet, s označenim mjestom. Crta se na poslužitelju iz istog
  * rasporeda kao livada, pa mjesto na crtežu odgovara mjestu na livadi.
  */
-export function TrailPaw({ number, petal, label }: { number: number; petal: MeadowPetal; label: string }) {
-  const print = flowerPlace(number).print - 1;
-  const pads = Array.from({ length: PAD_COUNT }, (_, k) => padOutline(print, k, 48));
+export function TrailPaw({ zone, zoneIndex, petal, label }: { zone: MeadowZone; zoneIndex: number; petal: MeadowPetal; label: string }) {
+  const print = flowerPlace(zone, zoneIndex).print - 1;
+  const pads = Array.from({ length: PAD_COUNT }, (_, k) => padOutline(zone, print, k, 48));
   const points = pads.flat();
   const minX = Math.min(...points.map((p) => p.x));
   const maxX = Math.max(...points.map((p) => p.x));
@@ -15,7 +15,7 @@ export function TrailPaw({ number, petal, label }: { number: number; petal: Mead
   const pad = 60;
   const width = maxX - minX + pad * 2;
   const height = maxY - minY + pad * 2;
-  const flower = flowerPosition(number);
+  const flower = flowerPosition(zone, zoneIndex);
   const fx = flower.x - minX + pad;
   const fy = flower.y - minY + pad;
   const toPath = (outline: Array<{ x: number; y: number }>) =>

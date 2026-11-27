@@ -5,7 +5,8 @@ import { TrailPaw } from "@/components/livada/trail-paw";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ButtonLink } from "@/components/ui/button";
 import { formatPetDate } from "@/lib/format";
-import { flowerPlace } from "@/lib/meadow";
+import { zoneOf } from "@/lib/meadow";
+import { placeText } from "@/lib/meadow-text";
 import { fill } from "@/lib/text";
 import { meadow } from "@/messages/hr/meadow";
 import { getPublicTrail } from "@/server/meadow";
@@ -38,8 +39,7 @@ async function Content({ params }: Pick<PageProps<"/livada/trag/[broj]">, "param
       </main>
     );
   }
-  const place = flowerPlace(trail.number);
-  const placeText = fill(meadow.place.label, { print: place.print, pad: meadow.place.pads[place.pad] });
+  const where = placeText(trail.species, trail.zoneIndex);
   return (
     <>
       <div className="rounded-b-[40px] bg-butter">
@@ -49,7 +49,7 @@ async function Content({ params }: Pick<PageProps<"/livada/trag/[broj]">, "param
           </span>
           <h1 className="text-4xl font-extrabold leading-tight [overflow-wrap:anywhere] sm:text-5xl">{fill(t.title, { name: trail.name })}</h1>
           <p className="text-lg">
-            {meadow.species[trail.species]} · {placeText}. {fill(t.since, { date: formatPetDate(trail.day, "day") ?? trail.day })}
+            {meadow.species[trail.species]} · {where}. {fill(t.since, { date: formatPetDate(trail.day, "day") ?? trail.day })}
           </p>
           {trail.dedication ? (
             <blockquote className="mt-1 max-w-xl rounded-3xl bg-white px-5 py-4 font-display text-xl font-bold leading-snug">
@@ -60,8 +60,8 @@ async function Content({ params }: Pick<PageProps<"/livada/trag/[broj]">, "param
       </div>
       <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-6 px-5 pb-16 pt-8">
         <div className="flex flex-col items-center gap-2 rounded-3xl bg-white p-5">
-          <TrailPaw number={trail.number} petal={trail.petal} label={t.mapLabel} />
-          <span className="font-semibold text-teal-deep">{placeText}</span>
+          <TrailPaw zone={zoneOf(trail.species)} zoneIndex={trail.zoneIndex} petal={trail.petal} label={t.mapLabel} />
+          <span className="font-semibold text-teal-deep">{where}</span>
         </div>
         <div className="flex flex-wrap items-start gap-3">
           <ButtonLink href={`/livada?trag=${trail.number}` as Route}>{t.open}</ButtonLink>

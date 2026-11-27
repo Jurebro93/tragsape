@@ -1,12 +1,13 @@
 "use server";
 
 import { updateTag } from "next/cache";
+import type { MeadowSpecies } from "@/lib/meadow";
 import { MEADOW_TAG, confirmFlower } from "@/server/meadow";
 
 export type MeadowConfirmState =
   | { status: "idle" }
   | { status: "invalid" }
-  | { status: "done"; number: number; name: string };
+  | { status: "done"; number: number; zoneIndex: number; species: MeadowSpecies; name: string };
 
 /** Potvrda tek na klik gumba: skener pošte koji otvori poveznicu ne potvrđuje ništa. */
 export async function confirmFlowerAction(_state: MeadowConfirmState, formData: FormData): Promise<MeadowConfirmState> {
@@ -18,5 +19,5 @@ export async function confirmFlowerAction(_state: MeadowConfirmState, formData: 
   if (result.newlyConfirmed) {
     updateTag(MEADOW_TAG);
   }
-  return { status: "done", number: result.number, name: result.name };
+  return { status: "done", number: result.number, zoneIndex: result.zoneIndex, species: result.species, name: result.name };
 }
