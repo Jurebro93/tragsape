@@ -840,7 +840,7 @@ function ClaimSheet({ onClose, onPlanted }: { onClose: () => void; onPlanted: (f
 
   return (
     <div
-      className="absolute inset-0 z-40 flex items-end justify-center bg-plum/35 p-3 sm:items-center"
+      className="fixed inset-0 z-50 flex items-end justify-center bg-plum/35 p-3 sm:absolute sm:z-40 sm:items-center"
       onClick={(event) => {
         if (event.target === event.currentTarget) onClose();
       }}
@@ -849,7 +849,7 @@ function ClaimSheet({ onClose, onPlanted }: { onClose: () => void; onPlanted: (f
         role="dialog"
         aria-modal="true"
         aria-labelledby="trag-naslov"
-        className="flex max-h-full w-full max-w-md flex-col gap-3.5 overflow-auto rounded-[28px] bg-vanilla p-5 sm:p-6"
+        className="flex max-h-[calc(100dvh-1.5rem)] sm:max-h-full w-full max-w-md flex-col gap-3.5 overflow-auto rounded-[28px] bg-vanilla p-5 sm:p-6"
       >
         {steps}
         {step === 1 ? (
