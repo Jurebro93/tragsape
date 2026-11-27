@@ -62,12 +62,12 @@ sources:
     url: "https://www.vef.unizg.hr/usluge/sveucilisna-veterinarska-bolnica/"
     publisher: "Veterinarski fakultet Sveučilišta u Zagrebu"
     accessed_on: 2026-11-27
-  - claim: "Pročišćeni tekst (NN 82/13 do 18/23): ambulante i stanice rade ambulantno, kućnim posjetima i u gospodarskim objektima (čl. 109. st. 1.) te pregledavaju i liječe životinje na zahtjev posjednika (st. 2.); ovlaštena organizacija radi tijekom cijeloga dana (st. 11.); veterinar u praksi mora na zahtjev posjednika pružiti zdravstvenu pomoć (čl. 123.)"
+  - claim: "Pročišćeni tekst (NN 82/13 do 18/23): ambulante i stanice rade ambulantno, kućnim posjetima i u gospodarskim objektima (čl. 109. st. 1.) te liječe životinje na zahtjev posjednika (st. 2.); ovlaštena organizacija (st. 3.) radi tijekom cijeloga dana (st. 11.); veterinar u praksi mora na zahtjev posjednika pružiti zdravstvenu pomoć (čl. 123.); riječi dežurstvo i pripravnost u zakonu nema"
     title: "Zakon o veterinarstvu, članci 109. i 123."
     url: "https://www.zakon.hr/z/468/Zakon-o-veterinarstvu"
     publisher: "Zakon.hr"
     accessed_on: 2026-11-27
-  - claim: "Ambulanta izvan radnog vremena: dežurstvo ili obvezna pripravnost barem jednog veterinara (čl. 33.); praksa: dostupan podatak o najbližoj službi 24 sata (čl. 28.); ovlaštena organizacija: cijeli dan uz pripravnost (čl. 44. st. 5.); Prilog: kontinuirani prijem ili upućivanje drugoj organizaciji, trijaža, obavijest o cijeni i pristanak prije usluge"
+  - claim: "Ambulanta izvan radnog vremena: dežurstvo ili obvezna pripravnost barem jednog veterinara (čl. 33.); područna ambulanta: vlastito ili centralno dežurstvo ili pripravnost u stanici (čl. 31.); praksa: podatak o najbližoj službi 24 sata (čl. 28.); ovlaštena organizacija: cijeli dan uz pripravnost (čl. 44. st. 5.); Prilog: upućivanje drugoj organizaciji, trijaža, obavijest o cijeni i pristanak"
     title: "Pravilnik o uvjetima kojima moraju udovoljavati veterinarske organizacije, veterinarska praksa i veterinarska služba (NN 103/2013)"
     url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2013_08_103_2321.html"
     publisher: "Narodne novine"
@@ -92,6 +92,31 @@ sources:
     url: "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/gastric-dilatation-volvulus-gdv-or-bloat"
     publisher: "Cornell University College of Veterinary Medicine, Riney Canine Health Center"
     accessed_on: 2026-11-27
+  - claim: "Izmjene pravilnika iz 2013.: mijenjaju čl. 3., 7., 9., 10., 23., 27., 32., 49. i 50. te dodaju čl. 43.a i 50.a; odredbe o radu izvan radnog vremena (čl. 28., 31., 33. i 44.) ne mijenjaju"
+    title: "Pravilnik o izmjenama i dopunama Pravilnika o uvjetima kojima moraju udovoljavati veterinarske organizacije, veterinarska praksa i veterinarska služba (NN 130/2014)"
+    url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2014_11_130_2456.html"
+    publisher: "Narodne novine"
+    accessed_on: 2026-11-27
+  - claim: "Izmjene iz 2019.: mijenjaju preambulu, čl. 3. (definicija kućnih ljubimaca), čl. 43. (novi st. 10.) i čl. 51.; odredbe o radu izvan radnog vremena ne mijenjaju; stupa na snagu osmoga dana od objave"
+    title: "Pravilnik o izmjenama i dopunama Pravilnika o uvjetima kojima moraju udovoljavati veterinarske organizacije, veterinarska praksa i veterinarska služba (NN 9/2019)"
+    url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2019_01_9_195.html"
+    publisher: "Narodne novine"
+    accessed_on: 2026-11-27
+  - claim: "Članak 35. stavak 3.: do stupanja na snagu novog pravilnika na snazi ostaje, među ostalima, Pravilnik o uvjetima kojima moraju udovoljavati veterinarske organizacije, veterinarska praksa i veterinarska služba (NN 103/13, 130/14 i 9/19)"
+    title: "Zakon o izmjenama i dopunama Zakona o veterinarstvu (NN 52/2021)"
+    url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2021_05_52_1053.html"
+    publisher: "Narodne novine"
+    accessed_on: 2026-11-27
+  - claim: "Članak 115.: popis podzakonskih propisa koji prestaju važiti stupanjem Zakona na snagu; Pravilnik o uvjetima kojima moraju udovoljavati veterinarske organizacije (NN 103/13) na tom popisu nije"
+    title: "Zakon o zdravlju životinja (NN 152/2022)"
+    url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_152_2373.html"
+    publisher: "Narodne novine"
+    accessed_on: 2026-11-27
+  - claim: "Kontakt Uprave za veterinarstvo i sigurnost hrane (Planinska 2a, Zagreb; veterinarstvo@mps.hr); veterinarska inspekcija više nije u sastavu Ministarstva poljoprivrede, a upiti i prijave iz njezina djelokruga šalju se online obrascem Državnog inspektorata"
+    title: "Kontakt"
+    url: "https://veterinarstvo.mps.hr/hr/ostalo/footer-linkovi/kontakt/"
+    publisher: "Ministarstvo poljoprivrede, šumarstva i ribarstva – Uprava za veterinarstvo i sigurnost hrane"
+    accessed_on: 2026-11-27
 ---
 Noću, nedjeljom i blagdanom veterinar se gotovo uvijek plaća više, ali svaka ustanova to obračunava drukčije. Neke dodaju postotak na cijelu uslugu, druge naplaćuju fiksni iznos za dolazak ili hitni prijem, a pregled i liječenje zatim idu posebno.
 
@@ -102,7 +127,7 @@ Ovdje su doplate onako kako stoje u objavljenim cjenicima koje smo otvorili 27. 
 - Na klinikama Veterinarskog fakulteta u Zagrebu usluge od 18 do 8 sati te nedjeljom i praznikom iza 11 sati stoje 50 % više [1].
 - U ostalim cjenicima doplata je fiksna: od 17,50 € za dolazak izvan radnog vremena u Splitu do 100 € za dolazak dežurnog veterinara u Zagrebu ili hitnu intervenciju u Rijeci [2][6][7].
 - Izlazak na teren naplaćuje se posebno: od 12,50 € „bez intervencije” do 150 € za rad na terenu [4][6].
-- Propis traži da ambulanta izvan radnog vremena ima dežurstvo ili pripravnost, ali ne određuje koliko se smije doplatiti [13].
+- Pravilnik iz 2013., koji je i dalje na snazi, traži da ambulanta izvan radnog vremena ima dežurstvo ili pripravnost, ali ne određuje koliko se smije doplatiti [13][20].
 - Broj za hitne slučajeve i najbližu službu 0–24 potraži dok ti ne treba [15].
 
 ## Koliko se doplaćuje izvan radnog vremena
@@ -126,7 +151,7 @@ Stavke se zovu različito i nisu usporedive jedna s drugom. Negdje je to dolazak
 | VS Rijeka (bez datuma) [7] | hitna intervencija izvan radnog vremena | 100,00 € |
 | Ambulanta Otto, Koprivnica (27. 11. 2026.) [10] | hitna intervencija | 50,00 € |
 
-To nisu prosjeci ni preporuke. Kategorije „I”, „II” ili „3 kat” u splitskom cjeniku nisu objašnjene [6], a u koprivničkom ne piše odnosi li se hitna intervencija samo na vrijeme izvan radnog vremena [10].
+To nisu prosjeci. Kategorije „I”, „II” ili „3 kat” u splitskom cjeniku nisu objašnjene [6], a u koprivničkom ne piše odnosi li se hitna intervencija samo na vrijeme izvan radnog vremena [10].
 
 Osječki cjenik ima i stavke „usluge van radnog vremena” s 1 € i „rad nedjeljom i praznikom” s 0 € [5]. Iz njih se ne vidi kolika je stvarna doplata, pa to pitaj telefonom.
 
@@ -156,13 +181,19 @@ Ostale ustanove iz tablice na stranicama koje smo pročitali prijem 0–24 ne na
 
 ## Što kažu propisi
 
-Zakon ne kaže koliko smije stajati hitna pomoć. Zakon o veterinarstvu propisuje da veterinarske stanice i ambulante pregledavaju i liječe životinje na zahtjev posjednika (članak 109. stavak 2.), a veterinar u veterinarskoj praksi mora na zahtjev posjednika pružiti zdravstvenu pomoć u okviru svoje djelatnosti (članak 123.) [12].
+Koliko smije stajati hitna pomoć, zakon ne kaže. Zakon o veterinarstvu propisuje da veterinarske stanice i ambulante pregledavaju i liječe životinje na zahtjev posjednika (članak 109. stavak 2.), a veterinar u veterinarskoj praksi mora na zahtjev posjednika pružiti zdravstvenu pomoć u okviru svoje djelatnosti (članak 123.) [12].
 
-Dežurstvo je uređeno pravilnikom iz 2013. Veterinarska ambulanta mora izvan radnog vremena imati dežurstvo ili obvezno stanje pripravnosti barem jednog veterinara s licencijom (članak 33.), a veterinarska praksa mora izvan radnog vremena osigurati podatak o najbližoj službi koja radi 24 sata (članak 28.) [13].
+Dežurstvo ne propisuje zakon, nego pravilnik; riječi dežurstvo i pripravnost u Zakonu o veterinarstvu nema. Jedino za ovlaštene veterinarske organizacije, koje Uprava za veterinarstvo ovlašćuje za poslove poput obveznog cijepljenja i izdavanja putovnica, traži da rade „tijekom cijeloga dana” (članak 109. stavci 3. i 11.) [12].
 
-Pripravnost nije isto što i otvorena ambulanta: veterinar je dostupan na poziv, ali ne mora biti u ordinaciji. Zakon navodi da ambulante rade i kućnim posjetima (članak 109. stavak 1.), ali obvezu dolaska na adresu u hitnom slučaju u propisima nismo našli [12][13].
+Pravilnik iz 2013. još je na snazi; mijenjan je 2014. i 2019., ali ne u odredbama o radu izvan radnog vremena [13][18][19]. Izmjena Zakona o veterinarstvu iz 2021. izričito ga ostavlja na snazi, a Zakon o zdravlju životinja iz 2022. ga ne ukida [20][21]. Noviji pravilnik o uvjetima za veterinarske organizacije u Narodnim novinama nismo našli.
+
+Prema pravilniku, veterinarska ambulanta mora izvan radnog vremena imati dežurstvo ili obvezno stanje pripravnosti barem jednog veterinara s licencijom (članak 33.). Područna ambulanta veterinarske stanice to rješava vlastitim ili centralno ustrojenim dežurstvom ili pripravnošću u stanici (članak 31.), a veterinarska praksa mora osigurati podatak o najbližoj službi koja radi 24 sata (članak 28.) [13].
+
+Pravilnik ne objašnjava po čemu se pripravnost razlikuje od dežurstva, pa pitaj svoju ambulantu dolaziš li noću u ordinaciju ili najprije zoveš veterinara. Zakon navodi da ambulante rade i kućnim posjetima (članak 109. stavak 1.), ali obvezu dolaska na adresu u hitnom slučaju u propisima nismo našli [12][13].
 
 Isti pravilnik u prilogu traži da organizacija koja ne može primiti pacijenta ima postupak za upućivanje drugoj organizaciji, da hitni slučajevi imaju prednost te da te prije usluge izvijesti o koristi, rizicima i cijeni i zatraži tvoj pristanak [13]. Zakon o zaštiti životinja s druge strane traži od tebe da pravodobno zatražiš veterinarsku pomoć za bolesnu ili ozlijeđenu životinju (članak 6. stavak 2.) [14].
+
+Pitanja o propisima možeš poslati Upravi za veterinarstvo i sigurnost hrane, a prijave veterinarskoj inspekciji, koja je u Državnom inspektoratu [22].
 
 ## Kada se ne čeka jutro
 
@@ -173,11 +204,11 @@ Kratak popis znakova iz veterinarskih izvora; ne zamjenjuje procjenu veterinara.
 - Sumnja da je pojeo otrov ili ljudski lijek. Povraćanje ne izazivaj sam, osim ako ti to kaže veterinar; spremi podatak što je, koliko i kada pojeo te koliko je težak [16].
 - Napuhan trbuh, pas pokušava povraćati a ništa ne izlazi, blijede desni, slabost ili kolaps. Proširenje i zavrtanje želuca po život je opasno, osobito kod velikih pasa dubokih prsa [17].
 
-Kad nisi siguran, nazovi i opiši što vidiš [16]. Zubni problemi rijetko su ovakav slučaj, a kada jesu, piše u članku [Čišćenje zubnog kamenca kod psa: cijena](/vodic/ciscenje-zubnog-kamenca-kod-psa-cijena).
+U nedoumici nazovi i opiši što vidiš [16]. Zubni problemi rijetko su ovakav slučaj, a kada jesu, piše u članku [Čišćenje zubnog kamenca kod psa: cijena](/vodic/ciscenje-zubnog-kamenca-kod-psa-cijena).
 
 ## Pripremi se prije nego zatreba
 
-Merckov veterinarski priručnik savjetuje da odgovore na ova pitanja znaš prije hitnog slučaja [15]:
+Merckov priručnik savjetuje da odgovore znaš prije hitnog slučaja [15]:
 
 - [ ] Koji broj zovem ako se pas razboli nakon radnog vremena?
 - [ ] Gdje je najbliža služba 0–24 i kojim putem se dolazi?
@@ -209,7 +240,7 @@ Pravilnik traži dežurstvo ili pripravnost izvan radnog vremena i postupak upu�
 
 ### Mogu li pitati za cijenu prije nego što počnu?
 
-Možeš. Pravilnik traži da te prije usluge izvijeste o koristi, rizicima i cijeni i da daš pristanak, a račun mora biti detaljan [13].
+Možeš. Pravilnik traži da te prije usluge izvijeste o koristi, rizicima i cijeni i zatraže pristanak [13].
 
 ### Vrijede li doplate i za uspavljivanje?
 

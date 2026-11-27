@@ -39,6 +39,41 @@ sources:
     url: "https://vmc.vet.osu.edu/sites/default/files/documents/coping_with_loss_brochure_2024_web.pdf"
     publisher: "The Ohio State University Veterinary Medical Center, Honoring the Bond Program"
     accessed_on: 2026-11-27
+  - claim: "Mišljenje objavljeno 4. 1. 2023.: iako Zakon „taksativno ne navodi” slučajeve važnih potreba, ako ih kolektivni ugovor ili drugi pravni izvor ne razrađuju, radnik pravo na plaćeni dopust po Zakonu o radu ostvaruje „samo za one slučajeve nabrojene u članku 86. stavka 1.”; poslodavac ga smije priznati i za druge slučajeve, ali ga Zakon na to ne obvezuje"
+    title: "Plaćeni dopust – selidba (stručno mišljenje)"
+    url: "https://uznr.mrms.hr/placeni-dopust-selidba/"
+    publisher: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike (portal MROSP – Unapređivanje zaštite na radu)"
+    accessed_on: 2026-11-27
+  - claim: "Mišljenje objavljeno 31. 1. 2023.: odsutnost s posla iz čl. 87.a novi je institut nastao usklađivanjem s Direktivom (EU) 2019/1158; Zakon ne propisuje obvezu radnika da dokaže opravdanost, ali ni ne priječi poslodavca da u slučaju sumnje na zlouporabu zatraži dokaz o važnom i hitnom obiteljskom razlogu; dulje trajanje i naknadu plaće može urediti kolektivni ugovor"
+    title: "Dokaz u cilju ostvarivanja prava na odsutnost s posla (stručno mišljenje)"
+    url: "https://uznr.mrms.hr/dokaz-u-cilju-ostvarivanja-prava-na-odsutnost-s-posla/"
+    publisher: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike (portal MROSP – Unapređivanje zaštite na radu)"
+    accessed_on: 2026-11-27
+  - claim: "Mišljenje objavljeno 4. 1. 2023.: Zakon o radu propisuje samo okvirna prava o plaćenom dopustu, a razrađuju ih kolektivni ugovor, pravilnik o radu i ugovor o radu; ministarstvo nije ovlašteno tumačiti odredbe kolektivnog ugovora, nego to čini zajedničko tijelo predviđeno samim ugovorom"
+    title: "Plaćeni dopust – kada se koristi (stručno mišljenje)"
+    url: "https://uznr.mrms.hr/placeni-dopust-kada-se-koristi/"
+    publisher: "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike (portal MROSP – Unapređivanje zaštite na radu)"
+    accessed_on: 2026-11-27
+  - claim: "Čl. 43. st. 1.: plaćeni dopust do ukupno 10 radnih dana godišnje u nabrojanim slučajevima (brak, rođenje ili posvojenje djeteta, smrt i teška bolest navedenih članova obitelji, selidba, priredbe, sindikalne aktivnosti, prirodna nepogoda, darivanje krvi); točka 12.: hitan obiteljski razlog uzrokovan bolešću ili nesretnim slučajem, ukupno 3 radna dana godišnje; ljubimci se ne spominju"
+    title: "Temeljni kolektivni ugovor za zaposlenike u javnim službama, NN 29/2024 (11. 3. 2024.)"
+    url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2024_03_29_458.html"
+    publisher: "Narodne novine"
+    accessed_on: 2026-11-27
+  - claim: "Čl. 28. st. 1.: plaćeni dopust u nabrojanim slučajevima (brak ili životno partnerstvo, rođenje ili posvojenje djeteta, smrt navedenih srodnika, selidba, darivanje krvi, teška bolest supružnika, djeteta ili roditelja, priredbe, sindikalne aktivnosti, prirodna nepogoda); ljubimci se ne spominju ni u ugovoru ni u izmjenama NN 127/22, 58/23, 128/23, 29/24, 4/25 i 11/26"
+    title: "Kolektivni ugovor za državne službenike i namještenike, NN 56/2022 (18. 5. 2022.)"
+    url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_05_56_799.html"
+    publisher: "Narodne novine"
+    accessed_on: 2026-11-27
+  - claim: "Čl. 7.: u čl. 28. st. 1. Kolektivnog ugovora za državne službenike dodaje se podstavak 12.: odsutnost s posla kada je zbog osobito važnog i hitnog obiteljskog razloga uzrokovanog bolešću ili nesretnim slučajem prijeko potrebna trenutna nazočnost, ukupno 3 radna dana godišnje, za svaki slučaj"
+    title: "Dodatak III. Kolektivnom ugovoru za državne službenike i namještenike, NN 128/2023 (30. 10. 2023.)"
+    url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2023_10_128_1779.html"
+    publisher: "Narodne novine"
+    accessed_on: 2026-11-27
+  - claim: "Tumačenje 13/28 od 6. 11. 2025.: Komisija ne može precizno definirati što je „osobito važan i hitan obiteljski razlog uzrokovan bolešću ili nesretnim slučajem”, to procjenjuje čelnik tijela; tumačenje 14/28 od 6. 11. 2025.: članom obitelji za taj dopust smatraju se osobe koje i Zakon o radu navodi kao članove uže obitelji"
+    title: "Tumačenja prema rednom broju članaka Kolektivnog ugovora za državne službenike i namještenike"
+    url: "https://mpudt.gov.hr/UserDocsImages/dokumenti/Kutak%20za%20dr%C5%BEavne%20slu%C5%BEbenike/Tuma%C4%8Denja%20prema%20rednom%20broju%20%C4%8Dlanaka%20Kolektivnog%20ugovora.pdf"
+    publisher: "Ministarstvo pravosuđa i uprave, Kutak za državne službenike (tumačenja Zajedničke komisije)"
+    accessed_on: 2026-11-27
 ---
 Smiješ uzeti slobodan dan kad ti ugine ljubimac, ali ne kao posebno zakonsko pravo. Zakon o radu ne navodi smrt ljubimca među razlozima za plaćeni dopust [1]. Dan možeš dobiti na druge načine: kao dan godišnjeg odmora po svom izboru, dogovorom s poslodavcem ili prema kolektivnom ugovoru i pravilniku o radu.
 
@@ -46,27 +81,35 @@ Ovo je pregled propisa, ne pravni savjet. Za svoj slučaj pitaj kadrovsku služb
 
 ## Ukratko
 
-- **Plaćeni dopust** (čl. 86. Zakona o radu) daje se za važne osobne potrebe; zakon kao primjere navodi brak, rođenje djeteta te težu bolest ili smrt člana uže obitelji. Ljubimac se ne spominje [1].
+- **Plaćeni dopust** (čl. 86. Zakona o radu) daje se za važne osobne potrebe, a ljubimac se među primjerima ne spominje [1]. Ministarstvo rada smatra da bez kolektivnog ugovora vrijede samo nabrojani slučajevi [7].
 - **Jedan dan godišnjeg odmora** smiješ iskoristiti kad želiš, ako poslodavca obavijestiš najmanje tri dana prije [1].
 - **Ostali slobodni dani** (godišnji, neplaćeni dopust, rad od kuće) stvar su dogovora s poslodavcem [1].
 - **Bolovanje** nije dopust za tugu. O privremenoj nesposobnosti za rad odlučuje izabrani doktor [4].
-- **Prvo pogledaj** svoj kolektivni ugovor, pravilnik o radu i ugovor o radu: oni mogu dati više od zakona [1].
+- **Prvo pogledaj** svoj kolektivni ugovor, pravilnik o radu i ugovor o radu: oni mogu dati više od zakona [1]. Kolektivni ugovori za državne i javne službe smrt ljubimca ne spominju [10][11].
 
 ## Što točno piše u Zakonu o radu?
 
-Plaćeni dopust uređuje članak 86. Zakona o radu. Prema stavku 1., radnik tijekom godine ima pravo na plaćeni dopust „za važne osobne potrebe (sklapanje braka, rođenje djeteta, teža bolest ili smrt člana uže obitelji i sl.)” [1]. Takav tekst vrijedi od 1. siječnja 2023., kad je stupila na snagu izmjena objavljena u Narodnim novinama 151/2022 [2].
+Prema članku 86. stavku 1., radnik tijekom godine ima pravo na plaćeni dopust „za važne osobne potrebe (sklapanje braka, rođenje djeteta, teža bolest ili smrt člana uže obitelji i sl.)” [1]. Takav tekst vrijedi od 1. siječnja 2023., kad je stupila na snagu izmjena objavljena u Narodnim novinama 151/2022 [2].
 
 Ukupno je to sedam radnih dana godišnje, ako kolektivni ugovor, pravilnik o radu ili ugovor o radu ne određuju drukčije. Dopust se koristi u vrijeme događaja ili neposredno nakon njega [1].
 
-Stavak 3. nabraja tko je član uže obitelji: supružnik, krvni srodnici u pravoj liniji (roditelji, djeca, bake i djedovi), braća i sestre, pastorčad, posvojenici i posvojitelji, očuh i maćeha te izvanbračni i životni partner [1]. To su samo ljudi. Smrt ljubimca stoga ne možeš podvesti pod „smrt člana uže obitelji”.
+Stavak 3. nabraja članove uže obitelji, od supružnika, djece i roditelja do izvanbračnog i životnog partnera [1]. To su samo ljudi.
 
 ## Je li smrt ljubimca „važna osobna potreba”?
 
-Zakon to ne kaže ni da ni ne. Popis u članku 86. završava s „i sl.”, a i raniji tekst iz 2014. govorio je o važnim osobnim potrebama „a osobito” o nabrojanim slučajevima [3]. Popis dakle nije zatvoren, ali ni ne obvezuje poslodavca da smrt ljubimca prizna kao razlog.
+Zakon to izričito ne kaže. Popis u članku 86. završava s „i sl.”, a i raniji tekst iz 2014. govorio je o važnim osobnim potrebama „a osobito” o nabrojanim slučajevima [3].
 
-U praksi to znači sljedeće: pravo na plaćeni dopust zbog smrti ljubimca imaš samo ako ga daje tvoj kolektivni ugovor, pravilnik o radu ili ugovor o radu, ili ako ga poslodavac odobri. Pravilnik o radu mora imati svaki poslodavac s najmanje dvadeset radnika [1].
+Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike objavilo je o tome mišljenje povodom selidbe. Iako zakon slučajeve „taksativno ne navodi”, radnik bi po zakonu pravo ostvario „samo za one slučajeve nabrojene u članku 86. stavka 1.”, ako drugi slučajevi nisu razrađeni u kolektivnom ugovoru ili drugom izvoru [7]. Poslodavac dopust smije odobriti i za druge razloge, ali ga zakon na to ne obvezuje [7].
 
-Ako si državni ili javni službenik, provjeri i propise i kolektivne ugovore koji vrijede za tebe. Zakon o radu primjenjuje se ako drugi zakon ne određuje drukčije [1].
+To mišljenje govori o selidbi, ne o ljubimcu, i nije presuda. Mišljenje ili presudu baš o smrti ljubimca nismo našli. Za službeni odgovor pitaj sindikat ili pošalji upit Ministarstvu rada.
+
+Pravo na plaćeni dopust zbog smrti ljubimca dakle imaš ako ga daje tvoj kolektivni ugovor, pravilnik o radu ili ugovor o radu, ili ako ga poslodavac odobri. Pravilnik o radu mora imati svaki poslodavac s najmanje dvadeset radnika [1].
+
+## Što kažu kolektivni ugovori za državne i javne službe?
+
+Pročitali smo Temeljni kolektivni ugovor za zaposlenike u javnim službama (NN 29/2024) i Kolektivni ugovor za državne službenike i namještenike (NN 56/2022 s izmjenama). Oba nabrajaju slučajeve plaćenog dopusta, od braka i rođenja djeteta do smrti i teške bolesti članova obitelji, selidbe i prirodne nepogode [10][11]. Smrt ljubimca ni u jednom nije navedena.
+
+Oba daju do tri plaćena radna dana godišnje za hitan obiteljski razlog uzrokovan bolešću ili nesretnim slučajem [10][12]. Zakon o radu na te službe primjenjuje se ako drugi zakon ne određuje drukčije [1], a kolektivni ugovor ne tumači ministarstvo, nego zajedničko tijelo predviđeno ugovorom [9].
 
 ## Koje mogućnosti stvarno imaš?
 
@@ -76,7 +119,7 @@ Ako si državni ili javni službenik, provjeri i propise i kolektivne ugovore ko
 | Jedan dan godišnjeg po želji (ZOR čl. 85. st. 5.) | Koristiš ga kad želiš, uz obavijest najmanje 3 dana prije, osim ako to onemogućuju posebno opravdani razlozi na strani poslodavca [1] | Da, naknada plaće (čl. 81.) [1] | Ne, ako najaviš na vrijeme |
 | Ostali dani godišnjeg (ZOR čl. 85.) | Raspored korištenja utvrđuje poslodavac [1] | Da | Da |
 | Neplaćeni dopust (ZOR čl. 87. st. 1.) | Poslodavac ga može odobriti na tvoj zahtjev; prava i obveze iz radnog odnosa za to vrijeme miruju [1] | Ne | Da |
-| Odsutnost s posla (ZOR čl. 87.a) | Jedan dan godišnje za osobito važan i hitan obiteljski razlog uzrokovan bolešću ili nesrećom [1] | Zakon ne propisuje naknadu; može je urediti kolektivni ugovor ili pravilnik [1] | Životinje se ne spominju |
+| Odsutnost s posla (ZOR čl. 87.a) | Jedan dan godišnje za osobito važan i hitan obiteljski razlog uzrokovan bolešću ili nesretnim slučajem [1] | Zakon ne propisuje naknadu [1]; ugovori za državne i javne službe daju do 3 plaćena dana [10][12] | Ne, ali poslodavac smije tražiti dokaz [8]; vrijedi li za ljubimca, nije jasno |
 | Rad od kuće (ZOR čl. 17.) | Privremeni ili povremeni rad na izdvojenom mjestu, ako ga radnik i poslodavac ugovore [1] | Radiš, pa da | Da |
 | Bolovanje (ZOZO čl. 39. i 46.) | Privremena nesposobnost zbog bolesti ili ozljede; utvrđuje je izabrani doktor [4] | Naknada plaće prema ZOZO [4] | Ne, odlučuje liječnik |
 
@@ -86,23 +129,21 @@ ZOR je Zakon o radu, a ZOZO Zakon o obveznom zdravstvenom osiguranju.
 
 Najjednostavnije je jedan dan godišnjeg odmora, jer ga ne moraš opravdavati. Zakon ti daje pravo da ga koristiš kad želiš, uz obavijest poslodavcu najmanje tri dana prije [1].
 
-Ljubimac rijetko ugine s tri dana najave. Ako ti slobodan dan treba sutra, to više nije zakonsko pravo nego dogovor s poslodavcem. Zatraži ga svejedno: najgore što možeš čuti jest „ne”.
+Ako ti slobodan dan treba već sutra, to više nije zakonsko pravo nego dogovor s poslodavcem.
 
-Neplaćeni dopust za pružanje osobne skrbi iz članka 87. nije za ovu situaciju. On je vezan uz skrb za člana uže obitelji ili osobu iz kućanstva kojoj je potrebna zbog ozbiljnog zdravstvenog razloga [1].
+## Što je „hitan obiteljski razlog” iz članka 87.a?
+
+Zakon to ne definira. Članak 87.a daje jedan dan odsutnosti godišnje kad je zbog osobito važnog i hitnog obiteljskog razloga, uzrokovanog bolešću ili nesretnim slučajem, „prijeko potrebna” tvoja „trenutačna nazočnost” [1].
+
+Ministarstvo rada objašnjava da odredba dolazi iz europske direktive o ravnoteži poslovnog i privatnog života. Zakon od tebe ne traži dokaz, ali poslodavac ga smije zatražiti ako sumnja u zlouporabu [8]. Za državne službenike zajednička komisija kaže da pojam ne može precizno definirati, da ga procjenjuje čelnik tijela i da su članovi obitelji iste osobe koje Zakon o radu nabraja kao užu obitelj [13].
+
+Vrijedi li odredba kad se ljubimac iznenada razboli ili strada, u propisima i mišljenjima koje smo pročitali ne piše. Ako ti se to dogodi, reci poslodavcu što se događa, a za službeni odgovor pitaj Ministarstvo rada.
 
 ## Kada je bolovanje opravdano?
 
-Bolovanje je za bolest ili ozljedu, a ne za tugu samu po sebi. Prema Zakonu o obveznom zdravstvenom osiguranju, početak i trajanje privremene nesposobnosti za rad utvrđuje izabrani doktor [4].
+Bolovanje je za bolest ili ozljedu, a ne za tugu samu po sebi. Početak i trajanje privremene nesposobnosti za rad utvrđuje izabrani doktor [4].
 
-Tuga može biti teška i tjelesno. Ako ne možeš raditi, razgovaraj s liječnikom obiteljske medicine i reci mu istinu, a on će procijeniti. Savjetnici Sveučilišta Ohio State preporučuju stručnu podršku ako tuga ni nakon nekoliko tjedana ne popušta ili ti ometa posao [6].
-
-Ako ti liječnik otvori bolovanje, poslodavca obavijesti što prije, a liječničku potvrdu dostavi najkasnije u roku od tri dana [1].
-
-## Moram li poslodavcu reći pravi razlog?
-
-Ne moraš reći sve, ali ne izmišljaj. Za dan godišnjeg po svom izboru zakon ne traži razlog [1]. Ako tražiš dogovor, dovoljno je reći da si imao gubitak u obitelji. Psihologinja koju citira britanska udruga RSPCA to predlaže kao točan opis koji ne poziva na procjenjivanje [5].
-
-Ne navodi razlog koji nije istinit, primjerice smrt člana obitelji. Plaćeni dopust po toj osnovi vezan je uz osobe koje zakon nabraja [1].
+Tuga može biti teška i tjelesno. Ako ne možeš raditi, reci liječniku obiteljske medicine istinu, a on će procijeniti. Savjetnici Sveučilišta Ohio State preporučuju stručnu podršku ako tuga ni nakon nekoliko tjedana ne popušta ili ti ometa posao [6]. Ako dobiješ bolovanje, poslodavca obavijesti što prije, a potvrdu dostavi najkasnije u tri dana [1].
 
 ## Kako to reći nadređenom?
 
@@ -112,47 +153,31 @@ Primjer poruke, prilagođen prema predlošku RSPCA-a [5]:
 
 > Bok Ivana, jučer mi je uginuo pas s kojim sam živio dvanaest godina. Teško mi je i slabo se koncentriram. Molim te za jedan slobodan dan sutra, kao dan godišnjeg odmora. Ako to nije moguće, može li sutra rad od kuće? Hitne zadatke predat ću Ani do kraja dana.
 
-Kraća verzija za chat:
-
-> Uginula mi je mačka i sutra ne mogu doći. Mogu li uzeti dan godišnjeg? Javit ću se Marku za sastanak.
-
-Ponudi i rješenje za posao koji ostaje. Tako nadređenoj osobi olakšaš da kaže „da”.
+Ponudi i rješenje za posao koji ostaje.
 
 ## Kako se vratiti na posao?
 
-Postupno, ako možeš. RSPCA predlaže da zaostatke rješavaš polako, da u kalendaru ostaviš malo mirnog vremena i zamoliš kolege za pomoć sa sastancima [5].
+Postupno, ako možeš. RSPCA predlaže da zaostatke rješavaš polako i u kalendaru ostaviš malo mirnog vremena [5]. Tuga utječe na koncentraciju, san i energiju; to je česta reakcija, ne slabost [5].
 
-Tuga utječe na koncentraciju, pamćenje, san i energiju; to je česta reakcija, ne slabost [5]. Ako ti usred dana navre, izađi na nekoliko minuta. Kolegama možeš reći: „Hvala što pitaš, ali danas mi je teško.” [5]
-
-Ne moraš glumiti da je sve u redu. U istoj anketi više od polovice ispitanika osjećalo je da se od njih očekuje raditi kao da se ništa nije dogodilo [5]. Ako želiš mir, zamoli nadređenog da kolegama kaže da prolaziš kroz gubitak i trebaš malo prostora [5].
-
-## Što mogu učiniti kolege i poslodavac?
-
-Priznati gubitak i pitati što bi pomoglo. U anketi RSPCA-a 92 % zaposlenih ispitanika reklo je da im je tuga utjecala na rad, a 73 % da bi im pomogao slobodan dan [5].
-
-Poslodavac može pomoći rasporedom: pomaknuti rokove, preuzeti sastanke, dopustiti rad od kuće [5]. Kolega može poslati kratku poruku i javiti se opet nakon nekoliko dana [5]. Primjeri su u članku [Što napisati kolegi kojem je uginuo ljubimac](/vodic/sto-napisati-kolegi-kojem-je-uginuo-ljubimac).
+U anketi RSPCA-a 92 % zaposlenih ispitanika reklo je da im je tuga utjecala na rad, a više od polovice osjećalo je da se od njih očekuje raditi kao inače [5]. Poslodavac može pomoći rasporedom, a kolega kratkom porukom [5]. Primjeri su u članku [Što napisati kolegi kojem je uginuo ljubimac](/vodic/sto-napisati-kolegi-kojem-je-uginuo-ljubimac).
 
 ## Česta pitanja
 
 ### Imam li pravo na plaćeni dopust kad mi ugine pas ili mačka?
 
-Ne izravno po Zakonu o radu. Članak 86. smrt ljubimca ne navodi, a članom uže obitelji smatra samo ljude [1]. Pravo možeš imati ako ga daje tvoj kolektivni ugovor, pravilnik o radu ili ugovor o radu.
+Ne izravno po Zakonu o radu. Članak 86. smrt ljubimca ne navodi, a Ministarstvo rada smatra da se bez kolektivnog ugovora dopust daje samo za nabrojane slučajeve [1][7]. Pravo možeš imati ako ga daje tvoj kolektivni ugovor, pravilnik o radu ili ugovor o radu.
 
 ### Može li mi poslodavac odbiti dan godišnjeg odmora?
 
 Jedan dan godišnjeg smiješ iskoristiti kad želiš ako ga najaviš najmanje tri dana prije, osim ako to onemogućuju posebno opravdani razlozi na strani poslodavca [1]. Za ostale dane raspored utvrđuje poslodavac [1].
 
-### Smijem li otići na bolovanje zbog tuge?
-
-O bolovanju odlučuje izabrani doktor, a ono je za bolest ili ozljedu [4]. Ako ne možeš raditi, javi se liječniku obiteljske medicine i opiši kako ti je.
-
 ### Moram li reći da mi je uginuo ljubimac?
 
-Ne moraš iznositi pojedinosti, ali ne navodi neistinit razlog. Dovoljno je reći da si imao gubitak u obitelji [5].
+Ne moraš iznositi pojedinosti, a za dan godišnjeg po svom izboru zakon razlog ni ne traži [1]. Ne navodi neistinit razlog; dovoljno je reći da si imao gubitak u obitelji, kako predlaže psihologinja koju citira RSPCA [5].
 
-### Što je s neplaćenim dopustom?
+### Imaju li državni i javni službenici dopust za smrt ljubimca?
 
-Poslodavac ga može odobriti na tvoj zahtjev, ali ne mora. Za to vrijeme ne primaš plaću, a prava i obveze iz radnog odnosa miruju [1].
+U kolektivnim ugovorima za državne službenike i za javne službe koje smo pročitali takvog dopusta nema [10][11]. Provjeri ipak i pravilnik ili ugovor svog poslodavca.
 
 ### Gdje mogu vidjeti što piše u mom kolektivnom ugovoru?
 
@@ -160,4 +185,4 @@ Pitaj kadrovsku službu ili sindikalnog povjerenika. Poslodavac s najmanje dvade
 
 ## Sljedeći korak
 
-Danas ili sutra pogledaj što o plaćenom dopustu piše u tvom pravilniku o radu ili kolektivnom ugovoru, pa pošalji nadređenom kratku poruku. Za tugu koja ne staje kad zatvoriš laptop, pročitaj [Tuga i krivnja nakon gubitka ljubimca](/vodic/tuga-i-krivnja-nakon-gubitka-ljubimca). Ako imaš djecu, kako razgovarati s njima po dobi piše u članku [Dijete i smrt ljubimca po dobi](/vodic/dijete-i-smrt-ljubimca-po-dobi). Praktični koraci prvih dana su u vodiču [Što učiniti kad ljubimac ugine](/vodic/sto-uciniti-kad-ljubimac-ugine), a kad budeš spreman nešto zapisati, tu je [alat za oproštajno pismo](/alati/oprostaj).
+Danas ili sutra pogledaj što o plaćenom dopustu piše u tvom pravilniku o radu ili kolektivnom ugovoru, pa pošalji nadređenom kratku poruku. Za tugu koja ne staje kad zatvoriš laptop, pročitaj [Tuga i krivnja nakon gubitka ljubimca](/vodic/tuga-i-krivnja-nakon-gubitka-ljubimca). Ako imaš djecu, pomoći će [Dijete i smrt ljubimca po dobi](/vodic/dijete-i-smrt-ljubimca-po-dobi), a praktični koraci prvih dana su u vodiču [Što učiniti kad ljubimac ugine](/vodic/sto-uciniti-kad-ljubimac-ugine). Kad budeš spreman nešto zapisati, tu je [alat za oproštajno pismo](/alati/oprostaj).

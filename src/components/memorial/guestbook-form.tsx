@@ -52,7 +52,7 @@ export function GuestbookForm({
           message: form.get("message"),
           email: form.get("email") ?? "",
           website: form.get("website") ?? "",
-          startedAt: startedAt.current || Date.now(),
+          elapsedMs: startedAt.current ? Date.now() - startedAt.current : 0,
           turnstileToken: token,
         }),
       });

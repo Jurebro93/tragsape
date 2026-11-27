@@ -130,7 +130,8 @@ export const guestbookSchema = z.object({
   shareKey: z.string().max(64).nullable().optional(),
   // Zamka za robote: ljudi ovo polje ne vide i ostavljaju ga praznim.
   website: z.string().max(0).optional(),
-  startedAt: z.number().int(),
+  /** Koliko je obrazac bio otvoren; mjeri preglednik, pa sat uređaja ne smeta. */
+  elapsedMs: z.number().int().min(0),
 });
 
 export const reportSchema = z.object({

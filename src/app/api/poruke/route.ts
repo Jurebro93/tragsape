@@ -36,7 +36,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "invalid", message: parsed.error.issues[0]?.message }, { status: 400 });
   }
   const input = parsed.data;
-  if (Date.now() - input.startedAt < MIN_FILL_MS) {
+  if (input.elapsedMs < MIN_FILL_MS) {
     return NextResponse.json({ status: "pending" });
   }
   const ipHash = dailyIpHash(request);

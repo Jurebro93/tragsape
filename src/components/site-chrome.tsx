@@ -2,6 +2,8 @@ import type { Route } from "next";
 import Link from "next/link";
 import { AttributedLink } from "@/components/attributed-link";
 import { LogoMark } from "@/components/icons";
+import { NewsletterForm } from "@/components/newsletter/newsletter-form";
+import { newsletter } from "@/messages/hr/newsletter";
 import { common } from "@/messages/hr/common";
 import { cn } from "@/lib/cn";
 
@@ -91,6 +93,13 @@ export function SiteFooter() {
           </span>
           <p className="text-[15px] text-white/85">{common.footer.line}</p>
         </div>
+        <section aria-labelledby="podnozje-newsletter" className="flex max-w-xl flex-col gap-3 rounded-3xl bg-white/5 p-5">
+          <h2 id="podnozje-newsletter" className="font-display text-lg font-extrabold text-white">
+            {newsletter.title}
+          </h2>
+          <p className="text-[15px] leading-relaxed text-white/80">{newsletter.lead}</p>
+          <NewsletterForm source="podnozje" tone="dark" />
+        </section>
         <nav aria-label="Podnožje" className="flex flex-wrap gap-x-5 gap-y-1 text-[15px]">
           {links.map((link) => (
             <Link key={link.href} href={link.href} className="py-2 text-white underline-offset-4 hover:underline">

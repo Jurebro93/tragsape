@@ -67,6 +67,11 @@ sources:
     url: "https://vmc.vet.osu.edu/sites/default/files/documents/how%20will%20i%20know.pdf"
     publisher: "The Ohio State University Veterinary Medical Center, Honoring the Bond Program"
     accessed_on: 2026-11-27
+  - claim: "Hitnu veterinarsku pomoć za psa ili mačku treba potražiti kod otežanog disanja ili kolapsa, teške ozljede ili krvarenja, napadaja, nagle slabosti ili oduzetosti, upornog povraćanja ili proljeva, jake boli ili uznemirenosti te sumnje na trovanje; ako nisi siguran, najsigurnije je doći"
+    title: "Signs of a veterinary emergency and FAQs"
+    url: "https://www.sydney.edu.au/vet-hospital/emergency/signs-and-symptoms-faqs.html"
+    publisher: "The University of Sydney, University Veterinary Teaching Hospitals"
+    accessed_on: 2026-11-27
 ---
 Mačka bol skriva bolje od gotovo svake druge životinje, pa stara mačka koja pati često samo izgleda mirnije. Znakovi su u navikama: kako skače, kako se njeguje i kako koristi posudu za pijesak [1][3].
 
@@ -174,6 +179,8 @@ Ne čekaj redovan termin ako vidiš nešto od ovoga [11]:
 - ponavljano povraćanje ili proljev, sa ili bez krvi, ili sumnja na trovanje
 
 FelineVMA savjetuje da se veterinaru odmah javiš i kad primijetiš promjene iz popisa znakova boli: manje jela, skrivanje, manje kretanja i skakanja, manje njege, promjene u mokrenju ili stolici, žmirkanje ili zgrbljen položaj [6].
+
+Jaka bol ili uznemirenost sama je razlog za hitnu pomoć; veterinarska bolnica Sveučilišta u Sydneyju to navodi za pse i mačke [13]. Ako nisi siguran, ista bolnica savjetuje da je najsigurnije mačku dovesti [13].
 
 ## Česta pitanja
 

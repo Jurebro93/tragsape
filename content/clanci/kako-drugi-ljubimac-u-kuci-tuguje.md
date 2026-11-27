@@ -54,6 +54,11 @@ sources:
     url: "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/beyond-ownership/dog-grief"
     publisher: "Dogs Trust"
     accessed_on: 2026-11-27
+  - claim: "Hepatička lipidoza (masna jetra) gotovo uvijek nastupi uz anoreksiju ili nakon nje, kad mačka gotovo potpuno izbjegava hranu; ako se stanje ne preokrene na vrijeme, može biti smrtonosno; mačke se povlače, žute im koža ušiju i desni; liječenje je hranjenje odmah i liječenje uzroka bez odgađanja (dr. Sharon Center, DVM)"
+    title: "Hepatic Lipidosis (Cornell Feline Health Center)"
+    url: "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/hepatic-lipidosis"
+    publisher: "Cornell University College of Veterinary Medicine"
+    accessed_on: 2026-11-27
 ---
 Većina pasa i mačaka koje ostanu nakon smrti druge životinje u kući promijeni se: traže, više se drže uz tebe, manje jedu ili više spavaju. Promjene obično traju tjednima do nekoliko mjeseci, a nejedenje je jedina stvar koju ne treba čekati.
 
@@ -128,7 +133,7 @@ To ne znači da moraš skrivati tugu. Znači da se isplati brinuti i o sebi; o t
 Ne čekaj da „prođe samo" ako primijetiš nešto od ovoga:
 
 - [ ] **Mačka ne jede ili jede vrlo malo dan ili više.** Kod odrasle mačke odbijanje hrane može ozbiljno ugroziti zdravlje već nakon 24 sata [6], a Ohio State to naziva mogućim hitnim stanjem [3].
-- [ ] **Mačka koja nije jela, a sada povraća, slaba je, klonula ili joj koža i bjeloočnice žute.** To mogu biti znakovi masne jetre, koja prijeti mački što više dana ne jede [7].
+- [ ] **Mačka koja nije jela, a sada povraća, slaba je, klonula ili joj žute koža i desni.** To mogu biti znakovi masne jetre, koja prijeti mački što više dana ne jede [7]. Cornell piše da masna jetra gotovo uvijek dolazi uz odbijanje hrane i da može biti smrtonosna ako se ne liječi na vrijeme [10].
 - [ ] **Pas prestane jesti.** Javi se veterinaru što prije [3]; mali psi, kao i mačke, ne smiju preskakati obroke [4].
 - [ ] **Bilo koji znak bolesti.** Promjene se ne smiju pripisati samo emocijama [5], pogotovo kod starije životinje.
 - [ ] **Tučnjave ili prijetnje među životinjama koje su ostale.** Tada brzo potraži stručnu pomoć [3][4].

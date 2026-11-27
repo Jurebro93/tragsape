@@ -261,6 +261,7 @@ const privacy = {
             "Suradnici: e-mail adresa osobe koju pozoveš da uređuje spomen s tobom.",
             "Prijave sadržaja: razlog i opis prijave te, ako je ostaviš, e-mail adresa.",
             "Podsjetnici: datumi iz spomena (rođendan, dan udomljenja, godišnjica) i tvoj izbor podsjetnika.",
+            "Newsletter: e-mail adresa, stranica na kojoj si se prijavio, tekst privole koju si potvrdio i vremena prijave, potvrde i odjave. Prijava vrijedi tek kad je potvrdiš gumbom iz e-maila.",
             "Zaštita od zlouporabe: umjesto IP adrese spremamo njezin sažetak izračunat uz tajni dodatak koji se mijenja svaki dan. Iz sažetka se IP adresa ne može vratiti, a isti posjetitelj sljedeći dan ima drugi sažetak.",
             "Put do kupnje: bilježimo korake izrade (započet nacrt, pregled, naplata, plaćeno) i koja je naša stranica, primjerice članak, dovela do izrade. To je vezano uz nacrt ili narudžbu, bez identifikatora posjetitelja.",
             "Tehnički zapisi: pružatelji hostinga i baze mogu u svojim sigurnosnim zapisima kratkotrajno bilježiti IP adrese zahtjeva. [ROKOVI ČUVANJA TEHNIČKIH ZAPISA KOD PRUŽATELJA]",
@@ -276,7 +277,7 @@ const privacy = {
             "Izvršenje ugovora: vođenje računa, izrada i prikaz spomena, isporuka plaćenih paketa, gesta i poklona te slanje podsjetnika koje uključiš.",
             "Legitimni interes: zaštita od neželjenih poruka i zlouporabe, moderiranje i obrada prijava, sigurnost servisa te razumijevanje gdje ljudi u izradi zapinju, bez praćenja pojedinca.",
             "Zakonska obveza: izdavanje i čuvanje računa te odgovori nadležnim tijelima.",
-            "Privola: samo ondje gdje je izričito zatražimo. Možeš je povući u svakom trenutku.",
+            "Privola: samo ondje gdje je izričito zatražimo, primjerice za newsletter. Možeš je povući u svakom trenutku; za newsletter poveznicom za odjavu u svakom e-mailu.",
           ],
         },
         "[PRAVNE OSNOVE PO SVRHAMA: potvrditi s pravnikom]",
@@ -300,7 +301,7 @@ const privacy = {
             "baza podataka, prijava i pohrana fotografija, u Europskoj uniji (Frankfurt)",
             "hosting aplikacije, u Europskoj uniji (Frankfurt)",
             "plaćanje: Stripe",
-            "slanje e-mailova (prijava, obavijesti, podsjetnici, poklon)",
+            "slanje e-mailova (prijava, obavijesti, podsjetnici, poklon, newsletter)",
             "zaštita javnih obrazaca od automatiziranih prijava, ako je uključena",
             "AI usluge za tekst i slike, samo kad pokreneš AI pomoćnika ili izradu portreta",
           ],
@@ -323,6 +324,7 @@ const privacy = {
         {
           list: [
             "Račun i spomene čuvamo dok ih ne obrišeš.",
+            "E-mail adresu za newsletter čuvamo dok se ne odjaviš. Nepotvrđenu prijavu brišemo nakon [ROK BRISANJA NEPOTVRĐENIH PRIJAVA].",
             "Nakon brisanja podaci se uklanjaju iz servisa, a iz sigurnosnih kopija u roku od [ROK BRISANJA IZ SIGURNOSNIH KOPIJA].",
             "Nacrte započete bez e-mail adrese brišemo nakon [ROK BRISANJA NEDOVRŠENIH NACRTA].",
             "Podatke o narudžbama i račune čuvamo koliko propisi nalažu: [ZAKONSKI ROK ČUVANJA RAČUNA].",

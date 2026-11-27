@@ -5,11 +5,13 @@ import Markdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { ArticleCallout } from "@/components/content/article-callout";
 import { CtaBlock } from "@/components/content/cta-block";
+import { NewsletterCard } from "@/components/newsletter/newsletter-form";
 import { cn } from "@/lib/cn";
 import { isInternalPath } from "@/lib/content/attribution";
 import { isCalloutKind } from "@/lib/content/callouts";
 import { headingId } from "@/lib/content/headings";
 import { CALLOUT_ATTRIBUTE, CALLOUT_TITLE_ATTRIBUTE, remarkCallouts } from "@/lib/content/remark-callouts";
+import { NEWSLETTER_ATTRIBUTE, remarkNewsletter } from "@/lib/content/remark-newsletter";
 import { CTA_SLOT_ATTRIBUTE, remarkCtaSlots } from "@/lib/content/remark-cta-slots";
 import { CTA_SLOTS, isCtaSlot, type CtaBlockData, type CtaSlot } from "@/lib/content/types";
 import { content } from "@/messages/hr/content";
@@ -175,6 +177,9 @@ export function ArticleBody({
     },
     aside: ({ node: _node, children, ...props }) => {
       const attributes = props as Record<string, unknown>;
+      if (attributes[NEWSLETTER_ATTRIBUTE] === "1") {
+        return <NewsletterCard source={`clanak:${slug}`} />;
+      }
       const callout = attributes[CALLOUT_ATTRIBUTE];
       if (typeof callout === "string" && isCalloutKind(callout)) {
         const title = attributes[CALLOUT_TITLE_ATTRIBUTE];
@@ -193,7 +198,7 @@ export function ArticleBody({
     // Obični blok, ne flex: razmaci susjednih elemenata se tada stapaju umjesto da se zbrajaju.
     <div>
       <Markdown
-        remarkPlugins={[remarkGfm, remarkCallouts, [remarkCtaSlots, { slots }]]}
+        remarkPlugins={[remarkGfm, remarkCallouts, [remarkCtaSlots, { slots }], remarkNewsletter]}
         remarkRehypeOptions={{
           footnoteLabel: content.article.footnotes,
           footnoteLabelTagName: "h2",

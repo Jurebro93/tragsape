@@ -64,11 +64,21 @@ sources:
     url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_12_152_2373.html"
     publisher: "Narodne novine"
     accessed_on: 2026-11-26
-  - claim: "Izvorni tekst zakona (NN 94/2013): obveza obavješćivanja Ministarstva o uginuću primjerka u roku od 15 dana propisana je za primjerke koji su dio putujuće izložbe (članak 18. stavak 6.); potvrda za živog kralježnjaka izdaje se dok je primjerak živ (članak 10. stavak 2.)"
-    title: "Zakon o prekograničnom prometu i trgovini divljim vrstama (NN 94/2013)"
-    url: "https://www.zakon.hr/cms.htm?id=38731"
+  - claim: "Pročišćeni tekst (na snazi od 25. 6. 2022.): provodi uredbe (EZ) br. 338/97 i 865/2006 (čl. 1.); Ministarstvo je nadležno za provedbu (čl. 3.); obavijest o uginuću u 15 dana samo za primjerke iz putujuće izložbe (čl. 18. st. 6.); nacionalne potvrde iz čl. 9. odnose se na strogo zaštićene vrste iz Hrvatske"
+    title: "Zakon o prekograničnom prometu i trgovini divljim vrstama (NN 94/13, 14/19, 69/22), pročišćeni tekst"
+    url: "https://www.zakon.hr/z/659/Zakon-o-prekograni%C4%8Dnom-prometu-i-trgovini-divljim-vrstama"
     publisher: "Zakon.hr"
-    accessed_on: 2026-11-26
+    accessed_on: 2026-11-27
+  - claim: "Za komercijalno korištenje, premještaj i dokaz zakonitog podrijetla primjeraka iz Priloga A Uredbe (EZ) br. 338/97 izdaje se Europska potvrda; za Prilog B dokument se ne izdaje, ali vlasnik mora imati dokaz o podrijetlu (račun, obrazac od uzgajivača); potvrde izdaje Ministarstvo; prilog vrste provjerava se u bazi Species+"
+    title: "Prekogranični promet i trgovina divljim vrstama"
+    url: "https://mzozt.gov.hr/o-ministarstvu-1065/djelokrug/uprava-za-zastitu-prirode-1180/divlje-vrste-i-njihovo-koristenje/prekogranicni-promet-i-trgovina-divljim-vrstama/1255"
+    publisher: "Ministarstvo zaštite okoliša i zelene tranzicije, Uprava za zaštitu prirode"
+    accessed_on: 2026-11-27
+  - claim: "Članak 11. stavak 2. točka (a) i stavak 5.: potvrde iz članaka 47., 48., 49. i 63. (među njima potvrda za komercijalno korištenje primjeraka iz Priloga A) prestaju vrijediti kad živi primjerak ugine; dokumenti koji prestanu vrijediti vraćaju se bez nepotrebnog odgađanja upravnom tijelu koje ih je izdalo"
+    title: "Uredba Komisije (EZ) br. 865/2006, članak 11. (tekst EU-a u verziji od 27. 2. 2019.)"
+    url: "https://www.legislation.gov.uk/eur/2006/865/article/11/2019-02-27"
+    publisher: "legislation.gov.uk (The National Archives, UK)"
+    accessed_on: 2026-11-27
 ---
 Ako ti je uginuo kunić, hrčak ili papiga, danas trebaš tri stvari: provjeriti da je doista uginuo, umotati tijelo i položiti ga na hladno te odlučiti hoćeš li ga zakopati ili kremirati. Odjava u upisniku nije potrebna, jer se u njega upisuju samo psi, mačke i pitome vretice [11]. Odluka o ukopu ili kremiranju može pričekati do sutra.
 
@@ -142,9 +152,11 @@ Spomengaj u cjeniku ima i ukop u zemlju za ljubimce do 5 kg: 66,36 € za dvije 
 
 Ne, u Upisniku kućnih ljubimaca nema što odjaviti. Zakon o zdravlju životinja propisuje čipiranje i upis za pse, mačke i pitome vretice, a rok od sedam dana za prijavu uginuća odnosi se na te označene životinje [11]. Ako imaš i psa ili mačku, pravila su u članku [Što s čipom i putovnicom nakon smrti ljubimca](/vodic/sto-s-cipom-i-putovnicom-nakon-smrti-ljubimca).
 
-Kod papiga postoji jedna iznimka koju nismo mogli do kraja provjeriti. Neke vrste papiga zaštićene su propisima o trgovini divljim vrstama i uz njih ide potvrda. U izvornom tekstu tog zakona obvezu prijave uginuća našli smo samo za primjerke koji su dio putujuće izložbe, a potvrda za živu životinju izdaje se „dok god je primjerak živ” [12].
+Kod papiga postoji jedna iznimka: dokumenti po propisima o trgovini divljim vrstama (CITES). Za vrste iz Priloga A Uredbe (EZ) br. 338/97 ministarstvo izdaje Europsku potvrdu, a za vrste iz Priloga B dokument se ne izdaje, nego vlasnik mora imati dokaz o podrijetlu, primjerice račun ili obrazac od uzgajivača [13]. Na kojem je prilogu tvoja vrsta, ministarstvo upućuje na bazu Species+ [13].
 
-Kasnije izmjene zakona i druge propise o zaštićenim vrstama nismo pročitali. Ako tvoja papiga ima takvu potvrdu, pitaj ministarstvo nadležno za zaštitu prirode što s njom učiniti.
+Ako tvoja papiga ima Europsku potvrdu, ona uginućem prestaje vrijediti. Prema Uredbi Komisije (EZ) br. 865/2006, potvrda za živi primjerak prestaje vrijediti kad primjerak ugine, a nevažeći dokument vraća se bez nepotrebnog odgađanja tijelu koje ga je izdalo [14]. U Hrvatskoj potvrde izdaje Ministarstvo zaštite okoliša i zelene tranzicije, Uprava za zaštitu prirode [12][13].
+
+Posebnu prijavu uginuća u roku od 15 dana hrvatski zakon propisuje samo za primjerke koji su dio putujuće izložbe [12]. Za papigu iz Priloga B, za koju se potvrda ne izdaje, u propisima koje smo pročitali obveze prijave uginuća nema [12][13][14].
 
 ## Česta pitanja
 

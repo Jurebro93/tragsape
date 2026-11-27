@@ -92,7 +92,7 @@ sources:
     url: "https://narodne-novine.nn.hr/clanci/sluzbeni/2013_08_103_2321.html"
     publisher: "Narodne novine"
     accessed_on: 2026-11-27
-  - claim: "Najočitiji znak bolesti pulpe je slomljen zub s otvorenom pulpnom komorom ili kanalom; kod komplicirane frakture krune pulpa je izložena i bez hitnog liječenja odumire; terapija vitalne pulpe najuspješnija je što prije nakon ozljede, idealno unutar 24–48 sati; zubi s bolešću pulpe smatraju se bolnima dok je živac živ, a životinje nelagodu često ne pokazuju (Brenda L. Mulherin, DVM, DAVDC; potpuni pregled veljača 2024., ažurirano rujna 2024.)"
+  - claim: "Kod komplicirane frakture krune pulpa je izložena i bez hitnog liječenja odumire; terapija vitalne pulpe najuspješnija je što prije, idealno unutar 24–48 sati od ozljede; zubi s bolešću pulpe smatraju se bolnima dok je živac živ, a životinje nelagodu često ne pokazuju (Brenda L. Mulherin, DVM, DAVDC; pregled 2/2024., ažurirano 9/2024.)"
     title: "Endodontic Disease in Small Animals (stručna verzija)"
     url: "https://www.merckvetmanual.com/digestive-system/dentistry/endodontic-disease-in-small-animals"
     publisher: "Merck Veterinary Manual"

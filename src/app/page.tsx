@@ -24,6 +24,7 @@ import { common } from "@/messages/hr/common";
 import { livada } from "@/messages/hr/livada";
 import { marketing } from "@/messages/hr/marketing";
 import { getProducts, getSettings } from "@/server/catalog";
+import { NewsletterCard } from "@/components/newsletter/newsletter-form";
 
 const t = marketing.home;
 
@@ -294,6 +295,8 @@ export default async function HomePage() {
               </span>
             </Card>
           </div>
+
+          <NewsletterCard source="naslovnica" />
 
           <section
             aria-labelledby="zavrsni-title"

@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
+import { Suspense } from "react";
 import { Bricolage_Grotesque, DM_Sans, Fraunces, Newsreader } from "next/font/google";
 import { CookieNotice } from "@/components/cookie-notice";
+import { NewsletterPopup } from "@/components/newsletter/newsletter-popup";
 import { common } from "@/messages/hr/common";
 import "./globals.css";
 
@@ -63,6 +65,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="flex min-h-full flex-col">
         {children}
         <CookieNotice />
+        <Suspense fallback={null}>
+          <NewsletterPopup />
+        </Suspense>
       </body>
     </html>
   );
