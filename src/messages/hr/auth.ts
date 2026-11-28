@@ -31,6 +31,7 @@ export const auth = {
   },
   password: {
     title: "Prijava lozinkom",
+    link: "Imaš lozinku? Prijava lozinkom",
     intro: "Samo za račune kojima je lozinka postavljena ručno. Svi ostali se prijavljuju kodom iz e-maila.",
     emailLabel: "E-mail",
     passwordLabel: "Lozinka",

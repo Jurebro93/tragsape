@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Suspense } from "react";
 import { redirect } from "next/navigation";
 import { EmailCodeForm } from "@/components/auth/email-code-form";
@@ -24,6 +25,9 @@ async function SignIn({ searchParams }: Pick<PageProps<"/prijava">, "searchParam
         </p>
       ) : null}
       <EmailCodeForm next={next} />
+      <Link href="/prijava/lozinka" className="inline-flex min-h-11 items-center self-start text-[15px] font-bold text-teal underline underline-offset-4">
+        {auth.password.link}
+      </Link>
     </Card>
   );
 }

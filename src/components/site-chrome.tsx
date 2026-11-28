@@ -83,6 +83,7 @@ export function SiteFooter() {
     { href: "/uvjeti", label: common.footer.terms },
     { href: "/privatnost", label: common.footer.privacy },
     { href: "/kolacici", label: common.footer.cookies },
+    { href: "/prijava", label: common.footer.signIn },
   ];
   return (
     <footer className="mt-auto w-full bg-plum text-white">

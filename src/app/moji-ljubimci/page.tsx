@@ -26,11 +26,10 @@ async function MyMemorials() {
   const viewer = await requireMember("/moji-ljubimci");
   const [memorials, sharedMemorials] = await Promise.all([listMyMemorials(), listSharedMemorials()]);
   const supabase = await createSessionClient();
-  const { data: family } = await supabase
-    .from("families")
-    .select("slug, title, intro, is_public")
-    .eq("owner_id", viewer.id)
-    .maybeSingle();
+  const [{ data: family }, { data: isAdmin }] = await Promise.all([
+    supabase.from("families").select("slug, title, intro, is_public").eq("owner_id", viewer.id).maybeSingle(),
+    supabase.rpc("is_admin"),
+  ]);
   const hasPublished = memorials.some((memorial) => memorial.status === "published");
   return (
     <div className="flex flex-col gap-5">
@@ -139,6 +138,11 @@ async function MyMemorials() {
             </ButtonLink>
           ) : null}
         </Card>
+      ) : null}
+      {isAdmin === true ? (
+        <ButtonLink href="/admin" className="self-start">
+          {account.adminLink}
+        </ButtonLink>
       ) : null}
       <AccountLink />
       <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-plum-soft">

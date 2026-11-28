@@ -30,6 +30,7 @@ export const common = {
     privacy: "Privatnost",
     cookies: "Kolačići",
     contact: "Kontakt",
+    signIn: "Prijava",
   },
   actions: {
     save: "Spremi",

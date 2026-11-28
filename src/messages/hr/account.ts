@@ -33,6 +33,7 @@ export const account = {
   view: "Pogledaj spomen",
   newMemorial: "Izradi novi spomen",
   signedInAs: "Prijavljen si kao {email}.",
+  adminLink: "Otvori admin",
   manageTitle: "Upravljanje spomenom",
   backToList: "Svi moji ljubimci",
   sections: {
