@@ -7,27 +7,27 @@ seo_title: "Gastritis kod psa i mačke: znakovi i kada veterinaru"
 seo_description: "Gastritis kod psa i mačke: akutni i kronični oblik, uzroci, crna stolica i čir na želucu, zašto bez lijekova za ljude i kada odmah veterinaru."
 needs_vet_review: true
 sources:
-  - claim: "Gastritis je upala sluznice želuca; akutni obično prođe sam i traje kraće od 24 sata, pa uzrok često ostane neotkriven; kronični traje dugo i može biti vezan uz ozbiljniju bolest; uzroci (neprikladna hrana, smeće, lijekovi uključujući NSAID i kortikosteroide, otrovi, infekcije, paraziti, bolesti bubrega, jetre i gušterače, tumori, alergija na hranu, stres); znakovi; veterinaru što prije uz vrućicu, klonulost, bol, proljev, dehidraciju ili krv; odmah ako ne zadržava ni tekućinu; većina se oporavi za 1 do 3 dana uz potpornu skrb (C. Barnes, M. Weir, T. Hunter, E. Ward, DVM; ažurirano 15. 5. 2026.)"
+  - claim: "Gastritis je upala sluznice želuca; akutni obično prođe sam za manje od 24 sata, uzrok često ostane neotkriven; kronični može pratiti ozbiljniju bolest; uzroci (hrana, smeće, lijekovi, otrovi, infekcije, paraziti, bolesti organa, tumori); znakovi; veterinaru uz vrućicu, klonulost, bol ili krv, odmah ako ne zadržava tekućinu; oporavak za 1 do 3 dana (C. Barnes i sur., DVM; 15. 5. 2026.)"
     title: "Gastritis in Dogs"
     url: "https://vcahospitals.com/know-your-pet/gastritis-in-dogs"
     publisher: "VCA Animal Hospitals"
     accessed_on: 2026-11-28
-  - claim: "Gastritis je upala sluznice želuca; akutni obično traje kraće od 24 sata; uzroci uključuju neprikladnu hranu, lijekove, otrovne biljke, infekcije, parazite, bolesti organa, strana tijela, kuglice dlake, alergiju na hranu, stres i tumore; mačići i znatiželjne mačke skloniji su akutnom obliku; najčešći znakovi su slabiji tek i naglo povraćanje; odmah veterinaru ako ne zadržava ni tekućinu; većina se oporavi za 1 do 3 dana (C. Barnes, M. Weir, T. Hunter, E. Ward, DVM; ažurirano 15. 5. 2026.)"
+  - claim: "Gastritis je upala sluznice želuca; akutni obično traje kraće od 24 sata; uzroci uključuju hranu, lijekove, otrovne biljke, infekcije, parazite, bolesti organa, strana tijela, kuglice dlake, stres i tumore; mačići i znatiželjne mačke skloniji su akutnom obliku; slabiji tek i naglo povraćanje; odmah ako ne zadržava tekućinu; oporavak za 1 do 3 dana (C. Barnes i sur., DVM; 15. 5. 2026.)"
     title: "Gastritis in Cats"
     url: "https://vcahospitals.com/know-your-pet/gastritis-in-cats"
     publisher: "VCA Animal Hospitals"
     accessed_on: 2026-11-28
-  - claim: "Gastritis je naglo ili dugotrajno povraćanje uzrokovano upalom želuca; neki psi zbog boli u trbuhu zauzmu „molitveni” položaj; dijagnoza iz povijesti, pregleda i odgovora na liječenje, kod dugotrajnog i endoskopija s uzorkom tkiva; čir na želucu mogu izazvati NSAID (aspirin, ibuprofen) i kortikosteroidi; čir može biti bez znakova; tamna stolica obojena krvlju i blijede desni; liječenje obično 6 do 8 tjedana (A. Defarges, S. Blois, E. J. Hall, T. W. G. Gibson, K. D. Mitchell; ažurirano lipnja 2026.)"
+  - claim: "Gastritis je naglo ili dugotrajno povraćanje zbog upale želuca; neki psi zbog boli zauzmu „molitveni” položaj; dijagnoza iz povijesti, pregleda i odgovora na liječenje; čir mogu izazvati NSAID (aspirin, ibuprofen) i kortikosteroidi; čir može biti bez znakova; tamna stolica s krvlju i blijede desni; liječenje 6 do 8 tjedana (A. Defarges i sur.; lipanj 2026.)"
     title: "Disorders of the Stomach and Intestines in Dogs"
     url: "https://www.msdvetmanual.com/dog-owners/digestive-disorders-of-dogs/disorders-of-the-stomach-and-intestines-in-dogs"
     publisher: "MSD Veterinary Manual, Pet Owner Version"
     accessed_on: 2026-11-28
-  - claim: "Kod gastritisa mačke povraćeni sadržaj može sadržavati žuč, pjenu, svježu krv ili probavljenu krv nalik talogu kave; kronični oblik daje povraćanje s prekidima, katkad uz mršavljenje i dehidraciju; limfocitno-plazmacitni i eozinofilni gastritis mogu tražiti lijekove koji smiruju imunosni sustav; čirevi su kod mačaka rijetki, često uz tumore, mogu naglo i opasno krvariti; tamna katranasta stolica (ažurirano kolovoza 2025.)"
+  - claim: "Kod mačke povraćeno može sadržavati žuč, pjenu, svježu krv ili krv nalik talogu kave; kronični oblik daje povraćanje s prekidima, katkad uz mršavljenje; limfocitno-plazmacitni i eozinofilni gastritis mogu tražiti lijekove za imunosni sustav; čirevi su rijetki, mogu naglo opasno krvariti; tamna katranasta stolica (A. Defarges i sur.; kolovoz 2025.)"
     title: "Disorders of the Stomach and Intestines in Cats"
     url: "https://www.msdvetmanual.com/cat-owners/digestive-disorders-of-cats/disorders-of-the-stomach-and-intestines-in-cats"
     publisher: "MSD Veterinary Manual, Pet Owner Version"
     accessed_on: 2026-11-28
-  - claim: "Na kronični gastritis misli se kod povraćanja s prekidima ili stalnog dulje od 1 do 2 tjedna koje se ne objašnjava drugim uzrocima; najčešći znak je povremeno povraćanje hrane ili žuči; za sigurnu dijagnozu potrebna je biopsija; prije invazivnih pretraga preporučuje se probna hipoalergena prehrana; uloga bakterija Helicobacter u nastanku atrofičnog gastritisa nije poznata (Shauna Blois, DVM; ažurirano kolovoza 2025.)"
+  - claim: "Kronični gastritis: povraćanje s prekidima ili stalno dulje od 1 do 2 tjedna bez drugog objašnjenja; najčešći znak povremeno povraćanje hrane ili žuči; za sigurnu dijagnozu potrebna je biopsija; prije invazivnih pretraga probna hipoalergena prehrana; uloga bakterija Helicobacter u atrofičnom gastritisu nije poznata (Shauna Blois, DVM; kolovoz 2025.)"
     title: "Gastritis in Small Animals"
     url: "https://www.msdvetmanual.com/digestive-system/diseases-of-the-stomach-and-intestines-in-small-animals/gastritis-in-small-animals"
     publisher: "MSD Veterinary Manual, Professional Version"
