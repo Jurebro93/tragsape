@@ -7,17 +7,17 @@ seo_title: "Upala uha kod psa: znakovi, uzroci i liječenje"
 seo_description: "Znakovi upale uha kod psa, zašto se vraća, što veterinar radi na pregledu i koliko stoje otoskopija, bris i čišćenje uha u cjenicima ambulanti."
 needs_vet_review: true
 sources:
-  - claim: "Znakovi: tresenje glavom, neugodan miris, crvenilo, oteklina, češanje, iscjedak i ljuskanje; uho može boljeti ili svrbjeti, jedno ili oba; uzroci paraziti, strano tijelo, alergije, bakterije, kvasci; pregled otoskopom, po potrebi u sedaciji ili anesteziji; bris pod mikroskopom; veterinar čisti i suši uho, bolno uho često traži anesteziju; liječenje 2–4 tjedna uz kontrole, dugotrajni slučajevi mjesecima ili doživotno; bez štapića za uši i octa (Nick Roman, DVM; travanj 2026.)"
+  - claim: "Znakovi: tresenje glavom, miris, crvenilo, oteklina, češanje, iscjedak, ljuskanje; jedno ili oba uha; pregled otoskopom, po potrebi u sedaciji; bris pod mikroskopom; veterinar čisti i suši uho, bolno uho često traži anesteziju; liječenje 2–4 tjedna uz kontrole, dugotrajno mjesecima ili doživotno; bez štapića za uši i octa (Nick Roman, DVM; travanj 2026.)"
     title: "Ear Infections and Otitis Externa in Dogs"
     url: "https://www.merckvetmanual.com/dog-owners/ear-disorders-of-dogs/ear-infections-and-otitis-externa-in-dogs"
     publisher: "Merck Veterinary Manual"
     accessed_on: 2026-11-28
-  - claim: "Primarni uzroci (alergija, grinje, strano tijelo, endokrine bolesti), sekundarni (bakterije, Malassezia, reakcija na lijek, prečesto čišćenje), predisponirajući (građa uha, vlaga i plivanje, polipi i tumori) i čimbenici koji održavaju upalu (suženje zvukovoda, puknuće bubnjića, upala srednjeg uha); uzorak prije čišćenja; citologija svakih 1–2 tjedna; akutno 2–4 tjedna, kronično mjesecima; mnogi vlasnici prekinu liječenje prerano (Sarah Hoff, DVM, DACVD; rujan 2025., ažurirano travanj 2026.)"
+  - claim: "Primarni uzroci (alergija, grinje, strano tijelo, endokrine bolesti), sekundarni (bakterije, Malassezia, prečesto čišćenje), predisponirajući (građa uha, vlaga, polipi) i oni koji održavaju upalu (suženje, puknut bubnjić); uzorak prije čišćenja; citologija svakih 1–2 tjedna; vlasnici često prekinu prerano (Sarah Hoff, DVM, DACVD; ažurirano travanj 2026.)"
     title: "Otitis Externa in Animals (stručna verzija)"
     url: "https://www.merckvetmanual.com/ear-disorders/otitis-externa/otitis-externa-in-animals"
     publisher: "Merck Veterinary Manual"
     accessed_on: 2026-11-28
-  - claim: "Upala vanjskog zvukovoda jedna je od najčešćih infekcija pasa; skloniji su psi s velikim, visećim ili dlakavim ušima; iscjedak crn ili žućkast; alergije su uključene u do 43 % slučajeva; citologija je ključna za izbor lijeka; uz puknut bubnjić neki lijekovi mogu oštetiti sluh; veterinar mora utvrditi uzrok prije liječenja; kronično suženje može tražiti operaciju; gotovo sve dijagnosticirane i liječene upale mogu se uspješno riješiti (Malcolm Weir, DVM; Amy Panning, DVM; Ernest Ward, DVM; ažurirano 10. 4. 2026.)"
+  - claim: "Češće kod pasa s velikim, visećim ili dlakavim ušima; iscjedak crn ili žućkast; alergije u do 43 % slučajeva; citologija ključna za izbor lijeka; uz puknut bubnjić neki lijekovi oštećuju sluh; uzrok utvrđuje veterinar; kronično suženje može tražiti operaciju; liječene upale većinom se riješe (Malcolm Weir, DVM; Amy Panning, DVM; Ernest Ward, DVM; 10. 4. 2026.)"
     title: "Ear Infections in Dogs (Otitis Externa)"
     url: "https://vcahospitals.com/know-your-pet/ear-infections-in-dogs"
     publisher: "VCA Animal Hospitals"
