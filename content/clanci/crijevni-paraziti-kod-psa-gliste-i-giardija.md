@@ -7,7 +7,7 @@ seo_title: "Crijevni paraziti kod psa: gliste i giardija"
 seo_description: "Gliste i giardija kod psa: kako se pas zarazi, znakovi kod šteneta i odraslog psa, pretraga stolice, rizik za djecu i kada odmah veterinaru."
 needs_vet_review: true
 sources:
-  - claim: "Oblići: štenci se zaraze kroz posteljicu od oko 42. dana gravidnosti i mlijekom; jajašca postaju zarazna za oko dva tjedna i u okolišu žive godinama; odrasli rijetko imaju znakove; velik broj glista može začepiti crijevo; Dipylidium preko buha i uši, bijeli članci poput riže, svrbež; Echinococcus bez znakova, ozbiljna zoonoza, jajašca i na dlaci; najmanje 5–10 g stolice, negativan nalaz nije siguran; mjere higijene"
+  - claim: "Oblići: zaraza kroz posteljicu od oko 42. dana gravidnosti i mlijekom; jajašca zarazna za oko dva tjedna, žive godinama; odrasli rijetko imaju znakove; mnogo glista može začepiti crijevo; Dipylidium preko buha, članci poput riže, svrbež; Echinococcus bez znakova, teška zoonoza, jajašca i na dlaci; 5–10 g stolice, negativan nalaz nije siguran; higijena"
     title: "ESCCAP Guideline 01: Worm Control in Dogs and Cats, 7. izdanje (lipanj 2025.)"
     url: "https://www.esccap.org/uploads/docs/ag51r456_0778_ESCCAP_GL1__English_2026_v23.pdf"
     publisher: "European Scientific Counsel Companion Animal Parasites (ESCCAP)"
@@ -17,12 +17,12 @@ sources:
     url: "https://www.esccap.org/uploads/docs/82qb4jhx_1477_ESCCAP_GL6_Update_v3_1p.pdf"
     publisher: "European Scientific Counsel Companion Animal Parasites (ESCCAP)"
     accessed_on: 2026-11-28
-  - claim: "Oblići česti kod štenaca, ponekad smrtonosni; gliste u crijevu šteneta već tjedan dana nakon okota; zastoj u rastu, dlaka bez sjaja, napuhnut trbuh, gliste u povraćanju i stolici, kašalj, proljev sa sluzi; kukaste gliste: slabokrvnost kod štenaca često smrtonosna, i u dobi od 1–2 tjedna prije jajašaca u stolici, crna katranasta stolica; većina zaraženih ljudi bez simptoma, oko rijetko (Andrew S. Peregrine, BVMS, PhD, DVM; ažurirano svibanj 2026.)"
+  - claim: "Oblići: gliste u crijevu šteneta tjedan dana nakon okota; zastoj u rastu, dlaka bez sjaja, napuhnut trbuh, gliste u povraćanju i stolici, kašalj, proljev sa sluzi; kukaste gliste: slabokrvnost i smrt štenaca već s 1–2 tjedna, prije jajašaca u stolici, crna katranasta stolica; većina zaraženih ljudi bez simptoma (Andrew S. Peregrine, BVMS, PhD, DVM; ažurirano svibanj 2026.)"
     title: "Gastrointestinal Parasites of Dogs"
     url: "https://www.msdvetmanual.com/dog-owners/digestive-disorders-of-dogs/gastrointestinal-parasites-of-dogs"
     publisher: "MSD Veterinary Manual"
     accessed_on: 2026-11-28
-  - claim: "Kod giardioze psa stolica obično mekana, slabo oblikovana, blijeda, neugodna mirisa, sa sluzi i masna; vodenasti proljev neuobičajen, krv obično nije prisutna; liječenje cilja na prestanak znakova, ne nužno na prestanak izlučivanja cista; travnate površine smatrati onečišćenima najmanje mjesec dana; ciste ne podnose isušivanje (Lucy J. Robertson, PhD; recenzent Patrick Carney, DVM, PhD; svibanj 2026.)"
+  - claim: "Kod giardioze stolica obično mekana, blijeda, neugodna mirisa, sa sluzi i masna; vodenasti proljev neuobičajen, krv obično nije prisutna; liječenje cilja na prestanak znakova, ne nužno izlučivanja cista; travnjak smatrati onečišćenim najmanje mjesec dana (Lucy J. Robertson, PhD; recenzent Patrick Carney, DVM, PhD; svibanj 2026.)"
     title: "Giardiasis in Animals"
     url: "https://www.msdvetmanual.com/digestive-system/giardiasis-giardia/giardiasis-in-animals"
     publisher: "MSD Veterinary Manual"
@@ -48,7 +48,7 @@ sources:
     publisher: "Narodne novine"
     accessed_on: 2026-11-28
 ---
-Najčešći crijevni paraziti psa su oblići (askaridi, gliste roda Toxocara), kukaste gliste, vlasoglavci, trakavice i jednostanični parazit giardija [1][2]. Odrasli pas s njima često izgleda potpuno zdravo, a štene može ozbiljno oboljeti i prije nego što se jajašca pojave u stolici [1][3]. Zato se paraziti ne traže po izgledu psa, nego pretragom stolice i planom zaštite koji odredi veterinar [1].
+Najčešći crijevni paraziti psa su oblići (askaridi, gliste roda Toxocara), kukaste gliste, vlasoglavci, trakavice i jednostanični parazit giardija [1][2]. Odrasli pas s njima često izgleda potpuno zdravo, a štene može ozbiljno oboljeti i prije nego što se jajašca pojave u stolici [1][3]. Zato se paraziti traže pretragom stolice, a plan zaštite određuje veterinar [1].
 
 Ovaj tekst ne zamjenjuje veterinara. Ima li tvoj pas parazite i treba li ga liječiti, procjenjuje veterinar koji ga je pregledao, pa se obrati najbližoj veterinarskoj ambulanti.
 
@@ -77,7 +77,7 @@ Oblići se kod pasa nalaze u cijeloj Europi i ESCCAP ih, uz trakavice Echinococc
 
 Štene se oblićima najčešće zarazi od majke: ličinke prelaze kroz posteljicu otprilike od 42. dana gravidnosti, a kasnije i mlijekom [1]. Prema MSD-ovu veterinarskom priručniku gliste se u crijevu šteneta mogu naći već tjedan dana nakon okota [3].
 
-Odrasli pas guta jajašca iz zemlje i trave ili s krzna, lovi glodavce ili jede nedovoljno obrađeno meso [1]. Jajašca u toplom i vlažnom okolišu za otprilike dva tjedna postaju zarazna i ondje mogu preživjeti godinama [1].
+Odrasli pas guta jajašca iz zemlje ili s krzna, jede glodavce ili nedovoljno obrađeno, odnosno sirovo meso [1]. Jajašca u toplom i vlažnom okolišu za otprilike dva tjedna postaju zarazna i ondje mogu preživjeti godinama [1].
 
 Trakavicu Dipylidium pas dobije kad proguta zaraženu buhu ili uš, pa je zaštita od buha dio zaštite od te trakavice [1][3]. Trakavice roda Echinococcus pas dobiva jedući sirove iznutrice, lešine ili divlje glodavce [1].
 
@@ -86,7 +86,7 @@ Trakavicu Dipylidium pas dobije kad proguta zaraženu buhu ili uš, pa je zašti
 
 ## Kako prepoznati gliste kod psa?
 
-Kod odraslog psa zaraza oblićima vrlo rijetko daje znakove, pa se bez pretrage stolice ne može znati je li pas zaražen [1]. Kod šteneta je prvi znak često to što ne raste i gubi kondiciju: dlaka je bez sjaja, a trbuh napuhnut [3].
+Kod odraslog psa zaraza oblićima vrlo rijetko daje znakove, pa se bez pretrage stolice ne može znati je li pas zaražen [1]. Štene često ne raste i gubi kondiciju, dlaka mu je bez sjaja, a trbuh napuhnut [3].
 
 Gliste mogu izaći u stolici ili povraćanju, a štene može imati proljev sa sluzi i kašljati dok ličinke prolaze kroz pluća [3]. Velik broj oblića može začepiti crijevo [1].
 
@@ -94,7 +94,7 @@ Trakavica se najčešće primijeti kao bijeli članci dugi oko centimetar, u svj
 
 ## Što je giardija i je li opasna za psa?
 
-Giardija je jednostanični parazit tankog crijeva, a ne glista [2]. Pas se zarazi kad proguta ciste iz vode, hrane ili okoliša onečišćenog stolicom, a za zarazu je dovoljno svega nekoliko cista [2].
+Giardija je jednostanični parazit tankog crijeva, a ne glista [2]. Pas se zarazi kad proguta ciste iz vode, hrane ili okoliša onečišćenog stolicom, a dovoljno ih je svega nekoliko [2].
 
 Kod pasa zaraza često prolazi bez ikakvih znakova [2]. Kad ih ima, to je ponavljani kašasti proljev sa sluzi, slabiji tek, povraćanje, mršavljenje i klonulost, osobito kod štenaca, nakon odbića ili preseljenja u novi dom i kod oslabljenih pasa [2].
 
@@ -121,7 +121,7 @@ Ne nužno. ESCCAP savjetuje liječiti pse s probavnim tegobama i pozitivnim nala
 
 Cilj liječenja je smiriti proljev, a ne nužno potpuno ukloniti parazita, i pas se može ponovno zaraziti odmah nakon terapije [2][4]. Zato ESCCAP uz lijek savjetuje kupanje psa na početku i kraju liječenja, uklanjanje stolice, svakodnevno pranje zdjelica kipućom vodom te pranje i sušenje ležaja [2].
 
-Lijek i trajanje liječenja određuje veterinar. Travnjak na kojem je boravio zaraženi pas MSD savjetuje smatrati onečišćenim najmanje mjesec dana [4].
+Lijek i trajanje liječenja određuje veterinar, a travnjak na kojem je boravio zaraženi pas MSD savjetuje smatrati onečišćenim najmanje mjesec dana [4].
 
 ## Mogu li se djeca zaraziti od psa?
 
@@ -151,7 +151,7 @@ Javi se veterinaru isti dan, a noću ili vikendom dežurnoj ambulanti, ako primi
 
 ### Vide li se gliste uvijek u stolici?
 
-Ne. Odrasli pas s oblićima rijetko ima znakove, a jajašca se vide tek pod mikroskopom [1][3]. Članci trakavice ponekad se vide golim okom, ali članci trakavice Echinococcus premaleni su za to [1].
+Ne. Odrasli pas s oblićima rijetko ima znakove, a jajašca se vide tek pod mikroskopom [1][3]. Članci nekih trakavica vide se golim okom, ali Echinococcus je premalen za to [1].
 
 ### Može li štene imati gliste iako je majka tretirana?
 
@@ -169,10 +169,6 @@ Ovisi o načinu života psa: ESCCAP navodi raspon od jednom ili dva puta do dvan
 
 Jest. Prema Naredbi iz NN 1/2023 svaki pas mora biti tretiran protiv trakavice Echinococcus pri cijepljenju protiv bjesnoće [8]; kada je koje cijepljenje, piše u [Kalendar cijepljenja psa po dobi](/vodic/kalendar-cijepljenja-psa-po-dobi).
 
-### Može li pas dobiti parazite iz sirove hrane?
-
-Može. Sirovim mesom i iznutricama prenose se trakavice, oblići i neki jednostanični paraziti, pa ESCCAP savjetuje meso zamrznuti tjedan dana na −17 do −20 °C ili ga zagrijati na 65 °C u sredini 10 minuta [1].
-
 ## Sljedeći korak
 
-Ako sumnjaš na parazite, skupi svježi uzorak stolice i naruči psa na pregled; veterinaru reci što pas jede, lovi li i ima li u kući male djece. Plan redovite zaštite prema načinu života psa opisan je u članku [Koliko često čistiti psa od glista](/vodic/koliko-cesto-cistiti-psa-od-glista), a ostali tekstovi o zdravlju su u [Vodiču o zdravlju](/vodic/tema/zdravlje).
+Ako sumnjaš na parazite, skupi svježi uzorak stolice i naruči psa na pregled; reci veterinaru što pas jede i ima li u kući male djece. Plan redovite zaštite prema načinu života psa opisan je u članku [Koliko često čistiti psa od glista](/vodic/koliko-cesto-cistiti-psa-od-glista), a ostali tekstovi o zdravlju su u [Vodiču o zdravlju](/vodic/tema/zdravlje).
