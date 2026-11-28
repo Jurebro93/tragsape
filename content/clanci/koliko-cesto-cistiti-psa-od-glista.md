@@ -27,7 +27,7 @@ sources:
     url: "https://www.zakon.hr/c/podzakonski-propis/671194/naredba-o-provedbi-i-financiranju-mjera-sprjecavanja%2C-kontrole-i-nadziranja-bolesti-zivotinja-na-podrucju-republike-hrvatske--"
     publisher: "Zakon.hr (prijepis iz Narodnih novina)"
     accessed_on: 2026-11-28
-  - claim: "Giardija je jednostanični parazit sa zasebnim smjernicama; liječe se psi s probavnim tegobama i pozitivnim nalazom, a pas bez znakova općenito ne bez procjene rizika; kombinirani pripravak protiv glista nema giardiju u odobrenoj indikaciji"
+  - claim: "Giardija je jednostanični parazit sa zasebnim smjernicama; liječe se psi s probavnim tegobama i pozitivnim nalazom"
     title: "ESCCAP Guideline 06: Control of Intestinal Protozoa in Dogs and Cats, 3. izdanje (ožujak 2025.)"
     url: "https://www.esccap.org/uploads/docs/82qb4jhx_1477_ESCCAP_GL6_Update_v3_1p.pdf"
     publisher: "European Scientific Counsel Companion Animal Parasites (ESCCAP)"
