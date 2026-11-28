@@ -876,6 +876,7 @@ describe("povezani članci", () => {
       title: id,
       excerpt: null,
       publishedAt: null,
+      animals: [],
     });
     const all = [
       summary("a", "tugovanje"),

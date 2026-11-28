@@ -90,6 +90,7 @@ export type Database = {
       }
       articles: {
         Row: {
+          animals: string[]
           body_md: string
           cluster: string
           created_at: string
@@ -109,6 +110,7 @@ export type Database = {
           vet_reviewed_by: string | null
         }
         Insert: {
+          animals?: string[]
           body_md?: string
           cluster: string
           created_at?: string
@@ -128,6 +130,7 @@ export type Database = {
           vet_reviewed_by?: string | null
         }
         Update: {
+          animals?: string[]
           body_md?: string
           cluster?: string
           created_at?: string

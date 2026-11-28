@@ -1,6 +1,7 @@
 ---
 slug: poruka-sucuti-za-macku-30-primjera
 cluster: tugovanje
+animals: macka
 title: "Poruka sućuti za mačku: 30 primjera"
 excerpt: "Trideset poruka sućuti koje možeš poslati kad nekome ugine mačka: prijatelju, članu obitelji, kolegi, kao kratku poruku, u kartici i kad je mačka nestala. Uz njih, što ne pisati i zašto, te po čemu se poruka za mačku razlikuje od one za psa."
 seo_title: "Poruka sućuti za mačku: 30 primjera koje možeš poslati"

@@ -1,6 +1,7 @@
 ---
 slug: zastita-od-krpelja-i-buha-ampule-ogrlice-tablete
 cluster: zdravlje
+animals: pas, macka
 title: "Zaštita od krpelja i buha: ampule, ogrlice, tablete"
 excerpt: "Ampule, ogrlice i tablete štite od krpelja i buha na različit način: neke odbijaju krpelja prije uboda, a tablete djeluju tek kad parazit počne sisati. Usporedba prednosti i ograničenja prema ESCCAP-u, Cornellu, VCA-u i iCatCareu, zašto buhe ne nestaju nakon jedne ampule i zašto pripravci za pse s permetrinom ne smiju na mačku."
 seo_title: "Ampula, ogrlica ili tableta protiv krpelja i buha"

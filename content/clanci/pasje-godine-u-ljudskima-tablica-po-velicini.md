@@ -1,6 +1,7 @@
 ---
 slug: pasje-godine-u-ljudskima-tablica-po-velicini
 cluster: zdravlje
+animals: pas
 title: "Pasje godine u ljudskima: tablica po veličini"
 excerpt: "Zašto pravilo „jedna pseća godina je sedam ljudskih” ne vrijedi, tablica Američkoga kinološkog saveza (AKC) po veličini psa, kada je pas senior prema AVMA-i i AAHA-i te što o pasjoj dobi kaže istraživanje epigenetskog sata, uz njegova ograničenja."
 seo_title: "Pasje godine u ljudskima: tablica po veličini psa"

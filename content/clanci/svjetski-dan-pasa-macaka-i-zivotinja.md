@@ -1,6 +1,7 @@
 ---
 slug: svjetski-dan-pasa-macaka-i-zivotinja
 cluster: prigodni-datumi
+animals: pas, macka
 title: "Svjetski dan pasa, mačaka i životinja: datumi, podrijetlo i kako se toga dana sjetiti ljubimca"
 excerpt: "Svjetski dan životinja je 4. listopada, dan pasa 26. kolovoza, a Međunarodni dan mačaka 8. kolovoza. Tko je pokrenuo koji dan i nekoliko tihih načina da se tih datuma sjetiš ljubimca kojeg više nema."
 seo_title: "Svjetski dan pasa, mačaka i životinja: datumi"

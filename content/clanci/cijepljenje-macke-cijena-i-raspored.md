@@ -1,6 +1,7 @@
 ---
 slug: cijepljenje-macke-cijena-i-raspored
 cluster: zdravlje
+animals: macka
 title: "Cijepljenje mačke: cijena i raspored"
 excerpt: "Za mačku u Hrvatskoj nijedno cjepivo nije obvezno, osim kad putuje u drugu državu: tada treba čip i cjepivo protiv bjesnoće. Koja su cjepiva osnovna i dodatna, okvirni raspored prema smjernicama WSAVA-e (2024.) i AAHA/AAFP-a (2020.) i cijene iz devet objavljenih cjenika."
 seo_title: "Cijepljenje mačke: cijena i raspored (2026.)"

@@ -1,6 +1,7 @@
 ---
 slug: kalendar-cijepljenja-psa-po-dobi
 cluster: zdravlje
+animals: pas
 title: "Kalendar cijepljenja psa po dobi"
 excerpt: "Od prvog cijepljenja sa 6 do 8 tjedana, preko obvezne bjesnoće od 90. dana, do odraslog i starog psa: što se prema smjernicama WSAVA-e iz 2024. i hrvatskoj Naredbi radi u kojoj dobi, što ako doza kasni i kako izgleda raspored za odraslog psa bez knjižice."
 seo_title: "Kalendar cijepljenja psa po dobi (tablica)"

@@ -1,6 +1,7 @@
 ---
 slug: koliko-kosta-sterilizacija-kuje-i-kastracija-psa
 cluster: zdravlje
+animals: pas
 title: "Koliko košta sterilizacija kuje i kastracija psa"
 excerpt: "Cijene sterilizacije kuje i kastracije psa iz šest objavljenih cjenika u Zagrebu, Osijeku, Đakovu i Svetom Ivanu Zelini, po težini psa. Što se uz zahvat plaća posebno, kako izgledaju stvarni računi, što kažu veterinarske udruge o zahvatu i oporavku te koji gradovi sufinanciraju zahvat."
 seo_title: "Sterilizacija kuje i kastracija psa: cijene 2026."

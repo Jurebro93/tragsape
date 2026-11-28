@@ -1,6 +1,7 @@
 ---
 slug: gastritis-kod-psa-i-macke
 cluster: zdravlje
+animals: pas, macka
 title: "Gastritis kod psa i mačke"
 excerpt: "Gastritis je upala sluznice želuca. Nagli gastritis kod psa i mačke često prođe za dan do tri, ali krv u povraćenom, crna stolica, klonulost ili povraćanje i same vode traže veterinara odmah. Razlika akutnog i kroničnog oblika, uzroci, čir na želucu i zašto lijekovi za ljude nisu rješenje, prema VCA-i i MSD priručniku."
 seo_title: "Gastritis kod psa i mačke: znakovi i kada veterinaru"

@@ -1,6 +1,7 @@
 ---
 slug: uginuo-mi-je-pas-sto-sada
 cluster: nakon-smrti
+animals: pas
 title: "Uginuo mi je pas: što sada, korak po korak"
 excerpt: "Redoslijed za dan kad pas ugine kod kuće: kako provjeriti i zbrinuti tijelo, koliko može čekati, koga nazvati, što stoji kremiranje i zbrinjavanje prema objavljenim cjenicima te kako u roku od sedam dana odjaviti psa."
 seo_title: "Uginuo mi je pas: što sada, korak po korak"

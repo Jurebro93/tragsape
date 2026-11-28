@@ -1,6 +1,7 @@
 ---
 slug: proljev-kod-psa-sto-uciniti
 cluster: zdravlje
+animals: pas
 title: "Proljev kod psa: što učiniti"
 excerpt: "Kratkotrajan proljev kod odraslog psa koji je inače živahan često prođe za dan ili dva, ali krv, crna stolica, povraćanje, klonulost i štene traže veterinara odmah. Česti uzroci prema veterinarskim izvorima, što izgled stolice govori, zašto ne davati lijekove za ljude i što ponijeti na pregled."
 seo_title: "Proljev kod psa: što učiniti i kada veterinaru"

@@ -1,6 +1,7 @@
 ---
 slug: ciscenje-zubnog-kamenca-kod-psa-cijena
 cluster: zdravlje
+animals: pas
 title: "Čišćenje zubnog kamenca kod psa: cijena"
 excerpt: "Koliko u Hrvatskoj stoji čišćenje zubnog kamenca kod psa, zajedno s anestezijom, vađenjem zuba i rendgenom zubi, prema sedam objavljenih cjenika. Uz to: zašto se zahvat radi u općoj anesteziji, što o čišćenju bez anestezije kažu AVDC, WSAVA i AAHA i što dogovoriti prije zahvata."
 seo_title: "Čišćenje zubnog kamenca kod psa: cijena (2026.)"

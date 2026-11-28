@@ -1,6 +1,7 @@
 ---
 slug: buhe-kod-psa-kako-ih-se-rijesiti
 cluster: zdravlje
+animals: pas
 title: "Buhe kod psa: kako ih se riješiti"
 excerpt: "Buhe na psu samo su mali dio problema: jaja, ličinke i kukuljice žive u stanu, ležaju i tepisima. Zato pripravak koji preporuči veterinar dobivaju sve životinje u kući istodobno, a okoliš se usisava i pere. Kako izgleda životni ciklus buhe, koliko traje rješavanje i kada odmah veterinaru, prema ESCCAP-u, MSD-u i VCA."
 seo_title: "Buhe kod psa: kako ih se riješiti na psu i u stanu"

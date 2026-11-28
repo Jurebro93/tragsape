@@ -1,6 +1,7 @@
 ---
 slug: crijevni-paraziti-kod-macke
 cluster: zdravlje
+animals: macka
 title: "Crijevni paraziti kod mačke"
 excerpt: "Mačka dobije crijevne parazite iz okoliša, lovom, gutanjem buha, a mačić preko majčina mlijeka. Koje parazite ima, po čemu ih prepoznati, koliko često je tretirati ili pretražiti stolicu prema ESCCAP-ovoj procjeni rizika i što vrijedi za djecu i trudnice, prema ESCCAP-u, MSD priručniku, VCA-i i Cornellu."
 seo_title: "Crijevni paraziti kod mačke: znakovi i koliko često"

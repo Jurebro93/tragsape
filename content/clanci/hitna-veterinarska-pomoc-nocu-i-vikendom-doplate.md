@@ -1,6 +1,7 @@
 ---
 slug: hitna-veterinarska-pomoc-nocu-i-vikendom-doplate
 cluster: zdravlje
+animals: pas, macka
 title: "Hitna veterinarska pomoć noću i vikendom: doplate"
 excerpt: "Koliko se doplaćuje veterinar noću, nedjeljom i blagdanom te izlazak na teren, prema sedam objavljenih cjenika iz Zagreba, Osijeka, Svetog Ivana Zeline, Splita, Rijeke i Koprivnice. Uz to: koje ustanove na svojim stranicama navode prijem 0–24, što propisi kažu o dežurstvu i kada se ne čeka jutro."
 seo_title: "Hitni veterinar noću i vikendom: doplate (2026.)"

@@ -8,6 +8,7 @@ import { CtaBlock } from "@/components/content/cta-block";
 import { ArrowRightIcon, CheckIcon } from "@/components/icons";
 import { Eyebrow } from "@/components/ui/card";
 import { extractHeadings, type ArticleHeading } from "@/lib/content/headings";
+import { hubPath, hubsForArticle } from "@/lib/content/hubs";
 import type { ArticleSummary, ArticleView as ArticleViewData } from "@/lib/content/types";
 import { formatDateTime, formatPetDate } from "@/lib/format";
 import { fill } from "@/lib/text";
@@ -97,6 +98,26 @@ function Related({ articles }: { articles: readonly ArticleSummary[] }) {
           </li>
         ))}
       </ul>
+    </nav>
+  );
+}
+
+/** Poveznica na stranicu zdravlja pasa ili mačaka na dnu zdravstvenih članaka. */
+function HubLinks({ article }: { article: ArticleViewData }) {
+  const hubs = hubsForArticle(article);
+  if (hubs.length === 0) return null;
+  return (
+    <nav aria-label={content.guide.hubs.tileTitle} className="flex flex-wrap gap-2">
+      {hubs.map((hub) => (
+        <Link
+          key={hub}
+          href={hubPath(hub) as Route}
+          className="inline-flex min-h-12 items-center gap-2 rounded-full bg-mint px-5 font-bold text-teal-deep no-underline hover:bg-butter"
+        >
+          {fill(content.guide.hubs.linkFromArticle, { title: content.guide.hubs.pages[hub].title })}
+          <ArrowRightIcon size={18} />
+        </Link>
+      ))}
     </nav>
   );
 }
@@ -199,6 +220,7 @@ export function ArticleView({
         <CtaBlock block={article.cta.end} articleSlug={article.slug} id="sekcija-end" />
       ) : null}
 
+      <HubLinks article={article} />
       <Related articles={related} />
       <More />
       <Sources sources={article.sources} />

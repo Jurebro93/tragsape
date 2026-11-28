@@ -1,6 +1,7 @@
 ---
 slug: svrbez-i-kronicne-upale-koze-kod-psa
 cluster: zdravlje
+animals: pas
 title: "Svrbež i kronične upale kože kod psa"
 excerpt: "Zašto se pas stalno češe, liže šape ili ima upale kože koje se vraćaju: buhe, šuga, atopijski dermatitis, alergija na hranu i bakterijske infekcije prema veterinarskim izvorima. Kako veterinar traži uzrok, što pokazuju, a što ne pokazuju alergijski testovi, kako izgleda eliminacijska dijeta i koliko stoje dermatološki pregled i pretrage u objavljenim cjenicima."
 seo_title: "Svrbež i kronične upale kože kod psa: uzroci i pregled"

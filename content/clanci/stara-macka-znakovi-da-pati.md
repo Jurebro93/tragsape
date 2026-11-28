@@ -1,6 +1,7 @@
 ---
 slug: stara-macka-znakovi-da-pati
 cluster: kraj-zivota
+animals: macka
 title: "Stara mačka: znakovi da pati"
 excerpt: "Mačke bol skrivaju, pa stara mačka koja pati često samo izgleda mirnije. Znakovi su u navikama: kako skače, kako se njeguje i kako koristi posudu za pijesak. Što opisuju iCatCare, FelineVMA, AAFP i Cornell, kako se koristi Feline Grimace Scale i kada odmah veterinaru."
 seo_title: "Stara mačka: znakovi da pati i kada veterinaru"

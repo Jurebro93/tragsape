@@ -1,6 +1,7 @@
 ---
 slug: poruka-sucuti-za-psa
 cluster: tugovanje
+animals: pas
 title: "Poruka sućuti za psa: 30 primjera za prijatelja, obitelj i kolegu"
 excerpt: "Trideset kratkih poruka sućuti koje možeš poslati kad nekome ugine pas: bliskom prijatelju, članu obitelji, kolegi, djetetu, nakon uspavljivanja i za SMS. Uz njih, što prema savjetnicima za gubitak ljubimca izostaviti, kada pisati i što učiniti osim poruke."
 seo_title: "Poruka sućuti za psa: 30 primjera koje možeš poslati"

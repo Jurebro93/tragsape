@@ -1,6 +1,7 @@
 ---
 slug: bolesti-zubi-i-desni-kod-pasa-i-macaka
 cluster: zdravlje
+animals: pas, macka
 title: "Bolesti zubi i desni kod pasa i mačaka"
 excerpt: "Bolest desni najčešća je bolest pasa i vrlo česta kod mačaka, a životinje bol u ustima dugo skrivaju. Kako bolest nastaje od plaka do parodontitisa, po čemu je prepoznati, što su resorptivne lezije i stomatitis kod mačaka, slomljeni i zaostali mliječni zubi kod pasa i što stvarno pomaže kod kuće, prema MSD/Merck priručniku, Cornellu, iCatCare, VCA-i i VOHC-u."
 seo_title: "Bolesti zubi i desni kod pasa i mačaka: znakovi"

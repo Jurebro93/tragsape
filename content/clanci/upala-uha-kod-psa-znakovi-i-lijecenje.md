@@ -1,6 +1,7 @@
 ---
 slug: upala-uha-kod-psa-znakovi-i-lijecenje
 cluster: zdravlje
+animals: pas
 title: "Upala uha kod psa: znakovi i liječenje"
 excerpt: "Kako prepoznati upalu uha kod psa, zašto se tako često vraća i što veterinar radi na pregledu: otoskopija, bris pod mikroskopom, čišćenje u ordinaciji i potraga za uzrokom. Uz to: kada je upala zahvatila srednje ili unutarnje uho i koliko stoje pregled, citologija i čišćenje uha u šest objavljenih cjenika."
 seo_title: "Upala uha kod psa: znakovi, uzroci i liječenje"

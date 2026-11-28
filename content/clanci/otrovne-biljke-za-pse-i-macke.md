@@ -1,6 +1,7 @@
 ---
 slug: otrovne-biljke-za-pse-i-macke
 cluster: zdravlje
+animals: pas, macka
 title: "Otrovne biljke za pse i mačke"
 excerpt: "Za mačke su najopasniji pravi i dnevni ljiljani: i pelud ili voda iz vaze mogu izazvati zatajenje bubrega. Za pse i mačke opasni su i oleandar, sagova palma, đurđica, tisa i azaleja, dok mnoge sobne biljke samo nadražuju usta. Popis s glavnim znakovima prema ASPCA-i, MSD Veterinary Manualu, VCA-u, Cornellu i Pet Poison Helplineu."
 seo_title: "Otrovne biljke za pse i mačke: popis i znakovi"

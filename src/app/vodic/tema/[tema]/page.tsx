@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArticleCard, CLUSTER_ART, TopicTiles, topicPath } from "@/components/content/article-card";
+import { HubTiles } from "@/components/content/hub-page";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { cn } from "@/lib/cn";
 import { CLUSTERS, isCluster, type Cluster } from "@/lib/content/types";
@@ -98,6 +99,7 @@ export default async function TopicPage({ params }: PageProps<"/vodic/tema/[tema
             ))}
           </ul>
         )}
+        {tema === "zdravlje" || tema === "kraj-zivota" ? <HubTiles articles={articles} /> : null}
         <section aria-labelledby="ostale-teme" className="flex flex-col gap-4">
           <h2 id="ostale-teme" className="font-display text-2xl font-extrabold">
             {t.topic.otherTopics}

@@ -1,6 +1,7 @@
 ---
 slug: zatvor-kod-psa-i-macke
 cluster: zdravlje
+animals: pas, macka
 title: "Zatvor kod psa i mačke"
 excerpt: "Pas ili mačka bez stolice 48 do 72 sata treba veterinara. Mačak koji se napinje u pijesku možda uopće nema zatvor nego začepljen mokraćni sustav, a to je hitno stanje. Uzroci zatvora, po čemu ga razlikovati od začepljenja, zašto ne davati laksative i klistir iz ljekarne i kada odmah veterinaru, prema VCA-i, Cornellu i MSD priručniku."
 seo_title: "Zatvor kod psa i mačke: uzroci i kada veterinaru"

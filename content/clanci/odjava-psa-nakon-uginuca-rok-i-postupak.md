@@ -1,6 +1,7 @@
 ---
 slug: odjava-psa-nakon-uginuca-rok-i-postupak
 cluster: nakon-smrti
+animals: pas
 title: "Odjava psa nakon uginuća: rok i postupak"
 excerpt: "Uginuće čipiranog psa prijavljuje se u roku od sedam dana. Što točno traži Zakon o zdravlju životinja, gdje se odjava obavlja, što ponijeti, koliko stoji u objavljenim cjenicima veterinara i kolika je kazna ako se rok propusti."
 seo_title: "Odjava psa nakon uginuća: rok od 7 dana i postupak"

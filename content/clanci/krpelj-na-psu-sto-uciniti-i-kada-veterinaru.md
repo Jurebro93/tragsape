@@ -1,6 +1,7 @@
 ---
 slug: krpelj-na-psu-sto-uciniti-i-kada-veterinaru
 cluster: zdravlje
+animals: pas
 title: "Krpelj na psu: što učiniti i kada veterinaru"
 excerpt: "Krpelja na psu ukloni što prije: pincetom ili alatom za krpelje, uz kožu, ravnim i polaganim potezom, bez ulja, alkohola i vrućine. Koje bolesti krpelji prenose psima u Hrvatskoj, koliko brzo i po kojim znakovima u tjednima nakon uboda znaš da treba odmah veterinaru."
 seo_title: "Krpelj na psu: kako ga ukloniti i kada veterinaru"

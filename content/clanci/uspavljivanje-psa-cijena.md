@@ -1,6 +1,7 @@
 ---
 slug: uspavljivanje-psa-cijena
 cluster: kraj-zivota
+animals: pas
 title: "Uspavljivanje psa: cijena, postupak i što slijedi nakon toga"
 excerpt: "Koliko košta uspavljivanje (eutanazija) psa u Hrvatskoj, od čega se račun sastoji i kako postupak izgleda. Cijene prenosimo iz javno objavljenih cjenika veterinarskih ambulanti, s datumom kad smo ih pročitali."
 seo_title: "Uspavljivanje psa: cijena i postupak (2026.)"

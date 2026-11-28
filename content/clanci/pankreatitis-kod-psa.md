@@ -1,6 +1,7 @@
 ---
 slug: pankreatitis-kod-psa
 cluster: zdravlje
+animals: pas
 title: "Pankreatitis kod psa"
 excerpt: "Pankreatitis je upala gušterače u kojoj probavni enzimi počnu razgrađivati sam organ. Pas povraća, ne jede, bezvoljan je i boli ga trbuh, a teški oblik može završiti šokom. Znakovi, okidači poput masnog obroka, kako se postavlja dijagnoza, liječenje, cijene pretraga u Hrvatskoj i prehrana poslije."
 seo_title: "Pankreatitis kod psa: znakovi, liječenje i prehrana"

@@ -1,6 +1,7 @@
 ---
 slug: spomen-za-psa-ideje
 cluster: tugovanje
+animals: pas
 title: "Kako napraviti spomen za psa: ideje koje traju"
 excerpt: "Spomen za psa ne mora biti ni skup ni velik. Ovdje je osam načina, od ogrlice u okviru do stabla i spomen-stranice, uz poštenu procjenu koliko truda traže, koliko traju i može li u njima sudjelovati cijela obitelj."
 seo_title: "Spomen za psa: 8 ideja koje traju i koliko truda traže"

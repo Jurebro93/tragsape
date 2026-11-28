@@ -12,6 +12,7 @@ Ovo je zajednički zadatak za svakog pisca koji dobije dvije teme. Pravila pisan
 ## Pisanje
 
 - Datoteka je točno `content/clanci/{slug}.md`, a `slug`, `cluster` i naslov su zadani.
+- Odmah ispod `cluster` dodaj `animals:` s životinjama na koje se članak odnosi, odvojenima zarezom: `pas`, `macka`, `kunic`, `ptica`, `ostalo` (npr. `animals: pas, macka`). Ako je članak za sve ljubimce jednako, polje izostavi. Po tome članak ulazi na stranice „Zdravstveni problemi kod pasa” i „… kod mačaka”.
 - Hrvatski, obraćanje s „ti", mirno i konkretno, bez patetike i lažne utjehe.
 - Svaka cijena, propis i činjenična tvrdnja ima izvor u `sources` s današnjim `accessed_on` i URL-om stranice koju si stvarno otvorio. Što ne možeš potvrditi, izostavi ili reci da podatka nema. Ništa se ne izmišlja: ni tvrtke, ni partneri, ni azili, ni brojke.
 - Cijene samo iz javno objavljenih cjenika, uz naziv ustanove i datum cjenika. Za usporedbu cijena traže se najmanje tri cjenika iz različitih mjesta ako postoje.

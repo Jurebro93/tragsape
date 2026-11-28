@@ -1,6 +1,7 @@
 ---
 slug: buhe-kod-macke-kako-ih-se-rijesiti
 cluster: zdravlje
+animals: macka
 title: "Buhe kod mačke: kako ih se riješiti"
 excerpt: "Buhe kod mačke rješavaš pripravkom odobrenim za mačke koji preporuči veterinar, istodobnim liječenjem svih životinja u kući i čišćenjem stana, jer jaja i kukuljice žive u okolini. Pripravak za pse mački nikad ne stavljaj: neki sadrže permetrin, koji je za nju otrovan. Što kažu ESCCAP, MSD, Cornell i iCatCare i kada odmah veterinaru."
 seo_title: "Buhe kod mačke: kako ih se riješiti bez opasnosti"

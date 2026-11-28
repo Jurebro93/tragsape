@@ -1,6 +1,7 @@
 ---
 slug: znakovi-da-pas-umire
 cluster: kraj-zivota
+animals: pas
 title: "Znakovi da pas umire: što veterinari opisuju i kada odmah zvati"
 excerpt: "Promjene koje veterinarski izvori opisuju kod pasa na kraju života, stanja koja izgledaju slično, a liječe se, znakovi zbog kojih treba odmah zvati veterinara i načini da psu olakšaš posljednje dane."
 seo_title: "Znakovi da pas umire i što tada učiniti"

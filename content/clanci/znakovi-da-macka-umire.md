@@ -1,6 +1,7 @@
 ---
 slug: znakovi-da-macka-umire
 cluster: kraj-zivota
+animals: macka
 title: "Znakovi da mačka umire: što vidjeti kod životinje koja skriva bolest"
 excerpt: "Mačke bol i bolest skrivaju dugo, pa su znakovi kraja života često tihi: skrivanje, zapuštena dlaka, manje jela. Što opisuju veterinarski izvori, što se od toga liječi i kada treba odmah zvati veterinara."
 seo_title: "Znakovi da mačka umire i što tada učiniti"

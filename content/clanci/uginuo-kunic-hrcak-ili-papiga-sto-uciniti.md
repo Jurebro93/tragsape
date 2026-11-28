@@ -1,6 +1,7 @@
 ---
 slug: uginuo-kunic-hrcak-ili-papiga-sto-uciniti
 cluster: nakon-smrti
+animals: kunic, ptica, ostalo
 title: "Uginuo kunić, hrčak ili papiga: što učiniti"
 excerpt: "Što napraviti kad ugine mali ljubimac: kako provjeriti i zbrinuti tijelo, smiješ li ga zakopati, što stoji kremiranje ljubimca do nekoliko kilograma prema objavljenim cjenicima i treba li ga negdje odjaviti."
 seo_title: "Uginuo kunić, hrčak ili papiga: što učiniti"

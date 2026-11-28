@@ -1,6 +1,7 @@
 ---
 slug: kremiranje-macke-cijena
 cluster: nakon-smrti
+animals: macka
 title: "Kremiranje mačke: cijena, postupak i što se dobiva"
 excerpt: "Koliko stoji kremiranje mačke od tri do sedam kilograma prema cjenicima koje krematoriji za ljubimce sami objavljuju, što je uključeno u cijenu, kako se dogovara i koliko pepela i kakvu urnu možeš očekivati."
 seo_title: "Kremiranje mačke: cijena i postupak (2026.)"

@@ -1,6 +1,7 @@
 ---
 slug: pas-ne-jede-moguci-uzroci
 cluster: zdravlje
+animals: pas
 title: "Pas ne jede: mogući uzroci"
 excerpt: "Pas koji preskoči jedan obrok, a inače je živahan i pije, obično nije hitan slučaj. Pas koji ne jede dulje od 24 sata, ili ne jede i uz to povraća, klonuo je ili ima napuhan trbuh, treba veterinara. Mogući uzroci prema VCA, Texas A&M, Cornellu i ACVS-u i kada ne čekati."
 seo_title: "Pas ne jede: mogući uzroci i kada veterinaru"

@@ -55,7 +55,17 @@ const LIMITS = {
 const SEO_TITLE_IDEAL = 60;
 const SEO_DESCRIPTION_IDEAL = 155;
 const EDITABLE_STATUSES = ["draft", "in_review"];
-const ARTICLE_KEYS = ["slug", "cluster", "title", "excerpt", "seo_title", "seo_description", "needs_vet_review", "cta", "sources"];
+const ARTICLE_KEYS = ["slug", "cluster", "animals", "title", "excerpt", "seo_title", "seo_description", "needs_vet_review", "cta", "sources"];
+/** Životinje na koje se članak odnosi (`animals: pas, macka`); bez polja članak je za sve ljubimce. */
+const ANIMALS = ["pas", "macka", "kunic", "ptica", "ostalo"];
+
+function animalList(meta) {
+  if (meta.animals === undefined) return [];
+  return String(meta.animals)
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
 const SOURCE_KEYS = ["claim", "title", "url", "publisher", "accessed_on"];
 
 class ParseError extends Error {}
@@ -284,6 +294,11 @@ function validateArticle(article, allSlugs) {
   if (typeof meta.needs_vet_review !== "boolean") {
     errors.push('polje "needs_vet_review" mora biti true ili false');
   }
+  for (const animal of animalList(meta)) {
+    if (!ANIMALS.includes(animal)) {
+      errors.push(`animals: "${animal}" nije dopušteno (${ANIMALS.join(", ")})`);
+    }
+  }
 
   validateCallouts(body, errors);
 
@@ -474,6 +489,7 @@ async function upsertArticle(supabase, article) {
     excerpt: meta.excerpt,
     body_md: body,
     needs_vet_review: meta.needs_vet_review,
+    animals: animalList(meta),
     seo_title: meta.seo_title,
     seo_description: meta.seo_description,
   };

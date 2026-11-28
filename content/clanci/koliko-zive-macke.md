@@ -1,6 +1,7 @@
 ---
 slug: koliko-zive-macke
 cluster: zdravlje
+animals: macka
 title: "Koliko žive mačke"
 excerpt: "Koliko mačke žive prema prvim tablicama života za mačke iz britanskih veterinarskih ambulanti: prosjek, koliko godina u prosjeku ostaje mački određene dobi, razlike po spolu, kastraciji i pasmini te što se zna o mačkama koje izlaze van."
 seo_title: "Koliko žive mačke: prosjek, dob i pasmine"

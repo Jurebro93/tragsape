@@ -1,6 +1,7 @@
 ---
 slug: otrovne-namirnice-za-pse-i-macke
 cluster: zdravlje
+animals: pas, macka
 title: "Otrovne namirnice za pse i mačke"
 excerpt: "Čokolada i kava, grožđe i grožđice, luk i češnjak, ksilitol, alkohol i sirovo tijesto te makadamija orasi najčešće su opasne namirnice iz kuhinje. Za koga je koja opasna, koji su glavni znakovi i kada se javljaju, prema ASPCA-i, MSD Veterinary Manualu, VCA-u i Cornellu, i što učiniti odmah."
 seo_title: "Otrovne namirnice za pse i mačke: popis i znakovi"

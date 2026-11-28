@@ -1,6 +1,7 @@
 ---
 slug: krpelj-na-macki-sto-uciniti
 cluster: zdravlje
+animals: macka
 title: "Krpelj na mački: što učiniti"
 excerpt: "Krpelja na mački ukloni što prije, u rukavicama, pincetom ili alatom za krpelje uz kožu i ravnim potezom. Najveća opasnost često nije sam krpelj nego pogrešan pripravak: sredstva za pse s permetrinom mački mogu ozbiljno naškoditi. Što kažu ESCCAP, Cornell, MSD i iCatCare i kada odmah veterinaru."
 seo_title: "Krpelj na mački: kako ga ukloniti i što ne smiješ"

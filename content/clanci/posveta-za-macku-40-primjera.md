@@ -1,6 +1,7 @@
 ---
 slug: posveta-za-macku-40-primjera
 cluster: tugovanje
+animals: macka
 title: "Posveta za mačku: 40 primjera"
 excerpt: "Posveta je nekoliko rečenica koje stoje uz ime i fotografiju mačke. Ovdje je 40 primjera napisanih za ovaj članak, složenih po tonu i prilici, i kratak postupak od tri pitanja kojim ćeš napisati svoju."
 seo_title: "Posveta za mačku: 40 primjera i kako napisati svoju"

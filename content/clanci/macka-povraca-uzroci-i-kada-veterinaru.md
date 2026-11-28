@@ -1,6 +1,7 @@
 ---
 slug: macka-povraca-uzroci-i-kada-veterinaru
 cluster: zdravlje
+animals: macka
 title: "Mačka povraća: uzroci i kada veterinaru"
 excerpt: "Povremeno povraćanje kod mačke koja se inače dobro osjeća često prođe samo, ali redovito povraćanje nije „normalno za mačke”. Kako razlikovati povraćanje, vraćanje hrane i kuglice dlake, koji su najčešći uzroci, što veterinar obično radi i kada se ne čeka, prema Cornellu, VCA-i, MSD priručniku i Journal of Feline Medicine and Surgery."
 seo_title: "Mačka povraća: uzroci i kada veterinaru"

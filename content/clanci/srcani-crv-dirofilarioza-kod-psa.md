@@ -1,6 +1,7 @@
 ---
 slug: srcani-crv-dirofilarioza-kod-psa
 cluster: zdravlje
+animals: pas
 title: "Srčani crv (dirofilarioza) kod psa"
 excerpt: "Srčani crv (Dirofilaria immitis) prenose komarci, a odrasli crvi žive u plućnim arterijama i srcu psa i do sedam godina. Što hrvatska istraživanja kažu o obali i kontinentu, po kojim se znakovima bolest javlja, zašto test ne pokazuje svježu zarazu, koliko pretrage stoje u objavljenim cjenicima i kada odmah veterinaru."
 seo_title: "Srčani crv kod psa: znakovi, test i zaštita"

@@ -26,7 +26,7 @@ export async function listPublishedArticles(): Promise<ArticleSummary[]> {
 
   const { data, error } = await createAnonClient()
     .from("articles")
-    .select("id, slug, cluster, title, excerpt, published_at")
+    .select("id, slug, cluster, title, excerpt, published_at, animals")
     .eq("status", "published")
     .eq("locale", "hr")
     .order("published_at", { ascending: false })
@@ -44,6 +44,7 @@ export async function listPublishedArticles(): Promise<ArticleSummary[]> {
             title: row.title,
             excerpt: row.excerpt,
             publishedAt: row.published_at,
+            animals: row.animals,
           },
         ]
       : [],

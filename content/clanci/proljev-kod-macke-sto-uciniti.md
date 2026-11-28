@@ -1,6 +1,7 @@
 ---
 slug: proljev-kod-macke-sto-uciniti
 cluster: zdravlje
+animals: macka
 title: "Proljev kod mačke: što učiniti"
 excerpt: "Proljev kod mačke često je kratak i prođe sam, ali ako traje dulje od dan-dva, ako je stolica krvava ili crna, ili ako je mačka uz to klonula, ne jede ili povraća, treba veterinar. Što stolica govori, zašto se kod mačića ne čeka, što ponijeti na pregled i što kod kuće ne raditi, prema Cornellu, VCA-i i MSD priručniku."
 seo_title: "Proljev kod mačke: što učiniti i kada veterinaru"

@@ -1,6 +1,7 @@
 ---
 slug: cipiranje-psa-i-macke-cijena-i-postupak
 cluster: zdravlje
+animals: pas, macka
 title: "Čipiranje psa i mačke: cijena i postupak"
 excerpt: "Pas se mora čipirati najkasnije 90 dana od štenjenja, a mačka prije odlaska u drugu državu. Što točno piše u Zakonu o zdravlju životinja, kolika je kazna, kako izgleda čipiranje, što se upisuje u Upisnik i koliko stoji u objavljenim cjenicima."
 seo_title: "Čipiranje psa i mačke: cijena, rok i postupak"

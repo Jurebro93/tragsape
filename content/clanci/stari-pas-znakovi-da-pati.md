@@ -1,6 +1,7 @@
 ---
 slug: stari-pas-znakovi-da-pati
 cluster: kraj-zivota
+animals: pas
 title: "Stari pas: znakovi da pati"
 excerpt: "Kronična bol kod starog psa rijetko izgleda kao glasno cviljenje. Češće je to sporo ustajanje, izbjegavanje stuba, nemirne noći i manje volje za šetnju, pa se lako pripiše starosti. Znakovi koje opisuju veterinarske smjernice, tablica što koji znak može značiti i kako pratiti kvalitetu života."
 seo_title: "Stari pas: znakovi da pati i kada veterinaru"

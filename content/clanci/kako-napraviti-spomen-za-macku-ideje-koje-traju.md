@@ -1,6 +1,7 @@
 ---
 slug: kako-napraviti-spomen-za-macku-ideje-koje-traju
 cluster: tugovanje
+animals: macka
 title: "Kako napraviti spomen za mačku: ideje koje traju"
 excerpt: "Spomen za mačku može stati u jednu kutiju ili na jednu stranicu. Ovdje je osam načina, od pramena dlake i dekice s prozora do biljke i spomen-stranice, uz poštenu procjenu troška, truda i trajanja."
 seo_title: "Spomen za mačku: 8 ideja koje traju, s usporedbom"

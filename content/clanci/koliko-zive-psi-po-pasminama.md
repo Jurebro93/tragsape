@@ -1,6 +1,7 @@
 ---
 slug: koliko-zive-psi-po-pasminama
 cluster: zdravlje
+animals: pas
 title: "Koliko žive psi po pasminama"
 excerpt: "Tablica životnog vijeka za dvadesetak čestih pasmina iz dva velika britanska istraživanja, uz objašnjenje zašto veliki psi i psi kratke njuške u prosjeku žive kraće i zašto se brojke iz dvaju istraživanja razlikuju."
 seo_title: "Koliko žive psi po pasminama: tablica iz istraživanja"

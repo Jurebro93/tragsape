@@ -1,6 +1,7 @@
 ---
 slug: babezioza-piroplazmoza-kod-psa
 cluster: zdravlje
+animals: pas
 title: "Babezioza (piroplazmoza) kod psa"
 excerpt: "Babezioza ili piroplazmoza bolest je koju psima prenose krpelji, a u Hrvatskoj je najčešće uzrokuje Babesia canis. Kako izgleda, zašto je hitna, kako se dokazuje razmazom krvi, što znači liječenje i oporavak, može li se ponoviti, što je s cjepivom i koliko pretrage stoje u hrvatskim cjenicima."
 seo_title: "Babezioza (piroplazmoza) kod psa: znakovi i liječenje"

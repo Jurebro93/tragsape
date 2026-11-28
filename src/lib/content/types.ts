@@ -41,6 +41,8 @@ export type ArticleSummary = {
   title: string;
   excerpt: string | null;
   publishedAt: string | null;
+  /** Životinje na koje se članak odnosi; prazno znači sve ljubimce. */
+  animals: string[];
 };
 
 export type ArticleSource = {
@@ -79,6 +81,8 @@ export type ArticleView = {
   needsVetReview: boolean;
   vetReviewedBy: string | null;
   vetReviewedAt: string | null;
+  /** Životinje na koje se članak odnosi; prazno znači sve ljubimce. */
+  animals: string[];
   sources: ArticleSource[];
   cta: Partial<Record<CtaSlot, CtaBlockData>>;
 };

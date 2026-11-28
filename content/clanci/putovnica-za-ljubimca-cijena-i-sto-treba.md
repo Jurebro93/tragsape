@@ -1,6 +1,7 @@
 ---
 slug: putovnica-za-ljubimca-cijena-i-sto-treba
 cluster: zdravlje
+animals: pas, macka
 title: "Putovnica za ljubimca: cijena i što treba"
 excerpt: "Za put sa psom, mačkom ili pitomom vreticom unutar EU trebaju čip, cijepljenje protiv bjesnoće najmanje 21 dan prije puta i europska putovnica. Tko je izdaje, koliko stoji u objavljenim cjenicima, koja pravila vrijede od 22. travnja 2026. i koje zemlje traže više."
 seo_title: "Putovnica za ljubimca: cijena i uvjeti za put po EU"

@@ -1,6 +1,7 @@
 ---
 slug: kremiranje-psa-cijena
 cluster: nakon-smrti
+animals: pas
 title: "Kremiranje psa: cijena po težini, postupak i što dobivaš"
 excerpt: "Koliko stoji kremiranje psa prema težini, što je u cijenu uključeno, kako se dogovara i kada dobivaš urnu. Cijene su iz cjenika koje krematoriji za ljubimce sami objavljuju, uz primjere izračuna za pse od 8, 18, 28 i 45 kilograma."
 seo_title: "Kremiranje psa: cijena po težini i postupak (2026.)"

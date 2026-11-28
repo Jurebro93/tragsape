@@ -1,6 +1,7 @@
 ---
 slug: suplementi-za-macke-sto-ima-smisla
 cluster: zdravlje
+animals: macka
 title: "Suplementi za mačke: što ima smisla"
 excerpt: "Zdrava mačka na potpunoj i uravnoteženoj hrani obično ne treba nikakav dodatak, a neki su joj opasni. Što kažu Cornell, Tufts, iCatCare i pregledni radovi o omega-3 za zglobove, glukozaminu, lizinu, probioticima i dodacima kod bolesti bubrega, te što mačka nikad ne smije dobiti."
 seo_title: "Suplementi za mačke: što ima smisla, a što ne"

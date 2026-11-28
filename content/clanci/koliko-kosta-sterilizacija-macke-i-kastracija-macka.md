@@ -1,6 +1,7 @@
 ---
 slug: koliko-kosta-sterilizacija-macke-i-kastracija-macka
 cluster: zdravlje
+animals: macka
 title: "Koliko košta sterilizacija mačke i kastracija mačka"
 excerpt: "Cijene sterilizacije mačke i kastracije mačka iz šest objavljenih cjenika u Zagrebu, Osijeku, Đakovu i Svetom Ivanu Zelini, što se plaća uz sam zahvat i kako izgledaju stvarni računi. Uz to: kada veterinarske udruge savjetuju zahvat, kako izgleda oporavak i što o kontroli razmnožavanja kažu zakon i gradske odluke."
 seo_title: "Sterilizacija mačke i kastracija mačka: cijene 2026."

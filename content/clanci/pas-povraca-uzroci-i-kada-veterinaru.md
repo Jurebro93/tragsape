@@ -1,6 +1,7 @@
 ---
 slug: pas-povraca-uzroci-i-kada-veterinaru
 cluster: zdravlje
+animals: pas
 title: "Pas povraća: uzroci i kada veterinaru"
 excerpt: "Pas koji jednom povrati, a inače je živahan, jede i pije, često se oporavi unutar dana. Krv u povraćenom, klonulost, štene, napuhnut trbuh s bezuspješnim pokušajima povraćanja ili povraćanje koje se ponavlja traže veterinara odmah. Uzroci prema veterinarskim izvorima, tablica znakova i što zapisati prije pregleda."
 seo_title: "Pas povraća: uzroci i kada odmah veterinaru"

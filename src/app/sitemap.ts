@@ -3,7 +3,8 @@ import { cacheLife, cacheTag } from "next/cache";
 import { isIndexable } from "@/lib/indexing";
 import { publicTools, toolPath } from "@/lib/tools/registry";
 import { LEGAL_DRAFT } from "@/messages/hr/legal";
-import { listPublishedArticleSlugs } from "@/server/content/articles";
+import { HUBS, hubGroups, hubPath } from "@/lib/content/hubs";
+import { listPublishedArticleSlugs, listPublishedArticles } from "@/server/content/articles";
 import { env } from "@/server/env";
 import { createAnonClient } from "@/server/supabase/anon";
 
@@ -71,7 +72,7 @@ async function getIndexableMemorials(): Promise<SitemapMemorial[]> {
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = env.siteUrl;
   const paths = LEGAL_DRAFT ? STATIC_PATHS : [...STATIC_PATHS, ...LEGAL_PATHS];
-  const [memorials, articles] = await Promise.all([getIndexableMemorials(), listPublishedArticleSlugs()]);
+  const [memorials, articles, articleSummaries] = await Promise.all([getIndexableMemorials(), listPublishedArticleSlugs(), listPublishedArticles()]);
 
   return [
     ...paths.map((path) => ({ url: path === "/" ? base : `${base}${path}` })),
@@ -80,6 +81,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Samo objavljeni alati i članci: nacrti (zdravlje, propisi) ne postoje za tražilice.
     // Stranice tema koje imaju barem jedan objavljen članak.
     ...[...new Set(articles.map((article) => article.cluster))].map((cluster) => ({ url: `${base}/vodic/tema/${cluster}` })),
+    // Stranice zdravlja pasa i mačaka, kad imaju barem jedan članak.
+    ...HUBS.filter((hub) => hubGroups(hub, articleSummaries).length > 0).map((hub) => ({ url: `${base}${hubPath(hub)}` })),
     ...publicTools().map((tool) => ({ url: `${base}${toolPath(tool.slug)}` })),
     ...articles.map((article) => ({
       url: `${base}/vodic/${article.slug}`,

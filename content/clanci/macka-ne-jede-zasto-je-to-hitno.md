@@ -1,6 +1,7 @@
 ---
 slug: macka-ne-jede-zasto-je-to-hitno
 cluster: zdravlje
+animals: macka
 title: "Mačka ne jede: zašto je to hitno"
 excerpt: "Mačka koja ne jede nije samo izbirljiva. Već nakon 24 sata gladovanje joj može ozbiljno naštetiti, a nakon nekoliko dana prijeti hepatička lipidoza, nakupljanje masti u jetri koje bez brzog liječenja završava smrću. Što pišu Cornell, VCA i MSD Veterinary Manual, mogući uzroci i kada odmah veterinaru."
 seo_title: "Mačka ne jede: zašto je to hitno i kada veterinaru"

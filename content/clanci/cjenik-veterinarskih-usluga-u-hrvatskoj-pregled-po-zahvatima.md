@@ -1,6 +1,7 @@
 ---
 slug: cjenik-veterinarskih-usluga-u-hrvatskoj-pregled-po-zahvatima
 cluster: zdravlje
+animals: pas, macka
 title: "Cjenik veterinarskih usluga u Hrvatskoj: pregled po zahvatima"
 excerpt: "Koliko stoje pregled, cijepljenje, čipiranje, sterilizacija, kastracija, čišćenje zubi, rendgen, ultrazvuk, krvna slika i eutanazija u šest objavljenih cjenika iz Osijeka, Svetog Ivana Zeline, Zagreba, Splita i Rijeke, s datumom svakog cjenika. Uz to: zašto se cijene razlikuju, kad je PDV uključen i propisuje li ih itko."
 seo_title: "Cjenik veterinarskih usluga u Hrvatskoj (2026.)"

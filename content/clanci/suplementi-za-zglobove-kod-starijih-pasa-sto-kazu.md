@@ -1,6 +1,7 @@
 ---
 slug: suplementi-za-zglobove-kod-starijih-pasa-sto-kazu
 cluster: zdravlje
+animals: pas
 title: "Suplementi za zglobove kod starijih pasa: što kažu istraživanja"
 excerpt: "Od svih dodataka za zglobove najviše dokaza imaju omega-3 masne kiseline iz ribljeg ulja i morskih izvora. Za glukozamin i hondroitin pregledni radovi učinak na bol ne potvrđuju. Što kažu smjernice WSAVA-e i AAHA-e, metaanaliza iz 2022. i veterinari Cornella, VCA-a i Tuftsa, te na što paziti kod kvalitete i sigurnosti."
 seo_title: "Suplementi za zglobove kod starijih pasa: što kažu dokazi"

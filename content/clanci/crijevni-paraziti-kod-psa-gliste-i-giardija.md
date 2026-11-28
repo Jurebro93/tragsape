@@ -1,6 +1,7 @@
 ---
 slug: crijevni-paraziti-kod-psa-gliste-i-giardija
 cluster: zdravlje
+animals: pas
 title: "Crijevni paraziti kod psa: gliste i giardija"
 excerpt: "Gliste i giardija česti su crijevni paraziti pasa, osobito štenaca. Odrasli pas s njima često izgleda zdravo, a štene može imati napuhnut trbuh, proljev ili slabokrvnost. Kako se pas zarazi, kako veterinar parazite traži u stolici, što znače za djecu u kući i kada odmah veterinaru, prema ESCCAP-u i MSD-ovu priručniku."
 seo_title: "Crijevni paraziti kod psa: gliste i giardija"

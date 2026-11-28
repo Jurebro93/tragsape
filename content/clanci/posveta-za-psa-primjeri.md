@@ -1,6 +1,7 @@
 ---
 slug: posveta-za-psa-primjeri
 cluster: tugovanje
+animals: pas
 title: "Posveta za psa: 40 primjera i kako napisati svoju"
 excerpt: "Posveta je nekoliko rečenica koje stoje uz ime i fotografiju psa. Ovdje je 40 primjera napisanih za ovaj članak, složenih po tonu i prilici, i kratak postupak od tri pitanja kojim ćeš napisati svoju."
 seo_title: "Posveta za psa: 40 primjera i kako napisati svoju"

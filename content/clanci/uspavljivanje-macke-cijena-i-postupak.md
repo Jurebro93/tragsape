@@ -1,6 +1,7 @@
 ---
 slug: uspavljivanje-macke-cijena-i-postupak
 cluster: kraj-zivota
+animals: macka
 title: "Uspavljivanje mačke: cijena i postupak"
 excerpt: "Koliko stoji uspavljivanje (eutanazija) mačke prema objavljenim cjenicima četiriju hrvatskih ambulanti, što se uz to naplaćuje, kako postupak izgleda kod mačke i što trebaš odlučiti unaprijed."
 seo_title: "Uspavljivanje mačke: cijena i postupak (2026.)"

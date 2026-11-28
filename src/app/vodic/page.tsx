@@ -5,6 +5,7 @@ import { ArrowRightIcon, PawTrail } from "@/components/icons";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { Card } from "@/components/ui/card";
 import { ArticleCard, TopicTiles, topicPath } from "@/components/content/article-card";
+import { HubTiles } from "@/components/content/hub-page";
 import { buttonClass } from "@/components/ui/button";
 import { fill } from "@/lib/text";
 import { CLUSTERS, type Cluster } from "@/lib/content/types";
@@ -62,6 +63,7 @@ export default async function GuidePage() {
         ) : (
           <>
             <TopicTiles clusters={clusters} counts={counts} />
+            <HubTiles articles={articles} />
             {clusters.map((cluster) => {
               const inCluster = cards.filter((article) => article.cluster === cluster);
               return (

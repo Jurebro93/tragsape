@@ -1,6 +1,7 @@
 ---
 slug: koliko-zive-kunici-hrcci-zamorci-i-papige
 cluster: zdravlje
+animals: kunic, ptica, ostalo
 title: "Koliko žive kunići, hrčci, zamorci i papige"
 excerpt: "Koliko godina veterinarski izvori navode za kuniće, zamorce, hrčke i papige, zašto se brojke iz istraživanja britanskih ambulanti razlikuju od priručnika i što prema tim izvorima najviše utječe na životni vijek malog ljubimca."
 seo_title: "Koliko žive kunići, hrčci, zamorci i papige"

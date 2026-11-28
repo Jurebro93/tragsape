@@ -1,6 +1,7 @@
 ---
 slug: lismanioza-kod-pasa-u-hrvatskoj
 cluster: zdravlje
+animals: pas
 title: "Lišmanioza kod pasa u Hrvatskoj"
 excerpt: "Lišmanioza je dugotrajna bolest pasa koju prenose papatači, a u Hrvatskoj je nađena ponajprije u Dalmaciji. Kako se pas zarazi, zašto se znakovi javljaju mjesecima ili godinama kasnije, kako se testira i liječi, što EU baza kaže o cjepivima, koliko testovi stoje u tri hrvatska cjenika i kada odmah veterinaru."
 seo_title: "Lišmanioza kod pasa u Hrvatskoj: znakovi, test i zaštita"

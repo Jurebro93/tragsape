@@ -1,6 +1,7 @@
 ---
 slug: koliko-cesto-cistiti-psa-od-glista
 cluster: zdravlje
+animals: pas
 title: "Koliko često čistiti psa od glista"
 excerpt: "Prema europskim smjernicama ESCCAP-a pas se čisti od glista jednom do dvanaest puta godišnje, ovisno o tome živi li u stanu, šeće li parkom, jede li puževe ili lovi i jede sirovo meso. Kad rizik nije poznat, savjet je najmanje četiri puta godišnje. Raspored za štene, posebne slučajeve i što propisuje hrvatska Naredba."
 seo_title: "Koliko često čistiti psa od glista (tablica)"

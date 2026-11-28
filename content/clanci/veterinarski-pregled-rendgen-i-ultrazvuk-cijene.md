@@ -1,6 +1,7 @@
 ---
 slug: veterinarski-pregled-rendgen-i-ultrazvuk-cijene
 cluster: zdravlje
+animals: pas, macka
 title: "Veterinarski pregled, rendgen i ultrazvuk: cijene"
 excerpt: "Koliko stoje klinički i kontrolni pregled, rendgen po snimci ili projekciji, ultrazvuk trbuha i srca, EKG i CT u sedam objavljenih cjenika veterinarskih ambulanti i klinika u Hrvatskoj, s datumom cjenika. Uz to: što se uz snimanje obično naplaćuje zasebno, poput sedacije i očitanja."
 seo_title: "Veterinarski pregled, rendgen i ultrazvuk: cijene (2026.)"

@@ -1,6 +1,7 @@
 ---
 slug: cijepljenje-psa-cijena-i-sto-je-obvezno
 cluster: zdravlje
+animals: pas
 title: "Cijepljenje psa: cijena i što je obvezno"
 excerpt: "U Hrvatskoj je za psa obvezno samo cijepljenje protiv bjesnoće, za svakog psa od 90. dana starosti. Što točno kaže Naredba, koja cjepiva smjernice WSAVA-e iz 2024. smatraju osnovnima, a koja dodatnima, i koliko cijepljenje stoji u sedam objavljenih cjenika."
 seo_title: "Cijepljenje psa: cijena i što je obvezno (2026.)"

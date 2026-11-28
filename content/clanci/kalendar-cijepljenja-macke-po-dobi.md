@@ -1,6 +1,7 @@
 ---
 slug: kalendar-cijepljenja-macke-po-dobi
 cluster: zdravlje
+animals: macka
 title: "Kalendar cijepljenja mačke po dobi"
 excerpt: "Mačić se prema smjernicama WSAVA-e iz 2024. počinje cijepiti sa 6 do 8 tjedana, serija traje do 16 tjedana ili dulje, a slijedi doza sa 26 tjedana. Što se radi u kojoj dobi, kako se raspored mijenja za mačku koja izlazi ili ide u hotel za mačke i što u Hrvatskoj kaže propis."
 seo_title: "Kalendar cijepljenja mačke po dobi (tablica)"

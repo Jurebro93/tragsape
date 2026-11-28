@@ -1,6 +1,7 @@
 ---
 slug: uginula-mi-je-macka-sto-uciniti
 cluster: nakon-smrti
+animals: macka
 title: "Uginula mi je mačka: što učiniti prvi dan"
 excerpt: "Što učiniti prvi dan kad mačka ugine: ako si je našao kod kuće ili vani, kako zbrinuti tijelo, koga nazvati, što stoji kremiranje mačke prema objavljenim cjenicima i vrijedi li rok od sedam dana i za mačke."
 seo_title: "Uginula mi je mačka: što učiniti prvi dan"

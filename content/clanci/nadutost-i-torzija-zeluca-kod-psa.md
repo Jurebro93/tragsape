@@ -1,6 +1,7 @@
 ---
 slug: nadutost-i-torzija-zeluca-kod-psa
 cluster: zdravlje
+animals: pas
 title: "Nadutost i torzija želuca kod psa"
 excerpt: "Napuhan trbuh, nagon na povraćanje bez sadržaja, slinjenje i nemir mogu značiti nadutost ili torziju želuca. Izvana se te dvije stvari ne razlikuju, a torzija ubija u satima. Što se događa u tijelu, kako izgleda liječenje u ambulanti, koliko košta operacija u hrvatskim cjenicima i što smanjuje rizik."
 seo_title: "Torzija želuca kod psa: znakovi, liječenje i cijena"
