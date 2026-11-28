@@ -89,7 +89,7 @@ Ovaj tekst ne zamjenjuje veterinara. Ima li pas babeziozu i kako ga liječiti, p
 
 Babezije su jednostanični paraziti koji žive isključivo u crvenim krvnim stanicama [1]. B. canis prenosi krpelj Dermacentor reticulatus [1], a u Zagrebu je nađena u 77 % takvih krpelja [5]. Ženka krpelja obično mora sisati 24 do 48 sati prije prijenosa [1]; kako ga brzo i sigurno ukloniti, piše u članku [Krpelj na psu: što učiniti i kada veterinaru](/vodic/krpelj-na-psu-sto-uciniti-i-kada-veterinaru).
 
-Rjeđe se babezije prenose krvlju. VCA bolnice navode ugrize među psima, transfuziju i prijenos s kuje na štenad [4].
+Osim krpeljima, VCA bolnice navode prijenos ugrizom među psima, transfuzijom i s kuje na štenad [4].
 
 > [!CINJENICA] Stara bolest u Hrvatskoj
 > Prvi zapisi o piroplazmozi u Hrvatskoj potječu iz 1912., a 1921. potvrđena je i kod pasa na hrvatskom primorju [5].
@@ -144,7 +144,7 @@ Cijene su iz objavljenih cjenika i odnose se samo na pretragu; pregled se plaća
 | Veterina Branimir, Zagreb (cijena 10. 9. 2026., s PDV-om) | kompletna krvna slika | 28,50 € [12] |
 | Veterinarski fakultet, Zagreb (14. 11. 2024.) | panel „Psi južna Europa” u vanjskom laboratoriju, uključuje protutijela na babeziju | 148,98 € [10] |
 
-Ostale pretrage i doplate za hitne preglede usporedi u članku [Veterinarski pregled, rendgen i ultrazvuk: cijene](/vodic/veterinarski-pregled-rendgen-i-ultrazvuk-cijene).
+Ostale pretrage usporedi u članku [Veterinarski pregled, rendgen i ultrazvuk: cijene](/vodic/veterinarski-pregled-rendgen-i-ultrazvuk-cijene).
 
 ## Kako se babezioza liječi
 
@@ -196,7 +196,7 @@ Da. ESCCAP bolest naziva babezioza (piroplazmoza), a uzrokuju je paraziti iz rod
 
 ### Mogu li se zaraziti od psa s babeziozom?
 
-Prema ESCCAP-u zaraza ljudi babezijama pasa i mačaka nije zabilježena [1]. Krpelje ipak ne skidaj golim rukama, jer prenose i druge bolesti [4].
+Prema ESCCAP-u zaraza ljudi babezijama pasa i mačaka nije zabilježena [1]. Krpelji ipak prenose i druge bolesti, pa ih ukloni kako piše u članku [Krpelj na psu: što učiniti i kada veterinaru](/vodic/krpelj-na-psu-sto-uciniti-i-kada-veterinaru).
 
 ### Može li pas dvaput dobiti babeziozu?
 
@@ -208,10 +208,10 @@ Može. ESCCAP navodi da krpelj D. reticulatus, prijenosnik B. canis, može traž
 
 ### Koliko dugo traje oporavak?
 
-Bez komplikacija poboljšanje se uz liječenje obično vidi unutar 48 sati [1]. Ako bolest zahvati bubrege, jetru ili krvne žile, oporavak je sporiji i neizvjesniji, a tijek procjenjuje veterinar [1].
+Bez komplikacija poboljšanje se uz liječenje obično vidi unutar 48 sati [1]. To ne vrijedi kad bolest zahvati jetru, bubrege ili krvne žile [1], pa tijek oporavka procjenjuje veterinar.
 
 ## Sljedeći korak
 
-Pregledaj psa nakon svake šetnje kroz travu i grmlje, a s veterinarom dogovori zaštitu od krpelja za cijelu godinu. Ako pas putuje na obalu, pročitaj i [Lišmanioza kod pasa u Hrvatskoj](/vodic/lismanioza-kod-pasa-u-hrvatskoj), jer tu bolest prenose papatači, a ne krpelji.
+Pregledaj psa nakon svake šetnje kroz travu i grmlje, a s veterinarom dogovori zaštitu od krpelja. Ako pas putuje na obalu, pročitaj i [Lišmanioza kod pasa u Hrvatskoj](/vodic/lismanioza-kod-pasa-u-hrvatskoj), jer tu bolest prenose papatači, a ne krpelji.
 
 Ako u kući imaš i mačku, pogledaj [Krpelj na mački: što učiniti](/vodic/krpelj-na-macki-sto-uciniti), a ostale tekstove o zdravlju u [Vodiču o zdravlju](/vodic/tema/zdravlje).
