@@ -63,7 +63,7 @@ sources:
     publisher: "The University of Sydney, University Veterinary Teaching Hospitals"
     accessed_on: 2026-11-28
 ---
-Od svih dodataka za zglobove starijih pasa najviše dokaza imaju omega-3 masne kiseline iz ribljeg ulja i drugih morskih izvora [2][3]. Za glukozamin i hondroitin, najprodavanije sastojke, novija metaanaliza učinak na bol ne potvrđuje [3]. Ni jedan dodatak ne zamjenjuje ono što pomaže najviše: vitku težinu, kretanje i liječenje boli koje propiše veterinar [1].
+Od svih dodataka za zglobove starijih pasa najviše dokaza imaju omega-3 masne kiseline iz ribljeg ulja i drugih morskih izvora [2][3]. Za glukozamin i hondroitin, najprodavanije sastojke, novija metaanaliza učinak na bol ne potvrđuje [3]. Nijedan dodatak ne zamjenjuje ono što pomaže najviše: vitku težinu, kretanje i liječenje boli koje propiše veterinar [1].
 
 Ovaj tekst ne zamjenjuje veterinara. Uzrok šepanja ili ukočenosti i ima li dodatak smisla za tvog psa može procijeniti samo veterinar koji ga je pregledao, zato se obrati najbližoj veterinarskoj ambulanti.
 
@@ -72,7 +72,7 @@ Ovaj tekst ne zamjenjuje veterinara. Uzrok šepanja ili ukočenosti i ima li dod
 - Prema WSAVA-i najviše dokaza kod bolesti zglobova imaju kontrola težine, protuupalni lijekovi, prilagođena prehrana i tjelovježba [1].
 - Omega-3 masne kiseline jedini su dodatak koji smjernice AAHA-e stavljaju u prvu razinu mjera [2].
 - Metaanaliza iz 2022. za glukozamin i hondroitin nalazi izrazit izostanak učinka na bol i savjetuje da ih se za to više ne preporučuje [3].
-- Dodaci za životinje ne prolaze provjere kao lijekovi; proizvod može sadržavati više, manje ili ništa od onoga što piše [5][7].
+- Dodaci za životinje ne prolaze provjere kao lijekovi; proizvod može sadržavati više, manje ili ništa od onoga što piše [7].
 - Dozu i proizvod određuje veterinar, posebno ako pas već uzima lijekove [6][7].
 
 ## Što zglobovima starijeg psa pomaže najviše
