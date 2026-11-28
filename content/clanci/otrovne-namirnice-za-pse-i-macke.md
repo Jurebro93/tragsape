@@ -7,17 +7,17 @@ seo_title: "Otrovne namirnice za pse i mačke: popis i znakovi"
 seo_description: "Koje su namirnice otrovne za pse i mačke, za koga je koja opasna, glavni znakovi i kada se javljaju te što učiniti odmah. Prema veterinarskim izvorima."
 needs_vet_review: true
 sources:
-  - claim: "Popis namirnica opasnih za ljubimce: alkohol i sirovo tijesto (tijesto se diže, napuhuje i može izvrnuti želudac, kvasac stvara alkohol), čokolada, kava i kofein (što tamnija čokolada, to veći rizik; bijela najmanje, čokolada za kuhanje i kakao najviše), avokado (ptice, kunići, konji, preživači), grožđe i grožđice (psi, oštećenje bubrega, sumnja na vinsku kiselinu), luk, češnjak i vlasac (mačke osjetljivije, psi ovisno o količini), mlijeko, makadamija, masni orašasti plodovi, kosti, sirovo meso i jaja, ksilitol (žvakaće, bomboni, peciva, zubna pasta), slana hrana"
+  - claim: "Alkohol i sirovo tijesto (tijesto se diže, napuhuje i može izvrnuti želudac, kvasac stvara alkohol); čokolada i kofein (tamnija je opasnija, bijela najmanje); avokado (ptice, kunići); grožđe (psi, bubrezi, vinska kiselina); luk i češnjak (mačke osjetljivije); mlijeko; makadamija; masni orasi; kosti, sirovo meso i jaja; ksilitol (žvakaće, bomboni, peciva, zubna pasta); sol"
     title: "People Foods to Avoid Feeding Your Pets"
     url: "https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets"
     publisher: "ASPCA Animal Poison Control Center"
     accessed_on: 2026-11-28
-  - claim: "Čokolada: najčešće psi, znakovi obično 6–12 sati nakon jela, mogući opasni poremećaji srčanog ritma; grožđe i grožđice: probavni znakovi za 6–12 sati, zatajenje bubrega za 1–3 dana; ksilitol: nagli pad šećera u psa već za 30 minuta, kasnije ako je u žvakaćoj, znakovi oštećenja jetre za 1–2 dana; makadamija: znakovi za 12 sati; avokado: ptice, kunići, zamorci, konji; sirovo tijesto s kvascem (Sharon M. Gwaltney-Brant, DVM; ažurirano svibanj 2026.)"
+  - claim: "Čokolada: najčešće psi, znakovi za 6–12 sati, poremećaji srčanog ritma; grožđe: probavni znakovi za 6–12 sati, bubrezi za 1–3 dana; ksilitol: pad šećera već za 30 minuta, jetra za 1–2 dana; makadamija: znakovi za 12 sati; avokado: ptice, kunići, zamorci; sirovo tijesto (Sharon M. Gwaltney-Brant, DVM; ažurirano svibanj 2026.)"
     title: "Food Hazards (Pet Owner Version)"
     url: "https://www.msdvetmanual.com/special-pet-topics/poisoning/food-hazards"
     publisher: "MSD Veterinary Manual"
     accessed_on: 2026-11-28
-  - claim: "Sadržaj vinske kiseline u grožđu, grožđicama i tamarindu varira, pa je i učinak nakon jela različit; većina pasa povraća ili ima proljev 6–12 sati nakon jela, zatajenje bubrega razvija se za 24–72 sata; kad bubrezi prestanu stvarati mokraću, izgledi su loši; kod mačaka postoje samo anegdotalni izvještaji, bez objavljenih slučajeva (Cristine Hayes, DVM, ASPCA APCC; recenzija Ahna Brutlag, DVM; rujan 2024.)"
+  - claim: "Sadržaj vinske kiseline u grožđu i grožđicama varira, pa je i učinak različit; povraćanje ili proljev 6–12 sati nakon jela, zatajenje bubrega za 24–72 sata; bez stvaranja mokraće izgledi su loši; kod mačaka samo anegdotalni izvještaji (Cristine Hayes, DVM, ASPCA APCC; recenzija Ahna Brutlag, DVM; rujan 2024.)"
     title: "Grape, Raisin, and Tamarind (Vitis spp, Tamarindus spp) Toxicosis in Dogs"
     url: "https://www.msdvetmanual.com/toxicology/food-hazards/grape-raisin-and-tamarind-vitis-spp-tamarindus-spp-toxicosis-in-dogs"
     publisher: "MSD Veterinary Manual"
@@ -53,7 +53,7 @@ sources:
     publisher: "MSD Veterinary Manual"
     accessed_on: 2026-11-28
 ---
-Za pse i mačke najopasnije namirnice su iz obične kuhinje: čokolada i kava, grožđe i grožđice, luk i češnjak, ksilitol, alkohol i sirovo tijesto, a za pse i makadamija orasi [1][2]. Kod nekih se znakovi javljaju tek nakon nekoliko sati ili dana, pa se ne čeka da se pojave [2][4].
+Namirnice koje su psima i mačkama najčešće opasne nalaze se u običnoj kuhinji: čokolada i kava, grožđe i grožđice, luk i češnjak, ksilitol, alkohol i sirovo tijesto, a za pse i makadamija orasi [1][2]. Kod nekih se znakovi javljaju tek nakon nekoliko sati ili dana, pa se ne čeka da se pojave [2][4].
 
 Ovaj tekst ne zamjenjuje veterinara. Ako je tvoj ljubimac pojeo nešto s ovog popisa, odmah nazovi najbližu veterinarsku ambulantu: koliko je to opasno može procijeniti samo veterinar koji zna što je i koliko pojeo i koji ga je pregledao.
 
