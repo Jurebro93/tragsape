@@ -26,7 +26,7 @@ Trag šape je hrvatski servis za trajne spomen-stranice kućnih ljubimaca. Ovaj 
 - Memorijali „samo s linkom" i privatni nikad nisu u sitemapu, na Livadi, na obiteljskoj stranici ni u slikama za dijeljenje sa sadržajem.
 - IP adrese se ne spremaju; samo sažetak s dnevno rotiranom soli. Adresa se čita kroz `clientIp()` (`src/server/public/visitor.ts`), koji uz `CLIENT_IP_HEADER` vjeruje samo zaglavlju posrednika.
 - U Supabaseu mora biti uključena potvrda e-maila („Confirm email"). Bez nje se e-mail dodjeljuje nacrtu bez provjere koda i spomen bi se mogao objaviti pod tuđom adresom.
-- Prijava je bez lozinke: kod iz e-maila ili poveznica koja traži klik na gumb (skeneri pošte je ne mogu potrošiti). Nacrt prije prijave pripada anonimnom korisniku Supabasea.
+- Prijava je bez lozinke: kod iz e-maila ili poveznica koja traži klik na gumb (skeneri pošte je ne mogu potrošiti). Nacrt prije prijave pripada anonimnom korisniku Supabasea. Iznimka (odluka vlasnika 28. 11. 2026.): vlasnikov račun admina ima ručno postavljenu lozinku i prijavljuje se na `/prijava/lozinka`, dok e-mail ne radi; javni posjetitelji lozinku nemaju.
 
 ## Novac
 

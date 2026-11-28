@@ -29,5 +29,15 @@ export const auth = {
     rate: "Kod smo ti upravo poslali. Pričekaj minutu prije novog pokušaja.",
     generic: "Slanje nije uspjelo. Pokušaj ponovno za trenutak.",
   },
+  password: {
+    title: "Prijava lozinkom",
+    intro: "Samo za račune kojima je lozinka postavljena ručno. Svi ostali se prijavljuju kodom iz e-maila.",
+    emailLabel: "E-mail",
+    passwordLabel: "Lozinka",
+    submit: "Prijavi se",
+    submitting: "Prijavljujem…",
+    error: "E-mail ili lozinka nisu ispravni.",
+    rate: "Previše pokušaja. Pričekaj nekoliko minuta.",
+  },
   signOut: "Odjava",
 } as const;

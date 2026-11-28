@@ -132,3 +132,24 @@ export async function signOutAction(): Promise<void> {
   await supabase.auth.signOut();
   redirect("/");
 }
+
+export type PasswordState = { email: string; error: string | null };
+
+/**
+ * Prijava lozinkom, za račune kojima je lozinka postavljena ručno (vlasnikov račun admina dok
+ * e-mail ne radi). Javni posjetitelji nemaju lozinku i prijavljuju se kodom.
+ */
+export async function passwordSignInAction(_previous: PasswordState, formData: FormData): Promise<PasswordState> {
+  const email = String(formData.get("email") ?? "").trim().toLowerCase();
+  const password = String(formData.get("password") ?? "");
+  const next = safeNextPath(String(formData.get("next") ?? "/admin"));
+  if (!emailSchema.safeParse(email).success || password.length === 0 || password.length > 200) {
+    return { email, error: messages.password.error };
+  }
+  const supabase = await createSessionClient();
+  const { error } = await supabase.auth.signInWithPassword({ email, password });
+  if (error) {
+    return { email, error: error.status === 429 ? messages.password.rate : messages.password.error };
+  }
+  redirect(next);
+}
