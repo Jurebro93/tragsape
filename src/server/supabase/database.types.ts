@@ -1597,6 +1597,48 @@ export type Database = {
           },
         ]
       }
+      topic_requests: {
+        Row: {
+          article_slug: string | null
+          consent_text: string
+          created_at: string
+          email: string
+          id: string
+          ip_hash: string | null
+          notified_at: string | null
+          page: string | null
+          question: string
+          status: string
+          updated_at: string
+        }
+        Insert: {
+          article_slug?: string | null
+          consent_text: string
+          created_at?: string
+          email: string
+          id?: string
+          ip_hash?: string | null
+          notified_at?: string | null
+          page?: string | null
+          question: string
+          status?: string
+          updated_at?: string
+        }
+        Update: {
+          article_slug?: string | null
+          consent_text?: string
+          created_at?: string
+          email?: string
+          id?: string
+          ip_hash?: string | null
+          notified_at?: string | null
+          page?: string | null
+          question?: string
+          status?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

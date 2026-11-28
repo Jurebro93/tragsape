@@ -1,0 +1,47 @@
+/** Pitanja čitatelja: „Ne nalaziš odgovor? Predloži temu”, e-mail kad je članak objavljen i admin. */
+export const requests = {
+  toggle: "Ne nalaziš odgovor? Predloži temu",
+  title: "Ne nalaziš odgovor?",
+  lead: "Opiši što te zanima. Istražit ćemo temu u pouzdanim izvorima, napisati članak i javiti ti se na e-mail kad bude objavljen.",
+  notice:
+    "Ovo nije savjetovanje. Ako je ljubimac loše, nazovi najbližu veterinarsku ambulantu. Ne odgovaramo na pojedinačne slučajeve, nego pišemo članke za sve, pa ne možemo obećati članak za svako pitanje.",
+  questionLabel: "Što te zanima?",
+  questionPlaceholder: "npr. Mačka ima 14 godina i sve više pije vode. Što to može značiti?",
+  emailLabel: "Tvoj e-mail",
+  emailPlaceholder: "ime@primjer.hr",
+  consent: "Pristajem da mi Trag šape pošalje e-mail kad članak o ovoj temi bude objavljen.",
+  newsletter: "Želim i jednom mjesečno nove vodiče (odjava je u svakom e-mailu).",
+  privacyLink: "Privatnost",
+  submit: "Pošalji pitanje",
+  sending: "Šaljem…",
+  sent: "Hvala, pitanje je stiglo. Pitanje ne objavljujemo. Kad članak bude gotov, javit ćemo ti se na e-mail.",
+  errors: {
+    question: "Opiši temu u barem nekoliko riječi (od 10 do 1000 znakova).",
+    email: "Upiši ispravnu e-mail adresu.",
+    consent: "Za javljanje e-mailom označi privolu.",
+    rate: "Previše pitanja odjednom. Pokušaj ponovno malo kasnije.",
+    failed: "Pitanje nije spremljeno. Pokušaj ponovno za trenutak.",
+  },
+  email: {
+    subject: "Članak o tvojem pitanju je objavljen",
+    heading: "Napisali smo članak o temi koju si predložio",
+    paragraph: "Hvala na pitanju. Istražili smo temu i objavili članak „{title}”. Uz svaku tvrdnju u članku stoji izvor.",
+    button: "Pročitaj članak",
+    footnote: "Ovaj e-mail šaljemo jednom, jer si uz pitanje to zatražio. Drugih poruka nećemo slati bez tvoje privole.",
+  },
+  admin: {
+    title: "Pitanja čitatelja",
+    intro:
+      "Teme koje čitatelji nisu našli u Vodiču. Kad je članak objavljen, upiši njegovu adresu (slug) i javi čitatelju; e-mail se šalje samo jednom.",
+    empty: "Nema pitanja u ovom stanju.",
+    statuses: { new: "novo", planned: "planirano", answered: "odgovoreno", rejected: "odbijeno" },
+    filters: { new: "Nova", planned: "Planirana", answered: "Odgovorena", rejected: "Odbijena" },
+    page: "Stranica",
+    plan: "Planiraj",
+    reject: "Odbij",
+    slugLabel: "Slug objavljenog članka",
+    notify: "Spremi i javi e-mailom",
+    notified: "javljeno {date}",
+    errors: { slug: "Članak s tom adresom nije objavljen.", failed: "Promjena nije spremljena." },
+  },
+} as const;

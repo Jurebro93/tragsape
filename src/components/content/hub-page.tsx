@@ -2,6 +2,7 @@ import type { Route } from "next";
 import Link from "next/link";
 import { CLUSTER_ART } from "@/components/content/article-card";
 import { ArrowRightIcon } from "@/components/icons";
+import { TopicRequest } from "@/components/requests/topic-request";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { cn } from "@/lib/cn";
 import { HUBS, hubGroups, hubPath, type Hub } from "@/lib/content/hubs";
@@ -153,6 +154,7 @@ export function HubPage({ hub, articles }: { hub: Hub; articles: ArticleSummary[
           <p className="text-[13px] text-plum-soft">{t.sourcesChecked}</p>
         </section>
 
+        <TopicRequest />
         <HubTiles current={hub} articles={articles} />
       </main>
       <SiteFooter />

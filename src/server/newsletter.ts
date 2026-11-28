@@ -17,7 +17,7 @@ export function normalizeSource(source: unknown): string | null {
     return null;
   }
   const clean = source.trim().toLowerCase();
-  return /^(popup|podnozje|naslovnica|livada|clanak:[a-z0-9-]{1,100})$/.test(clean) ? clean : null;
+  return /^(popup|podnozje|naslovnica|livada|pitanje|clanak:[a-z0-9-]{1,100})$/.test(clean) ? clean : null;
 }
 
 async function sendConfirmation(email: string, token: string): Promise<void> {

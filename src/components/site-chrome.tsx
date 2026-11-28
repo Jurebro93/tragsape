@@ -1,5 +1,6 @@
 import type { Route } from "next";
 import Link from "next/link";
+import { TopicRequest } from "@/components/requests/topic-request";
 import { AttributedLink } from "@/components/attributed-link";
 import { LogoMark } from "@/components/icons";
 import { NewsletterForm } from "@/components/newsletter/newsletter-form";
@@ -93,6 +94,7 @@ export function SiteFooter() {
           </span>
           <p className="text-[15px] text-white/85">{common.footer.line}</p>
         </div>
+        <TopicRequest tone="dark" collapsible />
         <section aria-labelledby="podnozje-newsletter" className="flex max-w-xl flex-col gap-3 rounded-3xl bg-white/5 p-5">
           <h2 id="podnozje-newsletter" className="font-display text-lg font-extrabold text-white">
             {newsletter.title}
