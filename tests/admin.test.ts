@@ -853,3 +853,63 @@ describe("obrasci admina", () => {
     expect(slugFromInput("")).toBe("");
   });
 });
+
+describe("popis adresa admina", () => {
+  const emails = [`popis-${run}@test.tragsape.local`, `kasnije-${run}@test.tragsape.local`];
+  const ids: string[] = [];
+
+  afterAll(async () => {
+    await service.from("admin_emails").delete().in("email", emails);
+    for (const id of ids) {
+      await service.auth.admin.deleteUser(id);
+    }
+  });
+
+  async function roleOf(id: string): Promise<string> {
+    return must(await service.from("profiles").select("role").eq("id", id).single()).role;
+  }
+
+  it("adresa s popisa postaje admin tek kad je potvrđena", async () => {
+    must(await service.from("admin_emails").insert({ email: emails[0] }).select("email"));
+    const created = await service.auth.admin.createUser({ email: emails[0].toUpperCase(), email_confirm: false });
+    expect(created.error).toBeNull();
+    const id = created.data.user!.id;
+    ids.push(id);
+    expect(await roleOf(id)).toBe("user");
+
+    expect((await service.auth.admin.updateUserById(id, { email_confirm: true })).error).toBeNull();
+    expect(await roleOf(id)).toBe("admin");
+  });
+
+  it("adresa dodana na popis poslije prijave odmah dobiva ulogu", async () => {
+    const created = await service.auth.admin.createUser({ email: emails[1], email_confirm: true });
+    const id = created.data.user!.id;
+    ids.push(id);
+    expect(await roleOf(id)).toBe("user");
+    must(await service.from("admin_emails").insert({ email: emails[1] }).select("email"));
+    expect(await roleOf(id)).toBe("admin");
+  });
+
+  it("popis ne čita ni ne mijenja nitko osim baze", async () => {
+    expect((await user.client.from("admin_emails" as never).select("email")).error).not.toBeNull();
+    expect((await anonymous.from("admin_emails" as never).select("email")).error).not.toBeNull();
+    const insert = await user.client.from("admin_emails" as never).insert({ email: `upad-${run}@test.tragsape.local` } as never);
+    expect(insert.error).not.toBeNull();
+    // Ni admin ne dodaje adrese kroz aplikaciju; to se radi izravno u bazi.
+    expect((await adminUser.client.from("admin_emails" as never).select("email")).error).not.toBeNull();
+  });
+});
+
+describe("nadzorna ploča", () => {
+  it("brojke smije čitati samo admin, i to bez adresa i sadržaja", async () => {
+    const since = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
+    expect((await user.client.rpc("admin_dashboard", { p_since: since })).error?.message).toContain("forbidden");
+    expect((await anonymous.rpc("admin_dashboard", { p_since: since })).error).not.toBeNull();
+
+    const board = await adminUser.client.rpc("admin_dashboard", { p_since: since });
+    expect(board.error).toBeNull();
+    const data = board.data as Record<string, Record<string, unknown>>;
+    expect(Number(data.memorials.created)).toBeGreaterThanOrEqual(1);
+    expect(JSON.stringify(data)).not.toMatch(/@/);
+  });
+});

@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useRef, useState, type ReactNode } from "react";
 import { ActionForm, type AdminAction } from "@/components/admin/action-form";
 import { Field, Input, Select } from "@/components/ui/field";
+import { suggestPromoCode } from "@/lib/promo-code";
 import { adminPanel } from "@/messages/hr/admin-panel";
 
 const t = adminPanel.codes.promo;
@@ -47,6 +48,7 @@ export function PromoForm({
 }) {
   const [kind, setKind] = useState(values.kind);
   const [discountType, setDiscountType] = useState(values.discountType);
+  const codeInput = useRef<HTMLInputElement>(null);
 
   return (
     // Kad se obrazac nakon dodavanja isprazni, i ovisna polja se vraćaju na početno stanje.
@@ -76,7 +78,22 @@ export function PromoForm({
               spellCheck={false}
               defaultValue={values.code}
               className="uppercase"
+              ref={codeInput}
             />
+            {values.code === "" ? (
+              <button
+                type="button"
+                onClick={() => {
+                  if (codeInput.current) {
+                    codeInput.current.value = suggestPromoCode();
+                    codeInput.current.focus();
+                  }
+                }}
+                className="inline-flex min-h-11 cursor-pointer items-center self-start font-bold text-teal underline underline-offset-4"
+              >
+                {t.fields.suggest}
+              </button>
+            ) : null}
           </Field>
           <Field label={t.fields.kind} htmlFor="promo-kind">
             <Select

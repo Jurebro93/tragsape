@@ -219,24 +219,31 @@ export function Stat({
   detail,
   highlight = false,
 }: {
-  href: string;
+  /** Bez poveznice pločica je samo prikaz. */
+  href?: string;
   label: string;
   value: ReactNode;
   detail?: ReactNode;
   /** Ističe brojku koja traži adminovu pažnju. */
   highlight?: boolean;
 }) {
-  return (
-    <Link
-      href={href as Route}
-      className={cn(
-        "flex min-h-11 flex-col gap-0.5 rounded-2xl border-2 p-4 text-plum no-underline hover:border-plum",
-        highlight ? "border-sun bg-butter" : "border-line bg-white",
-      )}
-    >
+  const className = cn(
+    "flex min-h-11 flex-col gap-0.5 rounded-2xl border-2 p-4 text-plum no-underline",
+    href && "hover:border-plum",
+    highlight ? "border-sun bg-butter" : "border-line bg-white",
+  );
+  const content = (
+    <>
       <span className="text-[15px] text-plum-soft">{label}</span>
       <span className="font-display text-3xl font-extrabold tabular-nums">{value}</span>
       {detail ? <span className="text-[15px] text-plum-soft">{detail}</span> : null}
+    </>
+  );
+  return href ? (
+    <Link href={href as Route} className={className}>
+      {content}
     </Link>
+  ) : (
+    <div className={className}>{content}</div>
   );
 }

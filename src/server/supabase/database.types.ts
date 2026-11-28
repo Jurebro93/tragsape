@@ -14,6 +14,21 @@ export type Database = {
   }
   public: {
     Tables: {
+      admin_emails: {
+        Row: {
+          created_at: string
+          email: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+        }
+        Relationships: []
+      }
       article_cta: {
         Row: {
           article_id: string
@@ -1655,6 +1670,7 @@ export type Database = {
           source: string
         }[]
       }
+      admin_dashboard: { Args: { p_since: string }; Returns: Json }
       admin_meadow_dedications: {
         Args: { p_status?: string }
         Returns: {
