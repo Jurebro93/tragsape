@@ -7,32 +7,32 @@ seo_title: "Mačka povraća: uzroci i kada veterinaru"
 seo_description: "Kada je povraćanje kod mačke bezazleno, a kada nije: kuglice dlake, vraćanje hrane, konac, otrovi, kronične bolesti i znakovi za hitan odlazak veterinaru."
 needs_vet_review: true
 sources:
-  - claim: "Povraćanje kod mačaka; kuglica dlake je vlažan valjkast smotuljak neprobavljene dlake natopljen žuči i probavnim sokovima; nije neobično da mačka izbaci kuglicu jednom u tjedan ili dva bez trajnih posljedica; uzroci (otrovne biljke, pokvarena hrana, lijekovi za ljude, konac, paraziti, strano tijelo, bolesti probave, metaboličke bolesti); pregled ako povraća češće od jednom tjedno ili uz klonulost, slabost, manje teka, krv, pojačanu žeđ, promjene mokrenja ili proljev; anamneza, krv i stolica, zatim rendgen i ultrazvuk, biopsija; potporna skrb (ažurirano 2021.)"
+  - claim: "Kuglica dlake: vlažan valjak neprobavljene dlake natopljen žuči; jednom u tjedan ili dva bez trajnih posljedica; uzroci (otrovne biljke, pokvarena hrana, lijekovi za ljude, konac, paraziti, strano tijelo); pregled ako povraća češće od jednom tjedno ili uz klonulost, slabost, manje teka, krv, žeđ ili proljev; anamneza, krv, stolica, rendgen, ultrazvuk; potporna skrb (ažurirano 2021.)"
     title: "Vomiting"
     url: "https://vet.cornell.edu/node/4030"
     publisher: "Cornell University College of Veterinary Medicine, Cornell Feline Health Center"
     accessed_on: 2026-11-28
-  - claim: "Povraćanje se razlikuje od regurgitacije, koja je pasivna i ne traži napor, a izbačena hrana obično je neprobavljena; uzroci uključuju bolesti probavnog sustava, zatajenje bubrega ili jetre, pankreatitis i bolesti živčanog sustava; dugotrajno povraćanje može dovesti do slabosti, gubitka težine, dehidracije i poremećaja elektrolita; uskraćivanje vode može pogoršati te posljedice; endoskopija i biopsija (ažurirano rujna 2024.)"
+  - claim: "Regurgitacija je pasivna, bez napora, hrana obično neprobavljena; uzroci: bolesti probave, zatajenje bubrega ili jetre, pankreatitis, bolesti živčanog sustava; dugotrajno povraćanje: slabost, gubitak težine, dehidracija, poremećaj elektrolita; uskraćivanje vode to pogoršava; endoskopija i biopsija (ažurirano rujna 2024.)"
     title: "Vomiting in Cats (Craig B. Webb, PhD, DVM, DACVIM)"
     url: "https://www.msdvetmanual.com/en-gb/cat-owners/digestive-disorders-of-cats/vomiting-in-cats"
     publisher: "MSD Veterinary Manual"
     accessed_on: 2026-11-28
-  - claim: "Povraćanje uključuje trbušne kontrakcije i napor, regurgitacija je pasivnija, obično vezana uz jednjak i često odmah nakon jela ili pića; mnogi akutni slučajevi smire se unutar 24 sata; blaži i ozbiljni uzroci (paraziti, neprimjerena hrana, kuglice dlake, nepodnošenje hrane; infekcije, strano tijelo, otrovi, začepljenje mokraćnih putova, pankreatitis, bolesti jetre, bubrega i štitnjače, upalna bolest crijeva, rak); odmah veterinaru uz vrućicu, klonulost, gubitak teka, bol u trbuhu, proljev, dehidraciju ili krv; minimalne pretrage bez drugih znakova; voda uvijek dostupna"
+  - claim: "Povraćanje uz napor, regurgitacija pasivnija, vezana uz jednjak, često odmah nakon jela; akutno se često smiri u 24 sata; blaži i ozbiljni uzroci (paraziti, kuglice dlake, nepodnošenje hrane; infekcije, strano tijelo, otrovi, začepljenje mokraćnih putova, pankreatitis, jetra, bubrezi, štitnjača, upalna bolest crijeva, rak); hitni pridruženi znakovi; osnovne pretrage; voda uvijek dostupna"
     title: "Vomiting in Cats (Courtney Barnes, DVM; Krista Williams, DVM; Ernest Ward, DVM)"
     url: "https://vcahospitals.com/know-your-pet/vomiting-in-cats"
     publisher: "VCA Animal Hospitals"
     accessed_on: 2026-11-28
-  - claim: "Izbacivanje kuglice dlake jednom u tjedan ili dva normalno je; kuglica prevelika da prođe ili zaglavljena u tankom crijevu bez kirurškog zahvata može biti smrtonosna; znakovi: klonulost, odbijanje hrane dulje od dan ili dva, ponavljani neuspješni pokušaji povraćanja ili pravo povraćanje, koji mogu značiti i druge probavne ili dišne bolesti poput astme; laksativ nikad bez odobrenja veterinara; svakodnevno češljanje; posebna hrana samo uz odobrenje veterinara (Richard Goldstein, DVM)"
+  - claim: "Kuglica jednom u tjedan ili dva normalna je; prevelika ili zaglavljena u tankom crijevu bez operacije može biti smrtonosna; znakovi: klonulost, odbijanje hrane dulje od dan-dva, ponavljani neuspješni pokušaji povraćanja, mogu značiti i astmu; laksativ i posebna hrana samo uz veterinara; svakodnevno češljanje (Richard Goldstein, DVM)"
     title: "The Danger of Hairballs"
     url: "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/danger-hairballs"
     publisher: "Cornell University College of Veterinary Medicine, Cornell Feline Health Center"
     accessed_on: 2026-11-28
-  - claim: "Prema dvjema neformalnim anketama autoričine klinike oko 10 % inače zdravih kratkodlakih mačaka redovito povraća kuglice dlake, kod dugodlakih otprilike dvostruko češće; velikih istraživanja nema; česte epizode upućuju na pretjerano gutanje dlake (buhe, svrbež, pretjerano lizanje zbog boli ili tjeskobe) ili bolest probave; kašalj se zamjenjuje s kuglicama; najprije istražiti i liječiti podlogu; učinkovitost hrane protiv kuglica nije potvrđena objavljenim podacima"
+  - claim: "Dvije neformalne ankete: oko 10 % zdravih kratkodlakih mačaka redovito povraća kuglice, dugodlake dvostruko češće; velikih istraživanja nema; česte epizode: buhe, svrbež, lizanje zbog boli ili tjeskobe, bolest probave; kašalj se zamjenjuje s kuglicama; najprije istražiti podlogu; učinak hrane protiv kuglica nije potvrđen objavljenim podacima"
     title: "Hair Balls in Cats: A normal nuisance or a sign that something is wrong? (Martha Cannon; J Feline Med Surg 2013; 15(1))"
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10816490/"
     publisher: "Journal of Feline Medicine and Surgery (ISFM)"
     accessed_on: 2026-11-28
-  - claim: "Gotovo sve mačke povremeno povrate; povremeno povraćanje kod inače zdrave mačke obično nije razlog za brigu; regurgitacija nesvarene hrane zbog prebrzog jedenja obično nije ozbiljna, pomažu slagalice za hranu i zdjelice koje usporavaju; uzroci kroničnog povraćanja (bubrezi, jetra, paraziti, osjetljivost na hranu, upalna bolest crijeva, rak, hipertireoza); pregled ako povraća češće od nekoliko puta mjesečno ili je klonula; neuspješni pokušaji povraćanja mogu značiti začepljenje (dr. Lori Teller, 4. 3. 2021.)"
+  - claim: "Gotovo sve mačke povremeno povrate; povremeno povraćanje kod zdrave mačke obično nije razlog za brigu; regurgitacija zbog prebrzog jedenja, slagalice i spore zdjelice; uzroci kroničnog povraćanja (bubrezi, jetra, paraziti, hrana, upalna bolest crijeva, rak, hipertireoza); pregled ako češće od nekoliko puta mjesečno; neuspješni pokušaji mogu značiti začepljenje (dr. Lori Teller, 4. 3. 2021.)"
     title: "When To Be Concerned About Feline Vomiting"
     url: "https://vetmed.tamu.edu/news/pet-talk/when-to-be-concerned-about-feline-vomiting"
     publisher: "Texas A&M University School of Veterinary Medicine & Biomedical Sciences"
@@ -122,7 +122,7 @@ Kuglica može biti i opasna. Prema Cornellu, kuglica prevelika da prođe dalje i
 
 VCA dijeli uzroke na blaže i ozbiljne [3]. Među blažima su crijevni paraziti, pojedena neprimjerena hrana, kuglice dlake te nepodnošenje ili alergija na hranu [3].
 
-Među ozbiljnima su infekcije, strano tijelo, otrovi, začepljenje mokraćnih putova, upala gušterače, bolesti jetre, bubrega i štitnjače, upalna bolest crijeva i rak [3]. Cornell dodaje otrovne biljke, pokvarenu hranu i lijekove za ljude [1].
+Među ozbiljnima su infekcije, strano tijelo, otrovi, začepljenje mokraćnih putova, upala gušterače, bolesti jetre, bubrega i štitnjače, upalna bolest crijeva i rak [3]. Cornell dodaje otrovne biljke, pokvarenu hranu i lijekove za ljude [1]. Koje su biljke opasne, pogledaj u članku [Otrovne biljke za pse i mačke](/vodic/otrovne-biljke-za-pse-i-macke).
 
 Posebno su opasni konac, vuna i lameta. VCA piše da takvo „linearno” strano tijelo može probiti crijevo, a upala potrbušnice koja slijedi može ugroziti život [7]. Znakovi su povraćanje, odbijanje hrane, dehidracija, klonulost i skrivanje [7].
 
@@ -142,7 +142,7 @@ Ako mačka nema drugih znakova bolesti, VCA navodi da veterinar obično radi sam
 
 Mačka mora stalno imati vodu [3]. MSD priručnik upozorava da uskraćivanje vode može pogoršati dehidraciju [2].
 
-Ne izgladnjuj mačku na svoju ruku. Kratku pauzu u hranjenju ili laganu hranu može preporučiti veterinar [2][3], a Cornell upozorava da masna jetra gotovo uvijek nastupa nakon što mačka gotovo potpuno prestane jesti, češće je kod pretilih mačaka i može biti smrtonosna [9]. VCA savjetuje i da mačku ne prisiljavaš na jelo ili piće [10].
+Ne izgladnjuj mačku na svoju ruku. Kratku pauzu u hranjenju ili laganu hranu može preporučiti veterinar [2][3], a Cornell upozorava da masna jetra gotovo uvijek nastupa nakon što mačka gotovo potpuno prestane jesti, češće je kod pretilih mačaka i može biti smrtonosna [9]. VCA savjetuje i da mačku ne prisiljavaš na jelo ili piće [10]. Zašto je mačka koja ne jede hitan slučaj, opisali smo u članku [Mačka ne jede: zašto je to hitno](/vodic/macka-ne-jede-zasto-je-to-hitno).
 
 Mački ne daji lijekove za ljude bez savjeta veterinara [10]. Paracetamol je za mačke otrovan i ne smije im se dati ni u kojim okolnostima [11], a laksativ ne daji bez odobrenja veterinara [4].
 

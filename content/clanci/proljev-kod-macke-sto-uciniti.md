@@ -7,17 +7,17 @@ seo_title: "Proljev kod mačke: što učiniti i kada veterinaru"
 seo_description: "Proljev kod mačke: koliko smije trajati, što znače krv, sluz i crna stolica, zašto se kod mačića ne čeka, što ponijeti veterinaru i što ne davati."
 needs_vet_review: true
 sources:
-  - claim: "Proljev je abnormalno često pražnjenje vodenaste stolice, katkad sive ili žute boje; mnogi slučajevi kratko traju i prolaze sami ili uz promjenu prehrane; kod odraslih mačaka najčešće iza njega stoje upalne, zarazne ili tumorske bolesti; ako traje dulje od dan ili dva uz loš tek, klonulost ili povraćanje, veterinaru što prije; neki bezreceptni lijekovi mogu naškoditi mačkama; najvažnije je da veterinar pregleda mačku čim se pojave znakovi"
+  - claim: "Proljev je često pražnjenje vodenaste stolice, katkad sive ili žute; često prolazi sam ili uz promjenu prehrane; kod odraslih mačaka najčešće upalne, zarazne ili tumorske bolesti; ako traje dulje od dan-dva uz loš tek, klonulost ili povraćanje, veterinaru što prije; neki bezreceptni lijekovi mogu naškoditi mačkama; pregled čim se pojave znakovi"
     title: "Diarrhea"
     url: "https://vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/diarrhea"
     publisher: "Cornell University College of Veterinary Medicine, Cornell Feline Health Center"
     accessed_on: 2026-11-28
-  - claim: "Kod proljeva stolica prebrzo prolazi crijevima pa se upije premalo vode i hranjiva; uzroci (bakterije, virusi, kokcidije, gliste i ankilostome, otrovi i otrovne biljke, promjena hrane i nepodnošenje, alergija na hranu, panleukopenija, upalna bolest crijeva, bolest organa, rak); kod jakog ili krvavog proljeva ili znakova opće bolesti pomoć što prije; ako rijetka stolica traje dulje od dva dana, veterinaru; svjež uzorak stolice; pretrage; kratka pauza u hranjenju samo kod inače zdravih odraslih mačaka; voda uvijek dostupna jer dehidracija može nastupiti brzo; povratak na redovnu hranu kroz 7 do 10 dana; probiotici uz savjet veterinara jer kvaliteta i učinak pripravaka nisu uvijek poznati"
+  - claim: "Stolica prebrzo prolazi crijevima; uzroci (bakterije, virusi, kokcidije, gliste, otrovi, biljke, promjena hrane, alergija, panleukopenija, upalna bolest crijeva, rak); jak ili krvav proljev: pomoć što prije; dulje od dva dana: veterinaru; svjež uzorak stolice; pretrage; kratka pauza u hranjenju za zdrave odrasle; voda; povratak na hranu kroz 7 do 10 dana; probiotici uz savjet veterinara"
     title: "Diarrhea in Cats (Courtney Barnes, DVM; Ryan Llera, DVM; Krista Williams, DVM; Ernest Ward, DVM)"
     url: "https://vcahospitals.com/know-your-pet/diarrhea-in-cats"
     publisher: "VCA Animal Hospitals"
     accessed_on: 2026-11-28
-  - claim: "Važno je liječiti životinje s proljevom koji se nastavlja; obilan vodenast proljev obično je posljedica pojačanog izlučivanja tekućine u crijeva; crna, katranasta stolica može biti znak krvarenja u želucu ili tankom crijevu; napinjanje pri pražnjenju obično je povezano s upalom rektuma i anusa; nadoknada tekućine i elektrolita kod rizika dehidracije; pitati veterinara treba li donijeti svjež uzorak stolice (Stanley I. Rubin, DVM; ažurirano svibnja 2026.)"
+  - claim: "Proljev koji se nastavlja treba liječiti; obilan vodenast proljev obično zbog pojačanog izlučivanja tekućine; crna katranasta stolica može značiti krvarenje u želucu ili tankom crijevu; napinjanje obično uz upalu rektuma i anusa; nadoknada tekućine; pitati treba li uzorak stolice (Stanley I. Rubin, DVM; ažurirano svibnja 2026.)"
     title: "Introduction to Digestive Disorders of Cats"
     url: "https://www.msdvetmanual.com/en-gb/cat-owners/digestive-disorders-of-cats/introduction-to-digestive-disorders-of-cats"
     publisher: "MSD Veterinary Manual"
@@ -27,7 +27,7 @@ sources:
     url: "https://www.msdvetmanual.com/en-gb/cat-owners/digestive-disorders-of-cats/disorders-of-the-stomach-and-intestines-in-cats"
     publisher: "MSD Veterinary Manual"
     accessed_on: 2026-11-28
-  - claim: "Znakovi panleukopenije: proljev, povraćanje, vrućica, klonulost, gubitak teka, dehidracija (upale oči, suhe desni), bolan trbuh; iznenadna smrt najčešće kod mačića mlađih od 5 mjeseci; najugroženiji su mladi mačići, bolesne i necijepljene mačke; mačka u stanu može se zaraziti preko cipela, odjeće ili ljudi; virus u zatvorenom preživljava mnogo mjeseci, do godinu dana; cijepljenje je temelj zaštite; uz te znakove odmah se javiti veterinaru (ažurirano 8. 9. 2026.)"
+  - claim: "Znakovi panleukopenije: proljev, povraćanje, vrućica, klonulost, gubitak teka, dehidracija (upale oči, suhe desni), bolan trbuh; iznenadna smrt najčešće kod mačića mlađih od 5 mjeseci; najugroženiji mačići i necijepljene mačke; virus u stan na cipelama i odjeći, preživljava do godinu dana; cijepljenje; odmah veterinaru (ažurirano 8. 9. 2026.)"
     title: "Feline Panleukopenia Virus"
     url: "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feline-panleukopenia-virus"
     publisher: "Cornell University College of Veterinary Medicine, Cornell Feline Health Center"
@@ -112,7 +112,7 @@ Prije pregleda pripremi:
 
 Mačka mora stalno imati lako dostupnu vodu, jer dehidracija kod proljeva može nastupiti brzo [2]. Ne prisiljavaj je na jelo ili piće [6].
 
-Ne izgladnjuj mačku na svoju ruku. VCA navodi da veterinar kratku pauzu u hranjenju ili posebnu hranu za probavu može preporučiti inače zdravoj odrasloj mački [2], a Cornell upozorava da masna jetra gotovo uvijek nastupa kad mačka gotovo potpuno prestane jesti i može biti smrtonosna [7]. Kad se stolica smiri, VCA savjetuje povratak na redovnu hranu postupno, kroz sedam do deset dana [2].
+Ne izgladnjuj mačku na svoju ruku. VCA navodi da veterinar kratku pauzu u hranjenju ili posebnu hranu za probavu može preporučiti inače zdravoj odrasloj mački [2], a Cornell upozorava da masna jetra gotovo uvijek nastupa kad mačka gotovo potpuno prestane jesti i može biti smrtonosna [7]; više o tome u članku [Mačka ne jede: zašto je to hitno](/vodic/macka-ne-jede-zasto-je-to-hitno). Kad se stolica smiri, VCA savjetuje povratak na redovnu hranu postupno, kroz sedam do deset dana [2].
 
 > [!SAVJET] Lijekove i probiotike bira veterinar
 > Mački ne daji lijekove za ljude bez savjeta veterinara [6], a Cornell upozorava da neki bezreceptni pripravci mačkama mogu naškoditi [1]. I za probiotik VCA savjetuje da se najprije posavjetuješ s veterinarom [2].
