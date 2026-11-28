@@ -7,17 +7,17 @@ seo_title: "Torzija želuca kod psa: znakovi, liječenje i cijena"
 seo_description: "Nadutost i torzija želuca kod psa: znakovi koji ne čekaju, što radi veterinar, preventivna gastropeksija i cijene operacije u Hrvatskoj."
 needs_vet_review: true
 sources:
-  - claim: "GDV je brzo napredujuće stanje opasno po život; povezano s brzim jedenjem velikog obroka; rizik: duboka prsa, jedan obrok dnevno, starija dob, srodnici s GDV-om; češće kod doga, vajmarica, bernardinaca, irskih i gordon setera; rani znakovi: zabrinut izgled, istezanje, slinjenje, nagon bez sadržaja; pretrage krvi, RTG, EKG; stabilizacija, dekompresija, operacija i gastropeksija; nekoliko dana bolnice; smrtnost oko 15 %, veća uz znakove dulje od 6 sati; nekoliko tjedana mirovanja, 2–3 manja obroka; preventivna gastropeksija uz sterilizaciju"
+  - claim: "GDV brzo napreduje i opasan je po život; rizik: duboka prsa, jedan obrok dnevno, starija dob, srodnici; doge, vajmarci, bernardinci, seteri; rani znakovi: zabrinutost, istezanje, slinjenje, nagon bez sadržaja; RTG, EKG; stabilizacija, operacija, gastropeksija; dani u bolnici; smrtnost oko 15 %, veća uz znakove dulje od 6 sati; tjedni mirovanja; preventivna gastropeksija"
     title: "Gastric Dilatation-Volvulus"
     url: "https://www.acvs.org/small-animal/gastric-dilatation-volvulus/"
     publisher: "American College of Veterinary Surgeons (ACVS)"
     accessed_on: 2026-11-28
-  - claim: "Želudac se puni zrakom, tekućinom ili hranom i zakreće, pritišće velike krvne žile i ošit; slezena se često zakrene s njim; rizici uključuju srodnika u prvom koljenu, brzo jedenje, jedan obrok dnevno, nervozu, povišenu zdjelicu i trčanje nakon jela; znakovi uključuju blijede desni i molitveni položaj; neliječen je smrtonosan, uz liječenje preživi više od 80 %; gastropeksija smanjuje povratak na 3–5 %, bez nje do 80 % (Laura McKenna i dr. Aly Cohen, DVM; ažurirano travanj 2025.)"
+  - claim: "Želudac se puni i zakreće, pritišće krvne žile i ošit; slezena se često zakrene s njim; rizici: srodnik u prvom koljenu, brzo jedenje, jedan obrok, nervoza, povišena zdjelica, kretanje nakon jela; blijede desni, molitveni položaj; uz liječenje preživi više od 80 %; uz gastropeksiju povratak 3–5 %, bez nje do 80 % (L. McKenna i dr. Aly Cohen, DVM; travanj 2025.)"
     title: "Gastric dilatation volvulus (GDV) or “bloat”"
     url: "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/gastric-dilatation-volvulus-gdv-or-bloat"
     publisher: "Cornell University College of Veterinary Medicine, Riney Canine Health Center"
     accessed_on: 2026-11-28
-  - claim: "Rendgen razlikuje običnu dilataciju od GDV-a; rizične pasmine uključuju njemačkog ovčara i standardnu pudlu; ukupna smrtnost oko 25–30 %, kod liječenih 20–45 %; za vlasnike rizičnih pasmina: više manjih obroka, ograničiti kretanje prije i poslije jela, manje stresa uz obrok, izbjegavati povišene zdjelice; gastropeksija ne sprječava nadutost nego zakretanje; samo dekompresija bez operacije vrlo često se vraća (Kevin P. Winkler, DVM, DACVS; kolovoz 2025.)"
+  - claim: "RTG razlikuje dilataciju od GDV-a; rizične pasmine uključuju njemačkog ovčara i pudlu; smrtnost oko 25–30 %, kod liječenih 20–45 %; savjeti: više manjih obroka, mir prije i poslije jela, manje stresa, bez povišenih zdjelica; gastropeksija ne sprječava nadutost nego zakretanje; samo dekompresija bez operacije često se vraća (Kevin P. Winkler, DVM, DACVS; kolovoz 2025.)"
     title: "Gastric Dilation and Volvulus in Small Animals"
     url: "https://www.msdvetmanual.com/digestive-system/surgical-problems-of-the-gastrointestinal-tract-in-small-animals/gastric-dilation-and-volvulus-in-small-animals"
     publisher: "MSD Veterinary Manual"
@@ -98,8 +98,6 @@ Najčešće obolijevaju veliki psi dubokih prsa, ali VCA navodi da nadutost mož
 | Trčanje i igra odmah nakon jela | Cornell, VCA [2][4] |
 | Suha hrana kojoj je ulje među prva četiri sastojka | ACVS, Cornell [1][2] |
 
-Rizik nije presuda. Pas bez ijednog od ovih čimbenika može dobiti torziju, a većina pasa iz rizičnih pasmina je nikad ne dobije.
-
 ## Kako prepoznati torziju na vrijeme?
 
 Prvi znakovi obično su znakovi boli u trbuhu: pas izgleda zabrinuto, gleda prema trbuhu, isteže se, slini i pokušava povratiti bez sadržaja [1]. Cornell dodaje nemir, hodanje gore-dolje, dahtanje i „molitveni" položaj, s prednjim nogama ispruženima i prsima spuštenima prema podu [2].
@@ -144,13 +142,13 @@ Javni cjenici navode cijenu samog zahvata; pregled, pretrage, rendgen, anestezij
 | Praksa Pilić, Split (28. 11. 2026.) | 250 € [9] | nije zasebno navedena | 15 € [9] |
 | Veterinarski fakultet, Zagreb (14. 11. 2024.) | nije zasebno navedena | 160 € [10] | 35 €, kirurški intenzivni pacijent [10] |
 
-Torzija se rijetko dogodi u radno vrijeme. Lanište za operacijski zahvat izvan radnog vremena naplaćuje 400 €, a Veterinarski fakultet usluge od 18 do 8 sati te nedjeljom i praznikom poslije 11 sati uvećava za 50 % [5][10]. Više o dežurstvima piše u članku [Hitna veterinarska pomoć noću i vikendom: doplate](/vodic/hitna-veterinarska-pomoc-nocu-i-vikendom-doplate).
+Lanište za operacijski zahvat izvan radnog vremena naplaćuje 400 €, a Veterinarski fakultet usluge od 18 do 8 sati te nedjeljom i praznikom poslije 11 sati uvećava za 50 % [5][10]. Više o dežurstvima piše u članku [Hitna veterinarska pomoć noću i vikendom: doplate](/vodic/hitna-veterinarska-pomoc-nocu-i-vikendom-doplate).
 
 ## Oporavak nakon operacije
 
 Većina pasa ostaje u bolnici nekoliko dana, a poremećaji srčanog ritma nakon operacije česti su i obično prolaze sami [1]. Kod kuće slijedi nekoliko tjedana mirovanja dok rez zacijeli i dva do tri manja obroka dnevno umjesto jednog velikog [1].
 
-Nadutost se može ponoviti i nakon gastropeksije, najčešće nakon vrlo velikog obroka, ali prišiven želudac se ne bi trebao zakrenuti [1][3]. Zato znakove nadutosti i dalje shvati ozbiljno.
+Nadutost se može ponoviti i nakon gastropeksije, najčešće nakon vrlo velikog obroka, ali prišiven želudac se ne bi trebao zakrenuti [1][3].
 
 ## Može li se torzija spriječiti?
 
